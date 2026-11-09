@@ -1,0 +1,46 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\MANUAL_EVIDENCE_CHECKLIST.md",
+    "sha256": "ec158fb2ebed2fc1752919d0a1c2f234086a47675625fe987a05e0ccb3381b38"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\protected_original_hashes.json",
+    "sha256": "c31f628df6922d9e60d0479bd63714fe8b157d98c3405bef8a32a677d7ea959d"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\review_gate_tests.log",
+    "sha256": "d33a7c3ccc5a8b853f1f6ab8e77fc8aa1f9e77526f2eae5b9a6dfa1d6b127b10"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\REVIEW_NOTE.md",
+    "sha256": "8de98b92aaedfadaa8ac901c97c95abdfedb4908913e9cdc2818e61079ab0115"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\verification.json",
+    "sha256": "6075a5c6c8507512621e8ef8533906b765edc5d4dfa6a7ad6467c4b1898ae856"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\recorder_before_review_gate\\collector_v2.py",
+    "sha256": "69fcb45f83ce05c77e49a76ffc9498d6fb8557a317821e85f2724cc2255d2025"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\recorder_before_review_gate\\README.md",
+    "sha256": "e445d5afcfeda9e5dfeca6e232d8a702527e19b9699e333d8b606880c6d10d19"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\reviews\\HBPSN01_20261104T112740Z\\recorder_before_review_gate\\test_reliability.py",
+    "sha256": "c41c904084e2486cb16cf220e9faf88adf76ec1f4239b8eb9e02540b7bde0f99"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder\\collector_v2.py",
+    "sha256": "381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder\\test_reliability.py",
+    "sha256": "f43ea49258101c31f03f35deee5c90cb5843382a92560aabcfc9372d3f8b4700"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder\\README.md",
+    "sha256": "a40a27de29fd26cb88b9fa1a7aee4c4046a255a28fee92152a7284e4c6275775"
+  }
+]

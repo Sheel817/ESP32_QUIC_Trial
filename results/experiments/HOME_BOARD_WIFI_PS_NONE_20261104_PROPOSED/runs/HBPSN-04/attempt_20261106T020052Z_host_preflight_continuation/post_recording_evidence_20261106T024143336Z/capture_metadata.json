@@ -1,0 +1,32 @@
+{
+  "run_id": "HBPSN-04",
+  "capture_started_utc": "2026-11-06T02:41:43.336Z",
+  "capture_completed_utc": "2026-11-06T02:41:44.503Z",
+  "image": "HBPSN-04_Clumsy_POST_RECORDING.jpg",
+  "sha256": "2d1a62515d045b781bb2f52902016322374aa430741155153c622289823639cf",
+  "source_type": "GUI_observed",
+  "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+  "capture": "RUNNING",
+  "main_effects": {
+    "Lag": false,
+    "Drop": false,
+    "Throttle": false,
+    "Duplicate": false,
+    "Out of order": false,
+    "Tamper": false,
+    "Set TCP RST": false,
+    "Bandwidth": false
+  },
+  "inactive_fields": {
+    "Lag_delay_ms": 100,
+    "Lag_inbound": false,
+    "Lag_outbound": true,
+    "Drop_chance_percent": 1,
+    "Drop_inbound": false,
+    "Drop_outbound": true
+  },
+  "settings_changed_by_agent": false,
+  "actual_post_deadline": true,
+  "validity_status": "NOT_APPROVED",
+  "operator_stability_confirmation": "AWAITING_EXACT_REPLY"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "run_id": "HBPSN-05",
+  "screenshot": "clumsy_actual_pre_flash.jpg",
+  "sha256": "0e9bfb7859a0e39dd7053df5dbb217fd751b021cfbcd81b9cda010b3fbb0f33e",
+  "capture_started_utc": "2026-11-06T13:09:01.864Z",
+  "capture_completed_utc": "2026-11-06T13:09:02.817Z",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  }
+}

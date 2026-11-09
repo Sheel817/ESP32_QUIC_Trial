@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-11-04T00:05:08.330351+00:00",
+  "endpoint": "127.0.0.1:14568",
+  "tls": "TLSv1.3",
+  "cipher": [
+    "TLS_AES_256_GCM_SHA384",
+    "TLSv1.3",
+    256
+  ],
+  "alpn": "mqtt",
+  "purpose": "Local listener TLS readiness probe only; no MQTT or sensor messages"
+}

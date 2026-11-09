@@ -18,3 +18,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 sdkconfig.local
+
+# Not uploaded: over GitHub size limit, dependencies, private key
+backups/*.zip
+node_modules/
+/server-key.pem

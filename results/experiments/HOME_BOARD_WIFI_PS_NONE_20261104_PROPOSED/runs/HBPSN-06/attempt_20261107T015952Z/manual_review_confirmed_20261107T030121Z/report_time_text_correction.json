@@ -1,0 +1,4 @@
+{
+  "utc": "2026-11-07T03:02:54.959252+00:00",
+  "correction": "Stale HBPSN-05 time text in newly generated Markdown corrected to actual HBPSN-06 intervals. Original pre-correction report retained. Operator-statement JSON and review JSON already contained correct intervals; no data or register edit from this correction."
+}

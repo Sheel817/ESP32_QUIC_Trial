@@ -1,0 +1,34 @@
+{
+  "label": "TEST_ONLY",
+  "utc": "2026-11-06T00:55:22.023046+00:00",
+  "start": {
+    "label": "TEST_ONLY",
+    "reset_request_utc": "2026-11-06T00:52:21.972832+00:00",
+    "reset_release_utc": "2026-11-06T00:52:21.973632+00:00",
+    "reset_release_monotonic": 680651.289664,
+    "observation_deadline_utc": "2026-11-06T00:55:21.973632+00:00",
+    "observation_deadline_monotonic": 680831.289664,
+    "maximum_core_end_utc": "2026-11-06T00:57:21.973632+00:00",
+    "maximum_core_end_monotonic": 680951.289664,
+    "method": "Espressif set_rts(PIN_HIGH) after logger ready and EN held low. Host anchor after successful API return, not physical-edge measurement.",
+    "server_boundaries": {
+      "stdout": {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+        "bytes": 2383662
+      },
+      "stderr": {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+        "bytes": 0
+      }
+    }
+  },
+  "observed_elapsed_seconds": 180.04950849991292,
+  "core_starts": [],
+  "core_ends": [],
+  "extension_core_id": null,
+  "core_incomplete": false,
+  "raw_bytes": 10993,
+  "raw_sha256": "98a0e269b7aca09ba4ea2dce84944bc289584e02b1781fdbb00215068c560b52",
+  "note": "Raw logger read chunks may straddle cutoff; receipt times retain primary180s versus recovery tail provenance. Later bytes route to separate after-capture file. No manual retry/reset.",
+  "firmware_remaining": "TEST_ONLY diagnostic BIN 6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb"
+}

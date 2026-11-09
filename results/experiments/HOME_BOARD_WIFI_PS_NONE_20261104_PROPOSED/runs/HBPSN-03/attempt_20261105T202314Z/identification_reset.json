@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-11-05T20:23:48.917445+00:00",
+  "completed_utc": "2026-11-05T20:23:52.401813+00:00",
+  "command": [
+    "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+    "-m",
+    "esptool",
+    "--chip",
+    "esp32c6",
+    "--port",
+    "COM6",
+    "--before",
+    "default-reset",
+    "--after",
+    "no-reset",
+    "flash-id"
+  ],
+  "exit_code": 0,
+  "setup_only": true,
+  "reset_note": "Default-reset into ROM; after=no-reset. Outside formal window."
+}

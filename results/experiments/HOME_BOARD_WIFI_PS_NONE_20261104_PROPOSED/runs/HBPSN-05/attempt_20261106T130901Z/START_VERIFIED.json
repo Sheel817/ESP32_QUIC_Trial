@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-06T13:14:23.896170+00:00",
+  "both_registers_verified": true,
+  "collector_code_unchanged": true,
+  "heartbeat": {
+    "utc": "2026-11-06T13:14:22.968172+00:00",
+    "monotonic": 725172.2842428,
+    "remaining_seconds": 2157.188153099967,
+    "status": "RUNNING",
+    "serial_bytes": 12572,
+    "monitor_alive": true,
+    "collector_pid": 22660
+  },
+  "validity_status": "NOT_APPROVED",
+  "no_further_run_before_review": true
+}

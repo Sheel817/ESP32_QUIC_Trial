@@ -1,0 +1,3 @@
+server_receive_utc,client_id,topic,seq,sensor,uptime_ms,temperature_c,humidity_pct,sensor_error
+2026-10-22T17:29:30.707654Z,local_tcp_tls_test,esp32/quic/test,1,DHT11,5000,26.0,33.0,0
+2026-10-22T17:29:30.737123Z,local_tcp_tls_test,esp32/quic/test,2,DHT11,10000,,,263

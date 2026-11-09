@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+      "bytes": 1498864,
+      "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+      "expected_sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf",
+      "bytes": 16790856,
+      "sha256": "1f661a4f7214dd0bd499cdf03783ca40633542fb95a6d164e1233c0b6f6363e6",
+      "expected_sha256": "1f661a4f7214dd0bd499cdf03783ca40633542fb95a6d164e1233c0b6f6363e6",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+      "expected_sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "expected_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "matches": true
+    }
+  ],
+  "flash_argument_files": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flash_args",
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flasher_args.json",
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964",
+      "matches": true
+    }
+  ],
+  "transport": "TCP_TLS",
+  "wifi_ps_none_build": true,
+  "effective_sdkconfig_matches_quic": true,
+  "build_report_result": "PASS",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+  "on_device_state": "Not verified/changed in this preflight. Current monitor/board is not claimed to be TCP_TLS. New measured startup readback remains required."
+}

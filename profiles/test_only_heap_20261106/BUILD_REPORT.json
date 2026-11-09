@@ -1,0 +1,281 @@
+{
+  "label": "TEST_ONLY_BUILT_NOT_FLASHED",
+  "checked_utc": "2026-11-06T00:37:25.003635+00:00",
+  "build_link": "PASS",
+  "partition": "PASS",
+  "app_bytes": 1652336,
+  "app_partition_bytes": 1740800,
+  "app_partition_free_bytes": 88464,
+  "partitions": [
+    {
+      "type": 1,
+      "subtype": 2,
+      "offset": 36864,
+      "size": 24576,
+      "label": "nvs"
+    },
+    {
+      "type": 1,
+      "subtype": 1,
+      "offset": 61440,
+      "size": 4096,
+      "label": "phy_init"
+    },
+    {
+      "type": 0,
+      "subtype": 0,
+      "offset": 65536,
+      "size": 1740800,
+      "label": "factory"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\quic_demo.bin",
+      "bytes": 1652336,
+      "sha256": "6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\quic_demo.elf",
+      "bytes": 17418112,
+      "sha256": "a8056d24f2e746d5f345b16e545e907f3339e6e87ea146895b57b1aaa7d32b70"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "201aab89981d1f3a52dea8da1d05bf81f7e6244d2e9ab7eaa73cb46fa618501e"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\flash_args",
+      "bytes": 150,
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\flasher_args.json",
+      "bytes": 933,
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    }
+  ],
+  "build_attempts": [
+    {
+      "started_utc": "2026-11-06T00:27:06.035654+00:00",
+      "command": [
+        "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+        "C:/esp/v6.1/esp-idf/tools/idf.py",
+        "-B",
+        "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+        "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\sdkconfig",
+        "-DDEMO_TRANSPORT=QUIC",
+        "-DDEMO_WIFI_PS_NONE=ON",
+        "-DCCACHE_ENABLE=False",
+        "build"
+      ],
+      "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\src",
+      "environment": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ESP_IDF_VERSION": "6.1.0",
+        "IDF_PATH": "C:/esp/v6.1/esp-idf",
+        "IDF_TOOLS_PATH": "C:/Users/newsh/.espressif",
+        "IDF_PYTHON_ENV_PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env",
+        "IDF_COMPONENT_CHECK_NEW_VERSION": "0",
+        "IDF_COMPONENT_MANAGER": "0",
+        "ESP_ROM_ELF_DIR": "C:/Users/newsh/.espressif/tools/esp-rom-elfs/20241011",
+        "PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts;C:/Espressif/tools/cmake/4.0.3/bin;C:/Espressif/tools/ninja/1.12.1;C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin;C:\\Users\\newsh\\.codex\\tmp\\arg0-windows\\codex-arg0HWSMWY;C:\\Users\\newsh\\AppData\\Roaming\\Code\\agent-host\\sdk-cache\\codex\\0.163.0\\win32-x64\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\codex-path;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\newsh\\.espressif\\eim_gui;C:\\Users\\newsh\\.local\\bin;C:\\Users\\newsh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\newsh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\newsh\\AppData\\Local\\Python\\bin"
+      },
+      "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build_20261106T002706Z.log",
+      "ended_utc": "2026-11-06T00:27:39.163563+00:00",
+      "exit_code": 2
+    },
+    {
+      "started_utc": "2026-11-06T00:28:18.689997+00:00",
+      "command": [
+        "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+        "C:/esp/v6.1/esp-idf/tools/idf.py",
+        "-B",
+        "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+        "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\sdkconfig",
+        "-DDEMO_TRANSPORT=QUIC",
+        "-DDEMO_WIFI_PS_NONE=ON",
+        "-DCCACHE_ENABLE=False",
+        "build"
+      ],
+      "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\src",
+      "environment": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ESP_IDF_VERSION": "6.1.0",
+        "IDF_PATH": "C:/esp/v6.1/esp-idf",
+        "IDF_TOOLS_PATH": "C:/Users/newsh/.espressif",
+        "IDF_PYTHON_ENV_PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env",
+        "IDF_COMPONENT_CHECK_NEW_VERSION": "0",
+        "IDF_COMPONENT_MANAGER": "0",
+        "ESP_ROM_ELF_DIR": "C:/Users/newsh/.espressif/tools/esp-rom-elfs/20241011",
+        "PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts;C:/Espressif/tools/cmake/4.0.3/bin;C:/Espressif/tools/ninja/1.12.1;C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin;C:\\Users\\newsh\\.codex\\tmp\\arg0-windows\\codex-arg0HWSMWY;C:\\Users\\newsh\\AppData\\Roaming\\Code\\agent-host\\sdk-cache\\codex\\0.163.0\\win32-x64\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\codex-path;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\newsh\\.espressif\\eim_gui;C:\\Users\\newsh\\.local\\bin;C:\\Users\\newsh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\newsh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\newsh\\AppData\\Local\\Python\\bin"
+      },
+      "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build_20261106T002818Z.log",
+      "ended_utc": "2026-11-06T00:34:45.444327+00:00",
+      "exit_code": 0
+    },
+    {
+      "started_utc": "2026-11-06T00:35:39.731277+00:00",
+      "command": [
+        "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+        "C:/esp/v6.1/esp-idf/tools/idf.py",
+        "-B",
+        "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+        "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\sdkconfig",
+        "-DDEMO_TRANSPORT=QUIC",
+        "-DDEMO_WIFI_PS_NONE=ON",
+        "-DCCACHE_ENABLE=False",
+        "build"
+      ],
+      "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\src",
+      "environment": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ESP_IDF_VERSION": "6.1.0",
+        "IDF_PATH": "C:/esp/v6.1/esp-idf",
+        "IDF_TOOLS_PATH": "C:/Users/newsh/.espressif",
+        "IDF_PYTHON_ENV_PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env",
+        "IDF_COMPONENT_CHECK_NEW_VERSION": "0",
+        "IDF_COMPONENT_MANAGER": "0",
+        "ESP_ROM_ELF_DIR": "C:/Users/newsh/.espressif/tools/esp-rom-elfs/20241011",
+        "PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts;C:/Espressif/tools/cmake/4.0.3/bin;C:/Espressif/tools/ninja/1.12.1;C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin;C:\\Users\\newsh\\.codex\\tmp\\arg0-windows\\codex-arg0HWSMWY;C:\\Users\\newsh\\AppData\\Roaming\\Code\\agent-host\\sdk-cache\\codex\\0.163.0\\win32-x64\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\codex-path;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\newsh\\.espressif\\eim_gui;C:\\Users\\newsh\\.local\\bin;C:\\Users\\newsh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\newsh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\newsh\\AppData\\Local\\Python\\bin"
+      },
+      "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build_20261106T003539Z.log",
+      "ended_utc": "2026-11-06T00:36:21.003180+00:00",
+      "exit_code": 0
+    }
+  ],
+  "effective_config_diff": {
+    "ESP_COREDUMP_CAPTURE_DRAM": {
+      "formal": null,
+      "test_only": true
+    },
+    "ESP_COREDUMP_DECODE": {
+      "formal": null,
+      "test_only": "disable"
+    },
+    "ESP_COREDUMP_DECODE_DISABLE": {
+      "formal": null,
+      "test_only": true
+    },
+    "ESP_COREDUMP_DECODE_INFO": {
+      "formal": null,
+      "test_only": false
+    },
+    "ESP_COREDUMP_ENABLE": {
+      "formal": null,
+      "test_only": true
+    },
+    "ESP_COREDUMP_ENABLE_TO_NONE": {
+      "formal": true,
+      "test_only": false
+    },
+    "ESP_COREDUMP_ENABLE_TO_UART": {
+      "formal": false,
+      "test_only": true
+    },
+    "ESP_COREDUMP_LOGS": {
+      "formal": null,
+      "test_only": true
+    },
+    "ESP_COREDUMP_MAX_TASKS_NUM": {
+      "formal": null,
+      "test_only": 64
+    },
+    "ESP_COREDUMP_STACK_SIZE": {
+      "formal": null,
+      "test_only": 2048
+    },
+    "ESP_COREDUMP_UART_DELAY": {
+      "formal": null,
+      "test_only": 0
+    },
+    "FREERTOS_ISR_STACKSIZE": {
+      "formal": 1536,
+      "test_only": 2096
+    }
+  },
+  "source_changes": [
+    {
+      "path": "CMakeLists.txt",
+      "baseline_sha256": "aa822085a9411c18f24b717398de7c5dafa6b5d7395a867a3bf519c0f8990c07",
+      "test_only_sha256": "081cafad065b401f736028408bbc4e40cbb52a4df283e83359391cf44223b7c3"
+    },
+    {
+      "path": "components/ngtcp2/CMakeLists.txt",
+      "baseline_sha256": "6b5cbce83c88ba8d714029ffd3253bf05d57cb76e3d268f732e7d37219eb0fd7",
+      "test_only_sha256": "590eb74a672104fe85b2b8447d6f38aa167745e9396db6314b0a08eb19dad8a9"
+    },
+    {
+      "path": "components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c",
+      "baseline_sha256": "b403178f90077e51b435742ac7220b41fd3c5f90a6761e8bc74af2b2420f1c8a",
+      "test_only_sha256": "1871ff6b23e864de4c3678d754fd5017753aa47b2707d6eea1a4b37f1d173abb"
+    },
+    {
+      "path": "components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c",
+      "baseline_sha256": "1b674e9cfc0ccfe51c1c65f4564c683ae0b5a656ab7c1fd959714cc549ad0d45",
+      "test_only_sha256": "460171823a2b9e56f342be52bd18cce2088802f6b1fb0fa426a6d97a436c4632"
+    },
+    {
+      "path": "components/test_only_heap_diag/CMakeLists.txt",
+      "baseline_sha256": null,
+      "test_only_sha256": "87459636804176f2d9e0eb87b650f3ce3aa56e05690746dcb342c451d3cd956d"
+    },
+    {
+      "path": "components/test_only_heap_diag/include/test_only_heap_diag.h",
+      "baseline_sha256": null,
+      "test_only_sha256": "5119464a45b76228efca2b9ff793bcaf035fccaf9f945dc60104223943fade85"
+    },
+    {
+      "path": "components/test_only_heap_diag/test_only_heap_diag.c",
+      "baseline_sha256": null,
+      "test_only_sha256": "6d865e1e212ce749388d0a95e445175e690240619e9e82d8e1dcb9fae64c01e6"
+    },
+    {
+      "path": "main/CMakeLists.txt",
+      "baseline_sha256": "c54c272b8c3659029669784d18afeafbf724153b717757eaca8b0ab63883f94e",
+      "test_only_sha256": "588c059e39551b2e951ce558acbe77ddacbf0a82d93a084c4436f3729dac4cbc"
+    },
+    {
+      "path": "main/ngtcp2_sample.c",
+      "baseline_sha256": "3692754583ed820597f8cb6a3aacb18a35a3859f999a2bd541427de7cf02baf0",
+      "test_only_sha256": "ea64aaa11442152b0d560ac2aeab116ba327edd47f5af2c62408067bb6c02324"
+    },
+    {
+      "path": "main/quic_demo_main.c",
+      "baseline_sha256": "675943c1eeff79b8fe25e5fb25a8f969c358dd7216c9ae89722172f08e391fcb",
+      "test_only_sha256": "f125edf1077699fe9d38b80ceb3036f0eeadcbbb1e7f774a6ca984e96bef1798"
+    },
+    {
+      "path": "managed_components/esp-idf-lib__dht/CMakeLists.txt",
+      "baseline_sha256": "b9819a1c83aa85463b5bb51fee7090737df66aaf561ec1d70ca787c701decbc7",
+      "test_only_sha256": "8bcc59bfa8d2f27f43367f759925487e9ff862290c58fb5f8d5c9bed23472dcb"
+    }
+  ],
+  "trace_symbols": {
+    "g_test_only_heap_control": {
+      "address": 1082232364,
+      "bytes": 24
+    },
+    "g_test_only_heap_trace": {
+      "address": 1082261608,
+      "bytes": 9216
+    }
+  },
+  "trace_ram_bytes": 9240,
+  "trace_hook_check": "Compiled disassembly contains no allocation/free/logging/delay/semaphore-take calls; word atomics required lock-free by static assert. Real allocator executes outside trace producer.",
+  "private_project_compile_paths_verified": true,
+  "app_defines_verified": true,
+  "host_validation": "PASS_SYNTHETIC_ONLY",
+  "recovery_gdb": "C:/Espressif/tools/riscv32-esp-elf-gdb/17.1_20260402/riscv32-esp-elf-gdb/bin/riscv32-esp-elf-gdb.exe",
+  "hardware_test": "NOT_PERFORMED",
+  "formal_run_register_update": false
+}

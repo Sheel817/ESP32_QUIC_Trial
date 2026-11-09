@@ -1,0 +1,107 @@
+{
+  "serial": {
+    "bytes": 47804,
+    "lines": 580,
+    "first_receipt": {
+      "utc": "2026-11-04T12:17:27.290450+00:00",
+      "monotonic": 548958.5073336,
+      "offset": 0,
+      "length": 46,
+      "monitor_stream_offset": 6971
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T12:54:24.420768+00:00",
+      "monotonic": 551175.6376584,
+      "offset": 47720,
+      "length": 84,
+      "monitor_stream_offset": 54691
+    },
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "sha256": "5187aadaf3a56ddc3d7f5bcf07d616a3e7d8c9b3f20d2a19d640e4f2ef9075a1"
+  },
+  "stdout": {
+    "bytes": 75696,
+    "lines": 885,
+    "first_receipt": {
+      "utc": "2026-11-04T12:17:33.657102+00:00",
+      "monotonic": 548964.8736525,
+      "source_offset": 63395,
+      "offset": 0,
+      "length": 97
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T12:54:24.239667+00:00",
+      "monotonic": 551175.4565478,
+      "source_offset": 139055,
+      "offset": 75660,
+      "length": 36
+    },
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "sha256": "12f00e8101e00d6f2d9a7fbd461d363eaf2d69a5007344e759e7f406e45a3373",
+    "source_boundary": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+      "start_byte": 63395,
+      "end_byte": 139091,
+      "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+      "tail_closed_utc": "2026-11-04T12:54:27.280355+00:00"
+    }
+  },
+  "stderr": {
+    "bytes": 17,
+    "lines": 1,
+    "first_receipt": {
+      "utc": "2026-11-04T12:18:22.468737+00:00",
+      "monotonic": 549013.6851668,
+      "source_offset": 51,
+      "offset": 0,
+      "length": 17
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T12:18:22.468737+00:00",
+      "monotonic": 549013.6851668,
+      "source_offset": 51,
+      "offset": 0,
+      "length": 17
+    },
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "sha256": "766a02761204fd67ae2e4b29c736a459c46a0a23b8eaab7169e4da1239c44810",
+    "source_boundary": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+      "start_byte": 51,
+      "end_byte": 68,
+      "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+      "tail_closed_utc": "2026-11-04T12:54:27.280488+00:00"
+    }
+  },
+  "sensor_csv": {
+    "bytes": 40689,
+    "lines": 441,
+    "first_receipt": {
+      "utc": "2026-11-04T12:17:39.859144+00:00",
+      "monotonic": 548971.0757258,
+      "source_offset": 33644,
+      "offset": 0,
+      "length": 89
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T12:54:24.239400+00:00",
+      "monotonic": 551175.4562651,
+      "source_offset": 74240,
+      "offset": 40596,
+      "length": 93
+    },
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "sha256": "31896b2e07a129b2c0e1ba47d28ca8d2873b84d9efc0cdf5d157de00942df98b",
+    "source_boundary": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+      "start_byte": 33644,
+      "end_byte": 74333,
+      "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+      "tail_closed_utc": "2026-11-04T12:54:27.280571+00:00"
+    }
+  }
+}

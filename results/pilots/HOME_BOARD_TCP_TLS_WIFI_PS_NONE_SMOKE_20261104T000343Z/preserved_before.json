@@ -1,0 +1,26 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\quic_demo.bin",
+        "Hash":  "9FA08B1992F666747739799905AEFFD9B79317607041E3C29446FAE48C929323"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\quic_demo.elf",
+        "Hash":  "4D62AEF77A0D99D020416535822B3DC128A4404A54021CC4C69636E3B850845D"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+        "Hash":  "6C20B3DBF72D6859997A70C39F27AE0DD42791437A98C9ABA93D8C017BFCE198"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+        "Hash":  "9B23E164F8D6FD4702450B687C76EF3FA8CED802945DC23DD2F4D102C35C0F3D"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv",
+        "Hash":  "59BB3306B1A8EAA7DEED443E175E4ECF46800854289C9EE6058B425E13D8B33E"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx",
+        "Hash":  "461BF940619D96833E37F9804A6E059A1D06EF119D722C5C2788EE704E2B6FEE"
+    }
+]

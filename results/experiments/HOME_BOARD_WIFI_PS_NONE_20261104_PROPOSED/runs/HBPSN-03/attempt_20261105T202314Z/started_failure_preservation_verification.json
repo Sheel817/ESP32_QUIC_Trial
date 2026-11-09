@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-11-05T20:27:59.208721+00:00",
+  "csv_other17_rows_byte_identical": true,
+  "xlsx_other17_rows_values_formulas_identical": true,
+  "earlier_original_run_files_unchanged": true,
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "csv_sha256": "656b5c6a71cbe783c66b9fe14f74551776e09522a7354ab9b385fb1baa908aae",
+  "xlsx_sha256": "63980c1b51d42099f00867e52a48dec17d91c53eb4dc8d8e32e1f12f936d78ea",
+  "pre_reset_image_sha256": "d7160775348935c00b0d1427640058b479a89f51bea75158549caaad15922c79",
+  "collector_sha256": "381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a",
+  "raw_log_prefix_at_check": {
+    "bytes": 35133,
+    "sha256": "56778f554d602a64efe66b571676cd6a150ae50c10c1b77f3a25feea2ac2406e",
+    "note": "Snapshot only; raw recording still open to original fixed deadline."
+  }
+}

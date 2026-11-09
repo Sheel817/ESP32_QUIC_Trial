@@ -1,0 +1,34 @@
+{
+  "run_id": "HBPSN-02",
+  "evidence_type": "ACTUAL_POST_RECORDING_IMAGE",
+  "capture_started_utc": "2026-11-04T13:12:42.221Z",
+  "capture_completed_utc": "2026-11-04T13:12:42.694Z",
+  "saved_utc": "2026-11-04T13:12:55.148Z",
+  "image_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/post_recording_evidence_20261104T131242221Z/HBPSN-02_Clumsy_POST_RECORDING.jpg",
+  "image_bytes": 43856,
+  "sha256": "7bc9f9b58ecd6adb835907f52cc500045181a4ce8c9f3f2d308d78b960fd553b",
+  "source": "Actual computer-use screenshot API; visually inspected; first task action before analysis or any settings changes",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_stability_confirmation": "PENDING; no inference from matching screenshots",
+  "validity_status": "NOT_APPROVED / PENDING_EVIDENCE_REVIEW",
+  "settings_changed_by_agent": false,
+  "limitations": "Actual capture time retained; not backdated to deadline. Does not prove continuous stability between pre/post images or operator actions before this request."
+}

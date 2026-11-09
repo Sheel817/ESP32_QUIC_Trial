@@ -1,0 +1,41 @@
+{
+  "run_id": "HBPSN-02",
+  "transport": "TCP_TLS",
+  "condition": "LAG100_OUT",
+  "board": "HOME_BOARD",
+  "wifi_ps_mode": "WIFI_PS_NONE",
+  "run_status": "NOT_RUN",
+  "evidence_type": "ACTUAL_PRE_RESET_SCREENSHOT",
+  "capture_started_utc": "2026-11-04T11:59:26.536Z",
+  "capture_completed_utc": "2026-11-04T11:59:26.994Z",
+  "saved_utc": "2026-11-04T11:59:45.025Z",
+  "image_path": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/preflights/HBPSN02_PRE_RESET_20261104T115926536Z/HBPSN-02_Clumsy_PRE_RESET.jpg",
+  "image_bytes": 43956,
+  "image_sha256": "7c376f1aeab829828f5687cc3fe2d00cf379315b847bf4e260108e817a453517",
+  "source": "Actual computer-use screenshot API; visually inspected screenshot, not merely a request",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING (Stop button and Started filtering status)",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "frozen_plan_comparison": "PASS_FOR_VISIBLE_SETTINGS_AT_CAPTURE",
+  "operator_stability_confirmation": "NOT_YET_OBTAINED",
+  "final_validity": "NOT_APPROVED; pending post-recording screenshot and operator confirmation review",
+  "limitations": "Point-in-time pre-reset evidence only; no measured reset or timer started. No claim of future continuous stability or per-packet impairment. Recheck/capture again if settings change before a later authorized reset.",
+  "actions": "No filter/effect changes, firmware operation, reset or recording performed",
+  "image_format": "JPEG; original screenshot bytes preserved without conversion"
+}

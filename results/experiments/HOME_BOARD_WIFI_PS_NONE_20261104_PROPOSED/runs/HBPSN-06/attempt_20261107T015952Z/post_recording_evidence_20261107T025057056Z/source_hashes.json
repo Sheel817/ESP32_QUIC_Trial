@@ -1,0 +1,72 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\serial.raw.log",
+    "bytes": 47598,
+    "sha256": "5f99603913385633b0dfed39f547be6b7fcbce9aa9d053586bfff375341f29fe"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\serial_receipts.jsonl",
+    "bytes": 79297,
+    "sha256": "8c821da3330e4159ac26a59e6bf65b295370d7b74cc3babbd3206147fee144e4"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\all_rtts.csv",
+    "bytes": 97971,
+    "sha256": "e2a0a44b01215cd74c2e770b08e1bb8123f19c3a393b3092e329380489734685"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\eligible_rtts.csv",
+    "bytes": 95814,
+    "sha256": "376127c304d9d3fe3556393e9956d12c0256460babef7004cffe030e2a264976"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\selected_first_415.csv",
+    "bytes": 92240,
+    "sha256": "f8c24d7e0956e4932bf8c689661e675185585eed9c7441ca89e61aace7a3fac5"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\excluded_rtts.csv",
+    "bytes": 2521,
+    "sha256": "807e6467dcab8f8fc9c0a1cf685766c1b692fcc769cbc64824eb2c118f7b8f3d"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\server.stdout.raw.log",
+    "bytes": 75696,
+    "sha256": "a135de58337a2266311d59a12174ffe9569bd77efd645848f7d5a251dc9862b4"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\server.stderr.raw.log",
+    "bytes": 17,
+    "sha256": "766a02761204fd67ae2e4b29c736a459c46a0a23b8eaab7169e4da1239c44810"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\server.stderr.receipts.jsonl",
+    "bytes": 123,
+    "sha256": "5571d4ef7428df869fe1d918f32e1e00a0bb90ede2edebfebf7af505497fa68b"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\server.sensor_csv.raw.log",
+    "bytes": 40689,
+    "sha256": "a446ee818d90a628e404e0b58fc5446ef38422b8a7b3e09af8cc348351ee09e2"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\statistics.json",
+    "bytes": 16500,
+    "sha256": "7cab05c7768243550d087241fba7b50f46d5679c31867dd35be4bb28d778696d"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\reset_event.json",
+    "bytes": 1031,
+    "sha256": "d7b1b5abe4d465e4668ae79721693c7913bc1089e18bed04b5c56942912e4bbb"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\FINALIZED.json",
+    "bytes": 534,
+    "sha256": "3113c772c32d6e5b0152dee13f6a22087b4dfb1fd1682e30e640a9ca2c08c444"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\SHA256SUMS.json",
+    "bytes": 11995,
+    "sha256": "7304cdfb2cd21eaea11c8a6ce21727457d6cf6d8a87b40a92da6af22f35c5cd0"
+  }
+]

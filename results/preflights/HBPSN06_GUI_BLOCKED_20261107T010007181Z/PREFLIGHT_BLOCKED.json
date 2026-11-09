@@ -1,0 +1,50 @@
+{
+  "run_id": "HBPSN-06",
+  "transport": "TCP_TLS",
+  "condition": "DROP1_OUT",
+  "status": "NOT_RUN",
+  "both_registers_verified": true,
+  "no_formal_collection_active": true,
+  "last_formal_collector": "HBPSN-05 finalized; only after-run monitor remains",
+  "capture_started_utc": "2026-11-07T01:00:07.181Z",
+  "capture_completed_utc": "2026-11-07T01:00:07.417Z",
+  "image": "clumsy_actual_blocked.jpg",
+  "sha256": "6bf24924fd3c2db90dfa9e38c491b054cab1f73b32259d6e0cbede25d97ad4a9",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "Drop": {
+      "enabled": false,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    }
+  },
+  "required": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "all_other_main_effects_disabled": true
+  },
+  "blocker": "Higher-integrity Clumsy window exposes limited accessibility. One Stop click had no visible effect across two observations; no settings changed. Manual configuration required; no bypass or app restart attempted.",
+  "serial_handover": false,
+  "board_opened": false,
+  "flash": false,
+  "reset": false,
+  "collector_started": false,
+  "registers_modified": false,
+  "hotspot_server_readiness": "Not revalidated yet; must check after required GUI setting matches",
+  "earlier_outcomes_preserved": true,
+  "unresolved_quic_crash_preserved": true
+}

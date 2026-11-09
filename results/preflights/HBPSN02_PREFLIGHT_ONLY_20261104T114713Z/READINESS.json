@@ -1,0 +1,14 @@
+{
+  "run_id": "HBPSN-02",
+  "phase": "PREFLIGHT_ONLY",
+  "image": "PASS",
+  "server": "PASS",
+  "clumsy": "MISMATCH_NOT_CHANGED",
+  "overall": "NOT_READY_TO_START",
+  "recording_started": false,
+  "register_status": "NOT_RUN",
+  "final_validity": "NOT_APPROVED",
+  "actual_pre_reset_screenshot": "REQUIRED_AT_LATER_AUTHORIZED_START",
+  "post_screenshot_and_operator_review": "REQUIRED",
+  "protected_originals_unchanged": true
+}

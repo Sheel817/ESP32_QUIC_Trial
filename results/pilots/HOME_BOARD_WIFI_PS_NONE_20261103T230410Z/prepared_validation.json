@@ -1,0 +1,20 @@
+{
+  "profile": "NEW EXPERIMENTAL - Wi-Fi power saving disabled; built only, NOT FLASHED",
+  "option": "DEMO_WIFI_PS_NONE=ON",
+  "default": "OFF",
+  "transport": "QUIC",
+  "image": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+  "image_bytes": 1637280,
+  "image_sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+  "app_partition_bytes": 1740800,
+  "partition_free_bytes": 103520,
+  "build_result": "PASS",
+  "partition_check": "PASS",
+  "original_build_files_verified": 6198,
+  "original_build_changed": [],
+  "original_build_added": [],
+  "unexpected_source_or_dependency_changes": [],
+  "dependency_upgrades": false,
+  "preservation": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Checkpoints\\pre_wifi_ps_none_20261103T162643Z",
+  "runtime_verified": false
+}

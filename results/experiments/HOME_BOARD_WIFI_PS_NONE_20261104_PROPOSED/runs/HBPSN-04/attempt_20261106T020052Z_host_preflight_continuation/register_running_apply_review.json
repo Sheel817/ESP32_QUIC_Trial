@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-06T02:03:04.447151+00:00",
+  "run_id": "HBPSN-04",
+  "patch": {
+    "status": "RUNNING",
+    "preflight_status": "PASS",
+    "startup_status": "PASS",
+    "settings_evidence_type": "actual_GUI_pre_reset_image; post-image and operator stability review pending",
+    "boot_session_id": "HBPSN-04/2026-11-06T02:01:38.681783+00:00",
+    "reset_release_utc": "2026-11-06T02:01:38.681783+00:00",
+    "recording_end_utc": "2026-11-06T02:38:38.681783+00:00",
+    "actual_assigned_ip": "192.168.137.112",
+    "metadata_path": "runs/HBPSN-04/attempt_20261106T020052Z_host_preflight_continuation/metadata.json",
+    "raw_serial_path": "runs/HBPSN-04/attempt_20261106T020052Z_host_preflight_continuation/serial.raw.log",
+    "deviation_reason": "Validity NOT_APPROVED; actual post-recording screenshot and operator confirmation await manual review. Windows listener reporting discrepancy retained; functional host TLS probes passed. Earlier probe errors excluded by measured-start byte boundaries. QUIC crash unresolved."
+  },
+  "only_row4_csv_row5_xlsx_changes": true,
+  "validity": "NOT_APPROVED",
+  "earlier_run_files_unchanged": true
+}

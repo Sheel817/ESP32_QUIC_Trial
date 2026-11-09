@@ -1,0 +1,11 @@
+{
+  "run_id": "HBPSN-07",
+  "transport": "TCP_TLS",
+  "condition": "DROP1_OUT",
+  "boot_replicate": 2,
+  "recorded_utc": "2026-11-08T14:16:45.926957+00:00",
+  "question": "For HBPSN-07 specifically, did filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568) and Drop 1.0% outbound-only remain running and stable throughout the 37-minute window (2026-11-07 05:09:19 to 05:46:19 Helsinki) without Stop/Start, effect changes, or restart? Please provide your run-specific confirmation and post-run screenshot if available.",
+  "exact_answer": null,
+  "receipt_utc": null,
+  "status": "AWAITING_NEW_HBPSN07_SPECIFIC_REPLY"
+}

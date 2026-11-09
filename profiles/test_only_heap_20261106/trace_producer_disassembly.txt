@@ -1,0 +1,80 @@
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\build\quic_demo.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .iram0.text:
+
+Disassembly of section .flash.text:
+
+42094bba <test_only_heap_trace>:
+42094bba:	7179                	addi	sp,sp,-48
+42094bbc:	d606                	sw	ra,44(sp)
+42094bbe:	d422                	sw	s0,40(sp)
+42094bc0:	d226                	sw	s1,36(sp)
+42094bc2:	d04a                	sw	s2,32(sp)
+42094bc4:	ce4e                	sw	s3,28(sp)
+42094bc6:	cc52                	sw	s4,24(sp)
+42094bc8:	ca56                	sw	s5,20(sp)
+42094bca:	c85a                	sw	s6,16(sp)
+42094bcc:	c65e                	sw	s7,12(sp)
+42094bce:	c462                	sw	s8,8(sp)
+42094bd0:	89ae                	mv	s3,a1
+42094bd2:	8a32                	mv	s4,a2
+42094bd4:	8ab6                	mv	s5,a3
+42094bd6:	09c18793          	addi	a5,gp,156 # 40818e40 <g_test_only_heap_control+0x14>
+42094bda:	439c                	lw	a5,0(a5)
+42094bdc:	cf89                	beqz	a5,42094bf6 <test_only_heap_trace+0x3c>
+42094bde:	50b2                	lw	ra,44(sp)
+42094be0:	5422                	lw	s0,40(sp)
+42094be2:	5492                	lw	s1,36(sp)
+42094be4:	5902                	lw	s2,32(sp)
+42094be6:	49f2                	lw	s3,28(sp)
+42094be8:	4a62                	lw	s4,24(sp)
+42094bea:	4ad2                	lw	s5,20(sp)
+42094bec:	4b42                	lw	s6,16(sp)
+42094bee:	4bb2                	lw	s7,12(sp)
+42094bf0:	4c22                	lw	s8,8(sp)
+42094bf2:	6145                	addi	sp,sp,48
+42094bf4:	8082                	ret
+42094bf6:	4705                	li	a4,1
+42094bf8:	09418793          	addi	a5,gp,148 # 40818e38 <g_test_only_heap_control+0xc>
+42094bfc:	00e7a92f          	amoadd.w	s2,a4,(a5)
+42094c00:	993a                	add	s2,s2,a4
+42094c02:	fff90493          	addi	s1,s2,-1
+42094c06:	0ff4f493          	zext.b	s1,s1
+42094c0a:	00349793          	slli	a5,s1,0x3
+42094c0e:	97a6                	add	a5,a5,s1
+42094c10:	078a                	slli	a5,a5,0x2
+42094c12:	408206b7          	lui	a3,0x40820
+42094c16:	06868693          	addi	a3,a3,104 # 40820068 <g_test_only_heap_trace>
+42094c1a:	97b6                	add	a5,a5,a3
+42094c1c:	8b3e                	mv	s6,a5
+42094c1e:	0ce7a72f          	amoswap.w.aq	a4,a4,(a5)
+42094c22:	eb29                	bnez	a4,42094c74 <test_only_heap_trace+0xba>
+42094c24:	00349793          	slli	a5,s1,0x3
+42094c28:	00978433          	add	s0,a5,s1
+42094c2c:	040a                	slli	s0,s0,0x2
+42094c2e:	408207b7          	lui	a5,0x40820
+42094c32:	06878793          	addi	a5,a5,104 # 40820068 <g_test_only_heap_trace>
+42094c36:	943e                	add	s0,s0,a5
+42094c38:	00440793          	addi	a5,s0,4
+42094c3c:	0007a023          	sw	zero,0(a5)
+42094c40:	01242423          	sw	s2,8(s0)
+42094c44:	7e2027f3          	csrr	a5,0x7e2
+42094c48:	c45c                	sw	a5,12(s0)
+42094c4a:	c808                	sw	a0,16(s0)
+42094c4c:	4ba9e0ef          	jal	42133106 <xTaskGetCurrentTaskHandle>
+42094c50:	c848                	sw	a0,20(s0)
+42094c52:	01342c23          	sw	s3,24(s0)
+42094c56:	01442e23          	sw	s4,28(s0)
+42094c5a:	03542023          	sw	s5,32(s0)
+42094c5e:	00440793          	addi	a5,s0,4
+42094c62:	0310000f          	fence	rw,w
+42094c66:	0127a023          	sw	s2,0(a5)
+42094c6a:	0310000f          	fence	rw,w
+42094c6e:	000b2023          	sw	zero,0(s6)
+42094c72:	b7b5                	j	42094bde <test_only_heap_trace+0x24>
+42094c74:	4705                	li	a4,1
+42094c76:	09818793          	addi	a5,gp,152 # 40818e3c <g_test_only_heap_control+0x10>
+42094c7a:	00e7a02f          	amoadd.w	zero,a4,(a5)
+42094c7e:	b785                	j	42094bde <test_only_heap_trace+0x24>

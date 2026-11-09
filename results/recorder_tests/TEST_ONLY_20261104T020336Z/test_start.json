@@ -1,0 +1,9 @@
+{
+  "test_only": true,
+  "source": "synthetic records only; no ESP reset",
+  "reset_release_monotonic": 512150.3278662,
+  "deadline_monotonic": 512210.3278662,
+  "reset_release_utc": "2026-11-04T02:03:59.111116+00:00",
+  "deadline_utc": "2026-11-04T02:04:59.111116+00:00",
+  "duration_seconds": 60
+}

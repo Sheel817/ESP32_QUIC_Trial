@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-07T03:08:04.270519+00:00",
+  "old_collector_pid": 16072,
+  "monitor_pids": [
+    7680,
+    16988
+  ],
+  "method": "Verified completed HBPSN-06 monitor exit via collector channel"
+}

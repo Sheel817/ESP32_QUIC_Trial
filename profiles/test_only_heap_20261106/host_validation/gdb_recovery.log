@@ -1,0 +1,6 @@
+#0  <unavailable> in ?? ()
+TEST_ONLY TRACE_RAW_SAVED next=258 dropped=1 frozen=1
+
+warning: Couldn't find general-purpose registers in core file.
+
+warning: Couldn't find general-purpose registers in core file.

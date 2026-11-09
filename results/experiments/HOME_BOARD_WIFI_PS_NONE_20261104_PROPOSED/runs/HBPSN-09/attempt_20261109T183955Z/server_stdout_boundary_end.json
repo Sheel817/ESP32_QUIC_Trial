@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+  "start_byte": 6098636,
+  "end_byte": 6174332,
+  "deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+  "tail_closed_utc": "2026-11-09T19:35:06.269498+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "label": "HOME_BOARD experimental WIFI_PS_NONE firmware; Clumsy stopped",
+  "started_utc": "2026-11-03T23:06:03.623087+00:00",
+  "wrapper_pid": 21752,
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "esp_idf_monitor",
+    "--port",
+    "COM6",
+    "--baud",
+    "115200",
+    "--target",
+    "esp32c6",
+    "--no-reset",
+    "--disable-auto-color",
+    "--timestamps",
+    "--timestamp-format",
+    "%Y-%m-%dT%H:%M:%S%z",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf"
+  ],
+  "clumsy_evidence": "UI observed Start button and Stopped status; Lag unchecked before startup",
+  "monitor_pid": 34232,
+  "controlled_reset_requested_utc": "2026-11-03T23:06:05.634316+00:00",
+  "ended_utc": "2026-11-04T00:04:35.557720+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,19 @@
+{
+  "name": "after_netstat",
+  "argv": [
+    "C:\\WINDOWS/System32/netstat.exe",
+    "-ano",
+    "-p",
+    "TCP"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:48:04.424837+00:00",
+  "ended_utc": "2026-11-06T01:48:04.465569+00:00",
+  "elapsed_seconds": 0.04073120001703501,
+  "exit_code": 0,
+  "stdout_bytes": 15203,
+  "stderr_bytes": 0,
+  "stdout_sha256": "97bc365f71fdf8cf4d8fd362f47bb8a9c27a93835d53c32b4dbd8181aa3a3d85",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exception": null
+}

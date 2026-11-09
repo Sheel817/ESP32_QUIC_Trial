@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-06T00:52:21.666926+00:00",
+  "pid": 32104,
+  "port": "COM6",
+  "baud": 115200,
+  "dtr": false,
+  "rts": true,
+  "EN": "held low before release",
+  "raw_logger": "Byte-exact pyserial; no addr2line/core decoding; no post-open input flush",
+  "driver_open_clear": "pyserial Windows purges buffers at open while application reset held; first application startup follows later explicit release"
+}

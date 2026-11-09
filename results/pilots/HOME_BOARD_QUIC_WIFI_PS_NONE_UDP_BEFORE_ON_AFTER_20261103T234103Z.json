@@ -1,0 +1,185 @@
+{
+  "label": "QUIC HOME_BOARD WIFI_PS_NONE UDP capture before/on/after pilot",
+  "statistics": [
+    {
+      "stage": "Before",
+      "records": 10,
+      "first_seq": 273,
+      "last_seq": 282,
+      "mean_ms": 66.263,
+      "minimum_ms": 25.436,
+      "maximum_ms": 105.885,
+      "sequence_gaps": 0,
+      "connection_error_or_reboot_lines": 0,
+      "warning_error_lines": 0,
+      "boundary_utc": "2026-11-03T23:28:58.8003037Z",
+      "boundary_byte_offset": 40928,
+      "wait_started_utc": "",
+      "requested_wait_seconds": 0,
+      "first_record_host_utc": "2026-11-03T23:29:01+00:00",
+      "last_record_host_utc": "2026-11-03T23:29:47+00:00",
+      "collection_finished_utc": "2026-11-03T23:29:47.154198+00:00",
+      "source_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.csv",
+      "csv_sha256": "323d257b39d36fd986c5372bb9e2290abf8d7c8f71c214b73ad098b47cbc215d"
+    },
+    {
+      "stage": "Lag on",
+      "records": 10,
+      "first_seq": 351,
+      "last_seq": 360,
+      "mean_ms": 187.7515,
+      "minimum_ms": 128.888,
+      "maximum_ms": 285.512,
+      "sequence_gaps": 0,
+      "connection_error_or_reboot_lines": 0,
+      "warning_error_lines": 0,
+      "boundary_utc": "2026-11-03T23:35:32.443135+00:00",
+      "boundary_byte_offset": 47435,
+      "wait_started_utc": "2026-11-03T23:34:32.441871+00:00",
+      "requested_wait_seconds": 60,
+      "first_record_host_utc": "2026-11-03T23:35:32+00:00",
+      "last_record_host_utc": "2026-11-03T23:36:17+00:00",
+      "collection_finished_utc": "2026-11-03T23:36:17.931688+00:00",
+      "source_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_LAG100_OUTBOUND_20261103T233432Z.csv",
+      "csv_sha256": "f1f0f9680f4f13d5fb6bd3483fea29a14a358dd800e84c2afe7660cd84d09f8c"
+    },
+    {
+      "stage": "After",
+      "records": 10,
+      "first_seq": 431,
+      "last_seq": 440,
+      "mean_ms": 65.6854,
+      "minimum_ms": 25.383,
+      "maximum_ms": 108.267,
+      "sequence_gaps": 0,
+      "connection_error_or_reboot_lines": 0,
+      "warning_error_lines": 0,
+      "boundary_utc": "2026-11-03T23:42:12.729391+00:00",
+      "boundary_byte_offset": 54141,
+      "wait_started_utc": "2026-11-03T23:41:12.728064+00:00",
+      "requested_wait_seconds": 60,
+      "first_record_host_utc": "2026-11-03T23:42:13+00:00",
+      "last_record_host_utc": "2026-11-03T23:42:58+00:00",
+      "collection_finished_utc": "2026-11-03T23:42:58.742926+00:00",
+      "source_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_RETURN_CONTROL_20261103T234103Z.csv",
+      "csv_sha256": "0c33024e8d14655b3715479101281107532a5bb898865239e3dff4811e832459"
+    }
+  ],
+  "comparison": {
+    "lag_on_minus_before_ms": 121.48849999999999,
+    "after_minus_before_ms": -0.5776000000000039,
+    "after_minus_lag_on_ms": -122.06609999999999
+  },
+  "evidence": [
+    {
+      "stage": "Before",
+      "label": "HOME_BOARD, QUIC, WIFI_PS_NONE, Clumsy UDP 14567 capture running, all effects disabled — operator-reported GUI settings.",
+      "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+      "source_prefix_bytes": 41760,
+      "source_prefix_sha256": "47f5fae580049ace825f374ba69b21b5f5a05740c38c3d4f9b2392b34a36b1c6",
+      "boundary": {
+        "source_log": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/pilots/HOME_BOARD_WIFI_PS_NONE_20261103T230410Z/HOME_BOARD_WIFI_PS_NONE_serial.log",
+        "boundary_utc": "2026-11-03T23:28:58.8003037Z",
+        "byte_offset": 40928,
+        "label": "HOME_BOARD, QUIC, WIFI_PS_NONE, Clumsy UDP 14567 capture running, all effects disabled — operator-reported GUI settings.",
+        "prefix": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/pilots/HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z"
+      },
+      "collection_finished_utc": "2026-11-03T23:29:47.154198+00:00",
+      "sequence_gaps": [],
+      "connection_error_or_reboot_lines": [],
+      "all_warning_error_lines": [],
+      "files": [
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.csv",
+          "sha256": "323d257b39d36fd986c5372bb9e2290abf8d7c8f71c214b73ad098b47cbc215d"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.raw.log",
+          "sha256": "d26c31e1b8d438c3e53940b52ea57a1d493df446bc005a71aac7ceae47b85e3e"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.json",
+          "sha256": "67ad5f43c81bf8e51b160855140bc42af98713ec5e14262fa01fc56e370e8677"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.boundary.json",
+          "sha256": "4339500d6f719082af3d73670f88ab4f26e1e3c0546b0e7c13ae94bd8cade107"
+        }
+      ]
+    },
+    {
+      "stage": "Lag on",
+      "label": "QUIC, HOME_BOARD, WIFI_PS_NONE, UDP 14567 capture, Lag 100 ms outbound only; other effects off — operator-reported settings.",
+      "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+      "source_prefix_bytes": 48275,
+      "source_prefix_sha256": "79f183c062a062127d34a8764cfec198000a34804cb669e4b7b0e658dbf33e07",
+      "boundary": {
+        "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+        "boundary_utc": "2026-11-03T23:35:32.443135+00:00",
+        "byte_offset": 47435,
+        "label": "QUIC, HOME_BOARD, WIFI_PS_NONE, UDP 14567 capture, Lag 100 ms outbound only; other effects off — operator-reported settings.",
+        "wait_started_utc": "2026-11-03T23:34:32.441871+00:00",
+        "requested_wait_seconds": 60
+      },
+      "collection_finished_utc": "2026-11-03T23:36:17.931688+00:00",
+      "sequence_gaps": [],
+      "connection_error_or_reboot_lines": [],
+      "all_warning_error_lines": [],
+      "files": [
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_LAG100_OUTBOUND_20261103T233432Z.csv",
+          "sha256": "f1f0f9680f4f13d5fb6bd3483fea29a14a358dd800e84c2afe7660cd84d09f8c"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_LAG100_OUTBOUND_20261103T233432Z.raw.log",
+          "sha256": "b8108a327dfe6ec34187be19d20b8fc2198e7e489317007f0aa8c58024ff656c"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_LAG100_OUTBOUND_20261103T233432Z.json",
+          "sha256": "52e9792071fe0f908cf34e9909bf141c1794892f897ae6032e10daaaa5c39fb2"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_LAG100_OUTBOUND_20261103T233432Z.boundary.json",
+          "sha256": "e70234aded93be4577a7be2ed13e10cf02f0089ba4759b0100549602b96e40d8"
+        }
+      ]
+    },
+    {
+      "stage": "After",
+      "label": "QUIC, HOME_BOARD, WIFI_PS_NONE, UDP capture running, all effects off — operator-reported.",
+      "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+      "source_prefix_bytes": 54973,
+      "source_prefix_sha256": "08a269ceedea66b57a011c9fcd213ba2dff4077ada940224444a451782d7a2f3",
+      "boundary": {
+        "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+        "boundary_utc": "2026-11-03T23:42:12.729391+00:00",
+        "byte_offset": 54141,
+        "label": "QUIC, HOME_BOARD, WIFI_PS_NONE, UDP capture running, all effects off — operator-reported.",
+        "wait_started_utc": "2026-11-03T23:41:12.728064+00:00",
+        "requested_wait_seconds": 60
+      },
+      "collection_finished_utc": "2026-11-03T23:42:58.742926+00:00",
+      "sequence_gaps": [],
+      "connection_error_or_reboot_lines": [],
+      "all_warning_error_lines": [],
+      "files": [
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_RETURN_CONTROL_20261103T234103Z.csv",
+          "sha256": "0c33024e8d14655b3715479101281107532a5bb898865239e3dff4811e832459"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_RETURN_CONTROL_20261103T234103Z.raw.log",
+          "sha256": "9d13a39e48aeac0da8e926373b6e879b0cf3283de2558473c77841a8728492ae"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_RETURN_CONTROL_20261103T234103Z.json",
+          "sha256": "259a23de72a84e5fd4137758cefb13220167290c63099b3cdd6dc5e18070cddf"
+        },
+        {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_RETURN_CONTROL_20261103T234103Z.boundary.json",
+          "sha256": "ed87e23da2a4e993f8bcf81629233e3daf422b5eda67045becf23537e9580365"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "reset_request_utc": "2026-11-06T02:01:38.675243+00:00",
+  "reset_release_utc": "2026-11-06T02:01:38.681783+00:00",
+  "reset_release_monotonic": 684807.9978165,
+  "deadline_monotonic": 687027.9978165,
+  "deadline_utc": "2026-11-06T02:38:38.681783+00:00",
+  "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+  "boundary_precision": "Host API completion, not a physical edge measurement",
+  "server_boundaries": {
+    "stdout": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+      "byte_offset": 6092
+    },
+    "stderr": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+      "byte_offset": 160
+    },
+    "sensor_csv": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+      "byte_offset": 3073
+    }
+  }
+}

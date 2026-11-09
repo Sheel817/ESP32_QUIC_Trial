@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-06T01:58:10.927197+00:00",
+  "target_pid": 32104,
+  "parent_pid": 32072,
+  "identity_verified": true,
+  "stable_diagnostic_deliverables_verified": 26,
+  "method": "Terminate only verified completed raw logger; no exit/control channel exists. Serial handle closes outside formal measured window."
+}

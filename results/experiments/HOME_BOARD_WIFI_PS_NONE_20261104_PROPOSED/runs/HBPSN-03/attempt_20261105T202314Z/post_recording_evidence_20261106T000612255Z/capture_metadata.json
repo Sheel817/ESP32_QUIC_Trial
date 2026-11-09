@@ -1,0 +1,45 @@
+{
+  "run_id": "HBPSN-03",
+  "phase": "ACTUAL_POST_RECORDING",
+  "capture_started_utc": "2026-11-06T00:06:12.255Z",
+  "capture_completed_utc": "2026-11-06T00:06:13.102Z",
+  "saved_utc": "2026-11-06T00:06:34.204Z",
+  "screenshot": "HBPSN-03_Clumsy_POST_RECORDING.jpg",
+  "sha256": "d891db75afe0f12c476d25a0fdc86579a04e5ffe0da8c0e046b71e7d96491efc",
+  "bytes": 43956,
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "visible_match": true,
+  "inactive_displayed_values": {
+    "Lag": "100ms; inbound off/outbound on",
+    "Throttle": "30ms, Drop Throttled off,10.0%",
+    "Duplicate": "count2,10.0%",
+    "Out_of_order": "10.0%",
+    "Tamper": "Redo Checksum checked,10.0%",
+    "Set_TCP_RST": "0%",
+    "Bandwidth": "10KB/s",
+    "directions": "Other inactive effects display inbound/outbound checked"
+  },
+  "status": "FAILED_STARTUP",
+  "validity_status": "NOT_APPROVED",
+  "operator_confirmation": "AWAITING_EXACT_USER_ANSWER",
+  "note": "Actual post-deadline image acquired now; no backdating. Cannot override startup failure; automatic MISSING flag preserved."
+}

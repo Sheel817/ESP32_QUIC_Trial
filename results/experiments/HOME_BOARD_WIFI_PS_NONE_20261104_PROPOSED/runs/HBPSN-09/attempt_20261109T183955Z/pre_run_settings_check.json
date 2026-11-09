@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "6438fd532a2249588e8a841597f521ba",
+    "requested_utc": "2026-11-09T18:58:02.950533+00:00",
+    "requested_monotonic": 1004989.4827006,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": false,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "6438fd532a2249588e8a841597f521ba",
+    "screenshot": "clumsy_operator_pre_run.png",
+    "sha256": "f53e9a42c848363b650e65bface150464ad874e6f29c8093431f5f9fd499ac97",
+    "capture_started_utc": "2026-11-09T18:58:02.971833+00:00",
+    "capture_completed_utc": "2026-11-09T18:58:03.042221+00:00",
+    "capture_started_monotonic": 1004989.503975,
+    "capture_completed_monotonic": 1004989.5743714,
+    "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+    "source_type": "operator_reported",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": false,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-09 TCP_TLS CONTROL operator-run full-screen capture taken after the nonce request. Observed values come from the operator declaration confirmed before launch; they were not machine-read from this image."
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-09T18:58:03.233746+00:00"
+}

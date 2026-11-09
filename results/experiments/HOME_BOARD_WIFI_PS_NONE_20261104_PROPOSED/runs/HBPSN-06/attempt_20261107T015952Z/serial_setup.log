@@ -1,0 +1,29 @@
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM6 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM6 115200
+--- Standard input is not a TTY, running in non-interactive mode. Reading commands from stdin: reset, flash, flash-all, app-flash, output, log, timestamps, bootloader, send <text>, sleep <seconds>, expect [--timeout <seconds>] <regex>, exit | Quit: 'exit' command, EOF or Ctrl+C
+2026-11-07T04:04:34 ESP-ROM:esp32c6-20220919
+2026-11-07T04:04:34 Build:Sep 19 2022
+2026-11-07T04:04:34 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-07T04:04:34 SPIWP:0xee
+2026-11-07T04:04:34 mode:DIO, clock div:2
+2026-11-07T04:04:34 load:0x40875730,len:0x1648
+2026-11-07T04:04:34 load:0x4086b910,len:0xdbc
+2026-11-07T04:04:34 load:0x4086e610,len:0x31f0
+2026-11-07T04:04:34 entry 0x4086b91a
+2026-11-07T04:04:34 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-07T04:04:34 I (24) boot: compile time Nov  4 2026 01:52:32
+2026-11-07T04:04:34 I (24) boot: chip revision: v0.0
+2026-11-07T04:04:34 I (24) boot: efuse block revision: v0.2
+2026-11-07T04:04:34 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-07T04:04:34 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-07T04:04:34 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-07T04:04:34 I (38) boot: Enabling RNG early entropy source...
+2026-11-07T04:04:34 I (43) boot: Partition Table:
+2026-11-07T04:04:34 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-07T04:04:34 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-07T04:04:34 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-07T04:04:34 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-07T04:04:34 I (71) boot: End of partition table
+2026-11-07T04:04:34 I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3b14ch (241996) map
+--- Command: 'reset'

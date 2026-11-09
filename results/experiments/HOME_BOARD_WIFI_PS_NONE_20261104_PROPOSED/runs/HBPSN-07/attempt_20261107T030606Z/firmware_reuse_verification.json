@@ -1,0 +1,46 @@
+{
+  "utc": "2026-11-07T03:08:07.003714+00:00",
+  "reflash_performed": false,
+  "board_identification_reset_performed": false,
+  "provenance": "HBPSN-06 verified formal flash and startup; same COM6 monitor lineage retained until graceful handover; no later ROM boot observed in after-run log",
+  "previous_attempt": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z",
+  "previous_flash_result": {
+    "exit_code": 0,
+    "ended_utc": "2026-11-07T02:03:49.967989+00:00",
+    "verified_image_count": 3,
+    "setup_only": true
+  },
+  "previous_startup": {
+    "checked_utc": "2026-11-07T02:04:42.177012+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "transport_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "transport_connected": true,
+      "mqtt_connected": true,
+      "subscription": true,
+      "tls": true
+    },
+    "pass_all": true,
+    "fatal": false,
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "1f661a4f7"
+  },
+  "observed_elf_prefixes": [
+    "1f661a4f7"
+  ],
+  "monitor_source": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\monitor_stream.log",
+    "bytes": 76058,
+    "sha256": "bd17aed455da08e4c6fdf90b1c1c6b8e30a5389d563898d18fc3f410c7128add"
+  },
+  "after_source": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\monitor_after_run.log",
+    "bytes": 26498,
+    "sha256": "f54a3d3330eb9a866c263f560518dd91ee21ef423ac41be67ef31805a483744a"
+  },
+  "measurement_limit": "Full on-device image hash not re-read; preserved flash verification plus runtime prefix/provenance. Actual new measured startup independently checked."
+}

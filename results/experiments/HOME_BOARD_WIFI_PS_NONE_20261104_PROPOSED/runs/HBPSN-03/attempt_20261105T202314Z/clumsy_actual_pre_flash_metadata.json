@@ -1,0 +1,29 @@
+{
+  "run_id": "HBPSN-03",
+  "capture_started_utc": "2026-11-05T20:22:39.048Z",
+  "capture_completed_utc": "2026-11-05T20:22:39.753Z",
+  "screenshot": "Clumsy_PRE_FLASH.jpg",
+  "sha256": "24f40526e6c3f206a5bb17fa504223f48838f2cbeeb19ce1213531e4ad2a6bdc",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "status": "PASS",
+  "note": "Actual image captured before flash/identification reset; Drop remains active. Disabled Lag retains100ms/outbound display. No settings changed."
+}

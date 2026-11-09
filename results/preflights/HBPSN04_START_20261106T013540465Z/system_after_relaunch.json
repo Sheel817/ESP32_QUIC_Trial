@@ -1,0 +1,57 @@
+﻿{
+    "tcp14568":  [
+                     {
+                         "LocalAddress":  "0.0.0.0",
+                         "LocalPort":  14568,
+                         "State":  null,
+                         "OwningProcess":  36536,
+                         "CreationTime":  "\/Date(1793928991000)\/"
+                     }
+                 ],
+    "confirmed_listeners":  [
+
+                            ],
+    "com6":  [
+                 {
+                     "DeviceID":  "COM6",
+                     "Name":  "Silicon Labs CP210x USB to UART Bridge (COM6)",
+                     "PNPDeviceID":  "USB\\VID_10C4\u0026PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+                 }
+             ],
+    "utc":  "2026-11-06T01:37:35.6642815Z",
+    "band":  "TwoPointFourGigahertz",
+    "ips":  [
+                {
+                    "IPAddress":  "192.168.137.1",
+                    "InterfaceAlias":  "Local Area Connection* 2"
+                }
+            ],
+    "ssid":  "SHEEL 3460",
+    "netstat_matches":  [
+                            "  TCP    127.0.0.1:64237        127.0.0.1:64238        ESTABLISHED     36536",
+                            "  TCP    127.0.0.1:64238        127.0.0.1:64237        ESTABLISHED     36536"
+                        ],
+    "hotspot":  "On",
+    "processes":  [
+                      {
+                          "ProcessId":  32072,
+                          "ParentProcessId":  12108,
+                          "CommandLine":  "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\run_host_capture.py\" "
+                      },
+                      {
+                          "ProcessId":  32104,
+                          "ParentProcessId":  32072,
+                          "CommandLine":  "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\run_host_capture.py\" "
+                      },
+                      {
+                          "ProcessId":  18676,
+                          "ParentProcessId":  18744,
+                          "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+                      },
+                      {
+                          "ProcessId":  36536,
+                          "ParentProcessId":  18676,
+                          "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+                      }
+                  ]
+}

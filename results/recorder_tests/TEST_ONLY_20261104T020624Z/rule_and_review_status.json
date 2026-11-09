@@ -1,0 +1,13 @@
+{
+  "plan_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "exact_quotes": [
+    "Save screenshots before reset and after recording, with UTC and hashes.",
+    "There is no impairment ramp or mid-run toggle. Settings must be stable before the measured reset and throughout the 37 minutes. For the next condition, finish/close the previous recording, configure/check the next setting, then begin the next boot session. Do not reset within a run to improve results.",
+    "Keep missing fields blank with a reason, never populated with invented zeroes or assumed passes."
+  ],
+  "numerical_maximum_post_capture_delay_specified": false,
+  "hbpsn01_current_status": "FAILED_SETTINGS",
+  "status_changed": false,
+  "review": "No validity upgrade or reinterpretation applied. New screenshots are TEST_ONLY and late supplementary for HBPSN-01 only."
+}

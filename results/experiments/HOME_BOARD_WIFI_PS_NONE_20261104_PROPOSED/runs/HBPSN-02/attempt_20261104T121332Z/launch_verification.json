@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-11-04T12:20:06.165827+00:00",
+  "hbpsn01_original_hashes_unchanged": true,
+  "other_17_csv_rows_byte_identical": true,
+  "workbook_other_rows_guard_passed": true,
+  "status": "RUNNING",
+  "validity": "NOT_APPROVED",
+  "fixed_window_seconds": 2220
+}

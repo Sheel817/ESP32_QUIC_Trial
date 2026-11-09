@@ -1,0 +1,12 @@
+﻿{
+    "launcher_pid":  34640,
+    "command":  [
+                    "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+                    "-u",
+                    "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/collector_v2.py\"",
+                    "--run-dir",
+                    "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\""
+                ],
+    "persistent":  true,
+    "launched_utc":  "2026-11-04T12:17:05.6236076Z"
+}

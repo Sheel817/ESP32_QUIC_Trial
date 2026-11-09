@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "phase": "end_of_run",
+  "request": {
+    "phase": "end_of_run",
+    "nonce": "14fd6b873ec14a7cb790ac9b97ae4585",
+    "requested_utc": "2026-11-09T19:35:06.275428+00:00",
+    "requested_monotonic": 1007212.8075719,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": false,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": {
+      "reset_request_utc": "2026-11-09T18:58:06.262439+00:00",
+      "reset_release_utc": "2026-11-09T18:58:06.268682+00:00",
+      "reset_release_monotonic": 1004992.8008061,
+      "deadline_monotonic": 1007212.8008061,
+      "deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+      "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+      "boundary_precision": "Host API completion, not a physical edge measurement",
+      "server_boundaries": {
+        "stdout": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+          "byte_offset": 6098636
+        },
+        "stderr": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+          "byte_offset": 325
+        },
+        "sensor_csv": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+          "byte_offset": 3333910
+        }
+      }
+    },
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "14fd6b873ec14a7cb790ac9b97ae4585",
+    "screenshot": "clumsy_operator_end_of_run.png",
+    "sha256": "b32d1b1aefdfce3603e10754f71005aca0c8f464473611787021b6608802b3d5",
+    "capture_started_utc": "2026-11-09T19:35:06.287243+00:00",
+    "capture_completed_utc": "2026-11-09T19:35:06.358485+00:00",
+    "capture_started_monotonic": 1007212.8193898,
+    "capture_completed_monotonic": 1007212.8906339,
+    "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+    "source_type": "operator_reported",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": false,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-09 TCP_TLS CONTROL operator-run full-screen capture taken after the end-of-run request. Observed values come from the declaration confirmed BEFORE launch and were not re-inspected at this moment; this image and operator stability need manual review."
+  },
+  "reason": null,
+  "capture_started_seconds_after_deadline": 0.018561,
+  "capture_delay_clock": "Actual capture UTC minus original deadline UTC; screenshot-runtime monotonic estimates are labelled in evidence",
+  "evaluated_utc": "2026-11-09T19:35:06.504532+00:00"
+}

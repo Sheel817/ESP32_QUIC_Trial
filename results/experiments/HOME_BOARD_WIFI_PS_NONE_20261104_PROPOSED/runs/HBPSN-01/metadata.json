@@ -1,0 +1,166 @@
+{
+  "run_id": "HBPSN-01",
+  "transport": "QUIC",
+  "condition": "CONTROL",
+  "status": "PREFLIGHT_BLOCKED",
+  "registered_status": "NOT_RUN",
+  "recorded_utc": "2026-11-04T00:19:54.215834+00:00",
+  "protocol_id": "HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED_V1",
+  "plan_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "freeze_manifest_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\freeze_manifest.json",
+  "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+  "frozen_file_checks": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+      "expected_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+      "actual_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv",
+      "expected_sha256": "59bb3306b1a8eaa7deed443e175e4ecf46800854289c9ee6058b425e13d8b33e",
+      "actual_sha256": "59bb3306b1a8eaa7deed443e175e4ecf46800854289c9ee6058b425e13d8b33e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx",
+      "expected_sha256": "461bf940619d96833e37f9804a6e059a1d06ef119d722c5c2788ee704e2b6fee",
+      "actual_sha256": "461bf940619d96833e37f9804a6e059a1d06ef119d722c5c2788ee704e2b6fee",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\source_before.json",
+      "expected_sha256": "fab4baf0273fbe485e6c73566cd57ff130834152c991867822df91e4e3ceb8cd",
+      "actual_sha256": "fab4baf0273fbe485e6c73566cd57ff130834152c991867822df91e4e3ceb8cd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\validation.json",
+      "expected_sha256": "a5bb5731669a16b5d021116aa2fc2b029e4ec333943bfb959caf3a9d7a92c3f3",
+      "actual_sha256": "a5bb5731669a16b5d021116aa2fc2b029e4ec333943bfb959caf3a9d7a92c3f3",
+      "match": true
+    }
+  ],
+  "quic_artifact_checks": [
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+      "bytes": 1637280,
+      "sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+      "actual_sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+      "match": true
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+      "bytes": 17297344,
+      "sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+      "actual_sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+      "match": true
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+      "actual_sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+      "match": true
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "actual_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "match": true
+    }
+  ],
+  "firmware_configuration_hashes": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\sdkconfig",
+      "bytes": 101487,
+      "sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\config\\sdkconfig.json",
+      "bytes": 63735,
+      "sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\CMakeCache.txt",
+      "bytes": 33456,
+      "sha256": "01941bf8855e1b39d9928acbf9543a761badd303b15c95069d5c61d128f08771"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\compile_commands.json",
+      "bytes": 7917242,
+      "sha256": "6062efbb3e350de2abc944ae0959e6ab101410257265f86e1c01ba01f6f3cbc0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flash_args",
+      "bytes": 150,
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flasher_args.json",
+      "bytes": 933,
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\main\\quic_demo_main.c",
+      "bytes": 18526,
+      "sha256": "675943c1eeff79b8fe25e5fb25a8f969c358dd7216c9ae89722172f08e391fcb"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\main\\CMakeLists.txt",
+      "bytes": 1322,
+      "sha256": "c54c272b8c3659029669784d18afeafbf724153b717757eaca8b0ab63883f94e"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+      "bytes": 6732,
+      "sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+      "bytes": 12612,
+      "sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f"
+    }
+  ],
+  "operator_reported_settings": "CONTROL requested: capture running, all effects disabled; no operator-provided filter text in this request",
+  "observed_gui": {
+    "capture": "RUNNING (Stop button and Started filtering status)",
+    "all_effects": "OFF (all function checkboxes unchecked)",
+    "filter": "(udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)) or (tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568))",
+    "evidence_file": "preflight_clumsy_20261104T001824Z.jpg",
+    "evidence_sha256": "3840c2e8e77a6cd9f68012faa58c06d85ef59c1856feb0cc7b9bf450a2fe5492"
+  },
+  "required_filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+  "preflight_failure": "Current capture filter contains additional TCP 14568 branch; it does not match the frozen QUIC-only filter. No filter change or retry performed.",
+  "board_evidence": {
+    "serial_port": "COM6",
+    "adapter": "Silicon Labs CP210x USB to UART Bridge",
+    "usb_pnp_id": "USB\\VID_10C4&PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8",
+    "expected_mac": "40:4c:ca:56:bb:b0",
+    "existing_monitor_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_serial.log",
+    "existing_startup_mac_lines": [
+      "2026-11-04T02:05:58 I (667) wifi:mode : sta (40:4c:ca:56:bb:b0)",
+      "2026-11-04T02:06:00 I (677) wifi:mode : sta (40:4c:ca:56:bb:b0)"
+    ],
+    "live_log_prefix_bytes": 31366,
+    "live_log_prefix_sha256": "d946a41d428d29f3aad1a9923acead02866ca867502a3dc58946a94b3341a99d",
+    "limitation": "No fresh Espressif identification/reset performed because preflight was blocked before loading the profile"
+  },
+  "actual_start_utc": null,
+  "deadline_utc": null,
+  "collector_started": false,
+  "formal_samples": 0,
+  "register_modified": false,
+  "actions": "Read existing files/processes/serial-port metadata and observe GUI only. No flash/reset/build/ping; current monitor, servers, Clumsy filter/effects preserved.",
+  "other_hash_failures": []
+}

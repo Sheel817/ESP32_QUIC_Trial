@@ -1,0 +1,12 @@
+{
+  "exact_statement": "setting stayed unchanged",
+  "received_observed_utc": "2026-11-04T13:31:19.1952412Z",
+  "receipt_clock_source": "First UTC clock observation while processing this user message; chat platform ingress timestamp is not exposed",
+  "recorded_utc": "2026-11-04T13:32:14.758129+00:00",
+  "source": "Operator statement relayed explicitly by user in this session",
+  "user_clarified_scope": "No Clumsy filter/effect/capture changes or close/reopen from HBPSN-02 start through post-recording screenshot",
+  "covered_interval_start_utc": "2026-11-04T12:17:27.280042+00:00",
+  "covered_interval_end_utc": "2026-11-04T13:12:42.694Z",
+  "evidence_type": "OPERATOR_REPORTED_STABILITY; retrospective confirmation recorded now, not backdated",
+  "run_id": "HBPSN-02"
+}

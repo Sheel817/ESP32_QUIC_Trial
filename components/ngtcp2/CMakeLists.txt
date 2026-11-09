@@ -49,19 +49,13 @@
         -DWOLFSSL_QUIC
         -DOPENSSL_EXTRA
         -DOPENSSL_ALL
-        -DHAVE_SESSION_TICKET
-        -DWOLFSSL_TLS13
         -DWOLFSSL_EVP_INCLUDED
         -DWOLFSSL_KEY_GEN
-        -DWOLFSSL_AES_DIRECT
         -DWOLFSSL_RAND
         -DHAVE_ALPN
         -DWOLFSSL_SNI
         -DHAVE_AES_ECB
-        -DHAVE_ECC
-        -DHAVE_AESGCM
         -DHAVE_AESCCM
-        -DHAVE_HKDF
         -DHAVE_CHACHA
         -DHAVE_POLY1305
         -DWOLFSSL_HAVE_EVP_PKEY
@@ -96,3 +90,4 @@
      message(STATUS "CMAKE_CURRENT_LIST_DIR: ${CMAKE_CURRENT_LIST_DIR}")
      message(STATUS "wolfSSL include: ${CMAKE_CURRENT_LIST_DIR}/../../managed_components/wolfssl__wolfssl/wolfssl")
      message(STATUS "wolfSSL wolfcrypt include: ${CMAKE_CURRENT_LIST_DIR}/../../managed_components/wolfssl__wolfssl/wolfssl/wolfcrypt")
+

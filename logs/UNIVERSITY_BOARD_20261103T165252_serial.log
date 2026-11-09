@@ -1,0 +1,287 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x2c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1648
+load:0x4086b910,len:0xdbc
+load:0x4086e610,len:0x31f0
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 21 2026 01:35:24[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 8MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 001a9000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=41fe8h (270312) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=00052010 vaddr=40800000 size=0e008h ( 57352) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=1312e8h (1250024) map[0m
+[0;32mI (385) esp_image: segment 3: paddr=00191310 vaddr=4080e008 size=0a580h ( 42368) load[0m
+[0;32mI (395) esp_image: segment 4: paddr=0019b898 vaddr=40818590 size=0405ch ( 16476) load[0m
+[0;32mI (405) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (416) cpu_start: Unicore app[0m
+[0;32mI (424) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (424) cpu_start: Pro cpu start user code[0m
+[0;32mI (424) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) app_init: Application information:[0m
+[0;32mI (430) app_init: Project name:     quic_demo[0m
+[0;32mI (434) app_init: App version:      3c8c7a3-dirty[0m
+[0;32mI (439) app_init: Compile time:     Oct 24 2026 19:22:28[0m
+[0;32mI (444) app_init: ELF file SHA256:  4d62aef77...[0m
+[0;32mI (448) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (452) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (455) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (459) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (463) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (470) heap_init: At 40824620 len 00057FF0 (351 KiB): RAM[0m
+[0;32mI (475) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (480) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (486) spi_flash: detected chip: generic[0m
+[0;32mI (489) spi_flash: flash io: dio[0m
+[0;32mI (493) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (498) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (505) coexist: coex firmware version: a830d28[0m
+[0;32mI (509) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+[0;32mI (534) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC[0m
+[0;32mI (534) quic_demo_main: ESP-IDF version: v6.1[0m
+[0;32mI (544) example_connect: Start example_connect.[0m
+[0;32mI (544) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (544) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (554) wifi:wifi driver task: 4082a788, prio:23, stack:6656, core=0[0m
+[0;32mI (554) wifi:wifi firmware version: e12a754[0m
+[0;32mI (564) wifi:wifi certification version: v7.0[0m
+[0;32mI (564) wifi:config NVS flash: enabled[0m
+[0;32mI (564) wifi:config nano formatting: disabled[0m
+[0;32mI (564) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (574) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (574) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (584) wifi:Init management short buffer num: 32[0m
+[0;32mI (584) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (594) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (594) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (604) wifi:Init static rx buffer num: 10[0m
+[0;32mI (604) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (614) wifi_init: accept mbox: 6[0m
+[0;32mI (614) wifi_init: tcpip mbox: 32[0m
+[0;32mI (614) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp tx win: 5760[0m
+[0;32mI (624) wifi_init: tcp rx win: 5760[0m
+[0;32mI (634) wifi_init: tcp mss: 1440[0m
+[0;32mI (634) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (644) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (644) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00[0m
+[0;33mW (654) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration[0m
+[0;32mI (724) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (764) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (764) wifi:mode : sta (98:a3:16:7e:55:50)[0m
+[0;32mI (764) wifi:enable tsf[0m
+[0;32mI (764) example_connect: Connecting to SHEEL 3460...[0m
+[0;33mW (774) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (784) example_connect: Waiting for IP(s)[0m
+[0;32mI (3294) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3294) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (3304) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3314) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3314) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3314) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:144, highestRateIdx:0[0m
+[0;33mW (3314) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3324) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (3334) wifi:ifidx:0, rssi:-30, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (3354) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (3364) wifi:connected with SHEEL 3460, aid = 19, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb[0m
+[0;32mI (3364) wifi:security: WPA2-PSK, phy: bgn, rssi: -30, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3374) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (3374) wifi:pm start, type:1, aid:0x13, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (3384) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3394) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (3404) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3414) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (3424) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3434) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3444) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3454) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3464) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;33mW (3484) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005[0m
+[0;32mI (4484) esp_netif_handlers: example_netif_sta ip: 192.168.137.11, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4484) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.11[0m
+[0;32mI (4544) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:9aa3:16ff:fe7e:5550, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4544) example_common: Connected to example_netif_sta[0m
+[0;32mI (4544) example_common: - IPv4 address: 192.168.137.11,[0m
+[0;32mI (4554) example_common: - IPv6 address: fe80:0000:0000:0000:9aa3:16ff:fe7e:5550, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4564) quic_demo_main: Wi-Fi connected[0m
+[0;32mI (4564) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567[0m
+[0;32mI (4574) quic_demo_main: Free heap: 287440 bytes[0m
+[0;32mI (4574) QUIC: QUIC mutex created successfully[0m
+[0;32mI (4584) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt[0m
+[0;32mI (4584) QUIC: init random number generator[0m
+[0;32mI (4594) QUIC: init client ...[0m
+[0;32mI (4604) QUIC: Set ALPN: mqtt (length: 4)[0m
+[0;32mI (4604) QUIC: In client_quic_init[0m
+[0;32mI (4604) QUIC: ===>  INITIAL TS: 4125077000[0m
+[0;32mI (4604) ESP_EV_COMPAT: Starting IO watcher for fd 54[0m
+[0;32mI (4614) QUIC: QUIC client initialization completed[0m
+[0;32mI (5044) main_task: Returned from app_main()[0m
+[0;32mI (7084) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)[0m
+[0;32mI (7104) QUIC: QUIC handshake completed callback triggered![0m
+[0;32mI (7104) QUIC: Extending max local streams bidi to 128[0m
+
+[0;32mI (7174) quic_demo_main: QUIC connection established[0m
+[0;32mI (8174) MQTT_QUIC: Initializing complete-MQTT-packet transport[0m
+[0;32mI (8184) QUIC: Opened new QUIC stream with ID: 0[0m
+[0;32mI (8234) quic_demo_main: MQTT connected over QUIC[0m
+[0;32mI (8244) quic_demo_main: Starting DHT11 readings every five seconds[0m
+[0;32mI (8344) quic_demo_main: Subscription acknowledged[0m
+[0;32mI (13374) quic_demo_main: APP_RTT seq=1 app_rtt_ms=85.706[0m
+[0;32mI (18404) quic_demo_main: APP_RTT seq=2 app_rtt_ms=105.036[0m
+[0;32mI (23334) quic_demo_main: APP_RTT seq=3 app_rtt_ms=25.890[0m
+[0;32mI (28364) quic_demo_main: APP_RTT seq=4 app_rtt_ms=47.815[0m
+[0;32mI (33394) quic_demo_main: APP_RTT seq=5 app_rtt_ms=68.746[0m
+[0;32mI (38424) quic_demo_main: APP_RTT seq=6 app_rtt_ms=88.560[0m
+[0;32mI (43454) quic_demo_main: APP_RTT seq=7 app_rtt_ms=109.213[0m
+[0;32mI (48384) quic_demo_main: APP_RTT seq=8 app_rtt_ms=25.551[0m
+[0;32mI (53414) quic_demo_main: APP_RTT seq=9 app_rtt_ms=45.574[0m
+[0;32mI (58444) quic_demo_main: APP_RTT seq=10 app_rtt_ms=65.454[0m
+[0;32mI (63474) quic_demo_main: APP_RTT seq=11 app_rtt_ms=85.559[0m
+[0;32mI (68504) quic_demo_main: APP_RTT seq=12 app_rtt_ms=105.925[0m
+[0;32mI (73434) quic_demo_main: APP_RTT seq=13 app_rtt_ms=25.583[0m
+[0;32mI (78464) quic_demo_main: APP_RTT seq=14 app_rtt_ms=45.378[0m
+[0;32mI (83494) quic_demo_main: APP_RTT seq=15 app_rtt_ms=65.994[0m
+[0;32mI (88524) quic_demo_main: APP_RTT seq=16 app_rtt_ms=85.398[0m
+[0;32mI (93554) quic_demo_main: APP_RTT seq=17 app_rtt_ms=105.205[0m
+[0;32mI (98484) quic_demo_main: APP_RTT seq=18 app_rtt_ms=25.352[0m
+[0;32mI (103514) quic_demo_main: APP_RTT seq=19 app_rtt_ms=45.242[0m
+[0;32mI (108544) quic_demo_main: APP_RTT seq=20 app_rtt_ms=65.818[0m
+[0;32mI (113574) quic_demo_main: APP_RTT seq=21 app_rtt_ms=85.596[0m
+[0;32mI (118604) quic_demo_main: APP_RTT seq=22 app_rtt_ms=105.575[0m
+[0;32mI (123534) quic_demo_main: APP_RTT seq=23 app_rtt_ms=31.044[0m
+[0;32mI (128564) quic_demo_main: APP_RTT seq=24 app_rtt_ms=45.594[0m
+[0;32mI (133594) quic_demo_main: APP_RTT seq=25 app_rtt_ms=65.448[0m
+[0;32mI (138624) quic_demo_main: APP_RTT seq=26 app_rtt_ms=85.414[0m
+[0;32mI (143654) quic_demo_main: APP_RTT seq=27 app_rtt_ms=104.300[0m
+[0;32mI (148584) quic_demo_main: APP_RTT seq=28 app_rtt_ms=28.437[0m
+[0;32mI (153614) quic_demo_main: APP_RTT seq=29 app_rtt_ms=48.591[0m
+[0;32mI (158644) quic_demo_main: APP_RTT seq=30 app_rtt_ms=68.284[0m
+[0;32mI (163674) quic_demo_main: APP_RTT seq=31 app_rtt_ms=89.104[0m
+[0;32mI (168704) quic_demo_main: APP_RTT seq=32 app_rtt_ms=109.382[0m
+[0;32mI (173634) quic_demo_main: APP_RTT seq=33 app_rtt_ms=29.625[0m
+[0;32mI (178664) quic_demo_main: APP_RTT seq=34 app_rtt_ms=45.548[0m
+[0;32mI (183694) quic_demo_main: APP_RTT seq=35 app_rtt_ms=65.576[0m
+[0;32mI (188724) quic_demo_main: APP_RTT seq=36 app_rtt_ms=85.583[0m
+[0;32mI (193754) quic_demo_main: APP_RTT seq=37 app_rtt_ms=105.318[0m
+[0;32mI (198684) quic_demo_main: APP_RTT seq=38 app_rtt_ms=25.545[0m
+[0;32mI (203714) quic_demo_main: APP_RTT seq=39 app_rtt_ms=45.524[0m
+[0;32mI (208744) quic_demo_main: APP_RTT seq=40 app_rtt_ms=65.338[0m
+[0;32mI (213774) quic_demo_main: APP_RTT seq=41 app_rtt_ms=85.434[0m
+[0;32mI (218804) quic_demo_main: APP_RTT seq=42 app_rtt_ms=105.233[0m
+[0;32mI (223734) quic_demo_main: APP_RTT seq=43 app_rtt_ms=25.300[0m
+[0;32mI (228764) quic_demo_main: APP_RTT seq=44 app_rtt_ms=45.301[0m
+[0;32mI (233794) quic_demo_main: APP_RTT seq=45 app_rtt_ms=65.202[0m
+[0;32mI (238824) quic_demo_main: APP_RTT seq=46 app_rtt_ms=85.221[0m
+[0;32mI (243854) quic_demo_main: APP_RTT seq=47 app_rtt_ms=105.543[0m
+[0;32mI (248784) quic_demo_main: APP_RTT seq=48 app_rtt_ms=25.549[0m
+[0;32mI (253814) quic_demo_main: APP_RTT seq=49 app_rtt_ms=45.550[0m
+[0;32mI (258844) quic_demo_main: APP_RTT seq=50 app_rtt_ms=65.435[0m
+[0;32mI (263874) quic_demo_main: APP_RTT seq=51 app_rtt_ms=85.402[0m
+[0;32mI (268904) quic_demo_main: APP_RTT seq=52 app_rtt_ms=104.917[0m
+[0;32mI (273834) quic_demo_main: APP_RTT seq=53 app_rtt_ms=28.796[0m
+[0;32mI (278864) quic_demo_main: APP_RTT seq=54 app_rtt_ms=48.633[0m
+[0;32mI (283894) quic_demo_main: APP_RTT seq=55 app_rtt_ms=67.599[0m
+[0;32mI (288924) quic_demo_main: APP_RTT seq=56 app_rtt_ms=85.911[0m
+[0;32mI (293954) quic_demo_main: APP_RTT seq=57 app_rtt_ms=105.565[0m
+[0;32mI (298884) quic_demo_main: APP_RTT seq=58 app_rtt_ms=29.469[0m
+[0;32mI (303914) quic_demo_main: APP_RTT seq=59 app_rtt_ms=45.206[0m
+[0;32mI (308944) quic_demo_main: APP_RTT seq=60 app_rtt_ms=65.203[0m
+[0;32mI (313974) quic_demo_main: APP_RTT seq=61 app_rtt_ms=85.571[0m
+[0;32mI (319004) quic_demo_main: APP_RTT seq=62 app_rtt_ms=105.538[0m
+[0;32mI (323934) quic_demo_main: APP_RTT seq=63 app_rtt_ms=27.431[0m
+[0;32mI (328964) quic_demo_main: APP_RTT seq=64 app_rtt_ms=45.426[0m
+[0;32mI (333994) quic_demo_main: APP_RTT seq=65 app_rtt_ms=65.621[0m
+[0;32mI (339024) quic_demo_main: APP_RTT seq=66 app_rtt_ms=85.565[0m
+[0;32mI (344054) quic_demo_main: APP_RTT seq=67 app_rtt_ms=105.331[0m
+[0;32mI (348984) quic_demo_main: APP_RTT seq=68 app_rtt_ms=25.541[0m
+[0;32mI (354014) quic_demo_main: APP_RTT seq=69 app_rtt_ms=45.392[0m
+[0;32mI (359044) quic_demo_main: APP_RTT seq=70 app_rtt_ms=65.989[0m
+[0;32mI (364074) quic_demo_main: APP_RTT seq=71 app_rtt_ms=85.229[0m
+[0;32mI (369104) quic_demo_main: APP_RTT seq=72 app_rtt_ms=105.180[0m
+[0;32mI (374034) quic_demo_main: APP_RTT seq=73 app_rtt_ms=25.135[0m
+[0;32mI (379064) quic_demo_main: APP_RTT seq=74 app_rtt_ms=45.601[0m
+[0;32mI (384094) quic_demo_main: APP_RTT seq=75 app_rtt_ms=65.504[0m
+[0;32mI (389124) quic_demo_main: APP_RTT seq=76 app_rtt_ms=85.512[0m
+[0;32mI (394154) quic_demo_main: APP_RTT seq=77 app_rtt_ms=104.732[0m
+[0;32mI (399084) quic_demo_main: APP_RTT seq=78 app_rtt_ms=28.885[0m
+[0;32mI (404114) quic_demo_main: APP_RTT seq=79 app_rtt_ms=48.880[0m
+[0;32mI (409144) quic_demo_main: APP_RTT seq=80 app_rtt_ms=65.882[0m
+[0;32mI (414174) quic_demo_main: APP_RTT seq=81 app_rtt_ms=85.959[0m
+[0;32mI (419204) quic_demo_main: APP_RTT seq=82 app_rtt_ms=105.794[0m
+[0;32mI (424134) quic_demo_main: APP_RTT seq=83 app_rtt_ms=25.442[0m
+[0;32mI (429164) quic_demo_main: APP_RTT seq=84 app_rtt_ms=45.179[0m
+[0;32mI (434194) quic_demo_main: APP_RTT seq=85 app_rtt_ms=65.187[0m
+[0;32mI (439224) quic_demo_main: APP_RTT seq=86 app_rtt_ms=85.170[0m
+[0;32mI (444254) quic_demo_main: APP_RTT seq=87 app_rtt_ms=105.559[0m
+[0;32mI (449184) quic_demo_main: APP_RTT seq=88 app_rtt_ms=25.579[0m
+[0;32mI (454214) quic_demo_main: APP_RTT seq=89 app_rtt_ms=45.546[0m
+[0;32mI (459264) quic_demo_main: APP_RTT seq=90 app_rtt_ms=92.440[0m
+[0;32mI (464294) quic_demo_main: APP_RTT seq=91 app_rtt_ms=105.397[0m
+[0;32mI (469224) quic_demo_main: APP_RTT seq=92 app_rtt_ms=25.563[0m
+[0;32mI (474254) quic_demo_main: APP_RTT seq=93 app_rtt_ms=45.508[0m
+[0;32mI (479284) quic_demo_main: APP_RTT seq=94 app_rtt_ms=65.363[0m
+[0;32mI (484314) quic_demo_main: APP_RTT seq=95 app_rtt_ms=85.885[0m
+[0;32mI (489344) quic_demo_main: APP_RTT seq=96 app_rtt_ms=105.274[0m
+[0;32mI (494274) quic_demo_main: APP_RTT seq=97 app_rtt_ms=25.308[0m
+[0;32mI (499304) quic_demo_main: APP_RTT seq=98 app_rtt_ms=45.081[0m
+[0;32mI (504334) quic_demo_main: APP_RTT seq=99 app_rtt_ms=64.998[0m
+[0;32mI (509364) quic_demo_main: APP_RTT seq=100 app_rtt_ms=84.939[0m
+[0;32mI (514394) quic_demo_main: APP_RTT seq=101 app_rtt_ms=104.639[0m
+[0;32mI (519324) quic_demo_main: APP_RTT seq=102 app_rtt_ms=29.442[0m
+[0;32mI (524354) quic_demo_main: APP_RTT seq=103 app_rtt_ms=48.803[0m
+[0;32mI (529384) quic_demo_main: APP_RTT seq=104 app_rtt_ms=69.073[0m
+[0;32mI (534414) quic_demo_main: APP_RTT seq=105 app_rtt_ms=85.881[0m
+[0;32mI (539444) quic_demo_main: APP_RTT seq=106 app_rtt_ms=105.865[0m
+[0;32mI (544374) quic_demo_main: APP_RTT seq=107 app_rtt_ms=25.527[0m
+[0;32mI (549404) quic_demo_main: APP_RTT seq=108 app_rtt_ms=45.499[0m
+[0;32mI (554434) quic_demo_main: APP_RTT seq=109 app_rtt_ms=65.521[0m
+[0;32mI (559464) quic_demo_main: APP_RTT seq=110 app_rtt_ms=85.348[0m
+[0;32mI (564494) quic_demo_main: APP_RTT seq=111 app_rtt_ms=105.196[0m
+[0;32mI (569424) quic_demo_main: APP_RTT seq=112 app_rtt_ms=29.621[0m
+[0;32mI (574454) quic_demo_main: APP_RTT seq=113 app_rtt_ms=45.179[0m
+[0;32mI (579484) quic_demo_main: APP_RTT seq=114 app_rtt_ms=65.677[0m
+[0;32mI (584514) quic_demo_main: APP_RTT seq=115 app_rtt_ms=85.542[0m
+[0;32mI (589544) quic_demo_main: APP_RTT seq=116 app_rtt_ms=105.735[0m
+[0;32mI (594474) quic_demo_main: APP_RTT seq=117 app_rtt_ms=25.566[0m
+[0;32mI (599504) quic_demo_main: APP_RTT seq=118 app_rtt_ms=45.509[0m
+[0;32mI (604534) quic_demo_main: APP_RTT seq=119 app_rtt_ms=65.508[0m
+[0;32mI (609564) quic_demo_main: APP_RTT seq=120 app_rtt_ms=85.522[0m
+[0;32mI (614594) quic_demo_main: APP_RTT seq=121 app_rtt_ms=106.487[0m
+[0;32mI (619524) quic_demo_main: APP_RTT seq=122 app_rtt_ms=25.637[0m
+[0;32mI (624554) quic_demo_main: APP_RTT seq=123 app_rtt_ms=45.479[0m
+[0;32mI (629584) quic_demo_main: APP_RTT seq=124 app_rtt_ms=64.438[0m
+[0;32mI (634614) quic_demo_main: APP_RTT seq=125 app_rtt_ms=85.482[0m
+[0;32mI (639644) quic_demo_main: APP_RTT seq=126 app_rtt_ms=104.732[0m
+[0;32mI (644574) quic_demo_main: APP_RTT seq=127 app_rtt_ms=28.107[0m
+[0;32mI (649604) quic_demo_main: APP_RTT seq=128 app_rtt_ms=48.441[0m
+[0;32mI (654634) quic_demo_main: APP_RTT seq=129 app_rtt_ms=69.990[0m
+[0;32mI (659664) quic_demo_main: APP_RTT seq=130 app_rtt_ms=89.268[0m
+[0;32mI (664694) quic_demo_main: APP_RTT seq=131 app_rtt_ms=105.729[0m
+[0;32mI (669624) quic_demo_main: APP_RTT seq=132 app_rtt_ms=25.452[0m
+[0;32mI (674654) quic_demo_main: APP_RTT seq=133 app_rtt_ms=45.479[0m
+[0;32mI (679684) quic_demo_main: APP_RTT seq=134 app_rtt_ms=65.490[0m
+[0;32mI (684714) quic_demo_main: APP_RTT seq=135 app_rtt_ms=85.355[0m
+[0;32mI (689744) quic_demo_main: APP_RTT seq=136 app_rtt_ms=105.305[0m
+[0;32mI (694674) quic_demo_main: APP_RTT seq=137 app_rtt_ms=25.439[0m
+[0;32mI (699704) quic_demo_main: APP_RTT seq=138 app_rtt_ms=45.181[0m

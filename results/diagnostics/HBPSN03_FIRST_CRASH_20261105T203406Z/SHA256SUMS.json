@@ -1,0 +1,147 @@
+[
+  {
+    "path": "address_decodes.json",
+    "bytes": 32686,
+    "sha256": "f86e0e39a877e5113850867e88620f22c6c1cc5c26087054dd94639f375e98f2"
+  },
+  {
+    "path": "ANALYSIS.md",
+    "bytes": 7037,
+    "sha256": "f49100784c01270372855af001eea64cbdd94821a543c3fc784f6da31f71b2a2"
+  },
+  {
+    "path": "analysis_provenance.json",
+    "bytes": 3926,
+    "sha256": "33a25f8117633a32fbfab1ec95bfd01c3c182a25b6eba284df517ac81276883d"
+  },
+  {
+    "path": "analyze_hbpsn03_crash.py",
+    "bytes": 16621,
+    "sha256": "d85ae41525df282b3eddc5ef6803d56d4be893d4274aefa55ce3b92a89c401f2"
+  },
+  {
+    "path": "application_addr2line_all_words.txt",
+    "bytes": 4943,
+    "sha256": "d47c3aaa54a2fc84a4d13e57bfbf9041ffb5ac7711826c8459271dfc6a54def6"
+  },
+  {
+    "path": "application_code_candidates_inline.txt",
+    "bytes": 2237,
+    "sha256": "e38bfcca70b90888d19206e5204b1114ac89a23ca93bc20963e2d7c99b119ec0"
+  },
+  {
+    "path": "application_code_candidates_minus1.txt",
+    "bytes": 2243,
+    "sha256": "1fab10ffb82d7a8768689247de36d50dd96d820fc0e76b14ce050a29f43f3720"
+  },
+  {
+    "path": "application_elf_header.txt",
+    "bytes": 983,
+    "sha256": "bb1ace25898260fcb1f97886f82f0d45084de824b59166167365b329d24910eb"
+  },
+  {
+    "path": "application_sections.txt",
+    "bytes": 4175,
+    "sha256": "3249cee57bc97a3c1c40bf3ff085c821b89774c66993d5bc8696a78453023bee"
+  },
+  {
+    "path": "client_write_streams_callsite_disassembly.txt",
+    "bytes": 660,
+    "sha256": "a73f9bf0f29177c68dc7829d55a3c6e36faaa62a74601f346183be4d0b574642"
+  },
+  {
+    "path": "commands.json",
+    "bytes": 9767,
+    "sha256": "be076cc51a22c51c64bb087b74b43b62927ee370f68aea05c5eadf8ae728fc66"
+  },
+  {
+    "path": "conn_discard_pktns_callsite_disassembly.txt",
+    "bytes": 597,
+    "sha256": "8b779bb0f4316969a7d88522cc921adb9a45cd84dbb6819b01c7d9c20b953271"
+  },
+  {
+    "path": "context_serial_receipts.jsonl",
+    "bytes": 50480,
+    "sha256": "0b242a70737c6c1badcfa6b9b76f154f731ff5fb11c82e35cdd3bdf0a1afc5ce"
+  },
+  {
+    "path": "first_crash_complete.raw.log",
+    "bytes": 8994,
+    "sha256": "b2af4c44211e80d7323ef992dfdffbdf91d2692e925c76c9b478cccb52871c73"
+  },
+  {
+    "path": "heap_caps_free_callsite_disassembly.txt",
+    "bytes": 686,
+    "sha256": "e587cca4e97baefc4057823fead1a587ff2e54c1263c222ebec0fe577b99f3f2"
+  },
+  {
+    "path": "ngtcp2_conn_discard_initial_state_callsite_disassembly.txt",
+    "bytes": 655,
+    "sha256": "b36be06e2838dcc8d4e60a97f8ada17782122a72ab74934c3c0ea38160f28944"
+  },
+  {
+    "path": "pktns_del_callsite_disassembly.txt",
+    "bytes": 684,
+    "sha256": "90a6401eeba53b97b3da40d4d35e76f4e882eaab6b215ae8dfc532104801a3b1"
+  },
+  {
+    "path": "preservation_verification.json",
+    "bytes": 2334,
+    "sha256": "86b3d607becf68153591df4aa4a3825e2140ebc6ec5bbe7cc4e45eccb4693fd6"
+  },
+  {
+    "path": "register_dump.raw.log",
+    "bytes": 1240,
+    "sha256": "a20eb7e74e1d309e3439b3f56e34ff636b8bef858a89a31fb7a76cb85d689a5e"
+  },
+  {
+    "path": "registers.json",
+    "bytes": 881,
+    "sha256": "72e301026c7c0969cf582b0c3496a0212a356e6b0883a7e8b219c99746492932"
+  },
+  {
+    "path": "reset_reason_and_following_startup.raw.log",
+    "bytes": 11817,
+    "sha256": "a5524dfddc220f1ec65b2785058b36effcca0ae87a8f6b5a2ed4c0c75895396a"
+  },
+  {
+    "path": "rom_addr2line.txt",
+    "bytes": 136,
+    "sha256": "ce3c4ca2fbdc987eee90883a03f08491f83f019513f734b96d4e3ef6fd084215"
+  },
+  {
+    "path": "rom_multi_heap_free_disassembly.txt",
+    "bytes": 1885,
+    "sha256": "054e15999f45aca47a9674b20ce6a7d0984844feb64759960685a31913599aec"
+  },
+  {
+    "path": "rom_tlsf_free_disassembly.txt",
+    "bytes": 14069,
+    "sha256": "39a2d55a632f1fa34fae0964fbb12736341bc0fc98d82d1c29a5cfe5f9c4df41"
+  },
+  {
+    "path": "source_excerpts.txt",
+    "bytes": 6178,
+    "sha256": "b65b8414e3dc84903dbe024a8087c7afe1c482bcf2445672641f77ee03e2f6c6"
+  },
+  {
+    "path": "source_intervals.json",
+    "bytes": 4408,
+    "sha256": "a4837ed2cf9f80f3a785861e4e16a5044955dacc7d8c37dcf218fdf40dfaf820"
+  },
+  {
+    "path": "source_references.json",
+    "bytes": 1949,
+    "sha256": "bab78209f67686daf7c514499b09aff3b7793b8c3742f1ea8c5d8d284d1dabbd"
+  },
+  {
+    "path": "stack_memory_and_original_decode_errors.raw.log",
+    "bytes": 7455,
+    "sha256": "1d65db9d2e2fdee3e65ef9d153c45be9280ef859910370038c7b70011f21633a"
+  },
+  {
+    "path": "startup_crash_reboot_context.raw.log",
+    "bytes": 32479,
+    "sha256": "d4de7e83d3329e6b74257c6b99916113b84ed4c86cf6503cd32dc2076472d767"
+  }
+]

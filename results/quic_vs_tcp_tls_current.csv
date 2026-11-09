@@ -1,0 +1,3 @@
+transport,samples,sequence_min,sequence_max,minimum_ms,mean_ms,median_ms,p95_ms,maximum_ms,source_file
+QUIC,412,87,498,25.077,68.036,66.112,105.836,145.990,log.quic_demo.20261022235848.quic.rtt.csv
+TCP_TLS,415,249,663,26.670,69.179,67.793,107.550,147.677,log.quic_demo.20261022221325.tcp_tls.rtt.csv

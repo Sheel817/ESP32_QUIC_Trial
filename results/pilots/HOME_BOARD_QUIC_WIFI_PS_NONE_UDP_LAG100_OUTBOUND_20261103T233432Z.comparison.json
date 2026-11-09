@@ -1,0 +1,22 @@
+{
+  "reference_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z.csv",
+  "reference_csv_sha256": "323d257b39d36fd986c5372bb9e2290abf8d7c8f71c214b73ad098b47cbc215d",
+  "reference_sequences": [
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282
+  ],
+  "reference_mean_ms": 66.263,
+  "lag_mean_ms": 187.7515,
+  "mean_change_ms": 121.48849999999999,
+  "wait_started_utc": "2026-11-03T23:34:32.441871+00:00",
+  "boundary_utc": "2026-11-03T23:35:32.443135+00:00",
+  "requested_wait_seconds": 60
+}

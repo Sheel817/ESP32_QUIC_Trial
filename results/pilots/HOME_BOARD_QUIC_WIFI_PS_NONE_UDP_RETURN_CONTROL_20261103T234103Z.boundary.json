@@ -1,0 +1,8 @@
+{
+  "source_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_WIFI_PS_NONE_20261103T230410Z\\HOME_BOARD_WIFI_PS_NONE_serial.log",
+  "boundary_utc": "2026-11-03T23:42:12.729391+00:00",
+  "byte_offset": 54141,
+  "label": "QUIC, HOME_BOARD, WIFI_PS_NONE, UDP capture running, all effects off — operator-reported.",
+  "wait_started_utc": "2026-11-03T23:41:12.728064+00:00",
+  "requested_wait_seconds": 60
+}

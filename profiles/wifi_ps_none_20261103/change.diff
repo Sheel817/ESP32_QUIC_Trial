@@ -1,0 +1,54 @@
+--- tested/main/CMakeLists.txt
++++ experimental/main/CMakeLists.txt
+@@ -1,4 +1,5 @@
+ set(DEMO_TRANSPORT "TCP_TLS" CACHE STRING "Measurement transport: QUIC or TCP_TLS")
++option(DEMO_WIFI_PS_NONE "Experimental profile: disable Wi-Fi power saving after connection" OFF)
+ set_property(CACHE DEMO_TRANSPORT PROPERTY STRINGS QUIC TCP_TLS)
+ if(NOT DEMO_TRANSPORT STREQUAL "QUIC" AND NOT DEMO_TRANSPORT STREQUAL "TCP_TLS")
+     message(FATAL_ERROR "DEMO_TRANSPORT must be QUIC or TCP_TLS")
+@@ -20,6 +21,7 @@
+         wolfssl 
+         coreMQTT
+         esp_timer
++        esp_wifi
+         protocol_examples_common
+     INCLUDE_DIRS "")
+ 
+@@ -29,3 +31,6 @@
+     target_compile_definitions(${COMPONENT_LIB} PRIVATE DEMO_TRANSPORT_TCP_TLS=0)
+ endif()
+ message(STATUS "Measurement transport: ${DEMO_TRANSPORT}")
++target_compile_definitions(${COMPONENT_LIB} PRIVATE
++    DEMO_WIFI_PS_NONE=$<BOOL:${DEMO_WIFI_PS_NONE}>)
++message(STATUS "Experimental Wi-Fi power-saving-off profile: ${DEMO_WIFI_PS_NONE}")
+--- tested/main/quic_demo_main.c
++++ experimental/main/quic_demo_main.c
+@@ -17,6 +17,7 @@
+ #include "esp_netif.h"
+ #include "esp_system.h"
+ #include "esp_timer.h"
++#include "esp_wifi.h"
+ #include "nvs_flash.h"
+ 
+ #include "protocol_examples_common.h"
+@@ -579,6 +580,20 @@
+ 
+     ESP_LOGI(TAG, "Wi-Fi connected");
+ 
++#if DEMO_WIFI_PS_NONE
++    /* Optional experimental profile, shared by QUIC and TCP_TLS. */
++    ESP_ERROR_CHECK(esp_wifi_set_ps(WIFI_PS_NONE));
++    wifi_ps_type_t returned_ps_mode;
++    ESP_ERROR_CHECK(esp_wifi_get_ps(&returned_ps_mode));
++    const char *returned_ps_name =
++        returned_ps_mode == WIFI_PS_NONE ? "WIFI_PS_NONE" :
++        returned_ps_mode == WIFI_PS_MIN_MODEM ? "WIFI_PS_MIN_MODEM" :
++        returned_ps_mode == WIFI_PS_MAX_MODEM ? "WIFI_PS_MAX_MODEM" : "UNKNOWN";
++    ESP_LOGI(TAG, "EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(%d), returned=%s(%d)",
++             (int)WIFI_PS_NONE, returned_ps_name, (int)returned_ps_mode);
++    ESP_ERROR_CHECK(returned_ps_mode == WIFI_PS_NONE ? ESP_OK : ESP_ERR_INVALID_STATE);
++#endif
++
+     BaseType_t task_status = xTaskCreate(
+         quic_sensor_task,
+         "quic_dht11",

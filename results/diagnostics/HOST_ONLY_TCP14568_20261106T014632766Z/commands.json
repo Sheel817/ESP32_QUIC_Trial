@@ -1,0 +1,280 @@
+[
+  {
+    "name": "server_identity",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance Win32_Process -Filter 'ProcessId=36536' | ConvertTo-Json -Depth 8"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:42.325614+00:00",
+    "ended_utc": "2026-11-06T01:47:43.892062+00:00",
+    "elapsed_seconds": 1.5664784000255167,
+    "exit_code": 0,
+    "stdout_bytes": 253035,
+    "stderr_bytes": 0,
+    "stdout_sha256": "743133ba06ca5dddf1a8812ec6da0f6fcdeb05d4c31556658a367ad2292a6f60",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "cim_state_schema",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; $s=(Get-CimClass -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection).CimClassProperties['State']; $s | Format-List *; $s.Qualifiers | ForEach-Object { $_ | Format-List *; $_.Value | Out-String -Width 4096 }"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:43.902087+00:00",
+    "ended_utc": "2026-11-06T01:47:44.822771+00:00",
+    "elapsed_seconds": 0.9206858000252396,
+    "exit_code": 0,
+    "stdout_bytes": 469,
+    "stderr_bytes": 0,
+    "stdout_sha256": "ce333f6b0de8598f2d59467e7d12a1d5bd8f90dfdf67fd8b3992ae0de3d1364d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "before_powershell_all_tcp",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:44.857074+00:00",
+    "ended_utc": "2026-11-06T01:47:48.791132+00:00",
+    "elapsed_seconds": 3.934052199940197,
+    "exit_code": 0,
+    "stdout_bytes": 414425,
+    "stderr_bytes": 0,
+    "stdout_sha256": "b900b14f73b4676cbe9a0109c77bafbb0c7a486c0d8b061d8ca71ed398eca04a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "before_powershell_14568",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection -LocalPort 14568 | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:48.792988+00:00",
+    "ended_utc": "2026-11-06T01:47:50.387219+00:00",
+    "elapsed_seconds": 1.5942412000149488,
+    "exit_code": 0,
+    "stdout_bytes": 1288,
+    "stderr_bytes": 0,
+    "stdout_sha256": "39289ac9876a09ffbd2c538c3260a451bb7a6a4e9a21d9c1396049d411a3798a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "before_powershell_listen",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection -LocalPort 14568 -State Listen | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:50.388866+00:00",
+    "ended_utc": "2026-11-06T01:47:52.016610+00:00",
+    "elapsed_seconds": 1.627751799998805,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 669,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a8b10e617571e619542b39c26d80d586401a71d9a468615daf26b61a29411547",
+    "exception": null
+  },
+  {
+    "name": "before_cim_14568",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection -Filter 'LocalPort = 14568' | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:52.017821+00:00",
+    "ended_utc": "2026-11-06T01:47:53.095289+00:00",
+    "elapsed_seconds": 1.077468500006944,
+    "exit_code": 0,
+    "stdout_bytes": 1277,
+    "stderr_bytes": 0,
+    "stdout_sha256": "30240db5af0a626712eaf121935355e363fc23a5cace950fb8f7fe4630941d75",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "before_cim_state_raw",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection -Filter 'LocalPort = 14568' | ForEach-Object { $_.CimInstanceProperties | Format-List * }"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:53.097765+00:00",
+    "ended_utc": "2026-11-06T01:47:54.389764+00:00",
+    "elapsed_seconds": 1.2919899000553414,
+    "exit_code": 0,
+    "stdout_bytes": 5118,
+    "stderr_bytes": 0,
+    "stdout_sha256": "2ebba7b378a7b5518da2849b3281a1d4ac32fd988e3ba029ac7b186af700c028",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "before_netstat",
+    "argv": [
+      "C:\\WINDOWS/System32/netstat.exe",
+      "-ano",
+      "-p",
+      "TCP"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:54.390879+00:00",
+    "ended_utc": "2026-11-06T01:47:54.435315+00:00",
+    "elapsed_seconds": 0.044435399933718145,
+    "exit_code": 0,
+    "stdout_bytes": 15060,
+    "stderr_bytes": 0,
+    "stdout_sha256": "631aea356a8a087ea4c703065a0ea6c871a40f9b7e3f961a91e85efffd578e7c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "after_powershell_all_tcp",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:55.214312+00:00",
+    "ended_utc": "2026-11-06T01:47:58.340931+00:00",
+    "elapsed_seconds": 3.126561400014907,
+    "exit_code": 0,
+    "stdout_bytes": 418313,
+    "stderr_bytes": 0,
+    "stdout_sha256": "33f3e7e11bf364d001660a0cd6c7176e4193cb80c13b0fb78c64453bd6ee9ffd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "after_powershell_14568",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection -LocalPort 14568 | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:47:58.343168+00:00",
+    "ended_utc": "2026-11-06T01:47:59.999658+00:00",
+    "elapsed_seconds": 1.6564921999815851,
+    "exit_code": 0,
+    "stdout_bytes": 1288,
+    "stderr_bytes": 0,
+    "stdout_sha256": "39289ac9876a09ffbd2c538c3260a451bb7a6a4e9a21d9c1396049d411a3798a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "after_powershell_listen",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection -LocalPort 14568 -State Listen | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:48:00.000737+00:00",
+    "ended_utc": "2026-11-06T01:48:01.784581+00:00",
+    "elapsed_seconds": 1.7838431000709534,
+    "exit_code": 1,
+    "stdout_bytes": 0,
+    "stderr_bytes": 669,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "a8b10e617571e619542b39c26d80d586401a71d9a468615daf26b61a29411547",
+    "exception": null
+  },
+  {
+    "name": "after_cim_14568",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection -Filter 'LocalPort = 14568' | Format-List *"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:48:01.786011+00:00",
+    "ended_utc": "2026-11-06T01:48:02.971684+00:00",
+    "elapsed_seconds": 1.1856578999431804,
+    "exit_code": 0,
+    "stdout_bytes": 1277,
+    "stderr_bytes": 0,
+    "stdout_sha256": "30240db5af0a626712eaf121935355e363fc23a5cace950fb8f7fe4630941d75",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "after_cim_state_raw",
+    "argv": [
+      "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-NonInteractive",
+      "-Command",
+      "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection -Filter 'LocalPort = 14568' | ForEach-Object { $_.CimInstanceProperties | Format-List * }"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:48:02.972937+00:00",
+    "ended_utc": "2026-11-06T01:48:04.423139+00:00",
+    "elapsed_seconds": 1.4502214000094682,
+    "exit_code": 0,
+    "stdout_bytes": 5118,
+    "stderr_bytes": 0,
+    "stdout_sha256": "2ebba7b378a7b5518da2849b3281a1d4ac32fd988e3ba029ac7b186af700c028",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  },
+  {
+    "name": "after_netstat",
+    "argv": [
+      "C:\\WINDOWS/System32/netstat.exe",
+      "-ano",
+      "-p",
+      "TCP"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+    "started_utc": "2026-11-06T01:48:04.424837+00:00",
+    "ended_utc": "2026-11-06T01:48:04.465569+00:00",
+    "elapsed_seconds": 0.04073120001703501,
+    "exit_code": 0,
+    "stdout_bytes": 15203,
+    "stderr_bytes": 0,
+    "stdout_sha256": "97bc365f71fdf8cf4d8fd362f47bb8a9c27a93835d53c32b4dbd8181aa3a3d85",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exception": null
+  }
+]

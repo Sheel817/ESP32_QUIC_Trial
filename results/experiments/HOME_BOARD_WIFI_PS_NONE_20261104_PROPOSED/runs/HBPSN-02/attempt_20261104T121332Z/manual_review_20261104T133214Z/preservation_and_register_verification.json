@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-11-04T13:35:40.500111+00:00",
+  "decision": "COMPLETE_WITH_RETAINED_FLAGS",
+  "changed_fields": [
+    "deviation_reason",
+    "metadata_path",
+    "settings_evidence_type",
+    "status"
+  ],
+  "other_17_csv_rows_byte_identical": true,
+  "workbook_other_rows_guard_passed": true,
+  "original_run_and_prior_review_files_unchanged": true,
+  "hbpsn01_unchanged": true,
+  "frozen_plan_unchanged": true,
+  "raw_measurements_unchanged": true,
+  "automatic_flags_and_register_snapshots_preserved": true,
+  "next_scheduled_run": "HBPSN-03 QUIC DROP1_OUT NOT_RUN",
+  "register_csv_sha256": "3817afd877aea70a709df541e3b1a317f9ea4963029cd21f264e54edeea4a579",
+  "register_xlsx_sha256": "d55477a6c51777f01abee5f375205b6dc7ec696ac3447d744867111645b098ac"
+}

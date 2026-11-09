@@ -1,0 +1,35 @@
+{
+  "label": "HOST_ONLY_PROBE_ASSOCIATED_NOT_FORMAL",
+  "ordinal": 1,
+  "address": "127.0.0.1",
+  "port": 14568,
+  "started_utc": "2026-11-06T01:47:54.457822+00:00",
+  "tcp": "CONNECTED",
+  "tls": "NEGOTIATED",
+  "timeout_seconds": 5,
+  "mqtt_packets_sent": 0,
+  "exception": null,
+  "tcp_completed_utc": "2026-11-06T01:47:54.473950+00:00",
+  "tcp_elapsed_seconds": 0.01618380006402731,
+  "local_address": [
+    "127.0.0.1",
+    50516
+  ],
+  "peer_address": [
+    "127.0.0.1",
+    14568
+  ],
+  "handshake_completed_utc": "2026-11-06T01:47:54.512574+00:00",
+  "negotiated_tls": "TLSv1.3",
+  "cipher": [
+    "TLS_AES_256_GCM_SHA384",
+    "TLSv1.3",
+    256
+  ],
+  "alpn": "mqtt",
+  "peer_certificate_sha256": "fed2844dd91a687e2116bb21f356acc0e39839979ae9737dda1218ce8778a328",
+  "certificate_matches_preserved": true,
+  "total_tcp_tls_seconds": 0.054882400087080896,
+  "ended_utc": "2026-11-06T01:47:54.513238+00:00",
+  "elapsed_seconds": 0.05544919997919351
+}

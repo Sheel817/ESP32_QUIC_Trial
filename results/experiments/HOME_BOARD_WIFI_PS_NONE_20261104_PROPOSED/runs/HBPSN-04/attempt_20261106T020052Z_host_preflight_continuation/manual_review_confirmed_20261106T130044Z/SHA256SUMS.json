@@ -1,0 +1,38 @@
+[
+  {
+    "path": "before_run_register.csv",
+    "sha256": "63490f2ba7bb7068e3a81c3e44ff079634128901a90781374fdff71661d11b2a"
+  },
+  {
+    "path": "before_run_register.xlsx",
+    "sha256": "2d8fd23cd7fd011e322c89dca75064039151418325bf92eb0e42445b750b2133"
+  },
+  {
+    "path": "finish_review.py",
+    "sha256": "0abb4acf28b0265f3ce121051fb523e28a9deb70c06923bfaa48678d1336b2ff"
+  },
+  {
+    "path": "manual_review.json",
+    "sha256": "72f5f684c599310e7808236b471615ac995e005a0e894b89ddb831fda004aba7"
+  },
+  {
+    "path": "operator_statement.json",
+    "sha256": "2e970c63a2963cdf8dcc2e135b9cb0275be577c1a3eb41290cc88b1919b4ea47"
+  },
+  {
+    "path": "REGISTERS_UPDATED.json",
+    "sha256": "a093d9771cc76b4e894a3c1695447eab43a5f9618b000a042892f8cb56466061"
+  },
+  {
+    "path": "REVIEW.md",
+    "sha256": "cb602558ee4e5f49c1975b1b16073875ea1bd2ea1fd2787b75d6041b28fac44d"
+  },
+  {
+    "path": "updated_register.csv",
+    "sha256": "0d541b2da9e0860a552fbe9bc9062666098455ec6ed8c8e0ff668493c5aabe56"
+  },
+  {
+    "path": "updated_register.xlsx",
+    "sha256": "c9acabd7bc711c2218bda4467ea129d808922c1db33dcefbfc180444bda430db"
+  }
+]

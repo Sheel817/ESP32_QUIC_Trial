@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-06T00:51:52.334984+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "-m",
+    "esptool",
+    "--chip",
+    "esp32c6",
+    "--port",
+    "COM6",
+    "--baud",
+    "460800",
+    "--before",
+    "no-reset",
+    "--after",
+    "no-reset",
+    "write-flash",
+    "@flash_args"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+  "reset_override": "Matching image/offset/mode/size/frequency arguments unchanged. Suppress before/after reset to keep ROM and capture first application startup."
+}

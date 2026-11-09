@@ -1,0 +1,79 @@
+{
+  "profile": "Ethernet",
+  "os": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300"
+  },
+  "cpu_load": [
+    {
+      "LoadPercentage": 41
+    }
+  ],
+  "utc": "2026-11-05T20:23:19.0209382Z",
+  "band": "TwoPointFourGigahertz",
+  "state": "On",
+  "ssid": "SHEEL 3460",
+  "remote_desktop": "Chrome Remote Desktop in use (operator report); Remote Access window/native messaging process observed",
+  "network_counters": [
+    {
+      "Name": "Ethernet 2",
+      "ReceivedBytes": 0,
+      "SentBytes": 0
+    },
+    {
+      "Name": "WiFi",
+      "ReceivedBytes": 1494,
+      "SentBytes": 1618
+    },
+    {
+      "Name": "vEthernet (WSL (Hyper-V firewall))",
+      "ReceivedBytes": 18412,
+      "SentBytes": 2745980
+    },
+    {
+      "Name": "Ethernet",
+      "ReceivedBytes": 84542497746,
+      "SentBytes": 319813219811
+    },
+    {
+      "Name": "Local Area Connection* 2",
+      "ReceivedBytes": 0,
+      "SentBytes": 36211
+    }
+  ],
+  "ipv4": [
+    {
+      "IPAddress": "192.168.32.1",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))"
+    },
+    {
+      "IPAddress": "192.168.56.1",
+      "InterfaceAlias": "Ethernet 2"
+    },
+    {
+      "IPAddress": "192.168.137.1",
+      "InterfaceAlias": "Local Area Connection* 2"
+    },
+    {
+      "IPAddress": "169.254.231.80",
+      "InterfaceAlias": "Bluetooth Network Connection"
+    },
+    {
+      "IPAddress": "169.254.234.6",
+      "InterfaceAlias": "Local Area Connection* 1"
+    },
+    {
+      "IPAddress": "169.254.222.236",
+      "InterfaceAlias": "WiFi"
+    },
+    {
+      "IPAddress": "192.168.50.38",
+      "InterfaceAlias": "Ethernet"
+    },
+    {
+      "IPAddress": "127.0.0.1",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nonce": "3798e05364674d4b9b60ed4c04a57756",
+  "screenshot": "clumsy_actual_pre_reset.jpg",
+  "sha256": "27a74e61624f5dd59798b32bcaf76fd6af1014b32a7e568562b3fc98107ff0ff",
+  "capture_started_utc": "2026-11-06T13:13:01.204Z",
+  "capture_completed_utc": "2026-11-06T13:13:01.560Z",
+  "capture_started_monotonic": 725090.520913,
+  "capture_completed_monotonic": 725090.876913,
+  "clock_provenance": "Actual host UTC capture brackets; monotonic estimates from request UTC/monotonic bridge.",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "label": "HBPSN-05 QUIC LAG100_OUT actual pre-reset settings; all other main effects disabled"
+}

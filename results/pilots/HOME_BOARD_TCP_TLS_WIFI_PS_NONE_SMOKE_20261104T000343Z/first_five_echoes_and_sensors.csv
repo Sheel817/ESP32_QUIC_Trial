@@ -1,0 +1,6 @@
+seq,esp_log_uptime_ms,app_rtt_ms,host_receipt_utc,server_receive_utc,payload_uptime_ms,sensor,temperature_c,humidity_pct,sensor_error,client_id,topic,label
+1,12247,87.693,2026-11-04T00:06:11+00:00,2026-11-04T00:06:11.803671Z,11701,DHT11,30.0,31.0,0,esp32_quic_client,esp32/quic/test,HOME_BOARD TCP_TLS WIFI_PS_NONE SMOKE; startup verification only; not a formal run
+2,17277,107.333,2026-11-04T00:06:16+00:00,2026-11-04T00:06:16.814932Z,16712,DHT11,29.0,31.0,0,esp32_quic_client,esp32/quic/test,HOME_BOARD TCP_TLS WIFI_PS_NONE SMOKE; startup verification only; not a formal run
+3,22207,27.586,2026-11-04T00:06:21+00:00,2026-11-04T00:06:21.823662Z,21721,DHT11,29.0,33.0,0,esp32_quic_client,esp32/quic/test,HOME_BOARD TCP_TLS WIFI_PS_NONE SMOKE; startup verification only; not a formal run
+4,27237,47.497,2026-11-04T00:06:26+00:00,2026-11-04T00:06:26.832336Z,26731,DHT11,29.0,34.0,0,esp32_quic_client,esp32/quic/test,HOME_BOARD TCP_TLS WIFI_PS_NONE SMOKE; startup verification only; not a formal run
+5,32267,67.473,2026-11-04T00:06:31+00:00,2026-11-04T00:06:31.846130Z,31741,DHT11,29.0,31.0,0,esp32_quic_client,esp32/quic/test,HOME_BOARD TCP_TLS WIFI_PS_NONE SMOKE; startup verification only; not a formal run

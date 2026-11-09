@@ -1,0 +1,8 @@
+﻿{
+    "flash_started":  false,
+    "stage":  "BEFORE_FLASH_OR_RESET",
+    "failure":  "Initial targeted pipe-name query helper stalled before exit command; only setup helper 21256 stopped. Monitor and servers untouched.",
+    "recorded_utc":  "2026-11-04T12:14:51.3529481Z",
+    "reset_issued":  false,
+    "measured_run_started":  false
+}

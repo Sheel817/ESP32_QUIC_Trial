@@ -38,6 +38,10 @@ typedef struct NetworkContext
     uint32_t expected_packet_length;  // Expected total length of current MQTT packet
     bool packet_length_determined;    // Whether we've determined the packet length
     bool is_mqtt_connect_packet;      // Whether this is a CONNECT packet
+    // Raw operations below the shared complete-MQTT-packet assembly layer.
+    int (*write_packet)(const uint8_t *data, size_t length);
+    int (*read_data)(uint8_t *data, size_t capacity, size_t *received);
+    bool (*is_connected)(void);
 } NetworkContext_t;
 
 BaseType_t mqtt_quic_transport_init(NetworkContext_t *pNetworkContext,

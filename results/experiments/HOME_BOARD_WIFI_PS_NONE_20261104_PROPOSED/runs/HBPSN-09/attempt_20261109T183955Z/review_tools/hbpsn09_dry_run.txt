@@ -1,0 +1,272 @@
+=== DRY RUN: nothing written
+{
+  "run_id": "HBPSN-09",
+  "attempt_id": "attempt_20261109T183955Z",
+  "transport": "TCP_TLS",
+  "condition": "CONTROL",
+  "boot_replicate": 2,
+  "reviewed_utc": "<set at write time>",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30; no independent or continuous GUI observation is claimed, and no image shows Clumsy before the measured reset.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting during the HBPSN-09 run.",
+    "relayed": false,
+    "receipt_utc": "2026-11-09T21:47:30Z",
+    "receipt_helsinki": "2026-11-09T23:47:30+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message, second precision; original message send time unavailable",
+    "scope_as_worded": "During the HBPSN-09 run. The reviewer has not extended it to the interval before the measured reset.",
+    "not_backdated": true
+  },
+  "operator_disposition_approval": {
+    "exact_text": "<operator reply, set at write time>",
+    "relayed": false,
+    "receipt_utc": "<set at write time>",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original message send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "line_77": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_saved_and_hash_matches": true,
+    "pre_run_image_shows_clumsy": false,
+    "end_of_run_image_shows_control_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.018561,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-09T18:58:06.268682+00:00",
+    "fixed_deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+    "deadline_observed_lateness_ms": 2.676700009033084,
+    "boot_session_id": "HBPSN-09/2026-11-09T18:58:06.268682+00:00",
+    "assigned_ip": "192.168.137.112"
+  },
+  "counts": {
+    "raw_serial_lines": 580,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 72.16183132530121,
+    "sd_ms": 33.906335552440176,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 67.59,
+    "p95_ms": 107.708,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 27.347,
+    "maximum_ms": 387.449
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "b52c888a427a045511027a749b49daada9f23c7c78e59bde7f9bddf9e25f9714",
+      "operator_confirmed_receipt_utc": "2026-11-09T18:56:50.3253449Z",
+      "seconds_before_reset_release": 75.94,
+      "finding": "Only evidence of the Clumsy state before the measured reset."
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "f53e9a42c848363b650e65bface150464ad874e6f29c8093431f5f9fd499ac97",
+      "capture_started_utc": "2026-11-09T18:58:02.971833+00:00",
+      "shows_clumsy": false
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "b32d1b1aefdfce3603e10754f71005aca0c8f464473611787021b6608802b3d5",
+      "capture_started_utc": "2026-11-09T19:35:06.287243+00:00",
+      "shows_clumsy": true,
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "all_8_function_checkboxes": "unticked",
+        "lag_fields_while_off": "Outbound ticked, Inbound unticked, Delay 100",
+        "drop_fields_while_off": "Outbound ticked, Inbound unticked, Chance 1"
+      },
+      "windows_tray_clock_in_image": "21.35 09/11/2026",
+      "limit": "The helper PASS for this phase came from the pre-launch declaration; the settings_seen values come from visual review of this image."
+    },
+    "supplementary_images": [
+      {
+        "file": "clumsy_mid_run_remote_2117.png",
+        "role": "mid-run",
+        "source_path": "C:\\Users\\newsh\\Downloads\\1794251880985_image.png",
+        "source_file_created_and_modified_helsinki": "2026-11-09T23:45:36+02:00",
+        "bytes": 1891655,
+        "sha256": "47bd1856336b66638777133fd17ddaf119467737c1bdd7729d26dabccc29e38b",
+        "time_label": "OPERATOR-STATED: 21:17 Helsinki during the run. Not machine-recorded.",
+        "clocks_visible_in_image": "Windows tray 21.17 09/11/2026 and outer remote-client shelf 21:17",
+        "content_bound": "The terminal in the image shows the helper waiting for end_of_run, which it answered at 19:35:06Z, and the chat panel cites the 18:58:06Z reset, so the image is from inside the run if it is an unaltered capture.",
+        "source_file_time_note": "The file time is when the file reached this laptop, not capture time. Filename prefix 1794251880985 reads as 2026-11-09T19:18:00.985Z if it is epoch milliseconds; this is not relied on.",
+        "settings_seen": {
+          "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+          "capture_button": "Stop",
+          "status_line": "Started filtering. Enable functionalities to take effect.",
+          "all_8_function_checkboxes": "unticked",
+          "lag_fields_while_off": "Outbound ticked, Inbound unticked, Delay 100",
+          "drop_fields_while_off": "Outbound ticked, Inbound unticked, Chance 1"
+        },
+        "indicator_dot_next_to_stop": "green",
+        "inspection": "Visual review; not machine-read"
+      },
+      {
+        "file": "clumsy_post_late_2344.png",
+        "role": "late post-run",
+        "source_path": "C:\\Users\\newsh\\Pictures\\Screenshots\\Screenshot 2026-11-09 234408.png",
+        "source_file_created_and_modified_helsinki": "2026-11-09T23:44:08+02:00",
+        "bytes": 31466,
+        "sha256": "5939bfd478a5cf432b0b8491c28a595296cf2ab33bf83604294a46f7cc0cf346",
+        "time_label": "OPERATOR-STATED: about 23:44 Helsinki, about 2 h 09 min after the deadline. No clock in the image; file name and file time agree.",
+        "settings_seen": {
+          "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+          "capture_button": "Stop",
+          "status_line": "Started filtering. Enable functionalities to take effect.",
+          "all_8_function_checkboxes": "unticked",
+          "lag_fields_while_off": "Outbound ticked, Inbound unticked, Delay 100",
+          "drop_fields_while_off": "Outbound ticked, Inbound unticked, Chance 1"
+        },
+        "indicator_dot_next_to_stop": "grey",
+        "inspection": "Visual review; not machine-read",
+        "limit": "Shows the state after the recording, not during it."
+      }
+    ],
+    "indicator_dot_note": "The dot beside Stop is green in the 21:17 image and grey in the end-of-run and 23:44 images. Its meaning was not established; the button and status line are the same in all three."
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-09T20:58:06 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-09T20:58:09 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-09T20:58:09 W (3407) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": {
+    "text": "TCP+TLS ERROR: \n",
+    "host_receipt_utc": "2026-11-09T18:59:03.624352+00:00",
+    "cause": "Not established; not declared harmless",
+    "context": "Received 62 ms after server stdout for seq 10 at 18:59:03.562Z. No serial connection error, disconnect or sequence gap.",
+    "register_count_treatment": "Counted as 1, as in HBPSN-04 and HBPSN-07; the collector request counted serial lines only and gave 0."
+  },
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-09T20:58:06 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-09T18:58:06.277820+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-09T19:35:06.939892+00:00",
+    "deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\SUMMARY.md"
+  },
+  "setup_notes": {
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "listener": "Get-NetTCPConnection shows a blank state and netstat no LISTENING entry for 14568; functional TLS probe passed. Same discrepancy as HBPSN-04.",
+    "test_capture": "The test capture did not show Clumsy and the operator launched without a second test.",
+    "host_activity": "Chrome Remote Desktop session visible at 21:17; web browser windows open on the second display at end of run. Network use by them was not measured.",
+    "register": "Row 9 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "observed_utc": "2026-11-09T21:47:52Z",
+    "still_running_pids": [
+      37648,
+      9492,
+      32352,
+      9592
+    ],
+    "monitor_logs": "monitor_stream.log (187723 bytes) and monitor_after_run.log (133411 bytes) were still open and growing, are not in SHA256SUMS.json and are not cited by this review. Statistics come from serial.raw.log-derived files only."
+  },
+  "retained_flags": [
+    "PRE_RUN_IMAGE_DOES_NOT_SHOW_CLUMSY",
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BEFORE_2117_MID_RUN",
+    "OPERATOR_STATEMENT_COVERS_RUN_ONLY_NOT_PRE_RESET",
+    "SUPPLEMENTARY_IMAGE_TIMES_OPERATOR_STATED",
+    "LAUNCHED_WITHOUT_TEST_CAPTURE_SHOWING_CLUMSY",
+    "SERVER_STDERR_TCP_TLS_ERROR_UNATTRIBUTED",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "WINDOWS_LISTENER_REPORTING_DISCREPANCY",
+    "HOST_REMOTE_DESKTOP_AND_BROWSER_ACTIVITY_DURING_RUN",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn09_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}
+=== patch
+{
+ "status": "COMPLETE with retained flags",
+ "preflight_status": "PASS",
+ "startup_status": "PASS",
+ "settings_evidence_type": "operator_reported_declaration; pre_run_image_does_not_show_Clumsy; actual_mid_end_late_GUI_images_and_operator_reported_stability; manually_reviewed",
+ "boot_session_id": "HBPSN-09/2026-11-09T18:58:06.268682+00:00",
+ "reset_release_utc": "2026-11-09T18:58:06.268682+00:00",
+ "recording_end_utc": "2026-11-09T19:35:06.268682+00:00",
+ "actual_duration_seconds": "2220",
+ "actual_assigned_ip": "192.168.137.112",
+ "eligible_count": "431",
+ "selected_count": "415",
+ "shortfall": "0",
+ "connection_error_count": "1",
+ "sequence_gap_count": "0",
+ "mean_app_rtt_ms": "72.16183132530121",
+ "minimum_app_rtt_ms": "27.347",
+ "maximum_app_rtt_ms": "387.449",
+ "metadata_path": "runs/HBPSN-09/attempt_20261109T183955Z/manual_review.json",
+ "raw_serial_path": "runs/HBPSN-09/attempt_20261109T183955Z/serial.raw.log",
+ "deviation_reason": "Manual review COMPLETE with retained flags (PRE_RUN_IMAGE_DOES_NOT_SHOW_CLUMSY, SETTINGS_EVIDENCE_OPERATOR_REPORTED, END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION, NO_CLUMSY_IMAGE_BEFORE_2117_MID_RUN, OPERATOR_STATEMENT_COVERS_RUN_ONLY_NOT_PRE_RESET, SUPPLEMENTARY_IMAGE_TIMES_OPERATOR_STATED, LAUNCHED_WITHOUT_TEST_CAPTURE_SHOWING_CLUMSY, SERVER_STDERR_TCP_TLS_ERROR_UNATTRIBUTED, IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID, WINDOWS_LISTENER_REPORTING_DISCREPANCY, HOST_REMOTE_DESKTOP_AND_BROWSER_ACTIVITY_DURING_RUN, REGISTER_NOT_SET_RUNNING_DURING_RUN). Operator exact statement \"I did not change any Clumsy setting during the HBPSN-09 run.\" not relayed; local receipt 2026-11-09T21:47:30Z, original send time unavailable. Settings evidence is operator-reported: the pre-run image does not show Clumsy and the pre-reset state rests on the declaration confirmed 75.94 s before reset release. Clumsy images at 21:17 Helsinki (operator-stated), at end of run and at 23:44 Helsinki (operator-stated) show the CONTROL settings. One unattributed server TCP+TLS ERROR retained and counted as in HBPSN-04/07; no serial connection error, reboot, gap or shortfall. N 415, Mean 72.162 ms, SD 33.906 ms, Median 67.590 ms, P95 107.708 ms, Min 27.347 ms, Max 387.449 ms."
+}
+=== old csv line
+"9","2","HBPSN-09","TCP_TLS","CONTROL","2","NOT_RUN","2220","60000","415","0","0","none","HOME_BOARD","WIFI_PS_NONE","TCP_TLS_PSN","","","","","","","","","","","","","","","","","runs/HBPSN-09/metadata.json","",""
+
+=== new csv line
+"9","2","HBPSN-09","TCP_TLS","CONTROL","2","COMPLETE with retained flags","2220","60000","415","0","0","none","HOME_BOARD","WIFI_PS_NONE","TCP_TLS_PSN","PASS","PASS","operator_reported_declaration; pre_run_image_does_not_show_Clumsy; actual_mid_end_late_GUI_images_and_operator_reported_stability; manually_reviewed","HBPSN-09/2026-11-09T18:58:06.268682+00:00","2026-11-09T18:58:06.268682+00:00","2026-11-09T19:35:06.268682+00:00","2220","192.168.137.112","431","415","0","1","0","72.16183132530121","27.347","387.449","runs/HBPSN-09/attempt_20261109T183955Z/manual_review.json","runs/HBPSN-09/attempt_20261109T183955Z/serial.raw.log","Manual review COMPLETE with retained flags (PRE_RUN_IMAGE_DOES_NOT_SHOW_CLUMSY, SETTINGS_EVIDENCE_OPERATOR_REPORTED, END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION, NO_CLUMSY_IMAGE_BEFORE_2117_MID_RUN, OPERATOR_STATEMENT_COVERS_RUN_ONLY_NOT_PRE_RESET, SUPPLEMENTARY_IMAGE_TIMES_OPERATOR_STATED, LAUNCHED_WITHOUT_TEST_CAPTURE_SHOWING_CLUMSY, SERVER_STDERR_TCP_TLS_ERROR_UNATTRIBUTED, IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID, WINDOWS_LISTENER_REPORTING_DISCREPANCY, HOST_REMOTE_DESKTOP_AND_BROWSER_ACTIVITY_DURING_RUN, REGISTER_NOT_SET_RUNNING_DURING_RUN). Operator exact statement ""I did not change any Clumsy setting during the HBPSN-09 run."" not relayed; local receipt 2026-11-09T21:47:30Z, original send time unavailable. Settings evidence is operator-reported: the pre-run image does not show Clumsy and the pre-reset state rests on the declaration confirmed 75.94 s before reset release. Clumsy images at 21:17 Helsinki (operator-stated), at end of run and at 23:44 Helsinki (operator-stated) show the CONTROL settings. One unattributed server TCP+TLS ERROR retained and counted as in HBPSN-04/07; no serial connection error, reboot, gap or shortfall. N 415, Mean 72.162 ms, SD 33.906 ms, Median 67.590 ms, P95 107.708 ms, Min 27.347 ms, Max 387.449 ms."
+
+CSV line count 19 19 changed physical lines [9]
+CSV header+rows1-8 sha before 899aa2eafec435089ff4686e79a707f99d6255b31453e7d61d072399f11742a1 after 899aa2eafec435089ff4686e79a707f99d6255b31453e7d61d072399f11742a1
+CSV rows10-18 sha before af089b4345b756db00f2f1c274a0a29023ee9e3459e573042576fad19c6ff072 after af089b4345b756db00f2f1c274a0a29023ee9e3459e573042576fad19c6ff072
+CSV row 9 fields changed ['actual_assigned_ip', 'actual_duration_seconds', 'boot_session_id', 'connection_error_count', 'deviation_reason', 'eligible_count', 'maximum_app_rtt_ms', 'mean_app_rtt_ms', 'metadata_path', 'minimum_app_rtt_ms', 'preflight_status', 'raw_serial_path', 'recording_end_utc', 'reset_release_utc', 'selected_count', 'sequence_gap_count', 'settings_evidence_type', 'shortfall', 'startup_status', 'status']
+XLSX parts same list True parts with changed bytes ['xl/worksheets/sheet1.xml']
+XLSX sheet bytes outside row 10 identical True
+XLSX cells/rows compared outside row 10 648 differences []
+XLSX changed cells in row 10 ['AA10', 'AB10', 'AC10', 'AD10', 'AE10', 'AF10', 'AG10', 'AH10', 'AI10', 'G10', 'Q10', 'R10', 'S10', 'T10', 'U10', 'V10', 'W10', 'X10', 'Y10', 'Z10']
+XLSX row 10 styles unchanged True
+XLSX AA10 b'<ns0:c xmlns:ns0="http://schemas.openxmlformats.org/spreadsheetml/2006/main" r="AA10" s="10"><ns0:f>IF(ISNUMBER(Z10),MAX(0,J10-Z10),"")</ns0:f><ns0:v>0</ns0:v></ns0:c>'
+would-be csv sha adec2a15dbdd73b9e2a1fedb750417724b4265d591fd4ce99007a7de9dc1a362 manual_review bytes (with placeholders) 11639

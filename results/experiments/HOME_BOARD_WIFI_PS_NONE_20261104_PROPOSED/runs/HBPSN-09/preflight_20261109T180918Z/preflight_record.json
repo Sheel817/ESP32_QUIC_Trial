@@ -1,0 +1,214 @@
+{
+  "run_id": "HBPSN-09",
+  "transport": "TCP_TLS",
+  "condition": "CONTROL",
+  "order": 9,
+  "block": 2,
+  "label": "SETUP_ONLY_NOT_FORMAL_NO_MEASURED_RESET",
+  "created_utc": "2026-11-09T18:09:19.184316+00:00",
+  "protocol_plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "operator_decision_receipt_utc": "2026-11-09T18:06:20.7522475Z",
+  "schedule_confirmation": "Plan line 48, register row 9 and freeze_manifest order 9: HBPSN-09, TCP_TLS, CONTROL; configured lag 0, drop 0, direction none.",
+  "artifact_path_correction": {
+    "wrong_path_in_HBPSN08_TASK": "profiles\\wifi_ps_none_20261103\\build\\tcp_tls.bin",
+    "finding": "That file does not exist and no tcp_tls*.bin exists in the project.",
+    "used": "freeze_manifest.json artifact TCP_TLS_PSN: profiles\\tcp_tls_wifi_ps_none_20261104\\build\\ via flash_args",
+    "authority": "Operator decision 2026-11-09"
+  },
+  "flash_args_verification": {
+    "flash_args_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flash_args",
+    "flash_args_sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+    "flash_args_text": "--flash-mode dio --flash-freq 80m --flash-size 8MB\n0x0 bootloader/bootloader.bin\n0x8000 partition_table/partition-table.bin\n0x10000 quic_demo.bin\n",
+    "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+    "artifact_id": "TCP_TLS_PSN",
+    "files": [
+      {
+        "offset": "0x0",
+        "file": "bootloader/bootloader.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+        "bytes": 22096,
+        "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+        "frozen_sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+        "frozen_bytes": 22096,
+        "match": true
+      },
+      {
+        "offset": "0x8000",
+        "file": "partition_table/partition-table.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+        "bytes": 3072,
+        "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+        "frozen_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+        "frozen_bytes": 3072,
+        "match": true
+      },
+      {
+        "offset": "0x10000",
+        "file": "quic_demo.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+        "bytes": 1498864,
+        "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+        "frozen_sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+        "frozen_bytes": 1498864,
+        "match": true
+      }
+    ],
+    "all_match": true
+  },
+  "server": {
+    "pid": 36536,
+    "process_query": [
+      "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py ",
+      "2026-11-06T01:36:28.9979770Z"
+    ],
+    "socket_note": "Get-NetTCPConnection shows 0.0.0.0:14568 owned by this PID with a blank state; netstat lists no LISTENING entry. Same reporting discrepancy recorded for HBPSN-04."
+  },
+  "tls_probe": {
+    "command": [
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\runs\\HBPSN-09\\preflight_20261109T180918Z\\host_tls_probe_once.py",
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial"
+    ],
+    "started_utc": "2026-11-09T18:09:19.189276+00:00",
+    "ended_utc": "2026-11-09T18:09:19.501529+00:00",
+    "exit_code": 0,
+    "stderr": "",
+    "result": {
+      "label": "HOST_ONLY_PREFLIGHT_NOT_FORMAL",
+      "started_utc": "2026-11-09T18:09:19.384205+00:00",
+      "target": [
+        "127.0.0.1",
+        14568
+      ],
+      "timeout_seconds": 5,
+      "mqtt_bytes_sent": 0,
+      "exception": null,
+      "tcp": "CONNECTED",
+      "local": [
+        "127.0.0.1",
+        49960
+      ],
+      "peer": [
+        "127.0.0.1",
+        14568
+      ],
+      "tls": "NEGOTIATED",
+      "tls_version": "TLSv1.3",
+      "cipher": [
+        "TLS_AES_256_GCM_SHA384",
+        "TLSv1.3",
+        256
+      ],
+      "alpn": "mqtt",
+      "peer_der_sha256": "fed2844dd91a687e2116bb21f356acc0e39839979ae9737dda1218ce8778a328",
+      "preserved_der_sha256": "fed2844dd91a687e2116bb21f356acc0e39839979ae9737dda1218ce8778a328",
+      "certificate_match": true,
+      "ended_utc": "2026-11-09T18:09:19.484084+00:00",
+      "elapsed_seconds": 0.0998818000080064
+    },
+    "com6_touched": false,
+    "server_log_boundaries_before": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+        "byte_offset": 5999967
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+        "byte_offset": 245
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+        "byte_offset": 3280852
+      }
+    },
+    "server_log_boundaries_after": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+        "byte_offset": 6000064
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+        "byte_offset": 325
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+        "byte_offset": 3280852
+      }
+    },
+    "server_log_bytes_added_by_probe_window": {
+      "stdout": "TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256) | ALPN=mqtt\r\n",
+      "stderr": "TCP+TLS ERROR: [WinError 64] The specified network name is no longer available\r\n",
+      "sensor_csv": ""
+    },
+    "passed": true
+  },
+  "flash": {
+    "started_utc": "2026-11-09T18:09:34.595316+00:00",
+    "command": [
+      "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+      "-m",
+      "esptool",
+      "--chip",
+      "esp32c6",
+      "--port",
+      "COM6",
+      "--baud",
+      "460800",
+      "--before",
+      "default-reset",
+      "--after",
+      "hard-reset",
+      "write-flash",
+      "@flash_args"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build",
+    "setup_only": true,
+    "flash_args_verification_immediately_before": {
+      "flash_args_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flash_args",
+      "flash_args_sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+      "flash_args_text": "--flash-mode dio --flash-freq 80m --flash-size 8MB\n0x0 bootloader/bootloader.bin\n0x8000 partition_table/partition-table.bin\n0x10000 quic_demo.bin\n",
+      "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+      "artifact_id": "TCP_TLS_PSN",
+      "files": [
+        {
+          "offset": "0x0",
+          "file": "bootloader/bootloader.bin",
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+          "bytes": 22096,
+          "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+          "frozen_sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1",
+          "frozen_bytes": 22096,
+          "match": true
+        },
+        {
+          "offset": "0x8000",
+          "file": "partition_table/partition-table.bin",
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+          "bytes": 3072,
+          "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+          "frozen_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+          "frozen_bytes": 3072,
+          "match": true
+        },
+        {
+          "offset": "0x10000",
+          "file": "quic_demo.bin",
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+          "bytes": 1498864,
+          "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+          "frozen_sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8",
+          "frozen_bytes": 1498864,
+          "match": true
+        }
+      ],
+      "all_match": true
+    },
+    "ended_utc": "2026-11-09T18:10:00.726383+00:00",
+    "exit_code": 0,
+    "verified_image_count": 3,
+    "full_esptool_output": "esptool --chip esp32c6 --port COM6 --baud 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 8MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 quic_demo.bin\r\nesptool v5.6.0\r\nSerial port COM6:\r\nConnecting....\r\nConnected to ESP32-C6 on COM6:\r\nChip type:          ESP32-C6 (QFN40) (revision v0.0)\r\nFeatures:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash\r\nCrystal frequency:  40MHz\r\nMAC:                40:4c:ca:ff:fe:56:bb:b0\r\nBASE MAC:           40:4c:ca:56:bb:b0\r\nMAC_EXT:            ff:fe\r\n\r\nUploading stub flasher...\r\nRunning stub flasher...\r\nStub flasher running.\r\nChanging baud rate to 460800...\r\nChanged.\r\n\r\nConfiguring flash size...\r\n\r\nWriting 'bootloader/bootloader.bin' at 0x00000000...\r\nSHA digest in image updated.\r\nFlash will be erased from 0x00000000 to 0x00005fff...\r\nCompressed 22096 bytes to 13911...\r\nWriting at 0x00005650 ============================== 100.0% 13.58kB/13.58kB [0s] \r\nWrote 22096 bytes (13911 compressed) at 0x00000000 in 0.6 seconds (294.9 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nWriting 'partition_table/partition-table.bin' at 0x00008000...\r\nFlash will be erased from 0x00008000 to 0x00008fff...\r\nCompressed 3072 bytes to 106...\r\nWriting at 0x00008c00 ============================== 100.0% 106B/106B [0s] \r\nWrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (1842.7 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nWriting 'quic_demo.bin' at 0x00010000...\r\nFlash will be erased from 0x00010000 to 0x0017dfff...\r\nCompressed 1498864 bytes to 893158...\r\nWriting at 0x0001e523 >                                1.8% 16.00kB/872.22kB [0s] \r\nWriting at 0x0002a74f =                                3.7% 32.00kB/872.22kB [0s] \r\nWriting at 0x00032788 =>                               5.5% 48.00kB/872.22kB [1s] \r\nWriting at 0x00037244 ==                               7.3% 64.00kB/872.22kB [1s] \r\nWriting at 0x0003bf74 ==>                              9.2% 80.00kB/872.22kB [2s] \r\nWriting at 0x000434d0 ===                             11.0% 96.00kB/872.22kB [2s] \r\nWriting at 0x0004cac8 ===>                            12.8% 112.00kB/872.22kB [3s] \r\nWriting at 0x0005332a ====                            14.7% 128.00kB/872.22kB [3s] \r\nWriting at 0x0005ac37 ====>                           16.5% 144.00kB/872.22kB [3s] \r\nWriting at 0x00061c04 =====>                          18.3% 160.00kB/872.22kB [4s] \r\nWriting at 0x00068063 ======                          20.2% 176.00kB/872.22kB [4s] \r\nWriting at 0x0006f025 ======>                         22.0% 192.00kB/872.22kB [5s] \r\nWriting at 0x00075a4f =======                         23.8% 208.00kB/872.22kB [5s] \r\nWriting at 0x0007c13a =======>                        25.7% 224.00kB/872.22kB [5s] \r\nWriting at 0x00082779 ========                        27.5% 240.00kB/872.22kB [6s] \r\nWriting at 0x00088cbd ========>                       29.4% 256.00kB/872.22kB [6s] \r\nWriting at 0x00090756 =========                       31.2% 272.00kB/872.22kB [7s] \r\nWriting at 0x00096de5 =========>                      33.0% 288.00kB/872.22kB [7s] \r\nWriting at 0x0009d4fa ==========                      34.9% 304.00kB/872.22kB [7s] \r\nWriting at 0x000a34b6 ===========                     36.7% 320.00kB/872.22kB [8s] \r\nWriting at 0x000a9440 ===========>                    38.5% 336.00kB/872.22kB [8s] \r\nWriting at 0x000af50a ============                    40.4% 352.00kB/872.22kB [8s] \r\nWriting at 0x000b568c ============>                   42.2% 368.00kB/872.22kB [9s] \r\nWriting at 0x000bbdd7 =============                   44.0% 384.00kB/872.22kB [9s] \r\nWriting at 0x000c1e69 =============>                  45.9% 400.00kB/872.22kB [10s] \r\nWriting at 0x000c8892 ==============                  47.7% 416.00kB/872.22kB [10s] \r\nWriting at 0x000cfc77 ==============>                 49.5% 432.00kB/872.22kB [10s] \r\nWriting at 0x000d699e ===============                 51.4% 448.00kB/872.22kB [11s] \r\nWriting at 0x000dd962 ===============>                53.2% 464.00kB/872.22kB [11s] \r\nWriting at 0x000e4819 ================>               55.0% 480.00kB/872.22kB [12s] \r\nWriting at 0x000ebcde =================               56.9% 496.00kB/872.22kB [12s] \r\nWriting at 0x000f23b7 =================>              58.7% 512.00kB/872.22kB [12s] \r\nWriting at 0x000f817a ==================              60.5% 528.00kB/872.22kB [13s] \r\nWriting at 0x000fdef3 ==================>             62.4% 544.00kB/872.22kB [13s] \r\nWriting at 0x00103a4f ===================             64.2% 560.00kB/872.22kB [13s] \r\nWriting at 0x001099dc ===================>            66.0% 576.00kB/872.22kB [14s] \r\nWriting at 0x0010fa02 ====================            67.9% 592.00kB/872.22kB [14s] \r\nWriting at 0x0011564e ====================>           69.7% 608.00kB/872.22kB [15s] \r\nWriting at 0x0011b0ad =====================           71.5% 624.00kB/872.22kB [15s] \r\nWriting at 0x0012180d ======================          73.4% 640.00kB/872.22kB [15s] \r\nWriting at 0x00127e8b ======================>         75.2% 656.00kB/872.22kB [16s] \r\nWriting at 0x0012ddcc =======================         77.0% 672.00kB/872.22kB [16s] \r\nWriting at 0x00133f4a =======================>        78.9% 688.00kB/872.22kB [17s] \r\nWriting at 0x00139f34 ========================        80.7% 704.00kB/872.22kB [17s] \r\nWriting at 0x0013ff15 ========================>       82.5% 720.00kB/872.22kB [17s] \r\nWriting at 0x001461c4 =========================       84.4% 736.00kB/872.22kB [18s] \r\nWriting at 0x0014c685 =========================>      86.2% 752.00kB/872.22kB [18s] \r\nWriting at 0x0015282d ==========================      88.1% 768.00kB/872.22kB [18s] \r\nWriting at 0x00158f2f ==========================>     89.9% 784.00kB/872.22kB [19s] \r\nWriting at 0x0015e9e5 ===========================>    91.7% 800.00kB/872.22kB [19s] \r\nWriting at 0x00165b3c ============================    93.6% 816.00kB/872.22kB [20s] \r\nWriting at 0x0016c6a5 ============================>   95.4% 832.00kB/872.22kB [20s] \r\nWriting at 0x00171f88 =============================   97.2% 848.00kB/872.22kB [20s] \r\nWriting at 0x00177ed6 =============================>  99.1% 864.00kB/872.22kB [21s] \r\nWriting at 0x0017def0 ============================== 100.0% 872.22kB/872.22kB [21s] \r\nWrote 1498864 bytes (893158 compressed) at 0x00010000 in 21.6 seconds (555.2 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nHard resetting via RTS pin...\r\n",
+    "flash_log_sha256": "5c76bf9d6ca6d9959ec4190126ffbe43c9972e6ca9f6701fa9dcde54aa9a7d68",
+    "passed": true
+  }
+}

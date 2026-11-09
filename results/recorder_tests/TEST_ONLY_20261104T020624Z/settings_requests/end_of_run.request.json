@@ -1,0 +1,21 @@
+{
+  "phase": "end_of_run",
+  "nonce": "9b672d33ba3042e19201fabb9542cfd7",
+  "requested_utc": "2026-11-04T02:07:46.923346+00:00",
+  "requested_monotonic": 512378.1402447,
+  "expected": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "effects": "all unchecked"
+  },
+  "anchor": {
+    "test_only": true,
+    "source": "synthetic records only; no ESP reset",
+    "reset_release_monotonic": 512318.1269667,
+    "deadline_monotonic": 512378.1269667,
+    "reset_release_utc": "2026-11-04T02:06:46.910205+00:00",
+    "deadline_utc": "2026-11-04T02:07:46.910205+00:00",
+    "duration_seconds": 60
+  },
+  "response_timeout_seconds": 45
+}

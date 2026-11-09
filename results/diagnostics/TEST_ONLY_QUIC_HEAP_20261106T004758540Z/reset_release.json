@@ -1,0 +1,21 @@
+{
+  "label": "TEST_ONLY",
+  "reset_request_utc": "2026-11-06T00:52:21.972832+00:00",
+  "reset_release_utc": "2026-11-06T00:52:21.973632+00:00",
+  "reset_release_monotonic": 680651.289664,
+  "observation_deadline_utc": "2026-11-06T00:55:21.973632+00:00",
+  "observation_deadline_monotonic": 680831.289664,
+  "maximum_core_end_utc": "2026-11-06T00:57:21.973632+00:00",
+  "maximum_core_end_monotonic": 680951.289664,
+  "method": "Espressif set_rts(PIN_HIGH) after logger ready and EN held low. Host anchor after successful API return, not physical-edge measurement.",
+  "server_boundaries": {
+    "stdout": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "bytes": 2383662
+    },
+    "stderr": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+      "bytes": 0
+    }
+  }
+}

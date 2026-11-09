@@ -1,0 +1,37 @@
+[
+  {
+    "path": "capture_metadata.json",
+    "bytes": 897,
+    "sha256": "3e9d058f75ebbd5c8f3ac5e8517fd7c6832872cf0c465f6cec438ca74d4db317"
+  },
+  {
+    "path": "HBPSN-05_Clumsy_POST_RECORDING.jpg",
+    "bytes": 43907,
+    "sha256": "8ae304cd0655008f48067051582d78093de8bc7ebd6dd40637ffa8b0e0f04090"
+  },
+  {
+    "path": "operator_confirmation_request.json",
+    "bytes": 564,
+    "sha256": "43113f7e38536f22870e848c77fed2cc2d1d66e9b0c33fb7cf862dc8bb5a1610"
+  },
+  {
+    "path": "POST_RECORDING_VERIFICATION.json",
+    "bytes": 5620,
+    "sha256": "435516a0e669111c757cff49f434f43a59cb6de8f119f24f6ef7043e0ad3ad24"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 3588,
+    "sha256": "e5dfb794e9c34c7956e8b899db3bc79351d51a18efd5411dd75477fe6adee372"
+  },
+  {
+    "path": "source_hashes.json",
+    "bytes": 3903,
+    "sha256": "6e73c7037c76ec8c3d5bde5c6e52f2181f7e9e8b883dec1f8c5a13b2cb5fb6e4"
+  },
+  {
+    "path": "verify_and_report.py",
+    "bytes": 9504,
+    "sha256": "76330201a11a8a066e91efb5a81c23a89effd764791ec4945cf199919753367d"
+  }
+]

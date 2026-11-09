@@ -1,0 +1,67 @@
+{
+  "serial": {
+    "line_count": 591,
+    "bytes": 48147,
+    "contiguous_byte_index": true,
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "first_receipt": {
+      "utc": "2026-11-04T00:38:26.336605+00:00",
+      "monotonic": 507017.5533568,
+      "offset": 0,
+      "length": 46,
+      "monitor_stream_offset": 6839
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T01:15:24.292193+00:00",
+      "monotonic": 509235.5089599,
+      "offset": 48063,
+      "length": 84,
+      "monitor_stream_offset": 54902
+    }
+  },
+  "stdout": {
+    "line_count": 886,
+    "bytes": 75664,
+    "contiguous_byte_index": true,
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "first_receipt": {
+      "utc": "2026-11-04T00:38:33.691449+00:00",
+      "monotonic": 507024.9078335,
+      "source_offset": 380697,
+      "offset": 0,
+      "length": 28
+    },
+    "last_receipt": {
+      "utc": "2026-11-04T01:15:24.209844+00:00",
+      "monotonic": 509235.4266028,
+      "source_offset": 456325,
+      "offset": 75628,
+      "length": 36
+    },
+    "end_boundary": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "start_byte": 380697,
+      "end_byte": 456361,
+      "deadline_utc": "2026-11-04T01:15:26.326642+00:00",
+      "tail_closed_utc": "2026-11-04T01:15:26.327186+00:00"
+    }
+  },
+  "stderr": {
+    "line_count": 0,
+    "bytes": 0,
+    "contiguous_byte_index": true,
+    "all_receipts_in_original_window": true,
+    "source_bytes_match": true,
+    "first_receipt": null,
+    "last_receipt": null,
+    "end_boundary": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+      "start_byte": 0,
+      "end_byte": 0,
+      "deadline_utc": "2026-11-04T01:15:26.326642+00:00",
+      "tail_closed_utc": "2026-11-04T01:15:26.327014+00:00"
+    }
+  }
+}

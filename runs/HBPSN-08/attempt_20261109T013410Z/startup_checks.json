@@ -1,0 +1,17 @@
+{
+  "pass_all": true,
+  "assigned_ip": "192.168.137.112",
+  "verified_utc": "2026-11-09T01:34:32.339109+00:00",
+  "verified_helsinki": "2026-11-09T03:34:32.339118+02:00",
+  "gates": {
+    "boot_banner": true,
+    "mac": true,
+    "transport_firmware": true,
+    "wifi_ps_none": true,
+    "assigned_ip": true,
+    "quic_connected": true,
+    "mqtt_connected": true,
+    "subscription": true,
+    "tls": true
+  }
+}

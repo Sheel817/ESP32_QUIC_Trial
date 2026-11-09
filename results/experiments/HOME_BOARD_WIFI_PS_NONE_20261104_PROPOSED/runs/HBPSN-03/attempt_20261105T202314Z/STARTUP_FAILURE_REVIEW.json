@@ -1,0 +1,258 @@
+{
+  "run_id": "HBPSN-03",
+  "status": "FAILED_STARTUP",
+  "processing_status": "RECORDING_ORIGINAL_FIXED_WINDOW",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_ACTUAL_POST_IMAGE_AND_OPERATOR_REVIEW",
+  "documented_utc": "2026-11-05T20:26:46.511262+00:00",
+  "recording_start_utc": "2026-11-05T20:24:54.413525+00:00",
+  "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+  "start_helsinki": "2026-11-05T22:24:54.413525+02:00",
+  "fixed_finish_helsinki": "2026-11-05T23:01:54.413525+02:00",
+  "failure": "Initial boot: QUIC/TLS established and WIFI_PS_NONE verified, then Load access fault panic before MQTT/subscription; spontaneous firmware reboot. No agent retry.",
+  "startup_gate": {
+    "checked_utc": "2026-11-05T20:25:03.637864+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "transport_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "transport_connected": true,
+      "mqtt_connected": false,
+      "subscription": false,
+      "tls": true
+    },
+    "pass_all": false,
+    "fatal": true,
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "9b23e164f"
+  },
+  "reset_and_tool_errors": [
+    {
+      "source_line": 1,
+      "raw_line": "2026-11-05T22:24:54 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-05T20:24:54.424807+00:00"
+    },
+    {
+      "source_line": 3,
+      "raw_line": "2026-11-05T22:24:54 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)",
+      "host_receipt_utc": "2026-11-05T20:24:54.448048+00:00"
+    },
+    {
+      "source_line": 149,
+      "raw_line": "2026-11-05T22:25:02 Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.",
+      "host_receipt_utc": "2026-11-05T20:25:02.748445+00:00"
+    },
+    {
+      "source_line": 161,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x40800001: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.828282+00:00"
+    },
+    {
+      "source_line": 167,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x40800b56 0x40808576: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.853622+00:00"
+    },
+    {
+      "source_line": 169,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x4202ac74 0x4202acb8: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.867372+00:00"
+    },
+    {
+      "source_line": 171,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x42016208 0x4201b1d0: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.878195+00:00"
+    },
+    {
+      "source_line": 173,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x4201b250: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.887276+00:00"
+    },
+    {
+      "source_line": 175,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x4201d126: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.895936+00:00"
+    },
+    {
+      "source_line": 177,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x4203c206: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.906552+00:00"
+    },
+    {
+      "source_line": 180,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x420212ec: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.919217+00:00"
+    },
+    {
+      "source_line": 183,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x42021758: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.928792+00:00"
+    },
+    {
+      "source_line": 187,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x420219ac: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.948123+00:00"
+    },
+    {
+      "source_line": 190,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x4201d100: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.964584+00:00"
+    },
+    {
+      "source_line": 192,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x420b5258: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.977169+00:00"
+    },
+    {
+      "source_line": 195,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x42021fa8 0x42019e98: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:02.996233+00:00"
+    },
+    {
+      "source_line": 197,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x420220c8: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:03.003565+00:00"
+    },
+    {
+      "source_line": 199,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x42021758: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:03.011906+00:00"
+    },
+    {
+      "source_line": 201,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x420b5258: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:03.020860+00:00"
+    },
+    {
+      "source_line": 203,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x42011742: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:03.034859+00:00"
+    },
+    {
+      "source_line": 213,
+      "raw_line": "\u001b[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf 0x40811d26: [WinError 2] The system cannot find the file specified\u001b[0m",
+      "host_receipt_utc": "2026-11-05T20:25:03.107145+00:00"
+    },
+    {
+      "source_line": 219,
+      "raw_line": "2026-11-05T22:25:03 Rebooting...",
+      "host_receipt_utc": "2026-11-05T20:25:03.147120+00:00"
+    },
+    {
+      "source_line": 220,
+      "raw_line": "2026-11-05T22:25:03 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-05T20:25:03.149248+00:00"
+    },
+    {
+      "source_line": 222,
+      "raw_line": "2026-11-05T22:25:03 rst:0xc (SW_CPU),boot:0x6c (SPI_FAST_FLASH_BOOT)",
+      "host_receipt_utc": "2026-11-05T20:25:03.150811+00:00"
+    }
+  ],
+  "subsequent_boot_policy": "Retain entire original fixed recording. All post-reboot APP_RTTs excluded from initial-boot first415. Later MQTT success cannot repair the failed initial startup.",
+  "collector_version": {
+    "version": "repaired-v2-manual-review-gate",
+    "files": [
+      {
+        "path": "collector_v2.py",
+        "sha256": "381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a"
+      },
+      {
+        "path": "reliability.py",
+        "sha256": "4db94b1142b97c464f0c75c2a0c6b85bb64e2787b762ad4952d2ac6ec0625f84"
+      },
+      {
+        "path": "monitor_instrumented_v2.py",
+        "sha256": "64a96e1e78111aaef1f7c27cadfbfccf19cd50d66965bebf431402f86ed35dcd"
+      }
+    ]
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "host_activity": "Chrome Remote Desktop in use, operator reported; host/AP/load/counters saved in host_hotspot_activity_preflight.json. Brief agent provenance/register work during early recording; no pings/builds/tests.",
+  "flash_verification": {
+    "exit_code": 0,
+    "ended_utc": "2026-11-05T20:24:21.214797+00:00",
+    "artifact_directory": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build",
+    "verified_image_count": 3,
+    "setup_only": true
+  },
+  "fresh_pre_reset_evidence": {
+    "status": "PASS",
+    "phase": "pre_run",
+    "request": {
+      "phase": "pre_run",
+      "nonce": "58887a8c29a44128a3a24d9c4eb3abdb",
+      "requested_utc": "2026-11-05T20:24:37.341189+00:00",
+      "requested_monotonic": 664586.657266,
+      "expected": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "Drop": {
+          "enabled": true,
+          "chance_percent": 1.0,
+          "inbound": false,
+          "outbound": true
+        },
+        "other_main_effects": {
+          "Lag": false,
+          "Throttle": false,
+          "Duplicate": false,
+          "Out of order": false,
+          "Tamper": false,
+          "Set TCP RST": false,
+          "Bandwidth": false
+        }
+      },
+      "anchor": null,
+      "response_timeout_seconds": 30
+    },
+    "evidence": {
+      "nonce": "58887a8c29a44128a3a24d9c4eb3abdb",
+      "screenshot": "clumsy_actual_pre_reset.jpg",
+      "sha256": "d7160775348935c00b0d1427640058b479a89f51bea75158549caaad15922c79",
+      "capture_started_utc": "2026-11-05T20:24:41.258Z",
+      "capture_completed_utc": "2026-11-05T20:24:41.514Z",
+      "capture_started_monotonic": 664590.5742660001,
+      "capture_completed_monotonic": 664590.830266,
+      "monotonic_provenance": "Estimates derived from request UTC/monotonic anchor and actual image UTC brackets; not a direct monotonic sample in screenshot runtime.",
+      "source_type": "GUI_observed",
+      "observed": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "Drop": {
+          "enabled": true,
+          "chance_percent": 1,
+          "inbound": false,
+          "outbound": true
+        },
+        "other_main_effects": {
+          "Lag": false,
+          "Throttle": false,
+          "Duplicate": false,
+          "Out of order": false,
+          "Tamper": false,
+          "Set TCP RST": false,
+          "Bandwidth": false
+        }
+      },
+      "observations": "Exact UDP filter; Stop and Started filtering; Drop checked chance1=1.0%, inbound unchecked outbound checked; Lag/Throttle/Duplicate/Out of order/Tamper/Set TCP RST/Bandwidth unchecked. No settings changed."
+    },
+    "reason": null,
+    "evaluated_utc": "2026-11-05T20:24:51.211980+00:00"
+  },
+  "old_verified_image": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\verified_prior_pre_reset.jpg",
+    "sha256": "6f476841c8d10f8d2ef12d03a4fcd276097ec894f4a0dc801a2e140d70186142"
+  },
+  "logs": {
+    "serial.raw.log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "serial_receipts.jsonl": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial_receipts.jsonl",
+    "monitor_stream.log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\monitor_stream.log",
+    "server.stdout.raw.log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\server.stdout.raw.log",
+    "server.stderr.raw.log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\server.stderr.raw.log",
+    "server.sensor_csv.raw.log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\server.sensor_csv.raw.log"
+  },
+  "automatic_finalization": "Repaired v2 collector remains alive; original2220s deadline, no extension. Requests actual post-image and finalizes regardless of missing evidence. It does not itself operate the GUI or approve validity."
+}

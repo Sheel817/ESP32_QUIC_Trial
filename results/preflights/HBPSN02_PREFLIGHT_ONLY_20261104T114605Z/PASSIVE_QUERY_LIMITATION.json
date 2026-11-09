@@ -1,0 +1,7 @@
+{
+  "documented_utc": "2026-11-04T11:48:52.782373+00:00",
+  "phase": "PREFLIGHT_ONLY",
+  "recording_started": false,
+  "issue": "State-filtered Get-NetTCPConnection returned no listener; assert len(listeners)==1 failed. No reset, recording or server restart occurred. Later readiness was resolved by a separate local TLS-only preflight probe.",
+  "superseding_evidence": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\server_readiness.json"
+}

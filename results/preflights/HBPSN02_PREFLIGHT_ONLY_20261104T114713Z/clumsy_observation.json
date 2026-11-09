@@ -1,0 +1,28 @@
+{
+  "capture_started_utc": "2026-11-04T11:44:48.674Z",
+  "capture_completed_utc": "2026-11-04T11:44:49.137Z",
+  "image": "clumsy_preflight_only.png",
+  "sha256": "931061d4a531a80389e426c2c3e0ac644986b325f9b1f157cbe16aceb7465ebd",
+  "source": "actual screenshot; visually inspected GUI; read-only",
+  "scope": "PREFLIGHT_ONLY; not the future measured-boot pre-reset screenshot; late supplementary only relative to HBPSN-01",
+  "observed_filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+  "capture": "RUNNING",
+  "Lag": {
+    "enabled": false,
+    "displayed_delay_ms": 100,
+    "inbound": false,
+    "outbound": true
+  },
+  "other_effects": {
+    "Drop": false,
+    "Throttle": false,
+    "Duplicate": false,
+    "Out of order": false,
+    "Tamper": false,
+    "Set TCP RST": false,
+    "Bandwidth": false
+  },
+  "displayed_drop_percent": 10,
+  "required_settings_match": false,
+  "settings_changed": false
+}

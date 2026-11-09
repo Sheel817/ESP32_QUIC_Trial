@@ -35,6 +35,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <assert.h>
+#include <stdlib.h>
 
 #include <ngtcp2/ngtcp2.h>
 #include <ngtcp2/ngtcp2_crypto.h>
@@ -51,6 +52,8 @@
 #include "mqtt_quic_transport.h"  // This includes esp_timer.h
 
 #include "esp_log.h"
+#include "measurement_logging.h"
+#include "tls_negotiation.h"
 static const char *TAG = "QUIC";
 // @NOTE: hack to avoid using stderr
 #undef stderr
@@ -163,6 +166,16 @@ static int connect_sock(struct sockaddr *local_addr, socklen_t *plocal_addrlen,
   return 0;
 }
 
+#define QUIC_TX_BUFFER_LIMIT (16 * 1024)
+
+struct quic_tx_chunk {
+  struct quic_tx_chunk *next;
+  uint64_t offset;
+  size_t len;
+  size_t sent;
+  uint8_t data[];
+};
+
 struct client {
   ngtcp2_crypto_conn_ref conn_ref;
   int fd;
@@ -174,9 +187,10 @@ struct client {
 
   struct {
     int64_t stream_id;
-    const uint8_t *data;
-    size_t datalen;
-    size_t nwrite;
+    struct quic_tx_chunk *head;
+    struct quic_tx_chunk *tail;
+    uint64_t queued_offset;
+    size_t buffered;
   } stream;
 
   ngtcp2_ccerr last_error;
@@ -184,6 +198,28 @@ struct client {
   ev_io rev;
   ev_timer timer;
 };
+
+static int acked_stream_data_offset(ngtcp2_conn *conn, int64_t stream_id,
+                                    uint64_t offset, uint64_t datalen,
+                                    void *user_data, void *stream_user_data) {
+  struct client *c = user_data;
+  (void)conn;
+  (void)stream_user_data;
+  if (stream_id != c->stream.stream_id) {
+    return 0;
+  }
+  while (c->stream.head &&
+         c->stream.head->offset + c->stream.head->len <= offset + datalen) {
+    struct quic_tx_chunk *chunk = c->stream.head;
+    c->stream.head = chunk->next;
+    c->stream.buffered -= chunk->len;
+    free(chunk);
+  }
+  if (!c->stream.head) {
+    c->stream.tail = NULL;
+  }
+  return 0;
+}
 
 static int numeric_host_family(const char *hostname, int family) {
   uint8_t dst[sizeof(struct in6_addr)];
@@ -271,7 +307,8 @@ static int get_new_connection_id_cb(ngtcp2_conn *conn, ngtcp2_cid *cid,
 
 static int handshake_completed_cb(ngtcp2_conn *conn, void *user_data) {
     (void)conn;
-    (void)user_data;
+    struct client *c = user_data;
+    tls_report_negotiation("QUIC", c->ssl);
     ESP_LOGI(TAG, "QUIC handshake completed callback triggered!");
     g_quic_handshake_completed = true;
     return 0;
@@ -294,6 +331,7 @@ static int extend_max_local_streams_bidi(ngtcp2_conn *conn,
   return 0;
 }
 
+#if !QUIET_MEASUREMENT
 static void log_printf(void *user_data, const char *fmt, ...) {
   va_list ap;
   (void)user_data;
@@ -304,6 +342,8 @@ static void log_printf(void *user_data, const char *fmt, ...) {
 
   fprintf(stderr, "\n");
 }
+
+#endif
 
 static int client_quic_init(struct client *c,
                             const struct sockaddr *remote_addr,
@@ -331,6 +371,7 @@ static int client_quic_init(struct client *c,
     .hp_mask = ngtcp2_crypto_hp_mask_cb,
     .recv_retry = ngtcp2_crypto_recv_retry_cb,
     .recv_stream_data = recv_stream_data,  // Add this callback!
+    .acked_stream_data_offset = acked_stream_data_offset,
     .handshake_completed = handshake_completed_cb,  // Add handshake completion callback
     .extend_max_local_streams_bidi = extend_max_local_streams_bidi,
     .rand = rand_cb,
@@ -361,7 +402,11 @@ static int client_quic_init(struct client *c,
 
   settings.initial_ts = timestamp();
   ESP_LOGI(TAG, "===>  INITIAL TS: %llu", (unsigned long long)settings.initial_ts);
+#if QUIET_MEASUREMENT
+  settings.log_printf = NULL;  // Disable ngtcp2 packet/frame trace generation.
+#else
   settings.log_printf = log_printf;
+#endif
 
   ngtcp2_transport_params_default(&params);
 
@@ -400,7 +445,9 @@ static int client_read(struct client *c) {
   msg.msg_iov = &iov;
   msg.msg_iovlen = 1;
 
-  for (;;) {
+  // Bound each receive batch so a busy socket cannot monopolize quic_mutex.
+  // Level-triggered select() will post another event for unread packets.
+  for (unsigned packets = 0; packets < 4; ++packets) {
     msg.msg_namelen = sizeof(addr);
 
     nread = recvmsg(c->fd, &msg, MSG_DONTWAIT);
@@ -468,12 +515,14 @@ static size_t client_get_message(struct client *c, int64_t *pstream_id,
     return 0;
   }
 
-  if (c->stream.stream_id != -1 && c->stream.nwrite < c->stream.datalen) {
-    *pstream_id = c->stream.stream_id;
-    *pfin = 1;
-    datav->base = (uint8_t *)c->stream.data + c->stream.nwrite;
-    datav->len = c->stream.datalen - c->stream.nwrite;
-    return 1;
+  for (struct quic_tx_chunk *chunk = c->stream.head; chunk; chunk = chunk->next) {
+    if (chunk->sent < chunk->len) {
+      *pstream_id = c->stream.stream_id;
+      *pfin = 0;  // MQTT keeps the bidirectional stream open.
+      datav->base = chunk->data + chunk->sent;
+      datav->len = chunk->len - chunk->sent;
+      return 1;
+    }
   }
 
   *pstream_id = -1;
@@ -485,8 +534,10 @@ static size_t client_get_message(struct client *c, int64_t *pstream_id,
 }
 
 static int client_write_streams(struct client *c) {
+  // Callers hold quic_mutex before taking this timestamp and retain it
+  // across the entire packet-writing sequence. Do not move it before the lock.
   ngtcp2_tstamp ts = timestamp();
-  ngtcp2_pkt_info pi;
+  ngtcp2_pkt_info pi = {0};
   ngtcp2_ssize nwrite;
   uint8_t buf[1452];
   ngtcp2_path_storage ps;
@@ -502,7 +553,9 @@ static int client_write_streams(struct client *c) {
   for (;;) {
     datavcnt = client_get_message(c, &stream_id, &fin, &datav, 1);
 
-    flags = NGTCP2_WRITE_STREAM_FLAG_MORE;
+    // Finish each packet in this call; without MORE there is no pending
+    // WRITE_MORE sequence that could be interrupted by reads or expiry calls.
+    flags = NGTCP2_WRITE_STREAM_FLAG_NONE;
     if (fin) {
       flags |= NGTCP2_WRITE_STREAM_FLAG_FIN;
     }
@@ -512,11 +565,12 @@ static int client_write_streams(struct client *c) {
                                        datavcnt, ts);
     if (nwrite < 0) {
       switch (nwrite) {
-      case NGTCP2_ERR_WRITE_MORE:
-        c->stream.nwrite += (size_t)wdatalen;
-        continue;
+      case NGTCP2_ERR_STREAM_DATA_BLOCKED:
+        return 0;  // Retry after the peer increases flow control limits.
       default:
-        ESP_LOGE(TAG, "ngtcp2_conn_writev_stream: %s", ngtcp2_strerror((int)nwrite));
+        ESP_LOGE(TAG, "ngtcp2_conn_writev_stream: %s (stream=%lld, vectors=%zu, bytes=%zu, flags=%lu)",
+                 ngtcp2_strerror((int)nwrite), (long long)stream_id, datavcnt,
+                 datavcnt ? datav.len : 0, (unsigned long)flags);
         ngtcp2_ccerr_set_liberr(&c->last_error, (int)nwrite, NULL, 0);
         return -1;
       }
@@ -527,11 +581,16 @@ static int client_write_streams(struct client *c) {
     }
 
     if (wdatalen > 0) {
-      c->stream.nwrite += (size_t)wdatalen;
+      for (struct quic_tx_chunk *chunk = c->stream.head; chunk; chunk = chunk->next) {
+        if (chunk->sent < chunk->len) {
+          chunk->sent += (size_t)wdatalen;
+          break;
+        }
+      }
     }
 
     if (client_send_packet(c, buf, (size_t)nwrite) != 0) {
-      break;
+      return -1;
     }
   }
 
@@ -557,7 +616,9 @@ static int client_write(struct client *c) {
   // Ensure minimum timer interval to prevent excessive CPU usage
   if (t < 0.001) {  // Minimum 1ms
     t = 0.001;
-    client_handle_expiry(c);
+    if (client_handle_expiry(c) != 0) {
+      return -1;
+    }
   }
 
   c->timer.repeat = t;
@@ -578,7 +639,7 @@ static int client_handle_expiry(struct client *c) {
 
 static void client_close(struct client *c) {
   ngtcp2_ssize nwrite;
-  ngtcp2_pkt_info pi;
+  ngtcp2_pkt_info pi = {0};
   ngtcp2_path_storage ps;
   uint8_t buf[1280];
 
@@ -599,7 +660,26 @@ static void client_close(struct client *c) {
   client_send_packet(c, buf, (size_t)nwrite);
 
 fin:
-  ev_break(EV_DEFAULT, EVBREAK_ALL);
+  g_quic_connected = false;
+  g_quic_handshake_completed = false;
+  // This can run on the event task itself; posting a blocking break event
+  // to a full queue would deadlock while holding quic_mutex.
+  EV_DEFAULT->running = false;
+}
+
+// ESP event callbacks run on ev_esp_loop, independently of the MQTT task.
+// Every connection operation, including expiry and close, needs quic_mutex.
+static bool client_callback_lock(struct client *c) {
+  if (quic_mutex == NULL ||
+      xSemaphoreTake(quic_mutex, portMAX_DELAY) != pdTRUE) {
+    return false;
+  }
+  if (!c->conn || ngtcp2_conn_in_closing_period(c->conn) ||
+      ngtcp2_conn_in_draining_period(c->conn)) {
+    xSemaphoreGive(quic_mutex);
+    return false;
+  }
+  return true;
 }
 
 static void read_cb(struct ev_loop *loop, ev_io *w, int revents) {
@@ -607,19 +687,13 @@ static void read_cb(struct ev_loop *loop, ev_io *w, int revents) {
   (void)loop;
   (void)revents;
 
-  if (client_read(c) != 0) {
-    client_close(c);
+  if (!client_callback_lock(c)) {
     return;
   }
-
-  // Brief delay to avoid collision and allow other tasks to run
-  vTaskDelay(pdMS_TO_TICKS(2));
-
-  /* To make it simple, just have one writer thread in timer_cb
-  if (client_write(c) != 0) {
+  if (client_read(c) != 0) {
     client_close(c);
   }
-  */
+  xSemaphoreGive(quic_mutex);
 }
 
 static void timer_cb(struct ev_loop *loop, ev_timer *w, int revents) {
@@ -627,14 +701,13 @@ static void timer_cb(struct ev_loop *loop, ev_timer *w, int revents) {
   (void)loop;
   (void)revents;
 
-  if (client_handle_expiry(c) != 0) {
-    client_close(c);
+  if (!client_callback_lock(c)) {
     return;
   }
-
-  if (client_write(c) != 0) {
+  if (client_handle_expiry(c) != 0 || client_write(c) != 0) {
     client_close(c);
   }
+  xSemaphoreGive(quic_mutex);
 }
 
 static ngtcp2_conn *get_conn(ngtcp2_crypto_conn_ref *conn_ref) {
@@ -690,6 +763,11 @@ static int client_init(struct client *c) {
 
 static void client_free(struct client *c) {
   ngtcp2_conn_del(c->conn);
+  while (c->stream.head) {
+    struct quic_tx_chunk *chunk = c->stream.head;
+    c->stream.head = chunk->next;
+    free(chunk);
+  }
   SSL_free(c->ssl);
   SSL_CTX_free(c->ssl_ctx);
 }
@@ -700,12 +778,18 @@ static ssize_t client_write_application_data(struct client *c, const uint8_t *da
         return -1;
     }
 
-    // This function should write application data to a QUIC stream
-    ngtcp2_vec vec = {
-        .base = (uint8_t *)data,
-        .len = datalen
-    };
-    
+    if (!ngtcp2_conn_get_handshake_completed(c->conn) ||
+        ngtcp2_conn_in_closing_period(c->conn) ||
+        ngtcp2_conn_in_draining_period(c->conn)) {
+        ESP_LOGE(TAG, "QUIC connection is not ready for application data");
+        return -1;
+    }
+    if (datalen > QUIC_TX_BUFFER_LIMIT - c->stream.buffered ||
+        datalen > NGTCP2_MAX_VARINT - c->stream.queued_offset) {
+        ESP_LOGE(TAG, "QUIC transmit buffer or stream offset limit reached");
+        return -1;
+    }
+
     int64_t stream_id = -1;  // Use the appropriate stream ID or create a new one
     
     // Check if we have an existing stream or need to create one
@@ -721,50 +805,28 @@ static ssize_t client_write_application_data(struct client *c, const uint8_t *da
         stream_id = c->stream.stream_id;
     }
     
-    // Use the higher-level write function that handles buffering
-    uint32_t flags = NGTCP2_WRITE_STREAM_FLAG_NONE;
-    ngtcp2_ssize wdatalen = 0;
-    
-    uint8_t buf[1452];  // MTU-sized buffer
-    ngtcp2_path_storage ps;
-    ngtcp2_pkt_info pi;
-    
-    ngtcp2_path_storage_zero(&ps);
+    // ngtcp2 retains data pointers for retransmission until acknowledged.
+    struct quic_tx_chunk *chunk = malloc(sizeof(*chunk) + datalen);
+    if (!chunk) {
+        ESP_LOGE(TAG, "Cannot allocate QUIC transmit buffer");
+        return -1;
+    }
+    chunk->next = NULL;
+    chunk->offset = c->stream.queued_offset;
+    chunk->len = datalen;
+    chunk->sent = 0;
+    memcpy(chunk->data, data, datalen);
+    if (c->stream.tail) {
+        c->stream.tail->next = chunk;
+    } else {
+        c->stream.head = chunk;
+    }
+    c->stream.tail = chunk;
+    c->stream.buffered += datalen;
+    c->stream.queued_offset += datalen;
 
-    bool retry = false;
-    do {
-      ngtcp2_ssize nwrite = ngtcp2_conn_writev_stream(c->conn, &ps.path, &pi, buf, sizeof(buf),
-                                                      &wdatalen, flags, stream_id, &vec, 1, timestamp());
-      if (nwrite < 0) {
-        if (nwrite == NGTCP2_ERR_WRITE_MORE) {
-          // Partial write, this is normal
-          ESP_LOGI(TAG, "Partial write: %zu bytes queued", (size_t)wdatalen);
-        } else {
-          ESP_LOGE(TAG, "ngtcp2_conn_writev_stream: %s", ngtcp2_strerror((int)nwrite));
-          return -1;
-        }
-      }
-
-      // Send the packet if we have data to send
-      if (nwrite > 0) {
-        if (client_send_packet(c, buf, (size_t)nwrite) != 0) {
-          ESP_LOGE(TAG, "client_send_packet failed");
-          return -1;
-        }
-        ESP_LOGI(TAG, "Sent QUIC packet with %zu bytes, stream data: %d bytes", (size_t)nwrite, wdatalen);
-      }
-
-      if (nwrite == 0)
-      {
-        ESP_LOGI(TAG, "Cannot send QUIC packet with %zu bytes, stream data: %zu bytes", (size_t)nwrite, (size_t)wdatalen);
-      }
-
-      // retry when NO STREAM Frame is sent
-      // it happens when ngtcp2 cannot fit a STREAM frame in the buf that we sent
-      retry = wdatalen == -1;
-    } while(retry);
-
-    return 0;
+    // Pending bytes remain queued if pacing or congestion prevents a write.
+    return client_write(c);
 }
 
 int client_read_application_data(struct client *c, uint8_t *buffer, size_t buffer_size, size_t *bytes_read) {
@@ -842,6 +904,13 @@ int quic_client_init_with_config(const quic_client_config_t *config) {
         ESP_LOGI(TAG, "QUIC mutex created successfully");
     }
     
+    // Hold the same lock while registering watchers: an IO callback may run
+    // as soon as ev_io_start returns, before initialization has finished.
+    xSemaphoreTake(quic_mutex, portMAX_DELAY);
+    g_quic_n_local_streams = 0;
+    app_recv_buffer_len = 0;
+    app_recv_buffer_read_pos = 0;
+
     // Clear the global client structure first
     memset(&g_client, 0, sizeof(g_client));
     quic_processing = false;
@@ -864,12 +933,14 @@ int quic_client_init_with_config(const quic_client_config_t *config) {
 
     if (client_init(&g_client) != 0) {
         ESP_LOGE(TAG, "client_init failed");
+        xSemaphoreGive(quic_mutex);
         return -1;
     }
 
     g_quic_connected = false;
     g_quic_handshake_completed = false;
     
+    xSemaphoreGive(quic_mutex);
     ESP_LOGI(TAG, "QUIC client initialization completed");
     return 0;
 }
@@ -886,7 +957,7 @@ int quic_client_process(void) {
     
     // Try to acquire mutex with timeout (50ms)
     if (xSemaphoreTake(quic_mutex, pdMS_TO_TICKS(50)) != pdTRUE) {
-        ESP_LOGE(TAG, "Failed to acquire QUIC mutex, skipping this cycle");
+        ESP_LOGD(TAG, "QUIC connection busy, skipping this cycle");
         return 0; // Don't consider this an error, just skip
     }
     
@@ -934,12 +1005,9 @@ int quic_client_process(void) {
         goto cleanup;
     }
 
-    // Update connection state
-    if (g_client.conn && !g_quic_handshake_completed) {
-        g_quic_handshake_completed = true;
-        g_quic_connected = true;
-        ESP_LOGI(TAG, "QUIC connection established!");
-    }
+    // Only handshake_completed_cb sets handshake completion. A connection
+    // object or available stream credit does not establish TLS readiness.
+    g_quic_connected = g_quic_handshake_completed && g_quic_n_local_streams > 0;
 
 cleanup:
     quic_processing = false;
@@ -964,21 +1032,25 @@ void quic_client_cleanup(void) {
     }
     
     if (g_client.conn) {
+        // Stop new events before freeing the connection. Already queued
+        // callbacks acquire quic_mutex and then observe conn == NULL.
+        ev_io_stop(EV_DEFAULT, &g_client.rev);
+        ev_timer_stop(EV_DEFAULT, &g_client.timer);
         ESP_LOGI(TAG, "Freeing QUIC connection...");
         client_free(&g_client);
-        memset(&g_client, 0, sizeof(g_client));  // Clear the structure
+        g_client.conn = NULL;
+        g_client.stream.tail = NULL;
+        g_client.stream.buffered = 0;
+        // Preserve watcher data for events already posted to ev_esp_loop.
     }
     
     g_quic_connected = false;
     g_quic_handshake_completed = false;
     quic_processing = false;
     
-    // Release and delete mutex
+    // Keep the mutex valid for event callbacks that were already queued.
     if (quic_mutex != NULL) {
         xSemaphoreGive(quic_mutex);
-        vSemaphoreDelete(quic_mutex);
-        quic_mutex = NULL;
-        ESP_LOGI(TAG, "QUIC mutex deleted");
     }
     
     ESP_LOGI(TAG, "QUIC client cleanup completed. Free heap: %lu bytes", esp_get_free_heap_size());
@@ -1019,7 +1091,7 @@ int quic_client_write_safe(const uint8_t *data, size_t datalen) {
     // Perform the write operation
     result = client_write_application_data(&g_client, data, datalen);
     if (result == 0) {
-        ESP_LOGI(TAG, "Successfully wrote %zu bytes to QUIC stream", datalen);
+        MEASUREMENT_LOGI(TAG, "Queued %zu bytes for QUIC stream", datalen);
     } else {
         ESP_LOGE(TAG, "Failed to write data to QUIC stream: %d", result);
     }
@@ -1045,8 +1117,9 @@ int quic_client_read_safe(uint8_t *buffer, size_t buffer_size, size_t *bytes_rea
     
     // Acquire mutex with timeout
     if (xSemaphoreTake(quic_mutex, pdMS_TO_TICKS(100)) != pdTRUE) {
-        ESP_LOGE(TAG, "Failed to acquire QUIC mutex for read");
-        return -1;
+        // Contention with the event task is not a network failure. The MQTT
+        // transport maps -2 to zero bytes and retries within its own timeout.
+        return -2;
     }
     
     int result = client_read_application_data(&g_client, buffer, buffer_size, bytes_read);

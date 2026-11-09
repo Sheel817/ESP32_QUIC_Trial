@@ -1,0 +1,36 @@
+{
+  "boundaries_after": [
+    {
+      "byte_length": 34645,
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\UNIVERSITY_BOARD_20261103T170943_serial.log",
+      "tail": [
+        "\u001b[0;32mI (3334984) quic_demo_main: APP_RTT seq=664 app_rtt_ms=65.085\u001b[0m",
+        "\u001b[0;32mI (3340014) quic_demo_main: APP_RTT seq=665 app_rtt_ms=85.105\u001b[0m",
+        "\u001b[0;32mI (3345044) quic_demo_main: APP_RTT seq=666 app_rtt_ms=105.460\u001b[0m"
+      ],
+      "measured_utc": "2026-11-03T15:48:41.7086098Z"
+    },
+    {
+      "byte_length": 114467,
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "tail": [
+        "Demo publication returned to ESP32",
+        "RECEIVED [esp32/quic/test]: {\"seq\":666,\"sensor\":\"DHT11\",\"uptime_ms\":3344452,\"temperature_c\":45.0,\"humidity_pct\":22.0,\"sensor_error\":0}",
+        "Demo publication returned to ESP32"
+      ],
+      "measured_utc": "2026-11-03T15:48:41.7099164Z"
+    },
+    {
+      "byte_length": 61711,
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+      "tail": [
+        "2026-11-03T15:48:27.375654Z,esp32_quic_client,esp32/quic/test,664,DHT11,3334432,45.0,22.0,0",
+        "2026-11-03T15:48:32.384073Z,esp32_quic_client,esp32/quic/test,665,DHT11,3339442,45.0,22.0,0",
+        "2026-11-03T15:48:37.394678Z,esp32_quic_client,esp32/quic/test,666,DHT11,3344452,45.0,22.0,0"
+      ],
+      "measured_utc": "2026-11-03T15:48:41.7109327Z"
+    }
+  ],
+  "stop_command_completed_utc": "2026-11-03T15:48:41.7066132Z",
+  "stop_invoked_utc": "2026-11-03T15:48:40.9197764Z"
+}

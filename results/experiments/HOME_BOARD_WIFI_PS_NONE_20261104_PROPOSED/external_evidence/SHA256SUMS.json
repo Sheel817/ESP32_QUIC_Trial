@@ -1,0 +1,12 @@
+[
+  {
+    "path": "codex_sessions/2026/11/04/rollout-2026-11-04T00-50-03-01a1a39a-f27f-77c3-88d1-b95b1b138fa7.jsonl",
+    "bytes": 23454218,
+    "sha256": "51b8beff64914f32db22ca7f8e5c0c480fb8671b7b5a23e28e05ae3ff7fbcbef"
+  },
+  {
+    "path": "codex_sessions/README.md",
+    "bytes": 791,
+    "sha256": "48e55e9e0a73ff7f04b49e2e7ada3d6c2c7ad8e5625ffd907930a21864da2bf1"
+  }
+]

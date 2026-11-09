@@ -1,0 +1,20 @@
+{
+  "name": "before_powershell_listen",
+  "argv": [
+    "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection -LocalPort 14568 -State Listen | Format-List *"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:47:50.388866+00:00",
+  "ended_utc": "2026-11-06T01:47:52.016610+00:00",
+  "elapsed_seconds": 1.627751799998805,
+  "exit_code": 1,
+  "stdout_bytes": 0,
+  "stderr_bytes": 669,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "a8b10e617571e619542b39c26d80d586401a71d9a468615daf26b61a29411547",
+  "exception": null
+}

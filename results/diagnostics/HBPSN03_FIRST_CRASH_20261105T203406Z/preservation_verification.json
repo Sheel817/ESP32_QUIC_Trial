@@ -1,0 +1,27 @@
+{
+  "verified_utc": "2026-11-05T20:34:08.545354+00:00",
+  "protected_original_hashes": {
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "656b5c6a71cbe783c66b9fe14f74551776e09522a7354ab9b385fb1baa908aae",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "63980c1b51d42099f00867e52a48dec17d91c53eb4dc8d8e32e1f12f936d78ea",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\reset_event.json": "6ba69fe0e64947542a16da449775646a71ac0b35a380e5bc71208566b63d2191",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\startup_checks.json": "2e9314db5cc4b43301e2cd7742caa39a072be80aae43e59c25d581b5aa11e20d",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\collector_v2.py": "381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\reliability.py": "4db94b1142b97c464f0c75c2a0c6b85bb64e2787b762ad4952d2ac6ec0625f84",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\monitor_instrumented_v2.py": "64a96e1e78111aaef1f7c27cadfbfccf19cd50d66965bebf431402f86ed35dcd"
+  },
+  "protected_originals_unchanged": true,
+  "earlier_run_files_checked": 175,
+  "earlier_run_originals_unchanged": true,
+  "original_log_extracted_intervals_unchanged": true,
+  "collector_heartbeat_observed": {
+    "utc": "2026-11-05T20:34:07.685413+00:00",
+    "monotonic": 665157.0015018,
+    "remaining_seconds": 1666.7280488999095,
+    "status": "STARTUP_PENDING",
+    "serial_bytes": 41068,
+    "monitor_alive": true,
+    "collector_pid": 16148
+  },
+  "collector_not_signalled": true,
+  "primary_selection_policy": "Initial boot only; post-reboot RTTs excluded. Original frozen window unchanged."
+}

@@ -1,0 +1,44 @@
+
+
+Name               : State
+Value              : 
+CimType            : UInt8
+Flags              : Property, ReadOnly, NullValue
+Qualifiers         : {read, ValueMap}
+ReferenceClassName : 
+
+
+
+
+
+Name    : read
+Value   : True
+CimType : Boolean
+Flags   : EnableOverride, ToSubclass
+
+
+
+True
+
+
+
+Name    : ValueMap
+Value   : {1, 2, 3, 4...}
+CimType : StringArray
+Flags   : EnableOverride, ToSubclass
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+

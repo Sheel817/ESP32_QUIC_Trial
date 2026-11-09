@@ -1,0 +1,12 @@
+0x40021c40
+tlsf_free
+??:?
+0x400225c4
+multi_heap_free_impl
+??:?
+0x40021c06
+tlsf_free
+??:?
+0x4001975a
+software_reset_cpu
+??:?

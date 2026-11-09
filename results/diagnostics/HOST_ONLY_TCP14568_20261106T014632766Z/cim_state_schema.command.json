@@ -1,0 +1,20 @@
+{
+  "name": "cim_state_schema",
+  "argv": [
+    "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; $s=(Get-CimClass -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection).CimClassProperties['State']; $s | Format-List *; $s.Qualifiers | ForEach-Object { $_ | Format-List *; $_.Value | Out-String -Width 4096 }"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:47:43.902087+00:00",
+  "ended_utc": "2026-11-06T01:47:44.822771+00:00",
+  "elapsed_seconds": 0.9206858000252396,
+  "exit_code": 0,
+  "stdout_bytes": 469,
+  "stderr_bytes": 0,
+  "stdout_sha256": "ce333f6b0de8598f2d59467e7d12a1d5bd8f90dfdf67fd8b3992ae0de3d1364d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exception": null
+}

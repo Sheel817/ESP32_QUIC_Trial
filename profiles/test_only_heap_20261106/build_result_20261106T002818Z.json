@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-06T00:28:18.689997+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "C:/esp/v6.1/esp-idf/tools/idf.py",
+    "-B",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+    "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\sdkconfig",
+    "-DDEMO_TRANSPORT=QUIC",
+    "-DDEMO_WIFI_PS_NONE=ON",
+    "-DCCACHE_ENABLE=False",
+    "build"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\src",
+  "environment": {
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "ESP_IDF_VERSION": "6.1.0",
+    "IDF_PATH": "C:/esp/v6.1/esp-idf",
+    "IDF_TOOLS_PATH": "C:/Users/newsh/.espressif",
+    "IDF_PYTHON_ENV_PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env",
+    "IDF_COMPONENT_CHECK_NEW_VERSION": "0",
+    "IDF_COMPONENT_MANAGER": "0",
+    "ESP_ROM_ELF_DIR": "C:/Users/newsh/.espressif/tools/esp-rom-elfs/20241011",
+    "PATH": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts;C:/Espressif/tools/cmake/4.0.3/bin;C:/Espressif/tools/ninja/1.12.1;C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin;C:\\Users\\newsh\\.codex\\tmp\\arg0-windows\\codex-arg0HWSMWY;C:\\Users\\newsh\\AppData\\Roaming\\Code\\agent-host\\sdk-cache\\codex\\0.163.0\\win32-x64\\node_modules\\@openai\\codex-win32-x64\\vendor\\x86_64-pc-windows-msvc\\codex-path;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Users\\newsh\\.espressif\\eim_gui;C:\\Users\\newsh\\.local\\bin;C:\\Users\\newsh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\newsh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\newsh\\AppData\\Local\\Python\\bin"
+  },
+  "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build_20261106T002818Z.log",
+  "ended_utc": "2026-11-06T00:34:45.444327+00:00",
+  "exit_code": 0
+}

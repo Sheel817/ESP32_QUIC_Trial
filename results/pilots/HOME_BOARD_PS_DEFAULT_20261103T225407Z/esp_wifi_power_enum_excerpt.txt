@@ -1,0 +1,10 @@
+  */
+typedef enum {
+    WIFI_PS_NONE,        /**< No power save */
+    WIFI_PS_MIN_MODEM,   /**< Minimum modem power saving. In this mode, station wakes up to receive beacon every DTIM period */
+    WIFI_PS_MAX_MODEM,   /**< Maximum modem power saving. In this mode, interval to receive beacons is determined by the listen_interval parameter in wifi_sta_config_t */
+} wifi_ps_type_t;
+
+/**
+  * @brief Argument structure for Wi-Fi band
+  */

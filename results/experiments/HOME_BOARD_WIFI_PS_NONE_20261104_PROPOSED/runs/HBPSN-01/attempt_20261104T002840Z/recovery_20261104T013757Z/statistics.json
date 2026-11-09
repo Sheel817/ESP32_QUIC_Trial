@@ -1,0 +1,118 @@
+{
+  "run_id": "HBPSN-01",
+  "status": "FAILED_SETTINGS",
+  "recording_window_status": "RECOVERED_FIXED_WINDOW",
+  "automatic_finalization_succeeded": false,
+  "recovered_utc": "2026-11-04T01:37:57.063869+00:00",
+  "recording_start_utc": "2026-11-04T00:38:26.326642+00:00",
+  "recording_end_utc": "2026-11-04T01:15:26.326642+00:00",
+  "recording_start_helsinki": "2026-11-04T02:38:26.326642+02:00",
+  "recording_end_helsinki": "2026-11-04T03:15:26.326642+02:00",
+  "duration_seconds": 2220,
+  "raw_serial_lines": 591,
+  "raw_app_rtt_count": 441,
+  "warmup_excluded_count": 10,
+  "other_excluded_count": 0,
+  "eligible_count": 431,
+  "selected_count": 415,
+  "extra_eligible_count": 16,
+  "shortfall": 0,
+  "minimum_ms": 24.671,
+  "mean_ms": 67.54002650602409,
+  "mean_ms_decimal": "67.54002650602409638554216867",
+  "median_ms": 65.552,
+  "p95_nearest_rank_ms": 105.842,
+  "p95_rank": 395,
+  "p95_method": "Nearest rank: sorted ascending, 1-based ceil(0.95*N)",
+  "maximum_ms": 165.999,
+  "first_selected": {
+    "run_id": "HBPSN-01",
+    "board": "HOME_BOARD",
+    "transport": "QUIC",
+    "wifi_ps_mode": "WIFI_PS_NONE",
+    "condition": "CONTROL",
+    "source_line": 161,
+    "source_byte_offset": 12565,
+    "host_receipt_utc": "2026-11-04T00:39:29.994180+00:00",
+    "host_monotonic": 507081.2109423,
+    "esp_log_uptime_ms": 63653,
+    "seq": 11,
+    "app_rtt_ms": "85.778",
+    "raw_line": "2026-11-04T02:39:29 I (63653) quic_demo_main: APP_RTT seq=11 app_rtt_ms=85.778"
+  },
+  "last_selected": {
+    "run_id": "HBPSN-01",
+    "board": "HOME_BOARD",
+    "transport": "QUIC",
+    "wifi_ps_mode": "WIFI_PS_NONE",
+    "condition": "CONTROL",
+    "source_line": 575,
+    "source_byte_offset": 46732,
+    "host_receipt_utc": "2026-11-04T01:14:04.114527+00:00",
+    "host_monotonic": 509155.3312936,
+    "esp_log_uptime_ms": 2137793,
+    "seq": 425,
+    "app_rtt_ms": "85.392",
+    "raw_line": "2026-11-04T03:14:04 I (2137793) quic_demo_main: APP_RTT seq=425 app_rtt_ms=85.392"
+  },
+  "initial_designated_boot_count": 1,
+  "additional_reset_count": 0,
+  "resets": [
+    {
+      "source_line": 1,
+      "host_receipt_utc": "2026-11-04T00:38:26.336605+00:00",
+      "raw_line": "2026-11-04T02:38:26 ESP-ROM:esp32c6-20220919",
+      "initial_designated_boot": true
+    }
+  ],
+  "sequence_gaps": [],
+  "warning_error_lines": [
+    {
+      "source_line": 92,
+      "host_receipt_utc": "2026-11-04T00:38:27.063046+00:00",
+      "raw_line": "2026-11-04T02:38:27 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "source_line": 100,
+      "host_receipt_utc": "2026-11-04T00:38:29.623861+00:00",
+      "raw_line": "2026-11-04T02:38:29 W (3263) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "source_line": 118,
+      "host_receipt_utc": "2026-11-04T00:38:29.788930+00:00",
+      "raw_line": "2026-11-04T02:38:29 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "connection_error_lines": [],
+  "unparsed_app_rtt_lines": [],
+  "post_recording_settings_check": {
+    "status": "MISSING",
+    "reason": "No contemporaneous post-recording screenshot/settings check saved. Late observation cannot establish deadline settings."
+  },
+  "limitations": [
+    "Automatic finalization failed at 2026-11-04T00:46:45.650030+00:00 (WinError 5 heartbeat replacement); independent byte-indexed recording threads continued to original cutoff.",
+    "No contemporaneous post-recording screenshot/settings check saved. Late observation cannot establish deadline settings.",
+    "Host API return is the reset-release anchor, not a measured physical edge. ESP log timestamps define uptime eligibility; host receipt time defines fixed-window inclusion.",
+    "No continuous GUI or per-packet proof of effect state; preflight screenshot/operator evidence only."
+  ],
+  "server_sensor_record_count": 441,
+  "startup": {
+    "checked_utc": "2026-11-04T00:38:35.520489+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "quic_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "quic_connected": true,
+      "mqtt_connected": true,
+      "subscription": true,
+      "tls": true
+    },
+    "pass_all": true,
+    "fatal": false,
+    "assigned_ip": "192.168.137.212",
+    "reported_elf_prefix": "9b23e164f"
+  }
+}

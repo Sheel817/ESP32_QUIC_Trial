@@ -1,0 +1,16 @@
+{
+  "run_id": "HBPSN-04",
+  "patch": {
+    "status": "RUNNING",
+    "preflight_status": "PASS",
+    "startup_status": "PASS",
+    "settings_evidence_type": "operator_reported_and_preflight_GUI_observed",
+    "boot_session_id": "HBPSN-04/2026-11-06T02:01:38.681783+00:00",
+    "reset_release_utc": "2026-11-06T02:01:38.681783+00:00",
+    "actual_assigned_ip": "192.168.137.112",
+    "metadata_path": "runs/HBPSN-04/attempt_20261106T020052Z_host_preflight_continuation/metadata.json",
+    "raw_serial_path": "runs/HBPSN-04/attempt_20261106T020052Z_host_preflight_continuation/serial.raw.log"
+  },
+  "final": false,
+  "automatic_register_apply": false
+}

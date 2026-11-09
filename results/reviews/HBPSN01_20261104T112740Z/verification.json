@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-11-04T11:29:18.200821+00:00",
+  "operator_statement": "The operator cannot confirm whether Clumsy remained unchanged during and after HBPSN-01.",
+  "statement_recorded_utc": "2026-11-04T11:29:18.164461+00:00",
+  "hbpsn01_status": "FAILED_SETTINGS",
+  "validity": "NOT_APPROVED",
+  "protected_file_count": 73,
+  "all_original_hashes_unchanged": true,
+  "register_csv_unchanged": true,
+  "register_xlsx_unchanged": true,
+  "frozen_plan_unchanged": true,
+  "next_scheduled_run": {
+    "run_id": "HBPSN-02",
+    "transport": "TCP_TLS",
+    "condition": "LAG100_OUT",
+    "status": "NOT_RUN"
+  },
+  "approved_replacement_id": null,
+  "automatic_deadline_processing_retained": true,
+  "manual_evidence_review_required": true,
+  "focused_tests_passed": 5
+}

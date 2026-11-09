@@ -1,0 +1,94 @@
+{
+  "run_id": "HBPSN-08",
+  "attempt_id": "attempt_20261109T013410Z",
+  "transport": "QUIC",
+  "condition": "LAG100_OUT",
+  "boot_replicate": 2,
+  "disposition": "FAILED_STARTUP",
+  "validity_status": "NOT_APPROVED",
+  "reason": "Uncontrolled SW_CPU reboot after Guru Meditation panic 7.57 s after reset release; 0 eligible of 439 recorded.",
+  "reviewed_utc": "2026-11-09T18:08:26.281562+00:00",
+  "operator_decision": {
+    "exact_statement": "I am the operator and I accept HBPSN-08 attempt_20261109T013410Z as FAILED_STARTUP.",
+    "relayed": false,
+    "receipt_utc": "2026-11-09T18:06:20.7522475Z",
+    "receipt_helsinki": "2026-11-09T20:06:20.7522475+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator decision message; original message send time unavailable",
+    "statement_selection": "The decision message contained template text for this field; the operator then selected this example sentence, unchanged, in the session question dialog."
+  },
+  "reset_release_utc": "2026-11-09T01:34:15.271402+00:00",
+  "fixed_deadline_utc": "2026-11-09T02:11:15.271435+00:00",
+  "panic_after_release_seconds": 7.565793,
+  "counts": {
+    "raw_serial_lines": 787,
+    "raw_rtt": 439,
+    "eligible": 0,
+    "selected": 0,
+    "shortfall": 415,
+    "excluded_subsequent_boot_or_timestamp_regression": 439
+  },
+  "statistics": {
+    "mean_ms": null,
+    "sd_ms": null,
+    "median_ms": null,
+    "p95_ms": null,
+    "minimum_ms": null,
+    "maximum_ms": null
+  },
+  "evidence_lines": [
+    {
+      "line": 145,
+      "host_receipt_utc": "2026-11-09T01:34:22.837195+00:00",
+      "raw_line": "Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled."
+    },
+    {
+      "line": 197,
+      "host_receipt_utc": "2026-11-09T01:34:23.175037+00:00",
+      "raw_line": "Rebooting..."
+    },
+    {
+      "line": 198,
+      "host_receipt_utc": "2026-11-09T01:34:23.224946+00:00",
+      "raw_line": "ESP-ROM:esp32c6-20220919"
+    },
+    {
+      "line": 200,
+      "host_receipt_utc": "2026-11-09T01:34:23.224946+00:00",
+      "raw_line": "rst:0xc (SW_CPU),boot:0x6c (SPI_FAST_FLASH_BOOT)"
+    }
+  ],
+  "panic_decode": {
+    "application_elf_sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+    "rom_elf_sha256": "788e1d38724aeb8fd974fa10c4a7b089c02627d35342ce84b9e0b12b239f3551",
+    "mepc": "0x40021c40 tlsf_free+0x42",
+    "ra": "0x400225c4 multi_heap_free_impl+0x46",
+    "mcause": "0x5",
+    "mtval": "0x41847f24",
+    "faulting_instruction": "lw a4,4(a5)",
+    "computed_block_size": "0x01000000",
+    "candidate_stack_not_verified_unwind": [
+      "heap_caps_free",
+      "free",
+      "default_free",
+      "ngtcp2_mem_free",
+      "pktns_del",
+      "conn_discard_pktns",
+      "ngtcp2_conn_discard_initial_state",
+      "conn_write_handshake_pkts"
+    ],
+    "same_fault_as": "HBPSN-03 (identical MEPC and RA)",
+    "root_cause": "Not established"
+  },
+  "firmware_identity": {
+    "printed_elf_prefix": "9b23e164f; prefix comparison, not a full on-device digest",
+    "printed_bootloader_compile_time": "Nov  4 2026 01:52:32; matches frozen TCP_TLS_PSN bootloader, not frozen QUIC_PSN bootloader (Nov  3 2026 18:33:04)",
+    "flash_record": "None found for HBPSN-08"
+  },
+  "post_recording_screenshot": "clumsy_post_manual.png not found in attempt folder, project root or runs/HBPSN-08",
+  "post_reboot_rtts": "Retained in all_rtts.csv and excluded_rtts.csv; not selected or concatenated",
+  "retained_flags": [
+    "BOOTLOADER_STAMP_MATCHES_TCP_TLS_NOT_QUIC",
+    "NO_FLASH_RECORD_FOR_RUN",
+    "POST_SCREENSHOT_NOT_FOUND"
+  ]
+}

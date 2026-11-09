@@ -1,0 +1,143 @@
+{
+  "run_id": "HBPSN-03",
+  "status": "PREFLIGHT_BLOCKED",
+  "run_register_status": "NOT_RUN",
+  "checked_utc": "2026-11-05T20:18:53.502094+00:00",
+  "blocker": "Laptop mobile hotspot OFF in Windows NetworkOperatorTetheringManager readback on all connection profiles; no 192.168.137.1 interface address. Required host/AP unavailable.",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "prepared_script": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder\\prepare_hbpsn03_start.py",
+    "sha256": "33fe1028f08896f2c309cbf17c05d621f2bb4513e39a586e5e56242cd75f2050",
+    "reviewed": true,
+    "executed": false,
+    "review_notes": "Prepared script does not itself gate on active hotspot or fresh pre-flash image, so external prerequisite gates were applied before execution. No attempt created."
+  },
+  "artifact_configuration_checks": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+      "expected_sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+      "actual_sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+      "expected_sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+      "actual_sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+      "expected_sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+      "actual_sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+      "expected_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "actual_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\sdkconfig",
+      "expected_sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110",
+      "actual_sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\config\\sdkconfig.json",
+      "expected_sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd",
+      "actual_sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\CMakeCache.txt",
+      "expected_sha256": "01941bf8855e1b39d9928acbf9543a761badd303b15c95069d5c61d128f08771",
+      "actual_sha256": "01941bf8855e1b39d9928acbf9543a761badd303b15c95069d5c61d128f08771",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\compile_commands.json",
+      "expected_sha256": "6062efbb3e350de2abc944ae0959e6ab101410257265f86e1c01ba01f6f3cbc0",
+      "actual_sha256": "6062efbb3e350de2abc944ae0959e6ab101410257265f86e1c01ba01f6f3cbc0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flash_args",
+      "expected_sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+      "actual_sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flasher_args.json",
+      "expected_sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964",
+      "actual_sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+      "expected_sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55",
+      "actual_sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+      "expected_sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f",
+      "actual_sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+      "expected_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+      "actual_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+      "match": true
+    }
+  ],
+  "clumsy": {
+    "run_id": "HBPSN-03",
+    "capture_started_utc": "2026-11-05T20:17:58.808Z",
+    "capture_completed_utc": "2026-11-05T20:17:59.322Z",
+    "screenshot": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/preflights/HBPSN03_RESUME_20261105T201758808Z/HBPSN-03_Clumsy_PRE_FLASH.jpg",
+    "sha256": "ae45c2fae3eb5aa5d95fbe8a36c6ad112eaf0d32466aa654c9f5e768b48440f7",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "status": "PASS",
+    "source_type": "GUI_observed",
+    "host_activity": "Chrome Remote Desktop in use \u00e2\u20ac\u201d operator reported; Remote Access window observed",
+    "note": "Actual image before any flash/reset. Disabled Lag retains 100 ms/outbound display; no active Lag. No Clumsy setting changed."
+  },
+  "preservation": {
+    "HBPSN_01": "FAILED_SETTINGS",
+    "HBPSN_02": "COMPLETE",
+    "csv_sha256": "3817afd877aea70a709df541e3b1a317f9ea4963029cd21f264e54edeea4a579",
+    "xlsx_sha256": "d55477a6c51777f01abee5f375205b6dc7ec696ac3447d744867111645b098ac"
+  },
+  "actions": {
+    "flash": false,
+    "reset": false,
+    "COM6_opened": false,
+    "collector_started": false,
+    "old_processes_closed": false,
+    "clumsy_changed": false,
+    "registers_modified": false
+  },
+  "actual_start_utc": null,
+  "fixed_deadline_utc": null,
+  "host_activity": "Chrome Remote Desktop in use, operator-reported; Remote Access window and native messaging process observed. No recording started; host load/background traffic would need fresh recording-start metadata after blocker resolution."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\clumsy_observation.json",
+    "bytes": 925,
+    "sha256": "2af36ecc59f4666de88f8c0553b6585c61864076cc3105700442f6aa3f3f8717"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\clumsy_preflight_only.png",
+    "bytes": 44078,
+    "sha256": "931061d4a531a80389e426c2c3e0ac644986b325f9b1f157cbe16aceb7465ebd"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\historical_tcp_error_ledger.json",
+    "bytes": 438,
+    "sha256": "00130f30765cee9e83d0606fb913ce48b3e2f7d762ef1ff12ea8027d137a2750"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\image_verification.json",
+    "bytes": 2563,
+    "sha256": "106fc8a3711956743095f6f46e9a5ce1fcbdde29612341f0490d18b0a145af36"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\PREFLIGHT_REPORT.md",
+    "bytes": 7499,
+    "sha256": "426535f1bab4c9f68592403ffa79f93f213056c3ed7d4af3a5befbfcfc88c3ad"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\preflight_scope.json",
+    "bytes": 1078,
+    "sha256": "9bebe385e1b0fc5f593960929bc9c8c036de583d5238878929ae666fd1dfb7f9"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\preservation_verification.json",
+    "bytes": 216,
+    "sha256": "1900658feed7d801595e16c78953a94b16b6a78a82848cc8827e28ccff532616"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\protected_original_hashes.json",
+    "bytes": 20869,
+    "sha256": "c31f628df6922d9e60d0479bd63714fe8b157d98c3405bef8a32a677d7ea959d"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\READINESS.json",
+    "bytes": 441,
+    "sha256": "09430e9d2808bd87399089c66206e6ace532939b9b02937f7e4c8445b46d18da"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\sensor_csv_existing_prefix.snapshot",
+    "bytes": 32663,
+    "sha256": "bc6348e8a0bbeefd4ebbf7d8071639636a9c0c34a43bf32cd45d3a0e4f130381"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\server_log_boundaries.json",
+    "bytes": 2064,
+    "sha256": "9d7396967c45f6a747af397fc5d5467d647b9822f0e740f716434b7d4e8417c2"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\server_readiness.json",
+    "bytes": 6110,
+    "sha256": "c9afabb522a08a179cdccc7f97ca434cb2fc44c203d2949076accd194dd1846c"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\stderr_existing_prefix.snapshot",
+    "bytes": 51,
+    "sha256": "c8037f828ce963c1d181a43b969a4aa38f1d83f117b7191dea07ea6f168b3cf9"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN02_PREFLIGHT_ONLY_20261104T114713Z\\stdout_existing_prefix.snapshot",
+    "bytes": 61377,
+    "sha256": "c4209159c77c4e380093c78fb41cd1a4820a91572eb6a0b0e4ba8c9727442dfc"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "ProcessId": 36520,
+    "ParentProcessId": 28264,
+    "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+  },
+  {
+    "ProcessId": 26228,
+    "ParentProcessId": 36520,
+    "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+  },
+  {
+    "ProcessId": 33972,
+    "ParentProcessId": 11320,
+    "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/runs/HBPSN-01/attempt_20261104T002840Z/collector.py "
+  },
+  {
+    "ProcessId": 26296,
+    "ParentProcessId": 1776,
+    "CommandLine": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\monitor_instrumented.py --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf"
+  }
+]

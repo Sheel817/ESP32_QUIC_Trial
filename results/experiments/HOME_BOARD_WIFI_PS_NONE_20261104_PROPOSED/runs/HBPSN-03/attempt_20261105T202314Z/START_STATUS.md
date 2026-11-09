@@ -1,0 +1,15 @@
+# HBPSN-03 QUIC DROP1_OUT — FAILED_STARTUP
+
+The scheduled measured attempt started **2026-11-05T22:24:54.413525+02:00**, with fixed deadline **2026-11-05T23:01:54.413525+02:00**, exactly2220 host-monotonic seconds after designated reset release. [Reset anchor](./reset_event.json).
+
+The initial boot verified HOME_BOARD, matching ELF prefix9b23e164f, requested/returned WIFI_PS_NONE(0), IP192.168.137.112, QUIC and TLS1.3/TLS_AES_128_GCM_SHA256/suite0x1301/ALPNmqtt/certificate modeNONE. Before MQTT/subscription it panicked with a Load access fault and rebooted automatically. [Initial startup checks](./startup_checks.json), [failure evidence with receipt timestamps](./STARTUP_FAILURE_REVIEW.json), [raw recording](./serial.raw.log). Cause is not established. The monitor's failed addr2line invocations are retained; no toolchain or firmware changes were made to fix symbolization during recording.
+
+Later MQTT success belongs to the subsequent boot and does not validate the initial boot. Under the frozen rules, retain the original window and exclude all subsequent-boot RTTs from primary selection. No commanded retry/reset, Drop disable or window extension occurred. Recording continues persistently to the original deadline; automatic finalization remains armed with validity NOT_APPROVED and post-recording evidence/operator review pending.
+
+Flash verified all3 matching images. [Flash output](./flash.log), [identification setup reset](./identification_reset.json), [flash result](./flash_result.json). [Firmware/configuration/plan hashes](./preflight.json), [collector runtime hashes](./collector_version.json), [host/hotspot/Chrome Remote Desktop context](./host_hotspot_activity_preflight.json). Hotspot was enabled once using saved configuration; SSID/password hash/band and sharing source preserved.
+
+Actual fresh [pre-reset image](./clumsy_actual_pre_reset.jpg) at 2026-11-05T20:24:41.258Z–2026-11-05T20:24:41.514Z, SHA256 d7160775348935c00b0d1427640058b479a89f51bea75158549caaad15922c79. Exact UDP14567 filter, capture running, only Drop1.0% outbound, inbound unchecked. [Nonce-linked observations](./pre_run_settings_check.json). [Fresh pre-flash image](./clumsy_actual_pre_flash.jpg) separately predates identification/flash resets. Clumsy unchanged.
+
+[Serial receipts](./serial_receipts.jsonl), [complete monitor stream](./monitor_stream.log), [server stdout](./server.stdout.raw.log), [server stderr](./server.stderr.raw.log), [server sensor raw tail](./server.sensor_csv.raw.log). [Historical prefix source boundaries/hashes](./historical_prefix_boundaries.json) isolate setup and earlier server output from this reset. Collector remains running after agent reply. The end-of-run screenshot broker is a request, not an image; actual post-image must be acquired before any settings change and reviewed with the operator confirmation. No evidence may be backdated.
+
+HBPSN-01 FAILED_SETTINGS and HBPSN-02 COMPLETE with retained flags stay unchanged; original files verified. Only HBPSN-03's row is staged as FAILED_STARTUP, with processing continuing. No final RTT statistics or duration claims before deadline.

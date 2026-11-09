@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "58887a8c29a44128a3a24d9c4eb3abdb",
+    "requested_utc": "2026-11-05T20:24:37.341189+00:00",
+    "requested_monotonic": 664586.657266,
+    "expected": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "58887a8c29a44128a3a24d9c4eb3abdb",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "d7160775348935c00b0d1427640058b479a89f51bea75158549caaad15922c79",
+    "capture_started_utc": "2026-11-05T20:24:41.258Z",
+    "capture_completed_utc": "2026-11-05T20:24:41.514Z",
+    "capture_started_monotonic": 664590.5742660001,
+    "capture_completed_monotonic": 664590.830266,
+    "monotonic_provenance": "Estimates derived from request UTC/monotonic anchor and actual image UTC brackets; not a direct monotonic sample in screenshot runtime.",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "observations": "Exact UDP filter; Stop and Started filtering; Drop checked chance1=1.0%, inbound unchecked outbound checked; Lag/Throttle/Duplicate/Out of order/Tamper/Set TCP RST/Bandwidth unchecked. No settings changed."
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-05T20:24:51.211980+00:00"
+}

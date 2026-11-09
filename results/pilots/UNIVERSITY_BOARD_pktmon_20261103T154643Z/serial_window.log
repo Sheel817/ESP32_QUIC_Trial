@@ -1,0 +1,13 @@
+[0;32mI (3284884) quic_demo_main: APP_RTT seq=654 app_rtt_ms=70.275[0m
+[0;32mI (3289914) quic_demo_main: APP_RTT seq=655 app_rtt_ms=85.810[0m
+[0;32mI (3294944) quic_demo_main: APP_RTT seq=656 app_rtt_ms=105.789[0m
+[0;32mI (3299874) quic_demo_main: APP_RTT seq=657 app_rtt_ms=25.463[0m
+[0;32mI (3304904) quic_demo_main: APP_RTT seq=658 app_rtt_ms=45.432[0m
+[0;32mI (3309934) quic_demo_main: APP_RTT seq=659 app_rtt_ms=65.310[0m
+[0;32mI (3314964) quic_demo_main: APP_RTT seq=660 app_rtt_ms=85.420[0m
+[0;32mI (3319994) quic_demo_main: APP_RTT seq=661 app_rtt_ms=105.423[0m
+[0;32mI (3324924) quic_demo_main: APP_RTT seq=662 app_rtt_ms=25.298[0m
+[0;32mI (3329954) quic_demo_main: APP_RTT seq=663 app_rtt_ms=45.189[0m
+[0;32mI (3334984) quic_demo_main: APP_RTT seq=664 app_rtt_ms=65.085[0m
+[0;32mI (3340014) quic_demo_main: APP_RTT seq=665 app_rtt_ms=85.105[0m
+[0;32mI (3345044) quic_demo_main: APP_RTT seq=666 app_rtt_ms=105.460[0m

@@ -1,0 +1,20 @@
+{
+  "name": "after_cim_state_raw",
+  "argv": [
+    "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance -Namespace root/StandardCimv2 -ClassName MSFT_NetTCPConnection -Filter 'LocalPort = 14568' | ForEach-Object { $_.CimInstanceProperties | Format-List * }"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:48:02.972937+00:00",
+  "ended_utc": "2026-11-06T01:48:04.423139+00:00",
+  "elapsed_seconds": 1.4502214000094682,
+  "exit_code": 0,
+  "stdout_bytes": 5118,
+  "stderr_bytes": 0,
+  "stdout_sha256": "2ebba7b378a7b5518da2849b3281a1d4ac32fd988e3ba029ac7b186af700c028",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exception": null
+}

@@ -1,0 +1,34 @@
+{
+  "compiler": {
+    "path": "C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
+    "sha256": "9a96e8e77c263d4f7f16c084e8a2dfe89dfa8598c31fd3f9b152db35ccbb2a74",
+    "version": "riscv32-esp-elf-gcc.exe (crosstool-NG esp-15.2.0_20251204) 15.2.0"
+  },
+  "cmake": {
+    "path": "C:/Espressif/tools/cmake/4.0.3/bin/cmake.exe",
+    "sha256": "392ab4d6c3c91543fd297ed6c7e7354bf62edcd26fdf2706ad8613ad620cc45e",
+    "version": "cmake version 4.0.3"
+  },
+  "ninja": {
+    "path": "C:/Espressif/tools/ninja/1.12.1/ninja.exe",
+    "sha256": "68865c3276d449d746cea5065fdec2baf755d7813e161ab04205b0907b2629b8",
+    "version": "1.12.1"
+  },
+  "gdb": {
+    "path": "C:/Espressif/tools/riscv32-esp-elf-gdb/17.1_20260402/riscv32-esp-elf-gdb/bin/riscv32-esp-elf-gdb.exe",
+    "sha256": "33aa080601891bdeab7fc5d15895775805d742bf06759905d1b83e112424fd9b",
+    "version": "GNU gdb (esp-gdb) 17.1_20260402"
+  },
+  "formal": {
+    "project_version": "3c8c7a3-dirty",
+    "idf_ver": null,
+    "c_compiler": "C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
+    "target": "esp32c6"
+  },
+  "diagnostic": {
+    "project_version": "3c8c7a3-dirty-TEST_ONLY",
+    "idf_ver": null,
+    "c_compiler": "C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
+    "target": "esp32c6"
+  }
+}

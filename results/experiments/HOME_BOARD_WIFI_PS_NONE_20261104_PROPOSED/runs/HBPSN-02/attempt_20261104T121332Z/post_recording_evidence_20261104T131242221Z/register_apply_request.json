@@ -1,0 +1,20 @@
+{
+  "run_id": "HBPSN-02",
+  "phase": "FINAL_REVIEW_PENDING",
+  "output_dir": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\post_recording_evidence_20261104T131242221Z",
+  "csv_staged_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\post_recording_evidence_20261104T131242221Z\\register_final.staged.csv",
+  "patch": {
+    "status": "FAILED_SETTINGS",
+    "recording_end_utc": "2026-11-04T12:54:27.280042+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 1,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 188.95411084337348,
+    "minimum_app_rtt_ms": 127.227,
+    "maximum_app_rtt_ms": 867.649,
+    "deviation_reason": "Data finalized in original fixed window. Original automatic FAILED_SETTINGS flag preserved after 30s image wait; actual post image captured 2026-11-04T13:12:42.221Z separately. Visible settings match; operator stability confirmation/evidence review PENDING, validity NOT_APPROVED. One new unattributed server TCP error retained; zero serial connection errors."
+  }
+}

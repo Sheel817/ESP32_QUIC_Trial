@@ -1,0 +1,18 @@
+{
+  "nonce": "9b672d33ba3042e19201fabb9542cfd7",
+  "screenshot": "TEST_ONLY_end_of_run_clumsy.png",
+  "sha256": "343f901c645d6800448ed47f2b053c7dbd59eaecd5dd3cff4043d6e2cfff4abb",
+  "capture_started_utc": "2026-11-04T02:07:46.966Z",
+  "capture_completed_utc": "2026-11-04T02:07:47.167Z",
+  "capture_started_monotonic": 512378.1832447,
+  "capture_completed_monotonic": 512378.3842447,
+  "monotonic_source": "UTC offset from request anchor; estimated, not directly read in GUI runtime",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "effects": "all unchecked"
+  },
+  "label": "TEST_ONLY end-of-run; HBPSN-01 LATE SUPPLEMENTARY ONLY, never backdated",
+  "details": "Lag unchecked, configured 100 ms outbound only. Drop unchecked, configured 10.0%, both directions. All eight function checkboxes unchecked. Stop button visible."
+}

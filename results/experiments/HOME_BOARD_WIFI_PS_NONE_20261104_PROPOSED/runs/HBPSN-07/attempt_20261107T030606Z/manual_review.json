@@ -1,0 +1,12 @@
+{
+  "run_id": "HBPSN-07",
+  "attempt_id": "attempt_20261107T030606Z",
+  "disposition": "COMPLETE with retained flags",
+  "retained_flags": [
+    "AUTOMATED_POST_SCREENSHOT_HANDLE_ERROR",
+    "MANUAL_POST_SCREENSHOT_LATE_355S"
+  ],
+  "sample_count": 415,
+  "shortfall": 0,
+  "review_closed_helsinki": "2026-11-08 16:36:00"
+}

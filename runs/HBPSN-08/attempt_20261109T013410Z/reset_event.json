@@ -1,0 +1,24 @@
+{
+  "reset_release_utc": "2026-11-09T01:34:15.271402+00:00",
+  "reset_release_monotonic": 942363.1987949,
+  "deadline_utc": "2026-11-09T02:11:15.271435+00:00",
+  "deadline_monotonic": 944583.1987949,
+  "reset_release_helsinki": "2026-11-09T03:34:15.271420+02:00",
+  "deadline_helsinki": "2026-11-09T04:11:15.271440+02:00",
+  "target_duration_seconds": 2220.0,
+  "method": "SDK hard reset (RTS toggle via esp_pylib); host clocks sampled immediately after release",
+  "server_boundaries": {
+    "stdout": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "byte_offset": 5465535
+    },
+    "stderr": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+      "byte_offset": 0
+    },
+    "sensor_csv": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+      "byte_offset": 2973205
+    }
+  }
+}

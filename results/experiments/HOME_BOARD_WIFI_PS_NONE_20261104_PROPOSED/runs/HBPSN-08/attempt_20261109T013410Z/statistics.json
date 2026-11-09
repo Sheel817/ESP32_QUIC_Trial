@@ -1,0 +1,20 @@
+{
+  "status": "FINISHED_PENDING_MANUAL_REVIEW",
+  "run_id": "HBPSN-08",
+  "transport": "QUIC",
+  "condition": "LAG100_OUT",
+  "recording_start_utc": "2026-11-09T01:34:15.271402+00:00",
+  "fixed_deadline_utc": "2026-11-09T02:11:15.271435+00:00",
+  "finalization_utc": "2026-11-09T02:11:15.347311+00:00",
+  "defined_window_seconds": 2220.0,
+  "all_rtt_count": 439,
+  "eligible_count": 0,
+  "selected_count": 0,
+  "shortfall": 415,
+  "mean_ms": null,
+  "sd_ms": null,
+  "median_ms": null,
+  "p95_ms": null,
+  "minimum_ms": null,
+  "maximum_ms": null
+}

@@ -1,0 +1,1238 @@
+[
+  {
+    "address": "0x40021c40",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": {
+      "function": "tlsf_free",
+      "location": "??:?"
+    },
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x400225c4",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": {
+      "function": "multi_heap_free_impl",
+      "location": "??:?"
+    },
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839030",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40818d94",
+    "application": {
+      "function": "__global_pointer$",
+      "location": "??:?"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839f30",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40021c06",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": {
+      "function": "tlsf_free",
+      "location": "??:?"
+    },
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xffffffe0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xd1db613e",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40824634",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40847f0c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000004",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40847f08",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x41847f08",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000568",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000000",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40846294",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40847f04",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000001",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839938",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000038",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000002",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x22203a40",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000ff00",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00ff0000",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00001881",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40800001",
+    "application": {
+      "function": "_vector_table",
+      "location": "C:/esp/v6.1/esp-idf/components/riscv/vectors_intc.S:54"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000005",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x41847f0c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xcf9cad58",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40880000",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40824620",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4084812c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42163b38",
+    "application": {
+      "function": "??",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c:54"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40800b56",
+    "application": {
+      "function": "heap_caps_free",
+      "location": "C:/esp/v6.1/esp-idf/components/heap/heap_caps_base.c:89"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40852e80",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40852ed0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40808576",
+    "application": {
+      "function": "free",
+      "location": "C:/esp/v6.1/esp-idf/components/esp_libc/src/heap.c:35"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4a13897e",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4202ac74",
+    "application": {
+      "function": "default_free",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c:40"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4202acb8",
+    "application": {
+      "function": "ngtcp2_mem_free",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c:70"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42016208",
+    "application": {
+      "function": "pktns_del",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:767"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4084612c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4201b1d0",
+    "application": {
+      "function": "conn_discard_pktns",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:2501"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000047a",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4201b250",
+    "application": {
+      "function": "ngtcp2_conn_discard_initial_state",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:2516"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408393c2",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000092",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4201d126",
+    "application": {
+      "function": "conn_write_handshake_pkts",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:2766"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000151",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408394dc",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40842d70",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408522f8",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4203c206",
+    "application": {
+      "function": "wolfSSL_quic_send_internal",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/managed_components/wolfssl__wolfssl/src/quic.c:839"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4084571c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x000004b0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4083938c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x420212ec",
+    "application": {
+      "function": "conn_write_handshake",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:9973"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000008",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x13da935c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x8b7e64fd",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839a5c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000001f",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408392b0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42021758",
+    "application": {
+      "function": "conn_client_write_handshake",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:10197"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4083998c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408394f9",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40838e78",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000001d",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000001c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40846794",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x000005ac",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839340",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x420219ac",
+    "application": {
+      "function": "ngtcp2_conn_write_vmsg",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:11610"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839a88",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4201d100",
+    "application": {
+      "function": "conn_write_handshake_pkts",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:2755"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xf68eaae8",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x420b5258",
+    "application": {
+      "function": "lwip_netconn_do_send",
+      "location": "C:/esp/v6.1/esp-idf/components/lwip/lwip/src/api/api_msg.c:1608"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40832a98",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4083927c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x408443f0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42021fa8",
+    "application": {
+      "function": "conn_write_vmsg_wrapper",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:11414"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42019e98",
+    "application": {
+      "function": "ngtcp2_conn_find_stream",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:11381"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4083932c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x420220c8",
+    "application": {
+      "function": "ngtcp2_conn_writev_stream_versioned",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c:11495"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839338",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00001e58",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000000e",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4081ec50",
+    "application": {
+      "function": "??",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/main/ngtcp2_sample.c:81"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x42011742",
+    "application": {
+      "function": "client_write_streams",
+      "location": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/main/ngtcp2_sample.c:563"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xffffffff",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40855758",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839354",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00000010",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40839370",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x87c70210",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0000004a",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xe7380210",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0189a8c0",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x000000cc",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x28eb0801",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xd86eb19f",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x60088738",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x31630d2f",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0063ba17",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x1a000080",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xe2ed0c14",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xf96149c5",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x15472c5f",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x429a3ca6",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xa3f4a42b",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xd89538cb",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00ec25cb",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x08010000",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xb19f28eb",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x8738d86e",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0d2f6008",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xba173163",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x00008063",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xd12bc341",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x842de24c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x1dffd0a8",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x2f2f021a",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x1a8e8e91",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x5441833c",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x7771b8f8",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x45487d20",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xe9118ccc",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x203136bd",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xef1e22e2",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x3445cf7d",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x0930a0c9",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x536698ae",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x77a6d9e1",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0xda1bb904",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x40811d26",
+    "application": {
+      "function": "esf_buf_alloc_dynamic",
+      "location": "??:?"
+    },
+    "rom": null,
+    "classification": "Register or stack word; not automatically an unwound frame"
+  },
+  {
+    "address": "0x4001975a",
+    "application": {
+      "function": "??",
+      "location": "??:0"
+    },
+    "rom": {
+      "function": "software_reset_cpu",
+      "location": "??:?"
+    },
+    "classification": "Register or stack word; not automatically an unwound frame"
+  }
+]

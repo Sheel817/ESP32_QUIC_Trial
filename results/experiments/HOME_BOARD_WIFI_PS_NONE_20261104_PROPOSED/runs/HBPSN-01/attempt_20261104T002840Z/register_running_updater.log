@@ -1,0 +1,2 @@
+{"kind":"table","sheet":"Run register","address":"A1:L3","rows":3,"cols":12,"values":[["order","block","run_id","transport","condition","boot_replicate","status","recording_seconds","warmup_exclude_below_ms","target_rtts","configured_lag_ms","configured_drop_percent"],[1,1,"HBPSN-01","QUIC","CONTROL",1,"RUNNING",2220,60000,415,0,0],[2,1,"HBPSN-02","TCP_TLS","LAG100_OUT",1,"NOT_RUN",2220,60000,415,100,0]]}
+Inspect result written to file: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\outputs\HOME_BOARD_WIFI_PS_NONE_20261104\run_register.xlsx.tmp.xlsx.inspect.ndjson

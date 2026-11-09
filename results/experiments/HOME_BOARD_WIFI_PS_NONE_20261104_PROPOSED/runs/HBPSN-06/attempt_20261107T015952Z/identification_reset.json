@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-07T02:03:18.588726+00:00",
+  "completed_utc": "2026-11-07T02:03:22.365130+00:00",
+  "command": [
+    "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+    "-m",
+    "esptool",
+    "--chip",
+    "esp32c6",
+    "--port",
+    "COM6",
+    "--before",
+    "default-reset",
+    "--after",
+    "no-reset",
+    "flash-id"
+  ],
+  "exit_code": 0,
+  "setup_only": true
+}

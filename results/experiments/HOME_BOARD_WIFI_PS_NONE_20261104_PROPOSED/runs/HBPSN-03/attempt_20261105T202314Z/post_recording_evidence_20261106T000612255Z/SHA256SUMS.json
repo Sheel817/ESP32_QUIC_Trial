@@ -1,0 +1,26 @@
+[
+  {
+    "path": "capture_metadata.json",
+    "sha256": "c62dc1d687098c5487fd078df0a41b893e35398352241832355567c410292d8b"
+  },
+  {
+    "path": "finalization_review.json",
+    "sha256": "41da675e52cf72677b34ab779a8d48d324c6f353b15e3ded83d0d21976265567"
+  },
+  {
+    "path": "HBPSN-03_Clumsy_POST_RECORDING.jpg",
+    "sha256": "d891db75afe0f12c476d25a0fdc86579a04e5ffe0da8c0e046b71e7d96491efc"
+  },
+  {
+    "path": "initial_boot_final.raw.log",
+    "sha256": "cd0b2b212a58f53e48b9f8736f5e9b6b1ccbd3ce6190aa4ed7996f7a46392a78"
+  },
+  {
+    "path": "post_reboot_final.raw.log",
+    "sha256": "45ad330715632422ff2365fa539dc93714b9ebcf8b90ace24674f05681a8b1f1"
+  },
+  {
+    "path": "SUMMARY.md",
+    "sha256": "3d795d21071444be72179280cd1e2b5069cae471a4650c1768e629c447197398"
+  }
+]

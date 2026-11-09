@@ -1,0 +1,35 @@
+{
+  "run_id": "HBPSN-09",
+  "attempt_id": "attempt_20261109T183955Z",
+  "condition": "CONTROL",
+  "operator_confirmed": true,
+  "operator_statement": "yes, declaration confirmed, test capture OK",
+  "operator_statement_receipt_utc": "2026-11-09T18:56:50.3253449Z",
+  "operator_statement_clock_source": "First local clock observation while processing the operator message; original send time unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test/test_capture.png",
+    "sha256": "9daac2f2de428d5e005411d436cf5243085c8dc981f46768035a05268979328d",
+    "captured_utc": "2026-11-09T18:55:27.1136354Z",
+    "finding": "Screen capture succeeded at 3840x1080 with no ERROR_INVALID_HANDLE. The Clumsy window is not visible in this image, so it does not corroborate the settings below."
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to match HBPSN-04's actual pre-reset CONTROL screenshot.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  }
+}

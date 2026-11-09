@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-11-04T02:08:52.641689+00:00",
+  "formal_files_and_both_registers_unchanged": true,
+  "protected_file_count": 73,
+  "tested_code_unchanged": true,
+  "python_syntax_checks_pass": true,
+  "hbpsn01_status": "FAILED_SETTINGS",
+  "other_17_status": "NOT_RUN",
+  "deadline_lateness_ms": 8.494599955156446,
+  "actual_end_capture_utc": "2026-11-04T02:07:47.167Z",
+  "no_device_reset_flash_build_or_settings_changes": true
+}

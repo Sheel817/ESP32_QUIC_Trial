@@ -1,0 +1,5 @@
+﻿{
+    "ProcessId":  26228,
+    "ParentProcessId":  36520,
+    "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+}

@@ -1,0 +1,265 @@
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM6 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM6 115200
+--- Standard input is not a TTY, running in non-interactive mode. Reading commands from stdin: reset, flash, flash-all, app-flash, output, log, timestamps, bootloader, send <text>, sleep <seconds>, expect [--timeout <seconds>] <regex>, exit | Quit: 'exit' command, EOF or Ctrl+C
+2026-11-04T00:54:29 ESP-ROM:esp32c6-20220919
+2026-11-04T00:54:29 Build:Sep 19 2022
+2026-11-04T00:54:29 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-04T00:54:29 SPIWP:0xee
+2026-11-04T00:54:29 mode:DIO, clock div:2
+2026-11-04T00:54:29 load:0x40875730,len:0x1648
+2026-11-04T00:54:29 load:0x4086b910,len:0xdbc
+2026-11-04T00:54:29 load:0x4086e610,len:0x31f0
+2026-11-04T00:54:29 entry 0x4086b91a
+2026-11-04T00:54:29 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-04T00:54:29 I (24) boot: compile time Oct 21 2026 01:35:24
+2026-11-04T00:54:29 I (24) boot: chip revision: v0.0
+2026-11-04T00:54:29 I (24) boot: efuse block revision: v0.2
+2026-11-04T00:54:29 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-04T00:54:29 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-04T00:54:29 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-04T00:54:29 I (38) boot: Enabling RNG early entropy source...
+2026-11-04T00:54:29 I (43) boot: Partition Table:
+2026-11-04T00:54:29 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-04T00:54:29 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-04T00:54:29 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-04T00:54:29 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-04T00:54:29 I (71) boot: End of partition table
+2026-11-04T00:54:29 I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=41fe8h (270312) map
+2026-11-04T00:54:29 I (134) esp_image: segment 1: paddr=00052010 vaddr=40800000 size=0e008h ( 57352) load
+2026-11-04T00:54:29 I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=1312e8h (1250024) map
+2026-11-04T00:54:29 I (385) esp_image: segment 3: paddr=00191310 vaddr=4080e008 size=0a580h ( 42368) load
+2026-11-04T00:54:29 I (395) esp_image: segment 4: paddr=0019b898 vaddr=40818590 size=0405ch ( 16476) load
+2026-11-04T00:54:29 I (405) boot: Loaded app from partition at offset 0x10000
+2026-11-04T00:54:29 I (406) boot: Disabling RNG early entropy source...
+2026-11-04T00:54:29 I (416) cpu_start: Unicore app
+2026-11-04T00:54:29 I (424) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-04T00:54:29 I (424) cpu_start: Pro cpu start user code
+2026-11-04T00:54:29 I (425) cpu_start: cpu freq: 160000000 Hz
+2026-11-04T00:54:29 I (426) app_init: Application information:
+2026-11-04T00:54:29 I (430) app_init: Project name:     quic_demo
+2026-11-04T00:54:29 I (434) app_init: App version:      3c8c7a3-dirty
+2026-11-04T00:54:29 I (439) app_init: Compile time:     Oct 24 2026 19:22:28
+2026-11-04T00:54:29 I (444) app_init: ELF file SHA256:  4d62aef77...
+2026-11-04T00:54:29 I (448) app_init: ESP-IDF:          v6.1
+2026-11-04T00:54:29 I (452) efuse_init: Min chip rev:     v0.0
+2026-11-04T00:54:29 I (456) efuse_init: Max chip rev:     v0.99 
+2026-11-04T00:54:29 I (460) efuse_init: Chip rev:         v0.0
+2026-11-04T00:54:29 I (464) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-04T00:54:29 I (470) heap_init: At 40824620 len 00057FF0 (351 KiB): RAM
+2026-11-04T00:54:29 I (475) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-04T00:54:29 I (480) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-04T00:54:29 I (486) spi_flash: detected chip: gd
+2026-11-04T00:54:29 I (489) spi_flash: flash io: dio
+2026-11-04T00:54:29 I (492) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-04T00:54:29 I (498) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-04T00:54:29 I (505) coexist: coex firmware version: a830d28
+2026-11-04T00:54:29 I (509) coexist: coexist rom version 5b8dcfa
+2026-11-04T00:54:29 I (513) main_task: Started on CPU0
+2026-11-04T00:54:29 I (533) main_task: Calling app_main()
+2026-11-04T00:54:29 I (533) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-04T00:54:29 I (533) quic_demo_main: ESP-IDF version: v6.1
+2026-11-04T00:54:29 I (533) example_connect: Start example_connect.
+2026-11-04T00:54:29 I (533) pp: pp rom version: 5b8dcfa
+2026-11-04T00:54:29 I (543) net80211: net80211 rom version: 5b8dcfa
+2026-11-04T00:54:29 I (553) wifi:wifi driver task: 4082a680, prio:23, stack:6656, core=0
+2026-11-04T00:54:29 I (553) wifi:wifi firmware version: e12a754
+2026-11-04T00:54:29 I (553) wifi:wifi certification version: v7.0
+2026-11-04T00:54:29 I (553) wifi:config NVS flash: enabled
+2026-11-04T00:54:29 I (563) wifi:config nano formatting: disabled
+2026-11-04T00:54:29 I (563) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-04T00:54:29 I (573) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-04T00:54:29 I (573) wifi:Init static rx mgmt buffer num: 5
+2026-11-04T00:54:29 I (583) wifi:Init management short buffer num: 32
+2026-11-04T00:54:29 I (583) wifi:Init dynamic tx buffer num: 32
+2026-11-04T00:54:29 I (593) wifi:Init static tx FG buffer num: 2
+2026-11-04T00:54:29 I (593) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-04T00:54:29 I (603) wifi:Init static rx buffer num: 10
+2026-11-04T00:54:29 I (603) wifi:Init dynamic rx buffer num: 32
+2026-11-04T00:54:29 I (603) wifi_init: rx ba win: 6
+2026-11-04T00:54:29 I (613) wifi_init: accept mbox: 6
+2026-11-04T00:54:29 I (613) wifi_init: tcpip mbox: 32
+2026-11-04T00:54:29 I (613) wifi_init: udp mbox: 6
+2026-11-04T00:54:29 I (623) wifi_init: tcp mbox: 6
+2026-11-04T00:54:29 I (623) wifi_init: tcp tx win: 5760
+2026-11-04T00:54:29 I (623) wifi_init: tcp rx win: 5760
+2026-11-04T00:54:29 I (623) wifi_init: tcp mss: 1440
+2026-11-04T00:54:29 I (633) wifi_init: WiFi IRAM OP enabled
+2026-11-04T00:54:29 I (633) wifi_init: WiFi RX IRAM OP enabled
+2026-11-04T00:54:29 I (633) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-04T00:54:29 I (643) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-04T00:54:29 I (693) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-04T00:54:29 
+2026-11-04T00:54:29 I (693) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-04T00:54:29 I (693) wifi:enable tsf
+2026-11-04T00:54:29 I (693) example_connect: Connecting to SHEEL 3460...
+2026-11-04T00:54:29 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-04T00:54:29 I (713) example_connect: Waiting for IP(s)
+--- Command: 'reset'
+2026-11-04T00:54:30 ESP-ROM:esp32c6-20220919
+2026-11-04T00:54:30 Build:Sep 19 2022
+2026-11-04T00:54:30 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-04T00:54:30 SPIWP:0xee
+2026-11-04T00:54:30 mode:DIO, clock div:2
+2026-11-04T00:54:30 load:0x40875730,len:0x1648
+2026-11-04T00:54:30 load:0x4086b910,len:0xdbc
+2026-11-04T00:54:30 load:0x4086e610,len:0x31f0
+2026-11-04T00:54:30 entry 0x4086b91a
+2026-11-04T00:54:30 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-04T00:54:30 I (24) boot: compile time Oct 21 2026 01:35:24
+2026-11-04T00:54:30 I (24) boot: chip revision: v0.0
+2026-11-04T00:54:30 I (24) boot: efuse block revision: v0.2
+2026-11-04T00:54:30 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-04T00:54:30 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-04T00:54:30 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-04T00:54:30 I (38) boot: Enabling RNG early entropy source...
+2026-11-04T00:54:30 I (43) boot: Partition Table:
+2026-11-04T00:54:30 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-04T00:54:30 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-04T00:54:30 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-04T00:54:30 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-04T00:54:30 I (71) boot: End of partition table
+2026-11-04T00:54:30 I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=41fe8h (270312) map
+2026-11-04T00:54:30 I (134) esp_image: segment 1: paddr=00052010 vaddr=40800000 size=0e008h ( 57352) load
+2026-11-04T00:54:30 I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=1312e8h (1250024) map
+2026-11-04T00:54:30 I (385) esp_image: segment 3: paddr=00191310 vaddr=4080e008 size=0a580h ( 42368) load
+2026-11-04T00:54:30 I (395) esp_image: segment 4: paddr=0019b898 vaddr=40818590 size=0405ch ( 16476) load
+2026-11-04T00:54:30 I (405) boot: Loaded app from partition at offset 0x10000
+2026-11-04T00:54:30 I (406) boot: Disabling RNG early entropy source...
+2026-11-04T00:54:30 I (416) cpu_start: Unicore app
+2026-11-04T00:54:30 I (424) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-04T00:54:30 I (424) cpu_start: Pro cpu start user code
+2026-11-04T00:54:30 I (425) cpu_start: cpu freq: 160000000 Hz
+2026-11-04T00:54:30 I (426) app_init: Application information:
+2026-11-04T00:54:30 I (430) app_init: Project name:     quic_demo
+2026-11-04T00:54:30 I (434) app_init: App version:      3c8c7a3-dirty
+2026-11-04T00:54:30 I (439) app_init: Compile time:     Oct 24 2026 19:22:28
+2026-11-04T00:54:30 I (444) app_init: ELF file SHA256:  4d62aef77...
+2026-11-04T00:54:30 I (448) app_init: ESP-IDF:          v6.1
+2026-11-04T00:54:30 I (452) efuse_init: Min chip rev:     v0.0
+2026-11-04T00:54:30 I (456) efuse_init: Max chip rev:     v0.99 
+2026-11-04T00:54:30 I (460) efuse_init: Chip rev:         v0.0
+2026-11-04T00:54:30 I (464) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-04T00:54:30 I (470) heap_init: At 40824620 len 00057FF0 (351 KiB): RAM
+2026-11-04T00:54:30 I (475) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-04T00:54:30 I (480) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-04T00:54:30 I (486) spi_flash: detected chip: gd
+2026-11-04T00:54:30 I (489) spi_flash: flash io: dio
+2026-11-04T00:54:30 I (492) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-04T00:54:30 I (498) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-04T00:54:30 I (505) coexist: coex firmware version: a830d28
+2026-11-04T00:54:30 I (509) coexist: coexist rom version 5b8dcfa
+2026-11-04T00:54:30 I (513) main_task: Started on CPU0
+2026-11-04T00:54:30 I (533) main_task: Calling app_main()
+2026-11-04T00:54:30 I (533) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-04T00:54:30 I (533) quic_demo_main: ESP-IDF version: v6.1
+2026-11-04T00:54:30 I (533) example_connect: Start example_connect.
+2026-11-04T00:54:30 I (533) pp: pp rom version: 5b8dcfa
+2026-11-04T00:54:30 I (543) net80211: net80211 rom version: 5b8dcfa
+2026-11-04T00:54:30 I (553) wifi:wifi driver task: 4082a680, prio:23, stack:6656, core=0
+2026-11-04T00:54:30 I (553) wifi:wifi firmware version: e12a754
+2026-11-04T00:54:30 I (553) wifi:wifi certification version: v7.0
+2026-11-04T00:54:30 I (553) wifi:config NVS flash: enabled
+2026-11-04T00:54:30 I (563) wifi:config nano formatting: disabled
+2026-11-04T00:54:30 I (563) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-04T00:54:30 I (573) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-04T00:54:30 I (573) wifi:Init static rx mgmt buffer num: 5
+2026-11-04T00:54:30 I (583) wifi:Init management short buffer num: 32
+2026-11-04T00:54:30 I (583) wifi:Init dynamic tx buffer num: 32
+2026-11-04T00:54:30 I (593) wifi:Init static tx FG buffer num: 2
+2026-11-04T00:54:30 I (593) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-04T00:54:30 I (603) wifi:Init static rx buffer num: 10
+2026-11-04T00:54:30 I (603) wifi:Init dynamic rx buffer num: 32
+2026-11-04T00:54:30 I (603) wifi_init: rx ba win: 6
+2026-11-04T00:54:30 I (613) wifi_init: accept mbox: 6
+2026-11-04T00:54:30 I (613) wifi_init: tcpip mbox: 32
+2026-11-04T00:54:30 I (613) wifi_init: udp mbox: 6
+2026-11-04T00:54:30 I (623) wifi_init: tcp mbox: 6
+2026-11-04T00:54:30 I (623) wifi_init: tcp tx win: 5760
+2026-11-04T00:54:30 I (623) wifi_init: tcp rx win: 5760
+2026-11-04T00:54:30 I (623) wifi_init: tcp mss: 1440
+2026-11-04T00:54:30 I (633) wifi_init: WiFi IRAM OP enabled
+2026-11-04T00:54:30 I (633) wifi_init: WiFi RX IRAM OP enabled
+2026-11-04T00:54:30 I (633) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-04T00:54:30 I (643) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-04T00:54:30 I (693) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-04T00:54:30 
+2026-11-04T00:54:30 I (693) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-04T00:54:30 I (693) wifi:enable tsf
+2026-11-04T00:54:30 I (693) example_connect: Connecting to SHEEL 3460...
+2026-11-04T00:54:30 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-04T00:54:30 I (713) example_connect: Waiting for IP(s)
+2026-11-04T00:54:33 I (3223) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-04T00:54:33 I (3233) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-04T00:54:33 I (3233) wifi:state: init -> auth (0xb0)
+2026-11-04T00:54:33 I (3263) wifi:state: auth -> assoc (0x0)
+2026-11-04T00:54:33 I (3263) wifi:state: assoc -> run (0x10)
+2026-11-04T00:54:33 I (3263) wifi:(trc)phytype:CBW20-SGI, snr:72, maxRate:144, highestRateIdx:0
+2026-11-04T00:54:33 W (3263) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-04T00:54:33 I (3273) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:72, ampduState:wait operational
+2026-11-04T00:54:33 I (3283) wifi:ifidx:0, rssi:-24, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-04T00:54:33 I (3293) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-04T00:54:33 I (3313) wifi:connected with SHEEL 3460, aid = 3, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-04T00:54:33 I (3313) wifi:security: WPA2-PSK, phy: bgn, rssi: -24, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-04T00:54:33 I (3323) wifi:pm start, type: 1, twt_start:0
+2026-11-04T00:54:33 
+2026-11-04T00:54:33 I (3323) wifi:pm start, type:1, aid:0x3, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-04T00:54:33 I (3333) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-04T00:54:33 I (3343) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-04T00:54:33 I (3353) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-04T00:54:33 I (3363) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-04T00:54:33 I (3373) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-04T00:54:33 I (3383) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-04T00:54:33 I (3393) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-04T00:54:33 I (3393) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-04T00:54:33 I (3403) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-04T00:54:33 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-04T00:54:34 I (4443) esp_netif_handlers: example_netif_sta ip: 192.168.137.212, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-04T00:54:34 I (4443) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.212
+2026-11-04T00:54:34 I (4533) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-04T00:54:34 I (4533) example_common: Connected to example_netif_sta
+2026-11-04T00:54:34 I (4533) example_common: - IPv4 address: 192.168.137.212,
+2026-11-04T00:54:34 I (4543) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-04T00:54:34 I (4553) quic_demo_main: Wi-Fi connected
+2026-11-04T00:54:34 I (4553) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-04T00:54:34 I (4563) quic_demo_main: Free heap: 287756 bytes
+2026-11-04T00:54:34 I (4563) QUIC: QUIC mutex created successfully
+2026-11-04T00:54:34 I (4573) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-04T00:54:34 I (4573) QUIC: init random number generator
+2026-11-04T00:54:34 I (4583) QUIC: init client ...
+2026-11-04T00:54:34 I (4593) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-04T00:54:34 I (4593) QUIC: In client_quic_init
+2026-11-04T00:54:34 I (4593) QUIC: ===>  INITIAL TS: 4114670000
+2026-11-04T00:54:34 I (4593) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-04T00:54:34 I (4603) QUIC: QUIC client initialization completed
+2026-11-04T00:54:35 I (5033) main_task: Returned from app_main()
+2026-11-04T00:54:37 I (6963) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-04T00:54:37 I (6963) QUIC: QUIC handshake completed callback triggered!
+2026-11-04T00:54:37 I (6983) QUIC: Extending max local streams bidi to 128
+2026-11-04T00:54:37 
+2026-11-04T00:54:37 I (7093) quic_demo_main: QUIC connection established
+2026-11-04T00:54:38 I (8093) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-04T00:54:38 I (8103) QUIC: Opened new QUIC stream with ID: 0
+2026-11-04T00:54:38 I (8173) quic_demo_main: MQTT connected over QUIC
+2026-11-04T00:54:38 I (8183) quic_demo_main: Starting DHT11 readings every five seconds
+2026-11-04T00:54:38 I (8283) quic_demo_main: Subscription acknowledged
+2026-11-04T00:54:43 I (13313) quic_demo_main: APP_RTT seq=1 app_rtt_ms=86.290
+2026-11-04T00:54:48 I (18343) quic_demo_main: APP_RTT seq=2 app_rtt_ms=104.472
+2026-11-04T00:54:53 I (23273) quic_demo_main: APP_RTT seq=3 app_rtt_ms=25.996
+2026-11-04T00:54:58 I (28303) quic_demo_main: APP_RTT seq=4 app_rtt_ms=48.410
+2026-11-04T00:55:03 I (33333) quic_demo_main: APP_RTT seq=5 app_rtt_ms=68.651
+2026-11-04T00:55:08 I (38363) quic_demo_main: APP_RTT seq=6 app_rtt_ms=88.929
+2026-11-04T00:55:13 I (43393) quic_demo_main: APP_RTT seq=7 app_rtt_ms=109.346
+2026-11-04T00:55:18 I (48323) quic_demo_main: APP_RTT seq=8 app_rtt_ms=25.547
+2026-11-04T00:55:23 I (53453) quic_demo_main: APP_RTT seq=9 app_rtt_ms=149.000
+2026-11-04T00:55:28 I (58383) quic_demo_main: APP_RTT seq=10 app_rtt_ms=65.512
+2026-11-04T00:55:33 I (63413) quic_demo_main: APP_RTT seq=11 app_rtt_ms=85.493
+2026-11-04T00:55:38 I (68443) quic_demo_main: APP_RTT seq=12 app_rtt_ms=105.455
+2026-11-04T00:55:43 I (73373) quic_demo_main: APP_RTT seq=13 app_rtt_ms=25.358
+2026-11-04T00:55:48 I (78503) quic_demo_main: APP_RTT seq=14 app_rtt_ms=145.301
+2026-11-04T00:55:53 I (83433) quic_demo_main: APP_RTT seq=15 app_rtt_ms=65.392
+2026-11-04T00:55:58 I (88463) quic_demo_main: APP_RTT seq=16 app_rtt_ms=85.612
+2026-11-04T00:56:03 I (93493) quic_demo_main: APP_RTT seq=17 app_rtt_ms=105.234
+2026-11-04T00:56:08 I (98423) quic_demo_main: APP_RTT seq=18 app_rtt_ms=25.169
+2026-11-04T00:56:13 I (103453) quic_demo_main: APP_RTT seq=19 app_rtt_ms=45.144
+2026-11-04T00:56:18 I (108483) quic_demo_main: APP_RTT seq=20 app_rtt_ms=66.191

@@ -1,0 +1,272 @@
+{
+  "status": "FAILED_STARTUP",
+  "run_id": "HBPSN-03",
+  "transport": "QUIC",
+  "condition": "DROP1_OUT",
+  "recording_start_utc": "2026-11-05T20:24:54.413525+00:00",
+  "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+  "finalization_utc": "2026-11-05T21:02:24.522123+00:00",
+  "defined_window_seconds": 2220,
+  "deadline_observed_lateness_ms": 6.638500024564564,
+  "all_rtt_count": 439,
+  "eligible_count": 0,
+  "selected_count": 0,
+  "shortfall": 415,
+  "mean_ms": null,
+  "median_ms": null,
+  "minimum_ms": null,
+  "maximum_ms": null,
+  "first_selected_seq": null,
+  "last_selected_seq": null,
+  "all_values_ms": [],
+  "warning_error_lines": [
+    {
+      "line": 93,
+      "raw_line": "2026-11-05T22:24:55 W (763) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 101,
+      "raw_line": "2026-11-05T22:24:57 W (3323) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 119,
+      "raw_line": "2026-11-05T22:24:57 W (3513) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    },
+    {
+      "line": 312,
+      "raw_line": "2026-11-05T22:25:04 W (1022) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 320,
+      "raw_line": "2026-11-05T22:25:06 W (3572) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 338,
+      "raw_line": "2026-11-05T22:25:06 W (3762) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "connection_error_lines": [
+    {
+      "line": 149,
+      "raw_line": "2026-11-05T22:25:02 Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled."
+    }
+  ],
+  "sequence_gaps": [],
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-05T22:24:54 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-05T20:24:54.424807+00:00",
+      "initial_designated_boot": true
+    },
+    {
+      "line": 220,
+      "raw_line": "2026-11-05T22:25:03 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-05T20:25:03.149248+00:00",
+      "initial_designated_boot": false
+    }
+  ],
+  "interruptions": [],
+  "server_tail_errors": [],
+  "server_stderr": "",
+  "startup": {
+    "checked_utc": "2026-11-05T20:25:03.637864+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "transport_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "transport_connected": true,
+      "mqtt_connected": false,
+      "subscription": false,
+      "tls": true
+    },
+    "pass_all": false,
+    "fatal": true,
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "9b23e164f"
+  },
+  "preflight": {
+    "status": "PASS",
+    "checked_utc": "2026-11-05T20:23:46.392362+00:00",
+    "run_id": "HBPSN-03",
+    "transport": "QUIC",
+    "condition": "DROP1_OUT",
+    "protocol_id": "HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED_V1",
+    "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+    "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+    "firmware_artifacts": [
+      {
+        "artifact_id": "QUIC_PSN",
+        "transport": "QUIC",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+        "bytes": 1637280,
+        "sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198"
+      },
+      {
+        "artifact_id": "QUIC_PSN",
+        "transport": "QUIC",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+        "bytes": 17297344,
+        "sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d"
+      },
+      {
+        "artifact_id": "QUIC_PSN",
+        "transport": "QUIC",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+        "bytes": 22096,
+        "sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73"
+      },
+      {
+        "artifact_id": "QUIC_PSN",
+        "transport": "QUIC",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+        "bytes": 3072,
+        "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+      }
+    ],
+    "configuration": [
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\sdkconfig",
+        "sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\config\\sdkconfig.json",
+        "sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\CMakeCache.txt",
+        "sha256": "01941bf8855e1b39d9928acbf9543a761badd303b15c95069d5c61d128f08771"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\compile_commands.json",
+        "sha256": "6062efbb3e350de2abc944ae0959e6ab101410257265f86e1c01ba01f6f3cbc0"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flash_args",
+        "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flasher_args.json",
+        "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+        "sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+        "sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f"
+      },
+      {
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+        "sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462"
+      }
+    ],
+    "server_log_sources": {
+      "stdout": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "stderr": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+      "sensor_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv"
+    },
+    "server_sensor_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+    "expected_clumsy_settings": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "prior_verified_pre_reset": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN03_PRE_RESET_20261104T134654170Z\\HBPSN-03_Clumsy_PRE_RESET.jpg",
+      "sha256": "6f476841c8d10f8d2ef12d03a4fcd276097ec894f4a0dc801a2e140d70186142",
+      "capture_started_utc": "2026-11-04T13:46:54.170Z",
+      "capture_completed_utc": "2026-11-04T13:46:54.650Z"
+    },
+    "validity_status": "NOT_APPROVED",
+    "observer_policy": "Fresh nonce-linked actual pre-reset image; actual post-recording image and operator confirmation require review. Missing evidence stays flagged. No scientific validity auto-approval.",
+    "clumsy_executable_sha256": "088d012a3d2788f797faf54d4f3db945c84ddab03a656c24d3badb06ae74324e"
+  },
+  "percentile_method": "Linear empirical interpolation at (N-1)*p, type 7",
+  "recording_window_status": "FINISHED_FIXED_WINDOW",
+  "completion_candidate": "FAILED_STARTUP",
+  "evidence_review_status": "PENDING_MANUAL_REVIEW",
+  "validity_status": "NOT_APPROVED",
+  "operator_stability_confirmation": "NOT_REVIEWED",
+  "finalization_delay_after_deadline_ms": 30116.875500069,
+  "warmup_excluded_count": 0,
+  "other_excluded_count": 439,
+  "raw_serial_line_count": 809,
+  "post_recording_settings_check": {
+    "status": "MISSING",
+    "phase": "end_of_run",
+    "request": {
+      "phase": "end_of_run",
+      "nonce": "8b4be22f3347436c841fec22ed31de15",
+      "requested_utc": "2026-11-05T21:01:54.422352+00:00",
+      "requested_monotonic": 666823.7384155,
+      "expected": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "Drop": {
+          "enabled": true,
+          "chance_percent": 1.0,
+          "inbound": false,
+          "outbound": true
+        },
+        "other_main_effects": {
+          "Lag": false,
+          "Throttle": false,
+          "Duplicate": false,
+          "Out of order": false,
+          "Tamper": false,
+          "Set TCP RST": false,
+          "Bandwidth": false
+        }
+      },
+      "anchor": {
+        "reset_request_utc": "2026-11-05T20:24:54.407317+00:00",
+        "reset_release_utc": "2026-11-05T20:24:54.413525+00:00",
+        "reset_release_monotonic": 664603.7295527,
+        "deadline_monotonic": 666823.7295527,
+        "deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+        "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+        "boundary_precision": "Host API completion, not a physical edge measurement",
+        "server_boundaries": {
+          "stdout": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+            "byte_offset": 1831224
+          },
+          "stderr": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+            "byte_offset": 0
+          },
+          "sensor_csv": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+            "byte_offset": 995280
+          }
+        }
+      },
+      "response_timeout_seconds": 30
+    },
+    "reason": "No complete, timely screenshot/observation response",
+    "evaluated_utc": "2026-11-05T21:02:24.424027+00:00"
+  },
+  "p90_ms": null,
+  "p95_ms": null,
+  "p99_ms": null,
+  "p95_method": "nearest rank ceil(0.95*N); P90/P99 retain type 7"
+}

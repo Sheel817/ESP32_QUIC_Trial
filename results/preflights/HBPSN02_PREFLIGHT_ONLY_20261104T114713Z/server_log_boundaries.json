@@ -1,0 +1,35 @@
+{
+  "stdout": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+    "boundary_observed_utc_start": "2026-11-04T11:47:18.454418+00:00",
+    "boundary_observed_utc_end": "2026-11-04T11:47:18.474110+00:00",
+    "next_byte_offset": 61377,
+    "prefix_sha256": "c4209159c77c4e380093c78fb41cd1a4820a91572eb6a0b0e4ba8c9727442dfc",
+    "prefix_line_count": 721,
+    "ends_at_line_boundary": true,
+    "source_modified_utc": "2026-11-04T11:47:18.205036+00:00",
+    "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+  },
+  "stderr": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+    "boundary_observed_utc_start": "2026-11-04T11:47:18.477664+00:00",
+    "boundary_observed_utc_end": "2026-11-04T11:47:18.493953+00:00",
+    "next_byte_offset": 51,
+    "prefix_sha256": "c8037f828ce963c1d181a43b969a4aa38f1d83f117b7191dea07ea6f168b3cf9",
+    "prefix_line_count": 3,
+    "ends_at_line_boundary": true,
+    "source_modified_utc": "2026-11-04T00:36:52.263279+00:00",
+    "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+  },
+  "sensor_csv": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+    "boundary_observed_utc_start": "2026-11-04T11:47:18.496263+00:00",
+    "boundary_observed_utc_end": "2026-11-04T11:47:18.511997+00:00",
+    "next_byte_offset": 32663,
+    "prefix_sha256": "bc6348e8a0bbeefd4ebbf7d8071639636a9c0c34a43bf32cd45d3a0e4f130381",
+    "prefix_line_count": 355,
+    "ends_at_line_boundary": true,
+    "source_modified_utc": "2026-11-04T00:35:52.252527+00:00",
+    "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+  }
+}

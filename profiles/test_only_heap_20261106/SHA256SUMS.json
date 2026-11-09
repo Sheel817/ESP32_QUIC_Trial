@@ -1,0 +1,82 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "5273faca41256db2d38e50362758756c123c8501b0c77daccff94a7936dd657f",
+    "bytes": 8807
+  },
+  {
+    "path": "BUILD_REPORT.json",
+    "sha256": "ad698229c20c311eb24ad40407ca14780942e2ceb41754836e1fc90976df49a1",
+    "bytes": 14025
+  },
+  {
+    "path": "diagnostic_source.diff",
+    "sha256": "1fc1cfec3c34dccbb0eb7f7e5f66eed6b0af1a8d971ed32fa63b3c06bba5a239",
+    "bytes": 14156
+  },
+  {
+    "path": "sdkconfig.diff",
+    "sha256": "338c366140538245969c6b56e6c22bac69f590b15ffb063ffd1a61d0db974d5b",
+    "bytes": 1750
+  },
+  {
+    "path": "effective_configuration_diff.json",
+    "sha256": "cb1f038e69898f4f7b1305d9aac6a65651ee50e49947eb738a32ec5016e12281",
+    "bytes": 993
+  },
+  {
+    "path": "PROPOSED_CAPTURE.md",
+    "sha256": "d673668e2d79b38046a52be2fd62c1770296e477039754ec26cc2559f0858fd5",
+    "bytes": 5566
+  },
+  {
+    "path": "recover_trace.gdb",
+    "sha256": "c5346959430b0b16c140396c06acaa88bf4f6952c20cbad8d4a6ff6c5a7c7ab3",
+    "bytes": 844
+  },
+  {
+    "path": "decode_trace.py",
+    "sha256": "1c39e775c83571c1d668efe1dcb4303a3897c71da00c0b8ef9ff5488d8365a19",
+    "bytes": 1230
+  },
+  {
+    "path": "protection_verification.json",
+    "sha256": "7989787ea1565c15a9df6145b5a2e2024b5715625f039c5bcf75e9744321530e",
+    "bytes": 329
+  },
+  {
+    "path": "EXACT_BUILD_COMMAND.txt",
+    "sha256": "8926032b19e0ebfa0eff651b6aaf4a6b6728425c762b4075048b5f09aa1de5af",
+    "bytes": 1916
+  },
+  {
+    "path": "build\\quic_demo.bin",
+    "sha256": "6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb",
+    "bytes": 1652336
+  },
+  {
+    "path": "build\\quic_demo.elf",
+    "sha256": "a8056d24f2e746d5f345b16e545e907f3339e6e87ea146895b57b1aaa7d32b70",
+    "bytes": 17418112
+  },
+  {
+    "path": "build\\bootloader\\bootloader.bin",
+    "sha256": "201aab89981d1f3a52dea8da1d05bf81f7e6244d2e9ab7eaa73cb46fa618501e",
+    "bytes": 22096
+  },
+  {
+    "path": "build\\partition_table\\partition-table.bin",
+    "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+    "bytes": 3072
+  },
+  {
+    "path": "build\\flash_args",
+    "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+    "bytes": 150
+  },
+  {
+    "path": "build\\flasher_args.json",
+    "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964",
+    "bytes": 933
+  }
+]

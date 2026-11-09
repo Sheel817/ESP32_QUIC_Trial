@@ -1,0 +1,18 @@
+[
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+        "Hash":  "67B2135B90B9D06786AF00EA23FBABF4B7E3A42F2208DD93AE8EC8116FAFFC73"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+        "Hash":  "8BC8D437A36B46E0880F7CBEBE470527E27E4D454B536FFF6633AC5F30539F16"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+        "Hash":  "6C20B3DBF72D6859997A70C39F27AE0DD42791437A98C9ABA93D8C017BFCE198"
+    },
+    {
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+        "Hash":  "9B23E164F8D6FD4702450B687C76EF3FA8CED802945DC23DD2F4D102C35C0F3D"
+    }
+]

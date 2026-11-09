@@ -1,0 +1,32 @@
+{
+  "nonce": "5c9fdf58a63c4539abf210f907fc6fca",
+  "screenshot": "clumsy_actual_pre_reset.jpg",
+  "sha256": "171d5f2a01b47493a0c099ac418e25b24b9c9dfeb630b28202432a825620763a",
+  "capture_started_utc": "2026-11-06T01:59:37.533Z",
+  "capture_completed_utc": "2026-11-06T01:59:37.795Z",
+  "capture_started_monotonic": 684686.849543,
+  "capture_completed_monotonic": 684687.111543,
+  "clock_provenance": "Host UTC acquisition brackets; monotonic estimates from collector request UTC/monotonic bridge, not independently sampled native monotonic.",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "label": "HBPSN-04 TCP_TLS CONTROL actual pre-reset image",
+  "visible_detail": "Exact TCP14568 filter; Stop and Started filtering show capture running; all8 main effects unchecked; inactive values unchanged."
+}

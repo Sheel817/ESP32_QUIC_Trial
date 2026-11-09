@@ -1,0 +1,41 @@
+
+
+State                    : 
+AppliedSetting           : Internet
+OffloadState             : InHost
+Caption                  : 
+Description              : 
+ElementName              : 
+InstanceID               : 0.0.0.0++14568++0.0.0.0++0
+CommunicationStatus      : 
+DetailedStatus           : 
+HealthState              : 
+InstallDate              : 
+Name                     : 
+OperatingStatus          : 
+OperationalStatus        : 
+PrimaryStatus            : 
+Status                   : 
+StatusDescriptions       : 
+AvailableRequestedStates : 
+EnabledDefault           : 2
+EnabledState             : 
+OtherEnabledState        : 
+RequestedState           : 5
+TimeOfLastStateChange    : 
+TransitioningToState     : 12
+AggregationBehavior      : 
+Directionality           : 
+CreationTime             : 11/6/2026 3:36:31 AM
+LocalAddress             : 0.0.0.0
+LocalPort                : 14568
+OwningProcess            : 36536
+RemoteAddress            : 0.0.0.0
+RemotePort               : 0
+PSComputerName           : 
+CimClass                 : ROOT/StandardCimv2:MSFT_NetTCPConnection
+CimInstanceProperties    : {Caption, Description, ElementName, InstanceID...}
+CimSystemProperties      : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+

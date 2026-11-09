@@ -1,0 +1,308 @@
+[
+  {
+    "boot": 1,
+    "esp_ms": 13562,
+    "sequence": 1,
+    "rtt_ms": 86.22,
+    "raw_offset": 8937,
+    "receipt_utc": "2026-11-06T00:52:35.548823+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 18592,
+    "sequence": 2,
+    "rtt_ms": 104.168,
+    "raw_offset": 8996,
+    "receipt_utc": "2026-11-06T00:52:40.578032+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 23522,
+    "sequence": 3,
+    "rtt_ms": 26.513,
+    "raw_offset": 9056,
+    "receipt_utc": "2026-11-06T00:52:45.509313+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 28552,
+    "sequence": 4,
+    "rtt_ms": 46.958,
+    "raw_offset": 9115,
+    "receipt_utc": "2026-11-06T00:52:50.541020+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 33582,
+    "sequence": 5,
+    "rtt_ms": 69.362,
+    "raw_offset": 9174,
+    "receipt_utc": "2026-11-06T00:52:55.572139+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 38612,
+    "sequence": 6,
+    "rtt_ms": 88.921,
+    "raw_offset": 9233,
+    "receipt_utc": "2026-11-06T00:53:00.602539+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 43642,
+    "sequence": 7,
+    "rtt_ms": 109.396,
+    "raw_offset": 9292,
+    "receipt_utc": "2026-11-06T00:53:05.632008+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 48572,
+    "sequence": 8,
+    "rtt_ms": 29.808,
+    "raw_offset": 9352,
+    "receipt_utc": "2026-11-06T00:53:10.562282+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 53702,
+    "sequence": 9,
+    "rtt_ms": 148.965,
+    "raw_offset": 9411,
+    "receipt_utc": "2026-11-06T00:53:15.691964+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 58632,
+    "sequence": 10,
+    "rtt_ms": 65.441,
+    "raw_offset": 9471,
+    "receipt_utc": "2026-11-06T00:53:20.617737+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 63662,
+    "sequence": 11,
+    "rtt_ms": 85.013,
+    "raw_offset": 9531,
+    "receipt_utc": "2026-11-06T00:53:25.647838+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 68692,
+    "sequence": 12,
+    "rtt_ms": 105.319,
+    "raw_offset": 9591,
+    "receipt_utc": "2026-11-06T00:53:30.677980+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 73622,
+    "sequence": 13,
+    "rtt_ms": 25.214,
+    "raw_offset": 9652,
+    "receipt_utc": "2026-11-06T00:53:35.607656+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 78652,
+    "sequence": 14,
+    "rtt_ms": 45.337,
+    "raw_offset": 9712,
+    "receipt_utc": "2026-11-06T00:53:40.637890+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 83682,
+    "sequence": 15,
+    "rtt_ms": 65.38,
+    "raw_offset": 9772,
+    "receipt_utc": "2026-11-06T00:53:45.667755+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 88712,
+    "sequence": 16,
+    "rtt_ms": 85.731,
+    "raw_offset": 9832,
+    "receipt_utc": "2026-11-06T00:53:50.697571+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 93742,
+    "sequence": 17,
+    "rtt_ms": 105.356,
+    "raw_offset": 9892,
+    "receipt_utc": "2026-11-06T00:53:55.727659+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 98672,
+    "sequence": 18,
+    "rtt_ms": 25.359,
+    "raw_offset": 9953,
+    "receipt_utc": "2026-11-06T00:54:00.657580+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 103702,
+    "sequence": 19,
+    "rtt_ms": 45.291,
+    "raw_offset": 10013,
+    "receipt_utc": "2026-11-06T00:54:05.687709+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 108732,
+    "sequence": 20,
+    "rtt_ms": 65.286,
+    "raw_offset": 10074,
+    "receipt_utc": "2026-11-06T00:54:10.717618+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 113762,
+    "sequence": 21,
+    "rtt_ms": 85.712,
+    "raw_offset": 10135,
+    "receipt_utc": "2026-11-06T00:54:15.748043+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 118792,
+    "sequence": 22,
+    "rtt_ms": 105.335,
+    "raw_offset": 10196,
+    "receipt_utc": "2026-11-06T00:54:20.777856+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 123722,
+    "sequence": 23,
+    "rtt_ms": 29.04,
+    "raw_offset": 10258,
+    "receipt_utc": "2026-11-06T00:54:25.711110+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 128752,
+    "sequence": 24,
+    "rtt_ms": 45.385,
+    "raw_offset": 10319,
+    "receipt_utc": "2026-11-06T00:54:30.737558+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 133782,
+    "sequence": 25,
+    "rtt_ms": 65.215,
+    "raw_offset": 10380,
+    "receipt_utc": "2026-11-06T00:54:35.767456+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 138812,
+    "sequence": 26,
+    "rtt_ms": 85.228,
+    "raw_offset": 10441,
+    "receipt_utc": "2026-11-06T00:54:40.797323+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 143852,
+    "sequence": 27,
+    "rtt_ms": 114.699,
+    "raw_offset": 10502,
+    "receipt_utc": "2026-11-06T00:54:45.837537+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 148782,
+    "sequence": 28,
+    "rtt_ms": 34.219,
+    "raw_offset": 10564,
+    "receipt_utc": "2026-11-06T00:54:50.776015+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 153822,
+    "sequence": 29,
+    "rtt_ms": 69.765,
+    "raw_offset": 10625,
+    "receipt_utc": "2026-11-06T00:54:55.811334+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 158852,
+    "sequence": 30,
+    "rtt_ms": 90.087,
+    "raw_offset": 10686,
+    "receipt_utc": "2026-11-06T00:55:00.841474+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 163882,
+    "sequence": 31,
+    "rtt_ms": 106.071,
+    "raw_offset": 10747,
+    "receipt_utc": "2026-11-06T00:55:05.868072+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 168912,
+    "sequence": 32,
+    "rtt_ms": 126.303,
+    "raw_offset": 10809,
+    "receipt_utc": "2026-11-06T00:55:10.898082+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 173842,
+    "sequence": 33,
+    "rtt_ms": 45.274,
+    "raw_offset": 10871,
+    "receipt_utc": "2026-11-06T00:55:15.827458+00:00",
+    "received_by_primary_deadline": true
+  },
+  {
+    "boot": 1,
+    "esp_ms": 178872,
+    "sequence": 34,
+    "rtt_ms": 65.297,
+    "raw_offset": 10932,
+    "receipt_utc": "2026-11-06T00:55:20.857204+00:00",
+    "received_by_primary_deadline": true
+  }
+]

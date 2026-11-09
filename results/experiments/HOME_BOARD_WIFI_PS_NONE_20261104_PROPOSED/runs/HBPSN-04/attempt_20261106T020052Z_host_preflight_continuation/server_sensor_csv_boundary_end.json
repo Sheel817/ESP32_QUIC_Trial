@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+  "start_byte": 3073,
+  "end_byte": 43762,
+  "deadline_utc": "2026-11-06T02:38:38.681783+00:00",
+  "tail_closed_utc": "2026-11-06T02:38:38.682695+00:00"
+}

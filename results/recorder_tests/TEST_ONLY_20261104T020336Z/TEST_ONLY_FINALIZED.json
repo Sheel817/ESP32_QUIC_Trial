@@ -1,0 +1,86 @@
+{
+  "test_only": true,
+  "status": "TEST_ONLY_FAILED_SETTINGS",
+  "start": {
+    "test_only": true,
+    "source": "synthetic records only; no ESP reset",
+    "reset_release_monotonic": 512150.3278662,
+    "deadline_monotonic": 512210.3278662,
+    "reset_release_utc": "2026-11-04T02:03:59.111116+00:00",
+    "deadline_utc": "2026-11-04T02:04:59.111116+00:00",
+    "duration_seconds": 60
+  },
+  "pre_settings": {
+    "status": "PASS",
+    "phase": "pre_run",
+    "request": {
+      "phase": "pre_run",
+      "nonce": "27986181104641e092dee1004b0926c1",
+      "requested_utc": "2026-11-04T02:03:37.758586+00:00",
+      "requested_monotonic": 512128.9754231,
+      "expected": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "effects": "all unchecked"
+      },
+      "anchor": null,
+      "response_timeout_seconds": 180
+    },
+    "evidence": {
+      "nonce": "27986181104641e092dee1004b0926c1",
+      "screenshot": "TEST_ONLY_pre_run_clumsy.png",
+      "sha256": "ceecfae407bd93c00ce967f59cb4d6fd683b04879a5290b153fb07379456ecf4",
+      "capture_started_utc": "2026-11-04T02:03:52.549Z",
+      "capture_completed_utc": "2026-11-04T02:03:52.741Z",
+      "capture_started_monotonic": 512143.7664231,
+      "capture_completed_monotonic": 512143.9584231,
+      "monotonic_source": "UTC offset from request anchor; estimated, not directly read in GUI runtime",
+      "source_type": "GUI_observed",
+      "observed": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "effects": "all unchecked"
+      },
+      "label": "TEST_ONLY pre-run; for HBPSN-01 this is LATE SUPPLEMENTARY ONLY, never original post-recording evidence",
+      "details": "Lag unchecked, configured 100 ms outbound only. Drop unchecked, configured 10.0%, both directions. All eight function checkboxes unchecked. Stop button visible."
+    },
+    "reason": null,
+    "evaluated_utc": "2026-11-04T02:03:59.106885+00:00"
+  },
+  "post_settings": {
+    "status": "MISSING",
+    "phase": "end_of_run",
+    "request": {
+      "phase": "end_of_run",
+      "nonce": "a7e736deb5874f11b0acb2f11d12ed5c",
+      "requested_utc": "2026-11-04T02:04:59.121321+00:00",
+      "requested_monotonic": 512210.3381443,
+      "expected": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "effects": "all unchecked"
+      },
+      "anchor": {
+        "test_only": true,
+        "source": "synthetic records only; no ESP reset",
+        "reset_release_monotonic": 512150.3278662,
+        "deadline_monotonic": 512210.3278662,
+        "reset_release_utc": "2026-11-04T02:03:59.111116+00:00",
+        "deadline_utc": "2026-11-04T02:04:59.111116+00:00",
+        "duration_seconds": 60
+      },
+      "response_timeout_seconds": 45
+    },
+    "reason": "No complete, timely screenshot/observation response",
+    "evaluated_utc": "2026-11-04T02:05:44.124295+00:00"
+  },
+  "accepted_count": 102,
+  "rejected_count": 1,
+  "all_accepted_before_deadline": true,
+  "late_record_excluded": true,
+  "heartbeat_permission_error_attempts": 306,
+  "report_permission_error_attempts": 3,
+  "finalization_utc": "2026-11-04T02:05:44.221187+00:00",
+  "register_touched": false,
+  "device_or_settings_changed": false
+}

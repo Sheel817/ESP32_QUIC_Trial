@@ -1,0 +1,45 @@
+
+C:\Users\newsh\.espressif\tools\esp-rom-elfs\20241011\esp32c6_rev0_rom.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .fixed.text:
+
+Disassembly of section .init.text:
+
+Disassembly of section .text:
+
+4002257e <multi_heap_free_impl>:
+4002257e:	c921                	beqz	a0,400225ce <multi_heap_free_impl+0x50>
+40022580:	c5b9                	beqz	a1,400225ce <multi_heap_free_impl+0x50>
+40022582:	6c90c2ef          	jal	t0,4002f44a <__riscv_save_0>
+40022586:	84ae                	mv	s1,a1
+40022588:	15e1                	addi	a1,a1,-8
+4002258a:	842a                	mv	s0,a0
+4002258c:	dfbff0ef          	jal	40022386 <assert_valid_block>
+40022590:	8522                	mv	a0,s0
+40022592:	ed5ff0ef          	jal	40022466 <multi_heap_internal_lock>
+40022596:	40880937          	lui	s2,0x40880
+4002259a:	fd892783          	lw	a5,-40(s2) # 4087ffd8 <heap_tlsf_table_ptr>
+4002259e:	8526                	mv	a0,s1
+400225a0:	579c                	lw	a5,40(a5)
+400225a2:	9782                	jalr	a5
+400225a4:	405c                	lw	a5,4(s0)
+400225a6:	953e                	add	a0,a0,a5
+400225a8:	fd892783          	lw	a5,-40(s2)
+400225ac:	c048                	sw	a0,4(s0)
+400225ae:	43bc                	lw	a5,64(a5)
+400225b0:	9782                	jalr	a5
+400225b2:	405c                	lw	a5,4(s0)
+400225b4:	85a6                	mv	a1,s1
+400225b6:	953e                	add	a0,a0,a5
+400225b8:	fd892783          	lw	a5,-40(s2)
+400225bc:	c048                	sw	a0,4(s0)
+400225be:	4808                	lw	a0,16(s0)
+400225c0:	53dc                	lw	a5,36(a5)
+400225c2:	9782                	jalr	a5
+400225c4:	8522                	mv	a0,s0
+400225c6:	ebdff0ef          	jal	40022482 <multi_heap_internal_unlock>
+400225ca:	6a50c06f          	j	4002f46e <__riscv_restore_0>
+400225ce:	8082                	ret
+
+Disassembly of section .iram1.4:

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-05T20:23:46.481397+00:00",
+  "target_collector_pid": 35072,
+  "target_monitor_pids": [
+    30024,
+    33192
+  ],
+  "method": "Existing collector control file -> SDK monitor exit; no force kill"
+}

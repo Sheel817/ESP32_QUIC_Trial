@@ -1,0 +1,132 @@
+[
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 61,
+    "text": "NOTE: default value 1536 on FREERTOS_ISR_STACKSIZE (defined at C:/esp/v6.1/esp-idf/components/freertos/Kconfig:426) clamped to 2096 due to being outside the active range ([2096, 32768])"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 714,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/closer.c:47:(.text._close_r+0x14): warning: _close is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 716,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x18): warning: _lseek is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 718,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/readr.c:49:(.text._read_r+0x18): warning: _read is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 720,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/writer.c:49:(.text._write_r+0x18): warning: _write is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 722,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/fclose.c:125:(.text.fclose+0x6): warning: __getreent is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 1210,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/closer.c:47:(.text._close_r+0x14): warning: _close is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 1212,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x18): warning: _lseek is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 1214,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/readr.c:49:(.text._read_r+0x18): warning: _read is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 1216,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/writer.c:49:(.text._write_r+0x18): warning: _write is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 1218,
+    "text": "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/fclose.c:125:(.text.fclose+0x6): warning: __getreent is not implemented and will always fail"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3558,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/include'\n  belongs to component esp_wifi but is being used by component\n  wpa_supplicant.  It is recommended to define the component dependency for\n  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...\n  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3573,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/src' belongs\n  to component esp_wifi but is being used by component wpa_supplicant.  It is\n  recommended to define the component dependency for wpa_supplicant on the\n  component esp_wifi, i.e.  'idf_component_register(...  PRIV_REQUIRES\n  esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and specify the\n  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3587,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/esp/v6.1/esp-idf/components/esp_wifi/wifi_apps/include/apps_private'\n  belongs to component esp_wifi but is being used by component\n  wpa_supplicant.  It is recommended to define the component dependency for\n  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...\n  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3602,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/esp/v6.1/esp-idf/components/wpa_supplicant/src' belongs to component\n  wpa_supplicant but is being used by component esp_wifi.  It is recommended\n  to define the component dependency for esp_wifi on the component\n  wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES\n  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the\n  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3616,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/esp/v6.1/esp-idf/components/wpa_supplicant/esp_supplicant/src' belongs\n  to component wpa_supplicant but is being used by component esp_wifi.  It is\n  recommended to define the component dependency for esp_wifi on the\n  component wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES\n  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the\n  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3630,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:86 (message):\n  Include directory\n  'C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos'\n  belongs to component freertos but is being used by component\n  wolfssl__wolfssl.  It is recommended to define the component dependency for\n  'wolfssl__wolfssl' on the component freertos, i.e.\n  'idf_component_register(...  REQUIRES freertos)' in the CMakeLists.txt of\n  wolfssl__wolfssl, and specify the included directory as"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3645,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:86 (message):\n  Include directory 'C:/esp/v6.1/esp-idf/components/esp_event/include'\n  belongs to component esp_event but is being used by component\n  wolfssl__wolfssl.  It is recommended to define the component dependency for\n  'wolfssl__wolfssl' on the component esp_event, i.e.\n  'idf_component_register(...  REQUIRES esp_event)' in the CMakeLists.txt of\n  wolfssl__wolfssl, and specify the included directory as\n  idf_component_register(...  INCLUDE_DIRS <dir relative to component>) in"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3659,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:86 (message):\n  Include directory 'C:/esp/v6.1/esp-idf/components/esp_netif/include'\n  belongs to component esp_netif but is being used by component\n  wolfssl__wolfssl.  It is recommended to define the component dependency for\n  'wolfssl__wolfssl' on the component esp_netif, i.e.\n  'idf_component_register(...  REQUIRES esp_netif)' in the CMakeLists.txt of\n  wolfssl__wolfssl, and specify the included directory as\n  idf_component_register(...  INCLUDE_DIRS <dir relative to component>) in"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3673,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:86 (message):\n  Include directory 'C:/esp/v6.1/esp-idf/components/esp_wifi/include' belongs\n  to component esp_wifi but is being used by component wolfssl__wolfssl.  It\n  is recommended to define the component dependency for 'wolfssl__wolfssl' on\n  the component esp_wifi, i.e.  'idf_component_register(...  REQUIRES\n  esp_wifi)' in the CMakeLists.txt of wolfssl__wolfssl, and specify the\n  included directory as idf_component_register(...  INCLUDE_DIRS <dir\n  relative to component>) in the CMakeLists.txt of component esp_wifi."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3686,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl/include'\n  belongs to component wolfssl__wolfssl but is being used by component\n  ngtcp2.  It is recommended to define the component dependency for ngtcp2 on\n  the component wolfssl__wolfssl, i.e.  'idf_component_register(...\n  PRIV_REQUIRES wolfssl__wolfssl)' in the CMakeLists.txt of ngtcp2, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3701,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl/wolfssl'\n  belongs to component wolfssl__wolfssl but is being used by component\n  ngtcp2.  It is recommended to define the component dependency for ngtcp2 on\n  the component wolfssl__wolfssl, i.e.  'idf_component_register(...\n  PRIV_REQUIRES wolfssl__wolfssl)' in the CMakeLists.txt of ngtcp2, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3716,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl/wolfssl/wolfcrypt'\n  belongs to component wolfssl__wolfssl but is being used by component\n  ngtcp2.  It is recommended to define the component dependency for ngtcp2 on\n  the component wolfssl__wolfssl, i.e.  'idf_component_register(...\n  PRIV_REQUIRES wolfssl__wolfssl)' in the CMakeLists.txt of ngtcp2, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3731,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:106 (message):\n  Private include directory\n  'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl/wolfssl/wolfcrypt/port/Espressif'\n  belongs to component wolfssl__wolfssl but is being used by component\n  ngtcp2.  It is recommended to define the component dependency for ngtcp2 on\n  the component wolfssl__wolfssl, i.e.  'idf_component_register(...\n  PRIV_REQUIRES wolfssl__wolfssl)' in the CMakeLists.txt of ngtcp2, and\n  specify the included directory as idf_component_register(..."
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 3746,
+    "text": "CMake Warning at C:/esp/v6.1/esp-idf/tools/cmake/component_validation.cmake:86 (message):\n  Include directory\n  'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/main'\n  belongs to component main but is being used by component coreMQTT.  It is\n  recommended to define the component dependency for 'coreMQTT' on the\n  component main, i.e.  'idf_component_register(...  REQUIRES main)' in the\n  CMakeLists.txt of coreMQTT, and specify the included directory as\n  idf_component_register(...  INCLUDE_DIRS <dir relative to component>) in"
+  },
+  {
+    "log": "build_20261106T002818Z.log",
+    "line": 4881,
+    "text": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/components/ngtcp2/ngtcp2/lib/ngtcp2_acktr.c:292:21: warning: 'ent' may be used uninitialized [-Wmaybe-uninitialized]"
+  }
+]

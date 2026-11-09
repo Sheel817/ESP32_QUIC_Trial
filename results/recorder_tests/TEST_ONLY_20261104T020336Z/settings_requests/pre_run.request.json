@@ -1,0 +1,13 @@
+{
+  "phase": "pre_run",
+  "nonce": "27986181104641e092dee1004b0926c1",
+  "requested_utc": "2026-11-04T02:03:37.758586+00:00",
+  "requested_monotonic": 512128.9754231,
+  "expected": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "effects": "all unchecked"
+  },
+  "anchor": null,
+  "response_timeout_seconds": 180
+}

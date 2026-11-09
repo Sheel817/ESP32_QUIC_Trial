@@ -1,0 +1,121 @@
+{
+  "run_id": "HBPSN-06",
+  "reviewed_utc": "2026-11-07T03:02:21.949986+00:00",
+  "decision": "COMPLETE",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags; no claim of independent continuous GUI observation or a repaired QUIC defect",
+  "operator_statement": {
+    "exact_statement": "yes",
+    "source": "Operator confirmation relayed by user from ChatGPT",
+    "receipt_observed_utc": "2026-11-07T03:01:21.9312701Z",
+    "receipt_observed_helsinki": "2026-11-07T05:01:21.9312701+02:00",
+    "receipt_clock_source": "First local clock observation while processing the current user message; original chat ingress timestamp unavailable",
+    "covered_interval_helsinki": [
+      "2026-11-07T04:04:34.927+02:00",
+      "2026-11-07T04:50:58.162+02:00"
+    ],
+    "confirmed_scope": "Unchanged Clumsy filter, effects and capture; no Stop/Start or close/reopen",
+    "not_backdated": true
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "exact_original_rules": {
+    "images": "Save screenshots before reset and after recording, with UTC and hashes.",
+    "stability": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "errors": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session."
+  },
+  "criteria": {
+    "fixed_window_pass": true,
+    "startup_pass": true,
+    "first415_selection_pass": true,
+    "pre_post_image_hashes_match": true,
+    "settings_match": true,
+    "stability_operator_confirmed": true,
+    "post_actual_start_utc": "2026-11-07T02:50:57.056Z",
+    "post_actual_end_utc": "2026-11-07T02:50:58.162Z",
+    "post_lateness_seconds": 562.129462,
+    "no_new_timing_cutoff": true,
+    "collector_30_second_wait_not_frozen_cutoff": true
+  },
+  "counts": {
+    "raw_serial_lines": 581,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "other_excluded": 0,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0
+  },
+  "statistics": {
+    "minimum_ms": 26.789,
+    "mean_ms": 77.02441445783133,
+    "median_ms": 67.432,
+    "p95_ms": 108.204,
+    "maximum_ms": 627.418
+  },
+  "warnings": [
+    {
+      "line": 93,
+      "raw_line": "2026-11-07T04:04:35 W (697) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 101,
+      "raw_line": "2026-11-07T04:04:38 W (3257) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 119,
+      "raw_line": "2026-11-07T04:04:38 W (3457) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "TCP+TLS ERROR: \n",
+  "server_error_assessment": "One new unattributed server error retained under original non-reboot error rule; not automatically invalidating or declared harmless. Source bytes194-211; receipt2026-11-07T02:05:32.162784UTC. Register error count1 includes server error; original serial-only count0 preserved.",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-07T04:04:34 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-07T02:04:34.937420+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "FAILED_SETTINGS",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "FAILED_SETTINGS",
+    "finished_utc": "2026-11-07T02:42:05.547268+00:00",
+    "deadline_utc": "2026-11-07T02:41:34.926538+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\SUMMARY.md"
+  },
+  "original_verification": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-06\\attempt_20261107T015952Z\\post_recording_evidence_20261107T025057056Z\\POST_RECORDING_VERIFICATION.json",
+  "original_final_manifest_verified": 81,
+  "register_patch": {
+    "status": "COMPLETE",
+    "settings_evidence_type": "actual_pre_post_GUI_images_and_operator_reported_stability; manually_reviewed",
+    "recording_end_utc": "2026-11-07T02:41:34.926538+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 1,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 77.02441445783133,
+    "minimum_app_rtt_ms": 26.789,
+    "maximum_app_rtt_ms": 627.418,
+    "metadata_path": "runs/HBPSN-06/attempt_20261107T015952Z/manual_review_confirmed_20261107T030121Z/manual_review.json",
+    "deviation_reason": "Manual review COMPLETE with retained flags. Exact operator statement yes relayed from ChatGPT; local receipt2026-11-07T03:01:21.9312701Z; original chat ingress unavailable. Stability confirmed through post-image. Actual post-image562.129462s late; no frozen numerical cutoff. Three Wi-Fi warnings retained; one unattributed server error retained, cause/peer unknown; no serial connection errors, subsequent resets, gaps or shortfall. Original automatic FAILED_SETTINGS/MISSING and all raw evidence preserved. Earlier QUIC crash remains unresolved."
+  },
+  "next_scheduled": {
+    "order": "7",
+    "run_id": "HBPSN-07",
+    "transport": "TCP_TLS",
+    "condition": "DROP1_OUT",
+    "status": "NOT_RUN"
+  },
+  "only_hbpsn06_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

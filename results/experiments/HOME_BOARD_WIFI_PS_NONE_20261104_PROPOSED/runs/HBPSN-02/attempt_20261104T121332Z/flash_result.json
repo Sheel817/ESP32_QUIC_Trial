@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "ended_utc": "2026-11-04T12:16:19.838922+00:00",
+  "artifact_directory": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build",
+  "setup_only": "Flash resets precede designated measured startup",
+  "verified_image_count": 3
+}

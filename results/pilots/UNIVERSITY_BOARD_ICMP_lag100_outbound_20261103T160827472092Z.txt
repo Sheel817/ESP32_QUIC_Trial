@@ -1,0 +1,48 @@
+ICMP diagnostic; not a QUIC measurement
+Condition: ICMP, capture running, Lag 100 ms outbound only; other effects off — operator-reported.
+Clumsy filter (operator-reported): icmp and (ip.SrcAddr == 192.168.137.11 or ip.DstAddr == 192.168.137.11)
+Wait started UTC: 2026-11-03T16:08:27.472128+00:00
+Wait duration: 10 seconds
+Command: ping.exe /n 30 /w 2000 192.168.137.11
+UTC start: 2026-11-03T16:08:37.472497+00:00
+
+
+Pinging 192.168.137.11 with 32 bytes of data:
+Reply from 192.168.137.11: bytes=32 time=136ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=245ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=164ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=185ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=197ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=206ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=219ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=133ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=156ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=271ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=184ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=205ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=219ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=233ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=348ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=155ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=176ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=193ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=204ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=221ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=246ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=160ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=164ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=195ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=202ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=214ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=236ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=139ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=175ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=185ms TTL=64
+
+Ping statistics for 192.168.137.11:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 133ms, Maximum = 348ms, Average = 198ms
+
+UTC end: 2026-11-03T16:09:06.917056+00:00
+Exit code: 0

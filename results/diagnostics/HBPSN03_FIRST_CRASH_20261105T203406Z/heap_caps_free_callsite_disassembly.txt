@@ -1,0 +1,16 @@
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .iram0.text:
+
+40800b46 <heap_caps_free+0x24>:
+40800b46:	fee6d8e3          	bge	a3,a4,40800b36 <heap_caps_free+0x14>
+40800b4a:	cb89                	beqz	a5,40800b5c <heap_caps_free+0x3a>
+40800b4c:	4fc8                	lw	a0,28(a5)
+40800b4e:	ff800097          	auipc	ra,0xff800
+40800b52:	932080e7          	jalr	-1742(ra) # 40000480 <multi_heap_free>
+40800b56:	40b2                	lw	ra,12(sp)
+40800b58:	0141                	addi	sp,sp,16
+40800b5a:	8082                	ret
+40800b5c:	16b7                	.short	0x16b7

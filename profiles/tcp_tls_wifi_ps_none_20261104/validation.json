@@ -1,0 +1,93 @@
+{
+  "result": "PASS",
+  "build_exit_code": 0,
+  "link": "PASS",
+  "application_partition_check": "PASS",
+  "app_partition_bytes": 1740800,
+  "app_free_bytes": 241936,
+  "bootloader_partition_check": "PASS",
+  "image_integrity": "PASS",
+  "artifacts": {
+    "quic_demo.bin": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+      "bytes": 1498864,
+      "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8"
+    },
+    "quic_demo.elf": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf",
+      "bytes": 16790856,
+      "sha256": "1f661a4f7214dd0bd499cdf03783ca40633542fb95a6d164e1233c0b6f6363e6"
+    },
+    "bootloader/bootloader.bin": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1"
+    },
+    "partition_table/partition-table.bin": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    },
+    "flash_args": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flash_args",
+      "bytes": 150,
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    "flasher_args.json": {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flasher_args.json",
+      "bytes": 933,
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    }
+  },
+  "preservation": {
+    "original_build": {
+      "files": 6198,
+      "changed_or_missing": [],
+      "added": []
+    },
+    "quic_profile": {
+      "files": 1796,
+      "changed_or_missing": [],
+      "added": []
+    }
+  },
+  "source_config_changes": [],
+  "dependency_lock_unchanged": true,
+  "effective_sdkconfig_differences": {},
+  "generated_sdkconfig_equal": true,
+  "sdk": "ESP-IDF v6.1",
+  "compiler": "GCC/G++ 15.2.0; same executable paths as validated QUIC",
+  "project_version": "3c8c7a3-dirty",
+  "compile_definitions": {
+    "DEMO_TRANSPORT_TCP_TLS": 1,
+    "DEMO_WIFI_PS_NONE": 1
+  },
+  "intended_differences": [
+    "DEMO_TRANSPORT: QUIC -> TCP_TLS",
+    "DEMO_TRANSPORT_TCP_TLS: 0 -> 1",
+    "Existing transport branch: UDP 14567 QUIC -> TCP 14568 TLS; existing TCP_NODELAY and TLS path",
+    "Separate SDKCONFIG/build paths; build timestamps and resulting binaries differ"
+  ],
+  "warnings": [
+    "python.exe : WARNING: Python interpreter \"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" ",
+    "    + CategoryInfo          : NotSpecified: (WARNING: Python...6.1_py3.14_env\":String) [], RemoteException",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/closer.c:47:(.text._close_r+0x14): warning: _close is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x18): warning: _lseek is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/readr.c:49:(.text._read_r+0x18): warning: _read is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/writer.c:49:(.text._write_r+0x18): warning: _write is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/fclose.c:125:(.text.fclose+0x6): warning: __getreent is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/closer.c:47:(.text._close_r+0x14): warning: _close is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x18): warning: _lseek is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/readr.c:49:(.text._read_r+0x18): warning: _read is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/reent/writer.c:49:(.text._write_r+0x18): warning: _write is not implemented and will always fail",
+    "/builds/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/fclose.c:125:(.text.fclose+0x6): warning: __getreent is not implemented and will always fail",
+    "-- WARNING: wolfSSL NOT selected for ESP-TLS. Features and performance will be limited.",
+    "OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF \"install\" and \"export\" scripts.",
+    "  Error while generating esp_rom gdbinit",
+    "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/components/ngtcp2/ngtcp2/lib/ngtcp2_acktr.c:292:21: warning: 'ent' may be used uninitialized [-Wmaybe-uninitialized]",
+    "OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF \"install\" and \"export\" scripts.",
+    "  Error while generating esp_rom gdbinit"
+  ],
+  "flashed": false,
+  "runtime_verified": false
+}

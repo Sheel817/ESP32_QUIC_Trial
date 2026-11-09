@@ -1,0 +1,67 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\serial.raw.log",
+    "bytes": 47595,
+    "sha256": "d9a645e48241a95a4b530542e106e89131c34968fe930f19e1f8b55ae8a8bdf2"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\serial_receipts.jsonl",
+    "bytes": 79322,
+    "sha256": "77f21d8037be59593cfeb55041502958ce961b8d55f7ee485523c47689bb80a3"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\all_rtts.csv",
+    "bytes": 97072,
+    "sha256": "6e7e4ac0e69a5762f76656ecc4a8ac35bb4b13f527489a0ea7e6444ea98f674a"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\eligible_rtts.csv",
+    "bytes": 94938,
+    "sha256": "7601f2e05e91e26e723cad0d5040c1eee9069495504f8ad65c5d1b75380889a7"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\selected_first_415.csv",
+    "bytes": 91397,
+    "sha256": "08e623ad5606b8a1e4834ac73e91d44f514b3470d4207097d9328e69cc2d72a3"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\excluded_rtts.csv",
+    "bytes": 2498,
+    "sha256": "bfeed9e97a7657a3a251adfa2ed8b04345cb8f89a3278eb75f1c4f2fb7acb097"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\server.stdout.raw.log",
+    "bytes": 75696,
+    "sha256": "d95dfb7d3790950abb2236e3fc9ee410a95894aa1bea921c07ee5edc63d22cd7"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\server.stderr.raw.log",
+    "bytes": 17,
+    "sha256": "766a02761204fd67ae2e4b29c736a459c46a0a23b8eaab7169e4da1239c44810"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\server.sensor_csv.raw.log",
+    "bytes": 40689,
+    "sha256": "8de19ead7c3a0d64720a7284e671b14452fb55f1c951a851a7ed94971b31ab98"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\reset_event.json",
+    "bytes": 1026,
+    "sha256": "7b2c559ac29d6b690d67dc5c15e8b53007ef8a7c7bae06a4e3545c472d22a9ea"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\statistics.json",
+    "bytes": 16768,
+    "sha256": "be5bb94e138b09f7e823978285412bdb16d4a96c364930c21403e880f50aaad0"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\FINALIZED.json",
+    "bytes": 562,
+    "sha256": "7dd6323b69b4c08e7d851b5ec7dd6396306bee84b5c0ae421ee3c72f30feab99"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\SHA256SUMS.json",
+    "bytes": 10579,
+    "sha256": "8710eef7e21c2f03f1856d83ad17a13356f5ba4dc5cda3841d24111e2d1eabb2"
+  }
+]

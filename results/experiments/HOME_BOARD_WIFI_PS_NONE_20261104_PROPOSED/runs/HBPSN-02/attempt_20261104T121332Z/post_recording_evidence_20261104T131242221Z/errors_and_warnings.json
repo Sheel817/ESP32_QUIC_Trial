@@ -1,0 +1,64 @@
+{
+  "serial_connection_errors": [],
+  "new_server_errors": [
+    {
+      "raw_line": "TCP+TLS ERROR: ",
+      "receipt": {
+        "utc": "2026-11-04T12:18:22.468737+00:00",
+        "monotonic": 549013.6851668,
+        "source_offset": 51,
+        "offset": 0,
+        "length": 17
+      },
+      "attribution": "New within fixed window, retained. Bare message has no peer/session identity; cannot conclusively attribute it to the measured ESP connection."
+    }
+  ],
+  "serial_warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-04T14:17:27 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-04T14:17:30 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-04T14:17:30 W (3417) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "reporting_errors": [
+    {
+      "utc": "2026-11-04T12:23:58.313678+00:00",
+      "monotonic": 549349.5305876,
+      "operation": "atomic_replace",
+      "error": "PermissionError(13, 'Access is denied')",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.4e30046f6cbc481888160849503be869.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+      "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+      "attempt": 1,
+      "exhausted": false
+    },
+    {
+      "utc": "2026-11-04T12:51:24.586378+00:00",
+      "monotonic": 550995.8033217,
+      "operation": "atomic_replace",
+      "error": "PermissionError(13, 'Access is denied')",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.ad9bde6629024b8dbc4d682664caa114.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+      "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+      "attempt": 1,
+      "exhausted": false
+    }
+  ],
+  "historical_errors_excluded": {
+    "scope": "Before designated HBPSN-02 reset only; never attributed to HBPSN-02",
+    "errors": [
+      "TCP+TLS ERROR: ",
+      "TCP+TLS ERROR: ",
+      "TCP+TLS ERROR: "
+    ],
+    "future_errors": "Every newly received line is retained in server.stderr.raw.log and its receipt index."
+  },
+  "additional_resets": 0,
+  "sequence_gaps": [],
+  "sensor_errors": []
+}

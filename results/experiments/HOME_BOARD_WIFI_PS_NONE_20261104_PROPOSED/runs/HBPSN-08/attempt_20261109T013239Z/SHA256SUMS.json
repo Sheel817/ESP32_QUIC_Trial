@@ -1,0 +1,17 @@
+[
+  {
+    "path": "clumsy_pre_manual.png",
+    "bytes": 31197,
+    "sha256": "1cf8e281db9df3193a39fca8fae0b7ecd99af8878f4f2ea167f6e919c08418eb"
+  },
+  {
+    "path": "ABORTED_ATTEMPT_NOTE.md",
+    "bytes": 797,
+    "sha256": "b33151e931b2313e7a7e518f6cb219f499dd33e2f20e4ee31206f0137f387d4d"
+  },
+  {
+    "path": "SHA256SUMS.json.bak_20261109T180826Z",
+    "bytes": 155,
+    "sha256": "72f8c31ff2fefdf5777e19bcb58b4a7f504b4c5d101265135d5fd06fd1f84e15"
+  }
+]

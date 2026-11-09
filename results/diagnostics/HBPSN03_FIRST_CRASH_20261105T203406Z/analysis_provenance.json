@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-11-05T20:34:08.417533+00:00",
+  "run_id": "HBPSN-03",
+  "status": "FAILED_STARTUP",
+  "validity_status": "NOT_APPROVED",
+  "fixed_window": {
+    "reset_request_utc": "2026-11-05T20:24:54.407317+00:00",
+    "reset_release_utc": "2026-11-05T20:24:54.413525+00:00",
+    "reset_release_monotonic": 664603.7295527,
+    "deadline_monotonic": 666823.7295527,
+    "deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+    "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+    "boundary_precision": "Host API completion, not a physical edge measurement",
+    "server_boundaries": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+        "byte_offset": 1831224
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+        "byte_offset": 0
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+        "byte_offset": 995280
+      }
+    }
+  },
+  "application_elf": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+    "sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+    "printed_digest_prefix": "9b23e164f",
+    "comparison": "Printed prefix only; full local ELF hash verified"
+  },
+  "rom_elf": {
+    "path": "C:\\Users\\newsh\\.espressif\\tools\\esp-rom-elfs\\20241011\\esp32c6_rev0_rom.elf",
+    "sha256": "788e1d38724aeb8fd974fa10c4a7b089c02627d35342ce84b9e0b12b239f3551",
+    "basis": "Existing local ESP32-C6 rev0 ROM symbol ELF; identification rev0.0, ROM banneresp32c6-20220919. Supplemental ROM mapping, not application firmware ELF; ROM source lines unavailable."
+  },
+  "tools": [
+    {
+      "path": "C:\\Users\\newsh\\.espressif\\tools\\riscv32-esp-elf\\esp-15.2.0_20251204\\riscv32-esp-elf\\bin\\riscv32-esp-elf-addr2line.exe",
+      "sha256": "b35419db73f05b7b54b97e307f83c35b06914b13ef82d2e2f5eafe402559e871"
+    },
+    {
+      "path": "C:\\Users\\newsh\\.espressif\\tools\\riscv32-esp-elf\\esp-15.2.0_20251204\\riscv32-esp-elf\\bin\\riscv32-esp-elf-objdump.exe",
+      "sha256": "80ca832a5aa5bdce9a810faf1cdac6130c556a55dff924d90508ece774af0cba"
+    },
+    {
+      "path": "C:\\Users\\newsh\\.espressif\\tools\\riscv32-esp-elf\\esp-15.2.0_20251204\\riscv32-esp-elf\\bin\\riscv32-esp-elf-readelf.exe",
+      "sha256": "e06e7f9fc15b1b17428402d04be4a60b99731f63225cef6bf3488826acc3e548"
+    }
+  ],
+  "source_manifest": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\source_before.json",
+    "sha256": "fab4baf0273fbe485e6c73566cd57ff130834152c991867822df91e4e3ceb8cd"
+  },
+  "raw_prefix_snapshot": {
+    "bytes": 41068,
+    "sha256": "ac385cb81213b2ada8302582971b95109feee3c7e1f2e1bb6366a18cb98e40de",
+    "note": "In-memory prefix observed while original recording remained open. Exact immutable extracted intervals have individual hashes."
+  },
+  "startup": {
+    "checked_utc": "2026-11-05T20:25:03.637864+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "transport_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "transport_connected": true,
+      "mqtt_connected": false,
+      "subscription": false,
+      "tls": true
+    },
+    "pass_all": false,
+    "fatal": true,
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "9b23e164f"
+  },
+  "backtrace_limit": "No explicit Backtrace: frame list was printed. Complete RISC-V stack memory preserved; decoded stack words are candidate return PCs, may include stale frames/data, not a verified unwind."
+}

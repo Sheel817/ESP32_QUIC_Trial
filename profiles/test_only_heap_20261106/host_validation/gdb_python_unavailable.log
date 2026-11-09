@@ -1,0 +1,7 @@
+#0  <unavailable> in ?? ()
+
+warning: Couldn't find general-purpose registers in core file.
+
+warning: Couldn't find general-purpose registers in core file.
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\recover_trace.gdb:24: Error in sourced command file:
+Scripting in the "Python" language is not supported in this copy of GDB.

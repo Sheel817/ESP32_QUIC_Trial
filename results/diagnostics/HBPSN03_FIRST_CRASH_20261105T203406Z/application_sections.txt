@@ -1,0 +1,79 @@
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf:     file format elf32-littleriscv
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .rtc.text     00000000  50000000  50000000  002d2108  2**0
+                  CONTENTS
+  1 .rtc.force_fast 00000000  50000000  50000000  002d2108  2**0
+                  CONTENTS
+  2 .rtc_noinit   00000000  50000000  50000000  002d2108  2**0
+                  CONTENTS
+  3 .rtc.force_slow 00000000  50000000  50000000  002d2108  2**0
+                  CONTENTS
+  4 .rtc_reserved 00000018  50003fe8  50003fe8  002d2fe8  2**3
+                  ALLOC
+  5 .iram0.text   00018588  40800000  40800000  00001000  2**8
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .iram0.text_end 00000000  40818588  40818588  00019588  2**0
+                  ALLOC
+  7 .iram0.data   00000008  40818588  40818588  00019588  2**0
+                  ALLOC
+  8 .iram0.bss    00000000  40818590  40818590  002d2108  2**0
+                  CONTENTS
+  9 .iram0.end    00000000  40818590  40818590  002d2108  2**0
+                  CONTENTS
+ 10 .dram0.dummy  00000000  40818590  40818590  002d2108  2**0
+                  CONTENTS
+ 11 .dram0.data   0000405b  40818590  40818590  00019590  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+ 12 .noinit       00000001  4081c5eb  4081c5eb  0001d5eb  2**0
+                  ALLOC
+ 13 .dram0.bss    00008030  4081c5f0  4081c5f0  0001d5eb  2**4
+                  ALLOC
+ 14 .flash.text   00131468  42000020  42000020  0001e020  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .flash_rodata_dummy 00140000  42000020  42000020  00150020  2**0
+                  ALLOC
+ 16 .flash.appdesc 00000100  42140020  42140020  00290020  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 .flash.rodata 00041ec4  42140120  42140120  00290120  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 18 .flash.init_array 0000010c  42181fe4  42181fe4  002d1fe4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .flash.tdata  00000018  421820f0  421820f0  002d20f0  2**3
+                  CONTENTS, ALLOC, LOAD, DATA, THREAD_LOCAL
+ 20 .flash.tbss   00000024  42182108  42182108  002d2108  2**2
+                  ALLOC, THREAD_LOCAL
+ 21 .flash.rodata_noload 00004329  42182108  42182108  002d2108  2**2
+                  ALLOC, READONLY
+ 22 .dram0.heap_start 00000000  40824620  40824620  002d2108  2**0
+                  CONTENTS
+ 23 .noload       00000004  00000000  00000000  002d2108  2**0
+                  CONTENTS
+ 24 .debug_aranges 00018778  00000000  00000000  002d2110  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 25 .debug_info   004da8fd  00000000  00000000  002ea888  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 26 .debug_abbrev 0006c639  00000000  00000000  007c5185  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 27 .debug_line   00379af0  00000000  00000000  008317be  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 28 .debug_frame  0005f200  00000000  00000000  00bab2b0  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 29 .debug_str    000ab985  00000000  00000000  00c0a4b0  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 30 .debug_loc    0031176c  00000000  00000000  00cb5e35  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 31 .debug_ranges 00025cd8  00000000  00000000  00fc75a1  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 32 .debug_line_str 00001bf0  00000000  00000000  00fed279  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 33 .debug_loclists 0000721b  00000000  00000000  00feee69  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 34 .debug_rnglists 00000aff  00000000  00000000  00ff6084  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 35 .comment      00000086  00000000  00000000  00ff6b83  2**0
+                  CONTENTS, READONLY
+ 36 .riscv.attributes 00000067  00000000  00000000  00ff6c09  2**0
+                  CONTENTS, READONLY

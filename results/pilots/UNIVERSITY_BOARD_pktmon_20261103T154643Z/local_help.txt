@@ -1,0 +1,251 @@
+﻿pktmon <command> [OPTIONS | help]
+    Advanced packet capture and event collection.
+
+Commands
+    filter     Manage packet filters.
+    list       List packet processing components.
+
+    start      Start packet capture, counters, and event collection.
+    stop       Stop data collection.
+    status     Query current status.
+    unload     Unload PktMon driver.
+
+    counters   Display current packet counters.
+    reset      Reset packet counters to zero.
+
+    etl2txt    Convert log file to text format.
+    etl2pcap   Convert log file to pcapng format.
+    hex2pkt    Decode packet in hexadecimal format.
+
+    help       Show help text for specific command.
+               Example: pktmon start help
+
+pktmon status [--buffer-info]
+    Query current Packet Monitor status.
+
+-b, --buffer-info
+    Display ETW buffer information.
+
+pktmon list [--all] [--include-hidden] [--json]
+    List networking components that can be monitored.
+
+-a, --all
+    Show all component types. Only network adapters are
+    displayed by default.
+
+-i, --include-hidden
+    Show components that are hidden by default.
+
+--json
+    Output in JSON format. Implies -i and -a.
+
+pktmon filter add <name> [-m <mac> [mac2]] [-v <vlan>] [-d { IPv4 | IPv6 | number }]
+                         [-t { TCP [flag ...] | UDP | ICMP | ICMPv6 | number }]
+                         [-i <ip> [ip2]] [-p <port> [port2]] [-b] [-e [port]]
+    Add a filter to control which packets are reported. For a packet to be
+    reported, it must match all conditions specified in at least one filter.
+    Up to 32 filters can be active at once.
+
+    NOTE1: When two MACs (-m), IPs (-i), or ports (-p) are specified, the filter
+           matches packets that contain both. It will not distinguish between source
+           or destination for this purpose.
+
+name
+    Optional name or description of the filter.
+
+Ethernet frame
+    -m, --mac[-address]
+        Match source or destination MAC address. See NOTE1 above.
+
+    -v, --vlan
+        Match by VLAN Id (VID) in the 802.1Q header.
+
+    -d, --data-link[-protocol], --ethertype
+        Match by data link (layer 2) protocol. Can be IPv4, IPv6, ARP, or
+        a protocol number.
+
+IP header
+    --dscp
+        Match by the 6-bit Differentiated Services Code Point (DSCP) field.
+
+    -t, --transport[-protocol], --ip-protocol
+        Match by transport (layer 4) protocol. Can be TCP, UDP, ICMP, ICMPv6, or
+        a protocol number.
+        To further filter TCP packets, an optional list of TCP flags to match can
+        be provided. Supported flags are FIN, SYN, RST, PSH, ACK, URG, ECE, and CWR.
+
+    -i, --ip[-address]
+        Match source or destination IP address. See NOTE1 above.
+        To match by subnet, use CIDR notation with the prefix length.
+
+TCP/UDP header
+    -p, --port
+        Match source or destination port number. See NOTE1 above.
+
+Cluster Heartbeat
+    -b, --heartbeat
+        Match RCP heartbeat messages over UDP port 3343.
+
+Encapsulation
+    -e, --encap
+        Apply above filtering parameters to both inner and outer encapsulation headers.
+        Supported encapsulation methods are VXLAN, GRE, NVGRE, and IP-in-IP.
+        Custom VXLAN port is optional, and defaults to 4789.
+
+Example 1: Ping filter
+    pktmon filter add MyPing -i 10.10.10.10 -t ICMP
+
+Example 2: TCP SYN filter for SMB traffic
+    pktmon filter add MySmbSyn -i 10.10.10.10 -t TCP SYN -p 445
+
+Example 3: Subnet filter
+    pktmon filter add MySubnet -i 10.10.10.0/24
+
+pktmon filter remove
+    Remove all packet filters.
+
+pktmon start [--capture [--counters-only] [--comp <selector>] [--type <type>]
+                        [--pkt-size <bytes>] [--flags <mask>]]
+             [--trace --provider <name> [--keywords <k>] [--level <n>] ...]
+             [--file-name <name>] [--file-size <size>] [--log-mode <mode>]
+    Start packet capture, counters, and event collection.
+
+Packet Capture
+    -c, --capture
+        Enable packet capture and counters.
+
+        -o, --counters-only
+            Enable packet counters only, without logging. Equivalent to
+            '--capture --flags 0'.
+
+        --comp { all | nics | id1 id2 ... }
+            Select components to capture packets on. Can be ALL components,
+            NICs only, or a list of component Ids. Default is ALL.
+
+        --type { all | flow | drop }
+            Select which packets to capture. Default is ALL.
+
+        --pkt-size <bytes>
+            Number of bytes to log from each packet. To always log the entire
+            packet set this to 0. Default is 128 bytes.
+
+        --flags <mask>
+            Hexadecimal bitmask that controls which Packet Monitor events are
+            logged. Default is 0x032.
+
+            0x000 - No events, but enable counters.
+            0x001 - Internal Packet Monitor errors.
+            0x002 - Summary of components, counters, and filters.
+            0x004 - NET_BUFFER_LIST group source and destination information.
+            0x008 - Select packet metadata from NDIS_NET_BUFFER_LIST_INFO.
+            0x010 - Raw packet, truncated to --pkt-size.
+            0x020 - Component registration changes.
+
+Event Providers
+    -t, --trace
+        Enable event collection.
+
+        -p, --provider <name>
+            Event provider name or GUID. For multiple providers, use this
+            parameter more than once.
+
+        -k, --keywords <k>
+            Hexadecimal bitmask that controls which events are logged
+            for the corresponding provider. Default is 0xFFFFFFFFFFFFFFFF.
+
+        -l, --level <n>
+            Logging level for the corresponding provider.
+            Default is 4 (info level).
+
+Logging Parameters
+    -f, --file-name <name>
+        Log file name. Default is PktMon.etl.
+
+    -s, --file-size <size>
+        Maximum log file size in megabytes. Default is 512 MB.
+
+    -m, --log-mode { circular | multi-file | memory | real-time }
+        Logging mode. Default is circular.
+
+        circular    New events overwrite the oldest ones when the log is full.
+
+        multi-file  No limit on number of captured events, but a new log file
+                    is created each time the log is full.
+
+        memory      Like circular, but the entire log is stored in memory.
+                    It is written to a file when pktmon is stopped.
+
+        real-time   Display events and packets on screen at real time. No log
+                    file is created. Press Ctrl+C to stop monitoring.
+
+Example 1: Packet capture
+    pktmon start --capture
+
+Example 2: Packet counters only
+    pktmon start --counters-only
+
+Example 3: Event logging
+    pktmon start --trace -p Microsoft-Windows-TCPIP -p Microsoft-Windows-NDIS
+
+Example 4: Packet capture with event logging
+    pktmon start --capture --trace -p Microsoft-Windows-TCPIP -k 0xFF -l 4
+
+
+pktmon stop
+    Stop data collection.
+
+pktmon etl2txt <file> [--out <file>] [--stats] [--timestamp] [--metadata]
+                      [--tmfpath <dir;...>] [--brief] [--verbose] [--hex]
+                      [--no-ethernet] [--vxlan <port>]
+    Convert an ETL log file to text format. Alias: e2t
+
+<file>
+    ETL file to convert.
+
+-o, --out <file>
+    File path of the output file, which is overwritten if it already exists.
+
+-s, --stats
+    Display log file statistics and exit.
+
+-t, --timestamp
+    Use a simplified timestamp prefix for each event.
+
+-m, --metadata
+    Include event metadata, such as logging level and keywords.
+
+-p, --tmfpath <dir;...>
+    One or more directories with TMF files for decoding events from other providers.
+
+Packet Formatting
+    -b, --brief
+        Use an abbreviated packet format.
+
+    -v, --verbose
+        Use a verbose packet format.
+
+    -x, --hex
+        Include a hex dump of the packet.
+
+    -e, --no-ethernet
+        Exclude Ethernet header data.
+
+    -l, --vxlan <port>
+        Specify a different VXLAN port than the default of 4789.
+
+pktmon etl2pcap <file> [--out <name>] [--drop-only] [--component-id <id>]
+    Convert pktmon log file to pcapng format. Packet drops
+    are not included by default. Alias: e2p
+
+<file>
+    ETL file to convert.
+
+-o, --out <name>
+    Name of the formatted pcapng file.
+
+-d, --drop-only
+    Convert packet drops only.
+
+-c, --component-id <id>
+    Filter packets by a specific component ID.
+

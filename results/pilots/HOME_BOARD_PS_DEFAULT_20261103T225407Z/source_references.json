@@ -1,0 +1,28 @@
+[
+  {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Checkpoints\\pre_wifi_ps_none_20261103T162643Z\\tested_source_config_and_QUIC_artifacts.zip::main/quic_demo_main.c",
+    "snapshot": "preserved_original_quic_demo_main.c.txt",
+    "sha256": "51daab0e05a0b241c5025da19392ec31cbb5ef815952cf8e6a99af7be48ae3a1"
+  },
+  {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Checkpoints\\pre_wifi_ps_none_20261103T162643Z\\tested_source_config_and_QUIC_artifacts.zip::main/CMakeLists.txt",
+    "snapshot": "preserved_original_CMakeLists.txt.txt",
+    "sha256": "bb497fa014c4366bcee9c918163bb606a84cdca530367605201bb67eba380da5"
+  },
+  {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\CMakeCache.txt",
+    "sha256": "ed8dc6e787c164974df9f4385ccc1d2ae0c88e16cd96d9e28a89aec8eef76273"
+  },
+  {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\compile_commands.json",
+    "sha256": "b7e1542193c40ef01eefb31625e0c95e5e9f6dbc20d4af538e2f92871fe16f50"
+  },
+  {
+    "source": "C:\\esp\\v6.1\\esp-idf\\components\\esp_wifi\\include\\esp_wifi.h",
+    "sha256": "c4d568f9f0aa2f705bf6ec56b436a9d1e421bfaaa7e9fadec2eac2c364e3856f"
+  },
+  {
+    "source": "C:\\esp\\v6.1\\esp-idf\\components\\esp_wifi\\include\\esp_wifi_types_generic.h",
+    "sha256": "8e398a8d22b18c199ea6d48e42784e8a897c22000a09ee9ac7d22cf0f5110e5c"
+  }
+]

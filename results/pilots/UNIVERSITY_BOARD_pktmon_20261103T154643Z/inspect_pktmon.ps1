@@ -1,0 +1,5 @@
+﻿param([string]$OutDir)
+& pktmon status 2>&1 | Out-File -LiteralPath (Join-Path $OutDir 'status_before.txt')
+& pktmon filter list 2>&1 | Out-File -LiteralPath (Join-Path $OutDir 'filters_before.txt')
+& pktmon list --json 2>&1 | Out-File -LiteralPath (Join-Path $OutDir 'components_before.json')
+& pktmon list --all --include-hidden 2>&1 | Out-File -LiteralPath (Join-Path $OutDir 'components_before.txt')

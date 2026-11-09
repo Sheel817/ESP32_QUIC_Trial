@@ -1,0 +1,172 @@
+{
+  "checked_utc": "2026-11-06T00:07:59.753394+00:00",
+  "status": "FAILED_STARTUP",
+  "processing_status": "FINALIZED",
+  "validity_status": "NOT_APPROVED",
+  "fixed_start_utc": "2026-11-05T20:24:54.413525+00:00",
+  "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+  "defined_monotonic_seconds": 2220,
+  "cutoff": {
+    "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+    "observed_utc": "2026-11-05T21:01:54.420118+00:00",
+    "observed_monotonic": 666823.7361905,
+    "lateness_ms": 6.638500024564564
+  },
+  "finalized_utc": "2026-11-05T21:02:24.869426+00:00",
+  "raw_rtt_count": 439,
+  "post_reboot_excluded_count": 439,
+  "eligible_count": 0,
+  "selected_count": 0,
+  "shortfall": 415,
+  "primary_statistics": null,
+  "serial_receipt_count": 809,
+  "all_receipts_within_original_window": true,
+  "first_receipt_utc": "2026-11-05T20:24:54.424807+00:00",
+  "last_receipt_utc": "2026-11-05T21:01:51.227554+00:00",
+  "actual_post_image": {
+    "run_id": "HBPSN-03",
+    "phase": "ACTUAL_POST_RECORDING",
+    "capture_started_utc": "2026-11-06T00:06:12.255Z",
+    "capture_completed_utc": "2026-11-06T00:06:13.102Z",
+    "saved_utc": "2026-11-06T00:06:34.204Z",
+    "screenshot": "HBPSN-03_Clumsy_POST_RECORDING.jpg",
+    "sha256": "d891db75afe0f12c476d25a0fdc86579a04e5ffe0da8c0e046b71e7d96491efc",
+    "bytes": 43956,
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "visible_match": true,
+    "inactive_displayed_values": {
+      "Lag": "100ms; inbound off/outbound on",
+      "Throttle": "30ms, Drop Throttled off,10.0%",
+      "Duplicate": "count2,10.0%",
+      "Out_of_order": "10.0%",
+      "Tamper": "Redo Checksum checked,10.0%",
+      "Set_TCP_RST": "0%",
+      "Bandwidth": "10KB/s",
+      "directions": "Other inactive effects display inbound/outbound checked"
+    },
+    "status": "FAILED_STARTUP",
+    "validity_status": "NOT_APPROVED",
+    "operator_confirmation": "AWAITING_EXACT_USER_ANSWER",
+    "note": "Actual post-deadline image acquired now; no backdating. Cannot override startup failure; automatic MISSING flag preserved."
+  },
+  "capture_started_seconds_after_deadline": 11057.841475,
+  "visible_pre_post_settings_match": true,
+  "operator_confirmation": "AWAITING_EXACT_ANSWER",
+  "automatic_missing_flag_preserved": {
+    "status": "MISSING",
+    "phase": "end_of_run",
+    "request": {
+      "phase": "end_of_run",
+      "nonce": "8b4be22f3347436c841fec22ed31de15",
+      "requested_utc": "2026-11-05T21:01:54.422352+00:00",
+      "requested_monotonic": 666823.7384155,
+      "expected": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture": "RUNNING",
+        "Drop": {
+          "enabled": true,
+          "chance_percent": 1.0,
+          "inbound": false,
+          "outbound": true
+        },
+        "other_main_effects": {
+          "Lag": false,
+          "Throttle": false,
+          "Duplicate": false,
+          "Out of order": false,
+          "Tamper": false,
+          "Set TCP RST": false,
+          "Bandwidth": false
+        }
+      },
+      "anchor": {
+        "reset_request_utc": "2026-11-05T20:24:54.407317+00:00",
+        "reset_release_utc": "2026-11-05T20:24:54.413525+00:00",
+        "reset_release_monotonic": 664603.7295527,
+        "deadline_monotonic": 666823.7295527,
+        "deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+        "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+        "boundary_precision": "Host API completion, not a physical edge measurement",
+        "server_boundaries": {
+          "stdout": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+            "byte_offset": 1831224
+          },
+          "stderr": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+            "byte_offset": 0
+          },
+          "sensor_csv": {
+            "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+            "byte_offset": 995280
+          }
+        }
+      },
+      "response_timeout_seconds": 30
+    },
+    "reason": "No complete, timely screenshot/observation response",
+    "evaluated_utc": "2026-11-05T21:02:24.424027+00:00"
+  },
+  "preservation": {
+    "earlier_originals_checked": 175,
+    "all_unchanged": true,
+    "registers_not_modified": true,
+    "register_hashes": {
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "656b5c6a71cbe783c66b9fe14f74551776e09522a7354ab9b385fb1baa908aae",
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "63980c1b51d42099f00867e52a48dec17d91c53eb4dc8d8e32e1f12f936d78ea"
+    }
+  },
+  "original_files": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+      "sha256": "bffdc99d435aa2dc781e012d84fc77a96333ccf4c22e0f81b1c7f980e637fdd8"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial_receipts.jsonl",
+      "sha256": "a17d71c94644f4642c14cc94411425f7897364c24e80eef79a296d15d2520fe8"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\FINALIZED.json",
+      "sha256": "358708217255dd9fdeda6f15bf7379315cfe68a52103970e3d9722279a1a4e2a"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\statistics.json",
+      "sha256": "a20d24fcb3fc47b1bf42c39b58b067d254adb8f843fd21ad3d4a2f3277784189"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\all_rtts.csv",
+      "sha256": "3ba43229258538721eaf1abfcb6fa7f638566a9c73250b06dd3c5f2188ca9d85"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\eligible_rtts.csv",
+      "sha256": "38eab0151dec7c17e98e996a43ea13602175b5d27017d68615518a7099b4cffe"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\selected_first_415.csv",
+      "sha256": "38eab0151dec7c17e98e996a43ea13602175b5d27017d68615518a7099b4cffe"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\excluded_rtts.csv",
+      "sha256": "1290857a640bf1db86bc55ff45af7879ca8caddaeb8cae8a4c625f9309372b55"
+    }
+  ]
+}

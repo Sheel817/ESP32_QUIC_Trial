@@ -1,0 +1,107 @@
+{
+  "os": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300"
+  },
+  "cpu": [
+    {
+      "LoadPercentage": 64
+    }
+  ],
+  "utc": "2026-11-06T01:57:49.7468462Z",
+  "band": "TwoPointFourGigahertz",
+  "ips": [
+    {
+      "IPAddress": "192.168.32.1",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))"
+    },
+    {
+      "IPAddress": "192.168.56.1",
+      "InterfaceAlias": "Ethernet 2"
+    },
+    {
+      "IPAddress": "192.168.137.1",
+      "InterfaceAlias": "Local Area Connection* 2"
+    },
+    {
+      "IPAddress": "169.254.231.80",
+      "InterfaceAlias": "Bluetooth Network Connection"
+    },
+    {
+      "IPAddress": "169.254.234.6",
+      "InterfaceAlias": "Local Area Connection* 1"
+    },
+    {
+      "IPAddress": "169.254.222.236",
+      "InterfaceAlias": "WiFi"
+    },
+    {
+      "IPAddress": "192.168.50.38",
+      "InterfaceAlias": "Ethernet"
+    },
+    {
+      "IPAddress": "127.0.0.1",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1"
+    }
+  ],
+  "port": [
+    {
+      "DeviceID": "COM6",
+      "Name": "Silicon Labs CP210x USB to UART Bridge (COM6)",
+      "PNPDeviceID": "USB\\VID_10C4&PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+    }
+  ],
+  "ssid": "SHEEL 3460",
+  "hotspot": "On",
+  "endpoint": [
+    {
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 14568,
+      "State": null,
+      "OwningProcess": 36536
+    }
+  ],
+  "processes": [
+    {
+      "ProcessId": 25344,
+      "ParentProcessId": 6980,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    },
+    {
+      "ProcessId": 23100,
+      "ParentProcessId": 25344,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    },
+    {
+      "ProcessId": 32072,
+      "ParentProcessId": 12108,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\run_host_capture.py\" "
+    },
+    {
+      "ProcessId": 32104,
+      "ParentProcessId": 32072,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\run_host_capture.py\" "
+    },
+    {
+      "ProcessId": 18676,
+      "ParentProcessId": 18744,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+    },
+    {
+      "ProcessId": 36536,
+      "ParentProcessId": 18676,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+    },
+    {
+      "ProcessId": 35628,
+      "ParentProcessId": 25172,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T015549Z\\prepare_start_once.py "
+    },
+    {
+      "ProcessId": 37464,
+      "ParentProcessId": 35628,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T015549Z\\prepare_start_once.py "
+    }
+  ]
+}

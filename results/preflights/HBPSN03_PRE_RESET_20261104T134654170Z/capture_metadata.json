@@ -1,0 +1,100 @@
+{
+  "run_id": "HBPSN-03",
+  "scope": "PRE_RESET_SETTINGS_EVIDENCE_ONLY",
+  "board": "HOME_BOARD",
+  "transport": "QUIC",
+  "wifi_ps_mode": "WIFI_PS_NONE (planned; not reverified by screenshot)",
+  "condition": "DROP1_OUT",
+  "capture_start_utc": "2026-11-04T13:46:54.170Z",
+  "capture_end_utc": "2026-11-04T13:46:54.650Z",
+  "saved_utc": "2026-11-04T13:47:28.346Z",
+  "image_path": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/preflights/HBPSN03_PRE_RESET_20261104T134654170Z/HBPSN-03_Clumsy_PRE_RESET.jpg",
+  "image_sha256": "6f476841c8d10f8d2ef12d03a4fcd276097ec894f4a0dc801a2e140d70186142",
+  "image_bytes": 43690,
+  "evidence_type": "ACTUAL Clumsy window screenshot, independently visually reviewed",
+  "plan_path": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "observed": {
+    "window_title": "clumsy 0.3",
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture_running": true,
+    "capture_evidence": [
+      "Stop button",
+      "Started filtering. Enable functionalities to take effect."
+    ],
+    "presets": "blank",
+    "Lag": {
+      "enabled": false,
+      "inbound": false,
+      "outbound": true,
+      "delay_ms": 100,
+      "controls_inactive": true
+    },
+    "Drop": {
+      "enabled": true,
+      "inbound": false,
+      "outbound": true,
+      "chance_display": "1",
+      "chance_percent": 1
+    },
+    "Throttle": {
+      "enabled": false,
+      "drop_throttled": false,
+      "timeframe_ms": 30,
+      "inbound": true,
+      "outbound": true,
+      "chance_percent": 10,
+      "controls_inactive": true
+    },
+    "Duplicate": {
+      "enabled": false,
+      "count": 2,
+      "inbound": true,
+      "outbound": true,
+      "chance_percent": 10,
+      "controls_inactive": true
+    },
+    "Out_of_order": {
+      "enabled": false,
+      "inbound": true,
+      "outbound": true,
+      "chance_percent": 10,
+      "controls_inactive": true
+    },
+    "Tamper": {
+      "enabled": false,
+      "redo_checksum": true,
+      "inbound": true,
+      "outbound": true,
+      "chance_percent": 10,
+      "controls_inactive": true
+    },
+    "Set_TCP_RST": {
+      "enabled": false,
+      "button": "RST next packet",
+      "inbound": true,
+      "outbound": true,
+      "chance_percent": 0,
+      "controls_inactive": true
+    },
+    "Bandwidth": {
+      "enabled": false,
+      "inbound": true,
+      "outbound": true,
+      "limit_KB_s": 10,
+      "controls_inactive": true
+    }
+  },
+  "comparison": {
+    "result": "PASS",
+    "expected_filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "expected_capture": "Running",
+    "expected_active_effect": "Drop configured 1%, outbound only, inbound unchecked",
+    "expected_other_main_effects": "All off",
+    "mismatches": [],
+    "note": "Inactive subcontrols retain displayed values/directions; only Drop is enabled. Displayed Chance 1 is numerically 1.0%. GUI configuration does not establish observed packet loss."
+  },
+  "run_status": "NOT_RUN",
+  "validity": "NOT_APPROVED; future post-recording image and operator confirmation require review",
+  "actions": "Raised window and captured screenshot; no settings, firmware, device, timer or earlier run changes."
+}

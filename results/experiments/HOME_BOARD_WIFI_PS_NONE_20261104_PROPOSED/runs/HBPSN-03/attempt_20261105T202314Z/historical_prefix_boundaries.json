@@ -1,0 +1,23 @@
+{
+  "stdout": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+    "byte_offset": 1831224,
+    "prefix_sha256": "3ec0226c3b0bbe1ec5270d407ea14bdf555446bfa852f9c6c53bbdbcdeef66c7",
+    "anchor_utc": "2026-11-05T20:24:54.413525+00:00",
+    "historical": true
+  },
+  "stderr": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+    "byte_offset": 0,
+    "prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "anchor_utc": "2026-11-05T20:24:54.413525+00:00",
+    "historical": true
+  },
+  "sensor_csv": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+    "byte_offset": 995280,
+    "prefix_sha256": "67ce871bd664d837c6d9edfd52df26724f7ed9ead17e62bf37bb576db7b63e3f",
+    "anchor_utc": "2026-11-05T20:24:54.413525+00:00",
+    "historical": true
+  }
+}

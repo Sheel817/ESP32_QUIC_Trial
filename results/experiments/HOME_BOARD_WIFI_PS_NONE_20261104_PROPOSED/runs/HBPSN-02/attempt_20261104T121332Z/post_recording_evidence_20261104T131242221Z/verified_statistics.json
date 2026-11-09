@@ -1,0 +1,132 @@
+{
+  "raw_serial_lines": 580,
+  "raw_rtt_count": 441,
+  "warmup_excluded": 10,
+  "other_excluded": 0,
+  "eligible_count": 431,
+  "selected_count": 415,
+  "extra_eligible_count": 16,
+  "shortfall": 0,
+  "minimum_ms": 127.227,
+  "mean_ms": 188.95411084337348,
+  "mean_decimal": "188.9541108433734939759036145",
+  "median_ms": 187.392,
+  "p95_nearest_rank_ms": 248.17,
+  "p95_rank": 395,
+  "maximum_ms": 867.649,
+  "first_selected": {
+    "source_line": "150",
+    "host_receipt_utc": "2026-11-04T12:18:30.144005+00:00",
+    "host_monotonic": "549021.3608802",
+    "esp_log_uptime_ms": "62847",
+    "seq": "11",
+    "app_rtt_ms": "187.379",
+    "run_id": "HBPSN-02",
+    "transport": "TCP_TLS",
+    "condition": "LAG100_OUT",
+    "boot_session": "HBPSN-02/2026-11-04T12:17:27.280042+00:00",
+    "raw_line": "2026-11-04T14:18:30 I (62847) quic_demo_main: APP_RTT seq=11 app_rtt_ms=187.379"
+  },
+  "last_selected": {
+    "source_line": "564",
+    "host_receipt_utc": "2026-11-04T12:53:04.241594+00:00",
+    "host_monotonic": "551095.4584839",
+    "esp_log_uptime_ms": "2136967",
+    "seq": "425",
+    "app_rtt_ms": "167.382",
+    "run_id": "HBPSN-02",
+    "transport": "TCP_TLS",
+    "condition": "LAG100_OUT",
+    "boot_session": "HBPSN-02/2026-11-04T12:17:27.280042+00:00",
+    "raw_line": "2026-11-04T14:53:04 I (2136967) quic_demo_main: APP_RTT seq=425 app_rtt_ms=167.382"
+  },
+  "original_window": {
+    "reset_request_utc": "2026-11-04T12:17:27.273508+00:00",
+    "reset_release_utc": "2026-11-04T12:17:27.280042+00:00",
+    "reset_release_monotonic": 548958.4969175,
+    "deadline_monotonic": 551178.4969175,
+    "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+    "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+    "boundary_precision": "Host API completion, not a physical edge measurement",
+    "server_boundaries": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+        "byte_offset": 63395
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+        "byte_offset": 51
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+        "byte_offset": 33644
+      }
+    }
+  },
+  "processing_status": "FINALIZED",
+  "automatic_status": "FAILED_SETTINGS",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_EVIDENCE_REVIEW",
+  "resets": [
+    {
+      "source_line": 1,
+      "raw_line": "2026-11-04T14:17:27 ESP-ROM:esp32c6-20220919",
+      "utc": "2026-11-04T12:17:27.290450+00:00"
+    }
+  ],
+  "additional_resets": 0,
+  "gaps": [],
+  "timestamp_regressions": [],
+  "serial_connection_errors": [],
+  "new_server_errors": [
+    {
+      "raw_line": "TCP+TLS ERROR: ",
+      "receipt": {
+        "utc": "2026-11-04T12:18:22.468737+00:00",
+        "monotonic": 549013.6851668,
+        "source_offset": 51,
+        "offset": 0,
+        "length": 17
+      },
+      "attribution": "New within fixed window, retained. Bare message has no peer/session identity; cannot conclusively attribute it to the measured ESP connection."
+    }
+  ],
+  "serial_warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-04T14:17:27 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-04T14:17:30 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-04T14:17:30 W (3417) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "reporting_errors": [
+    {
+      "utc": "2026-11-04T12:23:58.313678+00:00",
+      "monotonic": 549349.5305876,
+      "operation": "atomic_replace",
+      "error": "PermissionError(13, 'Access is denied')",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.4e30046f6cbc481888160849503be869.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+      "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+      "attempt": 1,
+      "exhausted": false
+    },
+    {
+      "utc": "2026-11-04T12:51:24.586378+00:00",
+      "monotonic": 550995.8033217,
+      "operation": "atomic_replace",
+      "error": "PermissionError(13, 'Access is denied')",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.ad9bde6629024b8dbc4d682664caa114.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+      "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+      "attempt": 1,
+      "exhausted": false
+    }
+  ],
+  "server_sensor_records": 441,
+  "sensor_errors": []
+}

@@ -1,0 +1,7 @@
+﻿{
+    "source_log":  "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/pilots/HOME_BOARD_WIFI_PS_NONE_20261103T230410Z/HOME_BOARD_WIFI_PS_NONE_serial.log",
+    "boundary_utc":  "2026-11-03T23:28:58.8003037Z",
+    "byte_offset":  40928,
+    "label":  "HOME_BOARD, QUIC, WIFI_PS_NONE, Clumsy UDP 14567 capture running, all effects disabled — operator-reported GUI settings.",
+    "prefix":  "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/pilots/HOME_BOARD_QUIC_WIFI_PS_NONE_UDP_CAPTURE_20261103T232858Z"
+}

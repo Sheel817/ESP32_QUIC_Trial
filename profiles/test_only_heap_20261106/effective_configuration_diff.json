@@ -1,0 +1,50 @@
+{
+  "ESP_COREDUMP_CAPTURE_DRAM": {
+    "formal": null,
+    "test_only": true
+  },
+  "ESP_COREDUMP_DECODE": {
+    "formal": null,
+    "test_only": "disable"
+  },
+  "ESP_COREDUMP_DECODE_DISABLE": {
+    "formal": null,
+    "test_only": true
+  },
+  "ESP_COREDUMP_DECODE_INFO": {
+    "formal": null,
+    "test_only": false
+  },
+  "ESP_COREDUMP_ENABLE": {
+    "formal": null,
+    "test_only": true
+  },
+  "ESP_COREDUMP_ENABLE_TO_NONE": {
+    "formal": true,
+    "test_only": false
+  },
+  "ESP_COREDUMP_ENABLE_TO_UART": {
+    "formal": false,
+    "test_only": true
+  },
+  "ESP_COREDUMP_LOGS": {
+    "formal": null,
+    "test_only": true
+  },
+  "ESP_COREDUMP_MAX_TASKS_NUM": {
+    "formal": null,
+    "test_only": 64
+  },
+  "ESP_COREDUMP_STACK_SIZE": {
+    "formal": null,
+    "test_only": 2048
+  },
+  "ESP_COREDUMP_UART_DELAY": {
+    "formal": null,
+    "test_only": 0
+  },
+  "FREERTOS_ISR_STACKSIZE": {
+    "formal": 1536,
+    "test_only": 2096
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-06T02:03:04.484471+00:00",
+  "run_id": "HBPSN-04",
+  "status": "RUNNING",
+  "csv_sha256": "63490f2ba7bb7068e3a81c3e44ff079634128901a90781374fdff71661d11b2a",
+  "xlsx_sha256": "2d8fd23cd7fd011e322c89dca75064039151418325bf92eb0e42445b750b2133",
+  "other_rows_unchanged": true,
+  "previous_csv_sha256": "656b5c6a71cbe783c66b9fe14f74551776e09522a7354ab9b385fb1baa908aae",
+  "previous_xlsx_sha256": "63980c1b51d42099f00867e52a48dec17d91c53eb4dc8d8e32e1f12f936d78ea"
+}

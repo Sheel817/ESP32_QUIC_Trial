@@ -1,0 +1,17 @@
+﻿{
+    "utc":  "2026-11-04T00:31:43.3536293Z",
+    "port":  {
+                 "DeviceID":  "COM6",
+                 "Name":  "Silicon Labs CP210x USB to UART Bridge (COM6)",
+                 "PNPDeviceID":  "USB\\VID_10C4\u0026PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+             },
+    "server":  {
+                   "LocalAddress":  "0.0.0.0",
+                   "LocalPort":  14567,
+                   "OwningProcess":  23100
+               },
+    "process":  {
+                    "ProcessId":  23100,
+                    "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+                }
+}

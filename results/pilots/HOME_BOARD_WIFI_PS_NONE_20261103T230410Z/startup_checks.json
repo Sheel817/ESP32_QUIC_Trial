@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-03T23:07:14.685863+00:00",
+  "condition": "HOME_BOARD experimental WIFI_PS_NONE firmware; Clumsy stopped",
+  "flash_verification": "3/3 artifact hashes verified, exit 0",
+  "elf_sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d",
+  "reported_digest_prefix": "9b23e164f",
+  "requested_and_returned": "WIFI_PS_NONE(0)",
+  "quic_connected": true,
+  "mqtt_connected": true,
+  "assigned_ip": "192.168.137.212",
+  "raw_startup_log": "HOME_BOARD_WIFI_PS_NONE_serial.log"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "manual_review.json",
+    "bytes": 7397,
+    "sha256": "06623167a4b4481319df85e42761d20e0b1364480565a7dab4a2ad35cc86b4ea"
+  },
+  {
+    "path": "operator_confirmation_request.json",
+    "bytes": 636,
+    "sha256": "9ceb4d4f850af30d11a9d87e48397b797d81126bdb89601e14cd9243a1d98832"
+  },
+  {
+    "path": "REVIEW.md",
+    "bytes": 3167,
+    "sha256": "51d2c0b8054226b35ad13a168186d589f642e52f1133123e2e1bd1d05dc14f33"
+  },
+  {
+    "path": "source_hashes.json",
+    "bytes": 3584,
+    "sha256": "ac668479b5fcdddbd6d62f5b2a025c9c8fbd5b31970d43915c548400674c1b05"
+  }
+]

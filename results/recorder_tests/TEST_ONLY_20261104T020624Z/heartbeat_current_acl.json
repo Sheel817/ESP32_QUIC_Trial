@@ -1,0 +1,4 @@
+﻿{
+    "Owner":  "SHEEL\\newsh",
+    "AccessToString":  "S-1-5-21-62330299-1405064327-2398730150-2868345443 Allow  Modify, Synchronize\nSheel\\CodexSandboxUsers Allow  Modify, Synchronize\nS-1-5-21-903548731-2804206686-1146017029-3903031666 Allow  Modify, Synchronize\nNT AUTHORITY\\SYSTEM Allow  FullControl\nBUILTIN\\Administrators Allow  FullControl\nSheel\\newsh Allow  FullControl"
+}

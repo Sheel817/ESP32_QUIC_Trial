@@ -1,0 +1,7 @@
+{
+    "observed_local":  "2026-11-04T01:09:11.4995695+02:00",
+    "condition":  "HOME_BOARD experimental WIFI_PS_NONE",
+    "clumsy":  "Stopped",
+    "evidence":  "Computer Use screenshot before flash and after measurements: Start button; status Stopped. To begin again, edit criteria and click Start.; Lag unchecked",
+    "action":  "Observed only; no settings changes or Start action"
+}

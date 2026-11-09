@@ -1,0 +1,27 @@
+{
+  "phase": "pre_run",
+  "nonce": "a571963646f74b418d64b724221a9d79",
+  "requested_utc": "2026-11-07T03:09:00.848891+00:00",
+  "requested_monotonic": 775250.1650189,
+  "expected": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1.0,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "anchor": null,
+  "response_timeout_seconds": 30
+}

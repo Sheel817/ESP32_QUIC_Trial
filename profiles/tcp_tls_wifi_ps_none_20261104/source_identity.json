@@ -1,0 +1,12 @@
+{
+  "git_head": "3c8c7a30b7b32ae3feaa07788b74eec637be37fc",
+  "project_version": "3c8c7a3-dirty",
+  "source_identity": "Current modified tree; validated QUIC application/CMake hashes and preserved source/dependency entries verified",
+  "original_build_files": 6198,
+  "quic_profile_files": 1796,
+  "source_files": 1428,
+  "sdk": "C:/esp/v6.1/esp-idf",
+  "compiler": "GCC/G++ 15.2.0; esp-15.2.0_20251204",
+  "python_environment": "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env",
+  "packages_upgraded": false
+}

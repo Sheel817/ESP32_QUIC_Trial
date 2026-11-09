@@ -1,0 +1,12 @@
+{
+  "status": "PENDING_EVIDENCE_REVIEW",
+  "processing_status": "FINALIZED",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_MANUAL_REVIEW",
+  "completion_candidate": "COMPLETE",
+  "finished_utc": "2026-11-09T19:35:06.939892+00:00",
+  "deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+  "selected_count": 415,
+  "shortfall": 0,
+  "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\SUMMARY.md"
+}

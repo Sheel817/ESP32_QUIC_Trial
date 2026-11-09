@@ -1,0 +1,164 @@
+{
+  "run_id": "HBPSN-05",
+  "transport": "QUIC",
+  "condition": "LAG100_OUT",
+  "processing_status": "FINALIZED_ORIGINAL_WINDOW_VERIFIED",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_OPERATOR_AND_MANUAL_REVIEW",
+  "window_utc": [
+    "2026-11-06T13:13:20.156359+00:00",
+    "2026-11-06T13:50:20.156359+00:00"
+  ],
+  "window_helsinki": [
+    "2026-11-06T15:13:20.156359+02:00",
+    "2026-11-06T15:50:20.156359+02:00"
+  ],
+  "fixed_seconds": 2220,
+  "counts": {
+    "raw_serial_lines": 591,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "other_excluded": 0,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0
+  },
+  "statistics": {
+    "minimum_ms": 125.069,
+    "mean_ms": 190.89982409638554,
+    "median_ms": 185.994,
+    "p95_ms": 245.685,
+    "maximum_ms": 525.973
+  },
+  "p95_method": "Nearest rank ceil(0.95*N)",
+  "selected_sequence_range": [
+    11,
+    425
+  ],
+  "selected_esp_ms_range": [
+    63973,
+    2138133
+  ],
+  "serial_connection_errors": [],
+  "server_stderr": "",
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-06T15:13:20 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-06T15:13:23 W (3263) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-06T15:13:23 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "reset_records": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-06T15:13:20 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-06T13:13:20.167541+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "subsequent_resets": 0,
+  "sequence_gaps": [],
+  "interruptions": [],
+  "server_tail_errors": [],
+  "pre_image": {
+    "nonce": "3798e05364674d4b9b60ed4c04a57756",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "27a74e61624f5dd59798b32bcaf76fd6af1014b32a7e568562b3fc98107ff0ff",
+    "capture_started_utc": "2026-11-06T13:13:01.204Z",
+    "capture_completed_utc": "2026-11-06T13:13:01.560Z",
+    "capture_started_monotonic": 725090.520913,
+    "capture_completed_monotonic": 725090.876913,
+    "clock_provenance": "Actual host UTC capture brackets; monotonic estimates from request UTC/monotonic bridge.",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-05 QUIC LAG100_OUT actual pre-reset settings; all other main effects disabled"
+  },
+  "post_image": {
+    "run_id": "HBPSN-05",
+    "image": "HBPSN-05_Clumsy_POST_RECORDING.jpg",
+    "capture_started_utc": "2026-11-06T13:53:13.729Z",
+    "capture_completed_utc": "2026-11-06T13:53:14.719Z",
+    "sha256": "8ae304cd0655008f48067051582d78093de8bc7ebd6dd40637ffa8b0e0f04090",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "actual_post_deadline": true,
+    "settings_changed_by_agent": false,
+    "validity_status": "NOT_APPROVED",
+    "operator_confirmation": "AWAITING_EXACT_REPLY"
+  },
+  "visible_settings_match": true,
+  "post_capture_started_seconds_after_deadline": 173.572641,
+  "automatic_finalization": {
+    "status": "FAILED_SETTINGS",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "FAILED_SETTINGS",
+    "finished_utc": "2026-11-06T13:50:50.594842+00:00",
+    "deadline_utc": "2026-11-06T13:50:20.156359+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-05\\attempt_20261106T130901Z\\SUMMARY.md"
+  },
+  "cutoff": {
+    "fixed_deadline_utc": "2026-11-06T13:50:20.156359+00:00",
+    "observed_utc": "2026-11-06T13:50:20.161386+00:00",
+    "observed_monotonic": 727329.4777879,
+    "lateness_ms": 5.392900086008012
+  },
+  "automatic_post_settings_flag": "MISSING",
+  "automatic_flags_preserved": true,
+  "original_final_manifest_verified": 71,
+  "operator_statement": null,
+  "operator_statement_receipt_utc": null,
+  "operator_statement_status": "AWAITING_EXACT_REPLY",
+  "registers_modified": false,
+  "register_status": "HBPSN-05 RUNNING remains; automatic final patch is emitted, not applied. Data processing is FINALIZED; no approval.",
+  "no_new_run": true,
+  "settings_changed": false,
+  "unresolved_quic_crash_preserved": true
+}

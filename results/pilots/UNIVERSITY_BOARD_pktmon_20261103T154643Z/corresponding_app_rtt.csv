@@ -1,0 +1,14 @@
+server_receive_utc,seq,sensor_uptime_ms,temperature_c,humidity_pct,sensor_error,in_analysis_60s,esp_timestamp_ms,app_rtt_ms,association
+2026-11-03T15:47:37.274591Z,654,3284332,46.0,22.0,0,True,3284884,70.275,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:47:42.287155Z,655,3289342,46.0,22.0,0,True,3289914,85.81,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:47:47.295261Z,656,3294352,45.0,26.0,0,True,3294944,105.789,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:47:52.304567Z,657,3299362,45.0,22.0,0,True,3299874,25.463,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:47:57.316159Z,658,3304372,45.0,22.0,0,True,3304904,45.432,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:02.324605Z,659,3309382,45.0,22.0,0,True,3309934,65.31,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:07.334873Z,660,3314392,45.0,22.0,0,True,3314964,85.42,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:12.346166Z,661,3319402,45.0,22.0,0,True,3319994,105.423,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:17.354684Z,662,3324412,45.0,22.0,0,True,3324924,25.298,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:22.364469Z,663,3329422,45.0,22.0,0,True,3329954,45.189,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:27.375654Z,664,3334432,45.0,22.0,0,True,3334984,65.085,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:32.384073Z,665,3339442,45.0,22.0,0,True,3340014,85.105,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution
+2026-11-03T15:48:37.394678Z,666,3344452,45.0,22.0,0,False,3345044,105.46,Exact seq join: plaintext server CSV to serial APP_RTT; no encrypted packet attribution

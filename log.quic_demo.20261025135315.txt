@@ -1,0 +1,638 @@
+[0;32mI (102387) quic_demo_main: APP_RTT seq=19 app_rtt_ms=47.250[0m
+[0;32mI (107417) quic_demo_main: APP_RTT seq=20 app_rtt_ms=67.795[0m
+[0;32mI (112447) quic_demo_main: APP_RTT seq=21 app_rtt_ms=88.526[0m
+[0;32mI (117477) quic_demo_main: APP_RTT seq=22 app_rtt_ms=108.393[0m
+[0;32mI (122407) quic_demo_main: APP_RTT seq=23 app_rtt_ms=27.031[0m
+[0;32mI (127437) quic_demo_main: APP_RTT seq=24 app_rtt_ms=47.467[0m
+[0;32mI (132467) quic_demo_main: APP_RTT seq=25 app_rtt_ms=67.506[0m
+[0;32mI (137497) quic_demo_main: APP_RTT seq=26 app_rtt_ms=87.660[0m
+[0;32mI (142527) quic_demo_main: APP_RTT seq=27 app_rtt_ms=107.676[0m
+[0;32mI (147457) quic_demo_main: APP_RTT seq=28 app_rtt_ms=27.475[0m
+[0;32mI (152487) quic_demo_main: APP_RTT seq=29 app_rtt_ms=47.518[0m
+[0;32mI (157517) quic_demo_main: APP_RTT seq=30 app_rtt_ms=67.788[0m
+[0;32mI (162547) quic_demo_main: APP_RTT seq=31 app_rtt_ms=87.555[0m
+[0;32mI (167577) quic_demo_main: APP_RTT seq=32 app_rtt_ms=108.437[0m
+[0;32mI (172507) quic_demo_main: APP_RTT seq=33 app_rtt_ms=27.665[0m
+[0;32mI (177537) quic_demo_main: APP_RTT seq=34 app_rtt_ms=47.204[0m
+[0;32mI (182567) quic_demo_main: APP_RTT seq=35 app_rtt_ms=67.239[0m
+[0;32mI (187597) quic_demo_main: APP_RTT seq=36 app_rtt_ms=87.305[0m
+[0;32mI (192627) quic_demo_main: APP_RTT seq=37 app_rtt_ms=107.549[0m
+[0;32mI (197557) quic_demo_main: APP_RTT seq=38 app_rtt_ms=27.415[0m
+[0;32mI (202687) quic_demo_main: APP_RTT seq=39 app_rtt_ms=147.805[0m
+[0;32mI (207617) quic_demo_main: APP_RTT seq=40 app_rtt_ms=68.022[0m
+[0;32mI (212647) quic_demo_main: APP_RTT seq=41 app_rtt_ms=87.660[0m
+[0;32mI (217677) quic_demo_main: APP_RTT seq=42 app_rtt_ms=108.499[0m
+[0;32mI (222607) quic_demo_main: APP_RTT seq=43 app_rtt_ms=27.538[0m
+[0;32mI (227637) quic_demo_main: APP_RTT seq=44 app_rtt_ms=47.508[0m
+[0;32mI (232667) quic_demo_main: APP_RTT seq=45 app_rtt_ms=68.493[0m
+[0;32mI (237697) quic_demo_main: APP_RTT seq=46 app_rtt_ms=87.669[0m
+[0;32mI (242727) quic_demo_main: APP_RTT seq=47 app_rtt_ms=107.216[0m
+[0;32mI (247657) quic_demo_main: APP_RTT seq=48 app_rtt_ms=27.149[0m
+[0;32mI (252687) quic_demo_main: APP_RTT seq=49 app_rtt_ms=47.012[0m
+[0;32mI (257717) quic_demo_main: APP_RTT seq=50 app_rtt_ms=67.602[0m
+[0;32mI (262747) quic_demo_main: APP_RTT seq=51 app_rtt_ms=87.615[0m
+[0;32mI (267777) quic_demo_main: APP_RTT seq=52 app_rtt_ms=108.416[0m
+[0;32mI (272707) quic_demo_main: APP_RTT seq=53 app_rtt_ms=27.596[0m
+[0;32mI (277737) quic_demo_main: APP_RTT seq=54 app_rtt_ms=47.607[0m
+[0;32mI (282767) quic_demo_main: APP_RTT seq=55 app_rtt_ms=67.927[0m
+[0;32mI (287797) quic_demo_main: APP_RTT seq=56 app_rtt_ms=87.678[0m
+[0;32mI (292827) quic_demo_main: APP_RTT seq=57 app_rtt_ms=107.559[0m
+[0;32mI (297757) quic_demo_main: APP_RTT seq=58 app_rtt_ms=27.512[0m
+[0;32mI (302787) quic_demo_main: APP_RTT seq=59 app_rtt_ms=47.431[0m
+[0;32mI (307817) quic_demo_main: APP_RTT seq=60 app_rtt_ms=67.842[0m
+[0;32mI (312847) quic_demo_main: APP_RTT seq=61 app_rtt_ms=87.167[0m
+[0;32mI (317877) quic_demo_main: APP_RTT seq=62 app_rtt_ms=108.033[0m
+[0;32mI (322807) quic_demo_main: APP_RTT seq=63 app_rtt_ms=27.290[0m
+[0;32mI (327837) quic_demo_main: APP_RTT seq=64 app_rtt_ms=47.498[0m
+[0;32mI (332867) quic_demo_main: APP_RTT seq=65 app_rtt_ms=68.035[0m
+[0;32mI (337897) quic_demo_main: APP_RTT seq=66 app_rtt_ms=87.758[0m
+[0;32mI (342927) quic_demo_main: APP_RTT seq=67 app_rtt_ms=107.398[0m
+[0;32mI (347857) quic_demo_main: APP_RTT seq=68 app_rtt_ms=27.455[0m
+[0;32mI (352887) quic_demo_main: APP_RTT seq=69 app_rtt_ms=47.502[0m
+[0;32mI (357917) quic_demo_main: APP_RTT seq=70 app_rtt_ms=67.857[0m
+[0;32mI (362947) quic_demo_main: APP_RTT seq=71 app_rtt_ms=87.522[0m
+[0;32mI (367977) quic_demo_main: APP_RTT seq=72 app_rtt_ms=108.540[0m
+[0;32mI (372907) quic_demo_main: APP_RTT seq=73 app_rtt_ms=27.266[0m
+[0;32mI (377937) quic_demo_main: APP_RTT seq=74 app_rtt_ms=47.079[0m
+[0;32mI (382967) quic_demo_main: APP_RTT seq=75 app_rtt_ms=67.123[0m
+[0;32mI (387997) quic_demo_main: APP_RTT seq=76 app_rtt_ms=87.123[0m
+[0;32mI (393027) quic_demo_main: APP_RTT seq=77 app_rtt_ms=107.475[0m
+[0;32mI (397957) quic_demo_main: APP_RTT seq=78 app_rtt_ms=27.699[0m
+[0;32mI (402987) quic_demo_main: APP_RTT seq=79 app_rtt_ms=47.523[0m
+[0;32mI (408017) quic_demo_main: APP_RTT seq=80 app_rtt_ms=67.928[0m
+[0;32mI (413047) quic_demo_main: APP_RTT seq=81 app_rtt_ms=87.657[0m
+[0;32mI (418077) quic_demo_main: APP_RTT seq=82 app_rtt_ms=108.496[0m
+[0;32mI (423007) quic_demo_main: APP_RTT seq=83 app_rtt_ms=27.400[0m
+[0;32mI (428037) quic_demo_main: APP_RTT seq=84 app_rtt_ms=47.506[0m
+[0;32mI (433067) quic_demo_main: APP_RTT seq=85 app_rtt_ms=67.497[0m
+[0;32mI (438097) quic_demo_main: APP_RTT seq=86 app_rtt_ms=87.515[0m
+[0;32mI (443127) quic_demo_main: APP_RTT seq=87 app_rtt_ms=107.071[0m
+[0;32mI (448057) quic_demo_main: APP_RTT seq=88 app_rtt_ms=27.068[0m
+[0;32mI (453087) quic_demo_main: APP_RTT seq=89 app_rtt_ms=47.130[0m
+[0;32mI (458117) quic_demo_main: APP_RTT seq=90 app_rtt_ms=67.302[0m
+[0;32mI (463147) quic_demo_main: APP_RTT seq=91 app_rtt_ms=87.620[0m
+[0;32mI (468177) quic_demo_main: APP_RTT seq=92 app_rtt_ms=108.576[0m
+[0;32mI (473107) quic_demo_main: APP_RTT seq=93 app_rtt_ms=27.590[0m
+[0;32mI (478137) quic_demo_main: APP_RTT seq=94 app_rtt_ms=47.539[0m
+[0;32mI (483167) quic_demo_main: APP_RTT seq=95 app_rtt_ms=67.667[0m
+[0;32mI (488197) quic_demo_main: APP_RTT seq=96 app_rtt_ms=87.678[0m
+[0;32mI (493227) quic_demo_main: APP_RTT seq=97 app_rtt_ms=107.436[0m
+[0;32mI (498157) quic_demo_main: APP_RTT seq=98 app_rtt_ms=27.331[0m
+[0;32mI (503187) quic_demo_main: APP_RTT seq=99 app_rtt_ms=47.292[0m
+[0;32mI (508217) quic_demo_main: APP_RTT seq=100 app_rtt_ms=67.629[0m
+[0;32mI (513247) quic_demo_main: APP_RTT seq=101 app_rtt_ms=87.342[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1648
+load:0x4086b910,len:0xdbc
+load:0x4086e610,len:0x31f0
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 21 2026 01:35:24[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (24) boot: efuse block revision: v0.2[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 8MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 001a9000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3b04ch (241740) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0004b074 vaddr=40800000 size=04fa4h ( 20388) load[0m
+[0;32mI (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=115d8ch (1138060) map[0m
+[0;32mI (351) esp_image: segment 3: paddr=00165db4 vaddr=40804fa4 size=13630h ( 79408) load[0m
+[0;32mI (368) esp_image: segment 4: paddr=001793ec vaddr=408185e0 size=0485ch ( 18524) load[0m
+[0;32mI (379) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (380) boot: Disabling RNG early entropy source...[0m
+[0;32mI (390) cpu_start: Unicore app[0m
+[0;32mI (398) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (398) cpu_start: Pro cpu start user code[0m
+[0;32mI (398) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (400) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     quic_demo[0m
+[0;32mI (408) app_init: App version:      3c8c7a3-dirty[0m
+[0;32mI (413) app_init: Compile time:     Oct 24 2026 19:22:28[0m
+[0;32mI (418) app_init: ELF file SHA256:  524c781b7...[0m
+[0;32mI (422) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (437) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 40824790 len 00057E80 (351 KiB): RAM[0m
+[0;32mI (449) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (454) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (460) spi_flash: detected chip: gd[0m
+[0;32mI (462) spi_flash: flash io: dio[0m
+[0;32mI (466) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (472) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (478) coexist: coex firmware version: a830d28[0m
+[0;32mI (483) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (487) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;32mI (507) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS[0m
+[0;32mI (507) quic_demo_main: ESP-IDF version: v6.1[0m
+[0;32mI (507) example_connect: Start example_connect.[0m
+[0;32mI (507) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (517) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (527) wifi:wifi driver task: 4082a7f0, prio:23, stack:6656, core=0[0m
+[0;32mI (527) wifi:wifi firmware version: e12a754[0m
+[0;32mI (527) wifi:wifi certification version: v7.0[0m
+[0;32mI (537) wifi:config NVS flash: enabled[0m
+[0;32mI (537) wifi:config nano formatting: disabled[0m
+[0;32mI (537) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (547) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (547) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (557) wifi:Init management short buffer num: 32[0m
+[0;32mI (557) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (567) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (567) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (577) wifi:Init static rx buffer num: 10[0m
+[0;32mI (577) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (577) wifi_init: rx ba win: 6[0m
+[0;32mI (587) wifi_init: accept mbox: 6[0m
+[0;32mI (587) wifi_init: tcpip mbox: 32[0m
+[0;32mI (587) wifi_init: udp mbox: 6[0m
+[0;32mI (597) wifi_init: tcp mbox: 6[0m
+[0;32mI (597) wifi_init: tcp tx win: 5760[0m
+[0;32mI (597) wifi_init: tcp rx win: 5760[0m
+[0;32mI (597) wifi_init: tcp mss: 1440[0m
+[0;32mI (607) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (607) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (617) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (617) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00[0m
+[0;32mI (667) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (667) wifi:mode : sta (40:4c:ca:56:bb:b0)[0m
+[0;32mI (667) wifi:enable tsf[0m
+[0;32mI (677) example_connect: Connecting to SHEEL 3460...[0m
+[0;33mW (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (687) example_connect: Waiting for IP(s)[0m
+[0;32mI (3207) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3207) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (3207) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3227) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3237) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3237) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:144, highestRateIdx:0[0m
+[0;33mW (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3237) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (3257) wifi:ifidx:0, rssi:-28, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (3267) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (3277) wifi:connected with SHEEL 3460, aid = 11, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb[0m
+[0;32mI (3287) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3287) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (3287) wifi:pm start, type:1, aid:0xb, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (3307) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3307) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (3317) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3327) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (3337) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3357) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3357) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3367) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (3377) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (3397) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005[0m
+[0;32mI (4397) esp_netif_handlers: example_netif_sta ip: 192.168.137.188, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4397) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.188[0m
+[0;32mI (4507) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4507) example_common: Connected to example_netif_sta[0m
+[0;32mI (4507) example_common: - IPv4 address: 192.168.137.188,[0m
+[0;32mI (4517) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4527) quic_demo_main: Wi-Fi connected[0m
+[0;32mI (4527) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568[0m
+[0;32mI (4537) quic_demo_main: Free heap: 287388 bytes[0m
+[0;32mI (4537) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms[0m
+[0;32mI (4547) main_task: Returned from app_main()[0m
+[0;32mI (6077) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)[0m
+[0;32mI (6077) TCP_TLS: Connected to 192.168.137.1:14568[0m
+[0;32mI (6087) quic_demo_main: TCP_TLS connection established[0m
+[0;32mI (7087) MQTT_QUIC: Initializing complete-MQTT-packet transport[0m
+[0;32mI (7097) quic_demo_main: MQTT connected over TCP_TLS[0m
+[0;32mI (7107) quic_demo_main: Starting DHT11 readings every five seconds[0m
+[0;32mI (7207) quic_demo_main: Subscription acknowledged[0m
+[0;32mI (12237) quic_demo_main: APP_RTT seq=1 app_rtt_ms=87.750[0m
+[0;32mI (17267) quic_demo_main: APP_RTT seq=2 app_rtt_ms=108.673[0m
+[0;32mI (22197) quic_demo_main: APP_RTT seq=3 app_rtt_ms=27.672[0m
+[0;32mI (27227) quic_demo_main: APP_RTT seq=4 app_rtt_ms=47.646[0m
+[0;32mI (32257) quic_demo_main: APP_RTT seq=5 app_rtt_ms=68.024[0m
+[0;32mI (37287) quic_demo_main: APP_RTT seq=6 app_rtt_ms=87.785[0m
+[0;32mI (42317) quic_demo_main: APP_RTT seq=7 app_rtt_ms=107.581[0m
+[0;32mI (47247) quic_demo_main: APP_RTT seq=8 app_rtt_ms=27.395[0m
+[0;32mI (52277) quic_demo_main: APP_RTT seq=9 app_rtt_ms=47.541[0m
+[0;32mI (57307) quic_demo_main: APP_RTT seq=10 app_rtt_ms=67.200[0m
+[0;32mI (62337) quic_demo_main: APP_RTT seq=11 app_rtt_ms=87.467[0m
+[0;32mI (67367) quic_demo_main: APP_RTT seq=12 app_rtt_ms=107.410[0m
+[0;32mI (72297) quic_demo_main: APP_RTT seq=13 app_rtt_ms=28.572[0m
+[0;32mI (77327) quic_demo_main: APP_RTT seq=14 app_rtt_ms=47.873[0m
+[0;32mI (82357) quic_demo_main: APP_RTT seq=15 app_rtt_ms=68.138[0m
+[0;32mI (87387) quic_demo_main: APP_RTT seq=16 app_rtt_ms=87.623[0m
+[0;32mI (92417) quic_demo_main: APP_RTT seq=17 app_rtt_ms=107.531[0m
+[0;32mI (97347) quic_demo_main: APP_RTT seq=18 app_rtt_ms=27.496[0m
+[0;32mI (102377) quic_demo_main: APP_RTT seq=19 app_rtt_ms=47.457[0m
+[0;32mI (107407) quic_demo_main: APP_RTT seq=20 app_rtt_ms=67.901[0m
+[0;32mI (112437) quic_demo_main: APP_RTT seq=21 app_rtt_ms=87.654[0m
+[0;32mI (117467) quic_demo_main: APP_RTT seq=22 app_rtt_ms=107.430[0m
+[0;32mI (122397) quic_demo_main: APP_RTT seq=23 app_rtt_ms=27.679[0m
+[0;32mI (127427) quic_demo_main: APP_RTT seq=24 app_rtt_ms=47.123[0m
+[0;32mI (132457) quic_demo_main: APP_RTT seq=25 app_rtt_ms=67.241[0m
+[0;32mI (137487) quic_demo_main: APP_RTT seq=26 app_rtt_ms=87.569[0m
+[0;32mI (142517) quic_demo_main: APP_RTT seq=27 app_rtt_ms=107.403[0m
+[0;32mI (147447) quic_demo_main: APP_RTT seq=28 app_rtt_ms=27.736[0m
+[0;32mI (152477) quic_demo_main: APP_RTT seq=29 app_rtt_ms=47.518[0m
+[0;32mI (157507) quic_demo_main: APP_RTT seq=30 app_rtt_ms=67.862[0m
+[0;32mI (162537) quic_demo_main: APP_RTT seq=31 app_rtt_ms=87.671[0m
+[0;32mI (167567) quic_demo_main: APP_RTT seq=32 app_rtt_ms=107.623[0m
+[0;32mI (172497) quic_demo_main: APP_RTT seq=33 app_rtt_ms=27.887[0m
+[0;32mI (177527) quic_demo_main: APP_RTT seq=34 app_rtt_ms=47.416[0m
+[0;32mI (182557) quic_demo_main: APP_RTT seq=35 app_rtt_ms=67.668[0m
+[0;32mI (187587) quic_demo_main: APP_RTT seq=36 app_rtt_ms=87.319[0m
+[0;32mI (192617) quic_demo_main: APP_RTT seq=37 app_rtt_ms=107.278[0m
+[0;32mI (197547) quic_demo_main: APP_RTT seq=38 app_rtt_ms=27.009[0m
+[0;32mI (202577) quic_demo_main: APP_RTT seq=39 app_rtt_ms=47.014[0m
+[0;32mI (207607) quic_demo_main: APP_RTT seq=40 app_rtt_ms=67.683[0m
+[0;32mI (212637) quic_demo_main: APP_RTT seq=41 app_rtt_ms=87.646[0m
+[0;32mI (217667) quic_demo_main: APP_RTT seq=42 app_rtt_ms=107.668[0m
+[0;32mI (222597) quic_demo_main: APP_RTT seq=43 app_rtt_ms=28.037[0m
+[0;32mI (227627) quic_demo_main: APP_RTT seq=44 app_rtt_ms=47.586[0m
+[0;32mI (232657) quic_demo_main: APP_RTT seq=45 app_rtt_ms=67.893[0m
+[0;32mI (237687) quic_demo_main: APP_RTT seq=46 app_rtt_ms=87.647[0m
+[0;32mI (242717) quic_demo_main: APP_RTT seq=47 app_rtt_ms=107.372[0m
+[0;32mI (247647) quic_demo_main: APP_RTT seq=48 app_rtt_ms=27.330[0m
+[0;32mI (252677) quic_demo_main: APP_RTT seq=49 app_rtt_ms=47.323[0m
+[0;32mI (257707) quic_demo_main: APP_RTT seq=50 app_rtt_ms=67.058[0m
+[0;32mI (262737) quic_demo_main: APP_RTT seq=51 app_rtt_ms=87.387[0m
+[0;32mI (267767) quic_demo_main: APP_RTT seq=52 app_rtt_ms=106.762[0m
+[0;32mI (272697) quic_demo_main: APP_RTT seq=53 app_rtt_ms=28.027[0m
+[0;32mI (277727) quic_demo_main: APP_RTT seq=54 app_rtt_ms=47.579[0m
+[0;32mI (282757) quic_demo_main: APP_RTT seq=55 app_rtt_ms=67.573[0m
+[0;32mI (287787) quic_demo_main: APP_RTT seq=56 app_rtt_ms=87.682[0m
+[0;32mI (292817) quic_demo_main: APP_RTT seq=57 app_rtt_ms=107.660[0m
+[0;32mI (297747) quic_demo_main: APP_RTT seq=58 app_rtt_ms=27.493[0m
+[0;32mI (302777) quic_demo_main: APP_RTT seq=59 app_rtt_ms=47.457[0m
+[0;32mI (307807) quic_demo_main: APP_RTT seq=60 app_rtt_ms=67.601[0m
+[0;32mI (312837) quic_demo_main: APP_RTT seq=61 app_rtt_ms=87.631[0m
+[0;32mI (317867) quic_demo_main: APP_RTT seq=62 app_rtt_ms=107.590[0m
+[0;32mI (322797) quic_demo_main: APP_RTT seq=63 app_rtt_ms=27.693[0m
+[0;32mI (327827) quic_demo_main: APP_RTT seq=64 app_rtt_ms=47.255[0m
+[0;32mI (332857) quic_demo_main: APP_RTT seq=65 app_rtt_ms=67.209[0m
+[0;32mI (337887) quic_demo_main: APP_RTT seq=66 app_rtt_ms=87.611[0m
+[0;32mI (342917) quic_demo_main: APP_RTT seq=67 app_rtt_ms=107.530[0m
+[0;32mI (347847) quic_demo_main: APP_RTT seq=68 app_rtt_ms=27.581[0m
+[0;32mI (352877) quic_demo_main: APP_RTT seq=69 app_rtt_ms=47.723[0m
+[0;32mI (357907) quic_demo_main: APP_RTT seq=70 app_rtt_ms=67.860[0m
+[0;32mI (362937) quic_demo_main: APP_RTT seq=71 app_rtt_ms=87.794[0m
+[0;32mI (367967) quic_demo_main: APP_RTT seq=72 app_rtt_ms=107.531[0m
+[0;32mI (372997) quic_demo_main: APP_RTT seq=73 app_rtt_ms=128.469[0m
+[0;32mI (377927) quic_demo_main: APP_RTT seq=74 app_rtt_ms=47.471[0m
+[0;32mI (382957) quic_demo_main: APP_RTT seq=75 app_rtt_ms=67.697[0m
+[0;32mI (387987) quic_demo_main: APP_RTT seq=76 app_rtt_ms=87.683[0m
+[0;32mI (393017) quic_demo_main: APP_RTT seq=77 app_rtt_ms=107.363[0m
+[0;32mI (397947) quic_demo_main: APP_RTT seq=78 app_rtt_ms=27.168[0m
+[0;32mI (402977) quic_demo_main: APP_RTT seq=79 app_rtt_ms=47.127[0m
+[0;32mI (408007) quic_demo_main: APP_RTT seq=80 app_rtt_ms=67.894[0m
+[0;32mI (413037) quic_demo_main: APP_RTT seq=81 app_rtt_ms=87.687[0m
+[0;32mI (418067) quic_demo_main: APP_RTT seq=82 app_rtt_ms=107.582[0m
+[0;32mI (422997) quic_demo_main: APP_RTT seq=83 app_rtt_ms=28.063[0m
+[0;32mI (428027) quic_demo_main: APP_RTT seq=84 app_rtt_ms=47.579[0m
+[0;32mI (433057) quic_demo_main: APP_RTT seq=85 app_rtt_ms=67.635[0m
+[0;32mI (438087) quic_demo_main: APP_RTT seq=86 app_rtt_ms=87.621[0m
+[0;32mI (443117) quic_demo_main: APP_RTT seq=87 app_rtt_ms=107.433[0m
+[0;32mI (448047) quic_demo_main: APP_RTT seq=88 app_rtt_ms=27.329[0m
+[0;32mI (453077) quic_demo_main: APP_RTT seq=89 app_rtt_ms=47.340[0m
+[0;32mI (458107) quic_demo_main: APP_RTT seq=90 app_rtt_ms=67.442[0m
+[0;32mI (463137) quic_demo_main: APP_RTT seq=91 app_rtt_ms=87.246[0m
+[0;32mI (468167) quic_demo_main: APP_RTT seq=92 app_rtt_ms=106.833[0m
+[0;32mI (473097) quic_demo_main: APP_RTT seq=93 app_rtt_ms=28.054[0m
+[0;32mI (478127) quic_demo_main: APP_RTT seq=94 app_rtt_ms=47.706[0m
+[0;32mI (483157) quic_demo_main: APP_RTT seq=95 app_rtt_ms=68.015[0m
+[0;32mI (488187) quic_demo_main: APP_RTT seq=96 app_rtt_ms=87.644[0m
+[0;32mI (493217) quic_demo_main: APP_RTT seq=97 app_rtt_ms=107.477[0m
+[0;32mI (498147) quic_demo_main: APP_RTT seq=98 app_rtt_ms=27.489[0m
+[0;32mI (503177) quic_demo_main: APP_RTT seq=99 app_rtt_ms=47.422[0m
+[0;32mI (508207) quic_demo_main: APP_RTT seq=100 app_rtt_ms=68.035[0m
+[0;32mI (513237) quic_demo_main: APP_RTT seq=101 app_rtt_ms=87.425[0m
+[0;32mI (518267) quic_demo_main: APP_RTT seq=102 app_rtt_ms=107.369[0m
+[0;32mI (523197) quic_demo_main: APP_RTT seq=103 app_rtt_ms=27.677[0m
+[0;32mI (528227) quic_demo_main: APP_RTT seq=104 app_rtt_ms=47.306[0m
+[0;32mI (533257) quic_demo_main: APP_RTT seq=105 app_rtt_ms=67.336[0m
+[0;32mI (538287) quic_demo_main: APP_RTT seq=106 app_rtt_ms=87.283[0m
+[0;32mI (543317) quic_demo_main: APP_RTT seq=107 app_rtt_ms=107.570[0m
+[0;32mI (548247) quic_demo_main: APP_RTT seq=108 app_rtt_ms=27.739[0m
+[0;32mI (553277) quic_demo_main: APP_RTT seq=109 app_rtt_ms=47.521[0m
+[0;32mI (558307) quic_demo_main: APP_RTT seq=110 app_rtt_ms=67.561[0m
+[0;32mI (563337) quic_demo_main: APP_RTT seq=111 app_rtt_ms=87.669[0m
+[0;32mI (568367) quic_demo_main: APP_RTT seq=112 app_rtt_ms=107.672[0m
+[0;32mI (573297) quic_demo_main: APP_RTT seq=113 app_rtt_ms=27.813[0m
+[0;32mI (578327) quic_demo_main: APP_RTT seq=114 app_rtt_ms=47.530[0m
+[0;32mI (583357) quic_demo_main: APP_RTT seq=115 app_rtt_ms=67.758[0m
+[0;32mI (588387) quic_demo_main: APP_RTT seq=116 app_rtt_ms=87.531[0m
+[0;32mI (593417) quic_demo_main: APP_RTT seq=117 app_rtt_ms=106.932[0m
+[0;32mI (598447) quic_demo_main: APP_RTT seq=118 app_rtt_ms=127.239[0m
+[0;32mI (603377) quic_demo_main: APP_RTT seq=119 app_rtt_ms=46.733[0m
+[0;32mI (608407) quic_demo_main: APP_RTT seq=120 app_rtt_ms=67.657[0m
+[0;32mI (613437) quic_demo_main: APP_RTT seq=121 app_rtt_ms=87.693[0m
+[0;32mI (618467) quic_demo_main: APP_RTT seq=122 app_rtt_ms=107.576[0m
+[0;32mI (623397) quic_demo_main: APP_RTT seq=123 app_rtt_ms=28.200[0m
+[0;32mI (628427) quic_demo_main: APP_RTT seq=124 app_rtt_ms=47.740[0m
+[0;32mI (633457) quic_demo_main: APP_RTT seq=125 app_rtt_ms=67.878[0m
+[0;32mI (638487) quic_demo_main: APP_RTT seq=126 app_rtt_ms=87.524[0m
+[0;32mI (643517) quic_demo_main: APP_RTT seq=127 app_rtt_ms=107.419[0m
+[0;32mI (648447) quic_demo_main: APP_RTT seq=128 app_rtt_ms=27.383[0m
+[0;32mI (653477) quic_demo_main: APP_RTT seq=129 app_rtt_ms=47.382[0m
+[0;32mI (658507) quic_demo_main: APP_RTT seq=130 app_rtt_ms=67.482[0m
+[0;32mI (663537) quic_demo_main: APP_RTT seq=131 app_rtt_ms=87.183[0m
+[0;32mI (668567) quic_demo_main: APP_RTT seq=132 app_rtt_ms=106.935[0m
+[0;32mI (673497) quic_demo_main: APP_RTT seq=133 app_rtt_ms=27.958[0m
+[0;32mI (678527) quic_demo_main: APP_RTT seq=134 app_rtt_ms=47.563[0m
+[0;32mI (683557) quic_demo_main: APP_RTT seq=135 app_rtt_ms=68.037[0m
+[0;32mI (688587) quic_demo_main: APP_RTT seq=136 app_rtt_ms=87.595[0m
+[0;32mI (693617) quic_demo_main: APP_RTT seq=137 app_rtt_ms=107.324[0m
+[0;32mI (698547) quic_demo_main: APP_RTT seq=138 app_rtt_ms=27.344[0m
+[0;32mI (703577) quic_demo_main: APP_RTT seq=139 app_rtt_ms=47.572[0m
+[0;32mI (708607) quic_demo_main: APP_RTT seq=140 app_rtt_ms=67.692[0m
+[0;32mI (713637) quic_demo_main: APP_RTT seq=141 app_rtt_ms=87.773[0m
+[0;32mI (718667) quic_demo_main: APP_RTT seq=142 app_rtt_ms=107.332[0m
+[0;32mI (723697) quic_demo_main: APP_RTT seq=143 app_rtt_ms=128.781[0m
+[0;32mI (728627) quic_demo_main: APP_RTT seq=144 app_rtt_ms=47.075[0m
+[0;32mI (733657) quic_demo_main: APP_RTT seq=145 app_rtt_ms=67.381[0m
+[0;32mI (738687) quic_demo_main: APP_RTT seq=146 app_rtt_ms=87.132[0m
+[0;32mI (743717) quic_demo_main: APP_RTT seq=147 app_rtt_ms=107.469[0m
+[0;32mI (748647) quic_demo_main: APP_RTT seq=148 app_rtt_ms=27.541[0m
+[0;32mI (753677) quic_demo_main: APP_RTT seq=149 app_rtt_ms=47.720[0m
+[0;32mI (758707) quic_demo_main: APP_RTT seq=150 app_rtt_ms=67.738[0m
+[0;32mI (763737) quic_demo_main: APP_RTT seq=151 app_rtt_ms=87.631[0m
+[0;32mI (768767) quic_demo_main: APP_RTT seq=152 app_rtt_ms=107.523[0m
+[0;32mI (773697) quic_demo_main: APP_RTT seq=153 app_rtt_ms=28.068[0m
+[0;32mI (778727) quic_demo_main: APP_RTT seq=154 app_rtt_ms=47.395[0m
+[0;32mI (783757) quic_demo_main: APP_RTT seq=155 app_rtt_ms=67.848[0m
+[0;32mI (788787) quic_demo_main: APP_RTT seq=156 app_rtt_ms=87.524[0m
+[0;32mI (793817) quic_demo_main: APP_RTT seq=157 app_rtt_ms=106.966[0m
+[0;32mI (798747) quic_demo_main: APP_RTT seq=158 app_rtt_ms=27.092[0m
+[0;32mI (803777) quic_demo_main: APP_RTT seq=159 app_rtt_ms=46.698[0m
+[0;32mI (808807) quic_demo_main: APP_RTT seq=160 app_rtt_ms=67.632[0m
+[0;32mI (813837) quic_demo_main: APP_RTT seq=161 app_rtt_ms=87.643[0m
+[0;32mI (818867) quic_demo_main: APP_RTT seq=162 app_rtt_ms=107.589[0m
+[0;32mI (823797) quic_demo_main: APP_RTT seq=163 app_rtt_ms=29.140[0m
+[0;32mI (828827) quic_demo_main: APP_RTT seq=164 app_rtt_ms=47.566[0m
+[0;32mI (833857) quic_demo_main: APP_RTT seq=165 app_rtt_ms=67.539[0m
+[0;32mI (838887) quic_demo_main: APP_RTT seq=166 app_rtt_ms=87.498[0m
+[0;32mI (843917) quic_demo_main: APP_RTT seq=167 app_rtt_ms=107.405[0m
+[0;32mI (848847) quic_demo_main: APP_RTT seq=168 app_rtt_ms=27.425[0m
+[0;32mI (853877) quic_demo_main: APP_RTT seq=169 app_rtt_ms=47.265[0m
+[0;32mI (858907) quic_demo_main: APP_RTT seq=170 app_rtt_ms=67.504[0m
+[0;32mI (863937) quic_demo_main: APP_RTT seq=171 app_rtt_ms=87.696[0m
+[0;32mI (868967) quic_demo_main: APP_RTT seq=172 app_rtt_ms=107.184[0m
+[0;32mI (873897) quic_demo_main: APP_RTT seq=173 app_rtt_ms=27.586[0m
+[0;32mI (878927) quic_demo_main: APP_RTT seq=174 app_rtt_ms=47.510[0m
+[0;32mI (883957) quic_demo_main: APP_RTT seq=175 app_rtt_ms=67.923[0m
+[0;32mI (888987) quic_demo_main: APP_RTT seq=176 app_rtt_ms=87.777[0m
+[0;32mI (894017) quic_demo_main: APP_RTT seq=177 app_rtt_ms=107.392[0m
+[0;32mI (898947) quic_demo_main: APP_RTT seq=178 app_rtt_ms=27.498[0m
+[0;32mI (903977) quic_demo_main: APP_RTT seq=179 app_rtt_ms=48.558[0m
+[0;32mI (909007) quic_demo_main: APP_RTT seq=180 app_rtt_ms=67.758[0m
+[0;32mI (914037) quic_demo_main: APP_RTT seq=181 app_rtt_ms=87.672[0m
+[0;32mI (919067) quic_demo_main: APP_RTT seq=182 app_rtt_ms=107.465[0m
+[0;32mI (923997) quic_demo_main: APP_RTT seq=183 app_rtt_ms=27.911[0m
+[0;32mI (929027) quic_demo_main: APP_RTT seq=184 app_rtt_ms=47.188[0m
+[0;32mI (934057) quic_demo_main: APP_RTT seq=185 app_rtt_ms=67.195[0m
+[0;32mI (939087) quic_demo_main: APP_RTT seq=186 app_rtt_ms=86.870[0m
+[0;32mI (944117) quic_demo_main: APP_RTT seq=187 app_rtt_ms=108.016[0m
+[0;32mI (949047) quic_demo_main: APP_RTT seq=188 app_rtt_ms=27.579[0m
+[0;32mI (954077) quic_demo_main: APP_RTT seq=189 app_rtt_ms=47.733[0m
+[0;32mI (959107) quic_demo_main: APP_RTT seq=190 app_rtt_ms=67.884[0m
+[0;32mI (964137) quic_demo_main: APP_RTT seq=191 app_rtt_ms=87.653[0m
+[0;32mI (969167) quic_demo_main: APP_RTT seq=192 app_rtt_ms=107.588[0m
+[0;32mI (974097) quic_demo_main: APP_RTT seq=193 app_rtt_ms=27.933[0m
+[0;32mI (979127) quic_demo_main: APP_RTT seq=194 app_rtt_ms=47.385[0m
+[0;32mI (984157) quic_demo_main: APP_RTT seq=195 app_rtt_ms=68.698[0m
+[0;32mI (989187) quic_demo_main: APP_RTT seq=196 app_rtt_ms=87.438[0m
+[0;32mI (994217) quic_demo_main: APP_RTT seq=197 app_rtt_ms=107.306[0m
+[0;32mI (999147) quic_demo_main: APP_RTT seq=198 app_rtt_ms=27.151[0m
+[0;32mI (1004177) quic_demo_main: APP_RTT seq=199 app_rtt_ms=47.143[0m
+[0;32mI (1009207) quic_demo_main: APP_RTT seq=200 app_rtt_ms=67.601[0m
+[0;32mI (1014237) quic_demo_main: APP_RTT seq=201 app_rtt_ms=87.732[0m
+[0;32mI (1019267) quic_demo_main: APP_RTT seq=202 app_rtt_ms=107.378[0m
+[0;32mI (1024197) quic_demo_main: APP_RTT seq=203 app_rtt_ms=28.129[0m
+[0;32mI (1029227) quic_demo_main: APP_RTT seq=204 app_rtt_ms=47.619[0m
+[0;32mI (1034257) quic_demo_main: APP_RTT seq=205 app_rtt_ms=67.966[0m
+[0;32mI (1039287) quic_demo_main: APP_RTT seq=206 app_rtt_ms=87.646[0m
+[0;32mI (1044317) quic_demo_main: APP_RTT seq=207 app_rtt_ms=107.577[0m
+[0;32mI (1049247) quic_demo_main: APP_RTT seq=208 app_rtt_ms=27.457[0m
+[0;32mI (1054277) quic_demo_main: APP_RTT seq=209 app_rtt_ms=47.418[0m
+[0;32mI (1059307) quic_demo_main: APP_RTT seq=210 app_rtt_ms=67.778[0m
+[0;32mI (1064337) quic_demo_main: APP_RTT seq=211 app_rtt_ms=87.236[0m
+[0;32mI (1069367) quic_demo_main: APP_RTT seq=212 app_rtt_ms=107.236[0m
+[0;32mI (1074297) quic_demo_main: APP_RTT seq=213 app_rtt_ms=27.668[0m
+[0;32mI (1079327) quic_demo_main: APP_RTT seq=214 app_rtt_ms=47.511[0m
+[0;32mI (1084357) quic_demo_main: APP_RTT seq=215 app_rtt_ms=68.014[0m
+[0;32mI (1089387) quic_demo_main: APP_RTT seq=216 app_rtt_ms=87.637[0m
+[0;32mI (1094417) quic_demo_main: APP_RTT seq=217 app_rtt_ms=107.581[0m
+[0;32mI (1099347) quic_demo_main: APP_RTT seq=218 app_rtt_ms=27.426[0m
+[0;32mI (1104377) quic_demo_main: APP_RTT seq=219 app_rtt_ms=47.508[0m
+[0;32mI (1109407) quic_demo_main: APP_RTT seq=220 app_rtt_ms=67.891[0m
+[0;32mI (1114437) quic_demo_main: APP_RTT seq=221 app_rtt_ms=87.373[0m
+[0;32mI (1119467) quic_demo_main: APP_RTT seq=222 app_rtt_ms=107.356[0m
+[0;32mI (1124397) quic_demo_main: APP_RTT seq=223 app_rtt_ms=27.800[0m
+[0;32mI (1129427) quic_demo_main: APP_RTT seq=224 app_rtt_ms=47.148[0m
+[0;32mI (1134457) quic_demo_main: APP_RTT seq=225 app_rtt_ms=67.304[0m
+[0;32mI (1139487) quic_demo_main: APP_RTT seq=226 app_rtt_ms=87.252[0m
+[0;32mI (1144517) quic_demo_main: APP_RTT seq=227 app_rtt_ms=107.822[0m
+[0;32mI (1149447) quic_demo_main: APP_RTT seq=228 app_rtt_ms=27.563[0m
+[0;32mI (1154477) quic_demo_main: APP_RTT seq=229 app_rtt_ms=47.573[0m
+[0;32mI (1159507) quic_demo_main: APP_RTT seq=230 app_rtt_ms=67.757[0m
+[0;32mI (1164537) quic_demo_main: APP_RTT seq=231 app_rtt_ms=87.812[0m
+[0;32mI (1169567) quic_demo_main: APP_RTT seq=232 app_rtt_ms=107.591[0m
+[0;32mI (1174497) quic_demo_main: APP_RTT seq=233 app_rtt_ms=27.944[0m
+[0;32mI (1179527) quic_demo_main: APP_RTT seq=234 app_rtt_ms=47.538[0m
+[0;32mI (1184557) quic_demo_main: APP_RTT seq=235 app_rtt_ms=67.667[0m
+[0;32mI (1189587) quic_demo_main: APP_RTT seq=236 app_rtt_ms=87.397[0m
+[0;32mI (1194617) quic_demo_main: APP_RTT seq=237 app_rtt_ms=107.157[0m
+[0;32mI (1199547) quic_demo_main: APP_RTT seq=238 app_rtt_ms=26.994[0m
+[0;32mI (1204577) quic_demo_main: APP_RTT seq=239 app_rtt_ms=46.933[0m
+[0;32mI (1209607) quic_demo_main: APP_RTT seq=240 app_rtt_ms=67.602[0m
+[0;32mI (1214637) quic_demo_main: APP_RTT seq=241 app_rtt_ms=87.625[0m
+[0;32mI (1219667) quic_demo_main: APP_RTT seq=242 app_rtt_ms=107.531[0m
+[0;32mI (1224597) quic_demo_main: APP_RTT seq=243 app_rtt_ms=28.123[0m
+[0;32mI (1229627) quic_demo_main: APP_RTT seq=244 app_rtt_ms=47.581[0m
+[0;32mI (1234657) quic_demo_main: APP_RTT seq=245 app_rtt_ms=68.008[0m
+[0;32mI (1239687) quic_demo_main: APP_RTT seq=246 app_rtt_ms=87.752[0m
+[0;32mI (1244717) quic_demo_main: APP_RTT seq=247 app_rtt_ms=107.476[0m
+[0;32mI (1249647) quic_demo_main: APP_RTT seq=248 app_rtt_ms=27.457[0m
+[0;32mI (1254677) quic_demo_main: APP_RTT seq=249 app_rtt_ms=47.333[0m
+[0;32mI (1259707) quic_demo_main: APP_RTT seq=250 app_rtt_ms=67.797[0m
+[0;32mI (1264737) quic_demo_main: APP_RTT seq=251 app_rtt_ms=87.322[0m
+[0;32mI (1269767) quic_demo_main: APP_RTT seq=252 app_rtt_ms=107.308[0m
+[0;32mI (1274697) quic_demo_main: APP_RTT seq=253 app_rtt_ms=27.783[0m
+[0;32mI (1279727) quic_demo_main: APP_RTT seq=254 app_rtt_ms=47.473[0m
+[0;32mI (1284757) quic_demo_main: APP_RTT seq=255 app_rtt_ms=67.885[0m
+[0;32mI (1289787) quic_demo_main: APP_RTT seq=256 app_rtt_ms=87.587[0m
+[0;32mI (1294817) quic_demo_main: APP_RTT seq=257 app_rtt_ms=107.539[0m
+[0;32mI (1299747) quic_demo_main: APP_RTT seq=258 app_rtt_ms=27.438[0m
+[0;32mI (1304877) quic_demo_main: APP_RTT seq=259 app_rtt_ms=147.726[0m
+[0;32mI (1309807) quic_demo_main: APP_RTT seq=260 app_rtt_ms=67.902[0m
+[0;32mI (1314837) quic_demo_main: APP_RTT seq=261 app_rtt_ms=87.525[0m
+[0;32mI (1319867) quic_demo_main: APP_RTT seq=262 app_rtt_ms=107.594[0m
+[0;32mI (1324797) quic_demo_main: APP_RTT seq=263 app_rtt_ms=27.556[0m
+[0;32mI (1329827) quic_demo_main: APP_RTT seq=264 app_rtt_ms=47.187[0m
+[0;32mI (1334857) quic_demo_main: APP_RTT seq=265 app_rtt_ms=67.314[0m
+[0;32mI (1339887) quic_demo_main: APP_RTT seq=266 app_rtt_ms=87.445[0m
+[0;32mI (1344917) quic_demo_main: APP_RTT seq=267 app_rtt_ms=107.408[0m
+[0;32mI (1349847) quic_demo_main: APP_RTT seq=268 app_rtt_ms=27.335[0m
+[0;32mI (1354877) quic_demo_main: APP_RTT seq=269 app_rtt_ms=47.359[0m
+[0;32mI (1359907) quic_demo_main: APP_RTT seq=270 app_rtt_ms=67.571[0m
+[0;32mI (1364937) quic_demo_main: APP_RTT seq=271 app_rtt_ms=87.522[0m
+[0;32mI (1369967) quic_demo_main: APP_RTT seq=272 app_rtt_ms=107.487[0m
+[0;32mI (1374897) quic_demo_main: APP_RTT seq=273 app_rtt_ms=27.782[0m
+[0;32mI (1379927) quic_demo_main: APP_RTT seq=274 app_rtt_ms=47.308[0m
+[0;32mI (1384957) quic_demo_main: APP_RTT seq=275 app_rtt_ms=67.197[0m
+[0;32mI (1389987) quic_demo_main: APP_RTT seq=276 app_rtt_ms=87.294[0m
+[0;32mI (1395017) quic_demo_main: APP_RTT seq=277 app_rtt_ms=106.995[0m
+[0;32mI (1399947) quic_demo_main: APP_RTT seq=278 app_rtt_ms=26.933[0m
+[0;32mI (1405077) quic_demo_main: APP_RTT seq=279 app_rtt_ms=146.355[0m
+[0;32mI (1410007) quic_demo_main: APP_RTT seq=280 app_rtt_ms=67.462[0m
+[0;32mI (1415037) quic_demo_main: APP_RTT seq=281 app_rtt_ms=87.449[0m
+[0;32mI (1420067) quic_demo_main: APP_RTT seq=282 app_rtt_ms=107.451[0m
+[0;32mI (1424997) quic_demo_main: APP_RTT seq=283 app_rtt_ms=27.829[0m
+[0;32mI (1430027) quic_demo_main: APP_RTT seq=284 app_rtt_ms=47.507[0m
+[0;32mI (1435057) quic_demo_main: APP_RTT seq=285 app_rtt_ms=67.648[0m
+[0;32mI (1440087) quic_demo_main: APP_RTT seq=286 app_rtt_ms=87.418[0m
+[0;32mI (1445117) quic_demo_main: APP_RTT seq=287 app_rtt_ms=107.304[0m
+[0;32mI (1450147) quic_demo_main: APP_RTT seq=288 app_rtt_ms=127.342[0m
+[0;32mI (1455077) quic_demo_main: APP_RTT seq=289 app_rtt_ms=47.041[0m
+[0;32mI (1460107) quic_demo_main: APP_RTT seq=290 app_rtt_ms=67.403[0m
+[0;32mI (1465137) quic_demo_main: APP_RTT seq=291 app_rtt_ms=86.883[0m
+[0;32mI (1470167) quic_demo_main: APP_RTT seq=292 app_rtt_ms=107.124[0m
+[0;32mI (1475097) quic_demo_main: APP_RTT seq=293 app_rtt_ms=27.008[0m
+[0;32mI (1480127) quic_demo_main: APP_RTT seq=294 app_rtt_ms=47.236[0m
+[0;32mI (1485157) quic_demo_main: APP_RTT seq=295 app_rtt_ms=67.466[0m
+[0;32mI (1490187) quic_demo_main: APP_RTT seq=296 app_rtt_ms=87.400[0m
+[0;32mI (1495217) quic_demo_main: APP_RTT seq=297 app_rtt_ms=107.287[0m
+[0;32mI (1500247) quic_demo_main: APP_RTT seq=298 app_rtt_ms=127.438[0m
+[0;32mI (1505177) quic_demo_main: APP_RTT seq=299 app_rtt_ms=47.300[0m
+[0;32mI (1510207) quic_demo_main: APP_RTT seq=300 app_rtt_ms=67.411[0m
+[0;32mI (1515237) quic_demo_main: APP_RTT seq=301 app_rtt_ms=87.543[0m
+[0;32mI (1520267) quic_demo_main: APP_RTT seq=302 app_rtt_ms=107.137[0m
+[0;32mI (1525197) quic_demo_main: APP_RTT seq=303 app_rtt_ms=27.783[0m
+[0;32mI (1530227) quic_demo_main: APP_RTT seq=304 app_rtt_ms=46.923[0m
+[0;32mI (1535257) quic_demo_main: APP_RTT seq=305 app_rtt_ms=67.024[0m
+[0;32mI (1540287) quic_demo_main: APP_RTT seq=306 app_rtt_ms=87.034[0m
+[0;32mI (1545317) quic_demo_main: APP_RTT seq=307 app_rtt_ms=107.093[0m
+[0;32mI (1550247) quic_demo_main: APP_RTT seq=308 app_rtt_ms=27.430[0m
+[0;32mI (1555277) quic_demo_main: APP_RTT seq=309 app_rtt_ms=47.262[0m
+[0;32mI (1560307) quic_demo_main: APP_RTT seq=310 app_rtt_ms=67.639[0m
+[0;32mI (1565337) quic_demo_main: APP_RTT seq=311 app_rtt_ms=87.419[0m
+[0;32mI (1570367) quic_demo_main: APP_RTT seq=312 app_rtt_ms=107.338[0m
+[0;32mI (1575297) quic_demo_main: APP_RTT seq=313 app_rtt_ms=27.700[0m
+[0;32mI (1580327) quic_demo_main: APP_RTT seq=314 app_rtt_ms=47.255[0m
+[0;32mI (1585357) quic_demo_main: APP_RTT seq=315 app_rtt_ms=67.196[0m
+[0;32mI (1590387) quic_demo_main: APP_RTT seq=316 app_rtt_ms=87.346[0m
+[0;32mI (1595417) quic_demo_main: APP_RTT seq=317 app_rtt_ms=107.678[0m
+[0;32mI (1600347) quic_demo_main: APP_RTT seq=318 app_rtt_ms=26.834[0m
+[0;32mI (1605377) quic_demo_main: APP_RTT seq=319 app_rtt_ms=47.046[0m
+[0;32mI (1610407) quic_demo_main: APP_RTT seq=320 app_rtt_ms=66.878[0m
+[0;32mI (1615437) quic_demo_main: APP_RTT seq=321 app_rtt_ms=87.333[0m
+[0;32mI (1620467) quic_demo_main: APP_RTT seq=322 app_rtt_ms=107.314[0m
+[0;32mI (1625397) quic_demo_main: APP_RTT seq=323 app_rtt_ms=27.705[0m
+[0;32mI (1630427) quic_demo_main: APP_RTT seq=324 app_rtt_ms=47.332[0m
+[0;32mI (1635457) quic_demo_main: APP_RTT seq=325 app_rtt_ms=67.485[0m
+[0;32mI (1640487) quic_demo_main: APP_RTT seq=326 app_rtt_ms=87.427[0m
+[0;32mI (1645517) quic_demo_main: APP_RTT seq=327 app_rtt_ms=107.427[0m
+[0;32mI (1650447) quic_demo_main: APP_RTT seq=328 app_rtt_ms=27.132[0m
+[0;32mI (1655577) quic_demo_main: APP_RTT seq=329 app_rtt_ms=147.139[0m
+[0;32mI (1660507) quic_demo_main: APP_RTT seq=330 app_rtt_ms=67.407[0m
+[0;32mI (1665537) quic_demo_main: APP_RTT seq=331 app_rtt_ms=87.115[0m
+[0;32mI (1670567) quic_demo_main: APP_RTT seq=332 app_rtt_ms=107.032[0m
+[0;32mI (1675497) quic_demo_main: APP_RTT seq=333 app_rtt_ms=27.351[0m
+[0;32mI (1680527) quic_demo_main: APP_RTT seq=334 app_rtt_ms=47.367[0m
+[0;32mI (1685557) quic_demo_main: APP_RTT seq=335 app_rtt_ms=67.753[0m
+[0;32mI (1690587) quic_demo_main: APP_RTT seq=336 app_rtt_ms=87.409[0m
+[0;32mI (1695617) quic_demo_main: APP_RTT seq=337 app_rtt_ms=107.262[0m
+[0;32mI (1700547) quic_demo_main: APP_RTT seq=338 app_rtt_ms=27.110[0m
+[0;32mI (1705577) quic_demo_main: APP_RTT seq=339 app_rtt_ms=47.186[0m
+[0;32mI (1710607) quic_demo_main: APP_RTT seq=340 app_rtt_ms=67.459[0m
+[0;32mI (1715637) quic_demo_main: APP_RTT seq=341 app_rtt_ms=87.351[0m
+[0;32mI (1720667) quic_demo_main: APP_RTT seq=342 app_rtt_ms=107.279[0m
+[0;32mI (1725597) quic_demo_main: APP_RTT seq=343 app_rtt_ms=27.657[0m
+[0;32mI (1730627) quic_demo_main: APP_RTT seq=344 app_rtt_ms=46.913[0m
+[0;32mI (1735657) quic_demo_main: APP_RTT seq=345 app_rtt_ms=66.894[0m
+[0;32mI (1740687) quic_demo_main: APP_RTT seq=346 app_rtt_ms=86.913[0m
+[0;32mI (1745717) quic_demo_main: APP_RTT seq=347 app_rtt_ms=107.349[0m
+[0;32mI (1750647) quic_demo_main: APP_RTT seq=348 app_rtt_ms=27.274[0m
+[0;32mI (1755677) quic_demo_main: APP_RTT seq=349 app_rtt_ms=47.456[0m
+[0;32mI (1760707) quic_demo_main: APP_RTT seq=350 app_rtt_ms=67.566[0m
+[0;32mI (1765737) quic_demo_main: APP_RTT seq=351 app_rtt_ms=87.576[0m
+[0;32mI (1770767) quic_demo_main: APP_RTT seq=352 app_rtt_ms=107.426[0m
+[0;32mI (1775697) quic_demo_main: APP_RTT seq=353 app_rtt_ms=27.952[0m
+[0;32mI (1780727) quic_demo_main: APP_RTT seq=354 app_rtt_ms=47.486[0m
+[0;32mI (1785757) quic_demo_main: APP_RTT seq=355 app_rtt_ms=67.474[0m
+[0;32mI (1790787) quic_demo_main: APP_RTT seq=356 app_rtt_ms=87.460[0m
+[0;32mI (1795817) quic_demo_main: APP_RTT seq=357 app_rtt_ms=107.366[0m
+[0;32mI (1800747) quic_demo_main: APP_RTT seq=358 app_rtt_ms=27.360[0m
+[0;32mI (1805777) quic_demo_main: APP_RTT seq=359 app_rtt_ms=47.219[0m
+[0;32mI (1810807) quic_demo_main: APP_RTT seq=360 app_rtt_ms=67.208[0m
+[0;32mI (1815837) quic_demo_main: APP_RTT seq=361 app_rtt_ms=87.562[0m
+[0;32mI (1820867) quic_demo_main: APP_RTT seq=362 app_rtt_ms=107.494[0m
+[0;32mI (1825797) quic_demo_main: APP_RTT seq=363 app_rtt_ms=28.022[0m
+[0;32mI (1830827) quic_demo_main: APP_RTT seq=364 app_rtt_ms=47.481[0m
+[0;32mI (1836157) quic_demo_main: APP_RTT seq=365 app_rtt_ms=367.506[0m
+[0;32mI (1840887) quic_demo_main: APP_RTT seq=366 app_rtt_ms=87.818[0m
+[0;32mI (1845917) quic_demo_main: APP_RTT seq=367 app_rtt_ms=107.418[0m
+[0;32mI (1850847) quic_demo_main: APP_RTT seq=368 app_rtt_ms=27.222[0m
+[0;32mI (1855877) quic_demo_main: APP_RTT seq=369 app_rtt_ms=47.210[0m
+[0;32mI (1860907) quic_demo_main: APP_RTT seq=370 app_rtt_ms=67.586[0m
+[0;32mI (1865937) quic_demo_main: APP_RTT seq=371 app_rtt_ms=87.128[0m
+[0;32mI (1870967) quic_demo_main: APP_RTT seq=372 app_rtt_ms=107.122[0m
+[0;32mI (1875897) quic_demo_main: APP_RTT seq=373 app_rtt_ms=27.576[0m
+[0;32mI (1880927) quic_demo_main: APP_RTT seq=374 app_rtt_ms=47.445[0m
+[0;32mI (1885957) quic_demo_main: APP_RTT seq=375 app_rtt_ms=67.763[0m
+[0;32mI (1890987) quic_demo_main: APP_RTT seq=376 app_rtt_ms=87.577[0m
+[0;32mI (1896017) quic_demo_main: APP_RTT seq=377 app_rtt_ms=107.505[0m
+[0;32mI (1900947) quic_demo_main: APP_RTT seq=378 app_rtt_ms=27.507[0m
+[0;32mI (1905977) quic_demo_main: APP_RTT seq=379 app_rtt_ms=47.522[0m
+[0;32mI (1911007) quic_demo_main: APP_RTT seq=380 app_rtt_ms=67.596[0m
+[0;32mI (1916037) quic_demo_main: APP_RTT seq=381 app_rtt_ms=87.623[0m
+[0;32mI (1921067) quic_demo_main: APP_RTT seq=382 app_rtt_ms=107.357[0m
+[0;32mI (1925997) quic_demo_main: APP_RTT seq=383 app_rtt_ms=27.749[0m
+[0;32mI (1931027) quic_demo_main: APP_RTT seq=384 app_rtt_ms=46.836[0m
+[0;32mI (1936057) quic_demo_main: APP_RTT seq=385 app_rtt_ms=67.201[0m
+[0;32mI (1941087) quic_demo_main: APP_RTT seq=386 app_rtt_ms=87.339[0m
+[0;32mI (1946117) quic_demo_main: APP_RTT seq=387 app_rtt_ms=107.174[0m
+[0;32mI (1951047) quic_demo_main: APP_RTT seq=388 app_rtt_ms=27.411[0m
+[0;32mI (1956077) quic_demo_main: APP_RTT seq=389 app_rtt_ms=47.474[0m
+[0;32mI (1961107) quic_demo_main: APP_RTT seq=390 app_rtt_ms=67.561[0m
+[0;32mI (1966137) quic_demo_main: APP_RTT seq=391 app_rtt_ms=87.709[0m
+[0;32mI (1971167) quic_demo_main: APP_RTT seq=392 app_rtt_ms=107.339[0m
+[0;32mI (1976097) quic_demo_main: APP_RTT seq=393 app_rtt_ms=27.918[0m
+[0;32mI (1981127) quic_demo_main: APP_RTT seq=394 app_rtt_ms=47.428[0m
+[0;32mI (1986157) quic_demo_main: APP_RTT seq=395 app_rtt_ms=67.688[0m
+[0;32mI (1991187) quic_demo_main: APP_RTT seq=396 app_rtt_ms=87.461[0m
+[0;32mI (1996217) quic_demo_main: APP_RTT seq=397 app_rtt_ms=107.360[0m
+[0;32mI (2001147) quic_demo_main: APP_RTT seq=398 app_rtt_ms=27.200[0m
+[0;32mI (2006177) quic_demo_main: APP_RTT seq=399 app_rtt_ms=47.080[0m
+[0;32mI (2011207) quic_demo_main: APP_RTT seq=400 app_rtt_ms=67.621[0m
+[0;32mI (2016237) quic_demo_main: APP_RTT seq=401 app_rtt_ms=87.546[0m
+[0;32mI (2021267) quic_demo_main: APP_RTT seq=402 app_rtt_ms=107.615[0m
+[0;32mI (2026197) quic_demo_main: APP_RTT seq=403 app_rtt_ms=27.990[0m
+[0;32mI (2031227) quic_demo_main: APP_RTT seq=404 app_rtt_ms=47.698[0m
+[0;32mI (2036257) quic_demo_main: APP_RTT seq=405 app_rtt_ms=67.842[0m
+[0;32mI (2041287) quic_demo_main: APP_RTT seq=406 app_rtt_ms=87.609[0m
+[0;32mI (2046317) quic_demo_main: APP_RTT seq=407 app_rtt_ms=107.522[0m
+[0;32mI (2051247) quic_demo_main: APP_RTT seq=408 app_rtt_ms=27.283[0m
+[0;32mI (2056277) quic_demo_main: APP_RTT seq=409 app_rtt_ms=47.244[0m
+[0;32mI (2061307) quic_demo_main: APP_RTT seq=410 app_rtt_ms=67.403[0m
+[0;32mI (2066337) quic_demo_main: APP_RTT seq=411 app_rtt_ms=87.117[0m
+[0;32mI (2071367) quic_demo_main: APP_RTT seq=412 app_rtt_ms=107.242[0m
+[0;32mI (2076297) quic_demo_main: APP_RTT seq=413 app_rtt_ms=27.564[0m
+[0;32mI (2081327) quic_demo_main: APP_RTT seq=414 app_rtt_ms=47.063[0m
+[0;32mI (2086357) quic_demo_main: APP_RTT seq=415 app_rtt_ms=67.582[0m
+[0;32mI (2091387) quic_demo_main: APP_RTT seq=416 app_rtt_ms=87.573[0m
+[0;32mI (2096417) quic_demo_main: APP_RTT seq=417 app_rtt_ms=107.627[0m
+[0;32mI (2101347) quic_demo_main: APP_RTT seq=418 app_rtt_ms=27.372[0m
+[0;32mI (2106377) quic_demo_main: APP_RTT seq=419 app_rtt_ms=47.426[0m

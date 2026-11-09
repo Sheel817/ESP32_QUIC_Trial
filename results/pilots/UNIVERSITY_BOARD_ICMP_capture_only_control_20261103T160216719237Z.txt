@@ -1,0 +1,45 @@
+ICMP capture-only control
+Condition: university board, ICMP capture-only control, Clumsy capturing, all effects disabled — operator-reported.
+Command: ping.exe /n 30 /w 2000 192.168.137.11
+UTC start: 2026-11-03T16:02:16.719276+00:00
+
+
+Pinging 192.168.137.11 with 32 bytes of data:
+Reply from 192.168.137.11: bytes=32 time=187ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=86ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=100ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=213ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=429ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=349ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=268ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=77ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=403ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=423ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=241ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=54ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=68ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=325ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=310ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=113ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=20ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=178ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=458ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=474ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=290ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=100ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=150ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=236ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=461ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=473ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=186ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=130ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=21ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=34ms TTL=64
+
+Ping statistics for 192.168.137.11:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 20ms, Maximum = 474ms, Average = 228ms
+
+UTC end: 2026-11-03T16:02:45.988958+00:00
+Exit code: 0

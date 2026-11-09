@@ -1,0 +1,23 @@
+{
+  "stdout": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+    "byte_offset": 1533457,
+    "prefix_sha256": "48b8bf1d085ad95b22a2f7ae8309003ba993ff58fd64aff81376b70f36e786ae",
+    "historical": true,
+    "anchor_utc": "2026-11-07T03:09:19.159995+00:00"
+  },
+  "stderr": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+    "byte_offset": 211,
+    "prefix_sha256": "947d1f13c2486d535d32c81301d9e994023085f8938a0ec54aac37a0bdba4dd5",
+    "historical": true,
+    "anchor_utc": "2026-11-07T03:09:19.159995+00:00"
+  },
+  "sensor_csv": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+    "byte_offset": 834224,
+    "prefix_sha256": "ae9e7bc6ff9aaacfc972936286c3644c0fa7525fe56ed80b77a5ea7157028c5e",
+    "historical": true,
+    "anchor_utc": "2026-11-07T03:09:19.159995+00:00"
+  }
+}

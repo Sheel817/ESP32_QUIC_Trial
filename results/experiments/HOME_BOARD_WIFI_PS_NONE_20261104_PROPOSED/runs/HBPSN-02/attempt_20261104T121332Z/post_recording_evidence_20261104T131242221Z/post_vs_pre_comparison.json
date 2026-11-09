@@ -1,0 +1,35 @@
+{
+  "pre_image": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\clumsy_actual_pre_reset.jpg",
+  "pre_sha256": "338fe985dccaca6cd3e03b6b9cdaa51ed000636424438bca2ea4b8d1a08af829",
+  "pre_capture_started_utc": "2026-11-04T12:17:11.463Z",
+  "pre_capture_completed_utc": "2026-11-04T12:17:11.943Z",
+  "post_image": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/post_recording_evidence_20261104T131242221Z/HBPSN-02_Clumsy_POST_RECORDING.jpg",
+  "post_sha256": "7bc9f9b58ecd6adb835907f52cc500045181a4ce8c9f3f2d308d78b960fd553b",
+  "post_capture_started_utc": "2026-11-04T13:12:42.221Z",
+  "post_capture_completed_utc": "2026-11-04T13:12:42.694Z",
+  "visible_settings_match": true,
+  "settings": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "post_capture_started_seconds_after_deadline": 1094.940958,
+  "operator_stability_confirmation": "PENDING",
+  "validity": "NOT_APPROVED / PENDING_EVIDENCE_REVIEW",
+  "original_automatic_missing_image_flag_preserved": true,
+  "note": "No settings changed by agent before capture. Matching point-in-time images do not establish continuous stability or operator actions between them. The frozen plan has no numerical post-image deadline; 30 seconds was an implementation wait only."
+}

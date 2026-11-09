@@ -1,0 +1,117 @@
+{
+  "startup_crash_reboot_context.raw.log": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "source_byte_start_inclusive": 0,
+    "source_byte_end_exclusive": 32479,
+    "source_first_line": 1,
+    "source_last_line": 370,
+    "bytes": 32479,
+    "sha256": "d4de7e83d3329e6b74257c6b99916113b84ed4c86cf6503cd32dc2076472d767",
+    "first_receipt": {
+      "utc": "2026-11-05T20:24:54.424807+00:00",
+      "monotonic": 664603.7408489,
+      "offset": 0,
+      "length": 46,
+      "monitor_stream_offset": 446
+    },
+    "last_receipt": {
+      "utc": "2026-11-05T20:25:11.849258+00:00",
+      "monotonic": 664621.1653005,
+      "offset": 32407,
+      "length": 72,
+      "monitor_stream_offset": 32853
+    }
+  },
+  "first_crash_complete.raw.log": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "source_byte_start_inclusive": 11668,
+    "source_byte_end_exclusive": 20662,
+    "source_first_line": 149,
+    "source_last_line": 219,
+    "bytes": 8994,
+    "sha256": "b2af4c44211e80d7323ef992dfdffbdf91d2692e925c76c9b478cccb52871c73",
+    "first_receipt": {
+      "utc": "2026-11-05T20:25:02.748445+00:00",
+      "monotonic": 664612.0644768,
+      "offset": 11668,
+      "length": 107,
+      "monitor_stream_offset": 12114
+    },
+    "last_receipt": {
+      "utc": "2026-11-05T20:25:03.147120+00:00",
+      "monotonic": 664612.4631641,
+      "offset": 20628,
+      "length": 34,
+      "monitor_stream_offset": 21074
+    }
+  },
+  "register_dump.raw.log": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "source_byte_start_inclusive": 11841,
+    "source_byte_end_exclusive": 13081,
+    "source_first_line": 152,
+    "source_last_line": 162,
+    "bytes": 1240,
+    "sha256": "a20eb7e74e1d309e3439b3f56e34ff636b8bef858a89a31fb7a76cb85d689a5e",
+    "first_receipt": {
+      "utc": "2026-11-05T20:25:02.759266+00:00",
+      "monotonic": 664612.0753055,
+      "offset": 11841,
+      "length": 110,
+      "monitor_stream_offset": 12287
+    },
+    "last_receipt": {
+      "utc": "2026-11-05T20:25:02.828557+00:00",
+      "monotonic": 664612.1446038,
+      "offset": 13037,
+      "length": 44,
+      "monitor_stream_offset": 13483
+    }
+  },
+  "stack_memory_and_original_decode_errors.raw.log": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "source_byte_start_inclusive": 13103,
+    "source_byte_end_exclusive": 20558,
+    "source_first_line": 164,
+    "source_last_line": 216,
+    "bytes": 7455,
+    "sha256": "1d65db9d2e2fdee3e65ef9d153c45be9280ef859910370038c7b70011f21633a",
+    "first_receipt": {
+      "utc": "2026-11-05T20:25:02.830139+00:00",
+      "monotonic": 664612.146174,
+      "offset": 13103,
+      "length": 35,
+      "monitor_stream_offset": 13549
+    },
+    "last_receipt": {
+      "utc": "2026-11-05T20:25:03.108600+00:00",
+      "monotonic": 664612.4246371,
+      "offset": 20536,
+      "length": 22,
+      "monitor_stream_offset": 20982
+    }
+  },
+  "reset_reason_and_following_startup.raw.log": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "source_byte_start_inclusive": 20662,
+    "source_byte_end_exclusive": 32479,
+    "source_first_line": 220,
+    "source_last_line": 370,
+    "bytes": 11817,
+    "sha256": "a5524dfddc220f1ec65b2785058b36effcca0ae87a8f6b5a2ed4c0c75895396a",
+    "first_receipt": {
+      "utc": "2026-11-05T20:25:03.149248+00:00",
+      "monotonic": 664612.4652821,
+      "offset": 20662,
+      "length": 46,
+      "monitor_stream_offset": 21108
+    },
+    "last_receipt": {
+      "utc": "2026-11-05T20:25:11.849258+00:00",
+      "monotonic": 664621.1653005,
+      "offset": 32407,
+      "length": 72,
+      "monitor_stream_offset": 32853
+    }
+  }
+}

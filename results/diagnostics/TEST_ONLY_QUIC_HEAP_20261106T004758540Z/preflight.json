@@ -1,0 +1,82 @@
+{
+  "label": "TEST_ONLY",
+  "status": "PASS",
+  "utc": "2026-11-06T00:51:46.616149+00:00",
+  "formal_collection_active": false,
+  "formal_finalization": {
+    "status": "FAILED_STARTUP",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "FAILED_STARTUP",
+    "finished_utc": "2026-11-05T21:02:24.869426+00:00",
+    "deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+    "selected_count": 0,
+    "shortfall": 415,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\SUMMARY.md"
+  },
+  "diagnostic_artifacts": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\quic_demo.bin",
+      "bytes": 1652336,
+      "sha256": "6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\quic_demo.elf",
+      "bytes": 17418112,
+      "sha256": "a8056d24f2e746d5f345b16e545e907f3339e6e87ea146895b57b1aaa7d32b70"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "201aab89981d1f3a52dea8da1d05bf81f7e6244d2e9ab7eaa73cb46fa618501e"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\flash_args",
+      "bytes": 150,
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\flasher_args.json",
+      "bytes": 933,
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    }
+  ],
+  "clumsy": {
+    "label": "TEST_ONLY",
+    "capture_started_utc": "2026-11-06T00:47:58.540Z",
+    "capture_completed_utc": "2026-11-06T00:47:59.499Z",
+    "image": "TEST_ONLY_Clumsy_PRE_FLASH.jpg",
+    "sha256": "f7caed5b0614e995a1c67cd66441e78afa4799822e60ee64a9a6d62b3a989972",
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    },
+    "status": "PASS",
+    "source_type": "ACTUAL_GUI_IMAGE",
+    "settings_changed": false
+  },
+  "host_activity": "Chrome Remote Desktop operator-reported; host apps may remain active. Not a formal RTT experiment.",
+  "observation_seconds": 180,
+  "max_core_recovery_extension_seconds": 120,
+  "override_from_proposed_120s": "Current user instruction sets180s plus at most120s for core already active at180s",
+  "one_application_boot_policy": "Identify into ROM without stub, flash with before=no-reset/after=no-reset. Logger opens with EN held low, then releases it once. No normal post-flash application boot precedes recording."
+}

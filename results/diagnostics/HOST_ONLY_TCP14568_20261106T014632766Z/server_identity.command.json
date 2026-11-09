@@ -1,0 +1,20 @@
+{
+  "name": "server_identity",
+  "argv": [
+    "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-CimInstance Win32_Process -Filter 'ProcessId=36536' | ConvertTo-Json -Depth 8"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:47:42.325614+00:00",
+  "ended_utc": "2026-11-06T01:47:43.892062+00:00",
+  "elapsed_seconds": 1.5664784000255167,
+  "exit_code": 0,
+  "stdout_bytes": 253035,
+  "stderr_bytes": 0,
+  "stdout_sha256": "743133ba06ca5dddf1a8812ec6da0f6fcdeb05d4c31556658a367ad2292a6f60",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exception": null
+}

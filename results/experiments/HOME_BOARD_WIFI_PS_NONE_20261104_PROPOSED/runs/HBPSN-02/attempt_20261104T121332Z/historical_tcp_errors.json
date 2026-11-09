@@ -1,0 +1,9 @@
+{
+  "scope": "Before designated HBPSN-02 reset only; never attributed to HBPSN-02",
+  "errors": [
+    "TCP+TLS ERROR: ",
+    "TCP+TLS ERROR: ",
+    "TCP+TLS ERROR: "
+  ],
+  "future_errors": "Every newly received line is retained in server.stderr.raw.log and its receipt index."
+}

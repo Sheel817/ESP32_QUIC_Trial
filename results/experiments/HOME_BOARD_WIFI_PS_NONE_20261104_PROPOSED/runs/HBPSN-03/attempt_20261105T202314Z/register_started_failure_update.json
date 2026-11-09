@@ -1,0 +1,10 @@
+{
+  "updated_utc": "2026-11-05T20:27:34.398Z",
+  "run_id": "HBPSN-03",
+  "status": "FAILED_STARTUP",
+  "processing_status": "RECORDING_ORIGINAL_FIXED_WINDOW",
+  "validity_status": "NOT_APPROVED",
+  "other_17_rows_unchanged": true,
+  "hbpsn01_unchanged": true,
+  "hbpsn02_unchanged": true
+}

@@ -1,0 +1,17 @@
+# HBPSN-05 QUIC LAG100_OUT — RUNNING
+
+Actual measured start **2026-11-06T15:13:20.156359+02:00**. Fixed finish **2026-11-06T15:50:20.156359+02:00**, exactly2220 monotonic seconds from controlled-reset release. UTC 2026-11-06T13:13:20.156359+00:00–2026-11-06T13:50:20.156359+00:00. Host API completion anchor, not a measured electrical edge. No retry or extension.
+
+HOME_BOARD COM6 / MAC40:4c:ca:56:bb:b0, actual IP **192.168.137.112**. Preserved formal QUIC WIFI_PS_NONE application6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198; matching ELF9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d. All3 flashed image verifications passed. No rebuild, source or application-setting edit. [Flash](./flash.log), [preflight/hash provenance](./preflight.json), [setup resets](./identification_reset.json).
+
+This measured startup independently passed QUIC/MQTT connection and subscription, matching ELF prefix, explicit requested/returned WIFI_PS_NONE(0), TLS1.3 / TLS_AES_128_GCM_SHA256 / suite0x1301 / ALPNmqtt / certificate verification NONE(mode0). [Startup checks](./startup_checks.json). Formal QUIC firmware remains on board. Unresolved earlier QUIC crash remains documented; this passing startup does not establish a fix.
+
+Fresh actual [pre-reset image](./clumsy_actual_pre_reset.jpg) captured 2026-11-06T13:13:01.204Z–2026-11-06T13:13:01.560Z, SHA256 `27a74e61624f5dd59798b32bcaf76fd6af1014b32a7e568562b3fc98107ff0ff`. Exact `udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)`; capture running; only Lag100ms enabled, outbound checked, inbound unchecked, all other main effects off. Configured impairment is not a per-packet latency claim. [Nonce-linked image evidence](./pre_run_settings_check.json).
+
+Persistent collector **repaired-v2-manual-review-gate**, SHA256 `381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a`, PID22660; monitorPID6148. [Version](./collector_version.json), [heartbeat](./heartbeat.json), [reset anchor](./reset_event.json). Independent deadline worker finalizes after the agent reply; heartbeat/report failures do not extend the window. A post-deadline image request is not an actual image; absence remains flagged. Collector cannot operate the GUI, so post-image requires an active observer/operator.
+
+Live output: [fixed-window serial](./serial.raw.log), [serial receipts](./serial_receipts.jsonl), [server stdout](./server.stdout.raw.log), [stderr](./server.stderr.raw.log), [sensor CSV tail](./server.sensor_csv.raw.log). At measured release fresh source offsets were stdout2520486, stderr0, sensor CSV1368966. Historical bytes/errors kept separately in [prefix snapshots and hashes](./historical_prefix_boundaries.json). Actual environment/hotspot/server processes: [preflight](./system_preflight.json). Chrome Remote Desktop usage operator-reported.
+
+Retain entire37minutes; initial measured boot only, exclude ESP log uptime below60000ms and at/above2220000ms, select first415 eligible matched RTTs in arrival order. Preserve extras/outliers/errors/resets/gaps and report shortfalls. Do not extend or pool subsequent boots.
+
+Final validity **NOT_APPROVED / PENDING_MANUAL_REVIEW** until actual post-recording screenshot and operator stability review. Collector30-second evidence wait is not a frozen lateness cutoff. Only HBPSN-05 RUNNING row changed in both registers. HBPSN-01 FAILED_SETTINGS, HBPSN-02 COMPLETE with flags, HBPSN-03 FAILED_STARTUP, HBPSN-04 COMPLETE with flags remain unchanged. No further run before review. [Register audit](./registers_applied_running.json).

@@ -1,0 +1,11 @@
+{
+  "run_id": "HBPSN-06",
+  "recorded_utc": "2026-11-07T02:52:44.930452+00:00",
+  "question": "For HBPSN-06 specifically, did filter/effects/capture remain unchanged, no Stop/Start or close/reopen, from7November2026,04:04:34.927Helsinki through04:50:58.162Helsinki? Please give exact statement.",
+  "covered_interval_start_utc": "2026-11-07T02:04:34.926538+00:00",
+  "covered_interval_end_utc": "2026-11-07T02:50:58.162Z",
+  "exact_answer": null,
+  "receipt_utc": null,
+  "status": "AWAITING_NEW_HBPSN06_SPECIFIC_REPLY",
+  "note": "Creation time of audit request, not earlier chat question presentation time. No answer inferred or borrowed from earlier runs."
+}

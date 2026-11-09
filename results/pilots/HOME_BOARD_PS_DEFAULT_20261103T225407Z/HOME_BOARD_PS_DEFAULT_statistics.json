@@ -1,0 +1,48 @@
+{
+  "condition": "HOME_BOARD; original/default-power-saving firmware; Clumsy stopped",
+  "assigned_ip": "192.168.137.212",
+  "elf_sha256": "4d62aef77a0d99d020416535822b3dc128a4404a54021cc4c69636e3b850845d",
+  "bin_sha256": "9fa08b1992f666747739799905aeffd9b79317607041e3c29446fae48c929323",
+  "reported_elf_digest_prefix": "4d62aef77",
+  "digest_comparison": "Reported prefix matches; full on-board digest not printed. Local ELF/bin full hashes match preserved checkpoint.",
+  "collection_complete_utc": "2026-11-03T22:56:18.920711+00:00",
+  "ping_start_utc": "2026-11-03T22:56:18.920770+00:00",
+  "ping_end_utc": "2026-11-03T22:56:48.528837+00:00",
+  "ping_command": [
+    "ping.exe",
+    "-n",
+    "30",
+    "-w",
+    "1000",
+    "192.168.137.212"
+  ],
+  "app_rtt_ms": [
+    85.493,
+    105.455,
+    25.358,
+    145.301,
+    65.392,
+    85.612,
+    105.234,
+    25.169,
+    45.144,
+    66.191
+  ],
+  "app_mean_ms": 75.4349,
+  "app_min_ms": 25.169,
+  "app_max_ms": 145.301,
+  "ping_replies": 30,
+  "ping_timeouts": 0,
+  "ping_other_failures": 0,
+  "ping_less_than_1_ms": 0,
+  "ping_integer_rtt_min_ms": 22.0,
+  "ping_integer_rtt_max_ms": 519.0,
+  "ping_integer_rtt_mean_ms": 268.8666666666667,
+  "ping_windows_summary": "Reply from 192.168.137.212: bytes=32 time=338ms TTL=64\n\nPing statistics for 192.168.137.212:\n    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 22ms, Maximum = 519ms, Average = 268ms",
+  "power_evidence": [
+    "2026-11-04T00:54:33 I (3323) wifi:pm start, type: 1, twt_start:0",
+    "2026-11-04T00:54:33 I (3323) wifi:pm start, type:1, aid:0x3, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0",
+    "2026-11-04T00:54:33 I (3333) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us",
+    "2026-11-04T00:54:33 I (3383) wifi:AP's beacon interval = 102400 us, DTIM period = 1"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "label": "HOME_BOARD TCP_TLS WIFI_PS_NONE startup smoke verification; formal runs NOT_RUN",
+  "started_utc": "2026-11-04T00:05:57.613449+00:00",
+  "wrapper_pid": 30948,
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "esp_idf_monitor",
+    "--port",
+    "COM6",
+    "--baud",
+    "115200",
+    "--target",
+    "esp32c6",
+    "--no-reset",
+    "--disable-auto-color",
+    "--timestamps",
+    "--timestamp-format",
+    "%Y-%m-%dT%H:%M:%S%z",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf"
+  ],
+  "clumsy_evidence": "No Clumsy effects enabled or settings changed by this smoke test; existing filter unchanged",
+  "monitor_pid": 25968,
+  "controlled_reset_requested_utc": "2026-11-04T00:05:59.620894+00:00",
+  "ended_utc": "2026-11-04T00:34:59.503103+00:00",
+  "exit_code": 0
+}

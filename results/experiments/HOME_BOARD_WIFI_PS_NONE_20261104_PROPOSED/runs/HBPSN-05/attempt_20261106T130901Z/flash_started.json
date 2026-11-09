@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-06T13:11:52.327530+00:00",
+  "command": [
+    "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+    "-m",
+    "esptool",
+    "--chip",
+    "esp32c6",
+    "--port",
+    "COM6",
+    "--baud",
+    "460800",
+    "--before",
+    "default-reset",
+    "--after",
+    "hard-reset",
+    "write-flash",
+    "@flash_args"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build",
+  "setup_only": true
+}

@@ -1,0 +1,3 @@
+transport,samples,minimum_ms,average_ms,median_ms,p95_ms,maximum_ms
+QUIC,415,25.051,67.769,65.703,105.843,145.776
+TCP_TLS,415,26.670,69.179,67.793,107.550,147.677

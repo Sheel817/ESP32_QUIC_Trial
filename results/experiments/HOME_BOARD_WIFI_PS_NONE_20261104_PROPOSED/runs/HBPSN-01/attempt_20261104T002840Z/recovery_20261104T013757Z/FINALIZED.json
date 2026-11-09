@@ -1,0 +1,9 @@
+{
+  "status": "FAILED_SETTINGS",
+  "recording_status": "RECOVERED_FIXED_WINDOW",
+  "recovered_utc": "2026-11-04T01:37:57.063869+00:00",
+  "original_window_unchanged": true,
+  "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\recovery_20261104T013757Z\\SUMMARY.md",
+  "selected_count": 415,
+  "register_updated": true
+}

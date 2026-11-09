@@ -78,8 +78,11 @@ static void io_monitor_task(void *arg) {
                                 .watcher = w,
                                 .revents = revents
                             };
+                            // Do not wait with io_mutex held: the event task may
+                            // be waiting for quic_mutex while cleanup holds it
+                            // and waits in ev_io_stop. select() retries readiness.
                             esp_event_post_to(loop->esp_event_loop, LIBEV_EVENTS, LIBEV_IO_EVENT,
-                                             &data, sizeof(data), portMAX_DELAY);
+                                             &data, sizeof(data), 0);
                         }
                     }
                 }

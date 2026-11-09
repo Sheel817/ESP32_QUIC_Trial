@@ -1,0 +1,124 @@
+{
+  "status": "PASS_READ_ONLY",
+  "system": {
+    "checked_utc": "2026-11-04T11:47:17.9929798Z",
+    "processes": [
+      {
+        "ProcessId": 36520,
+        "ParentProcessId": 28264,
+        "ExecutablePath": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe",
+        "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+      },
+      {
+        "ProcessId": 26228,
+        "ParentProcessId": 36520,
+        "ExecutablePath": "C:\\Users\\newsh\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+      }
+    ],
+    "listeners": [
+      {
+        "LocalAddress": "0.0.0.0",
+        "LocalPort": 14568,
+        "State": 1,
+        "OwningProcess": 26228
+      }
+    ]
+  },
+  "tls": {
+    "checked_utc": "2026-11-04T11:47:15.013076+00:00",
+    "context_load": "PASS",
+    "minimum_version": "TLSv1_3",
+    "maximum_version": "TLSv1_3",
+    "aes128_gcm_available": true,
+    "alpn_configured_from_source": "mqtt",
+    "certificate_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+    "note": "Disk context/cert/key load; separate local TLS-only preflight probe below. No board/MQTT test or negotiated run-session claim.",
+    "local_tls_only_probe": {
+      "started_utc": "2026-11-04T11:47:18.151137+00:00",
+      "completed_utc": "2026-11-04T11:47:18.203995+00:00",
+      "endpoint": "127.0.0.1:14568",
+      "negotiated": {
+        "tls": "TLSv1.3",
+        "cipher": [
+          "TLS_AES_256_GCM_SHA384",
+          "TLSv1.3",
+          256
+        ],
+        "alpn": "mqtt",
+        "peer_certificate_der_sha256": "fed2844dd91a687e2116bb21f356acc0e39839979ae9737dda1218ce8778a328"
+      },
+      "source_offsets_before_probe": {
+        "stdout": 61280,
+        "stderr": 51,
+        "sensor_csv": 32663
+      },
+      "purpose": "Preflight only; no MQTT/sensor publication; not ESP startup or HBPSN-02 run traffic",
+      "pass_all": true
+    },
+    "passive_state_limitation": "State-filtered Get-NetTCPConnection and netstat did not reliably expose LISTENING; PID/port association plus successful current TLS handshake establish readiness."
+  },
+  "source_checks": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tcp_tls_server.py",
+      "sha256": "4476abf265dc8b8a077d4e9a44d431a5ef8464ca65a35a24803e4047706e0e9e",
+      "expected_sha256": "4476abf265dc8b8a077d4e9a44d431a5ef8464ca65a35a24803e4047706e0e9e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+      "sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f",
+      "expected_sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+      "sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+      "expected_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+      "sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55",
+      "expected_sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55",
+      "matches": true
+    }
+  ],
+  "server_log_boundaries": {
+    "stdout": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+      "boundary_observed_utc_start": "2026-11-04T11:47:18.454418+00:00",
+      "boundary_observed_utc_end": "2026-11-04T11:47:18.474110+00:00",
+      "next_byte_offset": 61377,
+      "prefix_sha256": "c4209159c77c4e380093c78fb41cd1a4820a91572eb6a0b0e4ba8c9727442dfc",
+      "prefix_line_count": 721,
+      "ends_at_line_boundary": true,
+      "source_modified_utc": "2026-11-04T11:47:18.205036+00:00",
+      "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+    },
+    "stderr": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+      "boundary_observed_utc_start": "2026-11-04T11:47:18.477664+00:00",
+      "boundary_observed_utc_end": "2026-11-04T11:47:18.493953+00:00",
+      "next_byte_offset": 51,
+      "prefix_sha256": "c8037f828ce963c1d181a43b969a4aa38f1d83f117b7191dea07ea6f168b3cf9",
+      "prefix_line_count": 3,
+      "ends_at_line_boundary": true,
+      "source_modified_utc": "2026-11-04T00:36:52.263279+00:00",
+      "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+    },
+    "sensor_csv": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+      "boundary_observed_utc_start": "2026-11-04T11:47:18.496263+00:00",
+      "boundary_observed_utc_end": "2026-11-04T11:47:18.511997+00:00",
+      "next_byte_offset": 32663,
+      "prefix_sha256": "bc6348e8a0bbeefd4ebbf7d8071639636a9c0c34a43bf32cd45d3a0e4f130381",
+      "prefix_line_count": 355,
+      "ends_at_line_boundary": true,
+      "source_modified_utc": "2026-11-04T00:35:52.252527+00:00",
+      "scope": "Preflight-only EOF boundary; not a recording-start anchor. Re-snapshot at later authorized measured reset."
+    }
+  },
+  "historical_unattributed_error_count": 3,
+  "attribution_limit": "Existing log lines have no peer/session/timestamp. Byte and receipt-time separation prevents mixing historical lines into a later run, but does not by itself identify the peer responsible for future bare errors."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "a571963646f74b418d64b724221a9d79",
+    "requested_utc": "2026-11-07T03:09:00.848891+00:00",
+    "requested_monotonic": 775250.1650189,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "a571963646f74b418d64b724221a9d79",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "f677ee483e9a0d1116e29c7cfa7d9bd07ca646ca6078c625cf905a2150b1d72a",
+    "capture_started_utc": "2026-11-07T03:09:00.897Z",
+    "capture_completed_utc": "2026-11-07T03:09:01.272Z",
+    "capture_started_monotonic": 775250.2140189,
+    "capture_completed_monotonic": 775250.5890189,
+    "clock_provenance": "Actual UTC acquisition brackets; monotonic estimates from request UTC/monotonic bridge.",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-07 TCP_TLS DROP1_OUT actual pre-reset image; independent boot, no reflash"
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-07T03:09:16.076313+00:00"
+}

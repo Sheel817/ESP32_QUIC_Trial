@@ -1,0 +1,47 @@
+esptool v5.6.0
+Image size: 1637280 bytes
+Detected image type: ESP32-C6
+
+ESP32-C6 Image Header
+=====================
+Image version: 1
+Entry point: 0x40800612
+Segments: 5
+Flash size: 8MB
+Flash freq: 80m
+Flash mode: DIO
+
+ESP32-C6 Extended Image Header
+==============================
+WP pin: 0xee (disabled)
+Flash pins drive settings: clk_drv: 0x0, q_drv: 0x0, d_drv: 0x0, cs0_drv: 0x0, hd_drv: 0x0, wp_drv: 0x0
+Chip ID: 13 (ESP32-C6)
+Minimal chip revision: v0.0, (legacy min_rev = 0)
+Maximal chip revision: v0.99
+
+Segments Information
+====================
+Segment   Length   Load addr   File offs  Memory types
+-------  -------  ----------  ----------  ------------
+      0  0x420e8  0x42140020  0x00000018  DROM, IROM
+      1  0x0df08  0x40800000  0x00042108  DRAM, BYTE_ACCESSIBLE, IRAM
+      2  0x131468  0x42000020  0x00050018  DROM, IROM
+      3  0x0a680  0x4080df08  0x00181488  DRAM, BYTE_ACCESSIBLE, IRAM
+      4  0x0405c  0x40818590  0x0018bb10  DRAM, BYTE_ACCESSIBLE, IRAM
+
+ESP32-C6 Image Footer
+=====================
+Checksum: 0x71 (valid)
+Validation hash: 7c478d3020e38cab40519713d53bb6d396bca030b694087b48f0cc174020a4a0 (valid)
+
+Application Information
+=======================
+Project name: quic_demo
+App version: 3c8c7a3-dirty
+Compile time: Nov  3 2026 18:31:58
+ELF file SHA256: 9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d
+ESP-IDF: v6.1
+Minimal eFuse block revision: 0.0
+Maximal eFuse block revision: 0.99
+MMU page size: 64 KB
+Secure version: 0

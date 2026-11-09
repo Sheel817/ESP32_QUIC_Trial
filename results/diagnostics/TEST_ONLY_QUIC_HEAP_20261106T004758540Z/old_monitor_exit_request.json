@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-06T00:51:46.618983+00:00",
+  "collector": 16148,
+  "monitors": [
+    32192,
+    36012
+  ],
+  "method": "Existing post-finalization collector exit channel"
+}

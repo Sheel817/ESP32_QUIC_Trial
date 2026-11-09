@@ -1,0 +1,8 @@
+﻿{
+    "observed_utc":  "2026-11-04T00:38:22.5256362Z",
+    "filter":  "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture":  "RUNNING",
+    "effects":  "all unchecked",
+    "evidence":  "clumsy_before_start.jpg",
+    "source":  "GUI observed; user-reported correction"
+}

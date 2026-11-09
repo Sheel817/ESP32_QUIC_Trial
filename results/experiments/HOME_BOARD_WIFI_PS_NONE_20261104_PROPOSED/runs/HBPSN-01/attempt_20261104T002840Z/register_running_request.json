@@ -1,0 +1,15 @@
+{
+  "output_dir": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z",
+  "patch": {
+    "status": "RUNNING",
+    "preflight_status": "PASS",
+    "startup_status": "PASS",
+    "settings_evidence_type": "operator_reported_and_preflight_GUI_observed",
+    "boot_session_id": "HBPSN-01/2026-11-04T00:38:26.326642+00:00",
+    "reset_release_utc": "2026-11-04T00:38:26.326642+00:00",
+    "actual_assigned_ip": "192.168.137.212",
+    "metadata_path": "runs/HBPSN-01/attempt_20261104T002840Z/metadata.json",
+    "raw_serial_path": "runs/HBPSN-01/attempt_20261104T002840Z/serial.raw.log"
+  },
+  "final": false
+}

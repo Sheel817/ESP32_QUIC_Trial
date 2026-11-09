@@ -1,0 +1,98 @@
+{
+  "label": "TEST_ONLY",
+  "result": "NOT_REPRODUCED",
+  "observation_start_utc": "2026-11-06T00:52:21.973632+00:00",
+  "observation_deadline_utc": "2026-11-06T00:55:21.973632+00:00",
+  "completion": {
+    "label": "TEST_ONLY",
+    "utc": "2026-11-06T00:55:22.023046+00:00",
+    "start": {
+      "label": "TEST_ONLY",
+      "reset_request_utc": "2026-11-06T00:52:21.972832+00:00",
+      "reset_release_utc": "2026-11-06T00:52:21.973632+00:00",
+      "reset_release_monotonic": 680651.289664,
+      "observation_deadline_utc": "2026-11-06T00:55:21.973632+00:00",
+      "observation_deadline_monotonic": 680831.289664,
+      "maximum_core_end_utc": "2026-11-06T00:57:21.973632+00:00",
+      "maximum_core_end_monotonic": 680951.289664,
+      "method": "Espressif set_rts(PIN_HIGH) after logger ready and EN held low. Host anchor after successful API return, not physical-edge measurement.",
+      "server_boundaries": {
+        "stdout": {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+          "bytes": 2383662
+        },
+        "stderr": {
+          "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+          "bytes": 0
+        }
+      }
+    },
+    "observed_elapsed_seconds": 180.04950849991292,
+    "core_starts": [],
+    "core_ends": [],
+    "extension_core_id": null,
+    "core_incomplete": false,
+    "raw_bytes": 10993,
+    "raw_sha256": "98a0e269b7aca09ba4ea2dce84944bc289584e02b1781fdbb00215068c560b52",
+    "note": "Raw logger read chunks may straddle cutoff; receipt times retain primary180s versus recovery tail provenance. Later bytes route to separate after-capture file. No manual retry/reset.",
+    "firmware_remaining": "TEST_ONLY diagnostic BIN 6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb"
+  },
+  "application_boots": 1,
+  "automatic_reboots": 0,
+  "first_startup_captured": true,
+  "diagnostic_elf_prefix_confirmed": true,
+  "test_only_banner": true,
+  "wifi_ps_none_readback": true,
+  "ip": [
+    "192.168.137.112"
+  ],
+  "quic_connected": true,
+  "mqtt_connected": true,
+  "tls_lines": [
+    "I (7302) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)"
+  ],
+  "rtt_count": 34,
+  "sequence_gaps": [],
+  "warnings_errors_fault_lines": [
+    "W (712) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2",
+    "W (3272) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14",
+    "W (3482) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+  ],
+  "core_dumps": [],
+  "server_snapshots": [
+    {
+      "stream": "stdout",
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "start_offset": 2383662,
+      "end_offset": 2390061,
+      "snapshot": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\TEST_ONLY_server_stdout.snapshot.log",
+      "sha256": "ad43c25e85de4557c0e858bd91e36e12cfd58a0097302ca5993049288f9ed1c0",
+      "snapshot_utc": "2026-11-06T00:55:37.356741+00:00",
+      "note": "Snapshot extends to analysis time; host timestamps/contents must delimit primary window. No claim all bytes are within180s."
+    },
+    {
+      "stream": "stderr",
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+      "start_offset": 0,
+      "end_offset": 0,
+      "snapshot": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\TEST_ONLY_server_stderr.snapshot.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot_utc": "2026-11-06T00:55:37.359010+00:00",
+      "note": "Snapshot extends to analysis time; host timestamps/contents must delimit primary window. No claim all bytes are within180s."
+    }
+  ],
+  "heap_checkpoint_observability": "Passing checkpoints remain in RAM and are not printed on normal execution. Without a panic/core or failure trace, last passing checkpoint cannot be recovered from this UART record. No first failing checkpoint observed.",
+  "limitations": [
+    "One180-second instrumented boot cannot establish a fix.",
+    "Trace and heap checks perturb timing.",
+    "UART host receipt times and reset API return are host anchors, not physical edge measurements.",
+    "No RAM readback was attempted on a live healthy target."
+  ],
+  "protection": {
+    "utc": "2026-11-06T00:55:23.514249+00:00",
+    "count": 1701,
+    "all_unchanged": true,
+    "formal_registers_unchanged": true
+  },
+  "firmware_remaining": "TEST_ONLY diagnostic BIN 6dd666d50640e1a79775d79bb83f43acdc3420582822e67026cb6cb8653301cb"
+}

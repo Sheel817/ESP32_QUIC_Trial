@@ -1,0 +1,69 @@
+{
+  "utc": "2026-11-06T01:39:28.446243+00:00",
+  "files": [
+    {
+      "path": "clumsy_pre_flash.json",
+      "bytes": 899,
+      "sha256": "4e0dbe11d13a5c9f143df4aa2d2e746542b4a5624bb8917e74562bdc656efcc9"
+    },
+    {
+      "path": "HBPSN-04_Clumsy_PRE_FLASH.jpg",
+      "bytes": 43045,
+      "sha256": "a82c62bf8f5c9843852826e2b12e8e4d03db3627d922d7ebdcdc9373ef270396"
+    },
+    {
+      "path": "PREFLIGHT_BLOCKED.json",
+      "bytes": 5716,
+      "sha256": "96fc77b94e611d7136bc0ccf2bbcdea96b842974bbaa3aeb8c73c5621c98808a"
+    },
+    {
+      "path": "PREFLIGHT_REPORT.md",
+      "bytes": 3254,
+      "sha256": "9d7b28a0ae99a5820d179999f6b30c88ec7c364a2a3afdc6619cd1e107f70911"
+    },
+    {
+      "path": "previous_server.stderr.snapshot.log",
+      "bytes": 155,
+      "sha256": "68efaef72d0c30b78a49711f4155733d3790952fb7ead9a4d6f03e1e8dc4f7ef"
+    },
+    {
+      "path": "previous_server.stdout.snapshot.log",
+      "bytes": 1853447,
+      "sha256": "30bfe8c7b18fd1c98e4a119e3bc18c3e7142ebe41a0e72fca605e59a664e2e9b"
+    },
+    {
+      "path": "previous_server_snapshot_hashes.json",
+      "bytes": 590,
+      "sha256": "28c59ef6cf1351b874e8cdad440e32e85cb5a8ea186aac506575a720481d42fa"
+    },
+    {
+      "path": "save_blocked_audit.py",
+      "bytes": 4307,
+      "sha256": "4144bc08747b8468bfa431d41a8bde09ec37e23b9647f6bc3ef17634d81ff516"
+    },
+    {
+      "path": "server_launch.json",
+      "bytes": 248,
+      "sha256": "46407ac28a152071835424b9101540709c281cb3c462fb61c6c1b066aa460a6e"
+    },
+    {
+      "path": "server_stop.json",
+      "bytes": 235,
+      "sha256": "c2c59e34e334150b8199fef4623f463311222ce7465d899649130a5e0f0f035c"
+    },
+    {
+      "path": "stale_server_identity.json",
+      "bytes": 233,
+      "sha256": "1bd9af109b36ff43693ed8312b08434114162a95631d0816edfa1f1f54982667"
+    },
+    {
+      "path": "system_after_relaunch.json",
+      "bytes": 2886,
+      "sha256": "197c3eea02f0a40275f2ca7d5fb94cff55cd63f317c84786c65dc0287c9dd7e3"
+    }
+  ],
+  "excluded_live": [
+    "tcp_tls_server.stdout.log",
+    "tcp_tls_server.stderr.log"
+  ]
+}

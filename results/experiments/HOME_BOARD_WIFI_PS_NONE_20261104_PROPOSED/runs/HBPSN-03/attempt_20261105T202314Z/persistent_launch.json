@@ -1,0 +1,34 @@
+﻿{
+    "run_dir":  {
+                    "value":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z",
+                    "PSPath":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder\\active_hbpsn03_path.txt",
+                    "PSParentPath":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tools\\run_recorder",
+                    "PSChildName":  "active_hbpsn03_path.txt",
+                    "PSDrive":  {
+                                    "CurrentLocation":  "Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+                                    "Name":  "C",
+                                    "Provider":  "Microsoft.PowerShell.Core\\FileSystem",
+                                    "Root":  "C:\\",
+                                    "Description":  "",
+                                    "MaximumSize":  null,
+                                    "Credential":  "System.Management.Automation.PSCredential",
+                                    "DisplayRoot":  null
+                                },
+                    "PSProvider":  {
+                                       "ImplementingType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                       "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                                       "Name":  "FileSystem",
+                                       "PSSnapIn":  "Microsoft.PowerShell.Core",
+                                       "ModuleName":  "Microsoft.PowerShell.Core",
+                                       "Module":  null,
+                                       "Description":  "",
+                                       "Capabilities":  52,
+                                       "Home":  "C:\\Users\\newsh",
+                                       "Drives":  "C"
+                                   },
+                    "ReadCount":  1
+                },
+    "launcher_pid":  2932,
+    "persistent":  true,
+    "launched_utc":  "2026-11-05T20:24:36.4016587Z"
+}

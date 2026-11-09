@@ -1,0 +1,18 @@
+{
+  "run_id": "HBPSN-09",
+  "patch": {
+    "recording_end_utc": "2026-11-09T19:35:06.268682+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 0,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 72.16183132530121,
+    "minimum_app_rtt_ms": 27.347,
+    "maximum_app_rtt_ms": 387.449,
+    "deviation_reason": "Automatic recording finalized; required screenshots and operator stability confirmation await manual review. Validity NOT_APPROVED."
+  },
+  "final": true,
+  "automatic_register_apply": false
+}

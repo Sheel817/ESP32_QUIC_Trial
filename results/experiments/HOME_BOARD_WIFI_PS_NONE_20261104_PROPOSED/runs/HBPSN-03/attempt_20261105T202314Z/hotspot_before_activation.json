@@ -1,0 +1,10 @@
+﻿{
+    "sharing_profile":  "Ethernet",
+    "method":  "Existing saved AP configuration; StartTetheringAsync only, no ConfigureAccessPointAsync or setters",
+    "state":  "On",
+    "utc":  "2026-11-05T20:22:13.8547346Z",
+    "ssid":  "SHEEL 3460",
+    "password_sha256":  "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "client_count":  0,
+    "band":  "TwoPointFourGigahertz"
+}

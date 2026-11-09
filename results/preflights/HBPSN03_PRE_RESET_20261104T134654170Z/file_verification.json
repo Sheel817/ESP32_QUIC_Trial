@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-11-04T13:47:28.354Z",
+  "image_exists": true,
+  "bytes": 43690,
+  "sha256": "6f476841c8d10f8d2ef12d03a4fcd276097ec894f4a0dc801a2e140d70186142",
+  "jpeg_start": "ffd8",
+  "jpeg_end": "ffd9",
+  "registers": [
+    {
+      "path": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv",
+      "sha256": "3817afd877aea70a709df541e3b1a317f9ea4963029cd21f264e54edeea4a579"
+    },
+    {
+      "path": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx",
+      "sha256": "d55477a6c51777f01abee5f375205b6dc7ec696ac3447d744867111645b098ac"
+    }
+  ],
+  "register_hashes_match_before_task": true,
+  "run_status": "NOT_RUN"
+}

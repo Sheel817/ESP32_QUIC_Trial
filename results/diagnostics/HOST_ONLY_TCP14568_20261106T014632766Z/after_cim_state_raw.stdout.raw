@@ -1,0 +1,196 @@
+
+
+Name            : Caption
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : Description
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : ElementName
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : InstanceID
+Value           : 0.0.0.0++14568++0.0.0.0++0
+CimType         : String
+Flags           : Property, Key, NotModified
+IsValueModified : False
+
+Name            : CommunicationStatus
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : DetailedStatus
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : HealthState
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : InstallDate
+Value           : 
+CimType         : DateTime
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : Name
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : OperatingStatus
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : OperationalStatus
+Value           : 
+CimType         : UInt16Array
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : PrimaryStatus
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : Status
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : StatusDescriptions
+Value           : 
+CimType         : StringArray
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : AvailableRequestedStates
+Value           : 
+CimType         : UInt16Array
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : EnabledDefault
+Value           : 2
+CimType         : UInt16
+Flags           : Property, NotModified
+IsValueModified : False
+
+Name            : EnabledState
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : OtherEnabledState
+Value           : 
+CimType         : String
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : RequestedState
+Value           : 5
+CimType         : UInt16
+Flags           : Property, NotModified
+IsValueModified : False
+
+Name            : TimeOfLastStateChange
+Value           : 
+CimType         : DateTime
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : TransitioningToState
+Value           : 12
+CimType         : UInt16
+Flags           : Property, NotModified
+IsValueModified : False
+
+Name            : AggregationBehavior
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : Directionality
+Value           : 
+CimType         : UInt16
+Flags           : Property, NotModified, NullValue
+IsValueModified : False
+
+Name            : CreationTime
+Value           : 11/6/2026 3:36:31 AM
+CimType         : DateTime
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : LocalAddress
+Value           : 0.0.0.0
+CimType         : String
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : LocalPort
+Value           : 14568
+CimType         : UInt16
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : OwningProcess
+Value           : 36536
+CimType         : UInt32
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : AppliedSetting
+Value           : 0
+CimType         : UInt8
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : OffloadState
+Value           : 0
+CimType         : UInt8
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : RemoteAddress
+Value           : 0.0.0.0
+CimType         : String
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : RemotePort
+Value           : 0
+CimType         : UInt16
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+Name            : State
+Value           : 0
+CimType         : UInt8
+Flags           : Property, ReadOnly, NotModified
+IsValueModified : False
+
+
+

@@ -1,0 +1,235 @@
+{
+  "run_id": "HBPSN-02",
+  "reviewed_utc": "2026-11-04T13:34:30.397217+00:00",
+  "reviewer": "Assistant manual evidence review under user conditional authorization; operator statement supplied by user",
+  "decision": "COMPLETE",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "evidence_review_status": "REVIEWED",
+  "qualifier": "Complete with retained flags; no clean/error-free or exact per-packet impairment claim",
+  "operator_statement": {
+    "exact_statement": "setting stayed unchanged",
+    "received_observed_utc": "2026-11-04T13:31:19.1952412Z",
+    "receipt_clock_source": "First UTC clock observation while processing this user message; chat platform ingress timestamp is not exposed",
+    "recorded_utc": "2026-11-04T13:32:14.758129+00:00",
+    "source": "Operator statement relayed explicitly by user in this session",
+    "user_clarified_scope": "No Clumsy filter/effect/capture changes or close/reopen from HBPSN-02 start through post-recording screenshot",
+    "covered_interval_start_utc": "2026-11-04T12:17:27.280042+00:00",
+    "covered_interval_end_utc": "2026-11-04T13:12:42.694Z",
+    "evidence_type": "OPERATOR_REPORTED_STABILITY; retrospective confirmation recorded now, not backdated",
+    "run_id": "HBPSN-02"
+  },
+  "original_plan_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "original_plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "exact_criteria": {
+    "images": "Save screenshots before reset and after recording, with UTC and hashes.",
+    "stability": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "connection_errors": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session.",
+    "reboot": "If a reboot occurs, keep the entire fixed-window recording and mark the run failed/interrupted; identify each boot, but do not concatenate post-reboot RTTs into the initial-boot first-415 sample."
+  },
+  "screenshot_comparison": {
+    "pre_image": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\clumsy_actual_pre_reset.jpg",
+    "pre_sha256": "338fe985dccaca6cd3e03b6b9cdaa51ed000636424438bca2ea4b8d1a08af829",
+    "pre_capture_started_utc": "2026-11-04T12:17:11.463Z",
+    "pre_capture_completed_utc": "2026-11-04T12:17:11.943Z",
+    "post_image": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/post_recording_evidence_20261104T131242221Z/HBPSN-02_Clumsy_POST_RECORDING.jpg",
+    "post_sha256": "7bc9f9b58ecd6adb835907f52cc500045181a4ce8c9f3f2d308d78b960fd553b",
+    "post_capture_started_utc": "2026-11-04T13:12:42.221Z",
+    "post_capture_completed_utc": "2026-11-04T13:12:42.694Z",
+    "visible_settings_match": true,
+    "settings": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "post_capture_started_seconds_after_deadline": 1094.940958,
+    "operator_stability_confirmation": "PENDING",
+    "validity": "NOT_APPROVED / PENDING_EVIDENCE_REVIEW",
+    "original_automatic_missing_image_flag_preserved": true,
+    "note": "No settings changed by agent before capture. Matching point-in-time images do not establish continuous stability or operator actions between them. The frozen plan has no numerical post-image deadline; 30 seconds was an implementation wait only."
+  },
+  "operator_confirmation_reviewed": true,
+  "settings_review": "PASS: matching actual pre/post images plus explicit operator statement of unchanged filter/effects/capture and no close/reopen from run start through post-image completion",
+  "post_image_lateness_seconds": 1094.940958,
+  "thirty_second_wait": "Implementation timeout only; not a frozen-plan cutoff. Automatic failure preserved as historical processing decision, superseded by this separate manual review.",
+  "error_assessment": {
+    "new_server_errors": [
+      {
+        "raw_line": "TCP+TLS ERROR: ",
+        "receipt": {
+          "utc": "2026-11-04T12:18:22.468737+00:00",
+          "monotonic": 549013.6851668,
+          "source_offset": 51,
+          "offset": 0,
+          "length": 17
+        },
+        "attribution": "New within fixed window, retained. Bare message has no peer/session identity; cannot conclusively attribute it to the measured ESP connection."
+      }
+    ],
+    "serial_connection_error_count": 0,
+    "rule": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session.",
+    "rationale": "The rule requires retained evidence/eligible values, flagging and actual shortfall reporting when an error occurs without reboot. It does not require FAILED_STARTUP/FAILED_SETTINGS/INTERRUPTED for every connection error. Retain this event even though cause and peer are unknown; do not infer setup cause or dismiss it. No reboot, interruption or shortfall is recorded."
+  },
+  "measurement_summary": {
+    "raw_serial_lines": 580,
+    "raw_rtt_count": 441,
+    "warmup_excluded": 10,
+    "other_excluded": 0,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "extra_eligible_count": 16,
+    "shortfall": 0,
+    "minimum_ms": 127.227,
+    "mean_ms": 188.95411084337348,
+    "mean_decimal": "188.9541108433734939759036145",
+    "median_ms": 187.392,
+    "p95_nearest_rank_ms": 248.17,
+    "p95_rank": 395,
+    "maximum_ms": 867.649,
+    "first_selected": {
+      "source_line": "150",
+      "host_receipt_utc": "2026-11-04T12:18:30.144005+00:00",
+      "host_monotonic": "549021.3608802",
+      "esp_log_uptime_ms": "62847",
+      "seq": "11",
+      "app_rtt_ms": "187.379",
+      "run_id": "HBPSN-02",
+      "transport": "TCP_TLS",
+      "condition": "LAG100_OUT",
+      "boot_session": "HBPSN-02/2026-11-04T12:17:27.280042+00:00",
+      "raw_line": "2026-11-04T14:18:30 I (62847) quic_demo_main: APP_RTT seq=11 app_rtt_ms=187.379"
+    },
+    "last_selected": {
+      "source_line": "564",
+      "host_receipt_utc": "2026-11-04T12:53:04.241594+00:00",
+      "host_monotonic": "551095.4584839",
+      "esp_log_uptime_ms": "2136967",
+      "seq": "425",
+      "app_rtt_ms": "167.382",
+      "run_id": "HBPSN-02",
+      "transport": "TCP_TLS",
+      "condition": "LAG100_OUT",
+      "boot_session": "HBPSN-02/2026-11-04T12:17:27.280042+00:00",
+      "raw_line": "2026-11-04T14:53:04 I (2136967) quic_demo_main: APP_RTT seq=425 app_rtt_ms=167.382"
+    },
+    "original_window": {
+      "reset_request_utc": "2026-11-04T12:17:27.273508+00:00",
+      "reset_release_utc": "2026-11-04T12:17:27.280042+00:00",
+      "reset_release_monotonic": 548958.4969175,
+      "deadline_monotonic": 551178.4969175,
+      "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+      "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+      "boundary_precision": "Host API completion, not a physical edge measurement",
+      "server_boundaries": {
+        "stdout": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+          "byte_offset": 63395
+        },
+        "stderr": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+          "byte_offset": 51
+        },
+        "sensor_csv": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+          "byte_offset": 33644
+        }
+      }
+    },
+    "processing_status": "FINALIZED",
+    "automatic_status": "FAILED_SETTINGS",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_EVIDENCE_REVIEW",
+    "resets": [
+      {
+        "source_line": 1,
+        "raw_line": "2026-11-04T14:17:27 ESP-ROM:esp32c6-20220919",
+        "utc": "2026-11-04T12:17:27.290450+00:00"
+      }
+    ],
+    "additional_resets": 0,
+    "gaps": [],
+    "timestamp_regressions": [],
+    "serial_connection_errors": [],
+    "new_server_errors": [
+      {
+        "raw_line": "TCP+TLS ERROR: ",
+        "receipt": {
+          "utc": "2026-11-04T12:18:22.468737+00:00",
+          "monotonic": 549013.6851668,
+          "source_offset": 51,
+          "offset": 0,
+          "length": 17
+        },
+        "attribution": "New within fixed window, retained. Bare message has no peer/session identity; cannot conclusively attribute it to the measured ESP connection."
+      }
+    ],
+    "serial_warnings": [
+      {
+        "line": 92,
+        "raw_line": "2026-11-04T14:17:27 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+      },
+      {
+        "line": 100,
+        "raw_line": "2026-11-04T14:17:30 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+      },
+      {
+        "line": 118,
+        "raw_line": "2026-11-04T14:17:30 W (3417) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+      }
+    ],
+    "reporting_errors": [
+      {
+        "utc": "2026-11-04T12:23:58.313678+00:00",
+        "monotonic": 549349.5305876,
+        "operation": "atomic_replace",
+        "error": "PermissionError(13, 'Access is denied')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.4e30046f6cbc481888160849503be869.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+        "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+        "attempt": 1,
+        "exhausted": false
+      },
+      {
+        "utc": "2026-11-04T12:51:24.586378+00:00",
+        "monotonic": 550995.8033217,
+        "operation": "atomic_replace",
+        "error": "PermissionError(13, 'Access is denied')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\reliability.py\", line 51, in save\n    self.replace(temp, target)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json.ad9bde6629024b8dbc4d682664caa114.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-02\\\\attempt_20261104T121332Z\\\\heartbeat.json'\n",
+        "target": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\heartbeat.json",
+        "attempt": 1,
+        "exhausted": false
+      }
+    ],
+    "server_sensor_records": 441,
+    "sensor_errors": []
+  },
+  "flags": [
+    "POST_IMAGE_CAPTURE_LATE_1094.940958_SECONDS_RETAINED",
+    "OPERATOR_REPORTED_STABILITY_NOT_PACKET_LEVEL_PROOF",
+    "ONE_NEW_UNATTRIBUTED_TCP_SERVER_ERROR_RETAINED",
+    "TWO_RECOVERED_HEARTBEAT_REPLACEMENT_ERRORS",
+    "THREE_STARTUP_WIFI_WARNINGS_RETAINED",
+    "AUTOMATIC_FAILED_SETTINGS_AND_MISSING_IMAGE_FLAGS_PRESERVED"
+  ],
+  "previous_automatic_status": "FAILED_SETTINGS",
+  "previous_register_status": "FAILED_SETTINGS",
+  "next_scheduled_run": {
+    "run_id": "HBPSN-03",
+    "transport": "QUIC",
+    "condition": "DROP1_OUT",
+    "status": "NOT_RUN"
+  },
+  "source_records_preserved": true
+}

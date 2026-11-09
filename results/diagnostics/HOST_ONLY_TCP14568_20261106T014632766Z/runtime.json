@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-06T01:47:42.323725+00:00",
+  "python": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe",
+  "prefix": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv",
+  "version": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "openssl": "OpenSSL 3.5.7 9 Jun 2026",
+  "timeout_seconds": 5,
+  "timeout_scope": "Single shared five-second TCP+TLS deadline per address; no retries",
+  "certificate_policy": "Existing lab CERT_NONE / hostname verification disabled; explicit post-handshake DER SHA256 pin comparison",
+  "mqtt_packets_sent": 0
+}

@@ -1,0 +1,6 @@
+{
+  "verified_utc": "2026-11-04T12:15:51.288750+00:00",
+  "method": "SDK exit command through unique collector-created client-end pipe handle 456 in PID33972; both monitor PIDs1776/26296 exited. No force kill/reset.",
+  "initial_helper_issue_preserved": "initial_close_helper_failure.json",
+  "additional_pre_command_guard": "Write-pipe count was initially ambiguous; no command sent until parent creator/client-end metadata identified exactly one pipe."
+}

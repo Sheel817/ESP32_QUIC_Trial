@@ -1,0 +1,26 @@
+{
+  "capture_started_utc": "2026-11-06T01:35:40.465Z",
+  "capture_completed_utc": "2026-11-06T01:35:40.851Z",
+  "image": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/preflights/HBPSN04_START_20261106T013540465Z/HBPSN-04_Clumsy_PRE_FLASH.jpg",
+  "sha256": "a82c62bf8f5c9843852826e2b12e8e4d03db3627d922d7ebdcdc9373ef270396",
+  "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+  "capture": "RUNNING",
+  "Lag": {
+    "enabled": false,
+    "delay_ms": 100,
+    "inbound": false,
+    "outbound": true
+  },
+  "other_main_effects": {
+    "Drop": false,
+    "Throttle": false,
+    "Duplicate": false,
+    "Out of order": false,
+    "Tamper": false,
+    "Set TCP RST": false,
+    "Bandwidth": false
+  },
+  "note": "CONTROL: inactive Lag/Drop fields retain100ms/1%; all main enable checkboxes unchecked. No effect direction active.",
+  "observed_status": "PASS",
+  "actual_image": true
+}

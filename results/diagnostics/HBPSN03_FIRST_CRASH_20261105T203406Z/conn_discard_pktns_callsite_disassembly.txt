@@ -1,0 +1,15 @@
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .flash.text:
+
+4201b1c0 <conn_discard_pktns+0xa6>:
+4201b1c0:	8522                	mv	a0,s0
+4201b1c2:	b09f90ef          	jal	42014cca <conn_call_delete_crypto_cipher_ctx>
+4201b1c6:	da892583          	lw	a1,-600(s2)
+4201b1ca:	8526                	mv	a0,s1
+4201b1cc:	822fb0ef          	jal	420161ee <pktns_del>
+4201b1d0:	0009a023          	sw	zero,0(s3)
+4201b1d4:	85d2                	mv	a1,s4
+4201b1d6:	8656                	mv	a2,s5

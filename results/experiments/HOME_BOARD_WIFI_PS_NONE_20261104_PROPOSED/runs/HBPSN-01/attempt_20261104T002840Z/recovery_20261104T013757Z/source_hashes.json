@@ -1,0 +1,102 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\serial.raw.log",
+    "bytes": 48147,
+    "sha256": "6849ae0b346f2f530d2bebf8229f96e825a0c67986e925bddbb1405f4183f2f7"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\serial_receipts.jsonl",
+    "bytes": 80725,
+    "sha256": "f4a5034d7d685540a9dd0ad3a6d78de467ea772c69ffa61a32091ccf3cd787ce"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server.stdout.raw.log",
+    "bytes": 75664,
+    "sha256": "7e1bd2cfcead6dbc07f5607cf5f0bca3b9e3eb2122c11e72394801e937cdef56"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server.stdout.receipts.jsonl",
+    "bytes": 115392,
+    "sha256": "d22e92f0fde99f23db14fb22255b6bf979f6875e8a5ae68d246d32cf2031102e"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server.stderr.raw.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server.stderr.receipts.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server_stdout_boundary_end.json",
+    "bytes": 276,
+    "sha256": "e5b43ea43562cf12a9075dbf4505fc88dce024b0c1ae265f43bbb64808c9a10b"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server_stderr_boundary_end.json",
+    "bytes": 266,
+    "sha256": "d4a690b6eb416a5c44a5d241dc83a7b81d22e39184443b85cbe0bb6d97ea876f"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\reset_event.json",
+    "bytes": 807,
+    "sha256": "49428935e99bd683e5572a58065ffa63b9529671a7a602d97fe85d4780abc0db"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\startup_checks.json",
+    "bytes": 451,
+    "sha256": "ebde72b443fed5357d7633c5dd4459a259bcf798dc119a4fe8f8b28540601c09"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\preflight.json",
+    "bytes": 6649,
+    "sha256": "3ab3b54594dc222862afbb367bd82f4c9911d15151e1079a49d8699c625d4846"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector_failure.json",
+    "bytes": 3036,
+    "sha256": "e470b5577a12cd99b9c3f101c41c8486036854f240159f6c3961165e68599fb2"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector.py",
+    "bytes": 19184,
+    "sha256": "a4e88720868b62c35405f23e230b1606d0e5f8e5a5f6efe388d8b5f3b99cb30f"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\monitor_instrumented.py",
+    "bytes": 1777,
+    "sha256": "b5664c7e09b313a356b4fff2aacedd95c9c7eb454159444b9cd914287cf2bc87"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector_prepared.json",
+    "bytes": 519,
+    "sha256": "e05e287de4844d5042cbb6444d0f82fc78baed93071199abc0b98fa14562ff54"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\RUNNING.json",
+    "bytes": 1562,
+    "sha256": "25bf466e11a446746784909c0e70d63f999035bdd6045171e14b818bae284b13"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\flash_result.json",
+    "bytes": 268,
+    "sha256": "11e5c779f66d9b0bd93fc3a2f84d4ce72d72e07940e61de8e399b6850d488f81"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\flash.log",
+    "bytes": 13960,
+    "sha256": "95f7d28ff321f6b4f5527fe5ea04754b48a89cf8f1307da69eae8be38962eb10"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\identification.log",
+    "bytes": 1140,
+    "sha256": "ac297cbf677b6d4fc519d57d97bd4701815c92efc05061eac1feb20f37b3e320"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\final_settings_precheck.json",
+    "bytes": 301,
+    "sha256": "195063bc8eb8eab7021fcabf6bd04452725738363294ccb5e9ca3a5ab99c0ed0"
+  }
+]

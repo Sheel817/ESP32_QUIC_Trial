@@ -1,0 +1,7 @@
+{
+  "normalization": "Build directory paths, DEMO_TRANSPORT_TCP_TLS=0/1 and -o object destinations. CMake hashes 11 long mbedTLS object destination paths in the longer TCP profile directory.",
+  "shared_translation_units": 1139,
+  "different_after_normalization": [],
+  "quic_only": [],
+  "tcp_tls_only": []
+}

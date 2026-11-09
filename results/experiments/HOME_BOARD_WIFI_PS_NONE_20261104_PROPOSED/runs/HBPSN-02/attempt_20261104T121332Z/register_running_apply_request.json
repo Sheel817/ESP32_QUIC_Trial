@@ -1,0 +1,18 @@
+{
+  "run_id": "HBPSN-02",
+  "output_dir": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z",
+  "csv_staged_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\register_running.staged.csv",
+  "patch": {
+    "status": "RUNNING",
+    "preflight_status": "PASS",
+    "startup_status": "PASS",
+    "settings_evidence_type": "actual_GUI_pre_reset_image; operator stability review pending",
+    "boot_session_id": "HBPSN-02/2026-11-04T12:17:27.280042+00:00",
+    "reset_release_utc": "2026-11-04T12:17:27.280042+00:00",
+    "recording_end_utc": "2026-11-04T12:54:27.280042+00:00",
+    "actual_assigned_ip": "192.168.137.212",
+    "metadata_path": "runs/HBPSN-02/attempt_20261104T121332Z/metadata.json",
+    "raw_serial_path": "runs/HBPSN-02/attempt_20261104T121332Z/serial.raw.log",
+    "deviation_reason": "Validity NOT_APPROVED; post-recording actual screenshot and operator confirmation require review. Initial old-monitor close helper issue preserved; no measured-start retry."
+  }
+}

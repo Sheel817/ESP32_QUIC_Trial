@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-07T02:05:09.545320+00:00",
+  "patch": {
+    "status": "RUNNING",
+    "preflight_status": "PASS",
+    "startup_status": "PASS",
+    "settings_evidence_type": "actual_GUI_pre_reset_image; post-recording and NEW HBPSN-06-specific operator review pending",
+    "boot_session_id": "HBPSN-06/2026-11-07T02:04:34.926538+00:00",
+    "reset_release_utc": "2026-11-07T02:04:34.926538+00:00",
+    "recording_end_utc": "2026-11-07T02:41:34.926538+00:00",
+    "actual_assigned_ip": "192.168.137.112",
+    "metadata_path": "runs/HBPSN-06/attempt_20261107T015952Z/metadata.json",
+    "raw_serial_path": "runs/HBPSN-06/attempt_20261107T015952Z/serial.raw.log",
+    "deviation_reason": "Validity NOT_APPROVED pending actual post-recording screenshot and operator review; earlier QUIC crash unresolved; no measured-start retry or extension."
+  },
+  "only_hbpsn06_row_changed": true,
+  "validity_status": "NOT_APPROVED"
+}

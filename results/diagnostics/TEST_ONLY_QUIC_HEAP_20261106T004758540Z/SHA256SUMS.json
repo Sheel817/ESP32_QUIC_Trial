@@ -1,0 +1,143 @@
+{
+  "label": "TEST_ONLY",
+  "utc": "2026-11-06T00:56:34.516156+00:00",
+  "files": [
+    {
+      "path": "analyze_capture.py",
+      "bytes": 4680,
+      "sha256": "60dde3a57530eb435e94d984096dea260bd96c802c8eef27d9f2c79cf1cc4b23"
+    },
+    {
+      "path": "CAPTURE_COMPLETE.json",
+      "bytes": 1629,
+      "sha256": "c5333068c3bd08139d52cafb9a4a99f58e385477268b0c6fc74d6ecef7587c7d"
+    },
+    {
+      "path": "clumsy_preflight.json",
+      "bytes": 738,
+      "sha256": "8d43c5e11de3c9e75bbe6a2c104142b5c507bb76d18f597b53471d885adac3ec"
+    },
+    {
+      "path": "deadline_decision.json",
+      "bytes": 185,
+      "sha256": "bf65d465b3714c9d90733a9fcd75d9b915253a4af72721a027dcc0fae3957191"
+    },
+    {
+      "path": "flash.log",
+      "bytes": 7093,
+      "sha256": "18b81b6210bf1dccfa0127db1ee28f5eeb3d00962481fd6890fc9b04319a9c99"
+    },
+    {
+      "path": "flash_result.json",
+      "bytes": 122,
+      "sha256": "f6d6fd55da12fd97dd0d7aaac0de664cb40703d078e48aeffc1ad6712762f74e"
+    },
+    {
+      "path": "flash_started.json",
+      "bytes": 647,
+      "sha256": "8e729fd7eaa06c161d97d2795f6fa3991d5cc00d0ad3b4b28c3eafa767324a43"
+    },
+    {
+      "path": "identification.json",
+      "bytes": 501,
+      "sha256": "b58f80c300f59b2545cb0975d8b1e77049b508c7c363e22ca162863c222652d0"
+    },
+    {
+      "path": "identification.log",
+      "bytes": 562,
+      "sha256": "2c71a2d85d9ca0f6604da06eb42bd67f9490695642cc3a0a7bf6eb72e0e0660a"
+    },
+    {
+      "path": "old_monitor_exit_request.json",
+      "bytes": 184,
+      "sha256": "a7be82b6683c21ccf195fbbcddc686dc54f10dd3ad80bb2ad4961d3fa758ac43"
+    },
+    {
+      "path": "persistent_launch.json",
+      "bytes": 101,
+      "sha256": "703eefa745834e50c6497d41a8c7cbea65c7193fa6c670f6f9cdf067e9919f05"
+    },
+    {
+      "path": "preflight.json",
+      "bytes": 3617,
+      "sha256": "518ef8a90f21fd4e7c8042ecd4a94d9444c96a68a02d6d2292e5ee392cbbcd59"
+    },
+    {
+      "path": "protected_before.json",
+      "bytes": 396414,
+      "sha256": "d119a86b13e7b54f8edc63eaa6f44e1908ea38467be8df8f0cfd5042768cb02e"
+    },
+    {
+      "path": "protection_after.json",
+      "bytes": 132,
+      "sha256": "96e80b25ea4508e10b7ea7d3d4fd456da674b0695e5be57ffdf916e08bccf285"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6108,
+      "sha256": "4d5971f4119b4c626a3639753d119455a59ebc4705fa10095dfc079f420edaa9"
+    },
+    {
+      "path": "reset_release.json",
+      "bytes": 926,
+      "sha256": "e052e6bc2260ac2afd5361da79851093a1c46ea78bd265177a6e8c4eec222604"
+    },
+    {
+      "path": "run_host_capture.py",
+      "bytes": 13809,
+      "sha256": "00fb4b56cda121c2c337c244350a2ddcacd6c30a6de1b194a922de7683a6269c"
+    },
+    {
+      "path": "serial_open.json",
+      "bytes": 421,
+      "sha256": "302e0d5f570da3257c136e8d3c5c5d97663a7affe6e6e72a6a2a0442091526a2"
+    },
+    {
+      "path": "system_preflight.json",
+      "bytes": 5138,
+      "sha256": "4d70209a4e768e99a6a7a82b797ed742db2a243b25100a72d4055c2e87b8a86b"
+    },
+    {
+      "path": "TEST_ONLY_ANALYSIS.json",
+      "bytes": 5044,
+      "sha256": "c5a9fd6c90a162cfd440c8d41f860648a44250138ef7120296789181e42a864e"
+    },
+    {
+      "path": "TEST_ONLY_Clumsy_PRE_FLASH.jpg",
+      "bytes": 44153,
+      "sha256": "f7caed5b0614e995a1c67cd66441e78afa4799822e60ee64a9a6d62b3a989972"
+    },
+    {
+      "path": "TEST_ONLY_rtt_observations.json",
+      "bytes": 7376,
+      "sha256": "a66ad302d80ba46c3d3d42a44c169ede8316b9ac772724adda9746c8b8299ccd"
+    },
+    {
+      "path": "TEST_ONLY_server_stderr.snapshot.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "TEST_ONLY_server_stdout.snapshot.log",
+      "bytes": 6399,
+      "sha256": "ad43c25e85de4557c0e858bd91e36e12cfd58a0097302ca5993049288f9ed1c0"
+    },
+    {
+      "path": "TEST_ONLY_uart.raw.log",
+      "bytes": 10993,
+      "sha256": "98a0e269b7aca09ba4ea2dce84944bc289584e02b1781fdbb00215068c560b52"
+    },
+    {
+      "path": "TEST_ONLY_uart_receipts.jsonl",
+      "bytes": 38138,
+      "sha256": "b4b56341e0147e37ab57f94fd0a46905aed36e32cbeee493eb669d34441df7b7"
+    }
+  ],
+  "excluded_live_or_self": [
+    "SHA256SUMS.json",
+    "TEST_ONLY_after_capture.raw.log",
+    "heartbeat.json",
+    "host.stderr.log",
+    "host.stdout.log"
+  ]
+}

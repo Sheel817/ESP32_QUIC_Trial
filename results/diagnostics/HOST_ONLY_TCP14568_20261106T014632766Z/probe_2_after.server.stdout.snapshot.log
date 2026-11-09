@@ -1,0 +1,4 @@
+CSV log: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\logs\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv
+READY | TCP+TLS port 14568 | ALPN=mqtt
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256) | ALPN=mqtt
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_256_GCM_SHA384', 'TLSv1.3', 256) | ALPN=mqtt

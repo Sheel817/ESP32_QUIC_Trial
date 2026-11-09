@@ -1,0 +1,17 @@
+[
+    {
+        "ProcessId":  23100,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    },
+    {
+        "ProcessId":  36356,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/pilots/HOME_BOARD_PS_DEFAULT_20261103T225407Z/persistent_monitor.py "
+    },
+    {
+        "ProcessId":  14776,
+        "Name":  "python.exe",
+        "CommandLine":  "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u -m esp_idf_monitor --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S%z C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\quic_demo.elf"
+    }
+]

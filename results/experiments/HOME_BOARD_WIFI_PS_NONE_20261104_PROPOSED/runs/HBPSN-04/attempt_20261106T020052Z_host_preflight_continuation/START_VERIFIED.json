@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-06T02:03:41.121201+00:00",
+  "run_id": "HBPSN-04",
+  "both_registers_running": true,
+  "other_rows_preserved": true,
+  "collector_source_unchanged": true,
+  "startup_passed": true,
+  "heartbeat_observed": {
+    "utc": "2026-11-06T02:03:40.929428+00:00",
+    "monotonic": 684930.245528,
+    "remaining_seconds": 2097.7522852000548,
+    "status": "RUNNING",
+    "serial_bytes": 12982,
+    "monitor_alive": true,
+    "collector_pid": 28020
+  },
+  "fixed_deadline_utc": "2026-11-06T02:38:38.681783+00:00",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_MANUAL_REVIEW",
+  "one_measured_reset": true,
+  "host_preflight_failure_preserved": true
+}

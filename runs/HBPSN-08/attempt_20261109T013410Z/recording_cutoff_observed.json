@@ -1,0 +1,6 @@
+{
+  "fixed_deadline_utc": "2026-11-09T02:11:15.271435+00:00",
+  "observed_cutoff_utc": "2026-11-09T02:11:15.316307+00:00",
+  "observed_cutoff_monotonic": 944583.2437055,
+  "lateness_ms": 44.91060005966574
+}

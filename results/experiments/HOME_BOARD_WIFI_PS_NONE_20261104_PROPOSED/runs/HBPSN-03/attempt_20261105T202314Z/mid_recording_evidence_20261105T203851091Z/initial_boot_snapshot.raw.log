@@ -1,0 +1,219 @@
+2026-11-05T22:24:54 ESP-ROM:esp32c6-20220919
+2026-11-05T22:24:54 Build:Sep 19 2022
+2026-11-05T22:24:54 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-05T22:24:54 SPIWP:0xee
+2026-11-05T22:24:54 mode:DIO, clock div:2
+2026-11-05T22:24:54 load:0x40875730,len:0x1648
+2026-11-05T22:24:54 load:0x4086b910,len:0xdbc
+2026-11-05T22:24:54 load:0x4086e610,len:0x31f0
+2026-11-05T22:24:54 entry 0x4086b91a
+2026-11-05T22:24:54 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-05T22:24:54 I (24) boot: compile time Nov  3 2026 18:33:04
+2026-11-05T22:24:54 I (24) boot: chip revision: v0.0
+2026-11-05T22:24:54 I (24) boot: efuse block revision: v0.2
+2026-11-05T22:24:54 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-05T22:24:54 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-05T22:24:54 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-05T22:24:54 I (38) boot: Enabling RNG early entropy source...
+2026-11-05T22:24:54 I (43) boot: Partition Table:
+2026-11-05T22:24:54 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-05T22:24:54 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-05T22:24:54 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-05T22:24:54 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-05T22:24:54 I (71) boot: End of partition table
+2026-11-05T22:24:54 I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=420e8h (270568) map
+2026-11-05T22:24:54 I (134) esp_image: segment 1: paddr=00052110 vaddr=40800000 size=0df08h ( 57096) load
+2026-11-05T22:24:54 I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=131468h (1250408) map
+2026-11-05T22:24:54 I (385) esp_image: segment 3: paddr=00191490 vaddr=4080df08 size=0a680h ( 42624) load
+2026-11-05T22:24:54 I (395) esp_image: segment 4: paddr=0019bb18 vaddr=40818590 size=0405ch ( 16476) load
+2026-11-05T22:24:54 I (406) boot: Loaded app from partition at offset 0x10000
+2026-11-05T22:24:54 I (406) boot: Disabling RNG early entropy source...
+2026-11-05T22:24:54 I (416) cpu_start: Unicore app
+2026-11-05T22:24:54 I (424) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-05T22:24:54 I (425) cpu_start: Pro cpu start user code
+2026-11-05T22:24:54 I (425) cpu_start: cpu freq: 160000000 Hz
+2026-11-05T22:24:54 I (427) app_init: Application information:
+2026-11-05T22:24:54 I (430) app_init: Project name:     quic_demo
+2026-11-05T22:24:54 I (434) app_init: App version:      3c8c7a3-dirty
+2026-11-05T22:24:54 I (439) app_init: Compile time:     Nov  3 2026 18:31:58
+2026-11-05T22:24:54 I (444) app_init: ELF file SHA256:  9b23e164f...
+2026-11-05T22:24:54 I (448) app_init: ESP-IDF:          v6.1
+2026-11-05T22:24:54 I (452) efuse_init: Min chip rev:     v0.0
+2026-11-05T22:24:54 I (456) efuse_init: Max chip rev:     v0.99 
+2026-11-05T22:24:54 I (460) efuse_init: Chip rev:         v0.0
+2026-11-05T22:24:54 I (464) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-05T22:24:54 I (470) heap_init: At 40824620 len 00057FF0 (351 KiB): RAM
+2026-11-05T22:24:54 I (475) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-05T22:24:54 I (480) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-05T22:24:54 I (486) spi_flash: detected chip: gd
+2026-11-05T22:24:54 I (489) spi_flash: flash io: dio
+2026-11-05T22:24:54 I (492) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-05T22:24:54 I (498) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-05T22:24:54 I (505) coexist: coex firmware version: a830d28
+2026-11-05T22:24:54 I (509) coexist: coexist rom version 5b8dcfa
+2026-11-05T22:24:54 I (513) main_task: Started on CPU0
+2026-11-05T22:24:54 I (533) main_task: Calling app_main()
+2026-11-05T22:24:54 I (533) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-05T22:24:54 I (533) quic_demo_main: ESP-IDF version: v6.1
+2026-11-05T22:24:54 I (533) example_connect: Start example_connect.
+2026-11-05T22:24:54 I (533) pp: pp rom version: 5b8dcfa
+2026-11-05T22:24:54 I (543) net80211: net80211 rom version: 5b8dcfa
+2026-11-05T22:24:54 I (553) wifi:wifi driver task: 4082a680, prio:23, stack:6656, core=0
+2026-11-05T22:24:54 I (553) wifi:wifi firmware version: e12a754
+2026-11-05T22:24:54 I (553) wifi:wifi certification version: v7.0
+2026-11-05T22:24:54 I (553) wifi:config NVS flash: enabled
+2026-11-05T22:24:55 I (563) wifi:config nano formatting: disabled
+2026-11-05T22:24:55 I (563) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-05T22:24:55 I (573) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-05T22:24:55 I (573) wifi:Init static rx mgmt buffer num: 5
+2026-11-05T22:24:55 I (583) wifi:Init management short buffer num: 32
+2026-11-05T22:24:55 I (583) wifi:Init dynamic tx buffer num: 32
+2026-11-05T22:24:55 I (593) wifi:Init static tx FG buffer num: 2
+2026-11-05T22:24:55 I (593) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-05T22:24:55 I (603) wifi:Init static rx buffer num: 10
+2026-11-05T22:24:55 I (603) wifi:Init dynamic rx buffer num: 32
+2026-11-05T22:24:55 I (603) wifi_init: rx ba win: 6
+2026-11-05T22:24:55 I (613) wifi_init: accept mbox: 6
+2026-11-05T22:24:55 I (613) wifi_init: tcpip mbox: 32
+2026-11-05T22:24:55 I (613) wifi_init: udp mbox: 6
+2026-11-05T22:24:55 I (623) wifi_init: tcp mbox: 6
+2026-11-05T22:24:55 I (623) wifi_init: tcp tx win: 5760
+2026-11-05T22:24:55 I (623) wifi_init: tcp rx win: 5760
+2026-11-05T22:24:55 I (623) wifi_init: tcp mss: 1440
+2026-11-05T22:24:55 I (633) wifi_init: WiFi IRAM OP enabled
+2026-11-05T22:24:55 I (633) wifi_init: WiFi RX IRAM OP enabled
+2026-11-05T22:24:55 I (633) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-05T22:24:55 I (643) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-05T22:24:55 I (693) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)
+2026-11-05T22:24:55 I (753) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-05T22:24:55 
+2026-11-05T22:24:55 I (753) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-05T22:24:55 I (763) wifi:enable tsf
+2026-11-05T22:24:55 I (763) example_connect: Connecting to SHEEL 3460...
+2026-11-05T22:24:55 W (763) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-05T22:24:55 I (773) example_connect: Waiting for IP(s)
+2026-11-05T22:24:57 I (3293) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-05T22:24:57 I (3293) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-05T22:24:57 I (3293) wifi:state: init -> auth (0xb0)
+2026-11-05T22:24:57 I (3313) wifi:state: auth -> assoc (0x0)
+2026-11-05T22:24:57 I (3313) wifi:state: assoc -> run (0x10)
+2026-11-05T22:24:57 I (3313) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:144, highestRateIdx:0
+2026-11-05T22:24:57 W (3323) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-05T22:24:57 I (3323) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational
+2026-11-05T22:24:57 I (3333) wifi:ifidx:0, rssi:-31, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-05T22:24:57 I (3343) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-05T22:24:57 I (3373) wifi:connected with SHEEL 3460, aid = 5, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-05T22:24:57 I (3373) wifi:security: WPA2-PSK, phy: bgn, rssi: -31, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-05T22:24:57 I (3383) wifi:pm start, type: 1, twt_start:0
+2026-11-05T22:24:57 
+2026-11-05T22:24:57 I (3383) wifi:pm start, type:1, aid:0x5, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-05T22:24:57 I (3393) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-05T22:24:57 I (3403) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-05T22:24:57 I (3413) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-05T22:24:57 I (3423) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-05T22:24:57 I (3433) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-05T22:24:57 I (3443) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-05T22:24:57 I (3453) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-05T22:24:57 I (3463) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-05T22:24:57 I (3473) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-05T22:24:57 W (3513) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-05T22:24:58 I (4513) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-05T22:24:58 I (4513) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.112
+2026-11-05T22:24:58 I (4533) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-05T22:24:58 I (4533) example_common: Connected to example_netif_sta
+2026-11-05T22:24:58 I (4533) example_common: - IPv4 address: 192.168.137.112,
+2026-11-05T22:24:58 I (4543) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-05T22:24:58 I (4553) quic_demo_main: Wi-Fi connected
+2026-11-05T22:24:58 I (4553) wifi:Set ps type: 0, coexist: 0
+2026-11-05T22:24:58 
+2026-11-05T22:24:59 I (4563) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-05T22:24:59 I (4573) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-05T22:24:59 I (4573) quic_demo_main: Free heap: 287744 bytes
+2026-11-05T22:24:59 I (4583) QUIC: QUIC mutex created successfully
+2026-11-05T22:24:59 I (4583) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-05T22:24:59 I (4593) QUIC: init random number generator
+2026-11-05T22:24:59 I (4593) QUIC: init client ...
+2026-11-05T22:24:59 I (4603) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-05T22:24:59 I (4603) QUIC: In client_quic_init
+2026-11-05T22:24:59 I (4603) QUIC: ===>  INITIAL TS: 4127389000
+2026-11-05T22:24:59 I (4613) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-05T22:24:59 I (4613) QUIC: QUIC client initialization completed
+2026-11-05T22:24:59 I (5053) main_task: Returned from app_main()
+2026-11-05T22:25:01 I (7223) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-05T22:25:01 I (7223) QUIC: QUIC handshake completed callback triggered!
+2026-11-05T22:25:01 I (7243) QUIC: Extending max local streams bidi to 128
+2026-11-05T22:25:01 
+2026-11-05T22:25:01 I (7253) quic_demo_main: QUIC connection established
+2026-11-05T22:25:02 I (8253) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-05T22:25:02 I (8263) QUIC: Opened new QUIC stream with ID: 0
+2026-11-05T22:25:02 Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+2026-11-05T22:25:02 
+2026-11-05T22:25:02 Core  0 register dump:
+2026-11-05T22:25:02 MEPC    : 0x40021c40  RA      : 0x400225c4  SP      : 0x40839030  GP      : 0x40818d94  
+2026-11-05T22:25:02 TP      : 0x40839f30  T0      : 0x40021c06  T1      : 0xffffffe0  T2      : 0xd1db613e  
+2026-11-05T22:25:02 S0/FP   : 0x40824634  S1      : 0x40847f0c  A0      : 0x40824634  A1      : 0x40847f0c  
+2026-11-05T22:25:02 A2      : 0x40847f0c  A3      : 0x00000004  A4      : 0x40847f08  A5      : 0x41847f08  
+2026-11-05T22:25:02 A6      : 0x00000568  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x40846294  
+2026-11-05T22:25:02 S4      : 0x40847f04  S5      : 0x00000001  S6      : 0x40839938  S7      : 0x00000038  
+2026-11-05T22:25:02 S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000001  S11     : 0x00000001  
+2026-11-05T22:25:02 T3      : 0x00000002  T4      : 0x22203a40  T5      : 0x0000ff00  T6      : 0x00ff0000  
+2026-11-05T22:25:02 MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000005  MTVAL   : 0x41847f0c  
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x40800001: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 MHARTID : 0x00000000  
+2026-11-05T22:25:02 
+2026-11-05T22:25:02 Stack memory:
+2026-11-05T22:25:02 40839030: 0x40839938 0x00000001 0xcf9cad58 0x40846294 0x40880000 0x40847f0c 0x40824620 0x400225c4
+2026-11-05T22:25:02 40839050: 0x4084812c 0x42163b38 0x40847f0c 0x40800b56 0x40852e80 0x40852ed0 0x00000000 0x40808576
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x40800b56 0x40808576: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839070: 0x4a13897e 0x40852e80 0x40852ed0 0x4202ac74 0x4084812c 0x42163b38 0x40847f0c 0x4202acb8
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x4202ac74 0x4202acb8: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839090: 0x40847f0c 0x42163b38 0x40847f0c 0x42016208 0xcf9cad58 0x40847f0c 0x4084612c 0x4201b1d0
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x42016208 0x4201b1d0: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 408390b0: 0x40839938 0x00000001 0xcf9cad58 0x0000047a 0xcf9cad58 0x00000001 0x4084612c 0x4201b250
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x4201b250: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 408390d0: 0x408393c2 0x00000092 0x4084612c 0x4201d126 0x00000000 0x00000151 0xcf9cad58 0x00000001
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x4201d126: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 408390f0: 0x00000000 0x408394dc 0x00000001 0x40842d70 0x00000151 0x408522f8 0x00000151 0x4203c206
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x4203c206: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839110: 0x408522f8 0x4084571c 0x00000000 0x00000000 0x00000000 0x00000038 0x40839938 0x000004b0
+2026-11-05T22:25:02 40839130: 0x4083938c 0x00000000 0x4084612c 0x420212ec 0x00000008 0x13da935c 0x8b7e64fd 0x00000000
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x420212ec: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839150: 0x40839a5c 0xcf9cad58 0x40839938 0x00000000 0x000004b0 0x4083938c 0x00000000 0x0000001f
+2026-11-05T22:25:02 40839170: 0x00000000 0x408392b0 0x4084612c 0x42021758 0x00000001 0x408392b0 0x4084612c 0xcf9cad58
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x42021758: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839190: 0x00000001 0x4083998c 0x408394dc 0x408394f9 0x40838e78 0x00000000 0x0000001d 0x00000000
+2026-11-05T22:25:02 408391b0: 0x0000001c 0x00000001 0x00000001 0x4083938c 0x000004b0 0x40846794 0x000005ac 0x4083938c
+2026-11-05T22:25:02 408391d0: 0x00000001 0xcf9cad58 0x00000001 0x00000000 0x40839340 0x40839938 0x4084612c 0x420219ac
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x420219ac: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 408391f0: 0x00000000 0x00000000 0x00000000 0x00000000 0x40839a88 0x00000000 0x40839340 0x408392b0
+2026-11-05T22:25:02 40839210: 0x00000000 0x00000000 0x4084612c 0x4201d100 0x40839a88 0x408394dc 0x000004b0 0x00000000
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x4201d100: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839230: 0x00000000 0x00000000 0xf68eaae8 0x00000000 0x420b5258 0x40832a98 0x4083927c 0x00000000
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x420b5258: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839250: 0x00000000 0x00000000 0x000005ac 0x4083938c 0x40839938 0x00000001 0x40839340 0x4084612c
+2026-11-05T22:25:02 40839270: 0x408443f0 0x4084612c 0x00000000 0x42021fa8 0xcf9cad58 0x00000001 0x00000000 0x42019e98
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x42021fa8 0x42019e98: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:02 40839290: 0x00000000 0x4083932c 0x00000000 0x420220c8 0xcf9cad58 0x00000001 0x40839a88 0x00000000
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x420220c8: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:03 408392b0: 0x00000000 0x408394dc 0x408443f0 0x00000000 0x40839338 0x00000001 0x4083932c 0x42021758
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x42021758: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:03 408392d0: 0x00000000 0x420b5258 0x0000001f 0x00001e58 0x0000000e 0xcf9cad58 0x00000001 0x4081ec50
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x420b5258: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:03 408392f0: 0x00000001 0x00000000 0x4081ec50 0x42011742 0x00000000 0x00000000 0x40839338 0x00000001
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x42011742: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:03 40839310: 0xcf9cad58 0x00000001 0x000005ac 0x408394dc 0x00000001 0xf68eaae8 0x00000000 0xffffffff
+2026-11-05T22:25:03 40839330: 0x00000000 0x00000000 0x40855758 0x0000001f 0x40839354 0x00000010 0x40839370 0x0000001c
+2026-11-05T22:25:03 40839350: 0x00000000 0x87c70210 0x00000000 0x00000000 0x00000000 0x000004b0 0x0000004a 0x00000001
+2026-11-05T22:25:03 40839370: 0xe7380210 0x0189a8c0 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000cc
+2026-11-05T22:25:03 40839390: 0x28eb0801 0xd86eb19f 0x60088738 0x31630d2f 0x0063ba17 0x1a000080 0xe2ed0c14 0xf96149c5
+2026-11-05T22:25:03 408393b0: 0x15472c5f 0x429a3ca6 0xa3f4a42b 0xd89538cb 0x00ec25cb 0x08010000 0xb19f28eb 0x8738d86e
+2026-11-05T22:25:03 408393d0: 0x0d2f6008 0xba173163 0x00008063 0xd12bc341 0x842de24c 0x1dffd0a8 0x2f2f021a 0x1a8e8e91
+2026-11-05T22:25:03 408393f0: 0x5441833c 0x7771b8f8 0x45487d20 0xe9118ccc 0x203136bd 0xef1e22e2 0x3445cf7d 0x0930a0c9
+2026-11-05T22:25:03 40839410: 0x536698ae 0x77a6d9e1 0xda1bb904 0x40811d26 0x00000000 0xf68eaae8 0x00000000 0x00000000
+[1;31mxtensa-esp32-elf-addr2line -fiaC -e C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\wifi_ps_none_20261103\build\quic_demo.elf 0x40811d26: [WinError 2] The system cannot find the file specified[0m
+2026-11-05T22:25:03 
+2026-11-05T22:25:03 
+2026-11-05T22:25:03 
+2026-11-05T22:25:03 ELF file SHA256: 9b23e164f
+2026-11-05T22:25:03 
+2026-11-05T22:25:03 Rebooting...

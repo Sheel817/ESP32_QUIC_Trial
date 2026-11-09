@@ -1,0 +1,31 @@
+{
+  "verified_utc": "2026-11-04T01:40:05.095010+00:00",
+  "original_recording_hashes_unchanged": true,
+  "frozen_plan_and_manifest_unchanged": true,
+  "independent_selected_csv_recalculation_passed": true,
+  "server_sensor_sequence_range": [
+    1,
+    441
+  ],
+  "server_sensor_errors": [],
+  "server_stdout_flagged_lines": [],
+  "server_stderr_bytes": 0,
+  "other_17_register_rows_unchanged": true,
+  "saved_xlsx_status_verified": true,
+  "live_source_intervals": [
+    {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\monitor_stream.log",
+      "start_byte": 6839,
+      "end_byte": 54986,
+      "sha256": "6849ae0b346f2f530d2bebf8229f96e825a0c67986e925bddbb1405f4183f2f7",
+      "matches": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\serial.raw.log"
+    },
+    {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+      "start_byte": 380697,
+      "end_byte": 456361,
+      "sha256": "7e1bd2cfcead6dbc07f5607cf5f0bca3b9e3eb2122c11e72394801e937cdef56",
+      "matches": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\server.stdout.raw.log"
+    }
+  ]
+}

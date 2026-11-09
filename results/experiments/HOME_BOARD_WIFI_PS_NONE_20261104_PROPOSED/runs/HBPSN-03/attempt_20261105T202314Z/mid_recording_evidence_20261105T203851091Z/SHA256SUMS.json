@@ -1,0 +1,37 @@
+[
+  {
+    "path": "capture_metadata.json",
+    "bytes": 1857,
+    "sha256": "e9a7c95d1cbc1b33dab881a6196640bab72539f43acba91d87ddb6e40742d814"
+  },
+  {
+    "path": "HBPSN-03_Clumsy_MID_RECORDING.jpg",
+    "bytes": 44073,
+    "sha256": "ee6e631987be2d4dd4ba7bf34fed70a5a650a284581f81b274a2dd3e030a7050"
+  },
+  {
+    "path": "initial_boot_snapshot.raw.log",
+    "bytes": 20662,
+    "sha256": "cd0b2b212a58f53e48b9f8736f5e9b6b1ccbd3ce6190aa4ed7996f7a46392a78"
+  },
+  {
+    "path": "post_reboot_rtts_snapshot.json",
+    "bytes": 36817,
+    "sha256": "cba6290b07544d9318afdad6d4d39434bdf5d250f05187f504ae53f67377ade2"
+  },
+  {
+    "path": "post_reboot_snapshot.raw.log",
+    "bytes": 26491,
+    "sha256": "6ec84e28c70d11343413c95b4c046c1a87b8559bc436ded5004eb159ee87a400"
+  },
+  {
+    "path": "recording_status_check.json",
+    "bytes": 4664,
+    "sha256": "31d10a10707fd77ca256c7bf5a635444528e61893239df1b1200f7ea76b4788d"
+  },
+  {
+    "path": "STATUS.md",
+    "bytes": 1741,
+    "sha256": "2836e3a01ed34e4657be436e960b2ada699029583cc0fc7a595ff6bc0c043789"
+  }
+]

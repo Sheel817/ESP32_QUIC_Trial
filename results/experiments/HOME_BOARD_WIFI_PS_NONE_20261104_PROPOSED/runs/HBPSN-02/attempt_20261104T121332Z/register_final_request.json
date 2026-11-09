@@ -1,0 +1,19 @@
+{
+  "run_id": "HBPSN-02",
+  "patch": {
+    "status": "FAILED_SETTINGS",
+    "recording_end_utc": "2026-11-04T12:54:27.280042+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 0,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 188.95411084337348,
+    "minimum_app_rtt_ms": 127.227,
+    "maximum_app_rtt_ms": 867.649,
+    "deviation_reason": " Required post-recording settings evidence pending; fixed data window is not extended."
+  },
+  "final": true,
+  "automatic_register_apply": false
+}

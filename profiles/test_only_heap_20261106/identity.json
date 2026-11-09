@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-06T00:26:43.838018+00:00",
+  "label": "TEST_ONLY",
+  "baseline_manifest": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\source_before.json",
+  "baseline_files": 1428,
+  "all_baseline_hashes_match": true,
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\src",
+  "build": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build",
+  "board_action": "NONE",
+  "private_dependency_copies": true
+}

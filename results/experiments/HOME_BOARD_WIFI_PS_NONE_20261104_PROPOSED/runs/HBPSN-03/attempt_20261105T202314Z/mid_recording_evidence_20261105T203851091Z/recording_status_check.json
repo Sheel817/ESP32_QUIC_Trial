@@ -1,0 +1,96 @@
+{
+  "checked_utc": "2026-11-05T20:40:17.819479+00:00",
+  "run_id": "HBPSN-03",
+  "status": "FAILED_STARTUP",
+  "processing_status": "RECORDING_ORIGINAL_FIXED_WINDOW_NOT_FINALIZED",
+  "fixed_start_utc": "2026-11-05T20:24:54.413525+00:00",
+  "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+  "remaining_seconds_at_check": 1296.594046,
+  "collector_heartbeat": {
+    "utc": "2026-11-05T20:40:17.457661+00:00",
+    "monotonic": 665526.7737827,
+    "remaining_seconds": 1296.9557673999807,
+    "status": "STARTUP_PENDING",
+    "serial_bytes": 47153,
+    "monitor_alive": true,
+    "collector_pid": 16148
+  },
+  "finalization_evidence_files": {
+    "FINALIZED.json": false,
+    "FINALIZATION_FAILED.json": false,
+    "recording_cutoff_observed.json": false,
+    "statistics.json": false,
+    "post_recording_settings_check.json": false,
+    "collector_failure.json": false
+  },
+  "actual_image": {
+    "run_id": "HBPSN-03",
+    "source_type": "ACTUAL_GUI_IMAGE",
+    "capture_started_utc": "2026-11-05T20:38:51.091Z",
+    "capture_completed_utc": "2026-11-05T20:38:51.879Z",
+    "screenshot": "HBPSN-03_Clumsy_MID_RECORDING.jpg",
+    "sha256": "ee6e631987be2d4dd4ba7bf34fed70a5a650a284581f81b274a2dd3e030a7050",
+    "bytes": 44073,
+    "saved_utc": "2026-11-05T20:39:08.394Z",
+    "fixed_deadline_utc": "2026-11-05T21:01:54.413525+00:00",
+    "capture_started_seconds_after_deadline": -1383.322,
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "comparison": "Visible settings match required pre-reset condition. No claim of continuous stability from screenshots alone.",
+    "inactive_controls": "Lag100ms inbound off/outbound on; Throttle30ms/drop-throttled off/chance10%; Duplicatecount2/chance10%; Out of order10%; Tamperredo-checksum on/chance10%; Set TCP RSTchance0%; Bandwidth10KB/s. Inactive direction boxes otherwise show inbound/outbound checked. All seven corresponding main effects OFF.",
+    "status": "FAILED_STARTUP",
+    "validity_status": "NOT_APPROVED",
+    "operator_stability_confirmation": "NOT_RECEIVED",
+    "note": "User requested a post-recording image now, but actual capture precedes the original fixed deadline. This is mid-recording evidence and cannot satisfy the post-recording requirement. No backdating or early finalization. FAILED_STARTUP unchanged.",
+    "phase": "MID_RECORDING_NOT_POST_RECORDING",
+    "post_recording_requirement_satisfied": false
+  },
+  "image_is_post_recording": false,
+  "seconds_before_deadline": 1383.322525,
+  "visible_settings_match_pre_reset": true,
+  "missing_evidence": [
+    "Actual screenshot acquired after original recording deadline",
+    "Operator confirmation of settings stability through recording and actual post-recording image",
+    "Finalization outputs: deadline is still in the future"
+  ],
+  "evidence_review_cannot_override_startup_failure": true,
+  "raw_snapshot": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-03\\attempt_20261105T202314Z\\serial.raw.log",
+    "byte_start": 0,
+    "byte_end_exclusive": 47153,
+    "sha256": "574aa2faece06832834f55762daeef881dd94bd0b448557e52c0c02bfa2d7ca7",
+    "second_boot_line": 220,
+    "second_boot_byte_offset": 20662,
+    "initial_boot_rtt_count": 0,
+    "post_reboot_rtt_count": 180,
+    "primary_selected_count_so_far": 0,
+    "note": "Partial snapshots taken before deadline, not final run counts. All original recording remains under collector control; no early finalization or substitution."
+  },
+  "preservation": {
+    "register_hashes": {
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "656b5c6a71cbe783c66b9fe14f74551776e09522a7354ab9b385fb1baa908aae",
+      "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "63980c1b51d42099f00867e52a48dec17d91c53eb4dc8d8e32e1f12f936d78ea"
+    },
+    "earlier_immutable_files_checked": 175,
+    "earlier_files_unchanged": true,
+    "crash_evidence_hashes_verified": true,
+    "collector_not_signalled": true
+  }
+}

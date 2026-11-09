@@ -1,0 +1,180 @@
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\main\ngtcp2_sample.c
+534: }
+535: 
+536: static int client_write_streams(struct client *c) {
+537:   // Callers hold quic_mutex before taking this timestamp and retain it
+538:   // across the entire packet-writing sequence. Do not move it before the lock.
+539:   ngtcp2_tstamp ts = timestamp();
+540:   ngtcp2_pkt_info pi = {0};
+541:   ngtcp2_ssize nwrite;
+542:   uint8_t buf[1452];
+543:   ngtcp2_path_storage ps;
+544:   ngtcp2_vec datav;
+545:   size_t datavcnt;
+546:   int64_t stream_id;
+547:   ngtcp2_ssize wdatalen;
+548:   uint32_t flags;
+549:   int fin;
+550: 
+551:   ngtcp2_path_storage_zero(&ps);
+552: 
+553:   for (;;) {
+554:     datavcnt = client_get_message(c, &stream_id, &fin, &datav, 1);
+555: 
+556:     // Finish each packet in this call; without MORE there is no pending
+557:     // WRITE_MORE sequence that could be interrupted by reads or expiry calls.
+558:     flags = NGTCP2_WRITE_STREAM_FLAG_NONE;
+559:     if (fin) {
+560:       flags |= NGTCP2_WRITE_STREAM_FLAG_FIN;
+561:     }
+562: 
+563:     nwrite = ngtcp2_conn_writev_stream(c->conn, &ps.path, &pi, buf, sizeof(buf),
+564:                                        &wdatalen, flags, stream_id, &datav,
+565:                                        datavcnt, ts);
+566:     if (nwrite < 0) {
+567:       switch (nwrite) {
+568:       case NGTCP2_ERR_STREAM_DATA_BLOCKED:
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\components\ngtcp2\ngtcp2\lib\ngtcp2_conn.c
+757: }
+758: 
+759: static void pktns_del(ngtcp2_pktns *pktns, const ngtcp2_mem *mem) {
+760:   if (pktns == NULL) {
+761:     return;
+762:   }
+763: 
+764:   pktns_free(pktns, mem);
+765: 
+766:   ngtcp2_mem_free(mem, pktns);
+767: }
+768: 
+2480: 
+2481: static void conn_discard_pktns(ngtcp2_conn *conn, ngtcp2_pktns **ppktns,
+2482:                                ngtcp2_tstamp ts) {
+2483:   ngtcp2_pktns *pktns = *ppktns;
+2484:   uint64_t bytes_in_flight;
+2485: 
+2486:   bytes_in_flight = pktns->rtb.cc_bytes_in_flight;
+2487: 
+2488:   assert(conn->cstat.bytes_in_flight >= bytes_in_flight);
+2489: 
+2490:   conn->cstat.bytes_in_flight -= bytes_in_flight;
+2491:   conn->cstat.pto_count = 0;
+2492:   conn->cstat.last_tx_pkt_ts[pktns->id] = UINT64_MAX;
+2493:   conn->cstat.loss_time[pktns->id] = UINT64_MAX;
+2494: 
+2495:   conn_call_delete_crypto_aead_ctx(conn, &pktns->crypto.rx.ckm->aead_ctx);
+2496:   conn_call_delete_crypto_cipher_ctx(conn, &pktns->crypto.rx.hp_ctx);
+2497:   conn_call_delete_crypto_aead_ctx(conn, &pktns->crypto.tx.ckm->aead_ctx);
+2498:   conn_call_delete_crypto_cipher_ctx(conn, &pktns->crypto.tx.hp_ctx);
+2499: 
+2500:   pktns_del(pktns, conn->mem);
+2501:   *ppktns = NULL;
+2502: 
+2503:   ngtcp2_conn_set_loss_detection_timer(conn, ts);
+2504: }
+2505: 
+2506: void ngtcp2_conn_discard_initial_state(ngtcp2_conn *conn, ngtcp2_tstamp ts) {
+2507:   if (!conn->in_pktns) {
+2508:     return;
+2509:   }
+2510: 
+2511:   ngtcp2_log_info(&conn->log, NGTCP2_LOG_EVENT_CON,
+2512:                   "discarding Initial packet number space");
+2513: 
+2514:   conn_discard_pktns(conn, &conn->in_pktns, ts);
+2515: 
+2516:   conn_vneg_crypto_free(conn);
+2517: 
+2518:   memset(&conn->vneg.rx, 0, sizeof(conn->vneg.rx));
+2750:   }
+2751: 
+2752:   nwrite =
+2753:     conn_write_handshake_pkt(conn, pi, dest, destlen, (size_t)res,
+2754:                              NGTCP2_PKT_HANDSHAKE, wflags, write_datalen, ts);
+2755:   if (nwrite < 0) {
+2756:     assert(nwrite != NGTCP2_ERR_NOBUF);
+2757:     return nwrite;
+2758:   }
+2759: 
+2760:   res += nwrite;
+2761: 
+2762:   if (!conn->server && conn->hs_pktns->crypto.tx.ckm && nwrite) {
+2763:     /* We don't need to send further Initial packet if we have
+2764:        Handshake key and sent something with it.  So discard initial
+2765:        state here. */
+2766:     ngtcp2_conn_discard_initial_state(conn, ts);
+2767:   }
+2768: 
+2769:   return res;
+2770: }
+
+C:\Users\newsh\Desktop\ESP32_QUIC_Trial\components\ngtcp2\ngtcp2\lib\ngtcp2_mem.c
+30: static void *default_malloc(size_t size, void *user_data) {
+31:   (void)user_data;
+32: 
+33:   return malloc(size);
+34: }
+35: 
+36: static void default_free(void *ptr, void *user_data) {
+37:   (void)user_data;
+38: 
+39:   free(ptr);
+40: }
+41: 
+42: static void *default_calloc(size_t nmemb, size_t size, void *user_data) {
+43:   (void)user_data;
+62: 
+63: #ifndef MEMDEBUG
+64: void *ngtcp2_mem_malloc(const ngtcp2_mem *mem, size_t size) {
+65:   return mem->malloc(size, mem->user_data);
+66: }
+67: 
+68: void ngtcp2_mem_free(const ngtcp2_mem *mem, void *ptr) {
+69:   mem->free(ptr, mem->user_data);
+70: }
+71: 
+72: void *ngtcp2_mem_calloc(const ngtcp2_mem *mem, size_t nmemb, size_t size) {
+
+C:\esp\v6.1\esp-idf\components\heap\heap_caps_base.c
+67:         return;
+68:     }
+69: 
+70:     if ((!esp_dram_match_iram() && esp_ptr_in_diram_iram(ptr)) ||
+71:         (!esp_rtc_dram_match_rtc_iram() && esp_ptr_in_rtc_iram_fast(ptr))) {
+72:         //Memory allocated here is actually allocated in the DRAM alias region and
+73:         //cannot be de-allocated as usual. dram_alloc_to_iram_addr stores a pointer to
+74:         //the equivalent DRAM address, though; free that.
+75:         uint32_t *dramAddrPtr = (uint32_t *)ptr;
+76:         ptr = (void *)dramAddrPtr[-1];
+77:     }
+78:     void *block_owner_ptr = MULTI_HEAP_REMOVE_BLOCK_OWNER_OFFSET(ptr);
+79:     heap_t *heap = find_containing_heap(block_owner_ptr);
+80:     assert(heap != NULL && "free() target pointer is outside heap areas");
+81: 
+82: #if CONFIG_HEAP_TASK_TRACKING
+83:     heap_caps_update_per_task_info_free(heap, ptr);
+84: #endif
+85: 
+86:     multi_heap_free(heap->heap, block_owner_ptr);
+87: 
+88:     CALL_HOOK(esp_heap_trace_free_hook, ptr);
+89: }
+90: 
+
+C:\esp\v6.1\esp-idf\components\esp_libc\src\heap.c
+25: }
+26: 
+27: void* realloc(void* ptr, size_t size)
+28: {
+29:     return heap_caps_realloc_default(ptr, size);
+30: }
+31: 
+32: void free(void *ptr)
+33: {
+34:     heap_caps_free(ptr);
+35: }
+36: 
+37: ESP_COMPILER_DIAGNOSTIC_PUSH_IGNORE("-Wanalyzer-malloc-leak")
+38: void* calloc(size_t nmemb, size_t size)

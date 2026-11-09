@@ -1,0 +1,2 @@
+# Keep exact bytes so files match the SHA256SUMS.json evidence manifests
+* -text

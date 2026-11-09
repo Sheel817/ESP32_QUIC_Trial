@@ -1,0 +1,9 @@
+{
+  "test_only": true,
+  "utc": "2026-11-04T01:58:10.882274+00:00",
+  "read_handle_share_delete": false,
+  "error": "PermissionError(13, 'Access is denied')",
+  "winerror": 5,
+  "reproduced": true,
+  "replacement_after_handle_close": true
+}

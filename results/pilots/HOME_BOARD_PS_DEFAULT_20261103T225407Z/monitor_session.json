@@ -1,0 +1,26 @@
+{
+  "label": "HOME_BOARD original/default-power-saving firmware; Clumsy stopped",
+  "started_utc": "2026-11-03T22:54:28.064799+00:00",
+  "wrapper_pid": 36356,
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "esp_idf_monitor",
+    "--port",
+    "COM6",
+    "--baud",
+    "115200",
+    "--target",
+    "esp32c6",
+    "--no-reset",
+    "--disable-auto-color",
+    "--timestamps",
+    "--timestamp-format",
+    "%Y-%m-%dT%H:%M:%S%z",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\build\\quic_demo.elf"
+  ],
+  "clumsy_evidence": "UI observed Start button and Stopped status; Lag unchecked before startup",
+  "monitor_pid": 14776,
+  "controlled_reset_requested_utc": "2026-11-03T22:54:30.076456+00:00"
+}

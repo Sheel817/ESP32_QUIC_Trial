@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-09T19:35:05.303092+00:00",
+  "monotonic": 1007211.8352466,
+  "remaining_seconds": 0.9655590000329539,
+  "status": "RUNNING",
+  "serial_bytes": 47470,
+  "monitor_alive": true,
+  "collector_pid": 9492
+}

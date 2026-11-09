@@ -1,5 +1,6 @@
 #include "mqtt_quic_transport.h"
 #include "esp_log.h"
+#include "measurement_logging.h"
 #include "ngtcp2_sample.h"
 #include <string.h>
 
@@ -84,7 +85,7 @@ static bool determine_mqtt_packet_length(NetworkContext_t *context) {
             context->is_mqtt_connect_packet = true;
         }
         
-        ESP_LOGI(TAG, "Determined MQTT packet length: %lu bytes (remaining_length=%lu, bytes_used=%zu)",
+        MEASUREMENT_LOGI(TAG, "Determined MQTT packet length: %lu bytes (remaining_length=%lu, bytes_used=%zu)",
                  context->expected_packet_length, remaining_length, bytes_used);
         return true;
     }
@@ -98,9 +99,9 @@ static bool determine_mqtt_packet_length(NetworkContext_t *context) {
  * @return 0 on success, -1 on failure
  */
 static int send_complete_mqtt_packet(NetworkContext_t *context) {
-    ESP_LOGI(TAG, "=== SENDING COMPLETE MQTT PACKET ===");
-    ESP_LOGI(TAG, "Packet length: %zu bytes", context->send_buffer_len);
-    ESP_LOGI(TAG, "Is CONNECT packet: %s", context->is_mqtt_connect_packet ? "YES" : "NO");
+    MEASUREMENT_LOGI(TAG, "=== SENDING COMPLETE MQTT PACKET ===");
+    MEASUREMENT_LOGI(TAG, "Packet length: %zu bytes", context->send_buffer_len);
+    MEASUREMENT_LOGI(TAG, "Is CONNECT packet: %s", context->is_mqtt_connect_packet ? "YES" : "NO");
     
     // Validate packet before sending
     if (context->send_buffer_len == 0 || context->send_buffer_len > sizeof(context->send_buffer)) {
@@ -108,6 +109,7 @@ static int send_complete_mqtt_packet(NetworkContext_t *context) {
         return -1;
     }
     
+#if !QUIET_MEASUREMENT
     // Log the complete packet in hex
     char hex_str[257];
     size_t hex_len = (context->send_buffer_len > 128) ? 128 : context->send_buffer_len;
@@ -117,28 +119,30 @@ static int send_complete_mqtt_packet(NetworkContext_t *context) {
     }
     hex_str[hex_len*2] = '\0';
     
-    ESP_LOGI(TAG, "Complete MQTT packet hex (%zu bytes): %s%s", 
+    MEASUREMENT_LOGI(TAG, "Complete MQTT packet hex (%zu bytes): %s%s",
              context->send_buffer_len, hex_str, (context->send_buffer_len > 128) ? "..." : "");
     
-    // Check if QUIC client is still connected
+#endif
+
+    // Check if the selected transport is still connected
     extern bool quic_client_is_connected(void);
-    if (!quic_client_is_connected()) {
-        ESP_LOGE(TAG, "QUIC client is not connected, cannot send data");
+    if (!context->is_connected()) {
+        ESP_LOGE(TAG, "Transport is not connected, cannot send data");
         return -1;
     }
     
     // Add a small delay before sending to ensure QUIC is ready
     vTaskDelay(pdMS_TO_TICKS(10));
     
-    int result = quic_client_write_safe(context->send_buffer, 
+    int result = context->write_packet(context->send_buffer,
                                        context->send_buffer_len);
     
     if (result != 0) {
-        ESP_LOGE(TAG, "Failed to send complete MQTT packet over QUIC, error %d", result);
+        ESP_LOGE(TAG, "Failed to send complete MQTT packet over transport, error %d", result);
         return -1;
     }
     
-    ESP_LOGI(TAG, "Successfully sent complete MQTT packet (%zu bytes) over QUIC", context->send_buffer_len);
+    MEASUREMENT_LOGI(TAG, "Successfully sent complete MQTT packet (%zu bytes) over QUIC", context->send_buffer_len);
     return 0;
 }
 
@@ -157,9 +161,9 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
                               const void *pBuffer,
                               size_t bytesToSend)
 {
-    ESP_LOGI(TAG, "=== TRANSPORT SEND CALLED ===");
-    ESP_LOGI(TAG, "Function: %s", __func__);
-    ESP_LOGI(TAG, "Parameters: pNetworkContext=%p, pBuffer=%p, bytesToSend=%zu", pNetworkContext, pBuffer, bytesToSend);
+    MEASUREMENT_LOGI(TAG, "=== TRANSPORT SEND CALLED ===");
+    MEASUREMENT_LOGI(TAG, "Function: %s", __func__);
+    MEASUREMENT_LOGI(TAG, "Parameters: pNetworkContext=%p, pBuffer=%p, bytesToSend=%zu", pNetworkContext, pBuffer, bytesToSend);
     
     if (pNetworkContext == NULL || pBuffer == NULL) {
         ESP_LOGE(TAG, "Invalid parameters: pNetworkContext=%p, pBuffer=%p", pNetworkContext, pBuffer);
@@ -171,10 +175,11 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
         return 0;
     }
 
-    ESP_LOGI(TAG, "Received fragment of %zu bytes", bytesToSend);
+    MEASUREMENT_LOGI(TAG, "Received fragment of %zu bytes", bytesToSend);
     
-    // Log the fragment in hex for debugging
     const uint8_t *data = (const uint8_t *)pBuffer;
+#if !QUIET_MEASUREMENT
+    // Log the fragment in hex for debugging
     char hex_str[257];
     size_t hex_len = (bytesToSend > 128) ? 128 : bytesToSend;
     
@@ -183,20 +188,22 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
     }
     hex_str[hex_len*2] = '\0';
     
-    ESP_LOGI(TAG, "Fragment hex (%zu bytes): %s%s", bytesToSend, hex_str, (bytesToSend > 128) ? "..." : "");
+    MEASUREMENT_LOGI(TAG, "Fragment hex (%zu bytes): %s%s", bytesToSend, hex_str, (bytesToSend > 128) ? "..." : "");
     
     // Check if this is the start of a new packet
     if (pNetworkContext->send_buffer_len == 0) {
-        ESP_LOGI(TAG, "Starting new MQTT packet");
+        MEASUREMENT_LOGI(TAG, "Starting new MQTT packet");
         
         // Check if this looks like a valid MQTT packet start
         if (data[0] == 0x10) {
-            ESP_LOGI(TAG, "*** This looks like the start of an MQTT CONNECT packet! ***");
+            MEASUREMENT_LOGI(TAG, "*** This looks like the start of an MQTT CONNECT packet! ***");
         } else {
-            ESP_LOGI(TAG, "MQTT packet type: 0x%02x", data[0]);
+            MEASUREMENT_LOGI(TAG, "MQTT packet type: 0x%02x", data[0]);
         }
     }
     
+#endif
+
     // Check if we have enough space in the send buffer
     if (pNetworkContext->send_buffer_len + bytesToSend > sizeof(pNetworkContext->send_buffer)) {
         ESP_LOGE(TAG, "Send buffer overflow! Current: %zu, Adding: %zu, Max: %zu",
@@ -208,14 +215,14 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
     memcpy(pNetworkContext->send_buffer + pNetworkContext->send_buffer_len, data, bytesToSend);
     pNetworkContext->send_buffer_len += bytesToSend;
     
-    ESP_LOGD(TAG, "Added fragment to buffer. Total buffered: %zu bytes", pNetworkContext->send_buffer_len);
+    MEASUREMENT_LOGD(TAG, "Added fragment to buffer. Total buffered: %zu bytes", pNetworkContext->send_buffer_len);
     
     // Try to determine the packet length if we haven't already
     if (!pNetworkContext->packet_length_determined) {
         if (determine_mqtt_packet_length(pNetworkContext)) {
-            ESP_LOGD(TAG, "Determined packet length: %lu bytes", pNetworkContext->expected_packet_length);
+            MEASUREMENT_LOGD(TAG, "Determined packet length: %lu bytes", pNetworkContext->expected_packet_length);
         } else {
-            ESP_LOGD(TAG, "Still determining packet length, need more data");
+            MEASUREMENT_LOGD(TAG, "Still determining packet length, need more data");
         }
     }
     
@@ -223,8 +230,8 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
     if (pNetworkContext->packet_length_determined && 
         pNetworkContext->send_buffer_len >= pNetworkContext->expected_packet_length) {
         
-        ESP_LOGD(TAG, "*** COMPLETE MQTT PACKET READY TO SEND ***");
-        ESP_LOGD(TAG, "Expected: %lu bytes, Buffered: %zu bytes",
+        MEASUREMENT_LOGD(TAG, "*** COMPLETE MQTT PACKET READY TO SEND ***");
+        MEASUREMENT_LOGD(TAG, "Expected: %lu bytes, Buffered: %zu bytes",
                  pNetworkContext->expected_packet_length, pNetworkContext->send_buffer_len);
         
         // Send the complete packet
@@ -238,11 +245,11 @@ int32_t mqtt_quic_transport_send(NetworkContext_t *pNetworkContext,
             return -1;
         }
         
-        ESP_LOGI(TAG, "Successfully sent complete MQTT packet");
+        MEASUREMENT_LOGI(TAG, "Successfully sent complete MQTT packet");
     } else {
-        ESP_LOGI(TAG, "Packet not complete yet, continuing to buffer");
+        MEASUREMENT_LOGI(TAG, "Packet not complete yet, continuing to buffer");
         if (pNetworkContext->packet_length_determined) {
-            ESP_LOGD(TAG, "Need %lu more bytes",
+            MEASUREMENT_LOGD(TAG, "Need %lu more bytes",
                      pNetworkContext->expected_packet_length - pNetworkContext->send_buffer_len);
         }
     }
@@ -259,32 +266,33 @@ int32_t mqtt_quic_transport_recv(NetworkContext_t *pNetworkContext,
         return -1;
     }
     
-    ESP_LOGD(TAG, "Attempting to receive up to %zu bytes", bytesToRecv);
+    MEASUREMENT_LOGD(TAG, "Attempting to receive up to %zu bytes", bytesToRecv);
     
     size_t bytesReceived = 0;
     
-    // Check if QUIC client is still connected
+    // Check if the selected transport is still connected
     extern bool quic_client_is_connected(void);
-    if (!quic_client_is_connected()) {
-        ESP_LOGW(TAG, "QUIC client is not connected, cannot receive data");
+    if (!pNetworkContext->is_connected()) {
+        ESP_LOGW(TAG, "Transport is not connected, cannot receive data");
         return 0; // Return 0 to indicate no data available, not an error
     }
     
-    int result = quic_client_read_safe((uint8_t *)pBuffer,
+    int result = pNetworkContext->read_data((uint8_t *)pBuffer,
                                       bytesToRecv,
                                       &bytesReceived);
     
     if (result != 0) {
         if (result == -2) {  // No data available
-            ESP_LOGD(TAG, "No data available from QUIC");
+            MEASUREMENT_LOGD(TAG, "No data available from QUIC");
             return 0;
         }
-        ESP_LOGE(TAG, "Failed to receive data over QUIC, error %d", result);
+        ESP_LOGE(TAG, "Failed to receive data over transport, error %d", result);
         return -1;
     }
     
+#if !QUIET_MEASUREMENT
     if (bytesReceived > 0) {
-        ESP_LOGI(TAG, "=== RECEIVED %zu BYTES FROM QUIC ===", bytesReceived);
+        MEASUREMENT_LOGI(TAG, "=== RECEIVED %zu BYTES FROM QUIC ===", bytesReceived);
         
         // Log the received data in hex
         const uint8_t *data = (const uint8_t *)pBuffer;
@@ -296,7 +304,7 @@ int32_t mqtt_quic_transport_recv(NetworkContext_t *pNetworkContext,
         }
         hex_str[hex_len*2] = '\0';
         
-        ESP_LOGI(TAG, "Received packet hex (%zu bytes): %s%s", 
+        MEASUREMENT_LOGI(TAG, "Received packet hex (%zu bytes): %s%s",
                  bytesReceived, hex_str, (bytesReceived > 128) ? "..." : "");
         
         // Try to identify the MQTT packet type
@@ -321,10 +329,12 @@ int32_t mqtt_quic_transport_recv(NetworkContext_t *pNetworkContext,
                 case 14: packet_name = "DISCONNECT"; break;
             }
             
-            ESP_LOGI(TAG, "*** MQTT Packet Type: %s (0x%02x) ***", packet_name, packet_type);
+            MEASUREMENT_LOGI(TAG, "*** MQTT Packet Type: %s (0x%02x) ***", packet_name, packet_type);
         }
     }
     
+#endif
+
     return (int32_t)bytesReceived;
 }
 
@@ -336,10 +346,13 @@ BaseType_t mqtt_quic_transport_init(NetworkContext_t *pNetworkContext,
         return pdFAIL;
     }
 
-    ESP_LOGI(TAG, "Initializing MQTT-over-QUIC transport");
+    ESP_LOGI(TAG, "Initializing complete-MQTT-packet transport");
     
     pNetworkContext->pServerInfo = pServerInfo;
     pNetworkContext->pMqttQuicConfig = pMqttQuicConfig;
+    pNetworkContext->write_packet = quic_client_write_safe;
+    pNetworkContext->read_data = quic_client_read_safe;
+    pNetworkContext->is_connected = quic_client_is_connected;
     
     // Initialize the send buffer
     reset_send_buffer(pNetworkContext);

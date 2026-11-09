@@ -7,3 +7,13 @@ add_compile_definitions(WOLFSSL_QUIC MICRO_SESSION_CACHE HAVE_ALPN OPENSSL_ALL)
 # "Trim" the build. Include the minimal set of components, main, and anything it depends on.
 idf_build_set_property(MINIMAL_BUILD OFF)
 project(quic_demo)
+# Compatibility for the bundled wolfSSL port with ESP-IDF 6.x.
+# Its hardware crypto port uses APIs removed from IDF 6; use software crypto.
+idf_component_get_property(wolfssl_lib wolfssl__wolfssl COMPONENT_LIB)
+target_compile_definitions(${wolfssl_lib} PUBLIC
+    NO_ESP32_CRYPT
+    NO_WOLFSSL_ESP32_CRYPT_HASH
+    NO_WOLFSSL_ESP32_CRYPT_AES
+    NO_WOLFSSL_ESP32_CRYPT_RSA_PRI)
+# The bundled port uses thread_local as an identifier (a keyword in C23).
+target_compile_options(${wolfssl_lib} PRIVATE -std=gnu17)

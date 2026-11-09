@@ -1,0 +1,8 @@
+﻿{
+    "observed_utc":  "2026-11-03T23:57:30.4624142Z",
+    "capture":  "Running",
+    "effects":  "Lag, Drop, Throttle, Duplicate, Out of order, Tamper, Set RST, Bandwidth all unchecked",
+    "filter":  "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "evidence":  "Computer Use screenshot: Stop button; Started filtering. Enable functionalities to take effect.; all effect checkboxes unchecked",
+    "changes":  "None"
+}

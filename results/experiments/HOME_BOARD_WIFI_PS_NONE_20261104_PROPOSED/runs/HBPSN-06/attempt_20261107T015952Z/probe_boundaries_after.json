@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-07T02:03:04.823860+00:00",
+  "streams": {
+    "stdout": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+      "byte_offset": 1399216,
+      "sha256": "5a38962b03d64db73184e508982a21ce5c6a33a87f9f8244414e75a5f2a33fe9"
+    },
+    "stderr": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+      "byte_offset": 194,
+      "sha256": "ecd8e5540a39811317711d03e0b27895ef9154712ddd71012f5d0ab5df607700"
+    },
+    "sensor_csv": {
+      "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+      "byte_offset": 762036,
+      "sha256": "496647fc6d38bb317b2cde515fbfff164f9844db5dab5ad0a434037ac19b141f"
+    }
+  },
+  "scope": "Host-local probe-associated; not formal-run evidence; all subsequent measured boundaries refresh at reset"
+}

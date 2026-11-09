@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-09T01:32:46.127979+00:00",
+  "monotonic": 942274.0553649,
+  "remaining_seconds": 2213.8427930999314,
+  "status": "RUNNING",
+  "startup_verified": false,
+  "raw_line_count": 140,
+  "app_rtt_count": 0,
+  "collector_pid": 32192
+}

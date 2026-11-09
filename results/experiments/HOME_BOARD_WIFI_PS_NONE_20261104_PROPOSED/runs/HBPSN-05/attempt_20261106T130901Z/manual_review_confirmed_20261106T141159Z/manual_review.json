@@ -1,0 +1,120 @@
+{
+  "run_id": "HBPSN-05",
+  "reviewed_utc": "2026-11-06T14:13:55.163184+00:00",
+  "decision": "COMPLETE",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags; no claim of independent continuous GUI observation or a repaired QUIC defect",
+  "operator_statement": {
+    "exact_statement": "yes it wa sunchanged",
+    "source": "Operator confirmation relayed by user from ChatGPT",
+    "receipt_observed_utc": "2026-11-06T14:11:59.6194955Z",
+    "receipt_observed_helsinki": "2026-11-06T16:11:59.6194955+02:00",
+    "receipt_clock_source": "First local clock observation while processing the current user message; original chat ingress timestamp unavailable",
+    "covered_interval_helsinki": [
+      "2026-11-06T15:13:20.156+02:00",
+      "2026-11-06T15:53:14.719+02:00"
+    ],
+    "confirmed_scope": "Unchanged Clumsy filter, effects and capture; no Stop/Start or close/reopen",
+    "not_backdated": true
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "exact_original_rules": {
+    "images": "Save screenshots before reset and after recording, with UTC and hashes.",
+    "stability": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "errors": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session."
+  },
+  "criteria": {
+    "fixed_window_pass": true,
+    "startup_pass": true,
+    "first415_selection_pass": true,
+    "pre_post_image_hashes_match": true,
+    "settings_match": true,
+    "stability_operator_confirmed": true,
+    "post_actual_start_utc": "2026-11-06T13:53:13.729Z",
+    "post_actual_end_utc": "2026-11-06T13:53:14.719Z",
+    "post_lateness_seconds": 173.572641,
+    "no_new_timing_cutoff": true,
+    "collector_30_second_wait_not_frozen_cutoff": true
+  },
+  "counts": {
+    "raw_serial_lines": 591,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "other_excluded": 0,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0
+  },
+  "statistics": {
+    "minimum_ms": 125.069,
+    "mean_ms": 190.89982409638554,
+    "median_ms": 185.994,
+    "p95_ms": 245.685,
+    "maximum_ms": 525.973
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-06T15:13:20 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-06T15:13:23 W (3263) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-06T15:13:23 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-06T15:13:20 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-06T13:13:20.167541+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "FAILED_SETTINGS",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "FAILED_SETTINGS",
+    "finished_utc": "2026-11-06T13:50:50.594842+00:00",
+    "deadline_utc": "2026-11-06T13:50:20.156359+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-05\\attempt_20261106T130901Z\\SUMMARY.md"
+  },
+  "original_verification": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-05\\attempt_20261106T130901Z\\post_recording_evidence_20261106T135313729Z\\POST_RECORDING_VERIFICATION.json",
+  "original_final_manifest_verified": 71,
+  "register_patch": {
+    "status": "COMPLETE",
+    "settings_evidence_type": "actual_pre_post_GUI_images_and_operator_reported_stability; manually_reviewed",
+    "recording_end_utc": "2026-11-06T13:50:20.156359+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 0,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 190.89982409638554,
+    "minimum_app_rtt_ms": 125.069,
+    "maximum_app_rtt_ms": 525.973,
+    "metadata_path": "runs/HBPSN-05/attempt_20261106T130901Z/manual_review_confirmed_20261106T141159Z/manual_review.json",
+    "deviation_reason": "Manual review COMPLETE with retained flags. Exact operator statement yes it wa sunchanged relayed from ChatGPT; local receipt2026-11-06T14:11:59.6194955Z; original chat ingress unavailable. Stability confirmed through post-image. Actual post-image173.572641s late; no frozen numerical cutoff. Three Wi-Fi warnings retained; no serial/server connection errors, subsequent resets, gaps or shortfall. Original automatic FAILED_SETTINGS/MISSING and all raw evidence preserved. Earlier QUIC crash remains unresolved."
+  },
+  "next_scheduled": {
+    "order": "6",
+    "run_id": "HBPSN-06",
+    "transport": "TCP_TLS",
+    "condition": "DROP1_OUT",
+    "status": "NOT_RUN"
+  },
+  "only_hbpsn05_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

@@ -1,0 +1,16 @@
+{
+  "label": "TEST_ONLY_SYNTHETIC_NOT_BOARD_DATA",
+  "gdb_command": [
+    "C:/Espressif/tools/riscv32-esp-elf-gdb/17.1_20260402/riscv32-esp-elf-gdb/bin/riscv32-esp-elf-gdb.exe",
+    "--batch",
+    "--nx",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\build\\quic_demo.elf",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\host_validation\\SYNTHETIC_TEST_ONLY.core",
+    "-x",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\test_only_heap_20261106\\recover_trace.gdb"
+  ],
+  "exit_code": 0,
+  "committed_records_sorted": true,
+  "in_progress_record_skipped": true,
+  "limitation": "Validates actual recovery script against synthetic ELF core memory. Does not validate physical UART capture, SDK core generation on corruption or reproduction."
+}

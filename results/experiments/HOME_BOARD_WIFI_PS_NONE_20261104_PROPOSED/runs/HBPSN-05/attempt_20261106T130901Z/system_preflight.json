@@ -1,0 +1,661 @@
+{
+  "udp": [
+    {
+      "CimClass": {
+        "CimSuperClassName": "MSFT_NetTransportConnection",
+        "CimSuperClass": {
+          "CimSuperClassName": "CIM_NetworkPipe",
+          "CimSuperClass": {
+            "CimSuperClassName": "CIM_EnabledLogicalElement",
+            "CimSuperClass": "ROOT/StandardCimv2:CIM_EnabledLogicalElement",
+            "CimClassProperties": "Caption Description ElementName InstanceID CommunicationStatus DetailedStatus HealthState InstallDate Name OperatingStatus OperationalStatus PrimaryStatus Status StatusDescriptions AvailableRequestedStates EnabledDefault = 2 EnabledState OtherEnabledState RequestedState = 5 TimeOfLastStateChange TransitioningToState = 12 AggregationBehavior Directionality",
+            "CimClassQualifiers": "UMLPackagePath = \"CIM::Network::Pipes\" locale = 1033",
+            "CimClassMethods": "RequestStateChange",
+            "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+          },
+          "CimClassProperties": [
+            "Caption",
+            "Description",
+            "ElementName",
+            "InstanceID",
+            "CommunicationStatus",
+            "DetailedStatus",
+            "HealthState",
+            "InstallDate",
+            "Name",
+            "OperatingStatus",
+            "OperationalStatus",
+            "PrimaryStatus",
+            "Status",
+            "StatusDescriptions",
+            "AvailableRequestedStates",
+            "EnabledDefault = 2",
+            "EnabledState",
+            "OtherEnabledState",
+            "RequestedState = 5",
+            "TimeOfLastStateChange",
+            "TransitioningToState = 12",
+            "AggregationBehavior",
+            "Directionality",
+            "CreationTime",
+            "LocalAddress",
+            "LocalPort",
+            "OwningProcess"
+          ],
+          "CimClassQualifiers": [
+            "UMLPackagePath = \"CIM::Network::Pipes\"",
+            "ClassVersion = \"1.0.0\"",
+            "dynamic = True",
+            "locale = 1033",
+            "provider = \"nettcpip\""
+          ],
+          "CimClassMethods": [
+            "RequestStateChange"
+          ],
+          "CimSystemProperties": {
+            "Namespace": "ROOT/StandardCimv2",
+            "ServerName": "SHEEL",
+            "ClassName": "MSFT_NetTransportConnection",
+            "Path": null
+          }
+        },
+        "CimClassProperties": [
+          {
+            "Name": "Caption",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "MaxLen = 64",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "Description",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "ElementName",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "InstanceID",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, Key, NullValue",
+            "Qualifiers": "key = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "CommunicationStatus",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "DetailedStatus",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "HealthState",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "InstallDate",
+            "Value": null,
+            "CimType": 13,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "Name",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "MaxLen = 1024",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "OperatingStatus",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "OperationalStatus",
+            "Value": null,
+            "CimType": 20,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ArrayType = \"Indexed\" ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "PrimaryStatus",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "Status",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "MaxLen = 10 ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "StatusDescriptions",
+            "Value": null,
+            "CimType": 30,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ArrayType = \"Indexed\" ModelCorrespondence = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "AvailableRequestedStates",
+            "Value": null,
+            "CimType": 20,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "EnabledDefault",
+            "Value": 2,
+            "CimType": 4,
+            "Flags": "Property",
+            "Qualifiers": "ValueMap = ... write = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "EnabledState",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "OtherEnabledState",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ModelCorrespondence = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "RequestedState",
+            "Value": 5,
+            "CimType": 4,
+            "Flags": "Property",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ... write = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "TimeOfLastStateChange",
+            "Value": null,
+            "CimType": 13,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "TransitioningToState",
+            "Value": 12,
+            "CimType": 4,
+            "Flags": "Property",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "AggregationBehavior",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "Directionality",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, NullValue",
+            "Qualifiers": "ValueMap = ...",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "CreationTime",
+            "Value": null,
+            "CimType": 13,
+            "Flags": "Property, ReadOnly, NullValue",
+            "Qualifiers": "read = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "LocalAddress",
+            "Value": null,
+            "CimType": 14,
+            "Flags": "Property, ReadOnly, NullValue",
+            "Qualifiers": "read = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "LocalPort",
+            "Value": null,
+            "CimType": 4,
+            "Flags": "Property, ReadOnly, NullValue",
+            "Qualifiers": "read = True",
+            "ReferenceClassName": null
+          },
+          {
+            "Name": "OwningProcess",
+            "Value": null,
+            "CimType": 6,
+            "Flags": "Property, ReadOnly, NullValue",
+            "Qualifiers": "read = True",
+            "ReferenceClassName": null
+          }
+        ],
+        "CimClassQualifiers": [
+          {
+            "Name": "UMLPackagePath",
+            "Value": "CIM::Network::Pipes",
+            "CimType": 14,
+            "Flags": "EnableOverride, ToSubclass"
+          },
+          {
+            "Name": "dynamic",
+            "Value": true,
+            "CimType": 1,
+            "Flags": "EnableOverride, ToSubclass"
+          },
+          {
+            "Name": "provider",
+            "Value": "nettcpip",
+            "CimType": 14,
+            "Flags": "EnableOverride, ToSubclass"
+          },
+          {
+            "Name": "ClassVersion",
+            "Value": "1.0.0",
+            "CimType": 14,
+            "Flags": "EnableOverride, ToSubclass"
+          },
+          {
+            "Name": "locale",
+            "Value": 1033,
+            "CimType": 7,
+            "Flags": "EnableOverride, Restricted"
+          }
+        ],
+        "CimClassMethods": [
+          {
+            "Name": "RequestStateChange",
+            "ReturnType": 6,
+            "Parameters": "Microsoft.Management.Infrastructure.Internal.Data.CimMethodParameterDeclarationOfMethod Microsoft.Management.Infrastructure.Internal.Data.CimMethodParameterDeclarationOfMethod Microsoft.Management.Infrastructure.Internal.Data.CimMethodParameterDeclarationOfMethod",
+            "Qualifiers": "ModelCorrespondence = ... ValueMap = ..."
+          }
+        ],
+        "CimSystemProperties": {
+          "Namespace": "ROOT/StandardCimv2",
+          "ServerName": "SHEEL",
+          "ClassName": "MSFT_NetUDPEndpoint",
+          "Path": null
+        }
+      },
+      "CimInstanceProperties": [
+        {
+          "Name": "Caption",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "Description",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "ElementName",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "InstanceID",
+          "Value": "0.0.0.0++14567",
+          "CimType": 14,
+          "Flags": "Property, Key, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "CommunicationStatus",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "DetailedStatus",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "HealthState",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "InstallDate",
+          "Value": null,
+          "CimType": 13,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "Name",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "OperatingStatus",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "OperationalStatus",
+          "Value": null,
+          "CimType": 20,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "PrimaryStatus",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "Status",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "StatusDescriptions",
+          "Value": null,
+          "CimType": 30,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "AvailableRequestedStates",
+          "Value": null,
+          "CimType": 20,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "EnabledDefault",
+          "Value": 2,
+          "CimType": 4,
+          "Flags": "Property, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "EnabledState",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "OtherEnabledState",
+          "Value": null,
+          "CimType": 14,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "RequestedState",
+          "Value": 5,
+          "CimType": 4,
+          "Flags": "Property, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "TimeOfLastStateChange",
+          "Value": null,
+          "CimType": 13,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "TransitioningToState",
+          "Value": 12,
+          "CimType": 4,
+          "Flags": "Property, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "AggregationBehavior",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "Directionality",
+          "Value": null,
+          "CimType": 4,
+          "Flags": "Property, NotModified, NullValue",
+          "IsValueModified": false
+        },
+        {
+          "Name": "CreationTime",
+          "Value": "/Date(1793716380000)/",
+          "CimType": 13,
+          "Flags": "Property, ReadOnly, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "LocalAddress",
+          "Value": "0.0.0.0",
+          "CimType": 14,
+          "Flags": "Property, ReadOnly, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "LocalPort",
+          "Value": 14567,
+          "CimType": 4,
+          "Flags": "Property, ReadOnly, NotModified",
+          "IsValueModified": false
+        },
+        {
+          "Name": "OwningProcess",
+          "Value": 23100,
+          "CimType": 6,
+          "Flags": "Property, ReadOnly, NotModified",
+          "IsValueModified": false
+        }
+      ],
+      "CimSystemProperties": {
+        "Namespace": "ROOT/StandardCimv2",
+        "ServerName": "SHEEL",
+        "ClassName": "MSFT_NetUDPEndpoint",
+        "Path": null
+      },
+      "Caption": null,
+      "Description": null,
+      "ElementName": null,
+      "InstanceID": "0.0.0.0++14567",
+      "CommunicationStatus": null,
+      "DetailedStatus": null,
+      "HealthState": null,
+      "InstallDate": null,
+      "Name": null,
+      "OperatingStatus": null,
+      "OperationalStatus": null,
+      "PrimaryStatus": null,
+      "Status": null,
+      "StatusDescriptions": null,
+      "AvailableRequestedStates": null,
+      "EnabledDefault": 2,
+      "EnabledState": null,
+      "OtherEnabledState": null,
+      "RequestedState": 5,
+      "TimeOfLastStateChange": null,
+      "TransitioningToState": 12,
+      "AggregationBehavior": null,
+      "Directionality": null,
+      "CreationTime": "/Date(1793716380000)/",
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 14567,
+      "OwningProcess": 23100,
+      "PSComputerName": null
+    }
+  ],
+  "os": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300"
+  },
+  "cpu": [
+    {
+      "LoadPercentage": 47
+    }
+  ],
+  "utc": "2026-11-06T13:11:17.8219180Z",
+  "band": "TwoPointFourGigahertz",
+  "ips": [
+    {
+      "IPAddress": "192.168.32.1",
+      "InterfaceAlias": "vEthernet (WSL (Hyper-V firewall))"
+    },
+    {
+      "IPAddress": "192.168.56.1",
+      "InterfaceAlias": "Ethernet 2"
+    },
+    {
+      "IPAddress": "192.168.137.1",
+      "InterfaceAlias": "Local Area Connection* 2"
+    },
+    {
+      "IPAddress": "169.254.231.80",
+      "InterfaceAlias": "Bluetooth Network Connection"
+    },
+    {
+      "IPAddress": "169.254.234.6",
+      "InterfaceAlias": "Local Area Connection* 1"
+    },
+    {
+      "IPAddress": "169.254.222.236",
+      "InterfaceAlias": "WiFi"
+    },
+    {
+      "IPAddress": "192.168.50.38",
+      "InterfaceAlias": "Ethernet"
+    },
+    {
+      "IPAddress": "127.0.0.1",
+      "InterfaceAlias": "Loopback Pseudo-Interface 1"
+    }
+  ],
+  "port": [
+    {
+      "DeviceID": "COM6",
+      "Name": "Silicon Labs CP210x USB to UART Bridge (COM6)",
+      "PNPDeviceID": "USB\\VID_10C4&PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+    }
+  ],
+  "ssid": "SHEEL 3460",
+  "hotspot": "On",
+  "processes": [
+    {
+      "ProcessId": 25344,
+      "ParentProcessId": 6980,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    },
+    {
+      "ProcessId": 23100,
+      "ParentProcessId": 25344,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    },
+    {
+      "ProcessId": 18676,
+      "ParentProcessId": 18744,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+    },
+    {
+      "ProcessId": 36536,
+      "ParentProcessId": 18676,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:/Users/newsh/Desktop/ESP32_QUIC_Trial/tcp_tls_server.py "
+    },
+    {
+      "ProcessId": 36324,
+      "ParentProcessId": 32016,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\collector_v2.py --run-dir C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation "
+    },
+    {
+      "ProcessId": 28020,
+      "ParentProcessId": 36324,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\collector_v2.py --run-dir C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation "
+    },
+    {
+      "ProcessId": 16080,
+      "ParentProcessId": 28020,
+      "CommandLine": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\monitor_instrumented_v2.py --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf"
+    },
+    {
+      "ProcessId": 5148,
+      "ParentProcessId": 16080,
+      "CommandLine": "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\monitor_instrumented_v2.py --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf"
+    },
+    {
+      "ProcessId": 23796,
+      "ParentProcessId": 6088,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-05\\attempt_20261106T130901Z\\prepare_start_once.py "
+    },
+    {
+      "ProcessId": 32008,
+      "ParentProcessId": 23796,
+      "CommandLine": "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -B -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-05\\attempt_20261106T130901Z\\prepare_start_once.py "
+    }
+  ]
+}

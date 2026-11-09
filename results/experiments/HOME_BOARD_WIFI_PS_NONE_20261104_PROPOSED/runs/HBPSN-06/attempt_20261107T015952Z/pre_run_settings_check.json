@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "60306e4b0fd245398ed6a81b0acf7878",
+    "requested_utc": "2026-11-07T02:04:16.748934+00:00",
+    "requested_monotonic": 771366.0650201,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "60306e4b0fd245398ed6a81b0acf7878",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "17f84edf6e5cea5a666890cde386dcd0d61cf3077aa222ed6a7c9a2775aa4f29",
+    "capture_started_utc": "2026-11-07T02:04:16.789Z",
+    "capture_completed_utc": "2026-11-07T02:04:17.245Z",
+    "capture_started_monotonic": 771366.1060201,
+    "capture_completed_monotonic": 771366.5620201,
+    "clock_provenance": "Actual UTC capture brackets; monotonic estimates from request UTC/monotonic bridge.",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-06 TCP_TLS DROP1_OUT actual pre-reset settings; new run-specific evidence"
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-07T02:04:31.852406+00:00"
+}

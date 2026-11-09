@@ -1,0 +1,1622 @@
+[
+  {
+    "source_line": 371,
+    "esp_uptime_ms": 13772,
+    "seq": 1,
+    "app_rtt_ms": "85.553",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 372,
+    "esp_uptime_ms": 18802,
+    "seq": 2,
+    "app_rtt_ms": "104.316",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 373,
+    "esp_uptime_ms": 23732,
+    "seq": 3,
+    "app_rtt_ms": "30.936",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 374,
+    "esp_uptime_ms": 28762,
+    "seq": 4,
+    "app_rtt_ms": "48.513",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 375,
+    "esp_uptime_ms": 33792,
+    "seq": 5,
+    "app_rtt_ms": "68.569",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 376,
+    "esp_uptime_ms": 38822,
+    "seq": 6,
+    "app_rtt_ms": "89.096",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 377,
+    "esp_uptime_ms": 43852,
+    "seq": 7,
+    "app_rtt_ms": "108.879",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 378,
+    "esp_uptime_ms": 48782,
+    "seq": 8,
+    "app_rtt_ms": "29.652",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 379,
+    "esp_uptime_ms": 53812,
+    "seq": 9,
+    "app_rtt_ms": "45.578",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 380,
+    "esp_uptime_ms": 58842,
+    "seq": 10,
+    "app_rtt_ms": "65.165",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 381,
+    "esp_uptime_ms": 63872,
+    "seq": 11,
+    "app_rtt_ms": "85.563",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 382,
+    "esp_uptime_ms": 68902,
+    "seq": 12,
+    "app_rtt_ms": "105.258",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 383,
+    "esp_uptime_ms": 73832,
+    "seq": 13,
+    "app_rtt_ms": "28.099",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 384,
+    "esp_uptime_ms": 78862,
+    "seq": 14,
+    "app_rtt_ms": "45.206",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 385,
+    "esp_uptime_ms": 83892,
+    "seq": 15,
+    "app_rtt_ms": "65.182",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 386,
+    "esp_uptime_ms": 88922,
+    "seq": 16,
+    "app_rtt_ms": "85.308",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 387,
+    "esp_uptime_ms": 93952,
+    "seq": 17,
+    "app_rtt_ms": "105.287",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 388,
+    "esp_uptime_ms": 98882,
+    "seq": 18,
+    "app_rtt_ms": "25.105",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 389,
+    "esp_uptime_ms": 103912,
+    "seq": 19,
+    "app_rtt_ms": "45.111",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 390,
+    "esp_uptime_ms": 108942,
+    "seq": 20,
+    "app_rtt_ms": "65.129",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 391,
+    "esp_uptime_ms": 113972,
+    "seq": 21,
+    "app_rtt_ms": "85.280",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 392,
+    "esp_uptime_ms": 119002,
+    "seq": 22,
+    "app_rtt_ms": "105.159",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 393,
+    "esp_uptime_ms": 123932,
+    "seq": 23,
+    "app_rtt_ms": "25.295",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 394,
+    "esp_uptime_ms": 128962,
+    "seq": 24,
+    "app_rtt_ms": "45.276",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 395,
+    "esp_uptime_ms": 133992,
+    "seq": 25,
+    "app_rtt_ms": "65.149",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 396,
+    "esp_uptime_ms": 139022,
+    "seq": 26,
+    "app_rtt_ms": "85.479",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 397,
+    "esp_uptime_ms": 144052,
+    "seq": 27,
+    "app_rtt_ms": "104.427",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 398,
+    "esp_uptime_ms": 148982,
+    "seq": 28,
+    "app_rtt_ms": "28.457",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 399,
+    "esp_uptime_ms": 154012,
+    "seq": 29,
+    "app_rtt_ms": "48.591",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 400,
+    "esp_uptime_ms": 159042,
+    "seq": 30,
+    "app_rtt_ms": "68.914",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 401,
+    "esp_uptime_ms": 164072,
+    "seq": 31,
+    "app_rtt_ms": "88.783",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 402,
+    "esp_uptime_ms": 169102,
+    "seq": 32,
+    "app_rtt_ms": "108.575",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 403,
+    "esp_uptime_ms": 174442,
+    "seq": 33,
+    "app_rtt_ms": "435.932",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 404,
+    "esp_uptime_ms": 179072,
+    "seq": 34,
+    "app_rtt_ms": "65.318",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 405,
+    "esp_uptime_ms": 184102,
+    "seq": 35,
+    "app_rtt_ms": "85.729",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 406,
+    "esp_uptime_ms": 189132,
+    "seq": 36,
+    "app_rtt_ms": "105.301",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 407,
+    "esp_uptime_ms": 194062,
+    "seq": 37,
+    "app_rtt_ms": "29.658",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 408,
+    "esp_uptime_ms": 199092,
+    "seq": 38,
+    "app_rtt_ms": "45.221",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 409,
+    "esp_uptime_ms": 204122,
+    "seq": 39,
+    "app_rtt_ms": "65.232",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 410,
+    "esp_uptime_ms": 209152,
+    "seq": 40,
+    "app_rtt_ms": "85.174",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 411,
+    "esp_uptime_ms": 214182,
+    "seq": 41,
+    "app_rtt_ms": "105.324",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 412,
+    "esp_uptime_ms": 219112,
+    "seq": 42,
+    "app_rtt_ms": "25.339",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 413,
+    "esp_uptime_ms": 224142,
+    "seq": 43,
+    "app_rtt_ms": "45.318",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 414,
+    "esp_uptime_ms": 229172,
+    "seq": 44,
+    "app_rtt_ms": "65.301",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 415,
+    "esp_uptime_ms": 234202,
+    "seq": 45,
+    "app_rtt_ms": "85.307",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 416,
+    "esp_uptime_ms": 239232,
+    "seq": 46,
+    "app_rtt_ms": "105.314",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 417,
+    "esp_uptime_ms": 244162,
+    "seq": 47,
+    "app_rtt_ms": "25.339",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 418,
+    "esp_uptime_ms": 249192,
+    "seq": 48,
+    "app_rtt_ms": "45.303",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 419,
+    "esp_uptime_ms": 254222,
+    "seq": 49,
+    "app_rtt_ms": "65.156",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 420,
+    "esp_uptime_ms": 259252,
+    "seq": 50,
+    "app_rtt_ms": "88.987",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 421,
+    "esp_uptime_ms": 264282,
+    "seq": 51,
+    "app_rtt_ms": "103.860",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 422,
+    "esp_uptime_ms": 269212,
+    "seq": 52,
+    "app_rtt_ms": "28.490",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 423,
+    "esp_uptime_ms": 274242,
+    "seq": 53,
+    "app_rtt_ms": "48.459",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 424,
+    "esp_uptime_ms": 279272,
+    "seq": 54,
+    "app_rtt_ms": "68.454",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 425,
+    "esp_uptime_ms": 284302,
+    "seq": 55,
+    "app_rtt_ms": "85.717",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 426,
+    "esp_uptime_ms": 289332,
+    "seq": 56,
+    "app_rtt_ms": "105.708",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 427,
+    "esp_uptime_ms": 294262,
+    "seq": 57,
+    "app_rtt_ms": "25.994",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 428,
+    "esp_uptime_ms": 299292,
+    "seq": 58,
+    "app_rtt_ms": "45.288",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 429,
+    "esp_uptime_ms": 304322,
+    "seq": 59,
+    "app_rtt_ms": "66.871",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 430,
+    "esp_uptime_ms": 309352,
+    "seq": 60,
+    "app_rtt_ms": "85.190",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 431,
+    "esp_uptime_ms": 314382,
+    "seq": 61,
+    "app_rtt_ms": "105.302",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 432,
+    "esp_uptime_ms": 319312,
+    "seq": 62,
+    "app_rtt_ms": "29.806",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 433,
+    "esp_uptime_ms": 324342,
+    "seq": 63,
+    "app_rtt_ms": "45.296",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 434,
+    "esp_uptime_ms": 329372,
+    "seq": 64,
+    "app_rtt_ms": "66.606",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 435,
+    "esp_uptime_ms": 334402,
+    "seq": 65,
+    "app_rtt_ms": "85.250",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 436,
+    "esp_uptime_ms": 339432,
+    "seq": 66,
+    "app_rtt_ms": "105.236",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 437,
+    "esp_uptime_ms": 344362,
+    "seq": 67,
+    "app_rtt_ms": "25.258",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 438,
+    "esp_uptime_ms": 349392,
+    "seq": 68,
+    "app_rtt_ms": "45.304",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 439,
+    "esp_uptime_ms": 354422,
+    "seq": 69,
+    "app_rtt_ms": "65.310",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 440,
+    "esp_uptime_ms": 359452,
+    "seq": 70,
+    "app_rtt_ms": "85.323",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 441,
+    "esp_uptime_ms": 364482,
+    "seq": 71,
+    "app_rtt_ms": "105.313",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 442,
+    "esp_uptime_ms": 369412,
+    "seq": 72,
+    "app_rtt_ms": "25.334",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 443,
+    "esp_uptime_ms": 374442,
+    "seq": 73,
+    "app_rtt_ms": "45.301",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 444,
+    "esp_uptime_ms": 379472,
+    "seq": 74,
+    "app_rtt_ms": "65.182",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 445,
+    "esp_uptime_ms": 384502,
+    "seq": 75,
+    "app_rtt_ms": "85.226",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 446,
+    "esp_uptime_ms": 389532,
+    "seq": 76,
+    "app_rtt_ms": "104.588",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 447,
+    "esp_uptime_ms": 394462,
+    "seq": 77,
+    "app_rtt_ms": "28.803",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 448,
+    "esp_uptime_ms": 399492,
+    "seq": 78,
+    "app_rtt_ms": "48.323",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 449,
+    "esp_uptime_ms": 404522,
+    "seq": 79,
+    "app_rtt_ms": "68.481",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 450,
+    "esp_uptime_ms": 409552,
+    "seq": 80,
+    "app_rtt_ms": "85.495",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 451,
+    "esp_uptime_ms": 414582,
+    "seq": 81,
+    "app_rtt_ms": "105.757",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 452,
+    "esp_uptime_ms": 419512,
+    "seq": 82,
+    "app_rtt_ms": "25.333",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 453,
+    "esp_uptime_ms": 424542,
+    "seq": 83,
+    "app_rtt_ms": "45.305",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 454,
+    "esp_uptime_ms": 429572,
+    "seq": 84,
+    "app_rtt_ms": "65.295",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 455,
+    "esp_uptime_ms": 434602,
+    "seq": 85,
+    "app_rtt_ms": "86.019",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 456,
+    "esp_uptime_ms": 439632,
+    "seq": 86,
+    "app_rtt_ms": "105.286",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 457,
+    "esp_uptime_ms": 444562,
+    "seq": 87,
+    "app_rtt_ms": "25.315",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 458,
+    "esp_uptime_ms": 449592,
+    "seq": 88,
+    "app_rtt_ms": "45.307",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 459,
+    "esp_uptime_ms": 454622,
+    "seq": 89,
+    "app_rtt_ms": "67.908",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 460,
+    "esp_uptime_ms": 459652,
+    "seq": 90,
+    "app_rtt_ms": "85.674",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 461,
+    "esp_uptime_ms": 464682,
+    "seq": 91,
+    "app_rtt_ms": "105.298",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 462,
+    "esp_uptime_ms": 469612,
+    "seq": 92,
+    "app_rtt_ms": "25.248",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 463,
+    "esp_uptime_ms": 474642,
+    "seq": 93,
+    "app_rtt_ms": "45.213",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 464,
+    "esp_uptime_ms": 479672,
+    "seq": 94,
+    "app_rtt_ms": "65.232",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 465,
+    "esp_uptime_ms": 484702,
+    "seq": 95,
+    "app_rtt_ms": "85.327",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 466,
+    "esp_uptime_ms": 489732,
+    "seq": 96,
+    "app_rtt_ms": "105.325",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 467,
+    "esp_uptime_ms": 494662,
+    "seq": 97,
+    "app_rtt_ms": "25.350",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 468,
+    "esp_uptime_ms": 499692,
+    "seq": 98,
+    "app_rtt_ms": "45.185",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 469,
+    "esp_uptime_ms": 504722,
+    "seq": 99,
+    "app_rtt_ms": "65.669",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 470,
+    "esp_uptime_ms": 509752,
+    "seq": 100,
+    "app_rtt_ms": "85.824",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 471,
+    "esp_uptime_ms": 514782,
+    "seq": 101,
+    "app_rtt_ms": "104.572",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 472,
+    "esp_uptime_ms": 519712,
+    "seq": 102,
+    "app_rtt_ms": "28.540",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 473,
+    "esp_uptime_ms": 524742,
+    "seq": 103,
+    "app_rtt_ms": "48.547",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 474,
+    "esp_uptime_ms": 529772,
+    "seq": 104,
+    "app_rtt_ms": "66.503",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 475,
+    "esp_uptime_ms": 534802,
+    "seq": 105,
+    "app_rtt_ms": "86.274",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 476,
+    "esp_uptime_ms": 539832,
+    "seq": 106,
+    "app_rtt_ms": "105.670",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 477,
+    "esp_uptime_ms": 544762,
+    "seq": 107,
+    "app_rtt_ms": "25.221",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 478,
+    "esp_uptime_ms": 549792,
+    "seq": 108,
+    "app_rtt_ms": "45.313",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 479,
+    "esp_uptime_ms": 554822,
+    "seq": 109,
+    "app_rtt_ms": "65.393",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 480,
+    "esp_uptime_ms": 559852,
+    "seq": 110,
+    "app_rtt_ms": "86.109",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 481,
+    "esp_uptime_ms": 564882,
+    "seq": 111,
+    "app_rtt_ms": "105.179",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 482,
+    "esp_uptime_ms": 569812,
+    "seq": 112,
+    "app_rtt_ms": "25.179",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 483,
+    "esp_uptime_ms": 574842,
+    "seq": 113,
+    "app_rtt_ms": "45.253",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 484,
+    "esp_uptime_ms": 579872,
+    "seq": 114,
+    "app_rtt_ms": "65.441",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 485,
+    "esp_uptime_ms": 584902,
+    "seq": 115,
+    "app_rtt_ms": "85.289",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 486,
+    "esp_uptime_ms": 589932,
+    "seq": 116,
+    "app_rtt_ms": "105.126",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 487,
+    "esp_uptime_ms": 594862,
+    "seq": 117,
+    "app_rtt_ms": "25.312",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 488,
+    "esp_uptime_ms": 599892,
+    "seq": 118,
+    "app_rtt_ms": "45.201",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 489,
+    "esp_uptime_ms": 604922,
+    "seq": 119,
+    "app_rtt_ms": "64.935",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 490,
+    "esp_uptime_ms": 609952,
+    "seq": 120,
+    "app_rtt_ms": "85.017",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 491,
+    "esp_uptime_ms": 614982,
+    "seq": 121,
+    "app_rtt_ms": "105.314",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 492,
+    "esp_uptime_ms": 619912,
+    "seq": 122,
+    "app_rtt_ms": "30.704",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 493,
+    "esp_uptime_ms": 625042,
+    "seq": 123,
+    "app_rtt_ms": "145.280",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 494,
+    "esp_uptime_ms": 629972,
+    "seq": 124,
+    "app_rtt_ms": "65.675",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 495,
+    "esp_uptime_ms": 635002,
+    "seq": 125,
+    "app_rtt_ms": "85.076",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 496,
+    "esp_uptime_ms": 640032,
+    "seq": 126,
+    "app_rtt_ms": "104.666",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 497,
+    "esp_uptime_ms": 644962,
+    "seq": 127,
+    "app_rtt_ms": "33.277",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 498,
+    "esp_uptime_ms": 649992,
+    "seq": 128,
+    "app_rtt_ms": "48.567",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 499,
+    "esp_uptime_ms": 655022,
+    "seq": 129,
+    "app_rtt_ms": "68.607",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 500,
+    "esp_uptime_ms": 660052,
+    "seq": 130,
+    "app_rtt_ms": "88.867",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 501,
+    "esp_uptime_ms": 665082,
+    "seq": 131,
+    "app_rtt_ms": "105.563",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 502,
+    "esp_uptime_ms": 670012,
+    "seq": 132,
+    "app_rtt_ms": "30.034",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 503,
+    "esp_uptime_ms": 675042,
+    "seq": 133,
+    "app_rtt_ms": "45.461",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 504,
+    "esp_uptime_ms": 680072,
+    "seq": 134,
+    "app_rtt_ms": "65.182",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 505,
+    "esp_uptime_ms": 685102,
+    "seq": 135,
+    "app_rtt_ms": "85.305",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 506,
+    "esp_uptime_ms": 690132,
+    "seq": 136,
+    "app_rtt_ms": "105.231",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 507,
+    "esp_uptime_ms": 695062,
+    "seq": 137,
+    "app_rtt_ms": "25.336",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 508,
+    "esp_uptime_ms": 700092,
+    "seq": 138,
+    "app_rtt_ms": "45.309",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 509,
+    "esp_uptime_ms": 705122,
+    "seq": 139,
+    "app_rtt_ms": "65.310",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 510,
+    "esp_uptime_ms": 710152,
+    "seq": 140,
+    "app_rtt_ms": "85.305",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 511,
+    "esp_uptime_ms": 715182,
+    "seq": 141,
+    "app_rtt_ms": "105.306",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 512,
+    "esp_uptime_ms": 720112,
+    "seq": 142,
+    "app_rtt_ms": "25.321",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 513,
+    "esp_uptime_ms": 725142,
+    "seq": 143,
+    "app_rtt_ms": "45.476",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 514,
+    "esp_uptime_ms": 730172,
+    "seq": 144,
+    "app_rtt_ms": "67.016",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 515,
+    "esp_uptime_ms": 735402,
+    "seq": 145,
+    "app_rtt_ms": "284.545",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 516,
+    "esp_uptime_ms": 740232,
+    "seq": 146,
+    "app_rtt_ms": "105.203",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 517,
+    "esp_uptime_ms": 745162,
+    "seq": 147,
+    "app_rtt_ms": "25.209",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 518,
+    "esp_uptime_ms": 750192,
+    "seq": 148,
+    "app_rtt_ms": "45.305",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 519,
+    "esp_uptime_ms": 755222,
+    "seq": 149,
+    "app_rtt_ms": "65.185",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 520,
+    "esp_uptime_ms": 760252,
+    "seq": 150,
+    "app_rtt_ms": "85.182",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 521,
+    "esp_uptime_ms": 765282,
+    "seq": 151,
+    "app_rtt_ms": "104.527",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 522,
+    "esp_uptime_ms": 770212,
+    "seq": 152,
+    "app_rtt_ms": "28.545",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 523,
+    "esp_uptime_ms": 775242,
+    "seq": 153,
+    "app_rtt_ms": "48.576",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 524,
+    "esp_uptime_ms": 780272,
+    "seq": 154,
+    "app_rtt_ms": "65.584",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 525,
+    "esp_uptime_ms": 785302,
+    "seq": 155,
+    "app_rtt_ms": "86.356",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 526,
+    "esp_uptime_ms": 790332,
+    "seq": 156,
+    "app_rtt_ms": "105.725",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 527,
+    "esp_uptime_ms": 795262,
+    "seq": 157,
+    "app_rtt_ms": "29.681",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 528,
+    "esp_uptime_ms": 800292,
+    "seq": 158,
+    "app_rtt_ms": "45.266",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 529,
+    "esp_uptime_ms": 805322,
+    "seq": 159,
+    "app_rtt_ms": "64.260",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 530,
+    "esp_uptime_ms": 810352,
+    "seq": 160,
+    "app_rtt_ms": "85.253",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 531,
+    "esp_uptime_ms": 815382,
+    "seq": 161,
+    "app_rtt_ms": "105.237",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 532,
+    "esp_uptime_ms": 820312,
+    "seq": 162,
+    "app_rtt_ms": "25.335",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 533,
+    "esp_uptime_ms": 825342,
+    "seq": 163,
+    "app_rtt_ms": "45.302",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 534,
+    "esp_uptime_ms": 830372,
+    "seq": 164,
+    "app_rtt_ms": "65.366",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 535,
+    "esp_uptime_ms": 835402,
+    "seq": 165,
+    "app_rtt_ms": "85.311",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 536,
+    "esp_uptime_ms": 840432,
+    "seq": 166,
+    "app_rtt_ms": "105.314",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 537,
+    "esp_uptime_ms": 845362,
+    "seq": 167,
+    "app_rtt_ms": "29.683",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 538,
+    "esp_uptime_ms": 850392,
+    "seq": 168,
+    "app_rtt_ms": "45.291",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 539,
+    "esp_uptime_ms": 855422,
+    "seq": 169,
+    "app_rtt_ms": "65.304",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 540,
+    "esp_uptime_ms": 860452,
+    "seq": 170,
+    "app_rtt_ms": "85.823",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 541,
+    "esp_uptime_ms": 865482,
+    "seq": 171,
+    "app_rtt_ms": "105.305",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 542,
+    "esp_uptime_ms": 870412,
+    "seq": 172,
+    "app_rtt_ms": "29.618",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 543,
+    "esp_uptime_ms": 875542,
+    "seq": 173,
+    "app_rtt_ms": "145.184",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 544,
+    "esp_uptime_ms": 880472,
+    "seq": 174,
+    "app_rtt_ms": "65.619",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 545,
+    "esp_uptime_ms": 885502,
+    "seq": 175,
+    "app_rtt_ms": "86.068",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 546,
+    "esp_uptime_ms": 890532,
+    "seq": 176,
+    "app_rtt_ms": "104.849",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 547,
+    "esp_uptime_ms": 895462,
+    "seq": 177,
+    "app_rtt_ms": "28.541",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 548,
+    "esp_uptime_ms": 900492,
+    "seq": 178,
+    "app_rtt_ms": "48.527",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 549,
+    "esp_uptime_ms": 905522,
+    "seq": 179,
+    "app_rtt_ms": "68.582",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  },
+  {
+    "source_line": 550,
+    "esp_uptime_ms": 910552,
+    "seq": 180,
+    "app_rtt_ms": "86.323",
+    "boot": "POST_REBOOT",
+    "primary_eligible": false,
+    "reason": "subsequent_boot"
+  }
+]

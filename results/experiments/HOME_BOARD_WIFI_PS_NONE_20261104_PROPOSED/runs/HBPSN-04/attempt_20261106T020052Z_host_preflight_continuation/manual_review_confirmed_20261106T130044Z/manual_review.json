@@ -1,0 +1,243 @@
+{
+  "run_id": "HBPSN-04",
+  "reviewed_utc": "2026-11-06T13:01:58.662078+00:00",
+  "decision": "COMPLETE",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags, not error-free",
+  "operator_statement": {
+    "exact_statement": "yes i know..",
+    "source": "Operator response relayed by user from ChatGPT",
+    "receipt_observed_utc": "2026-11-06T12:59:46.7782638Z",
+    "receipt_observed_helsinki": "2026-11-06T14:59:46.7782638+02:00",
+    "receipt_clock_source": "First local UTC clock observation while processing this user message; original chat ingress timestamp unavailable",
+    "user_clarified_scope": "Unchanged Clumsy filter, effects and capture; no Stop/Start or close/reopen, throughout6November2026,04:01:38\u201304:41:44 Helsinki",
+    "covered_interval_as_reported_helsinki": [
+      "2026-11-06T04:01:38+02:00",
+      "2026-11-06T04:41:44+02:00"
+    ],
+    "scope_interpretation": "User explicitly confirms the previously requested run-start-through-post-screenshot interval; reported endpoints are second precision. Exact acquisition times remain separate.",
+    "not_backdated": true
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "original_rules": {
+    "images": "Save screenshots before reset and after recording, with UTC and hashes.",
+    "stability": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "connection_errors": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session."
+  },
+  "criteria_assessment": {
+    "fixed_window": true,
+    "startup": true,
+    "first415_selection": true,
+    "pre_post_images_hashes": true,
+    "settings_match": true,
+    "stability_operator_confirmed": true,
+    "post_lateness_seconds": 184.654217,
+    "no_frozen_numeric_lateness_cutoff": true,
+    "collector_timeout_not_frozen_cutoff": true,
+    "server_error": "One new unattributed error retained and flagged under non-reboot connection-error rule; cause unknown, not declared harmless",
+    "reboot": false,
+    "shortfall": 0
+  },
+  "automatic_flags_preserved": {
+    "status": "FAILED_SETTINGS",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "FAILED_SETTINGS",
+    "finished_utc": "2026-11-06T02:39:09.078928+00:00",
+    "deadline_utc": "2026-11-06T02:38:38.681783+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\SUMMARY.md"
+  },
+  "original_verification": {
+    "run_id": "HBPSN-04",
+    "processing_status": "FINALIZED_ORIGINAL_FIXED_WINDOW_VERIFIED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_OPERATOR_AND_MANUAL_REVIEW",
+    "window_utc": [
+      "2026-11-06T02:01:38.681783+00:00",
+      "2026-11-06T02:38:38.681783+00:00"
+    ],
+    "window_helsinki": [
+      "2026-11-06T04:01:38.681783+02:00",
+      "2026-11-06T04:38:38.681783+02:00"
+    ],
+    "fixed_seconds": 2220,
+    "counts": {
+      "raw_rtt": 441,
+      "raw_serial_lines": 581,
+      "warmup_excluded": 10,
+      "other_excluded": 0,
+      "eligible": 431,
+      "selected": 415,
+      "extra_eligible": 16,
+      "shortfall": 0
+    },
+    "statistics": {
+      "minimum_ms": 26.927,
+      "mean_ms": 69.45556144578313,
+      "median_ms": 67.507,
+      "p95_ms": 107.536,
+      "maximum_ms": 248.069
+    },
+    "p95_method": "Nearest rank ceil(0.95*N)",
+    "selected_sequence_range": [
+      11,
+      425
+    ],
+    "selected_esp_ms_range": [
+      62367,
+      2136487
+    ],
+    "serial_connection_errors": [],
+    "warnings": [
+      {
+        "line": 93,
+        "raw_line": "2026-11-06T04:01:39 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+      },
+      {
+        "line": 101,
+        "raw_line": "2026-11-06T04:01:41 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+      },
+      {
+        "line": 119,
+        "raw_line": "2026-11-06T04:01:42 W (3417) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+      }
+    ],
+    "initial_reset": [
+      {
+        "line": 2,
+        "raw_line": "2026-11-06T04:01:38 I (479) coexist: coex firmware version: a\ufffdESP-ROM:esp32c6-20220919",
+        "host_receipt_utc": "2026-11-06T02:01:38.719593+00:00",
+        "initial_designated_boot": true
+      }
+    ],
+    "subsequent_resets": 0,
+    "sequence_gaps": [],
+    "interruptions": [],
+    "server_tail_errors": [],
+    "unattributed_server_errors": {
+      "raw": "TCP+TLS ERROR: \n",
+      "receipts": [
+        {
+          "utc": "2026-11-06T02:02:37.577340+00:00",
+          "monotonic": 684866.8929259,
+          "source_offset": 160,
+          "offset": 0,
+          "length": 17
+        }
+      ],
+      "count": 1,
+      "cause": "UNKNOWN; not discarded or classified harmless"
+    },
+    "post_image": {
+      "run_id": "HBPSN-04",
+      "capture_started_utc": "2026-11-06T02:41:43.336Z",
+      "capture_completed_utc": "2026-11-06T02:41:44.503Z",
+      "image": "HBPSN-04_Clumsy_POST_RECORDING.jpg",
+      "sha256": "2d1a62515d045b781bb2f52902016322374aa430741155153c622289823639cf",
+      "source_type": "GUI_observed",
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "main_effects": {
+        "Lag": false,
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      },
+      "inactive_fields": {
+        "Lag_delay_ms": 100,
+        "Lag_inbound": false,
+        "Lag_outbound": true,
+        "Drop_chance_percent": 1,
+        "Drop_inbound": false,
+        "Drop_outbound": true
+      },
+      "settings_changed_by_agent": false,
+      "actual_post_deadline": true,
+      "validity_status": "NOT_APPROVED",
+      "operator_stability_confirmation": "AWAITING_EXACT_REPLY"
+    },
+    "pre_image": {
+      "nonce": "33ca7dbcd70340f0bb0b80a9442ac0b4",
+      "screenshot": "clumsy_actual_pre_reset.jpg",
+      "sha256": "4f5e08d2b340b318c6a573edea87024357e797b7a2ee98134206201904390ed7",
+      "capture_started_utc": "2026-11-06T02:01:16.400Z",
+      "capture_completed_utc": "2026-11-06T02:01:16.620Z",
+      "capture_started_monotonic": 684785.7165634,
+      "capture_completed_monotonic": 684785.9365634,
+      "clock_provenance": "UTC acquisition brackets, monotonic estimates via request UTC/monotonic bridge.",
+      "source_type": "GUI_observed",
+      "observed": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture": "RUNNING",
+        "Lag": {
+          "enabled": false,
+          "delay_ms": 100,
+          "inbound": false,
+          "outbound": true
+        },
+        "other_main_effects": {
+          "Drop": false,
+          "Throttle": false,
+          "Duplicate": false,
+          "Out of order": false,
+          "Tamper": false,
+          "Set TCP RST": false,
+          "Bandwidth": false
+        }
+      },
+      "label": "HBPSN-04 actual pre-reset CONTROL; disclosed host-only preflight continuation; no reflash or measured reset retry"
+    },
+    "visible_settings_match": true,
+    "post_capture_seconds_after_deadline": 184.654217,
+    "automatic_flags_preserved": {
+      "status": "FAILED_SETTINGS",
+      "post_settings": "MISSING"
+    },
+    "automatic_finalization_utc": "2026-11-06T02:39:09.078928+00:00",
+    "deadline_cutoff": {
+      "fixed_deadline_utc": "2026-11-06T02:38:38.681783+00:00",
+      "observed_utc": "2026-11-06T02:38:38.689470+00:00",
+      "observed_monotonic": 687028.0055821,
+      "lateness_ms": 7.7674000058323145
+    },
+    "register_status": "RUNNING; automatic final patch emitted but not applied; no register modification during this review",
+    "original_manifest_verified": 71,
+    "original_manifest_mismatches": [],
+    "operator_exact_answer": null,
+    "operator_answer_state": "AWAITING_REPLY",
+    "answer_receipt_not_backdated": true
+  },
+  "previous_pending_review": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T020052Z_host_preflight_continuation\\manual_review_20261106T024832982148Z\\manual_review.json",
+  "register_patch": {
+    "status": "COMPLETE",
+    "settings_evidence_type": "actual_pre_post_GUI_images_and_operator_reported_stability; manually_reviewed",
+    "recording_end_utc": "2026-11-06T02:38:38.681783+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 1,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 69.45556144578313,
+    "minimum_app_rtt_ms": 26.927,
+    "maximum_app_rtt_ms": 248.069,
+    "metadata_path": "runs/HBPSN-04/attempt_20261106T020052Z_host_preflight_continuation/manual_review_confirmed_20261106T130044Z/manual_review.json",
+    "deviation_reason": "Manual review COMPLETE with retained flags. Operator exact statement yes i know.. relayed by user; local receipt2026-11-06T12:59:46.7782638Z, original chat ingress unavailable; stability confirmed through actual post-image. Post-image184.654217s late; no frozen cutoff. One new unattributed server TCP+TLS ERROR retained; no serial connection error/reboot/gap/shortfall. Original automatic FAILED_SETTINGS/MISSING and all prior reviews preserved. Windows listener reporting discrepancy and pre-reset host evidence PermissionError retained. QUIC crash unresolved."
+  },
+  "connection_error_count_definition": "1 server error plus0 serial connection errors; original serial-only counter0 remains in original automatic statistics",
+  "next_scheduled": {
+    "order": "5",
+    "run_id": "HBPSN-05",
+    "transport": "QUIC",
+    "condition": "LAG100_OUT",
+    "status": "NOT_RUN"
+  },
+  "artifact_tool_unavailable": "Import failed Module not found @oai/artifact-tool; narrow standard-library OOXML patch preserves every other row and ZIP part"
+}

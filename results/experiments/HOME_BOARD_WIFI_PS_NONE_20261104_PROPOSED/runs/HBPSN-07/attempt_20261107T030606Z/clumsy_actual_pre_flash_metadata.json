@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "run_id": "HBPSN-07",
+  "screenshot": "clumsy_actual_pre_flash.jpg",
+  "capture_started_utc": "2026-11-07T03:06:06.988Z",
+  "capture_completed_utc": "2026-11-07T03:06:08.025Z",
+  "sha256": "c9ab0bbeb62ffc931bcbf52457320ceb982efaf0830411713052fc1bcfa284ea",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "note": "Preflight image; no reflash planned. Filename follows existing recorder convention."
+}

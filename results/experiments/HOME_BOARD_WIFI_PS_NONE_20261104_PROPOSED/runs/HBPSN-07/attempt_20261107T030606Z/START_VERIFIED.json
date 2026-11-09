@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-07T03:10:19.846579+00:00",
+  "both_registers_verified": true,
+  "collector_source_unchanged": true,
+  "reflash_performed": false,
+  "one_new_designated_controlled_boot": true,
+  "heartbeat": {
+    "utc": "2026-11-07T03:10:18.883757+00:00",
+    "monotonic": 775328.1998327,
+    "remaining_seconds": 2160.2761774000246,
+    "status": "RUNNING",
+    "serial_bytes": 12112,
+    "monitor_alive": true,
+    "collector_pid": 39736
+  },
+  "validity_status": "NOT_APPROVED",
+  "new_hbpsn07_operator_confirmation_required": true,
+  "no_further_run_before_review": true
+}

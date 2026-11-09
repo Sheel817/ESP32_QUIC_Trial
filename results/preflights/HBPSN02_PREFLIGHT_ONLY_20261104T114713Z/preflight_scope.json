@@ -1,0 +1,30 @@
+{
+  "run_id": "HBPSN-02",
+  "phase": "PREFLIGHT_ONLY",
+  "recording_started": false,
+  "register_status": "NOT_RUN",
+  "transport": "TCP_TLS",
+  "condition": "LAG100_OUT",
+  "required_settings": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "actual_pre_reset_screenshot": "Required fresh at later authorized startup; not yet captured for the measured boot. Preflight observation is not substituted.",
+  "final_validity": "NOT_APPROVED; PENDING_EVIDENCE_REVIEW until actual pre/post screenshots and operator confirmation are reviewed",
+  "observer_readiness": "Separate active read-only observer required; unattended 37-minute observer lifetime not demonstrated."
+}

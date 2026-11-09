@@ -1,0 +1,12 @@
+﻿[
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "30BFE8C7B18FD1C98E4A119E3BC18C3E7142EBE41A0E72FCA605E59A664E2E9B",
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\previous_server.stdout.snapshot.log"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "68EFAEF72D0C30B78A49711F4155733D3790952FB7EAD9A4D6F03E1E8DC4F7EF",
+        "Path":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\previous_server.stderr.snapshot.log"
+    }
+]

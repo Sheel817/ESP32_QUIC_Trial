@@ -1,0 +1,9 @@
+{
+  "scope": "Before measured reset; not attributed to HBPSN-04",
+  "lines": [
+    "TCP+TLS ERROR: [WinError 64] The specified network name is no longer available",
+    "TCP+TLS ERROR: [WinError 64] The specified network name is no longer available"
+  ],
+  "source_probe_results": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\HOST_ONLY_TCP14568_20261106T014632766Z\\probe_results.json",
+  "new_error_policy": "All newly received stderr retained in fixed-window tail with receipt times; never silently discarded."
+}

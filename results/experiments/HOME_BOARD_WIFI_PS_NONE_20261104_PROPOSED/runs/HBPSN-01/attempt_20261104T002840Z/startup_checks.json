@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-04T00:38:35.520489+00:00",
+  "gates": {
+    "boot_banner": true,
+    "board_mac": true,
+    "elf_prefix": true,
+    "quic_firmware": true,
+    "wifi_ps_none": true,
+    "assigned_ip": true,
+    "quic_connected": true,
+    "mqtt_connected": true,
+    "subscription": true,
+    "tls": true
+  },
+  "pass_all": true,
+  "fatal": false,
+  "assigned_ip": "192.168.137.212",
+  "reported_elf_prefix": "9b23e164f"
+}

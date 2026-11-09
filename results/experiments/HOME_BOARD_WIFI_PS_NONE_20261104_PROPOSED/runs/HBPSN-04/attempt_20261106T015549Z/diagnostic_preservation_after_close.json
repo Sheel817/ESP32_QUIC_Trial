@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-06T01:58:14.108399+00:00",
+  "all_stable_files_unchanged": true,
+  "separate_live_tail": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\diagnostics\\TEST_ONLY_QUIC_HEAP_20261106T004758540Z\\TEST_ONLY_after_capture.raw.log",
+    "bytes": 47324,
+    "sha256": "5f557dbc00e0d23b9f143f2c024d222ac3f43f3adea58f71d7518f61c0439d2d"
+  }
+}

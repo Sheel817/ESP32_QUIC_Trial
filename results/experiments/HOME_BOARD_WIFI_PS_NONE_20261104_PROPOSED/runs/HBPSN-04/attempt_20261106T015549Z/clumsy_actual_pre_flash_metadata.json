@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "screenshot": "clumsy_actual_pre_flash.jpg",
+  "capture_started_utc": "2026-11-06T01:55:49.958Z",
+  "capture_completed_utc": "2026-11-06T01:55:50.850Z",
+  "sha256": "66101282c1ee568182bee36a529f37349c56f11e68a955376e260e8178c8dfce",
+  "source_type": "GUI_observed",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "note": "CONTROL all main enable boxes off; inactive Lag100ms/Drop1% and direction fields retained. No Clumsy input other than window activation."
+}

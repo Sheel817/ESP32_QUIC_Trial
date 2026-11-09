@@ -1,0 +1,14 @@
+{
+  "exact_statement": "yes i know..",
+  "source": "Operator response relayed by user from ChatGPT",
+  "receipt_observed_utc": "2026-11-06T12:59:46.7782638Z",
+  "receipt_observed_helsinki": "2026-11-06T14:59:46.7782638+02:00",
+  "receipt_clock_source": "First local UTC clock observation while processing this user message; original chat ingress timestamp unavailable",
+  "user_clarified_scope": "Unchanged Clumsy filter, effects and capture; no Stop/Start or close/reopen, throughout6November2026,04:01:38\u201304:41:44 Helsinki",
+  "covered_interval_as_reported_helsinki": [
+    "2026-11-06T04:01:38+02:00",
+    "2026-11-06T04:41:44+02:00"
+  ],
+  "scope_interpretation": "User explicitly confirms the previously requested run-start-through-post-screenshot interval; reported endpoints are second precision. Exact acquisition times remain separate.",
+  "not_backdated": true
+}

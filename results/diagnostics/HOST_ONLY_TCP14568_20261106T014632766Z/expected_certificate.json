@@ -1,0 +1,6 @@
+{
+  "pem_file": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+  "pem_file_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462",
+  "certificate_der_sha256": "fed2844dd91a687e2116bb21f356acc0e39839979ae9737dda1218ce8778a328",
+  "preserved_pem_sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462"
+}

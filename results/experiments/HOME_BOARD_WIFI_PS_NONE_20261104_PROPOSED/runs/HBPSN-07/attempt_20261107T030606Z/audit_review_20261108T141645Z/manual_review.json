@@ -1,0 +1,200 @@
+{
+  "run_id": "HBPSN-07",
+  "transport": "TCP_TLS",
+  "condition": "DROP1_OUT",
+  "boot_replicate": 2,
+  "reviewed_utc": "2026-11-08T14:16:45.926957+00:00",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "window_utc": [
+    "2026-11-07T03:09:19.159995+00:00",
+    "2026-11-07T03:46:19.159995+00:00"
+  ],
+  "window_helsinki": [
+    "2026-11-07T05:09:19.159995+02:00",
+    "2026-11-07T05:46:19.159995+02:00"
+  ],
+  "defined_duration_seconds": 2220,
+  "startup_verification": {
+    "status": "PASS",
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "1f661a4f7",
+    "protocol_readback": {
+      "transport": "TCP_TLS/MQTT",
+      "wifi_ps_mode": "WIFI_PS_NONE(0) (requested=0, returned=0)",
+      "tcp_nodelay": 1,
+      "tls_version": "TLSv1.3",
+      "cipher_suite": "TLS_AES_128_GCM_SHA256 (suite 0x1301)",
+      "alpn": "mqtt",
+      "certificate_verification": "NONE (mode 0)"
+    }
+  },
+  "counts": {
+    "raw_serial_lines": 582,
+    "raw_rtt": 441,
+    "warmup_excluded_below_60000ms": 10,
+    "other_excluded": 0,
+    "eligible": 431,
+    "selected_first_415": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "selected_seq_range": [
+      11,
+      425
+    ],
+    "selected_esp_uptime_ms_range": [
+      62357,
+      2136477
+    ]
+  },
+  "summary_metrics": {
+    "count": 415,
+    "minimum_ms": 26.986,
+    "mean_ms": 77.05394939759036,
+    "sample_sd_ms": 65.56914207884964,
+    "population_sd_ms": 65.49009546532727,
+    "median_ms": 67.436,
+    "p95_ms": 107.94,
+    "maximum_ms": 627.76
+  },
+  "diagnostics": {
+    "wifi_warnings": [
+      {
+        "line": 94,
+        "raw_line": "2026-11-07T05:09:19 W (737) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+      },
+      {
+        "line": 102,
+        "raw_line": "2026-11-07T05:09:22 W (3297) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+      },
+      {
+        "line": 120,
+        "raw_line": "2026-11-07T05:09:22 W (3487) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+      }
+    ],
+    "serial_connection_errors": [],
+    "sequence_gaps": [],
+    "resets": [
+      {
+        "line": 2,
+        "raw_line": "2026-11-07T05:09:19 I (418) app_init: ELF file\ufffdESP-ROM:esp32c6-20220919",
+        "host_receipt_utc": "2026-11-07T03:09:19.192382+00:00",
+        "initial_designated_boot": true
+      }
+    ],
+    "server_errors": {
+      "count": 1,
+      "raw_text": "TCP+TLS ERROR: \n",
+      "receipts": [
+        {
+          "utc": "2026-11-07T03:10:14.826668+00:00",
+          "monotonic": 775324.1424259,
+          "source_offset": 211,
+          "offset": 0,
+          "length": 17
+        }
+      ],
+      "source_byte_range": [
+        211,
+        228
+      ],
+      "receipt_utc": "2026-11-07T03:10:14.826668+00:00",
+      "assessment": "One new unattributed server error TCP+TLS ERROR: retained under original non-reboot error rule; peer/cause unknown"
+    }
+  },
+  "clumsy_pre_image": {
+    "nonce": "a571963646f74b418d64b724221a9d79",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "f677ee483e9a0d1116e29c7cfa7d9bd07ca646ca6078c625cf905a2150b1d72a",
+    "capture_started_utc": "2026-11-07T03:09:00.897Z",
+    "capture_completed_utc": "2026-11-07T03:09:01.272Z",
+    "capture_started_monotonic": 775250.2140189,
+    "capture_completed_monotonic": 775250.5890189,
+    "clock_provenance": "Actual UTC acquisition brackets; monotonic estimates from request UTC/monotonic bridge.",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-07 TCP_TLS DROP1_OUT actual pre-reset image; independent boot, no reflash"
+  },
+  "clumsy_post_screenshot_status": {
+    "automatic_post_recording_check": {
+      "status": "MISSING",
+      "phase": "end_of_run",
+      "request": {
+        "phase": "end_of_run",
+        "nonce": "d4575973dcbe4978b5fbdcbfd0ef0be7",
+        "requested_utc": "2026-11-07T03:46:19.180821+00:00",
+        "requested_monotonic": 777488.4968949,
+        "expected": {
+          "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+          "capture": "RUNNING",
+          "Drop": {
+            "enabled": true,
+            "chance_percent": 1.0,
+            "inbound": false,
+            "outbound": true
+          },
+          "other_main_effects": {
+            "Lag": false,
+            "Throttle": false,
+            "Duplicate": false,
+            "Out of order": false,
+            "Tamper": false,
+            "Set TCP RST": false,
+            "Bandwidth": false
+          }
+        },
+        "anchor": {
+          "reset_request_utc": "2026-11-07T03:09:19.152965+00:00",
+          "reset_release_utc": "2026-11-07T03:09:19.159995+00:00",
+          "reset_release_monotonic": 775268.4760111,
+          "deadline_monotonic": 777488.4760111,
+          "deadline_utc": "2026-11-07T03:46:19.159995+00:00",
+          "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+          "boundary_precision": "Host API completion, not a physical edge measurement",
+          "server_boundaries": {
+            "stdout": {
+              "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+              "byte_offset": 1533457
+            },
+            "stderr": {
+              "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+              "byte_offset": 211
+            },
+            "sensor_csv": {
+              "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+              "byte_offset": 834224
+            }
+          }
+        },
+        "response_timeout_seconds": 30
+      },
+      "reason": "No complete, timely screenshot/observation response",
+      "evaluated_utc": "2026-11-07T03:46:49.185585+00:00"
+    },
+    "post_deadline_screenshot_file": null,
+    "post_deadline_sha256": null,
+    "capture_delay_seconds": null,
+    "api_capture_error": "Win32 ERROR_INVALID_HANDLE (6): Background/agent subshell has no interactive desktop display device context; elevated Clumsy GUI cannot be captured without operator interaction or display attachment",
+    "status": "PENDING_OPERATOR_ACQUISITION_OR_CONFIRMATION"
+  },
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_OPERATOR_CONFIRMATION_AND_POST_SCREENSHOT",
+  "register_status": "HBPSN-07 RUNNING row preserved; validity pending operator confirmation. Prior runs HBPSN-01 to HBPSN-06 preserved unchanged."
+}

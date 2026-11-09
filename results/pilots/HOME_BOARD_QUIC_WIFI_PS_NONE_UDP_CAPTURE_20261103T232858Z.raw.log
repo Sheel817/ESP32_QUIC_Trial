@@ -1,0 +1,10 @@
+2026-11-04T01:29:01 I (1376223) quic_demo_main: APP_RTT seq=273 app_rtt_ms=25.436
+2026-11-04T01:29:06 I (1381253) quic_demo_main: APP_RTT seq=274 app_rtt_ms=45.595
+2026-11-04T01:29:11 I (1386283) quic_demo_main: APP_RTT seq=275 app_rtt_ms=65.492
+2026-11-04T01:29:16 I (1391313) quic_demo_main: APP_RTT seq=276 app_rtt_ms=85.489
+2026-11-04T01:29:21 I (1396343) quic_demo_main: APP_RTT seq=277 app_rtt_ms=105.132
+2026-11-04T01:29:26 I (1401273) quic_demo_main: APP_RTT seq=278 app_rtt_ms=28.834
+2026-11-04T01:29:31 I (1406303) quic_demo_main: APP_RTT seq=279 app_rtt_ms=48.908
+2026-11-04T01:29:36 I (1411333) quic_demo_main: APP_RTT seq=280 app_rtt_ms=65.847
+2026-11-04T01:29:42 I (1416363) quic_demo_main: APP_RTT seq=281 app_rtt_ms=86.012
+2026-11-04T01:29:47 I (1421393) quic_demo_main: APP_RTT seq=282 app_rtt_ms=105.885

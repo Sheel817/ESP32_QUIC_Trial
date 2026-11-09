@@ -1,0 +1,10 @@
+{
+  "updated_utc": "2026-11-04T13:15:39.147Z",
+  "run_id": "HBPSN-02",
+  "status": "FAILED_SETTINGS",
+  "processing_status": "FINALIZED",
+  "evidence_review": "PENDING",
+  "other_17_rows_unchanged": true,
+  "hbpsn01_unchanged": true,
+  "validity_approved": false
+}

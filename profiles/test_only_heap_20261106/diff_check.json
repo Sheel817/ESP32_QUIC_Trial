@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-06T00:40:52.797096+00:00",
+  "command": [
+    "git",
+    "apply",
+    "--check",
+    "profiles\\test_only_heap_20261106\\diagnostic_source.diff"
+  ],
+  "exit_code": 0,
+  "patch_applied": false
+}

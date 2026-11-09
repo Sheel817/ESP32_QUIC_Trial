@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "run_id": "HBPSN-01",
+  "transport": "QUIC",
+  "condition": "CONTROL",
+  "checked_utc": "2026-11-04T00:31:45.108858+00:00",
+  "protocol_id": "HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED_V1",
+  "plan_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "freeze_manifest_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\freeze_manifest.json",
+  "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+  "firmware_artifacts": [
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+      "bytes": 1637280,
+      "sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+      "bytes": 17297344,
+      "sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    }
+  ],
+  "configuration": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\sdkconfig",
+      "sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\config\\sdkconfig.json",
+      "sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\CMakeCache.txt",
+      "sha256": "01941bf8855e1b39d9928acbf9543a761badd303b15c95069d5c61d128f08771"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\compile_commands.json",
+      "sha256": "6062efbb3e350de2abc944ae0959e6ab101410257265f86e1c01ba01f6f3cbc0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flash_args",
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flasher_args.json",
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+      "sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+      "sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+      "sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462"
+    }
+  ],
+  "source_manifest_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\source_before.json",
+  "source_manifest_sha256": "fab4baf0273fbe485e6c73566cd57ff130834152c991867822df91e4e3ceb8cd",
+  "failed_preflight_preserved": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\metadata.json",
+      "sha256": "2dda54fe3751c92f6cfd162e82249e53cac3614fab34f97189ee8e5b8bf79e64"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\preflight_attempt_20261104T001824Z.json",
+      "sha256": "2dda54fe3751c92f6cfd162e82249e53cac3614fab34f97189ee8e5b8bf79e64"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\PREFLIGHT_BLOCKED.md",
+      "sha256": "c667f4e207df1e4681a35a86374c43e2982dc7cd38e48e3ae1b3d371d09e0212"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\preflight_clumsy_20261104T001824Z.jpg",
+      "sha256": "3840c2e8e77a6cd9f68012faa58c06d85ef59c1856feb0cc7b9bf450a2fe5492"
+    }
+  ],
+  "clumsy": {
+    "operator_report": "User reports corrected frozen QUIC filter; CONTROL capture running, effects off required",
+    "observed_filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING; Stop button",
+    "effects": "All function checkboxes unchecked",
+    "evidence": "clumsy_preflight.jpg",
+    "evidence_sha256": "b7af64b0aafce6d2f3c668964dbf8fbf3f61aad3221327af8c9361fa94e79525"
+  },
+  "server_log_sources": {
+    "stdout": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+    "stderr": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log"
+  },
+  "server_sensor_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+  "system": {
+    "utc": "2026-11-04T00:31:43.3536293Z",
+    "port": {
+      "DeviceID": "COM6",
+      "Name": "Silicon Labs CP210x USB to UART Bridge (COM6)",
+      "PNPDeviceID": "USB\\VID_10C4&PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+    },
+    "server": {
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 14567,
+      "OwningProcess": 23100
+    },
+    "process": {
+      "ProcessId": 23100,
+      "CommandLine": "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+    }
+  }
+}

@@ -1,0 +1,351 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,18 +2,22 @@
+ # CMakeLists in this exact order for cmake to work correctly
+ cmake_minimum_required(VERSION 3.16)
+ 
++# TEST_ONLY: use existing private dependency copies without dependency resolution.
++set(EXTRA_COMPONENT_DIRS "${CMAKE_SOURCE_DIR}/managed_components"
++    "$ENV{IDF_PATH}/examples/common_components/protocol_examples_common")
++set(PROJECT_VER "3c8c7a3-dirty-TEST_ONLY")
+ include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+ add_compile_definitions(WOLFSSL_QUIC MICRO_SESSION_CACHE HAVE_ALPN OPENSSL_ALL)
+ # "Trim" the build. Include the minimal set of components, main, and anything it depends on.
+ idf_build_set_property(MINIMAL_BUILD OFF)
+-project(quic_demo)
+-# Compatibility for the bundled wolfSSL port with ESP-IDF 6.x.
+-# Its hardware crypto port uses APIs removed from IDF 6; use software crypto.
+-idf_component_get_property(wolfssl_lib wolfssl__wolfssl COMPONENT_LIB)
+-target_compile_definitions(${wolfssl_lib} PUBLIC
+-    NO_ESP32_CRYPT
+-    NO_WOLFSSL_ESP32_CRYPT_HASH
+-    NO_WOLFSSL_ESP32_CRYPT_AES
+-    NO_WOLFSSL_ESP32_CRYPT_RSA_PRI)
+-# The bundled port uses thread_local as an identifier (a keyword in C23).
++project(quic_demo)
++# Compatibility for the bundled wolfSSL port with ESP-IDF 6.x.
++# Its hardware crypto port uses APIs removed from IDF 6; use software crypto.
++idf_component_get_property(wolfssl_lib wolfssl__wolfssl COMPONENT_LIB)
++target_compile_definitions(${wolfssl_lib} PUBLIC
++    NO_ESP32_CRYPT
++    NO_WOLFSSL_ESP32_CRYPT_HASH
++    NO_WOLFSSL_ESP32_CRYPT_AES
++    NO_WOLFSSL_ESP32_CRYPT_RSA_PRI)
++# The bundled port uses thread_local as an identifier (a keyword in C23).
+ target_compile_options(${wolfssl_lib} PRIVATE -std=gnu17)
+--- a/components/ngtcp2/CMakeLists.txt
++++ b/components/ngtcp2/CMakeLists.txt
+@@ -40,7 +40,7 @@
+                                "${CMAKE_CURRENT_LIST_DIR}/../../managed_components/wolfssl__wolfssl/wolfssl"
+                                "${CMAKE_CURRENT_LIST_DIR}/../../managed_components/wolfssl__wolfssl/wolfssl/wolfcrypt"
+                                "${CMAKE_CURRENT_LIST_DIR}/../../managed_components/wolfssl__wolfssl/wolfssl/wolfcrypt/port/Espressif"
+-                           REQUIRES wolfssl)
++                           REQUIRES wolfssl__wolfssl test_only_heap_diag)
+ 
+      # Add wolfSSL-specific compile definitions
+      target_compile_definitions(${COMPONENT_LIB} PUBLIC
+--- a/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c
++++ b/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c
+@@ -23,6 +23,7 @@
+  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  */
+ #include "ngtcp2_conn.h"
++#include "test_only_heap_diag.h"
+ 
+ #include <string.h>
+ #include <assert.h>
+@@ -701,6 +702,7 @@
+     return NGTCP2_ERR_NOMEM;
+   }
+ 
++  test_only_heap_trace(TEST_ONLY_PKTNS_ALLOC, *ppktns, mem, (uint32_t)pktns_id);
+   pktns_init(*ppktns, pktns_id, rst, cc, initial_pkt_num, log, qlog,
+              rtb_entry_objalloc, frc_objalloc, mem);
+ 
+@@ -763,6 +765,7 @@
+ 
+   pktns_free(pktns, mem);
+ 
++  test_only_heap_check(TEST_ONLY_BEFORE_FINAL_FREE, pktns, mem);
+   ngtcp2_mem_free(mem, pktns);
+ }
+ 
+@@ -2482,6 +2485,8 @@
+                                ngtcp2_tstamp ts) {
+   ngtcp2_pktns *pktns = *ppktns;
+   uint64_t bytes_in_flight;
++
++  test_only_heap_check(TEST_ONLY_CLEANUP_ENTRY, pktns, conn);
+ 
+   bytes_in_flight = pktns->rtb.cc_bytes_in_flight;
+ 
+--- a/components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c
++++ b/components/ngtcp2/ngtcp2/lib/ngtcp2_mem.c
+@@ -24,6 +24,7 @@
+  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  */
+ #include "ngtcp2_mem.h"
++#include "test_only_heap_diag.h"
+ 
+ #include <stdio.h>
+ 
+@@ -62,19 +63,28 @@
+ 
+ #ifndef MEMDEBUG
+ void *ngtcp2_mem_malloc(const ngtcp2_mem *mem, size_t size) {
+-  return mem->malloc(size, mem->user_data);
++  void *ptr = mem->malloc(size, mem->user_data);
++  test_only_heap_trace(TEST_ONLY_ALLOC, ptr, mem, (uint32_t)size);
++  return ptr;
+ }
+ 
+ void ngtcp2_mem_free(const ngtcp2_mem *mem, void *ptr) {
++  test_only_heap_trace(TEST_ONLY_FREE_BEGIN, ptr, mem, 0);
+   mem->free(ptr, mem->user_data);
++  test_only_heap_trace(TEST_ONLY_FREE_END, ptr, mem, 0);
+ }
+ 
+ void *ngtcp2_mem_calloc(const ngtcp2_mem *mem, size_t nmemb, size_t size) {
+-  return mem->calloc(nmemb, size, mem->user_data);
++  void *ptr = mem->calloc(nmemb, size, mem->user_data);
++  test_only_heap_trace(TEST_ONLY_CALLOC, ptr, (const void *)(uintptr_t)nmemb, (uint32_t)size);
++  return ptr;
+ }
+ 
+ void *ngtcp2_mem_realloc(const ngtcp2_mem *mem, void *ptr, size_t size) {
+-  return mem->realloc(ptr, size, mem->user_data);
++  test_only_heap_trace(TEST_ONLY_REALLOC_BEGIN, ptr, mem, (uint32_t)size);
++  void *result = mem->realloc(ptr, size, mem->user_data);
++  test_only_heap_trace(TEST_ONLY_REALLOC_END, result, ptr, (uint32_t)size);
++  return result;
+ }
+ #else  /* defined(MEMDEBUG) */
+ void *ngtcp2_mem_malloc_debug(const ngtcp2_mem *mem, size_t size,
+--- /dev/null
++++ b/components/test_only_heap_diag/CMakeLists.txt
+@@ -0,0 +1,2 @@
++idf_component_register(SRCS "test_only_heap_diag.c" INCLUDE_DIRS "include"
++                       REQUIRES heap freertos esp_hw_support esp_rom esp_system)
+--- /dev/null
++++ b/components/test_only_heap_diag/include/test_only_heap_diag.h
+@@ -0,0 +1,38 @@
++#pragma once
++#include <stddef.h>
++#include <stdint.h>
++
++/* TEST_ONLY: numeric schema is also consumed offline; never changes ownership. */
++enum test_only_heap_phase {
++    TEST_ONLY_BOOT = 1,
++    TEST_ONLY_BEFORE_WRITE = 2,
++    TEST_ONLY_CLEANUP_ENTRY = 3,
++    TEST_ONLY_BEFORE_FINAL_FREE = 4,
++    TEST_ONLY_CHECK_PASS = 5,
++    TEST_ONLY_CHECK_FAIL = 6,
++    TEST_ONLY_ALLOC = 7,
++    TEST_ONLY_FREE_BEGIN = 8,
++    TEST_ONLY_FREE_END = 9,
++    TEST_ONLY_CALLOC = 10,
++    TEST_ONLY_REALLOC_BEGIN = 11,
++    TEST_ONLY_REALLOC_END = 12,
++    TEST_ONLY_PKTNS_ALLOC = 13
++};
++#define TEST_ONLY_TRACE_CAPACITY 256u
++#define TEST_ONLY_TRACE_MAGIC 0x544f4844u
++typedef struct {
++    uint32_t writing, commit, sequence, cycles, phase, task;
++    uint32_t pointer, related, detail;
++} test_only_heap_trace_entry;
++typedef struct {
++    uint32_t magic, version, capacity, next_sequence, dropped, frozen;
++} test_only_heap_trace_control;
++extern volatile test_only_heap_trace_control g_test_only_heap_control;
++extern volatile test_only_heap_trace_entry g_test_only_heap_trace[TEST_ONLY_TRACE_CAPACITY];
++
++/* Producer only: fixed memory, lock-free try-once slot reservation, no I/O. */
++void test_only_heap_trace(uint32_t phase, const void *pointer,
++                          const void *related, uint32_t detail);
++/* Checkpoints are separate from trace producers: SDK integrity checks take heap locks. */
++void test_only_heap_check(uint32_t phase, const void *pointer, const void *related);
++void test_only_heap_banner(void);
+--- /dev/null
++++ b/components/test_only_heap_diag/test_only_heap_diag.c
+@@ -0,0 +1,80 @@
++#include "test_only_heap_diag.h"
++#include "esp_cpu.h"
++#include "esp_heap_caps.h"
++#include "esp_rom_sys.h"
++#include "esp_system.h"
++#include "freertos/FreeRTOS.h"
++#include "freertos/task.h"
++
++_Static_assert(sizeof(uintptr_t) == 4, "TEST_ONLY trace schema requires 32-bit target");
++_Static_assert(__atomic_always_lock_free(4, 0), "TEST_ONLY requires lock-free word atomics");
++_Static_assert(sizeof(test_only_heap_trace_entry) == 36, "TEST_ONLY trace schema v1");
++
++/* Exported ordinary .data/.bss symbols: private UART core dump captures DRAM. */
++volatile test_only_heap_trace_control g_test_only_heap_control = {
++    .magic = TEST_ONLY_TRACE_MAGIC, .version = 1, .capacity = TEST_ONLY_TRACE_CAPACITY
++};
++volatile test_only_heap_trace_entry g_test_only_heap_trace[TEST_ONLY_TRACE_CAPACITY];
++
++__attribute__((noinline))
++void test_only_heap_trace(uint32_t phase, const void *pointer,
++                          const void *related, uint32_t detail)
++{
++    if (__atomic_load_n(&g_test_only_heap_control.frozen, __ATOMIC_RELAXED)) return;
++    uint32_t seq = __atomic_add_fetch(&g_test_only_heap_control.next_sequence, 1, __ATOMIC_RELAXED);
++    volatile test_only_heap_trace_entry *slot = &g_test_only_heap_trace[(seq - 1) % TEST_ONLY_TRACE_CAPACITY];
++    /* Never spin/wait if another producer was preempted on this slot. */
++    if (__atomic_exchange_n(&slot->writing, 1, __ATOMIC_ACQUIRE)) {
++        __atomic_fetch_add(&g_test_only_heap_control.dropped, 1, __ATOMIC_RELAXED);
++        return;
++    }
++    __atomic_store_n(&slot->commit, 0, __ATOMIC_RELAXED);
++    slot->sequence = seq;
++    slot->cycles = esp_cpu_get_cycle_count();
++    slot->phase = phase;
++    slot->task = (uint32_t)(uintptr_t)xTaskGetCurrentTaskHandle();
++    slot->pointer = (uint32_t)(uintptr_t)pointer;
++    slot->related = (uint32_t)(uintptr_t)related;
++    slot->detail = detail;
++    __atomic_store_n(&slot->commit, seq, __ATOMIC_RELEASE);
++    __atomic_store_n(&slot->writing, 0, __ATOMIC_RELEASE);
++}
++
++/* Explicit failure recovery, NOT a producer hook. UART output may block here. */
++static void test_only_heap_dump_failure(uint32_t failed_phase)
++{
++    __atomic_store_n(&g_test_only_heap_control.frozen, 1, __ATOMIC_RELEASE);
++    esp_rom_printf("TEST_ONLY TRACE_BEGIN v=1 capacity=%u next=%u dropped=%u failed_phase=%u\n",
++                   TEST_ONLY_TRACE_CAPACITY, g_test_only_heap_control.next_sequence,
++                   g_test_only_heap_control.dropped, failed_phase);
++    for (uint32_t i = 0; i < TEST_ONLY_TRACE_CAPACITY; ++i) {
++        volatile test_only_heap_trace_entry *e = &g_test_only_heap_trace[i];
++        uint32_t commit = __atomic_load_n(&e->commit, __ATOMIC_ACQUIRE);
++        if (__atomic_load_n(&e->writing, __ATOMIC_ACQUIRE) || !commit || commit != e->sequence) continue;
++        esp_rom_printf("TEST_ONLY TRACE slot=%u seq=%u cycles=%u phase=%u task=%08x ptr=%08x related=%08x detail=%u\n",
++                       i, e->sequence, e->cycles, e->phase, e->task,
++                       e->pointer, e->related, e->detail);
++    }
++    esp_rom_printf("TEST_ONLY TRACE_END\n");
++}
++
++void test_only_heap_check(uint32_t phase, const void *pointer, const void *related)
++{
++    test_only_heap_trace(phase, pointer, related, 0);
++    /* Not an allocation/free hook: full SDK heap check, outside allocator calls. */
++    if (!heap_caps_check_integrity_all(false)) {
++        test_only_heap_trace(TEST_ONLY_CHECK_FAIL, pointer, related, phase);
++        test_only_heap_dump_failure(phase);
++        esp_system_abort("TEST_ONLY heap integrity checkpoint failed; trace frozen");
++    }
++    test_only_heap_trace(TEST_ONLY_CHECK_PASS, pointer, related, phase);
++}
++
++void test_only_heap_banner(void)
++{
++    test_only_heap_trace(TEST_ONLY_BOOT, (const void *)g_test_only_heap_trace,
++                         (const void *)&g_test_only_heap_control, sizeof(g_test_only_heap_trace));
++    esp_rom_printf("TEST_ONLY QUIC HEAP DIAGNOSTIC v1; not formal firmware; trace=%p control=%p bytes=%u\n",
++                   g_test_only_heap_trace, &g_test_only_heap_control,
++                   (unsigned)sizeof(g_test_only_heap_trace));
++}
+--- a/main/CMakeLists.txt
++++ b/main/CMakeLists.txt
+@@ -18,11 +18,14 @@
+         nvs_flash
+     REQUIRES 
+         ngtcp2 
+-        wolfssl 
++        wolfssl__wolfssl 
+         coreMQTT
+         esp_timer
+         esp_wifi
+         protocol_examples_common
++        test_only_heap_diag
++        esp-idf-lib__dht
++        espressif__cjson
+     INCLUDE_DIRS "")
+ 
+ if(DEMO_TRANSPORT STREQUAL "TCP_TLS")
+--- a/main/ngtcp2_sample.c
++++ b/main/ngtcp2_sample.c
+@@ -54,6 +54,7 @@
+ #include "esp_log.h"
+ #include "measurement_logging.h"
+ #include "tls_negotiation.h"
++#include "test_only_heap_diag.h"
+ static const char *TAG = "QUIC";
+ // @NOTE: hack to avoid using stderr
+ #undef stderr
+@@ -560,6 +561,7 @@
+       flags |= NGTCP2_WRITE_STREAM_FLAG_FIN;
+     }
+ 
++    test_only_heap_check(TEST_ONLY_BEFORE_WRITE, c->conn, c);
+     nwrite = ngtcp2_conn_writev_stream(c->conn, &ps.path, &pi, buf, sizeof(buf),
+                                        &wdatalen, flags, stream_id, &datav,
+                                        datavcnt, ts);
+--- a/main/quic_demo_main.c
++++ b/main/quic_demo_main.c
+@@ -18,6 +18,7 @@
+ #include "esp_system.h"
+ #include "esp_timer.h"
+ #include "esp_wifi.h"
++#include "test_only_heap_diag.h"
+ #include "nvs_flash.h"
+ 
+ #include "protocol_examples_common.h"
+@@ -562,6 +563,7 @@
+ 
+ void app_main(void)
+ {
++    test_only_heap_banner();
+     ESP_LOGI(TAG, "Starting ESP32-C6 DHT11 over %s", DEMO_TRANSPORT_NAME);
+     ESP_LOGI(TAG, "ESP-IDF version: %s", esp_get_idf_version());
+ 
+--- a/managed_components/esp-idf-lib__dht/CMakeLists.txt
++++ b/managed_components/esp-idf-lib__dht/CMakeLists.txt
+@@ -1,21 +1,21 @@
+-if(${IDF_TARGET} STREQUAL esp8266)
+-    set(req esp8266 freertos log esp_idf_lib_helpers)
+-elseif(${IDF_VERSION_MAJOR} STREQUAL 5 AND ${IDF_VERSION_MINOR} LESS 3)
+-    set(req driver freertos log esp_idf_lib_helpers)
+-else()
+-    set(req esp_driver_gpio freertos log esp_idf_lib_helpers)
+-endif()
+-
+-idf_component_register(
+-    SRCS dht.c
+-    INCLUDE_DIRS .
+-    REQUIRES ${req}
+-)
+-
+-# include common cmake file for components
+-set(ESP_IDF_LIB_CMAKE ${CMAKE_CURRENT_LIST_DIR}/common/cmake/esp-idf-lib.cmake)
+-if(EXISTS ${ESP_IDF_LIB_CMAKE})
+-    include(${ESP_IDF_LIB_CMAKE})
+-else()
+-    message(WARNING "${ESP_IDF_LIB_CMAKE} not found")
+-endif()
++if(${IDF_TARGET} STREQUAL esp8266)
++    set(req esp8266 freertos log esp-idf-lib__esp_idf_lib_helpers)
++elseif(${IDF_VERSION_MAJOR} STREQUAL 5 AND ${IDF_VERSION_MINOR} LESS 3)
++    set(req driver freertos log esp-idf-lib__esp_idf_lib_helpers)
++else()
++    set(req esp_driver_gpio freertos log esp-idf-lib__esp_idf_lib_helpers)
++endif()
++
++idf_component_register(
++    SRCS dht.c
++    INCLUDE_DIRS .
++    REQUIRES ${req}
++)
++
++# include common cmake file for components
++set(ESP_IDF_LIB_CMAKE ${CMAKE_CURRENT_LIST_DIR}/common/cmake/esp-idf-lib.cmake)
++if(EXISTS ${ESP_IDF_LIB_CMAKE})
++    include(${ESP_IDF_LIB_CMAKE})
++else()
++    message(WARNING "${ESP_IDF_LIB_CMAKE} not found")
++endif()

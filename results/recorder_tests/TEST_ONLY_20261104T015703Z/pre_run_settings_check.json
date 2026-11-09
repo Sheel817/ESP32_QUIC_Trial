@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "56699e77c9114c22b3fbb3d832451bdb",
+    "requested_utc": "2026-11-04T01:58:10.891941+00:00",
+    "requested_monotonic": 511802.1087265,
+    "expected": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "effects": "all unchecked"
+    },
+    "anchor": null,
+    "response_timeout_seconds": 180
+  },
+  "evidence": {
+    "nonce": "56699e77c9114c22b3fbb3d832451bdb",
+    "screenshot": "TEST_ONLY_pre_run_clumsy.png",
+    "sha256": "ceecfae407bd93c00ce967f59cb4d6fd683b04879a5290b153fb07379456ecf4",
+    "capture_started_utc": "2026-11-04T01:58:40.238Z",
+    "capture_completed_utc": "2026-11-04T01:58:40.447Z",
+    "capture_started_monotonic": 511831.4557265,
+    "capture_completed_monotonic": 511831.6647265,
+    "monotonic_source": "UTC offset from request anchor; estimated, not directly read in GUI runtime",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "effects": "all unchecked"
+    },
+    "label": "TEST_ONLY pre-run; for HBPSN-01 this is LATE SUPPLEMENTARY ONLY, never original post-recording evidence",
+    "details": "Lag unchecked, configured 100 ms outbound only. Drop unchecked, configured 10.0%, both directions. All eight function checkboxes unchecked. Stop button visible."
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-04T01:59:00.485074+00:00"
+}

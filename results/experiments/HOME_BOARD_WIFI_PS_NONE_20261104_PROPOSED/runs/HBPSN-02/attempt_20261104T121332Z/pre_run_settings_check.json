@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "d321da2d568646948052c140f6baa862",
+    "requested_utc": "2026-11-04T12:17:06.388339+00:00",
+    "requested_monotonic": 548937.6053016,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "d321da2d568646948052c140f6baa862",
+    "screenshot": "clumsy_actual_pre_reset.jpg",
+    "sha256": "338fe985dccaca6cd3e03b6b9cdaa51ed000636424438bca2ea4b8d1a08af829",
+    "capture_started_utc": "2026-11-04T12:17:11.463Z",
+    "capture_completed_utc": "2026-11-04T12:17:11.943Z",
+    "capture_started_monotonic": 548942.6803015999,
+    "capture_completed_monotonic": 548943.1603016,
+    "monotonic_source": "Estimated from request UTC/monotonic bridge; screenshot capture UTC sampled directly in GUI runtime",
+    "source_type": "GUI_observed",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-02 actual fresh pre-reset screenshot; TCP_TLS LAG100_OUT; no settings changed",
+    "prior_verified_screenshot": {
+      "captured_utc": "2026-11-04T11:59:26.536Z\u201311:59:26.994Z",
+      "sha256": "7c376f1aeab829828f5687cc3fe2d00cf379315b847bf4e260108e817a453517",
+      "preserved_copy": "verified_prior_pre_reset.jpg"
+    }
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-04T12:17:24.218891+00:00"
+}

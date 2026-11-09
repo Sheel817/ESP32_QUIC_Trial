@@ -1,0 +1,26 @@
+{
+  "stdout": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stdout.log",
+    "byte_offset": 63395,
+    "prefix_sha256": "92cf401141fb0fbbdaeebfacdadae4f70fdd39198c46a8f8e3da0e5433f2b469",
+    "prefix_lines": 746,
+    "anchor_utc": "2026-11-04T12:17:27.280042+00:00",
+    "historical": true
+  },
+  "stderr": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+    "byte_offset": 51,
+    "prefix_sha256": "c8037f828ce963c1d181a43b969a4aa38f1d83f117b7191dea07ea6f168b3cf9",
+    "prefix_lines": 3,
+    "anchor_utc": "2026-11-04T12:17:27.280042+00:00",
+    "historical": true
+  },
+  "sensor_csv": {
+    "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261104T000344_550740Z_xly3omnb.csv",
+    "byte_offset": 33644,
+    "prefix_sha256": "ba4587d38ff7b5102378943d29300ecdc01389525f41fab494ce362bc51aeceb",
+    "prefix_lines": 366,
+    "anchor_utc": "2026-11-04T12:17:27.280042+00:00",
+    "historical": true
+  }
+}

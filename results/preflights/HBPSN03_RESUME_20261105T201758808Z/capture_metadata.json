@@ -1,0 +1,30 @@
+{
+  "run_id": "HBPSN-03",
+  "capture_started_utc": "2026-11-05T20:17:58.808Z",
+  "capture_completed_utc": "2026-11-05T20:17:59.322Z",
+  "screenshot": "C:/Users/newsh/Desktop/ESP32_QUIC_Trial/results/preflights/HBPSN03_RESUME_20261105T201758808Z/HBPSN-03_Clumsy_PRE_FLASH.jpg",
+  "sha256": "ae45c2fae3eb5aa5d95fbe8a36c6ad112eaf0d32466aa654c9f5e768b48440f7",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "status": "PASS",
+  "source_type": "GUI_observed",
+  "host_activity": "Chrome Remote Desktop in use — operator reported; Remote Access window observed",
+  "note": "Actual image before any flash/reset. Disabled Lag retains 100 ms/outbound display; no active Lag. No Clumsy setting changed."
+}

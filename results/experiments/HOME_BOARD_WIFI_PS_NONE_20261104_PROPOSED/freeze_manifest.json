@@ -1,0 +1,217 @@
+{
+  "protocol_id": "HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED_V1",
+  "status": "PROPOSED_NOT_STARTED",
+  "prepared_utc": "2026-11-03T23:56:16.540Z",
+  "runs": 18,
+  "recording_seconds_each": 2220,
+  "first_eligible_count_target": 415,
+  "eligibility": "Initial boot; ESP log uptime >=60000 and <2220000; within 2220-second host-monotonic recording",
+  "artifacts": [
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+      "bytes": 1637280,
+      "sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf",
+      "bytes": 17297344,
+      "sha256": "9b23e164f8d6fd4702450b687c76ef3fa8ced802945dc23dd2f4d102c35c0f3d"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73"
+    },
+    {
+      "artifact_id": "QUIC_PSN",
+      "transport": "QUIC",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+      "bytes": 1498864,
+      "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf",
+      "bytes": 16790856,
+      "sha256": "1f661a4f7214dd0bd499cdf03783ca40633542fb95a6d164e1233c0b6f6363e6"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    }
+  ],
+  "files": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+      "sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv",
+      "sha256": "59bb3306b1a8eaa7deed443e175e4ecf46800854289c9ee6058b425e13d8b33e"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx",
+      "sha256": "461bf940619d96833e37f9804a6e059a1d06ef119d722c5c2788ee704e2b6fee"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\source_before.json",
+      "sha256": "fab4baf0273fbe485e6c73566cd57ff130834152c991867822df91e4e3ceb8cd"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\validation.json",
+      "sha256": "a5bb5731669a16b5d021116aa2fc2b029e4ec333943bfb959caf3a9d7a92c3f3"
+    }
+  ],
+  "schedule": [
+    {
+      "order": 1,
+      "run_id": "HBPSN-01",
+      "block": 1,
+      "transport": "QUIC",
+      "condition": "CONTROL"
+    },
+    {
+      "order": 2,
+      "run_id": "HBPSN-02",
+      "block": 1,
+      "transport": "TCP_TLS",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 3,
+      "run_id": "HBPSN-03",
+      "block": 1,
+      "transport": "QUIC",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 4,
+      "run_id": "HBPSN-04",
+      "block": 1,
+      "transport": "TCP_TLS",
+      "condition": "CONTROL"
+    },
+    {
+      "order": 5,
+      "run_id": "HBPSN-05",
+      "block": 1,
+      "transport": "QUIC",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 6,
+      "run_id": "HBPSN-06",
+      "block": 1,
+      "transport": "TCP_TLS",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 7,
+      "run_id": "HBPSN-07",
+      "block": 2,
+      "transport": "TCP_TLS",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 8,
+      "run_id": "HBPSN-08",
+      "block": 2,
+      "transport": "QUIC",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 9,
+      "run_id": "HBPSN-09",
+      "block": 2,
+      "transport": "TCP_TLS",
+      "condition": "CONTROL"
+    },
+    {
+      "order": 10,
+      "run_id": "HBPSN-10",
+      "block": 2,
+      "transport": "QUIC",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 11,
+      "run_id": "HBPSN-11",
+      "block": 2,
+      "transport": "TCP_TLS",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 12,
+      "run_id": "HBPSN-12",
+      "block": 2,
+      "transport": "QUIC",
+      "condition": "CONTROL"
+    },
+    {
+      "order": 13,
+      "run_id": "HBPSN-13",
+      "block": 3,
+      "transport": "QUIC",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 14,
+      "run_id": "HBPSN-14",
+      "block": 3,
+      "transport": "TCP_TLS",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 15,
+      "run_id": "HBPSN-15",
+      "block": 3,
+      "transport": "QUIC",
+      "condition": "CONTROL"
+    },
+    {
+      "order": 16,
+      "run_id": "HBPSN-16",
+      "block": 3,
+      "transport": "TCP_TLS",
+      "condition": "LAG100_OUT"
+    },
+    {
+      "order": 17,
+      "run_id": "HBPSN-17",
+      "block": 3,
+      "transport": "QUIC",
+      "condition": "DROP1_OUT"
+    },
+    {
+      "order": 18,
+      "run_id": "HBPSN-18",
+      "block": 3,
+      "transport": "TCP_TLS",
+      "condition": "CONTROL"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+source_line,host_receipt_utc,raw_line,classification
+92,2026-11-04T00:38:27.063046+00:00,"2026-11-04T02:38:27 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2",warning_or_error
+100,2026-11-04T00:38:29.623861+00:00,"2026-11-04T02:38:29 W (3263) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14",warning_or_error
+118,2026-11-04T00:38:29.788930+00:00,"2026-11-04T02:38:29 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005",warning_or_error

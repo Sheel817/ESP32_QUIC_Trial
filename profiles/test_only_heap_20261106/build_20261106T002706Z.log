@@ -1,0 +1,61 @@
+-- IDF_TARGET is not set, guessed 'esp32c6' from sdkconfig 'C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/sdkconfig'
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.55.0.windows.5")
+-- Minimal build - OFF
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c6
+"idf_component.yml" file was found for components:
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/main
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/esp-idf-lib__dht
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/esp-idf-lib__esp_idf_lib_helpers
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/espressif__cjson
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/espressif__ethernet_init
+	C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl
+	C:/esp/v6.1/esp-idf/examples/common_components/protocol_examples_common
+However, the component manager is not enabled.
+-- Found version.h.in at C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/components/ngtcp2/ngtcp2/lib/includes/ngtcp2/version.h.in
+-- Begin wolfssl 
+-- C:/Users/newsh/Desktop/ESP32_QUIC_Trial/profiles/test_only_heap_20261106/src/managed_components/wolfssl__wolfssl is not within IDF_PATH.
+-- Detected Windows
+-- CONFIG_TARGET_PLATFORM = 
+-- No conflicting wolfSSL components found.
+-- USERNAME = newsh
+-- THIS_USER = newsh
+-- CONFIG_TARGET_PLATFORM = 
+-- Environment variable GENERATE_MACHINE_PARSEABLE_REPORT not detected, not appending compile definition.
+-- Environment variable WOLFSSL_BENCHMARK_FIXED_CSV not detected, not appending compile definition.
+-- Early expansion includes esp_timer: 
+-- Early expansion includes driver: 
+-- wolfssl component CMAKE_BUILD_EARLY_EXPANSION:
+CMake Error at C:/esp/v6.1/esp-idf/tools/cmake/build.cmake:380 (message):
+  Failed to resolve component 'wolfssl' required by component 'ngtcp2':
+  unknown name.
+Call Stack (most recent call first):
+  C:/esp/v6.1/esp-idf/tools/cmake/build.cmake:423 (__build_resolve_and_add_req)
+  C:/esp/v6.1/esp-idf/tools/cmake/build.cmake:424 (__build_expand_requirements)
+  C:/esp/v6.1/esp-idf/tools/cmake/build.cmake:784 (__build_expand_requirements)
+  C:/esp/v6.1/esp-idf/tools/cmake/project.cmake:868 (idf_build_process)
+  CMakeLists.txt:13 (project)
+
+
+-- Configuring incomplete, errors occurred!
+[0;33mHINT: The component 'wolfssl' could not be found. This could be because: component name was misspelled, the component was not added to the build, the component has been moved to the IDF component manager, the component has been removed and refactored into some other component or the component may not be supported by the selected target.
+Please look out for component in 'https://components.espressif.com' and add using 'idf.py add-dependency' command.
+Refer to the migration guide for more details about moved components.
+Refer to the build-system guide for more details about how components are found and included in the build.[0m
+cmake failed with exit code 1, output of the command is in the C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\build\log\idf_py_stderr_output_37840 and C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\build\log\idf_py_stdout_output_37840
+Executing action: all (aliases: build)
+Running cmake in directory C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\build
+Executing "cmake -G Ninja -B C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\newsh\.espressif\python_env\idf6.1_py3.14_env\Scripts\python.exe -DESP_PLATFORM=1 -DSDKCONFIG=C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\sdkconfig -DDEMO_TRANSPORT=QUIC -DDEMO_WIFI_PS_NONE=ON -DCCACHE_ENABLE=False -DCCACHE_ENABLE=False C:\Users\newsh\Desktop\ESP32_QUIC_Trial\profiles\test_only_heap_20261106\src"...

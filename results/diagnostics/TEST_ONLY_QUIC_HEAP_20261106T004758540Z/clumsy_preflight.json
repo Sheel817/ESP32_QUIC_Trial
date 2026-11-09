@@ -1,0 +1,27 @@
+{
+  "label": "TEST_ONLY",
+  "capture_started_utc": "2026-11-06T00:47:58.540Z",
+  "capture_completed_utc": "2026-11-06T00:47:59.499Z",
+  "image": "TEST_ONLY_Clumsy_PRE_FLASH.jpg",
+  "sha256": "f7caed5b0614e995a1c67cd66441e78afa4799822e60ee64a9a6d62b3a989972",
+  "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+  "capture": "RUNNING",
+  "Drop": {
+    "enabled": true,
+    "chance_percent": 1,
+    "inbound": false,
+    "outbound": true
+  },
+  "other_main_effects": {
+    "Lag": false,
+    "Throttle": false,
+    "Duplicate": false,
+    "Out of order": false,
+    "Tamper": false,
+    "Set TCP RST": false,
+    "Bandwidth": false
+  },
+  "status": "PASS",
+  "source_type": "ACTUAL_GUI_IMAGE",
+  "settings_changed": false
+}

@@ -1,0 +1,7 @@
+{
+    "observed_local":  "2026-11-04T00:56:48.7594742+02:00",
+    "condition":  "HOME_BOARD original/default-power-saving firmware",
+    "clumsy":  "Stopped",
+    "evidence":  "Computer Use screenshot: Start button; status Stopped. To begin again, edit criteria and click Start.; Lag unchecked",
+    "action":  "Observed only; no Start or settings action"
+}

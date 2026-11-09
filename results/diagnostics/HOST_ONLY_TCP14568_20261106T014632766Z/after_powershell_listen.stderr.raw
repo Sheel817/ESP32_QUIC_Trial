@@ -1,0 +1,9 @@
+Get-NetTCPConnection : No matching MSFT_NetTCPConnection objects found by CIM query for instances of the 
+ROOT/StandardCimv2/MSFT_NetTCPConnection class on the  CIM server: SELECT * FROM MSFT_NetTCPConnection  WHERE 
+((LocalPort = 14568)) AND ((State = 2)). Verify query parameters and retry.
+At line:1 char:115
++ ... nce='Stop'; Get-NetTCPConnection -LocalPort 14568 -State Listen | For ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (MSFT_NetTCPConnection:String) [Get-NetTCPConnection], CimJobException
+    + FullyQualifiedErrorId : CmdletizationQuery_NotFound,Get-NetTCPConnection
+ 

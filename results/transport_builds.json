@@ -1,0 +1,30 @@
+{
+  "selected_transport": "TCP_TLS",
+  "flashed": false,
+  "invariants_verified": "Sensor JSON and APP_RTT helper code unchanged from quiet checkpoint; GPIO4, 5s interval, QoS0, client ID, topic and application scheduling constants preserved.",
+  "runtime_negotiation": "Not measured; reported by firmware at next handshake.",
+  "builds": [
+    {
+      "transport": "QUIC",
+      "result": "PASS",
+      "firmware_bytes": 1636640,
+      "app_partition_bytes": 1740800,
+      "remaining_bytes": 104160,
+      "remaining_percent_reported": 6,
+      "sha256": "b39c3863cad84ca879e13715b99e94926079cefdb2c772b0cb96c08587b816d4",
+      "firmware": "build\\transport_artifacts\\QUIC\\quic_demo.bin",
+      "log": "build\\transport_quic_build.log"
+    },
+    {
+      "transport": "TCP_TLS",
+      "result": "PASS",
+      "firmware_bytes": 1498224,
+      "app_partition_bytes": 1740800,
+      "remaining_bytes": 242576,
+      "remaining_percent_reported": 14,
+      "sha256": "204f9c3485014793a423c21c1ec8b1bb7a9df5deff1f9ff0f510e6e693d0d735",
+      "firmware": "build\\transport_artifacts\\TCP_TLS\\quic_demo.bin",
+      "log": "build\\transport_tcp_tls_build.log"
+    }
+  ]
+}

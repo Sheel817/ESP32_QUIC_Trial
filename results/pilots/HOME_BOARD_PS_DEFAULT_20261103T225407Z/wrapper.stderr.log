@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\newsh\Desktop\ESP32_QUIC_Trial\results\pilots\HOME_BOARD_PS_DEFAULT_20261103T225407Z\persistent_monitor.py", line 37, in <module>
+    request = control.read_text().strip()
+              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\newsh\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 787, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\newsh\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_PS_DEFAULT_20261103T225407Z\\monitor_control.txt'

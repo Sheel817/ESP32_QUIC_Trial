@@ -1,0 +1,5 @@
+{
+  "utc": "2026-11-06T01:59:51.731251+00:00",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T015549Z\\collector_v2.py\", line 251, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T015549Z\\collector_v2.py\", line 201, in main\n    raise RuntimeError('Settings preflight failed; no monitor/reset started')\nRuntimeError: Settings preflight failed; no monitor/reset started\n",
+  "reset_event": null
+}

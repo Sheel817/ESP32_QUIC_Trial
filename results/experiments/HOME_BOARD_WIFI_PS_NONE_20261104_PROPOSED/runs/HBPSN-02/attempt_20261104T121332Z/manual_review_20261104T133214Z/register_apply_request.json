@@ -1,0 +1,14 @@
+{
+  "run_id": "HBPSN-02",
+  "phase": "MANUAL_REVIEW_APPROVED",
+  "output_dir": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\manual_review_20261104T133214Z",
+  "csv_staged_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\manual_review_20261104T133214Z\\register_manual_review.staged.csv",
+  "patch": {
+    "status": "COMPLETE",
+    "settings_evidence_type": "actual_pre_post_GUI_images_and_operator_reported_stability; manually_reviewed",
+    "metadata_path": "runs/HBPSN-02/attempt_20261104T121332Z/manual_review_20261104T133214Z/manual_review.json",
+    "deviation_reason": "Manual review under original frozen plan: COMPLETE with flags. Operator exact statement setting stayed unchanged covers start through actual post-image; confirmation receipt observed 2026-11-04T13:31:19.1952412Z. Post-image 1094.940958s late; no frozen lateness cutoff. One new unattributed TCP server error retained (zero serial errors); no reboot/gap/shortfall. Two heartbeat retries recovered. Original automatic FAILED_SETTINGS/MISSING flags and prior registers preserved."
+  },
+  "review_evidence_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\manual_review_20261104T133214Z\\manual_review.json",
+  "review_evidence_sha256": "fbd3c5b4267d170d4f6930de927d07088115bb3a411f38d37c991a99046c70fe"
+}

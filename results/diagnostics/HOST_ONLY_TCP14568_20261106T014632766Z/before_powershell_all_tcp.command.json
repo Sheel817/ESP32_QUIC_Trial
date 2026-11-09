@@ -1,0 +1,20 @@
+{
+  "name": "before_powershell_all_tcp",
+  "argv": [
+    "C:\\WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-Command",
+    "$OutputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false); $ErrorActionPreference='Stop'; Get-NetTCPConnection | Format-List *"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial",
+  "started_utc": "2026-11-06T01:47:44.857074+00:00",
+  "ended_utc": "2026-11-06T01:47:48.791132+00:00",
+  "elapsed_seconds": 3.934052199940197,
+  "exit_code": 0,
+  "stdout_bytes": 414425,
+  "stderr_bytes": 0,
+  "stdout_sha256": "b900b14f73b4676cbe9a0109c77bafbb0c7a486c0d8b061d8ca71ed398eca04a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exception": null
+}

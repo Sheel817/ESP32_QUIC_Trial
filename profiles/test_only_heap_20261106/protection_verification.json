@@ -1,0 +1,7 @@
+{
+  "verified_utc": "2026-11-06T00:39:12.481243+00:00",
+  "protected_file_count": 10271,
+  "changed_or_missing": [],
+  "pass_all": true,
+  "excluded": "Continuously growing monitor streams/after-run/supervisor logs, caches, node_modules/junctions; immutable formal raw/results/configs/builds and both registers included."
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "path": "all_rtts.csv",
+    "bytes": 67494,
+    "sha256": "46f0edaf404d1407179beacd04c901c583b2b4af9b555b14d331e4399b1f4c1d"
+  },
+  {
+    "path": "clumsy_pre_manual.png",
+    "bytes": 31197,
+    "sha256": "1cf8e281db9df3193a39fca8fae0b7ecd99af8878f4f2ea167f6e919c08418eb"
+  },
+  {
+    "path": "eligible_extra.csv",
+    "bytes": 95,
+    "sha256": "2ec23dff87af3178a9939c174c7574c17ba280f4a10f2f346ea7d61aa6d93c57"
+  },
+  {
+    "path": "eligible_rtts.csv",
+    "bytes": 95,
+    "sha256": "2ec23dff87af3178a9939c174c7574c17ba280f4a10f2f346ea7d61aa6d93c57"
+  },
+  {
+    "path": "excluded_rtts.csv",
+    "bytes": 85071,
+    "sha256": "46b637e975cc636ae0f4edca7fbaf4995364438e108988556389eca8a70f3e29"
+  },
+  {
+    "path": "heartbeat.json",
+    "bytes": 256,
+    "sha256": "42c67d20e794034b6f38d73173c54aaa79aebad272c498aa9469edcba392c00c"
+  },
+  {
+    "path": "metadata.json",
+    "bytes": 594,
+    "sha256": "bb71da990f0074fc738722a918bd25fc498c127357aa9b73b6301a2482841a06"
+  },
+  {
+    "path": "recording_cutoff_observed.json",
+    "bytes": 211,
+    "sha256": "b76de8a20aa4676b47bf91dc1aaa9119647fa3701f91132e06768edcbfd0b164"
+  },
+  {
+    "path": "reset_event.json",
+    "bytes": 1014,
+    "sha256": "f56e74112bb810a653e0e38808de18481f656300d4bfd71f1192c49477a1630f"
+  },
+  {
+    "path": "RUNNING.json",
+    "bytes": 408,
+    "sha256": "27dab85a6df0b1d13c57bb76631987b885c7a3586cca4d5aa97e36637ff4da0f"
+  },
+  {
+    "path": "selected_first_415.csv",
+    "bytes": 95,
+    "sha256": "2ec23dff87af3178a9939c174c7574c17ba280f4a10f2f346ea7d61aa6d93c57"
+  },
+  {
+    "path": "serial.raw.log",
+    "bytes": 49182,
+    "sha256": "dd6bed881f998f8aa514db3c3ba542f198c3bf8e2269593872df28a3fc146929"
+  },
+  {
+    "path": "serial_raw.log",
+    "bytes": 49182,
+    "sha256": "dd6bed881f998f8aa514db3c3ba542f198c3bf8e2269593872df28a3fc146929"
+  },
+  {
+    "path": "serial_receipts.jsonl",
+    "bytes": 70655,
+    "sha256": "45e20038ab5b5a1a1a1bc8e322067b449a23bf371f0aac38a49f2b3c09e2f822"
+  },
+  {
+    "path": "server.sensor_csv.raw.log",
+    "bytes": 40504,
+    "sha256": "1f7619c97b7253ac58fa2904234b3f82782461251eaffeafb7571847a1a35b61"
+  },
+  {
+    "path": "server.stderr.raw.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "server.stdout.raw.log",
+    "bytes": 75395,
+    "sha256": "e85f7398704ce2f2858f40d6aee5611e91654b5b0c7b631f61efed63a571a45c"
+  },
+  {
+    "path": "startup_checks.json",
+    "bytes": 428,
+    "sha256": "8ee607d44e1998dc28e2ee688d0121d19f52dfa437bda2638ba8199c5cf47c26"
+  },
+  {
+    "path": "statistics.json",
+    "bytes": 567,
+    "sha256": "47e3bf4e5adc2d4d90c89a048f357484fc46f748ada109031dd4b0e542adb75d"
+  },
+  {
+    "path": "manual_review.json",
+    "bytes": 3720,
+    "sha256": "95c15bb025e5a7bfdeb30b6f7edf07c8306290a122fbc01cb247ceb156578bf8"
+  },
+  {
+    "path": "SHA256SUMS.json.bak_20261109T180826Z",
+    "bytes": 2808,
+    "sha256": "a02f4767203d84177fe43f9e63a9ea083d13d22057973633febd10b0f3d80807"
+  },
+  {
+    "path": "results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv",
+    "bytes": 10783,
+    "sha256": "46e92f689035fac7323726b6394d02a407fb1ea05ac980c9e26a7339cf66bbc5"
+  },
+  {
+    "path": "results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv.bak_20261109T180826Z",
+    "bytes": 10550,
+    "sha256": "79b500bf858378a0685576a8ccdd9cac07fdf010b4913f233e6431f46ebd6fb6"
+  },
+  {
+    "path": "outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx",
+    "bytes": 10877,
+    "sha256": "3088a1d9ad3ac4f35ea802ee63f9bf615d314125e30ac189dc174b2635004fab"
+  },
+  {
+    "path": "outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx.bak_20261109T180826Z",
+    "bytes": 10744,
+    "sha256": "7423b8f918e5f4700beba1067ac5b270017e9be8ee8cd920c8a985072d4a773f"
+  },
+  {
+    "path": "review_tools/close_hbpsn08.py",
+    "bytes": 13130,
+    "sha256": "e5540845e78992c720832fea3180ec1f8ca70113e3a256340c9ede0641636333"
+  },
+  {
+    "path": "review_tools/README.md",
+    "bytes": 614,
+    "sha256": "b9878045a2ae172bf7db2b85ed8c1d9b5e5eebe9915c621a7de1edec6bb12efa"
+  },
+  {
+    "path": "SHA256SUMS.json.bak_20261109T220908Z",
+    "bytes": 3960,
+    "sha256": "26b39bc33fa6c88450c441772a2001ba6526ada9c1d71575abc9bc8fb7ecaa45"
+  }
+]

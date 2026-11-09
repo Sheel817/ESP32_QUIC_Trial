@@ -1,0 +1,33 @@
+{
+  "status": "INVALID",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "5c9fdf58a63c4539abf210f907fc6fca",
+    "requested_utc": "2026-11-06T01:59:29.944429+00:00",
+    "requested_monotonic": 684679.260543,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": false,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "reason": "[Errno 13] Permission denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-04\\\\attempt_20261106T015549Z\\\\settings_requests\\\\pre_run.response.json'",
+  "evaluated_utc": "2026-11-06T01:59:51.720393+00:00"
+}

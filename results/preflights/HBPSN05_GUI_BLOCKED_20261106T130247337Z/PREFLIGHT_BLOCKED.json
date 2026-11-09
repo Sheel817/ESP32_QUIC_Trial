@@ -1,0 +1,34 @@
+{
+  "run_id": "HBPSN-05",
+  "transport": "QUIC",
+  "condition": "LAG100_OUT",
+  "status": "NOT_RUN",
+  "capture_started_utc": "2026-11-06T13:02:47.337Z",
+  "capture_completed_utc": "2026-11-06T13:02:47.617Z",
+  "screenshot": "clumsy_actual_blocked.jpg",
+  "sha256": "e7c83d626c08d1ec6f9df90ed8d256d191b0188dbc16cdcc2951e150c2c6ef65",
+  "blocker": "Clumsy has higher Windows integrity than helper. One click on Stop followed by two observations left capture running and controls unchanged. Required filter control cannot be configured through available desktop helper; no bypass attempted.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "all_main_effects_off": true
+  },
+  "required": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "all_other_main_effects_off": true
+  },
+  "manual_action": "Stop capture, replace filter with exact UDP14567 filter, enable only Lag100ms outbound with Inbound unchecked, then Start capture.",
+  "serial_handover": false,
+  "flash": false,
+  "reset": false,
+  "collector_start": false,
+  "register_changes": false,
+  "quic_crash": "UNRESOLVED"
+}

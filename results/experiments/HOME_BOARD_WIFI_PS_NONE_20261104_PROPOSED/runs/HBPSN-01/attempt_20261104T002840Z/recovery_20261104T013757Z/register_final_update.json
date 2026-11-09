@@ -1,0 +1,21 @@
+{
+  "updated_utc": "2026-11-04T01:38:21.287Z",
+  "run_id": "HBPSN-01",
+  "patch": {
+    "status": "FAILED_SETTINGS",
+    "recording_end_utc": "2026-11-04T01:15:26.326642+00:00",
+    "actual_duration_seconds": 2220,
+    "eligible_count": 431,
+    "selected_count": 415,
+    "shortfall": 0,
+    "connection_error_count": 0,
+    "sequence_gap_count": 0,
+    "mean_app_rtt_ms": 67.54002650602409,
+    "minimum_app_rtt_ms": 24.671,
+    "maximum_app_rtt_ms": 165.999,
+    "metadata_path": "runs/HBPSN-01/attempt_20261104T002840Z/recovery_20261104T013757Z/statistics.json",
+    "raw_serial_path": "runs/HBPSN-01/attempt_20261104T002840Z/serial.raw.log",
+    "deviation_reason": "Recovered original fixed window after automatic heartbeat WinError 5 failure. Missing required contemporaneous post-recording settings evidence; retained as FAILED_SETTINGS, no replacement or extension."
+  },
+  "other_17_entries_unchanged": true
+}

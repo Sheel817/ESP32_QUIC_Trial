@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-04T00:46:45.650030+00:00",
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector.py\", line 206, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector.py\", line 198, in main\n    save('heartbeat.json',dict(utc=utc(),monotonic=time.monotonic(),remaining_seconds=max(0,start['deadline_monotonic']-time.monotonic()),status='RUNNING' if registered else 'STARTUP_PENDING',serial_bytes=(folder/'serial.raw.log').stat().st_size,monitor_alive=monitor.poll() is None,collector_pid=os.getpid()))\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-01\\attempt_20261104T002840Z\\collector.py\", line 11, in save\n    p=folder/name;t=p.with_name(p.name+'.tmp');t.write_text(json.dumps(value,indent=2));t.replace(p)\n                                                                                        ~~~~~~~~~^^^\n  File \"C:\\Users\\newsh\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\pathlib\\__init__.py\", line 1091, in replace\n    os.replace(self, target)\n    ~~~~~~~~~~^^^^^^^^^^^^^^\nPermissionError: [WinError 5] Access is denied: 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-01\\\\attempt_20261104T002840Z\\\\heartbeat.json.tmp' -> 'C:\\\\Users\\\\newsh\\\\Desktop\\\\ESP32_QUIC_Trial\\\\results\\\\experiments\\\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\\\runs\\\\HBPSN-01\\\\attempt_20261104T002840Z\\\\heartbeat.json'\n",
+  "reset_event": {
+    "reset_request_utc": "2026-11-04T00:38:26.319658+00:00",
+    "reset_release_utc": "2026-11-04T00:38:26.326642+00:00",
+    "reset_release_monotonic": 507017.5434011,
+    "deadline_monotonic": 509237.5434011,
+    "deadline_utc": "2026-11-04T01:15:26.326642+00:00",
+    "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+    "boundary_precision": "Host API completion, not a physical edge measurement",
+    "server_boundaries": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+        "byte_offset": 380697
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+        "byte_offset": 0
+      }
+    }
+  }
+}

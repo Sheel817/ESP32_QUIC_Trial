@@ -1,0 +1,82 @@
+{
+  "run_id": "HBPSN-04",
+  "reviewed_utc": "2026-11-06T02:48:32.982148+00:00",
+  "decision": "NOT_APPROVED_PENDING_STABILITY_CONFIRMATION",
+  "validity_status": "NOT_APPROVED",
+  "evidence_review_status": "PENDING_OPERATOR_CONFIRMATION",
+  "plan_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\EXPERIMENT_PLAN_PROPOSED_V1.md",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "exact_original_rules": {
+    "images": "Save screenshots before reset and after recording, with UTC and hashes.",
+    "stability": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "connection_errors": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls. Do not silently discard the session."
+  },
+  "findings": {
+    "fixed_window_pass": true,
+    "startup_gates_pass": true,
+    "selection_pass": true,
+    "pre_post_images_exist_hashes_match": true,
+    "visible_control_settings_match": true,
+    "post_actual_capture_start_utc": "2026-11-06T02:41:43.336Z",
+    "post_actual_capture_end_utc": "2026-11-06T02:41:44.503Z",
+    "post_capture_started_seconds_after_deadline": 184.654217,
+    "post_image_sha256": "2d1a62515d045b781bb2f52902016322374aa430741155153c622289823639cf",
+    "pre_image_sha256": "4f5e08d2b340b318c6a573edea87024357e797b7a2ee98134206201904390ed7",
+    "no_frozen_numeric_screenshot_cutoff": true,
+    "collector_30_second_wait_is_not_plan_cutoff": true,
+    "settings_continuity": "NOT_ESTABLISHED: matching endpoint images do not establish unchanged filter/effects/capture between them; no exact operator stability statement has been received",
+    "operator_statement": null,
+    "operator_statement_receipt_utc": null,
+    "operator_confirmation_gate_source": "Prior explicit user instruction requires operator review/confirmation; original plan independently requires stable settings, not a specific confirmation method",
+    "unattributed_server_error": {
+      "text": "TCP+TLS ERROR: \n",
+      "source_byte_range": [
+        160,
+        177
+      ],
+      "received_utc": "2026-11-06T02:02:37.577340+00:00",
+      "peer_or_cause": "UNKNOWN",
+      "assessment": "Retain and flag under original non-reboot connection-error rule. Not automatically invalidating, not declared harmless, no error discarded."
+    },
+    "no_reboot_or_gap": true,
+    "shortfall": 0
+  },
+  "automatic_flags_preserved": {
+    "finalized_status": "FAILED_SETTINGS",
+    "completion_candidate": "FAILED_SETTINGS",
+    "end_image_status": "MISSING",
+    "note": "Original automatic files unchanged; actual late post-image saved separately; flags do not establish a new lateness rule"
+  },
+  "statistics": {
+    "minimum_ms": 26.927,
+    "mean_ms": 69.45556144578313,
+    "median_ms": 67.507,
+    "p95_ms": 107.536,
+    "maximum_ms": 248.069
+  },
+  "counts": {
+    "raw_rtt": 441,
+    "raw_serial_lines": 581,
+    "warmup_excluded": 10,
+    "other_excluded": 0,
+    "eligible": 431,
+    "selected": 415,
+    "extra_eligible": 16,
+    "shortfall": 0
+  },
+  "registers_modified": false,
+  "register_status": "RUNNING remains because finalizer requests are not applied automatically; no status patch made while validity is pending",
+  "register_hashes_before": {
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "63490f2ba7bb7068e3a81c3e44ff079634128901a90781374fdff71661d11b2a",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "2d8fd23cd7fd011e322c89dca75064039151418325bf92eb0e42445b750b2133"
+  },
+  "prior_outcomes": {
+    "HBPSN-01": "FAILED_SETTINGS",
+    "HBPSN-02": "COMPLETE",
+    "HBPSN-03": "FAILED_STARTUP"
+  },
+  "unresolved_quic_crash_preserved": true,
+  "original_final_manifest_entries_verified": 71,
+  "new_run_started": false,
+  "settings_changed": false
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\main\\ngtcp2_sample.c",
+    "sha256": "3692754583ed820597f8cb6a3aacb18a35a3859f999a2bd541427de7cf02baf0",
+    "recorded_source_sha256": "3692754583ed820597f8cb6a3aacb18a35a3859f999a2bd541427de7cf02baf0",
+    "matches_recorded_source": true,
+    "source_provenance": "Recorded source manifest hash match"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\components\\ngtcp2\\ngtcp2\\lib\\ngtcp2_conn.c",
+    "sha256": "b403178f90077e51b435742ac7220b41fd3c5f90a6761e8bc74af2b2420f1c8a",
+    "recorded_source_sha256": "b403178f90077e51b435742ac7220b41fd3c5f90a6761e8bc74af2b2420f1c8a",
+    "matches_recorded_source": true,
+    "source_provenance": "Recorded source manifest hash match"
+  },
+  {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\components\\ngtcp2\\ngtcp2\\lib\\ngtcp2_mem.c",
+    "sha256": "1b674e9cfc0ccfe51c1c65f4564c683ae0b5a656ab7c1fd959714cc549ad0d45",
+    "recorded_source_sha256": "1b674e9cfc0ccfe51c1c65f4564c683ae0b5a656ab7c1fd959714cc549ad0d45",
+    "matches_recorded_source": true,
+    "source_provenance": "Recorded source manifest hash match"
+  },
+  {
+    "path": "C:\\esp\\v6.1\\esp-idf\\components\\heap\\heap_caps_base.c",
+    "sha256": "596f1006c850492d947c7770fe3f759c2b3ebffd90be2167be5a9245a393adbf",
+    "recorded_source_sha256": null,
+    "matches_recorded_source": null,
+    "source_provenance": "Existing local SDK source; application ELF DWARF line mapping. Not separately frozen by that source manifest."
+  },
+  {
+    "path": "C:\\esp\\v6.1\\esp-idf\\components\\esp_libc\\src\\heap.c",
+    "sha256": "6071b8c2b4fe82fb840d149783d362dcaf37685215c233fb69e0f82eef18c1b2",
+    "recorded_source_sha256": null,
+    "matches_recorded_source": null,
+    "source_provenance": "Existing local SDK source; application ELF DWARF line mapping. Not separately frozen by that source manifest."
+  }
+]

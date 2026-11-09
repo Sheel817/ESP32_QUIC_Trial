@@ -1,0 +1,7 @@
+﻿{
+    "prior_setup":  "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-04\\attempt_20261106T015549Z",
+    "utc":  "2026-11-06T02:00:52.2348725Z",
+    "new_measured_reset_not_yet_issued":  true,
+    "reason":  "Pre-reset evidence broker PermissionError. No measured reset or monitor startup. Explicitly disclosed host-only continuation; no reflash, application-boot retry or replacement formal session.",
+    "original_flash_artifacts_and_times_preserved":  true
+}

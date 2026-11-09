@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-06T13:01:58.685515+00:00",
+  "before_hashes": {
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "63490f2ba7bb7068e3a81c3e44ff079634128901a90781374fdff71661d11b2a",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "2d8fd23cd7fd011e322c89dca75064039151418325bf92eb0e42445b750b2133"
+  },
+  "after_hashes": {
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\run_register.csv": "0d541b2da9e0860a552fbe9bc9062666098455ec6ed8c8e0ff668493c5aabe56",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\outputs\\HOME_BOARD_WIFI_PS_NONE_20261104\\run_register.xlsx": "c9acabd7bc711c2218bda4467ea129d808922c1db33dcefbfc180444bda430db"
+  },
+  "only_hbpsn04_row_changed": true,
+  "next_scheduled": {
+    "order": "5",
+    "run_id": "HBPSN-05",
+    "transport": "QUIC",
+    "condition": "LAG100_OUT",
+    "status": "NOT_RUN"
+  }
+}

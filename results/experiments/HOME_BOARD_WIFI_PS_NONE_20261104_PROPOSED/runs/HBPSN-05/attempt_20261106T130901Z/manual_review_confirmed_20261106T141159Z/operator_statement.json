@@ -1,0 +1,13 @@
+{
+  "exact_statement": "yes it wa sunchanged",
+  "source": "Operator confirmation relayed by user from ChatGPT",
+  "receipt_observed_utc": "2026-11-06T14:11:59.6194955Z",
+  "receipt_observed_helsinki": "2026-11-06T16:11:59.6194955+02:00",
+  "receipt_clock_source": "First local clock observation while processing the current user message; original chat ingress timestamp unavailable",
+  "covered_interval_helsinki": [
+    "2026-11-06T15:13:20.156+02:00",
+    "2026-11-06T15:53:14.719+02:00"
+  ],
+  "confirmed_scope": "Unchanged Clumsy filter, effects and capture; no Stop/Start or close/reopen",
+  "not_backdated": true
+}

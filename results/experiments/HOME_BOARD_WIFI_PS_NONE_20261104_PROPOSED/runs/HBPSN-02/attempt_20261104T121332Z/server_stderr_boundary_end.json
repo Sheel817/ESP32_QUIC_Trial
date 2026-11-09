@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\pilots\\HOME_BOARD_TCP_TLS_WIFI_PS_NONE_SMOKE_20261104T000343Z\\tcp_tls_server.stderr.log",
+  "start_byte": 51,
+  "end_byte": 68,
+  "deadline_utc": "2026-11-04T12:54:27.280042+00:00",
+  "tail_closed_utc": "2026-11-04T12:54:27.280488+00:00"
+}

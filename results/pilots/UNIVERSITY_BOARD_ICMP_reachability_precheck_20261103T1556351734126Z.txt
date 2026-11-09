@@ -1,0 +1,25 @@
+ICMP reachability precheck
+Clumsy Lag OFF - operator-reported. Current Clumsy filter matches UDP only; this is not a Clumsy delay measurement.
+Command: ping.exe /n 10 /w 2000 192.168.137.11
+UTC start: 2026-11-03T15:56:35.2340810Z
+
+
+Pinging 192.168.137.11 with 32 bytes of data:
+Reply from 192.168.137.11: bytes=32 time=167ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=179ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=293ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=2ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=22ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=38ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=52ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=481ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=1ms TTL=64
+Reply from 192.168.137.11: bytes=32 time=309ms TTL=64
+
+Ping statistics for 192.168.137.11:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 481ms, Average = 154ms
+
+UTC end: 2026-11-03T15:56:44.7231205Z
+ping exit code: 0

@@ -1,0 +1,9 @@
+{
+  "run_id": "HBPSN-07",
+  "attempt_id": "attempt_20261107T030606Z",
+  "confirmation_text": "yes",
+  "timestamp_helsinki": "2026-11-08 16:36:00",
+  "timestamp_utc": "2026-11-08T14:36:00Z",
+  "relayed": true,
+  "scope": "Clumsy filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568) and Drop 1.0% outbound remained continuously active and unchanged."
+}

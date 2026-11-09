@@ -1,0 +1,35 @@
+{
+  "status": "RUNNING",
+  "run_id": "HBPSN-09",
+  "transport": "TCP_TLS",
+  "condition": "CONTROL",
+  "actual_start_utc": "2026-11-09T18:58:06.268682+00:00",
+  "deadline_utc": "2026-11-09T19:35:06.268682+00:00",
+  "actual_start_helsinki": "2026-11-09T20:58:06.268682+02:00",
+  "deadline_helsinki": "2026-11-09T21:35:06.268682+02:00",
+  "collector_pid": 9492,
+  "monitor_pid": 32352,
+  "startup": {
+    "checked_utc": "2026-11-09T18:58:14.366955+00:00",
+    "gates": {
+      "boot_banner": true,
+      "board_mac": true,
+      "elf_prefix": true,
+      "transport_firmware": true,
+      "wifi_ps_none": true,
+      "assigned_ip": true,
+      "transport_connected": true,
+      "mqtt_connected": true,
+      "subscription": true,
+      "tls": true
+    },
+    "pass_all": true,
+    "fatal": false,
+    "assigned_ip": "192.168.137.112",
+    "reported_elf_prefix": "1f661a4f7"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "serial_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\serial.raw.log",
+  "server_stdout": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\server.stdout.raw.log",
+  "server_stderr": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\server.stderr.raw.log"
+}

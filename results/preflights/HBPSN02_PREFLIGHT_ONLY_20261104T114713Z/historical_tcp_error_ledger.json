@@ -1,0 +1,17 @@
+[
+  {
+    "line": 1,
+    "raw_line": "TCP+TLS ERROR: ",
+    "attribution": "historical/unattributed; before HBPSN-02 preflight boundary"
+  },
+  {
+    "line": 2,
+    "raw_line": "TCP+TLS ERROR: ",
+    "attribution": "historical/unattributed; before HBPSN-02 preflight boundary"
+  },
+  {
+    "line": 3,
+    "raw_line": "TCP+TLS ERROR: ",
+    "attribution": "historical/unattributed; before HBPSN-02 preflight boundary"
+  }
+]

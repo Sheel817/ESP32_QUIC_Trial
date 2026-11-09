@@ -1,0 +1,3 @@
+condition,transport,samples,sequence_min,sequence_max,esp_timestamp_min_ms,esp_timestamp_max_ms,minimum_ms,mean_ms,median_ms,p95_ms,maximum_ms,source_file
+TCP_TLS_baseline,TCP_TLS,409,11,419,62337,2106377,26.834,70.186,67.688,107.590,367.506,results/tcp_tls_repeat_2.rtt.csv
+TCP_TLS_clumsy_control,TCP_TLS,395,11,405,62347,2036267,26.484,70.341,67.832,108.576,147.555,results/tcp_tls_clumsy_control_1.rtt.csv

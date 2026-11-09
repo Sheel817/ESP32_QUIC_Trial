@@ -1,0 +1,3 @@
+metric,reference_mean_ms,experiment_mean_ms,experiment_mean_lower_bound_ms,experiment_mean_upper_bound_exclusive_ms,condition
+APP_RTT,75.4349,65.3673,,,HOME_BOARD experimental WIFI_PS_NONE firmware; Clumsy stopped
+ICMP ping,268.8666666666667,7.633333333333334,,,HOME_BOARD experimental WIFI_PS_NONE firmware; Clumsy stopped

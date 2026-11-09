@@ -1,0 +1,125 @@
+﻿{
+    "processes":  [
+                      {
+                          "ProcessId":  23100,
+                          "ParentProcessId":  25344,
+                          "CommandLine":  "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py "
+                      },
+                      {
+                          "ProcessId":  34640,
+                          "ParentProcessId":  29680,
+                          "CommandLine":  "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/collector_v2.py\" --run-dir \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\" "
+                      },
+                      {
+                          "ProcessId":  35072,
+                          "ParentProcessId":  34640,
+                          "CommandLine":  "\"C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe\" -u \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z/collector_v2.py\" --run-dir \"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\" "
+                      },
+                      {
+                          "ProcessId":  30024,
+                          "ParentProcessId":  35072,
+                          "CommandLine":  "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\monitor_instrumented_v2.py --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf"
+                      },
+                      {
+                          "ProcessId":  33192,
+                          "ParentProcessId":  30024,
+                          "CommandLine":  "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-02\\attempt_20261104T121332Z\\monitor_instrumented_v2.py --port COM6 --baud 115200 --target esp32c6 --no-reset --disable-auto-color --timestamps --timestamp-format %Y-%m-%dT%H:%M:%S C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf"
+                      }
+                  ],
+    "checked_utc":  "2026-11-05T20:18:26.5480559Z",
+    "host_activity":  "Chrome Remote Desktop in use, operator-reported; Remote Access window and remoting native messaging process observed",
+    "COM6":  [
+                 {
+                     "DeviceID":  "COM6",
+                     "Name":  "Silicon Labs CP210x USB to UART Bridge (COM6)",
+                     "PNPDeviceID":  "USB\\VID_10C4\u0026PID_EA60\\FABA8DF9808FED11A981E817B96CE6F8"
+                 }
+             ],
+    "hotspot_profiles":  [
+                             {
+                                 "Profile":  "Ethernet",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             },
+                             {
+                                 "Profile":  "Bluetooth Network Connection",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             },
+                             {
+                                 "Profile":  "vEthernet (WSL (Hyper-V firewall))",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             },
+                             {
+                                 "Profile":  "TUAS-Guest",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             },
+                             {
+                                 "Profile":  "TP-Link_Guest_694C_5G",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             },
+                             {
+                                 "Profile":  "My’s iPhone",
+                                 "TetheringState":  "Off",
+                                 "ClientCount":  0,
+                                 "SSID":  "SHEEL 3460"
+                             }
+                         ],
+    "ipv4":  [
+                 {
+                     "IPAddress":  "192.168.32.1",
+                     "InterfaceAlias":  "vEthernet (WSL (Hyper-V firewall))",
+                     "InterfaceIndex":  52
+                 },
+                 {
+                     "IPAddress":  "192.168.56.1",
+                     "InterfaceAlias":  "Ethernet 2",
+                     "InterfaceIndex":  19
+                 },
+                 {
+                     "IPAddress":  "169.254.87.122",
+                     "InterfaceAlias":  "Local Area Connection* 2",
+                     "InterfaceIndex":  4
+                 },
+                 {
+                     "IPAddress":  "169.254.231.80",
+                     "InterfaceAlias":  "Bluetooth Network Connection",
+                     "InterfaceIndex":  3
+                 },
+                 {
+                     "IPAddress":  "169.254.234.6",
+                     "InterfaceAlias":  "Local Area Connection* 1",
+                     "InterfaceIndex":  11
+                 },
+                 {
+                     "IPAddress":  "169.254.222.236",
+                     "InterfaceAlias":  "WiFi",
+                     "InterfaceIndex":  14
+                 },
+                 {
+                     "IPAddress":  "192.168.50.38",
+                     "InterfaceAlias":  "Ethernet",
+                     "InterfaceIndex":  8
+                 },
+                 {
+                     "IPAddress":  "127.0.0.1",
+                     "InterfaceAlias":  "Loopback Pseudo-Interface 1",
+                     "InterfaceIndex":  1
+                 }
+             ],
+    "udp_listener":  [
+                         {
+                             "LocalAddress":  "0.0.0.0",
+                             "LocalPort":  14567,
+                             "OwningProcess":  23100
+                         }
+                     ]
+}
