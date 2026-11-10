@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-10T20:06:19.826160+00:00",
+  "monitor_pid": 41084,
+  "collector_pid": 15076,
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-13\\attempt_20261110T200247Z\\monitor_instrumented_v2.py",
+    "--port",
+    "COM6",
+    "--baud",
+    "115200",
+    "--target",
+    "esp32c6",
+    "--no-reset",
+    "--disable-auto-color",
+    "--timestamps",
+    "--timestamp-format",
+    "%Y-%m-%dT%H:%M:%S",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.elf"
+  ]
+}

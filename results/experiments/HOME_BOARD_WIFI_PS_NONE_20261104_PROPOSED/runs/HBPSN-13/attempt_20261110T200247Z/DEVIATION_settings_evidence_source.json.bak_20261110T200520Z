@@ -1,0 +1,22 @@
+{
+  "run_id": "HBPSN-13",
+  "attempt_id": "attempt_20261110T200247Z",
+  "deviation": "SETTINGS_EVIDENCE_SOURCE_OPERATOR_REPORTED",
+  "status": "APPLIES_IF_THIS_ATTEMPT_IS_LAUNCHED",
+  "recorded_utc": "2026-11-10T20:02:48.049618+00:00",
+  "previous_practice": "HBPSN-01 to HBPSN-07 pre_run responses were written in an agent session; HBPSN-09 to HBPSN-12 used operator_settings_helper.py with operator-reported values.",
+  "this_run": "source_type operator_reported. The helper captures the full screen after each settings request. Observed values come from clumsy_declaration.json, confirmed by the operator before launch.",
+  "helper_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-12\\attempt_20261110T172209Z\\operator_settings_helper.py",
+  "helper_source_sha256": "b3009ad5e5a7499c1350b9ca471036f801a47f00c801a58c8e3264d7a9669039",
+  "helper_sha256": "7b410043ab32a6991647e0c030dde0da74e59046c300ef380e0e2f2827c3f9a8",
+  "helper_change": {
+    "run_id_check": "value.get('run_id') != 'HBPSN-12' replaced by value.get('run_id') != 'HBPSN-13'",
+    "label_text": "Docstring and both capture labels changed from HBPSN-12 (QUIC CONTROL) to HBPSN-13 (QUIC LAG100_OUT).",
+    "instruction": "Operator instruction: copy from HBPSN-12 and change the run ID check and labels to HBPSN-13.",
+    "logic_changed": false
+  },
+  "end_of_run_limit": "The end_of_run observed values are the same declaration confirmed before launch and are not re-inspected at the end of the run. The end_of_run image and operator stability need manual review.",
+  "not_machine_read": "The helper does not read checkboxes or text from the image. Number boxes other than the Lag delay (for example the Drop chance) are not part of the expected settings and are not machine-recorded.",
+  "plan_note": "The plan allows settings that are only operator-reported if they are labelled explicitly (EXPERIMENT_PLAN_PROPOSED_V1.md line 30).",
+  "preflight_base_note": "preflight.json is based on HBPSN-05 (QUIC LAG100_OUT) and differs only in run_id, checked_utc and the removed host_activity. HBPSN-05 host_activity was removed because it describes HBPSN-05 only; the host activity for this run is taken from the operator answers saved with the confirmation."
+}

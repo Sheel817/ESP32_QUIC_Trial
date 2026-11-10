@@ -19,7 +19,7 @@ The rules are frozen in [EXPERIMENT_PLAN_PROPOSED_V1.md](results/experiments/HOM
 
 ## Progress
 
-As of 10 November 2026, 12 of the 18 runs have been attempted: 10 are valid, 2 failed during startup and 6 have not been run. The [run register](results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv) is the record of status and results.
+As of 10 November 2026, 13 of the 18 runs have been attempted: 11 are valid, 2 failed during startup and 5 have not been run. The [run register](results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv) is the record of status and results.
 
 | Run | Transport | Condition | Status |
 |---|---|---|---|
@@ -35,7 +35,8 @@ As of 10 November 2026, 12 of the 18 runs have been attempted: 10 are valid, 2 f
 | HBPSN-10 | QUIC | DROP1_OUT | COMPLETE with retained flags |
 | HBPSN-11 | TCP_TLS | LAG100_OUT | COMPLETE with retained flags |
 | HBPSN-12 | QUIC | CONTROL | COMPLETE with retained flags |
-| HBPSN-13 to 18 | | | NOT_RUN |
+| HBPSN-13 | QUIC | LAG100_OUT | COMPLETE with retained flags |
+| HBPSN-14 to 18 | | | NOT_RUN |
 
 **Known issue:** HBPSN-03 and HBPSN-08 hit the same QUIC panic during startup, a load access fault in `tlsf_free`. The root cause has not been established.
 

@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+  "start_byte": 9106063,
+  "end_byte": 9181728,
+  "deadline_utc": "2026-11-10T20:43:22.839320+00:00",
+  "tail_closed_utc": "2026-11-10T20:43:22.839910+00:00"
+}

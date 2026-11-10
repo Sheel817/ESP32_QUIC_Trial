@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "phase": "end_of_run",
+  "request": {
+    "phase": "end_of_run",
+    "nonce": "f647103b97fc4e0ea3e8281646a4ba02",
+    "requested_utc": "2026-11-10T20:43:22.842726+00:00",
+    "requested_monotonic": 1097719.5826083,
+    "expected": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": {
+      "reset_request_utc": "2026-11-10T20:06:22.833186+00:00",
+      "reset_release_utc": "2026-11-10T20:06:22.839320+00:00",
+      "reset_release_monotonic": 1095499.5791842,
+      "deadline_monotonic": 1097719.5791842,
+      "deadline_utc": "2026-11-10T20:43:22.839320+00:00",
+      "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+      "boundary_precision": "Host API completion, not a physical edge measurement",
+      "server_boundaries": {
+        "stdout": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+          "byte_offset": 9106063
+        },
+        "stderr": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+          "byte_offset": 0
+        },
+        "sensor_csv": {
+          "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+          "byte_offset": 4954623
+        }
+      }
+    },
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "f647103b97fc4e0ea3e8281646a4ba02",
+    "screenshot": "clumsy_operator_end_of_run.png",
+    "sha256": "458d99aa17bd50a98f501c0b00e0a7bbd0a761d88e767c6c29cf1e74b183603d",
+    "capture_started_utc": "2026-11-10T20:43:22.862751+00:00",
+    "capture_completed_utc": "2026-11-10T20:43:22.921705+00:00",
+    "capture_started_monotonic": 1097719.6026361,
+    "capture_completed_monotonic": 1097719.6616056,
+    "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+    "source_type": "operator_reported",
+    "observed": {
+      "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+      "capture": "RUNNING",
+      "Lag": {
+        "enabled": true,
+        "delay_ms": 100,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Drop": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-13 QUIC LAG100_OUT operator-run full-screen capture taken after the end-of-run request. Observed values come from the declaration confirmed BEFORE launch and were not re-inspected at this moment; this image and operator stability need manual review."
+  },
+  "reason": null,
+  "capture_started_seconds_after_deadline": 0.023431,
+  "capture_delay_clock": "Actual capture UTC minus original deadline UTC; screenshot-runtime monotonic estimates are labelled in evidence",
+  "evaluated_utc": "2026-11-10T20:43:23.011255+00:00"
+}

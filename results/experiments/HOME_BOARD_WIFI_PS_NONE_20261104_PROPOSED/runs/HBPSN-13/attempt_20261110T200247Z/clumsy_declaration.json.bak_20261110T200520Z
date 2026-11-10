@@ -1,0 +1,30 @@
+{
+  "run_id": "HBPSN-13",
+  "attempt_id": "attempt_20261110T200247Z",
+  "condition": "LAG100_OUT",
+  "operator_confirmed": false,
+  "operator_statement": null,
+  "operator_statement_receipt_utc": null,
+  "operator_statement_clock_source": null,
+  "test_capture": null,
+  "basis": "Operator declaration of the Clumsy window, set by hand to the LAG100_OUT layout recorded for HBPSN-05: UDP 14567 filter, Started, Lag ticked, Outbound only, Delay 100, all other functions off.",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  }
+}

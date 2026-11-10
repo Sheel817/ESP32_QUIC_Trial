@@ -1,0 +1,8 @@
+﻿{
+    "utc":  "2026-11-10T20:06:19.2980165Z",
+    "launch_authorized_by_operator_message":  "launch",
+    "version":  "repaired-v2-manual-review-gate",
+    "test_captures":  1,
+    "test_capture_showing_clumsy":  "helper_capture_test",
+    "pid":  1464
+}
