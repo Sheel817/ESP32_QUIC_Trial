@@ -1,0 +1,30 @@
+{
+  "run_id": "HBPSN-14",
+  "attempt_id": "attempt_20261110T214436Z",
+  "condition": "DROP1_OUT",
+  "operator_confirmed": false,
+  "operator_statement": null,
+  "operator_statement_receipt_utc": null,
+  "operator_statement_clock_source": null,
+  "test_capture": null,
+  "basis": "Operator declaration of the Clumsy window, set by hand to the DROP1_OUT layout recorded for HBPSN-06: TCP 14568 filter, Started, Drop ticked, Outbound only, Chance 1, all other functions off.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1.0,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  }
+}

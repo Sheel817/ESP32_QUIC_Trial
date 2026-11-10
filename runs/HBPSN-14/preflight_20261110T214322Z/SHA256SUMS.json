@@ -1,0 +1,22 @@
+[
+  {
+    "path": "preflight_record.json",
+    "bytes": 14968,
+    "sha256": "129c399af892728fdca9a836b27bab4b9b34d841054988a98ea198227644743a"
+  },
+  {
+    "path": "flash.log",
+    "bytes": 6549,
+    "sha256": "03465546e9c117cb0dca75ff734cce95bfde62490d4064f47026bd6e113a95cb"
+  },
+  {
+    "path": "host_tls_probe.json",
+    "bytes": 805,
+    "sha256": "e8888dce5a4d24b170fb5a694b3326a3b22dd93bb15da6c4e3243c0befe73163"
+  },
+  {
+    "path": "host_tls_probe_once.py",
+    "bytes": 1976,
+    "sha256": "f8955f6407034e9595f3c9a8527f6624745119ade6ace4380815aeccda9be016"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "run_id": "HBPSN-14",
+  "attempt_id": "attempt_20261110T214436Z",
+  "condition": "DROP1_OUT",
+  "operator_confirmed": true,
+  "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the HBPSN-14 declaration (TCP_TLS DROP1_OUT: TCP 14568 filter, Started, Drop ticked, Outbound only, Chance 1, all other functions off)?\" asked after the capture helper_capture_test_2 (sha256 35ff1f65...) was taken and reviewed",
+  "operator_statement_receipt_utc": "2026-11-10T21:59:58.910193+00:00",
+  "operator_statement_clock_source": "First local clock observation while processing the operator message; original send time of the dialog answer unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test_2/test_capture.png",
+    "sha256": "35ff1f653f6fd27af484dadd61d3dcd335599140270bc6c4f24aae6ca08074bf",
+    "file_time_utc": "2026-11-10T21:56:46.970850+00:00",
+    "finding": "Reviewed visually, not machine-read: Clumsy fully visible on the left display with the filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568), button Stop, status Started filtering, Drop ticked with Inbound unticked, Outbound ticked and Chance 1; the other 7 function checkboxes (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes other than the Drop chance (Lag delay 100, Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST 0, Bandwidth 10) are not part of the expected settings and are not machine-recorded.",
+    "earlier_captures": {
+      "path": "../helper_capture_test/test_capture.png",
+      "sha256": "b5828a9b7107ea4243026de826badc79ae648f50c153c3e60d370d470690c689",
+      "file_time_utc": "2026-11-10T21:54:21.455870+00:00",
+      "finding": "First test capture, taken before Clumsy was set up: no Clumsy window is visible on either display. Not used as evidence of settings."
+    }
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to the DROP1_OUT layout recorded for HBPSN-06: TCP 14568 filter, Started, Drop ticked, Outbound only, Chance 1, all other functions off.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1.0,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_statement_note": "The operator confirmed in the session dialog after the capture above was taken and reviewed. The words are the dialog question and answer, not text typed by the operator."
+}

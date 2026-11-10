@@ -1,0 +1,396 @@
+{
+  "run_id": "HBPSN-14",
+  "attempt_id": "attempt_20261110T214436Z",
+  "transport": "TCP_TLS",
+  "condition": "DROP1_OUT",
+  "boot_replicate": 3,
+  "reviewed_utc": "2026-11-10T23:07:58.639332+00:00",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30. No independent or continuous GUI observation is claimed. DROP1_OUT means capture running with Drop 1 % on outbound packets only; the near-20 ms step pattern in the RTTs, the video streaming on the host during the run and the unexplained server stderr line are retained as flags and their effects are not established.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting from when I confirmed the declaration until after the HBPSN-14 run ended.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T23:06:03.8701390Z",
+    "receipt_helsinki": "2026-11-11T01:06:03.8701390+02:00",
+    "receipt_clock_source": "First local clock observation after the operator answered the session question dialog with the statement wording, taken while preparing this draft; original send time unavailable",
+    "scope_as_worded": "From operator confirmation of the declaration (receipt 2026-11-10T21:59:58.910193+00:00) until after the run ended (fixed deadline 2026-11-10T22:38:28.903331+00:00).",
+    "not_backdated": true
+  },
+  "operator_streaming_statement": {
+    "exact_statement": "A YouTube video was playing on the laptop during the run, from about 00:00 to 00:38.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T23:06:03.8701390Z",
+    "receipt_helsinki": "2026-11-11T01:06:03.8701390+02:00",
+    "receipt_clock_source": "First local clock observation after the operator answered the session question dialog with the statement wording, taken while preparing this draft; original send time unavailable",
+    "not_backdated": true,
+    "scope_as_worded": "Operator local time (Helsinki, UTC+2) \"from about 00:00 to 00:38\" on 11 Nov 2026; the recording ran from 00:01:28.9 to 00:38:28.9 local (22:01:28.903Z to 22:38:28.903Z).",
+    "limit": "Operator-reported; host network use was not measured, and the video resolution, source and whether it was paused at any time are unknown. The operator answered the earlier pre-launch dialog with \"Something running\" and gave no description at that time.",
+    "image_evidence": {
+      "pre_run_image": "A film scene fills the right display (no taskbar visible there) at the 00.01 tray time of the left display.",
+      "end_of_run_image": "A YouTube watch page on the right display with a video and a speaker icon on its tab, at tray time 00.38.",
+      "inspection": "Visual review; not machine-read; whether the video was playing at the moments of capture is not established by the images alone."
+    }
+  },
+  "operator_host_activity_statement": {
+    "exact_statement": "Chrome Remote Desktop and VS Code were open; I was not actively using them.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T23:06:03.8701390Z",
+    "receipt_helsinki": "2026-11-11T01:06:03.8701390+02:00",
+    "receipt_clock_source": "First local clock observation after the operator answered the session question dialog with the statement wording, taken while preparing this draft; original send time unavailable",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "chrome_remote_desktop": "Running; the operator also answered \"Running\" in the session question dialog before launch."
+  },
+  "operator_disposition_approval": {
+    "exact_text": "yes",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T23:07:58.3364932Z",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly; do not claim independently verified per-packet impairment.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_shows_drop1_out_settings": true,
+    "end_of_run_image_shows_drop1_out_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.037369,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-10T22:01:28.903331+00:00",
+    "fixed_deadline_utc": "2026-11-10T22:38:28.903331+00:00",
+    "deadline_observed_lateness_ms": 5.55610004812479,
+    "boot_session_id": "HBPSN-14/2026-11-10T22:01:28.903331+00:00",
+    "assigned_ip": "192.168.137.25"
+  },
+  "firmware_identity": {
+    "artifact_id": "TCP_TLS_PSN",
+    "printed_bootloader_compile_time": "Nov  4 2026 01:52:32; matches frozen TCP_TLS_PSN bootloader",
+    "printed_elf_prefix": "1f661a4f7; prefix comparison, not a full on-device digest",
+    "full_flash_record": "runs/HBPSN-14/preflight_20261110T214322Z/preflight_record.json",
+    "images_verified": 3,
+    "esptool_reported_base_mac": "40:4c:ca:56:bb:b0",
+    "flash_approval": "Session dialog answer \"Approve flash\"",
+    "tls_in_run": "TCP_TLS negotiated TLSv1.3, ALPN mqtt (serial log); server log shows 1 TCP+TLS CONNECTED line."
+  },
+  "counts": {
+    "raw_serial_lines": 580,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 75.25485060240963,
+    "sd_ms": 60.39456888630909,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 67.521,
+    "p95_ms": 107.589,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 26.971,
+    "maximum_ms": 587.758
+  },
+  "comparison_with_earlier_tcp_tls_drop1_out_runs": {
+    "runs": {
+      "HBPSN-06": {
+        "n": 415,
+        "mean_ms": 77.024,
+        "sd_ms": 61.301,
+        "median_ms": 67.432,
+        "p95_ms": 108.204,
+        "min_ms": 26.789,
+        "max_ms": 627.418,
+        "top_5_ms": [
+          447.393,
+          507.489,
+          507.942,
+          547.044,
+          627.418
+        ],
+        "concentration_R_20ms": 0.998
+      },
+      "HBPSN-07": {
+        "n": 415,
+        "mean_ms": 77.054,
+        "sd_ms": 65.569,
+        "median_ms": 67.436,
+        "p95_ms": 107.94,
+        "min_ms": 26.986,
+        "max_ms": 627.76,
+        "top_5_ms": [
+          507.474,
+          507.604,
+          527.676,
+          547.791,
+          627.76
+        ],
+        "concentration_R_20ms": 0.998
+      },
+      "HBPSN-14": {
+        "n": 415,
+        "mean_ms": 75.255,
+        "sd_ms": 60.395,
+        "median_ms": 67.521,
+        "p95_ms": 107.589,
+        "min_ms": 26.971,
+        "max_ms": 587.758,
+        "top_5_ms": [
+          467.586,
+          547.541,
+          547.645,
+          587.592,
+          587.758
+        ],
+        "concentration_R_20ms": 0.998
+      }
+    },
+    "text": "Descriptive comparison with the two earlier TCP_TLS DROP1_OUT runs (all with Drop 1 % outbound, TCP 14568 filter, 415 selected values). HBPSN-06: mean 77.024, SD 61.301, median 67.432, P95 108.204, max 627.418; HBPSN-07: mean 77.054, SD 65.569, median 67.436, P95 107.94, max 627.76; HBPSN-14: mean 75.255, SD 60.395, median 67.521, P95 107.589, max 587.758. The three runs are single runs on different days with different host conditions: HBPSN-14 had a video playing on the host per the operator statement and the end-of-run image, which is not documented for HBPSN-06 and HBPSN-07. This comparison does not show that the video had no effect on the RTTs, and no effect size or significance is claimed.",
+    "caution": "Descriptive only. Single runs, different days, different host conditions. No claim that the streaming had no effect."
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "ec9007cfab0dc525eb703ad98d103264b2a9310b220085de660cfd7ee438df43",
+      "operator_confirmed_receipt_utc": "2026-11-10T21:59:58.910193+00:00",
+      "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the HBPSN-14 declaration (TCP_TLS DROP1_OUT: TCP 14568 filter, Started, Drop ticked, Outbound only, Chance 1, all other functions off)?\" asked after the capture helper_capture_test_2 (sha256 35ff1f65...) was taken and reviewed",
+      "test_capture": {
+        "path": "../helper_capture_test_2/test_capture.png",
+        "sha256": "35ff1f653f6fd27af484dadd61d3dcd335599140270bc6c4f24aae6ca08074bf",
+        "file_time_utc": "2026-11-10T21:56:46.970850+00:00",
+        "finding": "Reviewed visually, not machine-read: Clumsy fully visible on the left display with the filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568), button Stop, status Started filtering, Drop ticked with Inbound unticked, Outbound ticked and Chance 1; the other 7 function checkboxes (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes other than the Drop chance (Lag delay 100, Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST 0, Bandwidth 10) are not part of the expected settings and are not machine-recorded.",
+        "earlier_captures": {
+          "path": "../helper_capture_test/test_capture.png",
+          "sha256": "b5828a9b7107ea4243026de826badc79ae648f50c153c3e60d370d470690c689",
+          "file_time_utc": "2026-11-10T21:54:21.455870+00:00",
+          "finding": "First test capture, taken before Clumsy was set up: no Clumsy window is visible on either display. Not used as evidence of settings."
+        }
+      }
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "d414651a2aba086b702a97aa6ed86a3cf48291f4f454a80edca36d9f18b64476",
+      "capture_started_utc": "2026-11-10T22:01:25.667006+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "functions": "Drop ticked with Inbound unticked and Outbound ticked, Chance 1; the other 7 functions (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked",
+        "number_boxes_left_as_found": "Lag Delay 100, Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST chance 0, Bandwidth limit 10, with their Inbound/Outbound boxes greyed. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "0.01 11/11/2026 on the left display; the right display shows a full-screen video with no taskbar",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read"
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "2051a4f697a43d9e67d66cf5a18eafff0f1d44f69effa2e7216525ad38210c05",
+      "capture_started_utc": "2026-11-10T22:38:28.940700+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display, same place as pre-run",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "functions": "Drop ticked with Inbound unticked and Outbound ticked, Chance 1; the other 7 functions (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked",
+        "number_boxes_left_as_found": "Lag Delay 100, Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST chance 0, Bandwidth limit 10, with their Inbound/Outbound boxes greyed. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "0.38 11/11/2026 on both displays",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read",
+      "limit": "The helper PASS for both phases came from the pre-launch declaration; the settings_seen values come from visual review of these images."
+    },
+    "no_image_between": "No Clumsy image exists between the pre-run and end-of-run captures. Stability between them rests on the operator statement.",
+    "pre_launch_test_captures": "Two test captures: helper_capture_test (no Clumsy window visible, not used as evidence) and helper_capture_test_2 (Clumsy visible; the launch followed it). One repeat command failed with FileExistsError and wrote nothing; two --run-dir arming attempts before confirmation were REFUSED by the helper and wrote nothing."
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-11T00:01:29 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-11T00:01:32 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-11T00:01:32 W (3397) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "TCP+TLS ERROR: \n",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-11T00:01:28 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-10T22:01:28.912432+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-10T22:38:29.627101+00:00",
+    "deadline_utc": "2026-11-10T22:38:28.903331+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-14\\attempt_20261110T214436Z\\SUMMARY.md"
+  },
+  "server_stderr_flag": {
+    "flag": "SERVER_STDERR_TCP_TLS_ERROR_UNEXPLAINED",
+    "line": "TCP+TLS ERROR: (empty message after the colon)",
+    "bytes": 17,
+    "receipt_utc": "2026-11-10T22:02:25.626150+00:00",
+    "seconds_after_reset_release": 56.7,
+    "server_log_context": "One TCP+TLS CONNECTED line in the window; 441 RECEIVED lines matching the 441 RTTs; no sequence gap; no ERROR text in server stdout; the serial log shows no error or reconnect at that time.",
+    "earlier_runs": "HBPSN-13 and HBPSN-12 (QUIC) had empty server stderr; the setup probe before the HBPSN-14 flash wrote a different line (\"[WinError 64]\") before the measured reset, outside this window.",
+    "status": "Cause not established. Candidates are not asserted. Retained as a flag."
+  },
+  "rtt_step_pattern": {
+    "observation": "RTTs in this DROP1_OUT run fall on levels about 20 ms apart: {'28 ms': 78, '48 ms': 79, '68 ms': 82, '88 ms': 81, '108 ms': 83, '128 ms': 4, '148 ms': 2, '228 ms': 1, '468 ms': 1, '548 ms': 2, '588 ms': 2} (counts of the 415 selected values by nearest level). The P95 of 107.589 ms is on the 108 ms level. The same pattern is present in the 10 other runs with 415 selected values: concentration R 0.834 to 0.998, share within 3 ms of the ladder 0.870 to 1.000; this run has R 0.998 and share 1.000.",
+    "measure": "Circular concentration of RTT modulo 20 ms (R: 0 = even, 1 = all on one phase) and the share of values within 3 ms of the phase centre (a flat spread would give about 0.30).",
+    "per_run_closed_and_this_run": {
+      "HBPSN-02": {
+        "n": 415,
+        "phase_centre_ms": 7.51,
+        "concentration_R": 0.995,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-04": {
+        "n": 415,
+        "phase_centre_ms": 7.53,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-05": {
+        "n": 415,
+        "phase_centre_ms": 6.39,
+        "concentration_R": 0.865,
+        "share_within_3ms_of_ladder": 0.916
+      },
+      "HBPSN-06": {
+        "n": 415,
+        "phase_centre_ms": 7.39,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-07": {
+        "n": 415,
+        "phase_centre_ms": 7.42,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-09": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-10": {
+        "n": 415,
+        "phase_centre_ms": 6.03,
+        "concentration_R": 0.918,
+        "share_within_3ms_of_ladder": 0.959
+      },
+      "HBPSN-11": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.996,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-12": {
+        "n": 415,
+        "phase_centre_ms": 6.04,
+        "concentration_R": 0.916,
+        "share_within_3ms_of_ladder": 0.945
+      },
+      "HBPSN-13": {
+        "n": 415,
+        "phase_centre_ms": 6.33,
+        "concentration_R": 0.834,
+        "share_within_3ms_of_ladder": 0.87
+      },
+      "HBPSN-14": {
+        "n": 415,
+        "phase_centre_ms": 7.54,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      }
+    },
+    "status": "Observation only. The cause is not established; an earlier working suspicion is system timing granularity. It is kept as a flag so the thesis analysis does not read the steps as network effects."
+  },
+  "network_note": {
+    "board_ip_in_run": "192.168.137.25",
+    "gateway_in_run": "192.168.137.1 (serial.raw.log)",
+    "ip_history_from_register": {
+      "HBPSN-01": "192.168.137.212",
+      "HBPSN-02": "192.168.137.212",
+      "HBPSN-03": "192.168.137.112",
+      "HBPSN-04": "192.168.137.112",
+      "HBPSN-05": "192.168.137.112",
+      "HBPSN-06": "192.168.137.112",
+      "HBPSN-07": "192.168.137.112",
+      "HBPSN-08": "192.168.137.112",
+      "HBPSN-09": "192.168.137.112",
+      "HBPSN-10": "192.168.137.112",
+      "HBPSN-11": "192.168.137.25",
+      "HBPSN-12": "192.168.137.25",
+      "HBPSN-13": "192.168.137.25"
+    },
+    "hotspot": "Gateway 192.168.137.1 and board IP 192.168.137.25 appear in serial.raw.log during the run; the hotspot was on with 1 client at launch; no restart is recorded.",
+    "finding": "Same address as HBPSN-11 to HBPSN-13; the runs HBPSN-03 to 10 had .112. The collector records the actual assigned IP at startup and does not depend on a fixed address."
+  },
+  "setup_notes": {
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "helper": "operator_settings_helper.py copied from HBPSN-13 with the run ID check and labels changed to HBPSN-14 at the operator instruction. See DEVIATION_settings_evidence_source.json.",
+    "host_activity": "Per operator statements, a YouTube video played on the laptop during the run and Chrome Remote Desktop and VS Code were open and not actively used; a Claude Code session on the host ran the launch and startup checks and no commands during the recording window. Network use was not measured. preflight.json host_activity (written at the pre-launch confirmation) records the streaming as unknown; the statements above supersede it.",
+    "setup_boot": "The post-flash setup boot ran from 21:43:51Z flash end to the measured reset and is excluded by the log boundaries. It connected over TCP_TLS to the server; no startup crash occurred. A host-only TLS probe ran at about 21:43:22Z before the flash.",
+    "register": "Row 14 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "still_running_pids": [
+      16908,
+      30092,
+      41648,
+      24472
+    ],
+    "monitor_logs": "monitor_stream.log and monitor_after_run.log were still open and growing, are not in SHA256SUMS.json and are not cited by this review."
+  },
+  "retained_flags": [
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BETWEEN_PRE_RUN_AND_END_OF_RUN",
+    "HOST_REMOTE_DESKTOP_AND_VS_CODE_OPEN_DURING_RUN",
+    "HOST_VIDEO_STREAMING_DURING_RUN",
+    "SERVER_STDERR_TCP_TLS_ERROR_UNEXPLAINED",
+    "RTT_20_MS_STEP_PATTERN_PRESENT",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn14_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

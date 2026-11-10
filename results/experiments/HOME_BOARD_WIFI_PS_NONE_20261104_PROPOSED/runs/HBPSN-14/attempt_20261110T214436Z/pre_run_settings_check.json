@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "phase": "pre_run",
+  "request": {
+    "phase": "pre_run",
+    "nonce": "2470149e50ba475197058263859023ed",
+    "requested_utc": "2026-11-10T22:01:25.649185+00:00",
+    "requested_monotonic": 1102402.3890736,
+    "expected": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "anchor": null,
+    "response_timeout_seconds": 30
+  },
+  "evidence": {
+    "nonce": "2470149e50ba475197058263859023ed",
+    "screenshot": "clumsy_operator_pre_run.png",
+    "sha256": "d414651a2aba086b702a97aa6ed86a3cf48291f4f454a80edca36d9f18b64476",
+    "capture_started_utc": "2026-11-10T22:01:25.667006+00:00",
+    "capture_completed_utc": "2026-11-10T22:01:25.738126+00:00",
+    "capture_started_monotonic": 1102402.4069017,
+    "capture_completed_monotonic": 1102402.4780411,
+    "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+    "source_type": "operator_reported",
+    "observed": {
+      "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+      "capture": "RUNNING",
+      "Drop": {
+        "enabled": true,
+        "chance_percent": 1.0,
+        "inbound": false,
+        "outbound": true
+      },
+      "other_main_effects": {
+        "Lag": false,
+        "Throttle": false,
+        "Duplicate": false,
+        "Out of order": false,
+        "Tamper": false,
+        "Set TCP RST": false,
+        "Bandwidth": false
+      }
+    },
+    "label": "HBPSN-14 TCP_TLS DROP1_OUT operator-run full-screen capture taken after the nonce request. Observed values come from the operator declaration confirmed before launch; they were not machine-read from this image."
+  },
+  "reason": null,
+  "evaluated_utc": "2026-11-10T22:01:25.871824+00:00"
+}

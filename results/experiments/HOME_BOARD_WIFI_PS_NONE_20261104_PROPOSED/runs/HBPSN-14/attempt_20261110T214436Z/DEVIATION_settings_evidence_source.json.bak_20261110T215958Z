@@ -1,0 +1,22 @@
+{
+  "run_id": "HBPSN-14",
+  "attempt_id": "attempt_20261110T214436Z",
+  "deviation": "SETTINGS_EVIDENCE_SOURCE_OPERATOR_REPORTED",
+  "status": "APPLIES_IF_THIS_ATTEMPT_IS_LAUNCHED",
+  "recorded_utc": "2026-11-10T21:44:36.660405+00:00",
+  "previous_practice": "HBPSN-01 to HBPSN-07 pre_run responses were written in an agent session; HBPSN-09 to HBPSN-13 used operator_settings_helper.py with operator-reported values.",
+  "this_run": "source_type operator_reported. The helper captures the full screen after each settings request. Observed values come from clumsy_declaration.json, confirmed by the operator before launch.",
+  "helper_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-13\\attempt_20261110T200247Z\\operator_settings_helper.py",
+  "helper_source_sha256": "7b410043ab32a6991647e0c030dde0da74e59046c300ef380e0e2f2827c3f9a8",
+  "helper_sha256": "c9a3de4117c17c22e0f723404f009ee28a5f6df7fa08b90d8af18bbeb8f0017e",
+  "helper_change": {
+    "run_id_check": "value.get('run_id') != 'HBPSN-13' replaced by value.get('run_id') != 'HBPSN-14'",
+    "label_text": "Docstring and both capture labels changed from HBPSN-13 (QUIC LAG100_OUT) to HBPSN-14 (TCP_TLS DROP1_OUT).",
+    "instruction": "Operator instruction: copy the settings helper from the previous run with run ID and labels changed to HBPSN-14.",
+    "logic_changed": false
+  },
+  "end_of_run_limit": "The end_of_run observed values are the same declaration confirmed before launch and are not re-inspected at the end of the run. The end_of_run image and operator stability need manual review.",
+  "not_machine_read": "The helper does not read checkboxes or text from the image. Number boxes other than the Drop chance (for example the Lag delay) are not part of the expected settings and are not machine-recorded.",
+  "plan_note": "The plan allows settings that are only operator-reported if they are labelled explicitly (EXPERIMENT_PLAN_PROPOSED_V1.md line 30).",
+  "preflight_base_note": "preflight.json is based on HBPSN-06 (TCP_TLS DROP1_OUT) and differs only in run_id, checked_utc, server_readiness.functional_probe (now this attempt flash record probe), the HBPSN-14 wording in observer_policy and the removed host_activity. HBPSN-06 host_activity was removed because it describes HBPSN-06 only; the host activity for this run is taken from the operator answers saved with the confirmation."
+}

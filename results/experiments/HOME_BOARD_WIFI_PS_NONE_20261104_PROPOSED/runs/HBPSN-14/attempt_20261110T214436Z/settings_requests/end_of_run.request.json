@@ -1,0 +1,49 @@
+{
+  "phase": "end_of_run",
+  "nonce": "433685f1b4954cd5a2430998f1aab9a7",
+  "requested_utc": "2026-11-10T22:38:28.910798+00:00",
+  "requested_monotonic": 1104625.6506783,
+  "expected": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1.0,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "anchor": {
+    "reset_request_utc": "2026-11-10T22:01:28.897548+00:00",
+    "reset_release_utc": "2026-11-10T22:01:28.903331+00:00",
+    "reset_release_monotonic": 1102405.6431977,
+    "deadline_monotonic": 1104625.6431977,
+    "deadline_utc": "2026-11-10T22:38:28.903331+00:00",
+    "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+    "boundary_precision": "Host API completion, not a physical edge measurement",
+    "server_boundaries": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+        "byte_offset": 7101006
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+        "byte_offset": 570
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+        "byte_offset": 3877204
+      }
+    }
+  },
+  "response_timeout_seconds": 30
+}
