@@ -1,0 +1,29 @@
+{
+  "run_id": "HBPSN-10",
+  "attempt_id": "attempt_20261110T002302Z",
+  "deviation": "SETTINGS_EVIDENCE_SOURCE_OPERATOR_REPORTED",
+  "status": "APPLIES_IF_THIS_ATTEMPT_IS_LAUNCHED",
+  "recorded_utc": "2026-11-10T00:23:02.680627+00:00",
+  "previous_practice": "HBPSN-01 to HBPSN-07 pre_run responses were written in an agent session; HBPSN-09 used operator_settings_helper.py with operator-reported values.",
+  "this_run": "source_type operator_reported. The helper captures the full screen after each settings request. Observed values come from clumsy_declaration.json, confirmed by the operator before launch.",
+  "helper_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-09\\attempt_20261109T183955Z\\operator_settings_helper.py",
+  "helper_source_sha256": "a2cabbc709cecc5c38cc1bb13a473aae9853af287227a8b5163ecb5016e9eb31",
+  "helper_sha256": "fea499820f544e04c54b0640a23eff26b2daa8620a29bf0ad55c3eb078df0ea5",
+  "helper_change": {
+    "run_id_check": "value.get('run_id') != 'HBPSN-09' replaced by value.get('run_id') != 'HBPSN-10'",
+    "label_text": "Docstring and both capture labels changed from HBPSN-09 (TCP_TLS CONTROL) to HBPSN-10 (QUIC DROP1_OUT).",
+    "instruction": "Operator instruction: change only the run ID check. The operator then approved the label text change in the session question dialog (\"Fix labels (Recommended)\").",
+    "approval_receipt_utc": "2026-11-10T00:30:52.2347680Z",
+    "logic_changed": false
+  },
+  "end_of_run_limit": "The end_of_run observed values are the same declaration confirmed before launch and are not re-inspected at the end of the run. The end_of_run image and operator stability need manual review.",
+  "not_machine_read": "The helper does not read checkboxes or text from the image.",
+  "plan_note": "The plan allows settings that are only operator-reported if they are labelled explicitly (EXPERIMENT_PLAN_PROPOSED_V1.md line 30).",
+  "preflight_text_left_unchanged": "preflight.json is based on HBPSN-05; its observer_policy text still describes a nonce-linked pre-reset image.",
+  "host_activity_change": {
+    "previous": "Chrome Remote Desktop operator-reported; existing host applications remain; unchanged physical board/sensor setup per experiment context",
+    "now": "Chrome Remote Desktop not running and nothing streaming or downloading, operator-reported before launch; existing host applications remain; unchanged physical board/sensor setup per experiment context",
+    "authority": "Operator answer in the session question dialog (\"Remote Desktop off\")",
+    "receipt_utc": "2026-11-10T00:30:52.2347680Z"
+  }
+}

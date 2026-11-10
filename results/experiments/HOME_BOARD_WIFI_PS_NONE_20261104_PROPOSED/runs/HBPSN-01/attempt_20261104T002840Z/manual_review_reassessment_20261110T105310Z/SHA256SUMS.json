@@ -1,0 +1,37 @@
+[
+  {
+    "path": "manual_review_reassessment.json",
+    "bytes": 5401,
+    "sha256": "e2ff0f7f6b113536f7dccc770c8f5b89c64db96c8700441f0950d705cdb658f4"
+  },
+  {
+    "path": "supervisor_confirmation.json",
+    "bytes": 1197,
+    "sha256": "2a461ea58d0258a46b8a34e8b073fb39f44dfb10ace86fb13142ed174ec7e86f"
+  },
+  {
+    "path": "SHA256SUMS.json.bak_20261110T105440Z",
+    "bytes": 164,
+    "sha256": "43f0a70a48d9848bbfd621d5ad448239703c96befdff2712641c88a1091f605c"
+  },
+  {
+    "path": "results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv",
+    "bytes": 14635,
+    "sha256": "eb15551928a379bbc5efe470c3de141a817fb773a30969b5eca8aefdf5318a17"
+  },
+  {
+    "path": "results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv.bak_20261110T105440Z",
+    "bytes": 14234,
+    "sha256": "ef593a25d0a994dbc7b0b747133127e349d011827439527b47d11a0174e00e86"
+  },
+  {
+    "path": "outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx",
+    "bytes": 12224,
+    "sha256": "1a15da42664167223b4cf7afe379d461bae747f28d8e949f831d202913efebff"
+  },
+  {
+    "path": "outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx.bak_20261110T105440Z",
+    "bytes": 12102,
+    "sha256": "406855adbf47c36df2ed1564835e83486779ba05b40fb0992e212bd494d46cb6"
+  }
+]

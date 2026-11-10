@@ -1,0 +1,266 @@
+{
+  "run_id": "HBPSN-10",
+  "attempt_id": "attempt_20261110T002302Z",
+  "transport": "QUIC",
+  "condition": "DROP1_OUT",
+  "boot_replicate": 2,
+  "reviewed_utc": "2026-11-10T01:37:52.376711+00:00",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30. No independent or continuous GUI observation is claimed, and configured 1% Drop is not an observed loss rate.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting from when I confirmed the declaration until after the HBPSN-10 run ended.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T01:33:54.1710397Z",
+    "receipt_helsinki": "2026-11-10T03:33:54.1710397+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+    "statement_selection": "The closure message held template text for this field; the operator then selected this sentence, unchanged, in the session question dialog.",
+    "scope_as_worded": "From operator confirmation of the declaration (receipt 2026-11-10T00:30:52.2347680Z) until after the run ended (fixed deadline 2026-11-10T01:09:08.933229+00:00).",
+    "not_backdated": true
+  },
+  "operator_host_activity_statement": {
+    "exact_statement": "Nothing was streaming or downloading during the run; I only used the browser to read the Claude chat and document.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T01:33:54.1710397Z",
+    "receipt_helsinki": "2026-11-10T03:33:54.1710397+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+    "statement_selection": "The closure message held template text for this field; the operator then selected this sentence, unchanged, in the session question dialog.",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "chrome_remote_desktop": "Operator selected \"Off the whole run\" in the session question dialog."
+  },
+  "operator_disposition_approval": {
+    "exact_text": "yes",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T01:37:52.0796330Z",
+    "receipt_clock_source": "First local clock observation while processing the operator answer; original send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly; do not claim independently verified per-packet impairment.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_shows_drop1_out_settings": true,
+    "end_of_run_image_shows_drop1_out_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.027253,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-10T00:32:08.933229+00:00",
+    "fixed_deadline_utc": "2026-11-10T01:09:08.933229+00:00",
+    "deadline_observed_lateness_ms": 3.2012000447139144,
+    "boot_session_id": "HBPSN-10/2026-11-10T00:32:08.933229+00:00",
+    "assigned_ip": "192.168.137.112"
+  },
+  "firmware_identity": {
+    "artifact_id": "QUIC_PSN",
+    "printed_bootloader_compile_time": "Nov  3 2026 18:33:04; matches frozen QUIC_PSN bootloader",
+    "printed_elf_prefix": "9b23e164f; prefix comparison, not a full on-device digest",
+    "full_flash_record": "runs/HBPSN-10/preflight_20261110T002031Z/preflight_record.json",
+    "images_verified": 3
+  },
+  "counts": {
+    "raw_serial_lines": 592,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 73.8214,
+    "sd_ms": 41.61794535630265,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 65.945,
+    "p95_ms": 125.525,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 25.381,
+    "maximum_ms": 385.51
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "1d5a17b01cc7d1365c04904b59ce4957891b7339a816116fad7ea61dbd6a577a",
+      "operator_confirmed_receipt_utc": "2026-11-10T00:30:52.2347680Z",
+      "test_capture": {
+        "path": "../helper_capture_test_3/test_capture.png",
+        "sha256": "66ab7150f8a046ccc87f627c0d55cf805a9a9b5d25fb9952cb259fb4410861d7",
+        "file_time_utc": "2026-11-10T00:29:17.686966+00:00",
+        "finding": "Reviewed visually, not machine-read: Clumsy visible with the UDP 14567 filter, button Stop, status Started filtering, Drop ticked, Inbound unticked, Outbound ticked, Chance 1, all 7 other functions unticked.",
+        "earlier_captures": "helper_capture_test and helper_capture_test_2 did not show Clumsy; they are retained."
+      }
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "4abce4a1bff08a099f2709ad06f08ba42f31eb96c28e0e664020cc0ec6b63114",
+      "capture_started_utc": "2026-11-10T00:32:05.237539+00:00",
+      "shows_clumsy": true,
+      "settings_seen": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "drop": "ticked; Inbound unticked, Outbound ticked, Chance 1",
+        "other_7_functions": "unticked (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)"
+      },
+      "windows_tray_clock_in_image": "2.32 10/11/2026 on both displays",
+      "clumsy_title_bar": "inactive",
+      "inspection": "Visual review; not machine-read"
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "5aef88a0b45c4a880b6815de3a1016cd83d4cbbef36a3e58791446b4f22067d9",
+      "capture_started_utc": "2026-11-10T01:09:08.960482+00:00",
+      "shows_clumsy": true,
+      "settings_seen": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "drop": "ticked; Inbound unticked, Outbound ticked, Chance 1",
+        "other_7_functions": "unticked (Lag, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)"
+      },
+      "windows_tray_clock_in_image": "3.09 10/11/2026 on both displays",
+      "clumsy_title_bar": "active",
+      "inspection": "Visual review; not machine-read",
+      "limit": "The helper PASS for both phases came from the pre-launch declaration; the settings_seen values come from visual review of these images."
+    },
+    "window_focus_note": "The Clumsy title bar is inactive in the pre-run image and active in the end-of-run image, so the window took focus at some point during the run. The settings shown are the same in both images.",
+    "no_image_between": "No Clumsy image exists between the pre-run and end-of-run captures. Stability between them rests on the operator statement."
+  },
+  "warnings": [
+    {
+      "line": 93,
+      "raw_line": "2026-11-10T02:32:09 W (723) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 101,
+      "raw_line": "2026-11-10T02:32:12 W (3283) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 119,
+      "raw_line": "2026-11-10T02:32:12 W (3443) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-10T02:32:08 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-10T00:32:08.980693+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-10T01:09:09.598524+00:00",
+    "deadline_utc": "2026-11-10T01:09:08.933229+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-10\\attempt_20261110T002302Z\\SUMMARY.md"
+  },
+  "sensor_note": {
+    "hbpsn10_temperature_c": {
+      "min": 39.0,
+      "median": 42.0,
+      "max": 46.0
+    },
+    "hbpsn10_humidity_pct": {
+      "min": 23.0,
+      "median": 25.0,
+      "max": 30.0
+    },
+    "other_runs_temperature_c": {
+      "HBPSN-02": {
+        "min": 29.0,
+        "median": 31.0,
+        "max": 37.0
+      },
+      "HBPSN-03": {
+        "min": 30.0,
+        "median": 31.0,
+        "max": 32.0
+      },
+      "HBPSN-04": {
+        "min": 38.0,
+        "median": 38.0,
+        "max": 38.0
+      },
+      "HBPSN-05": {
+        "min": 33.0,
+        "median": 33.0,
+        "max": 38.0
+      },
+      "HBPSN-06": {
+        "min": 30.0,
+        "median": 31.0,
+        "max": 32.0
+      },
+      "HBPSN-07": {
+        "min": 31.0,
+        "median": 32.0,
+        "max": 37.0
+      },
+      "HBPSN-08": {
+        "min": 24.0,
+        "median": 24.0,
+        "max": 30.0
+      },
+      "HBPSN-09": {
+        "min": 24.0,
+        "median": 24.0,
+        "max": 24.0
+      }
+    },
+    "finding": "DHT11 temperature is well above the earlier run values shown here. The cause is not established. sensor_error is 0 throughout. It is payload data, not an RTT measure."
+  },
+  "setup_notes": {
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "helper": "operator_settings_helper.py copied from HBPSN-09 with the run ID check changed; docstring and two labels corrected with operator approval. See DEVIATION_settings_evidence_source.json.",
+    "host_activity": "Browser used to read the Claude chat and a document, per the operator statement; a Claude Code session on the host ran file-polling checks during the run. Network use was not measured.",
+    "setup_boot": "The post-flash boot ran from 00:20:58Z to the measured reset and is excluded by the log boundaries.",
+    "register": "Row 10 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "observed_utc": "2026-11-10T01:33:54Z",
+    "still_running_pids": [
+      2816,
+      11196,
+      39680,
+      8800
+    ],
+    "monitor_logs": "monitor_stream.log (79860 bytes) and monitor_after_run.log (24729 bytes) were still open and growing, are not in SHA256SUMS.json and are not cited by this review."
+  },
+  "retained_flags": [
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BETWEEN_PRE_RUN_AND_END_OF_RUN",
+    "CLUMSY_WINDOW_FOCUS_CHANGED_DURING_RUN",
+    "HOST_BROWSER_AND_AGENT_ACTIVITY_DURING_RUN",
+    "SENSOR_TEMPERATURE_39_TO_46C_UNEXPLAINED",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn10_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

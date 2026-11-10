@@ -1,0 +1,31 @@
+{
+  "nonce": "ccff21f709454fe7824477e5af78ec83",
+  "screenshot": "clumsy_operator_end_of_run.png",
+  "sha256": "068f4e1d6aa51b781b545d9be846608452d95840f88473bfa8f7f6466a81d075",
+  "capture_started_utc": "2026-11-10T15:39:38.427512+00:00",
+  "capture_completed_utc": "2026-11-10T15:39:38.511045+00:00",
+  "capture_started_monotonic": 1079495.1673984,
+  "capture_completed_monotonic": 1079495.2509396,
+  "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+  "source_type": "operator_reported",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "label": "HBPSN-11 TCP_TLS LAG100_OUT operator-run full-screen capture taken after the end-of-run request. Observed values come from the declaration confirmed BEFORE launch and were not re-inspected at this moment; this image and operator stability need manual review."
+}

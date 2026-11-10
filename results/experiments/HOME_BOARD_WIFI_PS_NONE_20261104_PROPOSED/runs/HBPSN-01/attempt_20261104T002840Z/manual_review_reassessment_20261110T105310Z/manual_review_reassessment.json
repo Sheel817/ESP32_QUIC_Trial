@@ -1,0 +1,116 @@
+{
+  "run_id": "HBPSN-01",
+  "attempt_id": "attempt_20261104T002840Z",
+  "transport": "QUIC",
+  "condition": "CONTROL",
+  "record_type": "REASSESSMENT_ORIGINAL_RECORD_UNCHANGED",
+  "reassessment_status": "PENDING_SUPERVISOR_CONFIRMATION",
+  "effective_status_until_confirmed": "FAILED_SETTINGS",
+  "proposed_disposition": "COMPLETE with retained flags",
+  "proposed_validity_status": "NOT_APPROVED until supervisor confirmation",
+  "reviewed_utc": "2026-11-10T10:53:10.989480+00:00",
+  "operator_approval_of_this_draft": {
+    "exact_text": "Save reassessment",
+    "relayed": false,
+    "source": "Option selected in the session question dialog after the operator wrote \"run 01\"",
+    "receipt_utc": "2026-11-10T10:53:10.8585069Z",
+    "receipt_clock_source": "First local clock observation while processing the operator answer; original send time unavailable"
+  },
+  "basis": "Plan line 30 requires a screenshot after recording and sets no numeric deadline. Plan line 32 requires stable settings. A later image matches the pre-run image, but it cannot show the settings during the recording.",
+  "original_record": {
+    "status": "FAILED_SETTINGS",
+    "reason": "Missing required contemporaneous post-recording settings evidence",
+    "automatic_failure_utc": "2026-11-04T00:46:45.650030+00:00",
+    "automatic_failure": "WinError 5 replacing heartbeat.json.tmp; recording recovered offline",
+    "recovery_summary": "recovery_20261104T013757Z/SUMMARY.md"
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-04T00:38:26.326642+00:00",
+    "fixed_deadline_utc": "2026-11-04T01:15:26.326642+00:00",
+    "duration_seconds": 2220
+  },
+  "counts": {
+    "raw_serial_lines": 591,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "shortfall": 0,
+    "sequence_gaps": 0,
+    "additional_resets": 0
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 67.54002650602409,
+    "sd_ms": 28.929393362720976,
+    "sd_definition": "Sample SD (n-1), computed from recovery selected_first_415.csv at review",
+    "median_ms": 65.552,
+    "p95_ms": 105.842,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 24.671,
+    "maximum_ms": 165.999
+  },
+  "settings_evidence": {
+    "pre_run_image": {
+      "file": "clumsy_before_start.jpg",
+      "sha256": "9a22798499c0851f7ef869da88f781c0ff1c1e4e84effcec99e375d150d9ab2f",
+      "precheck_observed_utc": "2026-11-04T00:38:22.5256362Z",
+      "precheck_source": "GUI observed; user-reported correction"
+    },
+    "late_image": {
+      "file": "results/recorder_tests/TEST_ONLY_20261104T015703Z/TEST_ONLY_pre_run_clumsy.png",
+      "sha256": "ceecfae407bd93c00ce967f59cb4d6fd683b04879a5290b153fb07379456ecf4",
+      "request_utc": "2026-11-04T01:58:10.891941+00:00",
+      "capture_started_utc": "2026-11-04T01:58:40.238Z",
+      "capture_completed_utc": "2026-11-04T01:58:40.447Z",
+      "file_write_utc": "2026-11-04T01:59:00.426642+00:00",
+      "seconds_after_deadline": 2593.911,
+      "label_at_capture": "TEST_ONLY pre-run; for HBPSN-01 this is LATE SUPPLEMENTARY ONLY, never original post-recording evidence",
+      "operator_instruction_at_capture": "Any screenshot captured now must be timestamped as late supplementary evidence, never backdated.",
+      "use_here": "Late supplementary evidence only; not backdated and not treated as an original post-recording image."
+    },
+    "image_comparison": {
+      "result": "All filter, button, status, checkbox and field values match",
+      "method": "Visual review plus in-memory pixel comparison, 706x460",
+      "mean_max_channel_difference_of_255": 0.481,
+      "pixels_differing_over_40": 124
+    },
+    "interval_between_observations": "00:38:22Z to 01:58:40Z; no observation of Clumsy in between",
+    "codex_log": {
+      "file": "external_evidence/codex_sessions/2026/11/04/rollout-2026-11-04T00-50-03-01a1a39a-f27f-77c3-88d1-b95b1b138fa7.jsonl",
+      "no_events_utc": [
+        "2026-11-04T00:39:36.626Z",
+        "2026-11-04T01:35:05.840Z"
+      ],
+      "clumsy_actions_01_35_to_01_58_40": "Read-state calls, one Raise, one screenshot; no setting change recorded"
+    },
+    "clumsy_process": "PID 20856 started 2026-11-03T14:19:46.024Z and was still running at this review; this does not exclude Stop/Start or a reverted change",
+    "image_limit": "A matching later image does not exclude a change that was reverted before 01:58:40Z."
+  },
+  "precedent_comparison": {
+    "post_image_lateness_seconds": {
+      "HBPSN-05": 173.572641,
+      "HBPSN-04": 184.654217,
+      "HBPSN-07": 355,
+      "HBPSN-01_proposed": 2593.911
+    },
+    "difference": "HBPSN-04, 05 and 07 each had an operator stability statement. HBPSN-01 has none."
+  },
+  "retained_flags": [
+    "POST_RECORDING_IMAGE_43_MIN_LATE_FROM_RECORDER_TEST",
+    "NO_OPERATOR_STATEMENT",
+    "AUTOMATIC_FINALIZER_FAILED_RECOVERED",
+    "NO_CLUMSY_OBSERVATION_DURING_RECORDING",
+    "IMAGE_LABELLED_LATE_SUPPLEMENTARY_ONLY_AT_CAPTURE",
+    "CODEX_LOG_HAS_NO_EVENTS_00_39_TO_01_35",
+    "PRE_RUN_PRECHECK_INCLUDES_USER_REPORTED_CORRECTION",
+    "REASSESSMENT_MADE_AFTER_RESULTS_WERE_KNOWN"
+  ],
+  "original_files_changed": false,
+  "register_row_1_changed": false,
+  "supervisor_confirmation": {
+    "name": null,
+    "decision": null,
+    "date": null
+  }
+}

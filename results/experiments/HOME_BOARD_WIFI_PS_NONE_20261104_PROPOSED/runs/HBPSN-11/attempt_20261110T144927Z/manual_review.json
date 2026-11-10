@@ -1,0 +1,259 @@
+{
+  "run_id": "HBPSN-11",
+  "attempt_id": "attempt_20261110T144927Z",
+  "transport": "TCP_TLS",
+  "condition": "LAG100_OUT",
+  "boot_replicate": 2,
+  "reviewed_utc": "2026-11-10T15:45:14.229443+00:00",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30. No independent or continuous GUI observation is claimed, and configured 100 ms Lag is not an assertion of exactly +100 ms APP_RTT.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting from when I confirmed the declaration until after the HBPSN-11 run ended.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T15:41:49.8879128Z",
+    "receipt_helsinki": "2026-11-10T17:41:49.8906065+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message, taken before this draft; original send time unavailable",
+    "scope_as_worded": "From operator confirmation of the declaration (receipt 2026-11-10T15:01:27.9767758Z) until after the run ended (fixed deadline 2026-11-10T15:39:38.406130+00:00).",
+    "not_backdated": true
+  },
+  "operator_host_activity_statement": {
+    "exact_statement": "Nothing was streaming or downloading during the run; Chrome Remote Desktop and VS Code were open.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T15:41:49.8879128Z",
+    "receipt_helsinki": "2026-11-10T17:41:49.8906065+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message, taken before this draft; original send time unavailable",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "chrome_remote_desktop": "Running; the operator also answered \"Running\" in the session question dialog before launch."
+  },
+  "operator_disposition_approval": {
+    "exact_text": "yes",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T15:45:13.9474189Z",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly; do not claim independently verified per-packet impairment.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes.",
+    "line_77": "If connection errors occur without reboot, retain all evidence and eligible values, flag the session, and report observed shortfalls."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_shows_lag100_out_settings": true,
+    "end_of_run_image_shows_lag100_out_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.021382,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-10T15:02:38.406130+00:00",
+    "fixed_deadline_utc": "2026-11-10T15:39:38.406130+00:00",
+    "deadline_observed_lateness_ms": 3.9405999705195427,
+    "boot_session_id": "HBPSN-11/2026-11-10T15:02:38.406130+00:00",
+    "assigned_ip": "192.168.137.25"
+  },
+  "firmware_identity": {
+    "artifact_id": "TCP_TLS_PSN",
+    "printed_bootloader_compile_time": "Nov  4 2026 01:52:32; matches frozen TCP_TLS_PSN bootloader",
+    "printed_elf_prefix": "1f661a4f7; prefix comparison, not a full on-device digest",
+    "full_flash_record": "runs/HBPSN-11/preflight_20261110T144752Z/preflight_record.json",
+    "images_verified": 3,
+    "esptool_reported_base_mac": "40:4c:ca:56:bb:b0",
+    "firmware_tls_negotiation_in_run": "TLSv1.3, TLS_AES_128_GCM_SHA256, suite 0x1301, ALPN mqtt, TCP_NODELAY=1 (serial.raw.log). The host-side setup probe used a different cipher and is not a formal observation."
+  },
+  "counts": {
+    "raw_serial_lines": 580,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 191.43956144578314,
+    "sd_ms": 39.68959863913602,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 187.516,
+    "p95_ms": 248.217,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 127.419,
+    "maximum_ms": 507.463
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "4027e0aece188f9b12d675e7fc276150fa3c97e8f2cf27eb3f93ebc87aaa80f4",
+      "operator_confirmed_receipt_utc": "2026-11-10T15:01:27.9767758Z",
+      "operator_statement": "I checked Clumsy myself: TCP 14568 filter, Started, Lag ticked, Outbound only, Delay 100, all other functions off. Yes, set the declaration to confirmed.",
+      "test_capture": {
+        "path": "../helper_capture_test_5/test_capture.png",
+        "sha256": "d325d3ce2c4cb9387ebedd084e2901fac18bfee418f73a854d1b6359a0b78f8e",
+        "file_time_utc": "2026-11-10T15:00:34.470881+00:00",
+        "finding": "Reviewed visually, not machine-read: Clumsy visible on the left display with the TCP 14568 filter, button Stop, status Started filtering, Lag ticked, Inbound unticked, Outbound ticked, Delay 100, all 7 other functions unticked.",
+        "earlier_captures": "helper_capture_test, _2, _3 and _4 did not show Clumsy; they are retained."
+      }
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "a49566ff3f4eedefa41531a4289e5a681a2fd386844af9080eec527934f5ba68",
+      "capture_started_utc": "2026-11-10T15:02:35.119474+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "lag": "ticked; Inbound unticked, Outbound ticked, Delay 100",
+        "other_7_functions": "unticked (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)"
+      },
+      "windows_tray_clock_in_image": "17.02 10/11/2026 on both displays",
+      "inspection": "Visual review; not machine-read"
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "068f4e1d6aa51b781b545d9be846608452d95840f88473bfa8f7f6466a81d075",
+      "capture_started_utc": "2026-11-10T15:39:38.427512+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display, same place as pre-run",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "lag": "ticked; Inbound unticked, Outbound ticked, Delay 100",
+        "other_7_functions": "unticked (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)"
+      },
+      "windows_tray_clock_in_image": "17.39 10/11/2026 on both displays",
+      "inspection": "Visual review; not machine-read",
+      "limit": "The helper PASS for both phases came from the pre-launch declaration; the settings_seen values come from visual review of these images."
+    },
+    "window_focus_note": "The Clumsy title-bar colour in a sampled strip is identical in both images and the window is in the same place; the active or inactive state was not determined.",
+    "no_image_between": "No Clumsy image exists between the pre-run and end-of-run captures. Stability between them rests on the operator statement.",
+    "pre_launch_test_captures": "helper_capture_test to _4 did not show Clumsy; helper_capture_test_5 did, and the launch followed it. All five are retained."
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-10T17:02:39 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-10T17:02:41 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-10T17:02:41 W (3407) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "TCP+TLS ERROR: \n",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-10T17:02:38 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-10T15:02:38.415244+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-10T15:39:39.084423+00:00",
+    "deadline_utc": "2026-11-10T15:39:38.406130+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-11\\attempt_20261110T144927Z\\SUMMARY.md"
+  },
+  "server_stderr_investigation": {
+    "line": "TCP+TLS ERROR: (empty message)",
+    "host_receipt_utc": "2026-11-10T15:03:33.486196+00:00",
+    "seconds_after_reset_release": 55.08,
+    "inside_run_window": true,
+    "tls_probe": {
+      "started_utc": "2026-11-10T14:47:54.135231+00:00",
+      "ended_utc": "2026-11-10T14:47:54.492226+00:00",
+      "its_stderr_line": "TCP+TLS ERROR: [WinError 64] The specified network name is no longer available",
+      "finding": "A different line, 15 minutes before the reset and outside the run window. The probe did not produce this line."
+    },
+    "same_line_in_other_runs_seconds_after_reset": {
+      "HBPSN-02": 55.2,
+      "HBPSN-04": 58.9,
+      "HBPSN-06": 57.2,
+      "HBPSN-07": 55.7,
+      "HBPSN-09": 57.4,
+      "HBPSN-11": 55.1
+    },
+    "pattern": "Every TCP_TLS run has exactly one such line, 55.1 to 58.9 s after reset release. The QUIC runs use a different server and have none.",
+    "last_publication_before_reset": "seq 86 at 2026-11-10T15:02:28.440Z from the setup boot (server sensor CSV)",
+    "probable_cause": "tcp_tls_server.py reads each client with a 60 s timeout and prints \"TCP+TLS ERROR: {error}\"; a timeout has an empty message. The setup-boot connection stopped sending at the reset, so its timeout would fall about 60 s later. This fits; unlogged data about 5 s after seq 86 would fit exactly.",
+    "status": "Not proven. The line carries no connection identity. It is counted in connection_error_count as for HBPSN-04, 07 and 09, with no serial connection error, reboot, gap or shortfall in the run.",
+    "server_source_sha256": "4476abf265dc8b8a077d4e9a44d431a5ef8464ca65a35a24803e4047706e0e9e"
+  },
+  "network_note": {
+    "hotspot_state_observed_utc": {
+      "2026-11-10T14:49:47Z": "Off, 0 clients",
+      "2026-11-10T14:54:18Z": "Off, 0 clients",
+      "2026-11-10T14:55:49Z": "On, 1 client with MAC 40:4c:ca:56:bb:b0"
+    },
+    "cause_of_hotspot_being_off": "Not established; it was off after the board was found unplugged and reflashed. The operator turned it on.",
+    "board_ip_in_run": "192.168.137.25",
+    "gateway_in_run": "192.168.137.1 (serial.raw.log)",
+    "ip_history_from_register_and_serial": {
+      "HBPSN-01_and_02": "192.168.137.212",
+      "HBPSN-03_to_10": "192.168.137.112",
+      "HBPSN-11": "192.168.137.25"
+    },
+    "finding": "The board address has changed before (.212 to .112 between HBPSN-02 and 03). The firmware connects to the compiled host address 192.168.137.1, which did not change. The collector records the actual assigned IP at startup and does not depend on a fixed address.",
+    "not_checked": "SSID, channel and RSSI of the restarted hotspot were not recorded."
+  },
+  "setup_notes": {
+    "board_unplugged": "COM6 was absent before the flash; the same USB device (VID_10C4&PID_EA60, serial FABA8DF9808F...) returned after the operator reconnected it. esptool reported the expected MAC.",
+    "tls_probe_before_flash": "One host-side probe ran before the flash, as for HBPSN-09, and is outside the recording.",
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "helper": "operator_settings_helper.py copied from HBPSN-10 with the run ID check and labels changed with operator approval. See DEVIATION_settings_evidence_source.json.",
+    "host_activity": "Per operator statement, Chrome Remote Desktop and VS Code were open; a Claude Code session on the host ran file-polling checks. Network use was not measured.",
+    "setup_boot": "The post-flash setup boot ran until the measured reset and is excluded by the log boundaries.",
+    "register": "Row 11 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "still_running_pids": [
+      41076,
+      33640,
+      29500,
+      4328
+    ],
+    "monitor_logs": "monitor_stream.log and monitor_after_run.log were still open and growing, are not in SHA256SUMS.json and are not cited by this review."
+  },
+  "retained_flags": [
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BETWEEN_PRE_RUN_AND_END_OF_RUN",
+    "HOST_REMOTE_DESKTOP_AND_VS_CODE_OPEN_DURING_RUN",
+    "SERVER_STDERR_TCP_TLS_ERROR_UNATTRIBUTED",
+    "HOTSPOT_RESTARTED_BEFORE_LAUNCH_BOARD_IP_192_168_137_25",
+    "BOARD_UNPLUGGED_AND_RECONNECTED_BEFORE_FLASH",
+    "FOUR_OF_FIVE_PRE_LAUNCH_TEST_CAPTURES_DID_NOT_SHOW_CLUMSY",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn11_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

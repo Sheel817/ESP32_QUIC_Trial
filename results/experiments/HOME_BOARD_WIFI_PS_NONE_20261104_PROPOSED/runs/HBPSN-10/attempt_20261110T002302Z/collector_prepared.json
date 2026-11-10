@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-10T00:32:05.445445+00:00",
+  "pid": 11196,
+  "recording_seconds": 2220,
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "all_outputs_prepared_before_reset": true,
+  "collector_code_sha256": "381f8c1561ac5137a2412a02baa95b82a27897972996737a1e29a98c114da91a",
+  "monitor_wrapper_sha256": "64a96e1e78111aaef1f7c27cadfbfccf19cd50d66965bebf431402f86ed35dcd",
+  "reliability_code_sha256": "4db94b1142b97c464f0c75c2a0c6b85bb64e2787b762ad4952d2ac6ec0625f84",
+  "automatic_register_apply": false
+}

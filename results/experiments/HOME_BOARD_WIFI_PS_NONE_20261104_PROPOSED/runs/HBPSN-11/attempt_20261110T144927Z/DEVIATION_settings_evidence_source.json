@@ -1,0 +1,33 @@
+{
+  "run_id": "HBPSN-11",
+  "attempt_id": "attempt_20261110T144927Z",
+  "deviation": "SETTINGS_EVIDENCE_SOURCE_OPERATOR_REPORTED",
+  "status": "APPLIES_IF_THIS_ATTEMPT_IS_LAUNCHED",
+  "recorded_utc": "2026-11-10T14:49:27.276174+00:00",
+  "previous_practice": "HBPSN-01 to HBPSN-07 pre_run responses were written in an agent session; HBPSN-09 and HBPSN-10 used operator_settings_helper.py with operator-reported values.",
+  "this_run": "source_type operator_reported. The helper captures the full screen after each settings request. Observed values come from clumsy_declaration.json, confirmed by the operator before launch.",
+  "helper_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-10\\attempt_20261110T002302Z\\operator_settings_helper.py",
+  "helper_source_sha256": "fea499820f544e04c54b0640a23eff26b2daa8620a29bf0ad55c3eb078df0ea5",
+  "helper_sha256": "92a9266a546f72ff41e877788e6111b67ed35a21ba6d612a3e7ce81063e0c83f",
+  "helper_change": {
+    "run_id_check": "value.get('run_id') != 'HBPSN-10' replaced by value.get('run_id') != 'HBPSN-11'",
+    "label_text": "Docstring and both capture labels changed from HBPSN-10 (QUIC DROP1_OUT) to HBPSN-11 (TCP_TLS LAG100_OUT).",
+    "instruction": "Operator instruction: change only the run ID check. The operator then approved the label text change in the session question dialog (\"Fix labels (Recommended)\").",
+    "logic_changed": false
+  },
+  "end_of_run_limit": "The end_of_run observed values are the same declaration confirmed before launch and are not re-inspected at the end of the run. The end_of_run image and operator stability need manual review.",
+  "not_machine_read": "The helper does not read checkboxes or text from the image.",
+  "plan_note": "The plan allows settings that are only operator-reported if they are labelled explicitly (EXPERIMENT_PLAN_PROPOSED_V1.md line 30).",
+  "preflight_base_note": "preflight.json is based on HBPSN-02. server_log_sources and server_sensor_source were replaced with the current server logs recorded in HBPSN-09, and HBPSN-02 prior_verified_pre_reset was removed because it describes HBPSN-02 only.",
+  "host_activity_added": {
+    "value": "Chrome Remote Desktop running, operator-reported in the session dialog before launch; existing host applications remain; Windows Mobile Hotspot was restarted by the operator before launch; unchanged physical board/sensor setup per experiment context",
+    "authority": "Operator answer in the session question dialog (\"Running\")",
+    "receipt_utc": "2026-11-10T15:01:27.9767758Z",
+    "reason": "The HBPSN-02 preflight used as the base has no host_activity field."
+  },
+  "operational_notes": [
+    "The board was found unplugged and reconnected before the flash.",
+    "Windows Mobile Hotspot was off after the flash; the operator turned it on, the board joined with MAC 40:4c:ca:56:bb:b0 and reached the server at 192.168.137.25.",
+    "An always-on-top attempt on the Clumsy window returned False and had no effect."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "HBPSN-01",
+  "attempt_id": "attempt_20261104T002840Z",
+  "record_type": "SUPERVISOR_CONFIRMATION_RELAYED",
+  "recorded_utc": "2026-11-10T10:54:40.181729+00:00",
+  "reassessment_file": "manual_review_reassessment.json",
+  "reassessment_sha256": "e2ff0f7f6b113536f7dccc770c8f5b89c64db96c8700441f0950d705cdb658f4",
+  "decision_as_relayed": "Supervisor agreed with the proposed disposition: COMPLETE with retained flags.",
+  "operator_message_exact": "my superviser agreed so you can consider it",
+  "relayed": true,
+  "relayed_by": "operator",
+  "receipt_utc": "2026-11-10T10:54:39.5972161Z",
+  "receipt_clock_source": "First local clock observation while processing the operator message; original send time unavailable",
+  "supervisor_name": null,
+  "supervisor_decision_date": null,
+  "supervisor_own_words": null,
+  "blank_fields_reason": "Not given in the operator message; the supervisor's own confirmation has not been seen.",
+  "effective_status_after_this_record": "COMPLETE with retained flags",
+  "previous_status_retained_in": "recovery_20261104T013757Z and the register backup",
+  "reassessment_file_unchanged": true,
+  "retained_flags_apply": true
+}

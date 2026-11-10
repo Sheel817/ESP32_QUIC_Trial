@@ -1,0 +1,12 @@
+[
+  {
+    "path": "preflight_record.json",
+    "bytes": 11047,
+    "sha256": "cbe6ca1b959179032ffe9fc3da75d689098706797f4608421eaed2d203e0ebca"
+  },
+  {
+    "path": "flash.log",
+    "bytes": 6979,
+    "sha256": "03f71dafa0d61f2330d7bfa4d294ba5c56c132faf69aae66b19ebb16f8fe1691"
+  }
+]
