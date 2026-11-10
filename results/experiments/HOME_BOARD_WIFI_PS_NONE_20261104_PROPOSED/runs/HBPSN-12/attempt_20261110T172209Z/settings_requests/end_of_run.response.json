@@ -1,0 +1,31 @@
+{
+  "nonce": "651c1dd90dcf4fc08302dc0dacd0bc84",
+  "screenshot": "clumsy_operator_end_of_run.png",
+  "sha256": "1d32ef20e98df3fdbc78dfab15f6ed5b34c2e45a30c955765528b3bab2ea5fb2",
+  "capture_started_utc": "2026-11-10T19:44:47.268337+00:00",
+  "capture_completed_utc": "2026-11-10T19:44:47.333771+00:00",
+  "capture_started_monotonic": 1094204.0082251,
+  "capture_completed_monotonic": 1094204.0736636,
+  "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+  "source_type": "operator_reported",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "label": "HBPSN-12 QUIC CONTROL operator-run full-screen capture taken after the end-of-run request. Observed values come from the declaration confirmed BEFORE launch and were not re-inspected at this moment; this image and operator stability need manual review."
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-10T17:22:09.135485+00:00",
+  "source_preflight_record": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-12\\preflight_20261110T172008Z\\preflight_record.json",
+  "source_preflight_record_sha256": "3db5ae45c4fcc1e1c3477cd0bebd31afc0e67534087bdae96072a34d16ee67ac",
+  "source_flash_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-12\\preflight_20261110T172008Z\\flash.log",
+  "source_flash_log_sha256": "b3485a2b8b359781e9de87bb3d2c66581549e83bbcaeab4ebed121d747bab6d1",
+  "flash_log": "UTF-16 re-encoding of the source flash log, preceded by the command line, because collector_v2.py reads flash.log as UTF-16.",
+  "flash_result": "Values copied from the flash section of the source preflight record.",
+  "identification_log": "Derived extract of the same esptool output, because collector_v2.py requires the board MAC in identification.log. No separate flash-id was run, as for HBPSN-09 to 11.",
+  "automatic_post_flash_boot": "Setup only; excluded from the formal session by the measured-reset log boundaries."
+}

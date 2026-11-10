@@ -1,0 +1,37 @@
+{
+  "run_id": "HBPSN-12",
+  "attempt_id": "attempt_20261110T172209Z",
+  "condition": "CONTROL",
+  "operator_confirmed": true,
+  "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration (QUIC CONTROL: UDP 14567 filter, Started, all 8 functions off, numbers left as they are)?\"",
+  "operator_statement_receipt_utc": "2026-11-10T19:06:30.533897+00:00",
+  "operator_statement_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test/test_capture.png",
+    "sha256": "47886c9a4482a7b7424cc231ff1fe623d725235e9842ab4ca7c1a76fd1e12be1",
+    "file_time_utc": "2026-11-10T19:04:56.477833+00:00",
+    "finding": "Reviewed visually, not machine-read: Clumsy fully visible on the left display with the filter udp and (udp.SrcPort == 14567 or udp.DstPort == 14567), button Stop, status Started filtering, all 8 function checkboxes unticked. Number boxes untouched: Lag Delay 100 with Outbound ticked, Drop Chance 1 with Outbound ticked, other boxes at their defaults. These numbers are not part of the expected settings and are not machine-recorded.",
+    "earlier_captures": "None; this was the first test capture for this attempt."
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to the CONTROL layout: UDP 14567 filter, Started, all 8 functions off, numbers in the boxes left as they were.",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_statement_note": "The operator confirmed in the session dialog after the capture above was taken and reviewed. The words are the dialog question and answer, not text typed by the operator."
+}

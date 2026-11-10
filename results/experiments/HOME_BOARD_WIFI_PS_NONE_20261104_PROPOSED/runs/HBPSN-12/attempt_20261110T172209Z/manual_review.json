@@ -1,0 +1,292 @@
+{
+  "run_id": "HBPSN-12",
+  "attempt_id": "attempt_20261110T172209Z",
+  "transport": "QUIC",
+  "condition": "CONTROL",
+  "boot_replicate": 2,
+  "reviewed_utc": "2026-11-10T19:55:19.239226+00:00",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30. No independent or continuous GUI observation is claimed. CONTROL means capture running with all effects off; the near-20 ms step pattern in the RTTs is retained as a flag and its cause is not established.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting from when I confirmed the declaration until after the HBPSN-12 run ended.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T19:53:00.0185904Z",
+    "receipt_helsinki": "2026-11-10T21:53:00.0185904+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message, taken before this draft; original send time unavailable",
+    "scope_as_worded": "From operator confirmation of the declaration (receipt 2026-11-10T19:06:30.533897+00:00) until after the run ended (fixed deadline 2026-11-10T19:44:47.246564+00:00).",
+    "not_backdated": true
+  },
+  "operator_host_activity_statement": {
+    "exact_statement": "Nothing was streaming or downloading during the run; Chrome Remote Desktop and VS Code were open.",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T19:53:00.0185904Z",
+    "receipt_helsinki": "2026-11-10T21:53:00.0185904+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message, taken before this draft; original send time unavailable",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "chrome_remote_desktop": "Running; the operator also answered \"Running\" in the session question dialog before launch."
+  },
+  "operator_disposition_approval": {
+    "exact_text": "yes",
+    "relayed": false,
+    "receipt_utc": "2026-11-10T19:55:18.957355500Z",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly; do not claim independently verified per-packet impairment.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_shows_control_settings": true,
+    "end_of_run_image_shows_control_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.021773,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-10T19:07:47.246564+00:00",
+    "fixed_deadline_utc": "2026-11-10T19:44:47.246564+00:00",
+    "deadline_observed_lateness_ms": 1.3005000073462725,
+    "boot_session_id": "HBPSN-12/2026-11-10T19:07:47.246564+00:00",
+    "assigned_ip": "192.168.137.25"
+  },
+  "firmware_identity": {
+    "artifact_id": "QUIC_PSN",
+    "printed_bootloader_compile_time": "Nov  3 2026 18:33:04; matches frozen QUIC_PSN bootloader",
+    "printed_elf_prefix": "9b23e164f; prefix comparison, not a full on-device digest",
+    "full_flash_record": "runs/HBPSN-12/preflight_20261110T172008Z/preflight_record.json",
+    "images_verified": 3,
+    "esptool_reported_base_mac": "40:4c:ca:56:bb:b0",
+    "flash_approval": "Session dialog answer \"Approve flash\""
+  },
+  "counts": {
+    "raw_serial_lines": 591,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 69.37973975903614,
+    "sd_ms": 33.42067278483556,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 65.609,
+    "p95_ms": 105.994,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 24.65,
+    "maximum_ms": 404.651
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "f44a0bb7bc86881a567f5c487b14f46eb75f3dc783fbfcdd857c5f01a803d1f7",
+      "operator_confirmed_receipt_utc": "2026-11-10T19:06:30.533897+00:00",
+      "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration (QUIC CONTROL: UDP 14567 filter, Started, all 8 functions off, numbers left as they are)?\"",
+      "test_capture": {
+        "path": "../helper_capture_test/test_capture.png",
+        "sha256": "47886c9a4482a7b7424cc231ff1fe623d725235e9842ab4ca7c1a76fd1e12be1",
+        "file_time_utc": "2026-11-10T19:04:56.477833+00:00",
+        "finding": "Reviewed visually, not machine-read: Clumsy fully visible on the left display with the filter udp and (udp.SrcPort == 14567 or udp.DstPort == 14567), button Stop, status Started filtering, all 8 function checkboxes unticked. Number boxes untouched: Lag Delay 100 with Outbound ticked, Drop Chance 1 with Outbound ticked, other boxes at their defaults. These numbers are not part of the expected settings and are not machine-recorded.",
+        "earlier_captures": "None; this was the first test capture for this attempt."
+      }
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "d6a1dcce409fa2fcfa4bf9510d6922af7fac9647f3b357abb447a675d8a3e1cb",
+      "capture_started_utc": "2026-11-10T19:07:44.018847+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display",
+      "settings_seen": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "all_8_functions": "unticked (Lag, Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)",
+        "number_boxes_left_as_found": "Lag Delay 100 with Outbound ticked, Drop Chance 1 with Outbound ticked; other boxes at defaults. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "21.07 10/11/2026 on both displays",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read"
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "1d32ef20e98df3fdbc78dfab15f6ed5b34c2e45a30c955765528b3bab2ea5fb2",
+      "capture_started_utc": "2026-11-10T19:44:47.268337+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display, same place as pre-run",
+      "settings_seen": {
+        "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "all_8_functions": "unticked (Lag, Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth)",
+        "number_boxes_left_as_found": "Lag Delay 100 with Outbound ticked, Drop Chance 1 with Outbound ticked; other boxes at defaults. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "21.44 10/11/2026 on both displays",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read",
+      "limit": "The helper PASS for both phases came from the pre-launch declaration; the settings_seen values come from visual review of these images."
+    },
+    "no_image_between": "No Clumsy image exists between the pre-run and end-of-run captures. Stability between them rests on the operator statement.",
+    "pre_launch_test_captures": "One test capture (helper_capture_test) was taken and showed Clumsy fully; the launch followed it. An earlier command attempt failed before capturing because the shell variables were not set and wrote nothing."
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-10T21:07:47 W (703) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-10T21:07:50 W (3283) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-10T21:07:50 W (3453) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-10T21:07:47 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-10T19:07:47.255855+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-10T19:44:47.868568+00:00",
+    "deadline_utc": "2026-11-10T19:44:47.246564+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-12\\attempt_20261110T172209Z\\SUMMARY.md"
+  },
+  "rtt_step_pattern": {
+    "observation": "RTTs in this CONTROL run fall on levels about 20 ms apart: {'26 ms': 76, '46 ms': 79, '66 ms': 83, '86 ms': 84, '106 ms': 82, '126 ms': 7, '146 ms': 3, '406 ms': 1} (counts of the 415 selected values by nearest level). The P95 of 105.994 ms is on the 106 ms level. The same pattern is present in the 8 other runs with 415 selected values: concentration R 0.865 to 0.998, share within 3 ms of the ladder 0.916 to 1.000; this run has R 0.916 and share 0.945.",
+    "measure": "Circular concentration of RTT modulo 20 ms (R: 0 = even, 1 = all on one phase) and the share of values within 3 ms of the phase centre (a flat spread would give about 0.30).",
+    "per_run_closed_and_this_run": {
+      "HBPSN-02": {
+        "n": 415,
+        "phase_centre_ms": 7.51,
+        "concentration_R": 0.995,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-04": {
+        "n": 415,
+        "phase_centre_ms": 7.53,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-05": {
+        "n": 415,
+        "phase_centre_ms": 6.39,
+        "concentration_R": 0.865,
+        "share_within_3ms_of_ladder": 0.916
+      },
+      "HBPSN-06": {
+        "n": 415,
+        "phase_centre_ms": 7.39,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-07": {
+        "n": 415,
+        "phase_centre_ms": 7.42,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-09": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-10": {
+        "n": 415,
+        "phase_centre_ms": 6.03,
+        "concentration_R": 0.918,
+        "share_within_3ms_of_ladder": 0.959
+      },
+      "HBPSN-11": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.996,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-12": {
+        "n": 415,
+        "phase_centre_ms": 6.04,
+        "concentration_R": 0.916,
+        "share_within_3ms_of_ladder": 0.945
+      }
+    },
+    "status": "Observation only. The cause is not established; an earlier working suspicion is system timing granularity. It is kept as a flag so the thesis analysis does not read the steps as network effects."
+  },
+  "network_note": {
+    "board_ip_in_run": "192.168.137.25",
+    "gateway_in_run": "192.168.137.1 (serial.raw.log)",
+    "ip_history_from_register": {
+      "HBPSN-01": "192.168.137.212",
+      "HBPSN-02": "192.168.137.212",
+      "HBPSN-03": "192.168.137.112",
+      "HBPSN-04": "192.168.137.112",
+      "HBPSN-05": "192.168.137.112",
+      "HBPSN-06": "192.168.137.112",
+      "HBPSN-07": "192.168.137.112",
+      "HBPSN-08": "192.168.137.112",
+      "HBPSN-09": "192.168.137.112",
+      "HBPSN-10": "192.168.137.112",
+      "HBPSN-11": "192.168.137.25"
+    },
+    "hotspot": "On when checked after the flash (192.168.137.1 present, board neighbour entry 192.168.137.25) and not restarted by the operator this time.",
+    "finding": "Same address as HBPSN-11; the QUIC runs HBPSN-03 to 10 had .112. The collector records the actual assigned IP at startup and does not depend on a fixed address."
+  },
+  "setup_notes": {
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "helper": "operator_settings_helper.py copied from HBPSN-11 with the run ID check and labels changed to HBPSN-12 at the operator instruction. See DEVIATION_settings_evidence_source.json.",
+    "host_activity": "Per operator statement, Chrome Remote Desktop and VS Code were open; a Claude Code session on the host ran file-polling checks. Network use was not measured.",
+    "setup_boot": "The post-flash setup boot ran from 17:20:36Z flash end to the measured reset and is excluded by the log boundaries. It reached MQTT over QUIC; no startup crash occurred.",
+    "register": "Row 12 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "still_running_pids": [
+      12936,
+      33208,
+      10892,
+      5108
+    ],
+    "monitor_logs": "monitor_stream.log and monitor_after_run.log were still open and growing, are not in SHA256SUMS.json and are not cited by this review."
+  },
+  "retained_flags": [
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BETWEEN_PRE_RUN_AND_END_OF_RUN",
+    "HOST_REMOTE_DESKTOP_AND_VS_CODE_OPEN_DURING_RUN",
+    "RTT_20_MS_STEP_PATTERN_PRESENT",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn12_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

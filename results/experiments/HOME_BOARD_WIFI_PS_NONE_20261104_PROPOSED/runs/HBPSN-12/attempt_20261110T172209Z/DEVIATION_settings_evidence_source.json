@@ -1,0 +1,32 @@
+{
+  "run_id": "HBPSN-12",
+  "attempt_id": "attempt_20261110T172209Z",
+  "deviation": "SETTINGS_EVIDENCE_SOURCE_OPERATOR_REPORTED",
+  "status": "APPLIES_IF_THIS_ATTEMPT_IS_LAUNCHED",
+  "recorded_utc": "2026-11-10T17:22:09.148439+00:00",
+  "previous_practice": "HBPSN-01 to HBPSN-07 pre_run responses were written in an agent session; HBPSN-09, HBPSN-10 and HBPSN-11 used operator_settings_helper.py with operator-reported values.",
+  "this_run": "source_type operator_reported. The helper captures the full screen after each settings request. Observed values come from clumsy_declaration.json, confirmed by the operator before launch.",
+  "helper_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-11\\attempt_20261110T144927Z\\operator_settings_helper.py",
+  "helper_source_sha256": "92a9266a546f72ff41e877788e6111b67ed35a21ba6d612a3e7ce81063e0c83f",
+  "helper_sha256": "b3009ad5e5a7499c1350b9ca471036f801a47f00c801a58c8e3264d7a9669039",
+  "helper_change": {
+    "run_id_check": "value.get('run_id') != 'HBPSN-11' replaced by value.get('run_id') != 'HBPSN-12'",
+    "label_text": "Docstring and both capture labels changed from HBPSN-11 (TCP_TLS LAG100_OUT) to HBPSN-12 (QUIC CONTROL).",
+    "instruction": "Operator instruction: copy from HBPSN-11, change the run ID check and fix the labels to HBPSN-12.",
+    "logic_changed": false
+  },
+  "end_of_run_limit": "The end_of_run observed values are the same declaration confirmed before launch and are not re-inspected at the end of the run. The end_of_run image and operator stability need manual review.",
+  "not_machine_read": "The helper does not read checkboxes or text from the image. The numbers left in the Clumsy boxes (for example the Lag and Drop values) are not part of the expected settings and are not machine-recorded.",
+  "plan_note": "The plan allows settings that are only operator-reported if they are labelled explicitly (EXPERIMENT_PLAN_PROPOSED_V1.md line 30).",
+  "preflight_base_note": "preflight.json is based on HBPSN-10 (QUIC). expected_clumsy_settings uses the HBPSN-09 CONTROL structure with the QUIC filter udp and (udp.SrcPort == 14567 or udp.DstPort == 14567). HBPSN-10 host_activity was removed because it describes HBPSN-10 only; the host activity for this run is taken from the operator statement saved in clumsy_declaration.json.",
+  "host_activity_added": {
+    "value": "Chrome Remote Desktop running and nothing streaming or downloading, operator-reported in the session dialog before launch; existing host applications remain; Windows Mobile Hotspot was on when checked after the flash; unchanged physical board/sensor setup per experiment context",
+    "authority": "Operator answers in the session question dialog (\"Running\" for Chrome Remote Desktop, \"Nothing running\" for streaming and downloading)",
+    "receipt_utc": "2026-11-10T19:06:30.533897+00:00",
+    "reason": "HBPSN-10 host_activity was removed from the base preflight because it describes HBPSN-10 only."
+  },
+  "operational_notes": [
+    "The board was flashed at 17:20:08Z to 17:20:36Z with the frozen QUIC_PSN images and then ran its automatic post-flash boot; COM6 was not opened for anything else.",
+    "Windows Mobile Hotspot was on (192.168.137.1 present) when checked after the flash."
+  ]
+}

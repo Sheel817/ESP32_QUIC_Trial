@@ -1,0 +1,49 @@
+{
+  "phase": "end_of_run",
+  "nonce": "651c1dd90dcf4fc08302dc0dacd0bc84",
+  "requested_utc": "2026-11-10T19:44:47.251632+00:00",
+  "requested_monotonic": 1094203.9915304,
+  "expected": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "anchor": {
+    "reset_request_utc": "2026-11-10T19:07:47.240443+00:00",
+    "reset_release_utc": "2026-11-10T19:07:47.246564+00:00",
+    "reset_release_monotonic": 1091983.9864302,
+    "deadline_monotonic": 1094203.9864302,
+    "deadline_utc": "2026-11-10T19:44:47.246564+00:00",
+    "method": "SDK RTS reset release; host clocks sampled after successful release API return",
+    "boundary_precision": "Host API completion, not a physical edge measurement",
+    "server_boundaries": {
+      "stdout": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stdout.log",
+        "byte_offset": 8987218
+      },
+      "stderr": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\quic_server_start_20261103T163259.stderr.log",
+        "byte_offset": 0
+      },
+      "sensor_csv": {
+        "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+        "byte_offset": 4890718
+      }
+    }
+  },
+  "response_timeout_seconds": 30
+}
