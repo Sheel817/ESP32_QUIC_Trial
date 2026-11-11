@@ -101827,3 +101827,167 @@ RECEIVED [esp32/quic/test]: {"seq":440,"sensor":"DHT11","uptime_ms":2211431,"tem
 Demo publication returned to ESP32
 RECEIVED [esp32/quic/test]: {"seq":441,"sensor":"DHT11","uptime_ms":2216441,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
 Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":442,"sensor":"DHT11","uptime_ms":2221451,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":443,"sensor":"DHT11","uptime_ms":2226461,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":444,"sensor":"DHT11","uptime_ms":2231471,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":445,"sensor":"DHT11","uptime_ms":2236481,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":446,"sensor":"DHT11","uptime_ms":2241491,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":447,"sensor":"DHT11","uptime_ms":2246501,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":448,"sensor":"DHT11","uptime_ms":2251511,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":449,"sensor":"DHT11","uptime_ms":2256521,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":450,"sensor":"DHT11","uptime_ms":2261531,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":451,"sensor":"DHT11","uptime_ms":2266541,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":452,"sensor":"DHT11","uptime_ms":2271551,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":453,"sensor":"DHT11","uptime_ms":2276561,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":454,"sensor":"DHT11","uptime_ms":2281571,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":455,"sensor":"DHT11","uptime_ms":2286581,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":456,"sensor":"DHT11","uptime_ms":2291591,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":457,"sensor":"DHT11","uptime_ms":2296601,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":458,"sensor":"DHT11","uptime_ms":2301611,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":459,"sensor":"DHT11","uptime_ms":2306621,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":460,"sensor":"DHT11","uptime_ms":2311631,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":461,"sensor":"DHT11","uptime_ms":2316641,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":462,"sensor":"DHT11","uptime_ms":2321651,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":463,"sensor":"DHT11","uptime_ms":2326661,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":464,"sensor":"DHT11","uptime_ms":2331671,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":465,"sensor":"DHT11","uptime_ms":2336681,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":466,"sensor":"DHT11","uptime_ms":2341691,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":467,"sensor":"DHT11","uptime_ms":2346701,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":468,"sensor":"DHT11","uptime_ms":2351711,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":469,"sensor":"DHT11","uptime_ms":2356721,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":470,"sensor":"DHT11","uptime_ms":2361731,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":471,"sensor":"DHT11","uptime_ms":2366741,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":472,"sensor":"DHT11","uptime_ms":2371751,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":473,"sensor":"DHT11","uptime_ms":2376761,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":474,"sensor":"DHT11","uptime_ms":2381771,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":475,"sensor":"DHT11","uptime_ms":2386781,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":476,"sensor":"DHT11","uptime_ms":2391791,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":477,"sensor":"DHT11","uptime_ms":2396801,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":478,"sensor":"DHT11","uptime_ms":2401811,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":479,"sensor":"DHT11","uptime_ms":2406821,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":480,"sensor":"DHT11","uptime_ms":2411831,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":481,"sensor":"DHT11","uptime_ms":2416841,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":482,"sensor":"DHT11","uptime_ms":2421851,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":483,"sensor":"DHT11","uptime_ms":2426861,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":484,"sensor":"DHT11","uptime_ms":2431871,"temperature_c":38.0,"humidity_pct":30.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":485,"sensor":"DHT11","uptime_ms":2436881,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":486,"sensor":"DHT11","uptime_ms":2441891,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":487,"sensor":"DHT11","uptime_ms":2446901,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":488,"sensor":"DHT11","uptime_ms":2451911,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":489,"sensor":"DHT11","uptime_ms":2456921,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":490,"sensor":"DHT11","uptime_ms":2461931,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":491,"sensor":"DHT11","uptime_ms":2466941,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":492,"sensor":"DHT11","uptime_ms":2471951,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":493,"sensor":"DHT11","uptime_ms":2476961,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":494,"sensor":"DHT11","uptime_ms":2481971,"temperature_c":38.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":495,"sensor":"DHT11","uptime_ms":2486981,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":496,"sensor":"DHT11","uptime_ms":2491991,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":497,"sensor":"DHT11","uptime_ms":2497001,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":498,"sensor":"DHT11","uptime_ms":2502011,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":499,"sensor":"DHT11","uptime_ms":2507021,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":500,"sensor":"DHT11","uptime_ms":2512031,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":501,"sensor":"DHT11","uptime_ms":2517041,"temperature_c":38.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":502,"sensor":"DHT11","uptime_ms":2522052,"temperature_c":38.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":503,"sensor":"DHT11","uptime_ms":2527061,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":504,"sensor":"DHT11","uptime_ms":2532072,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":505,"sensor":"DHT11","uptime_ms":2537081,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":506,"sensor":"DHT11","uptime_ms":2542091,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":507,"sensor":"DHT11","uptime_ms":2547101,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":508,"sensor":"DHT11","uptime_ms":2552111,"temperature_c":39.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":509,"sensor":"DHT11","uptime_ms":2557121,"temperature_c":39.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":510,"sensor":"DHT11","uptime_ms":2562131,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":511,"sensor":"DHT11","uptime_ms":2567141,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":512,"sensor":"DHT11","uptime_ms":2572152,"temperature_c":39.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":513,"sensor":"DHT11","uptime_ms":2577161,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":514,"sensor":"DHT11","uptime_ms":2582171,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":515,"sensor":"DHT11","uptime_ms":2587181,"temperature_c":39.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":516,"sensor":"DHT11","uptime_ms":2592191,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":517,"sensor":"DHT11","uptime_ms":2597201,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":518,"sensor":"DHT11","uptime_ms":2602211,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":519,"sensor":"DHT11","uptime_ms":2607221,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":520,"sensor":"DHT11","uptime_ms":2612231,"temperature_c":39.0,"humidity_pct":29.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":521,"sensor":"DHT11","uptime_ms":2617241,"temperature_c":39.0,"humidity_pct":27.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":522,"sensor":"DHT11","uptime_ms":2622251,"temperature_c":39.0,"humidity_pct":28.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":523,"sensor":"DHT11","uptime_ms":2627261,"temperature_c":39.0,"humidity_pct":26.0,"sensor_error":0}
+Demo publication returned to ESP32

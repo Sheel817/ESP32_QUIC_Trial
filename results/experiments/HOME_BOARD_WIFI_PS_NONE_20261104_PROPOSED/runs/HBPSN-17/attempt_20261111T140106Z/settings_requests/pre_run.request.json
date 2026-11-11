@@ -1,0 +1,27 @@
+{
+  "phase": "pre_run",
+  "nonce": "d0b0ccc24afd449383682efa8035d61d",
+  "requested_utc": "2026-11-11T14:05:02.018941+00:00",
+  "requested_monotonic": 1160216.3258206,
+  "expected": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Drop": {
+      "enabled": true,
+      "chance_percent": 1.0,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Lag": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "anchor": null,
+  "response_timeout_seconds": 30
+}
