@@ -1,0 +1,103 @@
+{
+  "run_id": "HBPSN-15",
+  "transport": "QUIC",
+  "condition": "CONTROL",
+  "order": 15,
+  "block": 3,
+  "label": "SETUP_ONLY_NOT_FORMAL_NO_MEASURED_RESET",
+  "created_utc": "2026-11-11T11:17:22.188774+00:00",
+  "protocol_plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "operator_flash_approval": {
+    "exact_text": "Approve flash",
+    "relayed": false,
+    "receipt_utc": "2026-11-11T11:17:21.192344+00:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original message send time unavailable"
+  },
+  "schedule_confirmation": "Plan line 54, register row 15 and freeze_manifest order 15: HBPSN-15, QUIC, CONTROL, block 3; configured lag 0, drop 0, direction none.",
+  "full_flash_reason": "All three images including the QUIC bootloader, as instructed, because the board currently holds the TCP_TLS_PSN images from HBPSN-14; same procedure as HBPSN-10, HBPSN-12 and HBPSN-15.",
+  "bootloader_file_stamp_present": {
+    "date": true,
+    "time": true
+  },
+  "flash_args_verification": {
+    "flash_args_path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\flash_args",
+    "flash_args_sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0",
+    "flash_args_text": "--flash-mode dio --flash-freq 80m --flash-size 8MB\n0x0 bootloader/bootloader.bin\n0x8000 partition_table/partition-table.bin\n0x10000 quic_demo.bin\n",
+    "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+    "artifact_id": "QUIC_PSN",
+    "files": [
+      {
+        "offset": "0x0",
+        "file": "bootloader/bootloader.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\bootloader\\bootloader.bin",
+        "bytes": 22096,
+        "sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+        "frozen_sha256": "67b2135b90b9d06786af00ea23fbabf4b7e3a42f2208dd93ae8ec8116faffc73",
+        "frozen_bytes": 22096,
+        "match": true
+      },
+      {
+        "offset": "0x8000",
+        "file": "partition_table/partition-table.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\partition_table\\partition-table.bin",
+        "bytes": 3072,
+        "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+        "frozen_sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16",
+        "frozen_bytes": 3072,
+        "match": true
+      },
+      {
+        "offset": "0x10000",
+        "file": "quic_demo.bin",
+        "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build\\quic_demo.bin",
+        "bytes": 1637280,
+        "sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+        "frozen_sha256": "6c20b3dbf72d6859997a70c39f27ae0dd42791437a98c9aba93d8c017bfce198",
+        "frozen_bytes": 1637280,
+        "match": true
+      }
+    ],
+    "all_match": true
+  },
+  "server": {
+    "pid": 23100,
+    "parent_pid": 25344,
+    "process_query": [
+      "\"C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\.quic-venv\\Scripts\\python.exe\" -u C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py ",
+      "2026-11-03T14:32:59.4004410Z",
+      "0.0.0.0:14567 pid=23100"
+    ]
+  },
+  "flash": {
+    "started_utc": "2026-11-11T11:17:22.206858+00:00",
+    "command": [
+      "C:/Users/newsh/.espressif/python_env/idf6.1_py3.14_env/Scripts/python.exe",
+      "-m",
+      "esptool",
+      "--chip",
+      "esp32c6",
+      "--port",
+      "COM6",
+      "--baud",
+      "460800",
+      "--before",
+      "default-reset",
+      "--after",
+      "hard-reset",
+      "write-flash",
+      "@flash_args"
+    ],
+    "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\wifi_ps_none_20261103\\build",
+    "setup_only": true,
+    "ended_utc": "2026-11-11T11:17:49.819873+00:00",
+    "exit_code": 0,
+    "reported_mac": "40:4c:ca:56:bb:b0",
+    "expected_mac": "40:4c:ca:56:bb:b0",
+    "mac_match": true,
+    "aborted_on_mac_mismatch": false,
+    "verified_image_count": 3,
+    "full_esptool_output": "esptool --chip esp32c6 --port COM6 --baud 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 8MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 quic_demo.bin\r\nesptool v5.6.0\r\nSerial port COM6:\r\nConnecting....\r\nConnected to ESP32-C6 on COM6:\r\nChip type:          ESP32-C6 (QFN40) (revision v0.0)\r\nFeatures:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash\r\nCrystal frequency:  40MHz\r\nMAC:                40:4c:ca:ff:fe:56:bb:b0\r\nBASE MAC:           40:4c:ca:56:bb:b0\r\nMAC_EXT:            ff:fe\r\n\r\nUploading stub flasher...\r\nRunning stub flasher...\r\nStub flasher running.\r\nChanging baud rate to 460800...\r\nChanged.\r\n\r\nConfiguring flash size...\r\n\r\nWriting 'bootloader/bootloader.bin' at 0x00000000...\r\nSHA digest in image updated.\r\nFlash will be erased from 0x00000000 to 0x00005fff...\r\nCompressed 22096 bytes to 13909...\r\nWriting at 0x00005650 ============================== 100.0% 13.58kB/13.58kB [0s] \r\nWrote 22096 bytes (13909 compressed) at 0x00000000 in 0.6 seconds (294.8 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nWriting 'partition_table/partition-table.bin' at 0x00008000...\r\nFlash will be erased from 0x00008000 to 0x00008fff...\r\nCompressed 3072 bytes to 106...\r\nWriting at 0x00008c00 ============================== 100.0% 106B/106B [0s] \r\nWrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (1937.6 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nWriting 'quic_demo.bin' at 0x00010000...\r\nFlash will be erased from 0x00010000 to 0x0019ffff...\r\nCompressed 1637280 bytes to 968498...\r\nWriting at 0x0001f469 >                                1.7% 16.00kB/945.80kB [0s] \r\nWriting at 0x0002b846 =                                3.4% 32.00kB/945.80kB [0s] \r\nWriting at 0x0003619a =>                               5.1% 48.00kB/945.80kB [1s] \r\nWriting at 0x0003bd10 ==                               6.8% 64.00kB/945.80kB [1s] \r\nWriting at 0x000402c4 ==>                              8.5% 80.00kB/945.80kB [2s] \r\nWriting at 0x00046c1f ===                             10.2% 96.00kB/945.80kB [2s] \r\nWriting at 0x0004f2f4 ===>                            11.8% 112.00kB/945.80kB [3s] \r\nWriting at 0x00056ada ====                            13.5% 128.00kB/945.80kB [3s] \r\nWriting at 0x0005d500 ====>                           15.2% 144.00kB/945.80kB [3s] \r\nWriting at 0x0006377e =====                           16.9% 160.00kB/945.80kB [4s] \r\nWriting at 0x0006af34 =====>                          18.6% 176.00kB/945.80kB [4s] \r\nWriting at 0x00071eaf ======                          20.3% 192.00kB/945.80kB [5s] \r\nWriting at 0x00078962 ======>                         22.0% 208.00kB/945.80kB [5s] \r\nWriting at 0x0007f206 =======                         23.7% 224.00kB/945.80kB [5s] \r\nWriting at 0x00085b97 =======>                        25.4% 240.00kB/945.80kB [6s] \r\nWriting at 0x0008d383 ========                        27.1% 256.00kB/945.80kB [6s] \r\nWriting at 0x00093a6c ========>                       28.8% 272.00kB/945.80kB [7s] \r\nWriting at 0x00099fa7 =========                       30.5% 288.00kB/945.80kB [7s] \r\nWriting at 0x000a0667 =========>                      32.1% 304.00kB/945.80kB [7s] \r\nWriting at 0x000a6d0c ==========                      33.8% 320.00kB/945.80kB [8s] \r\nWriting at 0x000ad50f ==========>                     35.5% 336.00kB/945.80kB [8s] \r\nWriting at 0x000b382b ===========                     37.2% 352.00kB/945.80kB [8s] \r\nWriting at 0x000bb5a9 ===========>                    38.9% 368.00kB/945.80kB [9s] \r\nWriting at 0x000c19f7 ============                    40.6% 384.00kB/945.80kB [9s] \r\nWriting at 0x000c8184 ============>                   42.3% 400.00kB/945.80kB [10s] \r\nWriting at 0x000cde5d =============                   44.0% 416.00kB/945.80kB [10s] \r\nWriting at 0x000d3ee1 =============>                  45.7% 432.00kB/945.80kB [10s] \r\nWriting at 0x000d9cd3 ==============                  47.4% 448.00kB/945.80kB [11s] \r\nWriting at 0x000e0448 ==============>                 49.1% 464.00kB/945.80kB [11s] \r\nWriting at 0x000e6908 ===============                 50.8% 480.00kB/945.80kB [12s] \r\nWriting at 0x000ecd68 ===============>                52.4% 496.00kB/945.80kB [12s] \r\nWriting at 0x000f3c84 ================                54.1% 512.00kB/945.80kB [12s] \r\nWriting at 0x000fb305 ================>               55.8% 528.00kB/945.80kB [13s] \r\nWriting at 0x00101d04 =================               57.5% 544.00kB/945.80kB [13s] \r\nWriting at 0x00108d8e =================>              59.2% 560.00kB/945.80kB [13s] \r\nWriting at 0x0010fd16 ==================              60.9% 576.00kB/945.80kB [14s] \r\nWriting at 0x001173ea ==================>             62.6% 592.00kB/945.80kB [14s] \r\nWriting at 0x0011daca ===================             64.3% 608.00kB/945.80kB [15s] \r\nWriting at 0x00123800 ===================>            66.0% 624.00kB/945.80kB [15s] \r\nWriting at 0x00129577 ====================            67.7% 640.00kB/945.80kB [15s] \r\nWriting at 0x0012f162 ====================>           69.4% 656.00kB/945.80kB [16s] \r\nWriting at 0x001350c5 =====================           71.1% 672.00kB/945.80kB [16s] \r\nWriting at 0x0013b055 =====================>          72.7% 688.00kB/945.80kB [16s] \r\nWriting at 0x00140bec ======================          74.4% 704.00kB/945.80kB [17s] \r\nWriting at 0x0014673a ======================>         76.1% 720.00kB/945.80kB [17s] \r\nWriting at 0x0014cdee =======================         77.8% 736.00kB/945.80kB [18s] \r\nWriting at 0x00153453 =======================>        79.5% 752.00kB/945.80kB [18s] \r\nWriting at 0x001592eb ========================        81.2% 768.00kB/945.80kB [18s] \r\nWriting at 0x0015f4df ========================>       82.9% 784.00kB/945.80kB [19s] \r\nWriting at 0x0016547b =========================       84.6% 800.00kB/945.80kB [19s] \r\nWriting at 0x0016b4cd =========================>      86.3% 816.00kB/945.80kB [20s] \r\nWriting at 0x001716b9 ==========================      88.0% 832.00kB/945.80kB [20s] \r\nWriting at 0x00177c76 ==========================>     89.7% 848.00kB/945.80kB [20s] \r\nWriting at 0x0017deb5 ===========================     91.4% 864.00kB/945.80kB [21s] \r\nWriting at 0x001843cd ===========================>    93.0% 880.00kB/945.80kB [21s] \r\nWriting at 0x00189e52 ============================    94.7% 896.00kB/945.80kB [21s] \r\nWriting at 0x001910aa ============================>   96.4% 912.00kB/945.80kB [22s] \r\nWriting at 0x00196a7f =============================   98.1% 928.00kB/945.80kB [22s] \r\nWriting at 0x0019eb81 =============================>  99.8% 944.00kB/945.80kB [23s] \r\nWriting at 0x0019fba0 ============================== 100.0% 945.80kB/945.80kB [23s] \r\nWrote 1637280 bytes (968498 compressed) at 0x00010000 in 23.3 seconds (563.2 kbit/s).\r\nVerifying written data...\r\nHash of data verified.\r\n\r\nHard resetting via RTS pin...\r\n",
+    "flash_log_sha256": "ca0911021f28fe5338d349233238ca5a087f766930a6453d729bc8d6f46adc66",
+    "passed": true
+  }
+}

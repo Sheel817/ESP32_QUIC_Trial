@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_20261103T143300_220342Z_c7ett8c2.csv",
+  "start_byte": 5068593,
+  "end_byte": 5109282,
+  "deadline_utc": "2026-11-11T12:01:06.347478+00:00",
+  "tail_closed_utc": "2026-11-11T12:01:06.347951+00:00"
+}

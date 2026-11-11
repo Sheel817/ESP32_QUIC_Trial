@@ -1,0 +1,37 @@
+{
+  "run_id": "HBPSN-15",
+  "attempt_id": "attempt_20261111T111756Z",
+  "condition": "CONTROL",
+  "operator_confirmed": true,
+  "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration for HBPSN-15 (QUIC CONTROL: UDP 14567 filter, Started, all 8 functions off, numbers in the boxes left as they were)?\"",
+  "operator_statement_receipt_utc": "2026-11-11T11:22:09.692732+00:00",
+  "operator_statement_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test/test_capture.png",
+    "sha256": "024771b53770d4fcdd0b4390462d238f1d0b2bab867755c16c9d6dd5baeb307e",
+    "file_time_utc": "2026-11-11T11:20:41.203434+00:00",
+    "finding": "Reviewed visually (full image and a crop of the Clumsy window), not machine-read: Clumsy fully visible on the left display with the filter udp and (udp.SrcPort == 14567 or udp.DstPort == 14567), button Stop, status Started filtering, and all 8 function checkboxes (Lag, Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes other than those in the expected settings (Lag delay 100, Drop chance 1) are not machine-recorded. No video or media player is visible in the capture.",
+    "earlier_captures": "None: this is the first and only test capture for this attempt."
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to the CONTROL layout recorded for HBPSN-12: UDP 14567 filter, Started, all 8 functions off, numbers in the boxes left as they were.",
+  "observed": {
+    "filter": "udp and (udp.SrcPort == 14567 or udp.DstPort == 14567)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_statement_note": "The operator confirmed in the session dialog after the capture above was taken and reviewed. The words are the dialog question and answer, not text typed by the operator."
+}
