@@ -1,0 +1,1822 @@
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM6 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM6 115200
+--- Standard input is not a TTY, running in non-interactive mode. Reading commands from stdin: reset, flash, flash-all, app-flash, output, log, timestamps, bootloader, send <text>, sleep <seconds>, expect [--timeout <seconds>] <regex>, exit | Quit: 'exit' command, EOF or Ctrl+C
+2026-11-11T17:46:37 ESP-ROM:esp32c6-20220919
+2026-11-11T17:46:37 Build:Sep 19 2022
+2026-11-11T17:46:37 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-11T17:46:37 SPIWP:0xee
+2026-11-11T17:46:37 mode:DIO, clock div:2
+2026-11-11T17:46:37 load:0x40875730,len:0x1648
+2026-11-11T17:46:37 load:0x4086b910,len:0xdbc
+2026-11-11T17:46:37 load:0x4086e610,len:0x31f0
+2026-11-11T17:46:37 entry 0x4086b91a
+2026-11-11T17:46:37 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-11T17:46:37 I (24) boot: compile time Nov  4 2026 01:52:32
+2026-11-11T17:46:37 I (24) boot: chip revision: v0.0
+2026-11-11T17:46:37 I (24) boot: efuse block revision: v0.2
+2026-11-11T17:46:37 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-11T17:46:37 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-11T17:46:37 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-11T17:46:37 I (38) boot: Enabling RNG early entropy source...
+2026-11-11T17:46:37 I (43) boot: Partition Table:
+2026-11-11T17:46:37 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-11T17:46:37 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-11T17:46:37 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-11T17:46:37 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-11T17:46:37 I (71) boot: End of partition table
+2026-11-11T17:46:37 I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3b14ch (241996) map
+2026-11-11T17:46:37 I (128) esp_image: segment 1: paddr=0004b174 vaddr=40800000 size=04ea4h ( 20132) load
+2026-11-11T17:46:37 I (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=115f10h (1138448) map
+2026-11-11T17:46:37 I (351) esp_image: segment 3: paddr=00165f38 vaddr=40804ea4 size=13730h ( 79664) load
+2026-11-11T17:46:37 I (369) esp_image: segment 4: paddr=00179670 vaddr=408185e0 size=0485ch ( 18524) load
+2026-11-11T17:46:37 I (379) boot: Loaded app from partition at offset 0x10000
+2026-11-11T17:46:37 I (380) boot: Disabling RNG early entropy source...
+2026-11-11T17:46:37 I (390) cpu_start: Unicore app
+2026-11-11T17:46:37 I (398) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-11T17:46:37 I (398) cpu_start: Pro cpu start user code
+2026-11-11T17:46:37 I (399) cpu_start: cpu freq: 160000000 Hz
+2026-11-11T17:46:37 I (400) app_init: Application information:
+2026-11-11T17:46:37 I (404) app_init: Project name:     quic_demo
+2026-11-11T17:46:37 I (408) app_init: App version:      3c8c7a3-dirty
+2026-11-11T17:46:37 I (413) app_init: Compile time:     Nov  4 2026 01:51:29
+2026-11-11T17:46:37 I (418) app_init: ELF file SHA256:  1f661a4f7...
+2026-11-11T17:46:37 I (422) app_init: ESP-IDF:          v6.1
+2026-11-11T17:46:37 I (426) efuse_init: Min chip rev:     v0.0
+2026-11-11T17:46:37 I (430) efuse_init: Max chip rev:     v0.99 
+2026-11-11T17:46:37 I (434) efuse_init: Chip rev:         v0.0
+2026-11-11T17:46:37 I (437) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-11T17:46:37 I (444) heap_init: At 40824790 len 00057E80 (351 KiB): RAM
+2026-11-11T17:46:37 I (449) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-11T17:46:37 I (454) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-11T17:46:37 I (460) spi_flash: detected chip: gd
+2026-11-11T17:46:37 I (463) spi_flash: flash io: dio
+2026-11-11T17:46:37 I (466) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-11T17:46:37 I (472) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-11T17:46:37 I (479) coexist: coex firmware version: a830d28
+2026-11-11T17:46:37 I (483) coexist: coexist rom version 5b8dcfa
+2026-11-11T17:46:37 I (487) main_task: Started on CPU0
+2026-11-11T17:46:37 I (507) main_task: Calling app_main()
+2026-11-11T17:46:37 I (507) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-11T17:46:37 I (507) quic_demo_main: ESP-IDF version: v6.1
+2026-11-11T17:46:37 I (507) example_connect: Start example_connect.
+2026-11-11T17:46:37 I (507) pp: pp rom version: 5b8dcfa
+2026-11-11T17:46:37 I (517) net80211: net80211 rom version: 5b8dcfa
+2026-11-11T17:46:37 I (527) wifi:wifi driver task: 4082a7f0, prio:23, stack:6656, core=0
+2026-11-11T17:46:37 I (527) wifi:wifi firmware version: e12a754
+2026-11-11T17:46:37 I (527) wifi:wifi certification version: v7.0
+2026-11-11T17:46:37 I (527) wifi:config NVS flash: enabled
+2026-11-11T17:46:37 I (537) wifi:config nano formatting: disabled
+2026-11-11T17:46:37 I (537) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-11T17:46:37 I (547) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-11T17:46:37 I (547) wifi:Init static rx mgmt buffer num: 5
+2026-11-11T17:46:37 I (557) wifi:Init management short buffer num: 32
+2026-11-11T17:46:37 I (557) wifi:Init dynamic tx buffer num: 32
+2026-11-11T17:46:37 I (567) wifi:Init static tx FG buffer num: 2
+2026-11-11T17:46:37 I (567) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-11T17:46:37 I (577) wifi:Init static rx buffer num: 10
+2026-11-11T17:46:37 I (577) wifi:Init dynamic rx buffer num: 32
+2026-11-11T17:46:37 I (577) wifi_init: rx ba win: 6
+2026-11-11T17:46:37 I (587) wifi_init: accept mbox: 6
+2026-11-11T17:46:37 I (587) wifi_init: tcpip mbox: 32
+2026-11-11T17:46:37 I (587) wifi_init: udp mbox: 6
+2026-11-11T17:46:37 I (597) wifi_init: tcp mbox: 6
+2026-11-11T17:46:37 I (597) wifi_init: tcp tx win: 5760
+2026-11-11T17:46:37 I (597) wifi_init: tcp rx win: 5760
+2026-11-11T17:46:37 I (597) wifi_init: tcp mss: 1440
+2026-11-11T17:46:37 I (607) wifi_init: WiFi IRAM OP enabled
+2026-11-11T17:46:37 I (607) wifi_init: WiFi RX IRAM OP enabled
+2026-11-11T17:46:37 I (617) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-11T17:46:37 I (617) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-11T17:46:38 I (677) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-11T17:46:38 
+2026-11-11T17:46:38 I (677) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-11T17:46:38 I (677) wifi:enable tsf
+2026-11-11T17:46:38 I (677) example_connect: Connecting to SHEEL 3460...
+2026-11-11T17:46:38 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-11T17:46:38 I (687) example_connect: Waiting for IP(s)
+--- Command: 'reset'
+2026-11-11T17:46:39 ESP-ROM:esp32c6-20220919
+2026-11-11T17:46:39 Build:Sep 19 2022
+2026-11-11T17:46:39 rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-11T17:46:39 SPIWP:0xee
+2026-11-11T17:46:39 mode:DIO, clock div:2
+2026-11-11T17:46:39 load:0x40875730,len:0x1648
+2026-11-11T17:46:39 load:0x4086b910,len:0xdbc
+2026-11-11T17:46:39 load:0x4086e610,len:0x31f0
+2026-11-11T17:46:39 entry 0x4086b91a
+2026-11-11T17:46:39 I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-11T17:46:39 I (24) boot: compile time Nov  4 2026 01:52:32
+2026-11-11T17:46:39 I (24) boot: chip revision: v0.0
+2026-11-11T17:46:39 I (24) boot: efuse block revision: v0.2
+2026-11-11T17:46:39 I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-11T17:46:39 I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-11T17:46:39 I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-11T17:46:39 I (38) boot: Enabling RNG early entropy source...
+2026-11-11T17:46:39 I (43) boot: Partition Table:
+2026-11-11T17:46:39 I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-11T17:46:39 I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-11T17:46:39 I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-11T17:46:39 I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-11T17:46:39 I (71) boot: End of partition table
+2026-11-11T17:46:39 I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3b14ch (241996) map
+2026-11-11T17:46:39 I (128) esp_image: segment 1: paddr=0004b174 vaddr=40800000 size=04ea4h ( 20132) load
+2026-11-11T17:46:39 I (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=115f10h (1138448) map
+2026-11-11T17:46:39 I (351) esp_image: segment 3: paddr=00165f38 vaddr=40804ea4 size=13730h ( 79664) load
+2026-11-11T17:46:39 I (369) esp_image: segment 4: paddr=00179670 vaddr=408185e0 size=0485ch ( 18524) load
+2026-11-11T17:46:39 I (379) boot: Loaded app from partition at offset 0x10000
+2026-11-11T17:46:40 I (380) boot: Disabling RNG early entropy source...
+2026-11-11T17:46:40 I (390) cpu_start: Unicore app
+2026-11-11T17:46:40 I (398) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-11T17:46:40 I (398) cpu_start: Pro cpu start user code
+2026-11-11T17:46:40 I (399) cpu_start: cpu freq: 160000000 Hz
+2026-11-11T17:46:40 I (400) app_init: Application information:
+2026-11-11T17:46:40 I (404) app_init: Project name:     quic_demo
+2026-11-11T17:46:40 I (408) app_init: App version:      3c8c7a3-dirty
+2026-11-11T17:46:40 I (413) app_init: Compile time:     Nov  4 2026 01:51:29
+2026-11-11T17:46:40 I (418) app_init: ELF file SHA256:  1f661a4f7...
+2026-11-11T17:46:40 I (422) app_init: ESP-IDF:          v6.1
+2026-11-11T17:46:40 I (426) efuse_init: Min chip rev:     v0.0
+2026-11-11T17:46:40 I (430) efuse_init: Max chip rev:     v0.99 
+2026-11-11T17:46:40 I (434) efuse_init: Chip rev:         v0.0
+2026-11-11T17:46:40 I (437) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-11T17:46:40 I (444) heap_init: At 40824790 len 00057E80 (351 KiB): RAM
+2026-11-11T17:46:40 I (449) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-11T17:46:40 I (454) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-11T17:46:40 I (460) spi_flash: detected chip: gd
+2026-11-11T17:46:40 I (463) spi_flash: flash io: dio
+2026-11-11T17:46:40 I (466) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-11T17:46:40 I (472) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-11T17:46:40 I (479) coexist: coex firmware version: a830d28
+2026-11-11T17:46:40 I (483) coexist: coexist rom version 5b8dcfa
+2026-11-11T17:46:40 I (487) main_task: Started on CPU0
+2026-11-11T17:46:40 I (507) main_task: Calling app_main()
+2026-11-11T17:46:40 I (507) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-11T17:46:40 I (507) quic_demo_main: ESP-IDF version: v6.1
+2026-11-11T17:46:40 I (507) example_connect: Start example_connect.
+2026-11-11T17:46:40 I (507) pp: pp rom version: 5b8dcfa
+2026-11-11T17:46:40 I (517) net80211: net80211 rom version: 5b8dcfa
+2026-11-11T17:46:40 I (527) wifi:wifi driver task: 4082a7f0, prio:23, stack:6656, core=0
+2026-11-11T17:46:40 I (527) wifi:wifi firmware version: e12a754
+2026-11-11T17:46:40 I (527) wifi:wifi certification version: v7.0
+2026-11-11T17:46:40 I (527) wifi:config NVS flash: enabled
+2026-11-11T17:46:40 I (537) wifi:config nano formatting: disabled
+2026-11-11T17:46:40 I (537) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-11T17:46:40 I (547) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-11T17:46:40 I (547) wifi:Init static rx mgmt buffer num: 5
+2026-11-11T17:46:40 I (557) wifi:Init management short buffer num: 32
+2026-11-11T17:46:40 I (557) wifi:Init dynamic tx buffer num: 32
+2026-11-11T17:46:40 I (567) wifi:Init static tx FG buffer num: 2
+2026-11-11T17:46:40 I (567) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-11T17:46:40 I (577) wifi:Init static rx buffer num: 10
+2026-11-11T17:46:40 I (577) wifi:Init dynamic rx buffer num: 32
+2026-11-11T17:46:40 I (577) wifi_init: rx ba win: 6
+2026-11-11T17:46:40 I (587) wifi_init: accept mbox: 6
+2026-11-11T17:46:40 I (587) wifi_init: tcpip mbox: 32
+2026-11-11T17:46:40 I (587) wifi_init: udp mbox: 6
+2026-11-11T17:46:40 I (597) wifi_init: tcp mbox: 6
+2026-11-11T17:46:40 I (597) wifi_init: tcp tx win: 5760
+2026-11-11T17:46:40 I (597) wifi_init: tcp rx win: 5760
+2026-11-11T17:46:40 I (597) wifi_init: tcp mss: 1440
+2026-11-11T17:46:40 I (607) wifi_init: WiFi IRAM OP enabled
+2026-11-11T17:46:40 I (607) wifi_init: WiFi RX IRAM OP enabled
+2026-11-11T17:46:40 I (617) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-11T17:46:40 I (617) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-11T17:46:40 I (667) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)
+2026-11-11T17:46:40 I (727) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-11T17:46:40 
+2026-11-11T17:46:40 I (727) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-11T17:46:40 I (727) wifi:enable tsf
+2026-11-11T17:46:40 I (737) example_connect: Connecting to SHEEL 3460...
+2026-11-11T17:46:40 W (737) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-11T17:46:40 I (747) example_connect: Waiting for IP(s)
+2026-11-11T17:46:42 I (3267) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-11T17:46:42 I (3267) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-11T17:46:42 I (3267) wifi:state: init -> auth (0xb0)
+2026-11-11T17:46:42 I (3287) wifi:state: auth -> assoc (0x0)
+2026-11-11T17:46:42 I (3297) wifi:state: assoc -> run (0x10)
+2026-11-11T17:46:42 I (3297) wifi:(trc)phytype:CBW20-SGI, snr:55, maxRate:144, highestRateIdx:0
+2026-11-11T17:46:42 W (3297) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-11T17:46:42 I (3307) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:55, ampduState:wait operational
+2026-11-11T17:46:42 I (3317) wifi:ifidx:0, rssi:-41, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-11T17:46:42 I (3327) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-11T17:46:42 I (3337) wifi:connected with SHEEL 3460, aid = 14, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-11T17:46:42 I (3337) wifi:security: WPA2-PSK, phy: bgn, rssi: -41, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-11T17:46:42 I (3347) wifi:pm start, type: 1, twt_start:0
+2026-11-11T17:46:42 
+2026-11-11T17:46:42 I (3347) wifi:pm start, type:1, aid:0xe, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-11T17:46:43 I (3367) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-11T17:46:43 I (3367) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-11T17:46:43 I (3377) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-11T17:46:43 I (3387) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-11T17:46:43 I (3397) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-11T17:46:43 I (3417) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-11T17:46:43 I (3417) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-11T17:46:43 I (3427) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-11T17:46:43 I (3437) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-11T17:46:43 W (3467) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-11T17:46:44 I (4467) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-11T17:46:44 I (4467) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.25
+2026-11-11T17:46:44 I (4507) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-11T17:46:44 I (4507) example_common: Connected to example_netif_sta
+2026-11-11T17:46:44 I (4507) example_common: - IPv4 address: 192.168.137.25,
+2026-11-11T17:46:44 I (4517) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-11T17:46:44 I (4527) quic_demo_main: Wi-Fi connected
+2026-11-11T17:46:44 I (4527) wifi:Set ps type: 0, coexist: 0
+2026-11-11T17:46:44 
+2026-11-11T17:46:44 I (4537) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-11T17:46:44 I (4547) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-11T17:46:44 I (4547) quic_demo_main: Free heap: 287368 bytes
+2026-11-11T17:46:44 I (4557) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-11T17:46:44 I (4557) main_task: Returned from app_main()
+2026-11-11T17:46:45 I (6087) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-11T17:46:45 I (6097) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-11T17:46:45 I (6097) quic_demo_main: TCP_TLS connection established
+2026-11-11T17:46:46 I (7107) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-11T17:46:46 I (7117) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-11T17:46:46 I (7127) quic_demo_main: Starting DHT11 readings every five seconds
+2026-11-11T17:46:46 I (7227) quic_demo_main: Subscription acknowledged
+2026-11-11T17:46:51 I (12257) quic_demo_main: APP_RTT seq=1 app_rtt_ms=87.924
+2026-11-11T17:46:56 I (17287) quic_demo_main: APP_RTT seq=2 app_rtt_ms=107.475
+2026-11-11T17:47:01 I (22217) quic_demo_main: APP_RTT seq=3 app_rtt_ms=27.593
+2026-11-11T17:47:06 I (27247) quic_demo_main: APP_RTT seq=4 app_rtt_ms=47.637
+2026-11-11T17:47:11 I (32277) quic_demo_main: APP_RTT seq=5 app_rtt_ms=67.646
+2026-11-11T17:47:16 I (37307) quic_demo_main: APP_RTT seq=6 app_rtt_ms=88.237
+2026-11-11T17:47:21 I (42337) quic_demo_main: APP_RTT seq=7 app_rtt_ms=107.617
+2026-11-11T17:47:26 I (47267) quic_demo_main: APP_RTT seq=8 app_rtt_ms=27.545
+2026-11-11T17:47:31 I (52297) quic_demo_main: APP_RTT seq=9 app_rtt_ms=47.532
+2026-11-11T17:47:36 I (57327) quic_demo_main: APP_RTT seq=10 app_rtt_ms=67.658
+2026-11-11T17:47:41 I (62357) quic_demo_main: APP_RTT seq=11 app_rtt_ms=87.718
+2026-11-11T17:47:47 I (67387) quic_demo_main: APP_RTT seq=12 app_rtt_ms=107.951
+2026-11-11T17:47:51 I (72317) quic_demo_main: APP_RTT seq=13 app_rtt_ms=27.623
+2026-11-11T17:47:56 I (77347) quic_demo_main: APP_RTT seq=14 app_rtt_ms=47.514
+2026-11-11T17:48:02 I (82377) quic_demo_main: APP_RTT seq=15 app_rtt_ms=67.373
+2026-11-11T17:48:07 I (87407) quic_demo_main: APP_RTT seq=16 app_rtt_ms=87.453
+2026-11-11T17:48:12 I (92437) quic_demo_main: APP_RTT seq=17 app_rtt_ms=107.417
+2026-11-11T17:48:16 I (97367) quic_demo_main: APP_RTT seq=18 app_rtt_ms=27.528
+2026-11-11T17:48:22 I (102397) quic_demo_main: APP_RTT seq=19 app_rtt_ms=47.476
+2026-11-11T17:48:27 I (107427) quic_demo_main: APP_RTT seq=20 app_rtt_ms=67.559
+2026-11-11T17:48:32 I (112457) quic_demo_main: APP_RTT seq=21 app_rtt_ms=87.548
+2026-11-11T17:48:37 I (117487) quic_demo_main: APP_RTT seq=22 app_rtt_ms=107.904
+2026-11-11T17:48:42 I (122417) quic_demo_main: APP_RTT seq=23 app_rtt_ms=27.468
+2026-11-11T17:48:47 I (127447) quic_demo_main: APP_RTT seq=24 app_rtt_ms=47.428
+2026-11-11T17:48:52 I (132477) quic_demo_main: APP_RTT seq=25 app_rtt_ms=67.404
+2026-11-11T17:48:57 I (137507) quic_demo_main: APP_RTT seq=26 app_rtt_ms=87.908
+2026-11-11T17:49:02 I (142537) quic_demo_main: APP_RTT seq=27 app_rtt_ms=107.390
+2026-11-11T17:49:07 I (147467) quic_demo_main: APP_RTT seq=28 app_rtt_ms=27.422
+2026-11-11T17:49:12 I (152497) quic_demo_main: APP_RTT seq=29 app_rtt_ms=46.979
+2026-11-11T17:49:17 I (157527) quic_demo_main: APP_RTT seq=30 app_rtt_ms=67.606
+2026-11-11T17:49:22 I (162557) quic_demo_main: APP_RTT seq=31 app_rtt_ms=87.683
+2026-11-11T17:49:27 I (167587) quic_demo_main: APP_RTT seq=32 app_rtt_ms=108.087
+2026-11-11T17:49:32 I (172517) quic_demo_main: APP_RTT seq=33 app_rtt_ms=27.619
+2026-11-11T17:49:37 I (177547) quic_demo_main: APP_RTT seq=34 app_rtt_ms=47.613
+2026-11-11T17:49:42 I (182577) quic_demo_main: APP_RTT seq=35 app_rtt_ms=67.324
+2026-11-11T17:49:47 I (187607) quic_demo_main: APP_RTT seq=36 app_rtt_ms=87.381
+2026-11-11T17:49:52 I (192637) quic_demo_main: APP_RTT seq=37 app_rtt_ms=107.197
+2026-11-11T17:49:57 I (197567) quic_demo_main: APP_RTT seq=38 app_rtt_ms=27.494
+2026-11-11T17:50:02 I (202597) quic_demo_main: APP_RTT seq=39 app_rtt_ms=47.502
+2026-11-11T17:50:07 I (207627) quic_demo_main: APP_RTT seq=40 app_rtt_ms=67.360
+2026-11-11T17:50:12 I (212657) quic_demo_main: APP_RTT seq=41 app_rtt_ms=87.396
+2026-11-11T17:50:17 I (217687) quic_demo_main: APP_RTT seq=42 app_rtt_ms=107.720
+2026-11-11T17:50:22 I (222617) quic_demo_main: APP_RTT seq=43 app_rtt_ms=27.478
+2026-11-11T17:50:27 I (227747) quic_demo_main: APP_RTT seq=44 app_rtt_ms=147.455
+2026-11-11T17:50:32 I (232677) quic_demo_main: APP_RTT seq=45 app_rtt_ms=67.574
+2026-11-11T17:50:37 I (237707) quic_demo_main: APP_RTT seq=46 app_rtt_ms=87.546
+2026-11-11T17:50:42 I (242737) quic_demo_main: APP_RTT seq=47 app_rtt_ms=107.437
+2026-11-11T17:50:47 I (247667) quic_demo_main: APP_RTT seq=48 app_rtt_ms=27.472
+2026-11-11T17:50:52 I (252697) quic_demo_main: APP_RTT seq=49 app_rtt_ms=47.477
+2026-11-11T17:50:57 I (257727) quic_demo_main: APP_RTT seq=50 app_rtt_ms=67.537
+2026-11-11T17:51:02 I (262757) quic_demo_main: APP_RTT seq=51 app_rtt_ms=87.567
+2026-11-11T17:51:07 I (267787) quic_demo_main: APP_RTT seq=52 app_rtt_ms=107.972
+2026-11-11T17:51:12 I (272717) quic_demo_main: APP_RTT seq=53 app_rtt_ms=27.480
+2026-11-11T17:51:17 I (277747) quic_demo_main: APP_RTT seq=54 app_rtt_ms=47.488
+2026-11-11T17:51:22 I (282777) quic_demo_main: APP_RTT seq=55 app_rtt_ms=67.465
+2026-11-11T17:51:27 I (287807) quic_demo_main: APP_RTT seq=56 app_rtt_ms=87.403
+2026-11-11T17:51:32 I (292837) quic_demo_main: APP_RTT seq=57 app_rtt_ms=107.524
+2026-11-11T17:51:37 I (297767) quic_demo_main: APP_RTT seq=58 app_rtt_ms=27.735
+2026-11-11T17:51:42 I (302797) quic_demo_main: APP_RTT seq=59 app_rtt_ms=47.599
+2026-11-11T17:51:47 I (307827) quic_demo_main: APP_RTT seq=60 app_rtt_ms=67.332
+2026-11-11T17:51:52 I (312857) quic_demo_main: APP_RTT seq=61 app_rtt_ms=87.533
+2026-11-11T17:51:57 I (317887) quic_demo_main: APP_RTT seq=62 app_rtt_ms=108.072
+2026-11-11T17:52:02 I (322817) quic_demo_main: APP_RTT seq=63 app_rtt_ms=27.550
+2026-11-11T17:52:07 I (327847) quic_demo_main: APP_RTT seq=64 app_rtt_ms=47.500
+2026-11-11T17:52:12 I (332877) quic_demo_main: APP_RTT seq=65 app_rtt_ms=67.508
+2026-11-11T17:52:17 I (337907) quic_demo_main: APP_RTT seq=66 app_rtt_ms=87.627
+2026-11-11T17:52:22 I (342937) quic_demo_main: APP_RTT seq=67 app_rtt_ms=107.661
+2026-11-11T17:52:27 I (347867) quic_demo_main: APP_RTT seq=68 app_rtt_ms=27.470
+2026-11-11T17:52:32 I (352897) quic_demo_main: APP_RTT seq=69 app_rtt_ms=47.500
+2026-11-11T17:52:37 I (357927) quic_demo_main: APP_RTT seq=70 app_rtt_ms=67.513
+2026-11-11T17:52:42 I (362957) quic_demo_main: APP_RTT seq=71 app_rtt_ms=87.643
+2026-11-11T17:52:47 I (367987) quic_demo_main: APP_RTT seq=72 app_rtt_ms=107.884
+2026-11-11T17:52:52 I (372917) quic_demo_main: APP_RTT seq=73 app_rtt_ms=27.752
+2026-11-11T17:52:57 I (377947) quic_demo_main: APP_RTT seq=74 app_rtt_ms=47.668
+2026-11-11T17:53:02 I (382977) quic_demo_main: APP_RTT seq=75 app_rtt_ms=67.519
+2026-11-11T17:53:07 I (388007) quic_demo_main: APP_RTT seq=76 app_rtt_ms=87.550
+2026-11-11T17:53:12 I (393037) quic_demo_main: APP_RTT seq=77 app_rtt_ms=107.397
+2026-11-11T17:53:17 I (398067) quic_demo_main: APP_RTT seq=78 app_rtt_ms=127.483
+2026-11-11T17:53:22 I (402997) quic_demo_main: APP_RTT seq=79 app_rtt_ms=47.455
+2026-11-11T17:53:27 I (408027) quic_demo_main: APP_RTT seq=80 app_rtt_ms=67.409
+2026-11-11T17:53:32 I (413057) quic_demo_main: APP_RTT seq=81 app_rtt_ms=86.947
+2026-11-11T17:53:37 I (418087) quic_demo_main: APP_RTT seq=82 app_rtt_ms=107.952
+2026-11-11T17:53:42 I (423017) quic_demo_main: APP_RTT seq=83 app_rtt_ms=27.478
+2026-11-11T17:53:47 I (428047) quic_demo_main: APP_RTT seq=84 app_rtt_ms=47.447
+2026-11-11T17:53:52 I (433077) quic_demo_main: APP_RTT seq=85 app_rtt_ms=67.520
+2026-11-11T17:53:57 I (438107) quic_demo_main: APP_RTT seq=86 app_rtt_ms=87.499
+2026-11-11T17:54:02 I (443137) quic_demo_main: APP_RTT seq=87 app_rtt_ms=107.517
+2026-11-11T17:54:07 I (448067) quic_demo_main: APP_RTT seq=88 app_rtt_ms=27.467
+2026-11-11T17:54:12 I (453097) quic_demo_main: APP_RTT seq=89 app_rtt_ms=47.435
+2026-11-11T17:54:17 I (458127) quic_demo_main: APP_RTT seq=90 app_rtt_ms=67.560
+2026-11-11T17:54:22 I (463157) quic_demo_main: APP_RTT seq=91 app_rtt_ms=87.502
+2026-11-11T17:54:27 I (468187) quic_demo_main: APP_RTT seq=92 app_rtt_ms=107.983
+2026-11-11T17:54:32 I (473117) quic_demo_main: APP_RTT seq=93 app_rtt_ms=27.415
+2026-11-11T17:54:37 I (478147) quic_demo_main: APP_RTT seq=94 app_rtt_ms=47.409
+2026-11-11T17:54:42 I (483177) quic_demo_main: APP_RTT seq=95 app_rtt_ms=66.958
+2026-11-11T17:54:47 I (488207) quic_demo_main: APP_RTT seq=96 app_rtt_ms=87.370
+2026-11-11T17:54:52 I (493237) quic_demo_main: APP_RTT seq=97 app_rtt_ms=107.465
+2026-11-11T17:54:57 I (498167) quic_demo_main: APP_RTT seq=98 app_rtt_ms=27.519
+2026-11-11T17:55:02 I (503197) quic_demo_main: APP_RTT seq=99 app_rtt_ms=47.553
+2026-11-11T17:55:07 I (508227) quic_demo_main: APP_RTT seq=100 app_rtt_ms=67.489
+2026-11-11T17:55:12 I (513257) quic_demo_main: APP_RTT seq=101 app_rtt_ms=87.532
+2026-11-11T17:55:17 I (518287) quic_demo_main: APP_RTT seq=102 app_rtt_ms=107.795
+2026-11-11T17:55:22 I (523217) quic_demo_main: APP_RTT seq=103 app_rtt_ms=27.542
+2026-11-11T17:55:27 I (528247) quic_demo_main: APP_RTT seq=104 app_rtt_ms=47.486
+2026-11-11T17:55:32 I (533277) quic_demo_main: APP_RTT seq=105 app_rtt_ms=67.451
+2026-11-11T17:55:37 I (538307) quic_demo_main: APP_RTT seq=106 app_rtt_ms=87.578
+2026-11-11T17:55:42 I (543337) quic_demo_main: APP_RTT seq=107 app_rtt_ms=107.414
+2026-11-11T17:55:47 I (548267) quic_demo_main: APP_RTT seq=108 app_rtt_ms=27.447
+2026-11-11T17:55:52 I (553297) quic_demo_main: APP_RTT seq=109 app_rtt_ms=47.352
+2026-11-11T17:55:57 I (558327) quic_demo_main: APP_RTT seq=110 app_rtt_ms=67.461
+2026-11-11T17:56:02 I (563357) quic_demo_main: APP_RTT seq=111 app_rtt_ms=87.542
+2026-11-11T17:56:08 I (568387) quic_demo_main: APP_RTT seq=112 app_rtt_ms=107.848
+2026-11-11T17:56:12 I (573317) quic_demo_main: APP_RTT seq=113 app_rtt_ms=27.752
+2026-11-11T17:56:17 I (578347) quic_demo_main: APP_RTT seq=114 app_rtt_ms=47.457
+2026-11-11T17:56:22 I (583377) quic_demo_main: APP_RTT seq=115 app_rtt_ms=67.538
+2026-11-11T17:56:28 I (588407) quic_demo_main: APP_RTT seq=116 app_rtt_ms=87.549
+2026-11-11T17:56:33 I (593437) quic_demo_main: APP_RTT seq=117 app_rtt_ms=107.422
+2026-11-11T17:56:37 I (598367) quic_demo_main: APP_RTT seq=118 app_rtt_ms=27.506
+2026-11-11T17:56:43 I (603397) quic_demo_main: APP_RTT seq=119 app_rtt_ms=47.432
+2026-11-11T17:56:48 I (608427) quic_demo_main: APP_RTT seq=120 app_rtt_ms=67.364
+2026-11-11T17:56:53 I (613457) quic_demo_main: APP_RTT seq=121 app_rtt_ms=87.393
+2026-11-11T17:56:58 I (618487) quic_demo_main: APP_RTT seq=122 app_rtt_ms=107.925
+2026-11-11T17:57:03 I (623417) quic_demo_main: APP_RTT seq=123 app_rtt_ms=27.512
+2026-11-11T17:57:08 I (628447) quic_demo_main: APP_RTT seq=124 app_rtt_ms=47.507
+2026-11-11T17:57:13 I (633477) quic_demo_main: APP_RTT seq=125 app_rtt_ms=67.543
+2026-11-11T17:57:18 I (638507) quic_demo_main: APP_RTT seq=126 app_rtt_ms=87.894
+2026-11-11T17:57:23 I (643537) quic_demo_main: APP_RTT seq=127 app_rtt_ms=107.527
+2026-11-11T17:57:28 I (648467) quic_demo_main: APP_RTT seq=128 app_rtt_ms=27.488
+2026-11-11T17:57:33 I (653497) quic_demo_main: APP_RTT seq=129 app_rtt_ms=47.624
+2026-11-11T17:57:38 I (658527) quic_demo_main: APP_RTT seq=130 app_rtt_ms=67.654
+2026-11-11T17:57:43 I (663557) quic_demo_main: APP_RTT seq=131 app_rtt_ms=87.588
+2026-11-11T17:57:48 I (668587) quic_demo_main: APP_RTT seq=132 app_rtt_ms=108.099
+2026-11-11T17:57:53 I (673517) quic_demo_main: APP_RTT seq=133 app_rtt_ms=27.553
+2026-11-11T17:57:58 I (678547) quic_demo_main: APP_RTT seq=134 app_rtt_ms=47.428
+2026-11-11T17:58:03 I (683577) quic_demo_main: APP_RTT seq=135 app_rtt_ms=66.748
+2026-11-11T17:58:08 I (688607) quic_demo_main: APP_RTT seq=136 app_rtt_ms=87.174
+2026-11-11T17:58:13 I (693637) quic_demo_main: APP_RTT seq=137 app_rtt_ms=107.162
+2026-11-11T17:58:18 I (698667) quic_demo_main: APP_RTT seq=138 app_rtt_ms=127.452
+2026-11-11T17:58:23 I (703597) quic_demo_main: APP_RTT seq=139 app_rtt_ms=47.548
+2026-11-11T17:58:28 I (708627) quic_demo_main: APP_RTT seq=140 app_rtt_ms=67.499
+2026-11-11T17:58:33 I (713657) quic_demo_main: APP_RTT seq=141 app_rtt_ms=87.516
+2026-11-11T17:58:38 I (718687) quic_demo_main: APP_RTT seq=142 app_rtt_ms=107.811
+2026-11-11T17:58:43 I (723617) quic_demo_main: APP_RTT seq=143 app_rtt_ms=27.463
+2026-11-11T17:58:48 I (728647) quic_demo_main: APP_RTT seq=144 app_rtt_ms=47.424
+2026-11-11T17:58:53 I (733677) quic_demo_main: APP_RTT seq=145 app_rtt_ms=67.663
+2026-11-11T17:58:58 I (738707) quic_demo_main: APP_RTT seq=146 app_rtt_ms=87.512
+2026-11-11T17:59:03 I (743737) quic_demo_main: APP_RTT seq=147 app_rtt_ms=107.229
+2026-11-11T17:59:08 I (748667) quic_demo_main: APP_RTT seq=148 app_rtt_ms=27.376
+2026-11-11T17:59:13 I (753697) quic_demo_main: APP_RTT seq=149 app_rtt_ms=47.385
+2026-11-11T17:59:18 I (758727) quic_demo_main: APP_RTT seq=150 app_rtt_ms=67.413
+2026-11-11T17:59:23 I (763757) quic_demo_main: APP_RTT seq=151 app_rtt_ms=87.505
+2026-11-11T17:59:28 I (768787) quic_demo_main: APP_RTT seq=152 app_rtt_ms=107.841
+2026-11-11T17:59:33 I (773717) quic_demo_main: APP_RTT seq=153 app_rtt_ms=27.658
+2026-11-11T17:59:38 I (778747) quic_demo_main: APP_RTT seq=154 app_rtt_ms=47.528
+2026-11-11T17:59:43 I (783777) quic_demo_main: APP_RTT seq=155 app_rtt_ms=67.539
+2026-11-11T17:59:48 I (788807) quic_demo_main: APP_RTT seq=156 app_rtt_ms=87.665
+2026-11-11T17:59:53 I (793837) quic_demo_main: APP_RTT seq=157 app_rtt_ms=107.483
+2026-11-11T17:59:58 I (798767) quic_demo_main: APP_RTT seq=158 app_rtt_ms=27.484
+2026-11-11T18:00:03 I (803797) quic_demo_main: APP_RTT seq=159 app_rtt_ms=47.425
+2026-11-11T18:00:08 I (808827) quic_demo_main: APP_RTT seq=160 app_rtt_ms=67.379
+2026-11-11T18:00:13 I (813857) quic_demo_main: APP_RTT seq=161 app_rtt_ms=87.591
+2026-11-11T18:00:18 I (818887) quic_demo_main: APP_RTT seq=162 app_rtt_ms=107.933
+2026-11-11T18:00:23 I (823817) quic_demo_main: APP_RTT seq=163 app_rtt_ms=27.471
+2026-11-11T18:00:28 I (828847) quic_demo_main: APP_RTT seq=164 app_rtt_ms=47.491
+2026-11-11T18:00:33 I (833877) quic_demo_main: APP_RTT seq=165 app_rtt_ms=67.560
+2026-11-11T18:00:38 I (838907) quic_demo_main: APP_RTT seq=166 app_rtt_ms=87.506
+2026-11-11T18:00:43 I (843937) quic_demo_main: APP_RTT seq=167 app_rtt_ms=107.490
+2026-11-11T18:00:48 I (848867) quic_demo_main: APP_RTT seq=168 app_rtt_ms=27.408
+2026-11-11T18:00:53 I (853897) quic_demo_main: APP_RTT seq=169 app_rtt_ms=47.561
+2026-11-11T18:00:58 I (858927) quic_demo_main: APP_RTT seq=170 app_rtt_ms=67.701
+2026-11-11T18:01:03 I (863957) quic_demo_main: APP_RTT seq=171 app_rtt_ms=87.502
+2026-11-11T18:01:08 I (868987) quic_demo_main: APP_RTT seq=172 app_rtt_ms=107.944
+2026-11-11T18:01:13 I (873917) quic_demo_main: APP_RTT seq=173 app_rtt_ms=27.456
+2026-11-11T18:01:18 I (878947) quic_demo_main: APP_RTT seq=174 app_rtt_ms=47.407
+2026-11-11T18:01:23 I (883977) quic_demo_main: APP_RTT seq=175 app_rtt_ms=66.922
+2026-11-11T18:01:28 I (889007) quic_demo_main: APP_RTT seq=176 app_rtt_ms=87.371
+2026-11-11T18:01:33 I (894037) quic_demo_main: APP_RTT seq=177 app_rtt_ms=107.639
+2026-11-11T18:01:38 I (898967) quic_demo_main: APP_RTT seq=178 app_rtt_ms=27.519
+2026-11-11T18:01:43 I (903997) quic_demo_main: APP_RTT seq=179 app_rtt_ms=47.579
+2026-11-11T18:01:48 I (909027) quic_demo_main: APP_RTT seq=180 app_rtt_ms=67.531
+2026-11-11T18:01:53 I (914057) quic_demo_main: APP_RTT seq=181 app_rtt_ms=87.550
+2026-11-11T18:01:58 I (919087) quic_demo_main: APP_RTT seq=182 app_rtt_ms=108.021
+2026-11-11T18:02:03 I (924017) quic_demo_main: APP_RTT seq=183 app_rtt_ms=27.445
+2026-11-11T18:02:08 I (929047) quic_demo_main: APP_RTT seq=184 app_rtt_ms=47.462
+2026-11-11T18:02:13 I (934077) quic_demo_main: APP_RTT seq=185 app_rtt_ms=68.526
+2026-11-11T18:02:18 I (939107) quic_demo_main: APP_RTT seq=186 app_rtt_ms=87.550
+2026-11-11T18:02:23 I (944137) quic_demo_main: APP_RTT seq=187 app_rtt_ms=107.437
+2026-11-11T18:02:28 I (949067) quic_demo_main: APP_RTT seq=188 app_rtt_ms=27.317
+2026-11-11T18:02:33 I (954097) quic_demo_main: APP_RTT seq=189 app_rtt_ms=47.416
+2026-11-11T18:02:38 I (959127) quic_demo_main: APP_RTT seq=190 app_rtt_ms=67.426
+2026-11-11T18:02:43 I (964157) quic_demo_main: APP_RTT seq=191 app_rtt_ms=87.535
+2026-11-11T18:02:48 I (969187) quic_demo_main: APP_RTT seq=192 app_rtt_ms=108.210
+2026-11-11T18:02:53 I (974117) quic_demo_main: APP_RTT seq=193 app_rtt_ms=27.586
+2026-11-11T18:02:58 I (979147) quic_demo_main: APP_RTT seq=194 app_rtt_ms=47.526
+2026-11-11T18:03:03 I (984177) quic_demo_main: APP_RTT seq=195 app_rtt_ms=67.509
+2026-11-11T18:03:08 I (989207) quic_demo_main: APP_RTT seq=196 app_rtt_ms=87.554
+2026-11-11T18:03:13 I (994237) quic_demo_main: APP_RTT seq=197 app_rtt_ms=107.328
+2026-11-11T18:03:18 I (999167) quic_demo_main: APP_RTT seq=198 app_rtt_ms=27.472
+2026-11-11T18:03:23 I (1004197) quic_demo_main: APP_RTT seq=199 app_rtt_ms=47.527
+2026-11-11T18:03:28 I (1009227) quic_demo_main: APP_RTT seq=200 app_rtt_ms=67.362
+2026-11-11T18:03:33 I (1014257) quic_demo_main: APP_RTT seq=201 app_rtt_ms=87.545
+2026-11-11T18:03:38 I (1019287) quic_demo_main: APP_RTT seq=202 app_rtt_ms=107.624
+2026-11-11T18:03:43 I (1024217) quic_demo_main: APP_RTT seq=203 app_rtt_ms=27.437
+2026-11-11T18:03:48 I (1029247) quic_demo_main: APP_RTT seq=204 app_rtt_ms=47.488
+2026-11-11T18:03:53 I (1034277) quic_demo_main: APP_RTT seq=205 app_rtt_ms=67.545
+2026-11-11T18:03:58 I (1039307) quic_demo_main: APP_RTT seq=206 app_rtt_ms=87.587
+2026-11-11T18:04:03 I (1044337) quic_demo_main: APP_RTT seq=207 app_rtt_ms=107.506
+2026-11-11T18:04:08 I (1049267) quic_demo_main: APP_RTT seq=208 app_rtt_ms=27.465
+2026-11-11T18:04:13 I (1054297) quic_demo_main: APP_RTT seq=209 app_rtt_ms=47.490
+2026-11-11T18:04:18 I (1059327) quic_demo_main: APP_RTT seq=210 app_rtt_ms=67.528
+2026-11-11T18:04:23 I (1064357) quic_demo_main: APP_RTT seq=211 app_rtt_ms=87.487
+2026-11-11T18:04:29 I (1069387) quic_demo_main: APP_RTT seq=212 app_rtt_ms=107.966
+2026-11-11T18:04:33 I (1074317) quic_demo_main: APP_RTT seq=213 app_rtt_ms=27.507
+2026-11-11T18:04:38 I (1079347) quic_demo_main: APP_RTT seq=214 app_rtt_ms=47.363
+2026-11-11T18:04:43 I (1084377) quic_demo_main: APP_RTT seq=215 app_rtt_ms=67.395
+2026-11-11T18:04:49 I (1089407) quic_demo_main: APP_RTT seq=216 app_rtt_ms=87.403
+2026-11-11T18:04:54 I (1094437) quic_demo_main: APP_RTT seq=217 app_rtt_ms=107.556
+2026-11-11T18:04:59 I (1099467) quic_demo_main: APP_RTT seq=218 app_rtt_ms=127.409
+2026-11-11T18:05:04 I (1104397) quic_demo_main: APP_RTT seq=219 app_rtt_ms=47.552
+2026-11-11T18:05:09 I (1109427) quic_demo_main: APP_RTT seq=220 app_rtt_ms=67.504
+2026-11-11T18:05:14 I (1114457) quic_demo_main: APP_RTT seq=221 app_rtt_ms=87.543
+2026-11-11T18:05:19 I (1119487) quic_demo_main: APP_RTT seq=222 app_rtt_ms=108.216
+2026-11-11T18:05:24 I (1124417) quic_demo_main: APP_RTT seq=223 app_rtt_ms=27.544
+2026-11-11T18:05:29 I (1129447) quic_demo_main: APP_RTT seq=224 app_rtt_ms=47.430
+2026-11-11T18:05:34 I (1134477) quic_demo_main: APP_RTT seq=225 app_rtt_ms=67.484
+2026-11-11T18:05:39 I (1139507) quic_demo_main: APP_RTT seq=226 app_rtt_ms=87.947
+2026-11-11T18:05:44 I (1144537) quic_demo_main: APP_RTT seq=227 app_rtt_ms=107.438
+2026-11-11T18:05:49 I (1149467) quic_demo_main: APP_RTT seq=228 app_rtt_ms=27.434
+2026-11-11T18:05:54 I (1154497) quic_demo_main: APP_RTT seq=229 app_rtt_ms=47.344
+2026-11-11T18:05:59 I (1159527) quic_demo_main: APP_RTT seq=230 app_rtt_ms=67.545
+2026-11-11T18:06:04 I (1164557) quic_demo_main: APP_RTT seq=231 app_rtt_ms=87.643
+2026-11-11T18:06:09 I (1169587) quic_demo_main: APP_RTT seq=232 app_rtt_ms=108.089
+2026-11-11T18:06:14 I (1174517) quic_demo_main: APP_RTT seq=233 app_rtt_ms=27.664
+2026-11-11T18:06:19 I (1179547) quic_demo_main: APP_RTT seq=234 app_rtt_ms=47.528
+2026-11-11T18:06:24 I (1184577) quic_demo_main: APP_RTT seq=235 app_rtt_ms=67.362
+2026-11-11T18:06:29 I (1189607) quic_demo_main: APP_RTT seq=236 app_rtt_ms=87.583
+2026-11-11T18:06:34 I (1194637) quic_demo_main: APP_RTT seq=237 app_rtt_ms=107.191
+2026-11-11T18:06:39 I (1199567) quic_demo_main: APP_RTT seq=238 app_rtt_ms=27.456
+2026-11-11T18:06:44 I (1204597) quic_demo_main: APP_RTT seq=239 app_rtt_ms=47.472
+2026-11-11T18:06:49 I (1209627) quic_demo_main: APP_RTT seq=240 app_rtt_ms=67.437
+2026-11-11T18:06:54 I (1214657) quic_demo_main: APP_RTT seq=241 app_rtt_ms=87.396
+2026-11-11T18:06:59 I (1219687) quic_demo_main: APP_RTT seq=242 app_rtt_ms=107.745
+2026-11-11T18:07:04 I (1224617) quic_demo_main: APP_RTT seq=243 app_rtt_ms=26.941
+2026-11-11T18:07:09 I (1229647) quic_demo_main: APP_RTT seq=244 app_rtt_ms=47.433
+2026-11-11T18:07:14 I (1234677) quic_demo_main: APP_RTT seq=245 app_rtt_ms=67.505
+2026-11-11T18:07:19 I (1239707) quic_demo_main: APP_RTT seq=246 app_rtt_ms=87.504
+2026-11-11T18:07:24 I (1244737) quic_demo_main: APP_RTT seq=247 app_rtt_ms=107.413
+2026-11-11T18:07:29 I (1249767) quic_demo_main: APP_RTT seq=248 app_rtt_ms=127.428
+2026-11-11T18:07:34 I (1254697) quic_demo_main: APP_RTT seq=249 app_rtt_ms=47.542
+2026-11-11T18:07:39 I (1259727) quic_demo_main: APP_RTT seq=250 app_rtt_ms=67.493
+2026-11-11T18:07:44 I (1264757) quic_demo_main: APP_RTT seq=251 app_rtt_ms=87.530
+2026-11-11T18:07:49 I (1269787) quic_demo_main: APP_RTT seq=252 app_rtt_ms=108.134
+2026-11-11T18:07:54 I (1274717) quic_demo_main: APP_RTT seq=253 app_rtt_ms=27.520
+2026-11-11T18:07:59 I (1279747) quic_demo_main: APP_RTT seq=254 app_rtt_ms=47.398
+2026-11-11T18:08:04 I (1284777) quic_demo_main: APP_RTT seq=255 app_rtt_ms=66.813
+2026-11-11T18:08:09 I (1289807) quic_demo_main: APP_RTT seq=256 app_rtt_ms=87.407
+2026-11-11T18:08:14 I (1294837) quic_demo_main: APP_RTT seq=257 app_rtt_ms=107.483
+2026-11-11T18:08:19 I (1299767) quic_demo_main: APP_RTT seq=258 app_rtt_ms=27.537
+2026-11-11T18:08:24 I (1304797) quic_demo_main: APP_RTT seq=259 app_rtt_ms=47.555
+2026-11-11T18:08:29 I (1309827) quic_demo_main: APP_RTT seq=260 app_rtt_ms=67.513
+2026-11-11T18:08:34 I (1314857) quic_demo_main: APP_RTT seq=261 app_rtt_ms=87.533
+2026-11-11T18:08:39 I (1319887) quic_demo_main: APP_RTT seq=262 app_rtt_ms=107.953
+2026-11-11T18:08:44 I (1324817) quic_demo_main: APP_RTT seq=263 app_rtt_ms=27.454
+2026-11-11T18:08:49 I (1329847) quic_demo_main: APP_RTT seq=264 app_rtt_ms=47.416
+2026-11-11T18:08:54 I (1334877) quic_demo_main: APP_RTT seq=265 app_rtt_ms=67.554
+2026-11-11T18:08:59 I (1339907) quic_demo_main: APP_RTT seq=266 app_rtt_ms=87.480
+2026-11-11T18:09:04 I (1344937) quic_demo_main: APP_RTT seq=267 app_rtt_ms=107.441
+2026-11-11T18:09:09 I (1349867) quic_demo_main: APP_RTT seq=268 app_rtt_ms=27.392
+2026-11-11T18:09:14 I (1354897) quic_demo_main: APP_RTT seq=269 app_rtt_ms=47.358
+2026-11-11T18:09:19 I (1359927) quic_demo_main: APP_RTT seq=270 app_rtt_ms=67.456
+2026-11-11T18:09:24 I (1364957) quic_demo_main: APP_RTT seq=271 app_rtt_ms=87.472
+2026-11-11T18:09:29 I (1369987) quic_demo_main: APP_RTT seq=272 app_rtt_ms=107.972
+2026-11-11T18:09:34 I (1374917) quic_demo_main: APP_RTT seq=273 app_rtt_ms=27.543
+2026-11-11T18:09:39 I (1379947) quic_demo_main: APP_RTT seq=274 app_rtt_ms=47.547
+2026-11-11T18:09:44 I (1384977) quic_demo_main: APP_RTT seq=275 app_rtt_ms=67.696
+2026-11-11T18:09:49 I (1390007) quic_demo_main: APP_RTT seq=276 app_rtt_ms=87.478
+2026-11-11T18:09:54 I (1395037) quic_demo_main: APP_RTT seq=277 app_rtt_ms=107.481
+2026-11-11T18:09:59 I (1399967) quic_demo_main: APP_RTT seq=278 app_rtt_ms=27.482
+2026-11-11T18:10:04 I (1404997) quic_demo_main: APP_RTT seq=279 app_rtt_ms=47.447
+2026-11-11T18:10:09 I (1410027) quic_demo_main: APP_RTT seq=280 app_rtt_ms=67.480
+2026-11-11T18:10:14 I (1415057) quic_demo_main: APP_RTT seq=281 app_rtt_ms=87.442
+2026-11-11T18:10:19 I (1420087) quic_demo_main: APP_RTT seq=282 app_rtt_ms=107.949
+2026-11-11T18:10:24 I (1425017) quic_demo_main: APP_RTT seq=283 app_rtt_ms=27.463
+2026-11-11T18:10:29 I (1430047) quic_demo_main: APP_RTT seq=284 app_rtt_ms=47.464
+2026-11-11T18:10:34 I (1435077) quic_demo_main: APP_RTT seq=285 app_rtt_ms=67.540
+2026-11-11T18:10:39 I (1440107) quic_demo_main: APP_RTT seq=286 app_rtt_ms=87.511
+2026-11-11T18:10:44 I (1445137) quic_demo_main: APP_RTT seq=287 app_rtt_ms=107.430
+2026-11-11T18:10:49 I (1450067) quic_demo_main: APP_RTT seq=288 app_rtt_ms=27.460
+2026-11-11T18:10:54 I (1455097) quic_demo_main: APP_RTT seq=289 app_rtt_ms=47.549
+2026-11-11T18:10:59 I (1460127) quic_demo_main: APP_RTT seq=290 app_rtt_ms=67.493
+2026-11-11T18:11:04 I (1465157) quic_demo_main: APP_RTT seq=291 app_rtt_ms=87.537
+2026-11-11T18:11:09 I (1470187) quic_demo_main: APP_RTT seq=292 app_rtt_ms=107.981
+2026-11-11T18:11:14 I (1475117) quic_demo_main: APP_RTT seq=293 app_rtt_ms=27.481
+2026-11-11T18:11:19 I (1480147) quic_demo_main: APP_RTT seq=294 app_rtt_ms=47.418
+2026-11-11T18:11:24 I (1485177) quic_demo_main: APP_RTT seq=295 app_rtt_ms=67.341
+2026-11-11T18:11:29 I (1490207) quic_demo_main: APP_RTT seq=296 app_rtt_ms=87.404
+2026-11-11T18:11:34 I (1495237) quic_demo_main: APP_RTT seq=297 app_rtt_ms=107.504
+2026-11-11T18:11:39 I (1500167) quic_demo_main: APP_RTT seq=298 app_rtt_ms=27.530
+2026-11-11T18:11:44 I (1505197) quic_demo_main: APP_RTT seq=299 app_rtt_ms=47.564
+2026-11-11T18:11:49 I (1510227) quic_demo_main: APP_RTT seq=300 app_rtt_ms=67.501
+2026-11-11T18:11:54 I (1515257) quic_demo_main: APP_RTT seq=301 app_rtt_ms=87.544
+2026-11-11T18:11:59 I (1520287) quic_demo_main: APP_RTT seq=302 app_rtt_ms=107.803
+2026-11-11T18:12:04 I (1525217) quic_demo_main: APP_RTT seq=303 app_rtt_ms=27.507
+2026-11-11T18:12:09 I (1530247) quic_demo_main: APP_RTT seq=304 app_rtt_ms=47.438
+2026-11-11T18:12:14 I (1535277) quic_demo_main: APP_RTT seq=305 app_rtt_ms=67.570
+2026-11-11T18:12:19 I (1540307) quic_demo_main: APP_RTT seq=306 app_rtt_ms=87.746
+2026-11-11T18:12:24 I (1545337) quic_demo_main: APP_RTT seq=307 app_rtt_ms=107.502
+2026-11-11T18:12:29 I (1550267) quic_demo_main: APP_RTT seq=308 app_rtt_ms=27.430
+2026-11-11T18:12:34 I (1555297) quic_demo_main: APP_RTT seq=309 app_rtt_ms=47.373
+2026-11-11T18:12:39 I (1560327) quic_demo_main: APP_RTT seq=310 app_rtt_ms=67.405
+2026-11-11T18:12:44 I (1565357) quic_demo_main: APP_RTT seq=311 app_rtt_ms=87.411
+2026-11-11T18:12:49 I (1570387) quic_demo_main: APP_RTT seq=312 app_rtt_ms=107.961
+2026-11-11T18:12:54 I (1575317) quic_demo_main: APP_RTT seq=313 app_rtt_ms=27.759
+2026-11-11T18:12:59 I (1580347) quic_demo_main: APP_RTT seq=314 app_rtt_ms=47.542
+2026-11-11T18:13:04 I (1585377) quic_demo_main: APP_RTT seq=315 app_rtt_ms=67.556
+2026-11-11T18:13:10 I (1590407) quic_demo_main: APP_RTT seq=316 app_rtt_ms=87.518
+2026-11-11T18:13:15 I (1595437) quic_demo_main: APP_RTT seq=317 app_rtt_ms=107.493
+2026-11-11T18:13:19 I (1600367) quic_demo_main: APP_RTT seq=318 app_rtt_ms=27.423
+2026-11-11T18:13:25 I (1605397) quic_demo_main: APP_RTT seq=319 app_rtt_ms=47.464
+2026-11-11T18:13:30 I (1610427) quic_demo_main: APP_RTT seq=320 app_rtt_ms=67.431
+2026-11-11T18:13:35 I (1615457) quic_demo_main: APP_RTT seq=321 app_rtt_ms=87.485
+2026-11-11T18:13:40 I (1620487) quic_demo_main: APP_RTT seq=322 app_rtt_ms=107.335
+2026-11-11T18:13:45 I (1625417) quic_demo_main: APP_RTT seq=323 app_rtt_ms=27.413
+2026-11-11T18:13:50 I (1630447) quic_demo_main: APP_RTT seq=324 app_rtt_ms=47.520
+2026-11-11T18:13:55 I (1635477) quic_demo_main: APP_RTT seq=325 app_rtt_ms=67.487
+2026-11-11T18:14:00 I (1640507) quic_demo_main: APP_RTT seq=326 app_rtt_ms=87.950
+2026-11-11T18:14:05 I (1645537) quic_demo_main: APP_RTT seq=327 app_rtt_ms=107.474
+2026-11-11T18:14:10 I (1650467) quic_demo_main: APP_RTT seq=328 app_rtt_ms=27.503
+2026-11-11T18:14:15 I (1655497) quic_demo_main: APP_RTT seq=329 app_rtt_ms=47.530
+2026-11-11T18:14:20 I (1660527) quic_demo_main: APP_RTT seq=330 app_rtt_ms=67.626
+2026-11-11T18:14:25 I (1665557) quic_demo_main: APP_RTT seq=331 app_rtt_ms=87.775
+2026-11-11T18:14:30 I (1670587) quic_demo_main: APP_RTT seq=332 app_rtt_ms=108.127
+2026-11-11T18:14:35 I (1675517) quic_demo_main: APP_RTT seq=333 app_rtt_ms=27.616
+2026-11-11T18:14:40 I (1680547) quic_demo_main: APP_RTT seq=334 app_rtt_ms=47.387
+2026-11-11T18:14:45 I (1685577) quic_demo_main: APP_RTT seq=335 app_rtt_ms=67.165
+2026-11-11T18:14:50 I (1690607) quic_demo_main: APP_RTT seq=336 app_rtt_ms=87.147
+2026-11-11T18:14:55 I (1695637) quic_demo_main: APP_RTT seq=337 app_rtt_ms=107.193
+2026-11-11T18:15:00 I (1700567) quic_demo_main: APP_RTT seq=338 app_rtt_ms=27.492
+2026-11-11T18:15:05 I (1705597) quic_demo_main: APP_RTT seq=339 app_rtt_ms=47.492
+2026-11-11T18:15:10 I (1710627) quic_demo_main: APP_RTT seq=340 app_rtt_ms=67.527
+2026-11-11T18:15:15 I (1715657) quic_demo_main: APP_RTT seq=341 app_rtt_ms=87.518
+2026-11-11T18:15:20 I (1720687) quic_demo_main: APP_RTT seq=342 app_rtt_ms=107.935
+2026-11-11T18:15:25 I (1725617) quic_demo_main: APP_RTT seq=343 app_rtt_ms=27.428
+2026-11-11T18:15:30 I (1730647) quic_demo_main: APP_RTT seq=344 app_rtt_ms=47.413
+2026-11-11T18:15:35 I (1735677) quic_demo_main: APP_RTT seq=345 app_rtt_ms=67.530
+2026-11-11T18:15:40 I (1740707) quic_demo_main: APP_RTT seq=346 app_rtt_ms=87.488
+2026-11-11T18:15:45 I (1745737) quic_demo_main: APP_RTT seq=347 app_rtt_ms=107.402
+2026-11-11T18:15:50 I (1750667) quic_demo_main: APP_RTT seq=348 app_rtt_ms=27.364
+2026-11-11T18:15:55 I (1755697) quic_demo_main: APP_RTT seq=349 app_rtt_ms=47.387
+2026-11-11T18:16:00 I (1760727) quic_demo_main: APP_RTT seq=350 app_rtt_ms=67.363
+2026-11-11T18:16:05 I (1765757) quic_demo_main: APP_RTT seq=351 app_rtt_ms=87.404
+2026-11-11T18:16:10 I (1770787) quic_demo_main: APP_RTT seq=352 app_rtt_ms=107.926
+2026-11-11T18:16:15 I (1775717) quic_demo_main: APP_RTT seq=353 app_rtt_ms=27.582
+2026-11-11T18:16:20 I (1780747) quic_demo_main: APP_RTT seq=354 app_rtt_ms=47.561
+2026-11-11T18:16:25 I (1785777) quic_demo_main: APP_RTT seq=355 app_rtt_ms=67.535
+2026-11-11T18:16:30 I (1790807) quic_demo_main: APP_RTT seq=356 app_rtt_ms=87.547
+2026-11-11T18:16:35 I (1795837) quic_demo_main: APP_RTT seq=357 app_rtt_ms=107.645
+2026-11-11T18:16:40 I (1800767) quic_demo_main: APP_RTT seq=358 app_rtt_ms=27.034
+2026-11-11T18:16:45 I (1805797) quic_demo_main: APP_RTT seq=359 app_rtt_ms=47.433
+2026-11-11T18:16:50 I (1810827) quic_demo_main: APP_RTT seq=360 app_rtt_ms=67.429
+2026-11-11T18:16:55 I (1815857) quic_demo_main: APP_RTT seq=361 app_rtt_ms=87.470
+2026-11-11T18:17:00 I (1820887) quic_demo_main: APP_RTT seq=362 app_rtt_ms=107.839
+2026-11-11T18:17:05 I (1825817) quic_demo_main: APP_RTT seq=363 app_rtt_ms=27.450
+2026-11-11T18:17:10 I (1830847) quic_demo_main: APP_RTT seq=364 app_rtt_ms=47.455
+2026-11-11T18:17:15 I (1835877) quic_demo_main: APP_RTT seq=365 app_rtt_ms=67.510
+2026-11-11T18:17:20 I (1840907) quic_demo_main: APP_RTT seq=366 app_rtt_ms=87.561
+2026-11-11T18:17:25 I (1845937) quic_demo_main: APP_RTT seq=367 app_rtt_ms=107.323
+2026-11-11T18:17:30 I (1850867) quic_demo_main: APP_RTT seq=368 app_rtt_ms=27.463
+2026-11-11T18:17:35 I (1855897) quic_demo_main: APP_RTT seq=369 app_rtt_ms=47.549
+2026-11-11T18:17:40 I (1860927) quic_demo_main: APP_RTT seq=370 app_rtt_ms=67.504
+2026-11-11T18:17:45 I (1865957) quic_demo_main: APP_RTT seq=371 app_rtt_ms=87.535
+2026-11-11T18:17:50 I (1870987) quic_demo_main: APP_RTT seq=372 app_rtt_ms=107.799
+2026-11-11T18:17:55 I (1875917) quic_demo_main: APP_RTT seq=373 app_rtt_ms=27.500
+2026-11-11T18:18:00 I (1880947) quic_demo_main: APP_RTT seq=374 app_rtt_ms=47.484
+2026-11-11T18:18:05 I (1885977) quic_demo_main: APP_RTT seq=375 app_rtt_ms=67.378
+2026-11-11T18:18:10 I (1891007) quic_demo_main: APP_RTT seq=376 app_rtt_ms=87.412
+2026-11-11T18:18:15 I (1896037) quic_demo_main: APP_RTT seq=377 app_rtt_ms=107.360
+2026-11-11T18:18:20 I (1900967) quic_demo_main: APP_RTT seq=378 app_rtt_ms=27.550
+2026-11-11T18:18:25 I (1905997) quic_demo_main: APP_RTT seq=379 app_rtt_ms=47.552
+2026-11-11T18:18:30 I (1911027) quic_demo_main: APP_RTT seq=380 app_rtt_ms=67.578
+2026-11-11T18:18:35 I (1916057) quic_demo_main: APP_RTT seq=381 app_rtt_ms=87.727
+2026-11-11T18:18:40 I (1921087) quic_demo_main: APP_RTT seq=382 app_rtt_ms=107.978
+2026-11-11T18:18:45 I (1926017) quic_demo_main: APP_RTT seq=383 app_rtt_ms=27.483
+2026-11-11T18:18:50 I (1931047) quic_demo_main: APP_RTT seq=384 app_rtt_ms=47.416
+2026-11-11T18:18:55 I (1936077) quic_demo_main: APP_RTT seq=385 app_rtt_ms=67.550
+2026-11-11T18:19:00 I (1941107) quic_demo_main: APP_RTT seq=386 app_rtt_ms=87.500
+2026-11-11T18:19:05 I (1946137) quic_demo_main: APP_RTT seq=387 app_rtt_ms=107.502
+2026-11-11T18:19:10 I (1951067) quic_demo_main: APP_RTT seq=388 app_rtt_ms=26.935
+2026-11-11T18:19:15 I (1956097) quic_demo_main: APP_RTT seq=389 app_rtt_ms=47.393
+2026-11-11T18:19:20 I (1961127) quic_demo_main: APP_RTT seq=390 app_rtt_ms=67.395
+2026-11-11T18:19:25 I (1966157) quic_demo_main: APP_RTT seq=391 app_rtt_ms=87.417
+2026-11-11T18:19:30 I (1971187) quic_demo_main: APP_RTT seq=392 app_rtt_ms=107.968
+2026-11-11T18:19:35 I (1976117) quic_demo_main: APP_RTT seq=393 app_rtt_ms=27.565
+2026-11-11T18:19:40 I (1981147) quic_demo_main: APP_RTT seq=394 app_rtt_ms=47.537
+2026-11-11T18:19:45 I (1986177) quic_demo_main: APP_RTT seq=395 app_rtt_ms=67.486
+2026-11-11T18:19:50 I (1991207) quic_demo_main: APP_RTT seq=396 app_rtt_ms=87.531
+2026-11-11T18:19:55 I (1996237) quic_demo_main: APP_RTT seq=397 app_rtt_ms=107.655
+2026-11-11T18:20:00 I (2001167) quic_demo_main: APP_RTT seq=398 app_rtt_ms=27.443
+2026-11-11T18:20:05 I (2006197) quic_demo_main: APP_RTT seq=399 app_rtt_ms=47.453
+2026-11-11T18:20:10 I (2011227) quic_demo_main: APP_RTT seq=400 app_rtt_ms=67.429
+2026-11-11T18:20:15 I (2016257) quic_demo_main: APP_RTT seq=401 app_rtt_ms=87.491
+2026-11-11T18:20:20 I (2021287) quic_demo_main: APP_RTT seq=402 app_rtt_ms=107.749
+2026-11-11T18:20:25 I (2026217) quic_demo_main: APP_RTT seq=403 app_rtt_ms=27.466
+2026-11-11T18:20:30 I (2031247) quic_demo_main: APP_RTT seq=404 app_rtt_ms=47.325
+2026-11-11T18:20:35 I (2036277) quic_demo_main: APP_RTT seq=405 app_rtt_ms=67.535
+2026-11-11T18:20:40 I (2041307) quic_demo_main: APP_RTT seq=406 app_rtt_ms=87.713
+2026-11-11T18:20:45 I (2046337) quic_demo_main: APP_RTT seq=407 app_rtt_ms=107.503
+2026-11-11T18:20:50 I (2051267) quic_demo_main: APP_RTT seq=408 app_rtt_ms=27.476
+2026-11-11T18:20:55 I (2056297) quic_demo_main: APP_RTT seq=409 app_rtt_ms=47.511
+2026-11-11T18:21:00 I (2061327) quic_demo_main: APP_RTT seq=410 app_rtt_ms=67.547
+2026-11-11T18:21:05 I (2066357) quic_demo_main: APP_RTT seq=411 app_rtt_ms=87.530
+2026-11-11T18:21:10 I (2071387) quic_demo_main: APP_RTT seq=412 app_rtt_ms=107.976
+2026-11-11T18:21:15 I (2076317) quic_demo_main: APP_RTT seq=413 app_rtt_ms=27.511
+2026-11-11T18:21:20 I (2081347) quic_demo_main: APP_RTT seq=414 app_rtt_ms=47.444
+2026-11-11T18:21:25 I (2086377) quic_demo_main: APP_RTT seq=415 app_rtt_ms=67.441
+2026-11-11T18:21:31 I (2091407) quic_demo_main: APP_RTT seq=416 app_rtt_ms=87.362
+2026-11-11T18:21:36 I (2096437) quic_demo_main: APP_RTT seq=417 app_rtt_ms=107.418
+2026-11-11T18:21:40 I (2101367) quic_demo_main: APP_RTT seq=418 app_rtt_ms=27.420
+2026-11-11T18:21:46 I (2106397) quic_demo_main: APP_RTT seq=419 app_rtt_ms=47.565
+2026-11-11T18:21:51 I (2111427) quic_demo_main: APP_RTT seq=420 app_rtt_ms=67.524
+2026-11-11T18:21:56 I (2116457) quic_demo_main: APP_RTT seq=421 app_rtt_ms=87.550
+2026-11-11T18:22:01 I (2121487) quic_demo_main: APP_RTT seq=422 app_rtt_ms=107.983
+2026-11-11T18:22:06 I (2126417) quic_demo_main: APP_RTT seq=423 app_rtt_ms=27.451
+2026-11-11T18:22:11 I (2131447) quic_demo_main: APP_RTT seq=424 app_rtt_ms=47.483
+2026-11-11T18:22:16 I (2136477) quic_demo_main: APP_RTT seq=425 app_rtt_ms=67.477
+2026-11-11T18:22:21 I (2141507) quic_demo_main: APP_RTT seq=426 app_rtt_ms=87.953
+2026-11-11T18:22:26 I (2146537) quic_demo_main: APP_RTT seq=427 app_rtt_ms=107.385
+2026-11-11T18:22:31 I (2151467) quic_demo_main: APP_RTT seq=428 app_rtt_ms=27.430
+2026-11-11T18:22:36 I (2156497) quic_demo_main: APP_RTT seq=429 app_rtt_ms=47.432
+2026-11-11T18:22:41 I (2161527) quic_demo_main: APP_RTT seq=430 app_rtt_ms=67.423
+2026-11-11T18:22:46 I (2166557) quic_demo_main: APP_RTT seq=431 app_rtt_ms=87.581
+2026-11-11T18:22:51 I (2171587) quic_demo_main: APP_RTT seq=432 app_rtt_ms=108.010
+2026-11-11T18:22:56 I (2176517) quic_demo_main: APP_RTT seq=433 app_rtt_ms=27.650
+2026-11-11T18:23:01 I (2181547) quic_demo_main: APP_RTT seq=434 app_rtt_ms=47.717
+2026-11-11T18:23:06 I (2186577) quic_demo_main: APP_RTT seq=435 app_rtt_ms=67.336
+2026-11-11T18:23:11 I (2191607) quic_demo_main: APP_RTT seq=436 app_rtt_ms=87.373
+2026-11-11T18:23:16 I (2196637) quic_demo_main: APP_RTT seq=437 app_rtt_ms=107.165
+2026-11-11T18:23:21 I (2201567) quic_demo_main: APP_RTT seq=438 app_rtt_ms=27.451
+2026-11-11T18:23:26 I (2206597) quic_demo_main: APP_RTT seq=439 app_rtt_ms=47.402
+2026-11-11T18:23:31 I (2211627) quic_demo_main: APP_RTT seq=440 app_rtt_ms=67.448
+2026-11-11T18:23:36 I (2216657) quic_demo_main: APP_RTT seq=441 app_rtt_ms=87.682
+2026-11-11T18:23:41 I (2221687) quic_demo_main: APP_RTT seq=442 app_rtt_ms=107.829
+2026-11-11T18:23:46 I (2226617) quic_demo_main: APP_RTT seq=443 app_rtt_ms=27.411
+2026-11-11T18:23:51 I (2231647) quic_demo_main: APP_RTT seq=444 app_rtt_ms=47.339
+2026-11-11T18:23:56 I (2236677) quic_demo_main: APP_RTT seq=445 app_rtt_ms=67.445
+2026-11-11T18:24:01 I (2241707) quic_demo_main: APP_RTT seq=446 app_rtt_ms=87.679
+2026-11-11T18:24:06 I (2246737) quic_demo_main: APP_RTT seq=447 app_rtt_ms=107.420
+2026-11-11T18:24:11 I (2251667) quic_demo_main: APP_RTT seq=448 app_rtt_ms=27.444
+2026-11-11T18:24:16 I (2256697) quic_demo_main: APP_RTT seq=449 app_rtt_ms=47.507
+2026-11-11T18:24:21 I (2261727) quic_demo_main: APP_RTT seq=450 app_rtt_ms=67.517
+2026-11-11T18:24:26 I (2266757) quic_demo_main: APP_RTT seq=451 app_rtt_ms=87.511
+2026-11-11T18:24:31 I (2271787) quic_demo_main: APP_RTT seq=452 app_rtt_ms=107.934
+2026-11-11T18:24:36 I (2276717) quic_demo_main: APP_RTT seq=453 app_rtt_ms=27.480
+2026-11-11T18:24:41 I (2281747) quic_demo_main: APP_RTT seq=454 app_rtt_ms=47.477
+2026-11-11T18:24:46 I (2286777) quic_demo_main: APP_RTT seq=455 app_rtt_ms=67.405
+2026-11-11T18:24:51 I (2291807) quic_demo_main: APP_RTT seq=456 app_rtt_ms=87.359
+2026-11-11T18:24:56 I (2296837) quic_demo_main: APP_RTT seq=457 app_rtt_ms=107.434
+2026-11-11T18:25:01 I (2301767) quic_demo_main: APP_RTT seq=458 app_rtt_ms=27.412
+2026-11-11T18:25:06 I (2306797) quic_demo_main: APP_RTT seq=459 app_rtt_ms=47.518
+2026-11-11T18:25:11 I (2311827) quic_demo_main: APP_RTT seq=460 app_rtt_ms=67.524
+2026-11-11T18:25:16 I (2316857) quic_demo_main: APP_RTT seq=461 app_rtt_ms=87.527
+2026-11-11T18:25:21 I (2321887) quic_demo_main: APP_RTT seq=462 app_rtt_ms=108.206
+2026-11-11T18:25:26 I (2326817) quic_demo_main: APP_RTT seq=463 app_rtt_ms=27.426
+2026-11-11T18:25:31 I (2331847) quic_demo_main: APP_RTT seq=464 app_rtt_ms=47.465
+2026-11-11T18:25:36 I (2336877) quic_demo_main: APP_RTT seq=465 app_rtt_ms=67.498
+2026-11-11T18:25:41 I (2341907) quic_demo_main: APP_RTT seq=466 app_rtt_ms=87.527
+2026-11-11T18:25:46 I (2346937) quic_demo_main: APP_RTT seq=467 app_rtt_ms=107.494
+2026-11-11T18:25:51 I (2351867) quic_demo_main: APP_RTT seq=468 app_rtt_ms=27.323
+2026-11-11T18:25:56 I (2356897) quic_demo_main: APP_RTT seq=469 app_rtt_ms=47.462
+2026-11-11T18:26:01 I (2361927) quic_demo_main: APP_RTT seq=470 app_rtt_ms=67.402
+2026-11-11T18:26:06 I (2366957) quic_demo_main: APP_RTT seq=471 app_rtt_ms=87.396
+2026-11-11T18:26:11 I (2371987) quic_demo_main: APP_RTT seq=472 app_rtt_ms=108.106
+2026-11-11T18:26:16 I (2377017) quic_demo_main: APP_RTT seq=473 app_rtt_ms=127.572
+2026-11-11T18:26:21 I (2381947) quic_demo_main: APP_RTT seq=474 app_rtt_ms=47.618
+2026-11-11T18:26:26 I (2386977) quic_demo_main: APP_RTT seq=475 app_rtt_ms=67.659
+2026-11-11T18:26:31 I (2392007) quic_demo_main: APP_RTT seq=476 app_rtt_ms=87.692
+2026-11-11T18:26:36 I (2397037) quic_demo_main: APP_RTT seq=477 app_rtt_ms=107.569
+2026-11-11T18:26:41 I (2401967) quic_demo_main: APP_RTT seq=478 app_rtt_ms=27.638
+2026-11-11T18:26:46 I (2406997) quic_demo_main: APP_RTT seq=479 app_rtt_ms=47.570
+2026-11-11T18:26:51 I (2412027) quic_demo_main: APP_RTT seq=480 app_rtt_ms=67.623
+2026-11-11T18:26:56 I (2417057) quic_demo_main: APP_RTT seq=481 app_rtt_ms=87.878
+2026-11-11T18:27:01 I (2422087) quic_demo_main: APP_RTT seq=482 app_rtt_ms=108.063
+2026-11-11T18:27:06 I (2427017) quic_demo_main: APP_RTT seq=483 app_rtt_ms=27.592
+2026-11-11T18:27:11 I (2432047) quic_demo_main: APP_RTT seq=484 app_rtt_ms=47.485
+2026-11-11T18:27:16 I (2437077) quic_demo_main: APP_RTT seq=485 app_rtt_ms=67.596
+2026-11-11T18:27:21 I (2442107) quic_demo_main: APP_RTT seq=486 app_rtt_ms=87.869
+2026-11-11T18:27:26 I (2447137) quic_demo_main: APP_RTT seq=487 app_rtt_ms=107.620
+2026-11-11T18:27:31 I (2452167) quic_demo_main: APP_RTT seq=488 app_rtt_ms=127.630
+2026-11-11T18:27:36 I (2457097) quic_demo_main: APP_RTT seq=489 app_rtt_ms=47.658
+2026-11-11T18:27:41 I (2462127) quic_demo_main: APP_RTT seq=490 app_rtt_ms=67.711
+2026-11-11T18:27:46 I (2467157) quic_demo_main: APP_RTT seq=491 app_rtt_ms=87.597
+2026-11-11T18:27:51 I (2472187) quic_demo_main: APP_RTT seq=492 app_rtt_ms=108.106
+2026-11-11T18:27:56 I (2477117) quic_demo_main: APP_RTT seq=493 app_rtt_ms=27.649
+2026-11-11T18:28:01 I (2482147) quic_demo_main: APP_RTT seq=494 app_rtt_ms=47.577
+2026-11-11T18:28:06 I (2487177) quic_demo_main: APP_RTT seq=495 app_rtt_ms=67.540
+2026-11-11T18:28:11 I (2492207) quic_demo_main: APP_RTT seq=496 app_rtt_ms=87.496
+2026-11-11T18:28:16 I (2497237) quic_demo_main: APP_RTT seq=497 app_rtt_ms=107.591
+2026-11-11T18:28:21 I (2502167) quic_demo_main: APP_RTT seq=498 app_rtt_ms=27.558
+2026-11-11T18:28:26 I (2507197) quic_demo_main: APP_RTT seq=499 app_rtt_ms=47.670
+2026-11-11T18:28:31 I (2512227) quic_demo_main: APP_RTT seq=500 app_rtt_ms=67.856
+2026-11-11T18:28:36 I (2517257) quic_demo_main: APP_RTT seq=501 app_rtt_ms=87.689
+2026-11-11T18:28:41 I (2522287) quic_demo_main: APP_RTT seq=502 app_rtt_ms=108.091
+2026-11-11T18:28:46 I (2527217) quic_demo_main: APP_RTT seq=503 app_rtt_ms=27.618
+2026-11-11T18:28:51 I (2532247) quic_demo_main: APP_RTT seq=504 app_rtt_ms=47.897
+2026-11-11T18:28:56 I (2537277) quic_demo_main: APP_RTT seq=505 app_rtt_ms=67.677
+2026-11-11T18:29:01 I (2542307) quic_demo_main: APP_RTT seq=506 app_rtt_ms=87.723
+2026-11-11T18:29:06 I (2547337) quic_demo_main: APP_RTT seq=507 app_rtt_ms=107.606
+2026-11-11T18:29:11 I (2552267) quic_demo_main: APP_RTT seq=508 app_rtt_ms=27.601
+2026-11-11T18:29:16 I (2557297) quic_demo_main: APP_RTT seq=509 app_rtt_ms=47.078
+2026-11-11T18:29:21 I (2562327) quic_demo_main: APP_RTT seq=510 app_rtt_ms=67.536
+2026-11-11T18:29:26 I (2567357) quic_demo_main: APP_RTT seq=511 app_rtt_ms=87.567
+2026-11-11T18:29:31 I (2572387) quic_demo_main: APP_RTT seq=512 app_rtt_ms=108.010
+2026-11-11T18:29:36 I (2577317) quic_demo_main: APP_RTT seq=513 app_rtt_ms=27.736
+2026-11-11T18:29:41 I (2582347) quic_demo_main: APP_RTT seq=514 app_rtt_ms=47.649
+2026-11-11T18:29:46 I (2587377) quic_demo_main: APP_RTT seq=515 app_rtt_ms=67.670
+2026-11-11T18:29:52 I (2592407) quic_demo_main: APP_RTT seq=516 app_rtt_ms=87.630
+2026-11-11T18:29:57 I (2597437) quic_demo_main: APP_RTT seq=517 app_rtt_ms=107.633
+2026-11-11T18:30:02 I (2602467) quic_demo_main: APP_RTT seq=518 app_rtt_ms=127.643
+2026-11-11T18:30:06 I (2607397) quic_demo_main: APP_RTT seq=519 app_rtt_ms=47.563
+2026-11-11T18:30:12 I (2612427) quic_demo_main: APP_RTT seq=520 app_rtt_ms=67.855
+2026-11-11T18:30:17 I (2617457) quic_demo_main: APP_RTT seq=521 app_rtt_ms=87.649
+2026-11-11T18:30:22 I (2622487) quic_demo_main: APP_RTT seq=522 app_rtt_ms=108.017
+2026-11-11T18:30:27 I (2627417) quic_demo_main: APP_RTT seq=523 app_rtt_ms=27.117
+2026-11-11T18:30:32 I (2632447) quic_demo_main: APP_RTT seq=524 app_rtt_ms=47.546
+2026-11-11T18:30:37 I (2637477) quic_demo_main: APP_RTT seq=525 app_rtt_ms=67.616
+2026-11-11T18:30:42 I (2642507) quic_demo_main: APP_RTT seq=526 app_rtt_ms=88.069
+2026-11-11T18:30:47 I (2647537) quic_demo_main: APP_RTT seq=527 app_rtt_ms=107.660
+2026-11-11T18:30:52 I (2652467) quic_demo_main: APP_RTT seq=528 app_rtt_ms=27.670
+2026-11-11T18:30:57 I (2657497) quic_demo_main: APP_RTT seq=529 app_rtt_ms=47.736
+2026-11-11T18:31:02 I (2662527) quic_demo_main: APP_RTT seq=530 app_rtt_ms=67.730
+2026-11-11T18:31:07 I (2667557) quic_demo_main: APP_RTT seq=531 app_rtt_ms=87.774
+2026-11-11T18:31:12 I (2672587) quic_demo_main: APP_RTT seq=532 app_rtt_ms=108.266
+2026-11-11T18:31:17 I (2677517) quic_demo_main: APP_RTT seq=533 app_rtt_ms=27.728
+2026-11-11T18:31:22 I (2682547) quic_demo_main: APP_RTT seq=534 app_rtt_ms=47.636
+2026-11-11T18:31:27 I (2687577) quic_demo_main: APP_RTT seq=535 app_rtt_ms=67.310
+2026-11-11T18:31:32 I (2692607) quic_demo_main: APP_RTT seq=536 app_rtt_ms=87.553
+2026-11-11T18:31:37 I (2697637) quic_demo_main: APP_RTT seq=537 app_rtt_ms=107.143
+2026-11-11T18:31:42 I (2702567) quic_demo_main: APP_RTT seq=538 app_rtt_ms=27.542
+2026-11-11T18:31:47 I (2707597) quic_demo_main: APP_RTT seq=539 app_rtt_ms=47.712
+2026-11-11T18:31:52 I (2712627) quic_demo_main: APP_RTT seq=540 app_rtt_ms=67.677
+2026-11-11T18:31:57 I (2717657) quic_demo_main: APP_RTT seq=541 app_rtt_ms=87.693
+2026-11-11T18:32:02 I (2722687) quic_demo_main: APP_RTT seq=542 app_rtt_ms=108.062
+2026-11-11T18:32:07 I (2727617) quic_demo_main: APP_RTT seq=543 app_rtt_ms=27.601
+2026-11-11T18:32:12 I (2732647) quic_demo_main: APP_RTT seq=544 app_rtt_ms=47.656
+2026-11-11T18:32:17 I (2737677) quic_demo_main: APP_RTT seq=545 app_rtt_ms=67.686
+2026-11-11T18:32:22 I (2742707) quic_demo_main: APP_RTT seq=546 app_rtt_ms=87.632
+2026-11-11T18:32:27 I (2747737) quic_demo_main: APP_RTT seq=547 app_rtt_ms=107.588
+2026-11-11T18:32:32 I (2752667) quic_demo_main: APP_RTT seq=548 app_rtt_ms=27.538
+2026-11-11T18:32:37 I (2757697) quic_demo_main: APP_RTT seq=549 app_rtt_ms=47.488
+2026-11-11T18:32:42 I (2762727) quic_demo_main: APP_RTT seq=550 app_rtt_ms=67.580
+2026-11-11T18:32:47 I (2767757) quic_demo_main: APP_RTT seq=551 app_rtt_ms=87.484
+2026-11-11T18:32:52 I (2772787) quic_demo_main: APP_RTT seq=552 app_rtt_ms=108.204
+2026-11-11T18:32:57 I (2777717) quic_demo_main: APP_RTT seq=553 app_rtt_ms=27.697
+2026-11-11T18:33:02 I (2782747) quic_demo_main: APP_RTT seq=554 app_rtt_ms=47.697
+2026-11-11T18:33:07 I (2787777) quic_demo_main: APP_RTT seq=555 app_rtt_ms=67.674
+2026-11-11T18:33:12 I (2792807) quic_demo_main: APP_RTT seq=556 app_rtt_ms=87.699
+2026-11-11T18:33:17 I (2797837) quic_demo_main: APP_RTT seq=557 app_rtt_ms=107.793
+2026-11-11T18:33:22 I (2802767) quic_demo_main: APP_RTT seq=558 app_rtt_ms=27.604
+2026-11-11T18:33:27 I (2807797) quic_demo_main: APP_RTT seq=559 app_rtt_ms=47.566
+2026-11-11T18:33:32 I (2812827) quic_demo_main: APP_RTT seq=560 app_rtt_ms=67.688
+2026-11-11T18:33:37 I (2817857) quic_demo_main: APP_RTT seq=561 app_rtt_ms=87.665
+2026-11-11T18:33:42 I (2822887) quic_demo_main: APP_RTT seq=562 app_rtt_ms=107.578
+2026-11-11T18:33:47 I (2827817) quic_demo_main: APP_RTT seq=563 app_rtt_ms=27.321
+2026-11-11T18:33:52 I (2832847) quic_demo_main: APP_RTT seq=564 app_rtt_ms=47.241
+2026-11-11T18:33:57 I (2837877) quic_demo_main: APP_RTT seq=565 app_rtt_ms=67.289
+2026-11-11T18:34:02 I (2842907) quic_demo_main: APP_RTT seq=566 app_rtt_ms=87.429
+2026-11-11T18:34:07 I (2847937) quic_demo_main: APP_RTT seq=567 app_rtt_ms=107.324
+2026-11-11T18:34:12 I (2852867) quic_demo_main: APP_RTT seq=568 app_rtt_ms=27.415
+2026-11-11T18:34:17 I (2857897) quic_demo_main: APP_RTT seq=569 app_rtt_ms=47.574
+2026-11-11T18:34:22 I (2862927) quic_demo_main: APP_RTT seq=570 app_rtt_ms=67.366
+2026-11-11T18:34:27 I (2867957) quic_demo_main: APP_RTT seq=571 app_rtt_ms=87.415
+2026-11-11T18:34:32 I (2872987) quic_demo_main: APP_RTT seq=572 app_rtt_ms=107.818
+2026-11-11T18:34:37 I (2877917) quic_demo_main: APP_RTT seq=573 app_rtt_ms=27.376
+2026-11-11T18:34:42 I (2882947) quic_demo_main: APP_RTT seq=574 app_rtt_ms=47.307
+2026-11-11T18:34:47 I (2887977) quic_demo_main: APP_RTT seq=575 app_rtt_ms=67.284
+2026-11-11T18:34:52 I (2893007) quic_demo_main: APP_RTT seq=576 app_rtt_ms=86.935
+2026-11-11T18:34:57 I (2898037) quic_demo_main: APP_RTT seq=577 app_rtt_ms=107.533
+2026-11-11T18:35:02 I (2902967) quic_demo_main: APP_RTT seq=578 app_rtt_ms=27.582
+2026-11-11T18:35:07 I (2907997) quic_demo_main: APP_RTT seq=579 app_rtt_ms=47.623
+2026-11-11T18:35:12 I (2913027) quic_demo_main: APP_RTT seq=580 app_rtt_ms=67.435
+2026-11-11T18:35:17 I (2918057) quic_demo_main: APP_RTT seq=581 app_rtt_ms=87.673
+2026-11-11T18:35:22 I (2923087) quic_demo_main: APP_RTT seq=582 app_rtt_ms=108.119
+2026-11-11T18:35:27 I (2928017) quic_demo_main: APP_RTT seq=583 app_rtt_ms=27.564
+2026-11-11T18:35:32 I (2933047) quic_demo_main: APP_RTT seq=584 app_rtt_ms=47.403
+2026-11-11T18:35:37 I (2938077) quic_demo_main: APP_RTT seq=585 app_rtt_ms=67.573
+2026-11-11T18:35:42 I (2943107) quic_demo_main: APP_RTT seq=586 app_rtt_ms=87.392
+2026-11-11T18:35:47 I (2948137) quic_demo_main: APP_RTT seq=587 app_rtt_ms=107.261
+2026-11-11T18:35:52 I (2953067) quic_demo_main: APP_RTT seq=588 app_rtt_ms=27.279
+2026-11-11T18:35:57 I (2958097) quic_demo_main: APP_RTT seq=589 app_rtt_ms=47.266
+2026-11-11T18:36:02 I (2963127) quic_demo_main: APP_RTT seq=590 app_rtt_ms=66.808
+2026-11-11T18:36:07 I (2968157) quic_demo_main: APP_RTT seq=591 app_rtt_ms=87.252
+2026-11-11T18:36:12 I (2973187) quic_demo_main: APP_RTT seq=592 app_rtt_ms=108.903
+2026-11-11T18:36:17 I (2978117) quic_demo_main: APP_RTT seq=593 app_rtt_ms=27.433
+2026-11-11T18:36:22 I (2983147) quic_demo_main: APP_RTT seq=594 app_rtt_ms=47.457
+2026-11-11T18:36:27 I (2988177) quic_demo_main: APP_RTT seq=595 app_rtt_ms=67.375
+2026-11-11T18:36:32 I (2993207) quic_demo_main: APP_RTT seq=596 app_rtt_ms=87.413
+2026-11-11T18:36:37 I (2998237) quic_demo_main: APP_RTT seq=597 app_rtt_ms=107.311
+2026-11-11T18:36:42 I (3003167) quic_demo_main: APP_RTT seq=598 app_rtt_ms=27.334
+2026-11-11T18:36:47 I (3008197) quic_demo_main: APP_RTT seq=599 app_rtt_ms=47.262
+2026-11-11T18:36:52 I (3013227) quic_demo_main: APP_RTT seq=600 app_rtt_ms=67.387
+2026-11-11T18:36:57 I (3018257) quic_demo_main: APP_RTT seq=601 app_rtt_ms=87.573
+2026-11-11T18:37:02 I (3023287) quic_demo_main: APP_RTT seq=602 app_rtt_ms=107.758
+2026-11-11T18:37:07 I (3028217) quic_demo_main: APP_RTT seq=603 app_rtt_ms=27.339
+2026-11-11T18:37:12 I (3033247) quic_demo_main: APP_RTT seq=604 app_rtt_ms=47.228
+2026-11-11T18:37:17 I (3038277) quic_demo_main: APP_RTT seq=605 app_rtt_ms=67.293
+2026-11-11T18:37:22 I (3043307) quic_demo_main: APP_RTT seq=606 app_rtt_ms=87.553
+2026-11-11T18:37:27 I (3048337) quic_demo_main: APP_RTT seq=607 app_rtt_ms=107.344
+2026-11-11T18:37:32 I (3053267) quic_demo_main: APP_RTT seq=608 app_rtt_ms=27.413
+2026-11-11T18:37:37 I (3058397) quic_demo_main: APP_RTT seq=609 app_rtt_ms=147.320
+2026-11-11T18:37:42 I (3063327) quic_demo_main: APP_RTT seq=610 app_rtt_ms=67.412
+2026-11-11T18:37:47 I (3068357) quic_demo_main: APP_RTT seq=611 app_rtt_ms=87.348
+2026-11-11T18:37:52 I (3073387) quic_demo_main: APP_RTT seq=612 app_rtt_ms=107.804
+2026-11-11T18:37:57 I (3078317) quic_demo_main: APP_RTT seq=613 app_rtt_ms=27.395
+2026-11-11T18:38:02 I (3083347) quic_demo_main: APP_RTT seq=614 app_rtt_ms=47.278
+2026-11-11T18:38:07 I (3088377) quic_demo_main: APP_RTT seq=615 app_rtt_ms=67.320
+2026-11-11T18:38:13 I (3093407) quic_demo_main: APP_RTT seq=616 app_rtt_ms=86.868
+2026-11-11T18:38:18 I (3098437) quic_demo_main: APP_RTT seq=617 app_rtt_ms=107.323
+2026-11-11T18:38:22 I (3103367) quic_demo_main: APP_RTT seq=618 app_rtt_ms=27.269
+2026-11-11T18:38:27 I (3108397) quic_demo_main: APP_RTT seq=619 app_rtt_ms=47.299
+2026-11-11T18:38:33 I (3113427) quic_demo_main: APP_RTT seq=620 app_rtt_ms=67.417
+2026-11-11T18:38:38 I (3118457) quic_demo_main: APP_RTT seq=621 app_rtt_ms=87.334
+2026-11-11T18:38:43 I (3123487) quic_demo_main: APP_RTT seq=622 app_rtt_ms=107.844
+2026-11-11T18:38:48 I (3128417) quic_demo_main: APP_RTT seq=623 app_rtt_ms=27.275
+2026-11-11T18:38:53 I (3133447) quic_demo_main: APP_RTT seq=624 app_rtt_ms=47.400
+2026-11-11T18:38:58 I (3138477) quic_demo_main: APP_RTT seq=625 app_rtt_ms=67.563
+2026-11-11T18:39:03 I (3143507) quic_demo_main: APP_RTT seq=626 app_rtt_ms=87.791
+2026-11-11T18:39:08 I (3148537) quic_demo_main: APP_RTT seq=627 app_rtt_ms=107.392
+2026-11-11T18:39:13 I (3153467) quic_demo_main: APP_RTT seq=628 app_rtt_ms=27.321
+2026-11-11T18:39:18 I (3158497) quic_demo_main: APP_RTT seq=629 app_rtt_ms=47.364
+2026-11-11T18:39:23 I (3163527) quic_demo_main: APP_RTT seq=630 app_rtt_ms=67.325
+2026-11-11T18:39:28 I (3168557) quic_demo_main: APP_RTT seq=631 app_rtt_ms=87.657
+2026-11-11T18:39:33 I (3173587) quic_demo_main: APP_RTT seq=632 app_rtt_ms=107.905
+2026-11-11T18:39:38 I (3178517) quic_demo_main: APP_RTT seq=633 app_rtt_ms=27.519
+2026-11-11T18:39:43 I (3183547) quic_demo_main: APP_RTT seq=634 app_rtt_ms=47.567
+2026-11-11T18:39:48 I (3188577) quic_demo_main: APP_RTT seq=635 app_rtt_ms=67.188
+2026-11-11T18:39:53 I (3193607) quic_demo_main: APP_RTT seq=636 app_rtt_ms=87.227
+2026-11-11T18:39:58 I (3198637) quic_demo_main: APP_RTT seq=637 app_rtt_ms=107.069
+2026-11-11T18:40:03 I (3203567) quic_demo_main: APP_RTT seq=638 app_rtt_ms=27.339
+2026-11-11T18:40:08 I (3208597) quic_demo_main: APP_RTT seq=639 app_rtt_ms=47.288
+2026-11-11T18:40:13 I (3213627) quic_demo_main: APP_RTT seq=640 app_rtt_ms=67.389
+2026-11-11T18:40:18 I (3218657) quic_demo_main: APP_RTT seq=641 app_rtt_ms=87.341
+2026-11-11T18:40:23 I (3223687) quic_demo_main: APP_RTT seq=642 app_rtt_ms=107.715
+2026-11-11T18:40:28 I (3228617) quic_demo_main: APP_RTT seq=643 app_rtt_ms=27.275
+2026-11-11T18:40:33 I (3233647) quic_demo_main: APP_RTT seq=644 app_rtt_ms=47.188
+2026-11-11T18:40:38 I (3238677) quic_demo_main: APP_RTT seq=645 app_rtt_ms=67.221
+2026-11-11T18:40:43 I (3243707) quic_demo_main: APP_RTT seq=646 app_rtt_ms=87.320
+2026-11-11T18:40:48 I (3248737) quic_demo_main: APP_RTT seq=647 app_rtt_ms=107.242
+2026-11-11T18:40:53 I (3253667) quic_demo_main: APP_RTT seq=648 app_rtt_ms=27.427
+2026-11-11T18:40:58 I (3258697) quic_demo_main: APP_RTT seq=649 app_rtt_ms=47.406
+2026-11-11T18:41:03 I (3263727) quic_demo_main: APP_RTT seq=650 app_rtt_ms=67.389
+2026-11-11T18:41:08 I (3268757) quic_demo_main: APP_RTT seq=651 app_rtt_ms=87.543
+2026-11-11T18:41:13 I (3273787) quic_demo_main: APP_RTT seq=652 app_rtt_ms=107.840
+2026-11-11T18:41:18 I (3278717) quic_demo_main: APP_RTT seq=653 app_rtt_ms=27.415
+2026-11-11T18:41:23 I (3283747) quic_demo_main: APP_RTT seq=654 app_rtt_ms=47.319
+2026-11-11T18:41:28 I (3288777) quic_demo_main: APP_RTT seq=655 app_rtt_ms=67.320
+2026-11-11T18:41:33 I (3293807) quic_demo_main: APP_RTT seq=656 app_rtt_ms=87.332
+2026-11-11T18:41:38 I (3298837) quic_demo_main: APP_RTT seq=657 app_rtt_ms=107.302
+2026-11-11T18:41:43 I (3303767) quic_demo_main: APP_RTT seq=658 app_rtt_ms=27.166
+2026-11-11T18:41:48 I (3308797) quic_demo_main: APP_RTT seq=659 app_rtt_ms=47.298
+2026-11-11T18:41:53 I (3313827) quic_demo_main: APP_RTT seq=660 app_rtt_ms=67.531
+2026-11-11T18:41:58 I (3318857) quic_demo_main: APP_RTT seq=661 app_rtt_ms=87.389
+2026-11-11T18:42:03 I (3323887) quic_demo_main: APP_RTT seq=662 app_rtt_ms=107.824
+2026-11-11T18:42:08 I (3328817) quic_demo_main: APP_RTT seq=663 app_rtt_ms=27.313
+2026-11-11T18:42:13 I (3333847) quic_demo_main: APP_RTT seq=664 app_rtt_ms=47.421
+2026-11-11T18:42:18 I (3338877) quic_demo_main: APP_RTT seq=665 app_rtt_ms=67.354
+2026-11-11T18:42:23 I (3343907) quic_demo_main: APP_RTT seq=666 app_rtt_ms=87.413
+2026-11-11T18:42:28 I (3348937) quic_demo_main: APP_RTT seq=667 app_rtt_ms=107.202
+2026-11-11T18:42:33 I (3353867) quic_demo_main: APP_RTT seq=668 app_rtt_ms=27.333
+2026-11-11T18:42:38 I (3358897) quic_demo_main: APP_RTT seq=669 app_rtt_ms=47.248
+2026-11-11T18:42:43 I (3363927) quic_demo_main: APP_RTT seq=670 app_rtt_ms=67.208
+2026-11-11T18:42:48 I (3368957) quic_demo_main: APP_RTT seq=671 app_rtt_ms=87.243
+2026-11-11T18:42:53 I (3373987) quic_demo_main: APP_RTT seq=672 app_rtt_ms=107.774
+2026-11-11T18:42:58 I (3378917) quic_demo_main: APP_RTT seq=673 app_rtt_ms=27.457
+2026-11-11T18:43:03 I (3383947) quic_demo_main: APP_RTT seq=674 app_rtt_ms=47.357
+2026-11-11T18:43:08 I (3388977) quic_demo_main: APP_RTT seq=675 app_rtt_ms=67.396
+2026-11-11T18:43:13 I (3394007) quic_demo_main: APP_RTT seq=676 app_rtt_ms=87.410
+2026-11-11T18:43:18 I (3399037) quic_demo_main: APP_RTT seq=677 app_rtt_ms=107.292
+2026-11-11T18:43:23 I (3403967) quic_demo_main: APP_RTT seq=678 app_rtt_ms=27.363
+2026-11-11T18:43:28 I (3408997) quic_demo_main: APP_RTT seq=679 app_rtt_ms=47.288
+2026-11-11T18:43:33 I (3414027) quic_demo_main: APP_RTT seq=680 app_rtt_ms=67.440
+2026-11-11T18:43:38 I (3419057) quic_demo_main: APP_RTT seq=681 app_rtt_ms=87.379
+2026-11-11T18:43:43 I (3424087) quic_demo_main: APP_RTT seq=682 app_rtt_ms=107.852
+2026-11-11T18:43:48 I (3429017) quic_demo_main: APP_RTT seq=683 app_rtt_ms=27.049
+2026-11-11T18:43:53 I (3434047) quic_demo_main: APP_RTT seq=684 app_rtt_ms=47.226
+2026-11-11T18:43:58 I (3439077) quic_demo_main: APP_RTT seq=685 app_rtt_ms=67.293
+2026-11-11T18:44:03 I (3444107) quic_demo_main: APP_RTT seq=686 app_rtt_ms=87.287
+2026-11-11T18:44:08 I (3449137) quic_demo_main: APP_RTT seq=687 app_rtt_ms=107.329
+2026-11-11T18:44:13 I (3454167) quic_demo_main: APP_RTT seq=688 app_rtt_ms=127.278
+2026-11-11T18:44:18 I (3459097) quic_demo_main: APP_RTT seq=689 app_rtt_ms=47.411
+2026-11-11T18:44:23 I (3464127) quic_demo_main: APP_RTT seq=690 app_rtt_ms=67.411
+2026-11-11T18:44:28 I (3469157) quic_demo_main: APP_RTT seq=691 app_rtt_ms=87.348
+2026-11-11T18:44:33 I (3474187) quic_demo_main: APP_RTT seq=692 app_rtt_ms=107.841
+2026-11-11T18:44:38 I (3479117) quic_demo_main: APP_RTT seq=693 app_rtt_ms=27.311
+2026-11-11T18:44:43 I (3484147) quic_demo_main: APP_RTT seq=694 app_rtt_ms=47.327
+2026-11-11T18:44:48 I (3489177) quic_demo_main: APP_RTT seq=695 app_rtt_ms=67.324
+2026-11-11T18:44:53 I (3494207) quic_demo_main: APP_RTT seq=696 app_rtt_ms=87.299
+2026-11-11T18:44:58 I (3499237) quic_demo_main: APP_RTT seq=697 app_rtt_ms=107.295
+2026-11-11T18:45:03 I (3504267) quic_demo_main: APP_RTT seq=698 app_rtt_ms=127.246
+2026-11-11T18:45:08 I (3509197) quic_demo_main: APP_RTT seq=699 app_rtt_ms=47.340
+2026-11-11T18:45:13 I (3514227) quic_demo_main: APP_RTT seq=700 app_rtt_ms=67.371
+2026-11-11T18:45:18 I (3519257) quic_demo_main: APP_RTT seq=701 app_rtt_ms=87.368
+2026-11-11T18:45:23 I (3524287) quic_demo_main: APP_RTT seq=702 app_rtt_ms=107.903
+2026-11-11T18:45:28 I (3529217) quic_demo_main: APP_RTT seq=703 app_rtt_ms=27.335
+2026-11-11T18:45:33 I (3534247) quic_demo_main: APP_RTT seq=704 app_rtt_ms=47.457
+2026-11-11T18:45:38 I (3539277) quic_demo_main: APP_RTT seq=705 app_rtt_ms=67.398
+2026-11-11T18:45:43 I (3544307) quic_demo_main: APP_RTT seq=706 app_rtt_ms=87.445
+2026-11-11T18:45:48 I (3549337) quic_demo_main: APP_RTT seq=707 app_rtt_ms=107.481
+2026-11-11T18:45:53 I (3554267) quic_demo_main: APP_RTT seq=708 app_rtt_ms=27.302
+2026-11-11T18:45:58 I (3559297) quic_demo_main: APP_RTT seq=709 app_rtt_ms=47.296
+2026-11-11T18:46:03 I (3564327) quic_demo_main: APP_RTT seq=710 app_rtt_ms=66.827
+2026-11-11T18:46:08 I (3569357) quic_demo_main: APP_RTT seq=711 app_rtt_ms=87.234
+2026-11-11T18:46:13 I (3574387) quic_demo_main: APP_RTT seq=712 app_rtt_ms=107.798
+2026-11-11T18:46:18 I (3579317) quic_demo_main: APP_RTT seq=713 app_rtt_ms=27.353
+2026-11-11T18:46:23 I (3584347) quic_demo_main: APP_RTT seq=714 app_rtt_ms=47.423
+2026-11-11T18:46:28 I (3589377) quic_demo_main: APP_RTT seq=715 app_rtt_ms=67.395
+2026-11-11T18:46:34 I (3594407) quic_demo_main: APP_RTT seq=716 app_rtt_ms=87.403
+2026-11-11T18:46:39 I (3599437) quic_demo_main: APP_RTT seq=717 app_rtt_ms=107.242
+2026-11-11T18:46:44 I (3604467) quic_demo_main: APP_RTT seq=718 app_rtt_ms=127.341
+2026-11-11T18:46:48 I (3609397) quic_demo_main: APP_RTT seq=719 app_rtt_ms=47.311
+2026-11-11T18:46:54 I (3614427) quic_demo_main: APP_RTT seq=720 app_rtt_ms=67.393
+2026-11-11T18:46:59 I (3619457) quic_demo_main: APP_RTT seq=721 app_rtt_ms=87.403
+2026-11-11T18:47:04 I (3624487) quic_demo_main: APP_RTT seq=722 app_rtt_ms=107.819
+2026-11-11T18:47:09 I (3629417) quic_demo_main: APP_RTT seq=723 app_rtt_ms=27.305
+2026-11-11T18:47:14 I (3634447) quic_demo_main: APP_RTT seq=724 app_rtt_ms=47.226
+2026-11-11T18:47:19 I (3639477) quic_demo_main: APP_RTT seq=725 app_rtt_ms=67.238
+2026-11-11T18:47:24 I (3644507) quic_demo_main: APP_RTT seq=726 app_rtt_ms=87.770
+2026-11-11T18:47:29 I (3649537) quic_demo_main: APP_RTT seq=727 app_rtt_ms=107.395
+2026-11-11T18:47:34 I (3654467) quic_demo_main: APP_RTT seq=728 app_rtt_ms=27.609
+2026-11-11T18:47:39 I (3659497) quic_demo_main: APP_RTT seq=729 app_rtt_ms=47.433
+2026-11-11T18:47:44 I (3664527) quic_demo_main: APP_RTT seq=730 app_rtt_ms=67.504
+2026-11-11T18:47:49 I (3669557) quic_demo_main: APP_RTT seq=731 app_rtt_ms=87.459
+2026-11-11T18:47:54 I (3674587) quic_demo_main: APP_RTT seq=732 app_rtt_ms=107.960
+2026-11-11T18:47:59 I (3679517) quic_demo_main: APP_RTT seq=733 app_rtt_ms=27.431
+2026-11-11T18:48:04 I (3684547) quic_demo_main: APP_RTT seq=734 app_rtt_ms=47.339
+2026-11-11T18:48:09 I (3689577) quic_demo_main: APP_RTT seq=735 app_rtt_ms=67.182
+2026-11-11T18:48:14 I (3694607) quic_demo_main: APP_RTT seq=736 app_rtt_ms=87.124
+2026-11-11T18:48:19 I (3699637) quic_demo_main: APP_RTT seq=737 app_rtt_ms=107.086
+2026-11-11T18:48:24 I (3704567) quic_demo_main: APP_RTT seq=738 app_rtt_ms=27.197
+2026-11-11T18:48:29 I (3709597) quic_demo_main: APP_RTT seq=739 app_rtt_ms=47.261
+2026-11-11T18:48:34 I (3714627) quic_demo_main: APP_RTT seq=740 app_rtt_ms=67.655
+2026-11-11T18:48:39 I (3719657) quic_demo_main: APP_RTT seq=741 app_rtt_ms=87.396
+2026-11-11T18:48:44 I (3724687) quic_demo_main: APP_RTT seq=742 app_rtt_ms=107.934
+2026-11-11T18:48:49 I (3729617) quic_demo_main: APP_RTT seq=743 app_rtt_ms=27.310
+2026-11-11T18:48:54 I (3734647) quic_demo_main: APP_RTT seq=744 app_rtt_ms=47.395
+2026-11-11T18:48:59 I (3739677) quic_demo_main: APP_RTT seq=745 app_rtt_ms=67.346
+2026-11-11T18:49:04 I (3744707) quic_demo_main: APP_RTT seq=746 app_rtt_ms=87.670
+2026-11-11T18:49:09 I (3749737) quic_demo_main: APP_RTT seq=747 app_rtt_ms=107.557
+2026-11-11T18:49:14 I (3754667) quic_demo_main: APP_RTT seq=748 app_rtt_ms=27.570
+2026-11-11T18:49:19 I (3759697) quic_demo_main: APP_RTT seq=749 app_rtt_ms=47.587
+2026-11-11T18:49:24 I (3764727) quic_demo_main: APP_RTT seq=750 app_rtt_ms=67.324
+2026-11-11T18:49:29 I (3769757) quic_demo_main: APP_RTT seq=751 app_rtt_ms=87.528
+2026-11-11T18:49:34 I (3774787) quic_demo_main: APP_RTT seq=752 app_rtt_ms=107.571
+2026-11-11T18:49:39 I (3779717) quic_demo_main: APP_RTT seq=753 app_rtt_ms=27.382
+2026-11-11T18:49:44 I (3784747) quic_demo_main: APP_RTT seq=754 app_rtt_ms=47.807
+2026-11-11T18:49:49 I (3789777) quic_demo_main: APP_RTT seq=755 app_rtt_ms=67.671
+2026-11-11T18:49:54 I (3794807) quic_demo_main: APP_RTT seq=756 app_rtt_ms=87.720
+2026-11-11T18:49:59 I (3799837) quic_demo_main: APP_RTT seq=757 app_rtt_ms=107.617
+2026-11-11T18:50:04 I (3804767) quic_demo_main: APP_RTT seq=758 app_rtt_ms=27.567
+2026-11-11T18:50:09 I (3809797) quic_demo_main: APP_RTT seq=759 app_rtt_ms=47.571
+2026-11-11T18:50:14 I (3814827) quic_demo_main: APP_RTT seq=760 app_rtt_ms=67.690
+2026-11-11T18:50:19 I (3819857) quic_demo_main: APP_RTT seq=761 app_rtt_ms=87.645
+2026-11-11T18:50:24 I (3824887) quic_demo_main: APP_RTT seq=762 app_rtt_ms=108.128
+2026-11-11T18:50:29 I (3829817) quic_demo_main: APP_RTT seq=763 app_rtt_ms=27.129
+2026-11-11T18:50:34 I (3834847) quic_demo_main: APP_RTT seq=764 app_rtt_ms=47.560
+2026-11-11T18:50:39 I (3839877) quic_demo_main: APP_RTT seq=765 app_rtt_ms=67.538
+2026-11-11T18:50:44 I (3844907) quic_demo_main: APP_RTT seq=766 app_rtt_ms=87.560
+2026-11-11T18:50:49 I (3849937) quic_demo_main: APP_RTT seq=767 app_rtt_ms=107.620
+2026-11-11T18:50:54 I (3854867) quic_demo_main: APP_RTT seq=768 app_rtt_ms=27.630
+2026-11-11T18:50:59 I (3859897) quic_demo_main: APP_RTT seq=769 app_rtt_ms=47.702
+2026-11-11T18:51:04 I (3864927) quic_demo_main: APP_RTT seq=770 app_rtt_ms=67.365
+2026-11-11T18:51:09 I (3869957) quic_demo_main: APP_RTT seq=771 app_rtt_ms=87.691
+2026-11-11T18:51:14 I (3874987) quic_demo_main: APP_RTT seq=772 app_rtt_ms=107.986
+2026-11-11T18:51:19 I (3879917) quic_demo_main: APP_RTT seq=773 app_rtt_ms=27.379
+2026-11-11T18:51:24 I (3885047) quic_demo_main: APP_RTT seq=774 app_rtt_ms=147.311
+2026-11-11T18:51:29 I (3889977) quic_demo_main: APP_RTT seq=775 app_rtt_ms=67.289
+2026-11-11T18:51:34 I (3895007) quic_demo_main: APP_RTT seq=776 app_rtt_ms=87.336
+2026-11-11T18:51:39 I (3900037) quic_demo_main: APP_RTT seq=777 app_rtt_ms=107.076
+2026-11-11T18:51:44 I (3904967) quic_demo_main: APP_RTT seq=778 app_rtt_ms=27.311
+2026-11-11T18:51:49 I (3909997) quic_demo_main: APP_RTT seq=779 app_rtt_ms=46.754
+2026-11-11T18:51:54 I (3915027) quic_demo_main: APP_RTT seq=780 app_rtt_ms=67.375
+2026-11-11T18:51:59 I (3920057) quic_demo_main: APP_RTT seq=781 app_rtt_ms=87.427
+2026-11-11T18:52:04 I (3925087) quic_demo_main: APP_RTT seq=782 app_rtt_ms=107.786
+2026-11-11T18:52:09 I (3930017) quic_demo_main: APP_RTT seq=783 app_rtt_ms=27.619
+2026-11-11T18:52:14 I (3935047) quic_demo_main: APP_RTT seq=784 app_rtt_ms=47.371
+2026-11-11T18:52:19 I (3940077) quic_demo_main: APP_RTT seq=785 app_rtt_ms=67.701
+2026-11-11T18:52:24 I (3945107) quic_demo_main: APP_RTT seq=786 app_rtt_ms=87.415
+2026-11-11T18:52:29 I (3950137) quic_demo_main: APP_RTT seq=787 app_rtt_ms=107.325
+2026-11-11T18:52:34 I (3955067) quic_demo_main: APP_RTT seq=788 app_rtt_ms=27.346
+2026-11-11T18:52:39 I (3960097) quic_demo_main: APP_RTT seq=789 app_rtt_ms=47.287
+2026-11-11T18:52:44 I (3965127) quic_demo_main: APP_RTT seq=790 app_rtt_ms=67.508
+2026-11-11T18:52:49 I (3970157) quic_demo_main: APP_RTT seq=791 app_rtt_ms=87.577
+2026-11-11T18:52:54 I (3975187) quic_demo_main: APP_RTT seq=792 app_rtt_ms=108.096
+2026-11-11T18:52:59 I (3980117) quic_demo_main: APP_RTT seq=793 app_rtt_ms=27.462
+2026-11-11T18:53:04 I (3985147) quic_demo_main: APP_RTT seq=794 app_rtt_ms=47.642
+2026-11-11T18:53:09 I (3990177) quic_demo_main: APP_RTT seq=795 app_rtt_ms=67.679
+2026-11-11T18:53:14 I (3995207) quic_demo_main: APP_RTT seq=796 app_rtt_ms=87.853
+2026-11-11T18:53:19 I (4000237) quic_demo_main: APP_RTT seq=797 app_rtt_ms=107.618
+2026-11-11T18:53:24 I (4005167) quic_demo_main: APP_RTT seq=798 app_rtt_ms=27.607
+2026-11-11T18:53:29 I (4010197) quic_demo_main: APP_RTT seq=799 app_rtt_ms=47.557
+2026-11-11T18:53:34 I (4015227) quic_demo_main: APP_RTT seq=800 app_rtt_ms=67.708
+2026-11-11T18:53:39 I (4020257) quic_demo_main: APP_RTT seq=801 app_rtt_ms=87.643
+2026-11-11T18:53:44 I (4025287) quic_demo_main: APP_RTT seq=802 app_rtt_ms=107.670
+2026-11-11T18:53:49 I (4030217) quic_demo_main: APP_RTT seq=803 app_rtt_ms=27.079
+2026-11-11T18:53:54 I (4035247) quic_demo_main: APP_RTT seq=804 app_rtt_ms=47.586
+2026-11-11T18:53:59 I (4040277) quic_demo_main: APP_RTT seq=805 app_rtt_ms=67.296
+2026-11-11T18:54:04 I (4045307) quic_demo_main: APP_RTT seq=806 app_rtt_ms=87.582
+2026-11-11T18:54:09 I (4050337) quic_demo_main: APP_RTT seq=807 app_rtt_ms=107.661
+2026-11-11T18:54:14 I (4055367) quic_demo_main: APP_RTT seq=808 app_rtt_ms=127.623
+2026-11-11T18:54:19 I (4060297) quic_demo_main: APP_RTT seq=809 app_rtt_ms=47.701
+2026-11-11T18:54:24 I (4065327) quic_demo_main: APP_RTT seq=810 app_rtt_ms=67.900
+2026-11-11T18:54:29 I (4070357) quic_demo_main: APP_RTT seq=811 app_rtt_ms=87.697
+2026-11-11T18:54:34 I (4075387) quic_demo_main: APP_RTT seq=812 app_rtt_ms=108.063
+2026-11-11T18:54:39 I (4080317) quic_demo_main: APP_RTT seq=813 app_rtt_ms=27.619
+2026-11-11T18:54:44 I (4085347) quic_demo_main: APP_RTT seq=814 app_rtt_ms=47.615
+2026-11-11T18:54:49 I (4090377) quic_demo_main: APP_RTT seq=815 app_rtt_ms=67.564
+2026-11-11T18:54:54 I (4095407) quic_demo_main: APP_RTT seq=816 app_rtt_ms=87.688
+2026-11-11T18:55:00 I (4100437) quic_demo_main: APP_RTT seq=817 app_rtt_ms=107.583
+2026-11-11T18:55:04 I (4105367) quic_demo_main: APP_RTT seq=818 app_rtt_ms=27.505
+2026-11-11T18:55:09 I (4110397) quic_demo_main: APP_RTT seq=819 app_rtt_ms=47.562
+2026-11-11T18:55:15 I (4115427) quic_demo_main: APP_RTT seq=820 app_rtt_ms=67.574
+2026-11-11T18:55:20 I (4120457) quic_demo_main: APP_RTT seq=821 app_rtt_ms=87.672
+2026-11-11T18:55:25 I (4125487) quic_demo_main: APP_RTT seq=822 app_rtt_ms=108.424
+2026-11-11T18:55:30 I (4130417) quic_demo_main: APP_RTT seq=823 app_rtt_ms=27.544
+2026-11-11T18:55:35 I (4135447) quic_demo_main: APP_RTT seq=824 app_rtt_ms=47.687
+2026-11-11T18:55:40 I (4140477) quic_demo_main: APP_RTT seq=825 app_rtt_ms=67.661
+2026-11-11T18:55:45 I (4145507) quic_demo_main: APP_RTT seq=826 app_rtt_ms=88.102
+2026-11-11T18:55:50 I (4150537) quic_demo_main: APP_RTT seq=827 app_rtt_ms=107.596
+2026-11-11T18:55:55 I (4155467) quic_demo_main: APP_RTT seq=828 app_rtt_ms=27.635
+2026-11-11T18:56:00 I (4160497) quic_demo_main: APP_RTT seq=829 app_rtt_ms=47.653
+2026-11-11T18:56:05 I (4165527) quic_demo_main: APP_RTT seq=830 app_rtt_ms=67.626
+2026-11-11T18:56:10 I (4170557) quic_demo_main: APP_RTT seq=831 app_rtt_ms=87.675
+2026-11-11T18:56:15 I (4175587) quic_demo_main: APP_RTT seq=832 app_rtt_ms=108.082
+2026-11-11T18:56:20 I (4180517) quic_demo_main: APP_RTT seq=833 app_rtt_ms=27.747
+2026-11-11T18:56:25 I (4185547) quic_demo_main: APP_RTT seq=834 app_rtt_ms=47.644
+2026-11-11T18:56:30 I (4190577) quic_demo_main: APP_RTT seq=835 app_rtt_ms=67.521
+2026-11-11T18:56:35 I (4195607) quic_demo_main: APP_RTT seq=836 app_rtt_ms=87.480
+2026-11-11T18:56:40 I (4200637) quic_demo_main: APP_RTT seq=837 app_rtt_ms=107.399
+2026-11-11T18:56:45 I (4205567) quic_demo_main: APP_RTT seq=838 app_rtt_ms=27.599
+2026-11-11T18:56:50 I (4210597) quic_demo_main: APP_RTT seq=839 app_rtt_ms=47.613
+2026-11-11T18:56:55 I (4215627) quic_demo_main: APP_RTT seq=840 app_rtt_ms=67.699
+2026-11-11T18:57:00 I (4220657) quic_demo_main: APP_RTT seq=841 app_rtt_ms=87.707
+2026-11-11T18:57:05 I (4225687) quic_demo_main: APP_RTT seq=842 app_rtt_ms=108.071
+2026-11-11T18:57:10 I (4230617) quic_demo_main: APP_RTT seq=843 app_rtt_ms=27.122
+2026-11-11T18:57:15 I (4235647) quic_demo_main: APP_RTT seq=844 app_rtt_ms=47.519
+2026-11-11T18:57:20 I (4240677) quic_demo_main: APP_RTT seq=845 app_rtt_ms=67.476
+2026-11-11T18:57:25 I (4245707) quic_demo_main: APP_RTT seq=846 app_rtt_ms=87.496
+2026-11-11T18:57:30 I (4250737) quic_demo_main: APP_RTT seq=847 app_rtt_ms=107.533
+2026-11-11T18:57:35 I (4255667) quic_demo_main: APP_RTT seq=848 app_rtt_ms=27.650
+2026-11-11T18:57:40 I (4260697) quic_demo_main: APP_RTT seq=849 app_rtt_ms=47.661
+2026-11-11T18:57:45 I (4265727) quic_demo_main: APP_RTT seq=850 app_rtt_ms=67.656
+2026-11-11T18:57:50 I (4270757) quic_demo_main: APP_RTT seq=851 app_rtt_ms=87.657
+2026-11-11T18:57:55 I (4275787) quic_demo_main: APP_RTT seq=852 app_rtt_ms=107.883
+2026-11-11T18:58:00 I (4280817) quic_demo_main: APP_RTT seq=853 app_rtt_ms=127.656
+2026-11-11T18:58:05 I (4285747) quic_demo_main: APP_RTT seq=854 app_rtt_ms=47.847
+2026-11-11T18:58:10 I (4290777) quic_demo_main: APP_RTT seq=855 app_rtt_ms=67.580
+2026-11-11T18:58:15 I (4295807) quic_demo_main: APP_RTT seq=856 app_rtt_ms=87.702
+2026-11-11T18:58:20 I (4300837) quic_demo_main: APP_RTT seq=857 app_rtt_ms=107.412
+2026-11-11T18:58:25 I (4305767) quic_demo_main: APP_RTT seq=858 app_rtt_ms=27.534
+2026-11-11T18:58:30 I (4310797) quic_demo_main: APP_RTT seq=859 app_rtt_ms=46.784
+2026-11-11T18:58:35 I (4315827) quic_demo_main: APP_RTT seq=860 app_rtt_ms=67.642
+2026-11-11T18:58:40 I (4320857) quic_demo_main: APP_RTT seq=861 app_rtt_ms=87.659
+2026-11-11T18:58:45 I (4325887) quic_demo_main: APP_RTT seq=862 app_rtt_ms=108.080
+2026-11-11T18:58:50 I (4330817) quic_demo_main: APP_RTT seq=863 app_rtt_ms=27.830
+2026-11-11T18:58:55 I (4335847) quic_demo_main: APP_RTT seq=864 app_rtt_ms=47.705
+2026-11-11T18:59:00 I (4340877) quic_demo_main: APP_RTT seq=865 app_rtt_ms=67.697
+2026-11-11T18:59:05 I (4345907) quic_demo_main: APP_RTT seq=866 app_rtt_ms=87.648
+2026-11-11T18:59:10 I (4350937) quic_demo_main: APP_RTT seq=867 app_rtt_ms=107.637
+2026-11-11T18:59:15 I (4355867) quic_demo_main: APP_RTT seq=868 app_rtt_ms=27.603
+2026-11-11T18:59:20 I (4360897) quic_demo_main: APP_RTT seq=869 app_rtt_ms=47.589
+2026-11-11T18:59:25 I (4365927) quic_demo_main: APP_RTT seq=870 app_rtt_ms=67.531
+2026-11-11T18:59:30 I (4370957) quic_demo_main: APP_RTT seq=871 app_rtt_ms=87.066
+2026-11-11T18:59:35 I (4375987) quic_demo_main: APP_RTT seq=872 app_rtt_ms=108.085
+2026-11-11T18:59:40 I (4380917) quic_demo_main: APP_RTT seq=873 app_rtt_ms=27.577
+2026-11-11T18:59:45 I (4385947) quic_demo_main: APP_RTT seq=874 app_rtt_ms=47.674
+2026-11-11T18:59:50 I (4390977) quic_demo_main: APP_RTT seq=875 app_rtt_ms=67.673
+2026-11-11T18:59:55 I (4396007) quic_demo_main: APP_RTT seq=876 app_rtt_ms=87.852
+2026-11-11T19:00:00 I (4401037) quic_demo_main: APP_RTT seq=877 app_rtt_ms=107.594
+2026-11-11T19:00:05 I (4405967) quic_demo_main: APP_RTT seq=878 app_rtt_ms=27.639
+2026-11-11T19:00:10 I (4410997) quic_demo_main: APP_RTT seq=879 app_rtt_ms=47.869
+2026-11-11T19:00:15 I (4416027) quic_demo_main: APP_RTT seq=880 app_rtt_ms=67.724
+2026-11-11T19:00:20 I (4421057) quic_demo_main: APP_RTT seq=881 app_rtt_ms=87.688
+2026-11-11T19:00:25 I (4426087) quic_demo_main: APP_RTT seq=882 app_rtt_ms=108.050
+2026-11-11T19:00:30 I (4431117) quic_demo_main: APP_RTT seq=883 app_rtt_ms=127.274
+2026-11-11T19:00:35 I (4436047) quic_demo_main: APP_RTT seq=884 app_rtt_ms=47.544
+2026-11-11T19:00:40 I (4441077) quic_demo_main: APP_RTT seq=885 app_rtt_ms=67.524
+2026-11-11T19:00:45 I (4446107) quic_demo_main: APP_RTT seq=886 app_rtt_ms=87.511
+2026-11-11T19:00:50 I (4451137) quic_demo_main: APP_RTT seq=887 app_rtt_ms=107.581
+2026-11-11T19:00:55 I (4456067) quic_demo_main: APP_RTT seq=888 app_rtt_ms=27.664
+2026-11-11T19:01:00 I (4461097) quic_demo_main: APP_RTT seq=889 app_rtt_ms=47.709
+2026-11-11T19:01:05 I (4466127) quic_demo_main: APP_RTT seq=890 app_rtt_ms=67.655
+2026-11-11T19:01:10 I (4471157) quic_demo_main: APP_RTT seq=891 app_rtt_ms=87.705
+2026-11-11T19:01:15 I (4476187) quic_demo_main: APP_RTT seq=892 app_rtt_ms=107.955
+2026-11-11T19:01:20 I (4481117) quic_demo_main: APP_RTT seq=893 app_rtt_ms=27.655
+2026-11-11T19:01:25 I (4486147) quic_demo_main: APP_RTT seq=894 app_rtt_ms=47.634
+2026-11-11T19:01:30 I (4491177) quic_demo_main: APP_RTT seq=895 app_rtt_ms=67.815
+2026-11-11T19:01:35 I (4496207) quic_demo_main: APP_RTT seq=896 app_rtt_ms=87.692
+2026-11-11T19:01:40 I (4501237) quic_demo_main: APP_RTT seq=897 app_rtt_ms=107.525
+2026-11-11T19:01:45 I (4506167) quic_demo_main: APP_RTT seq=898 app_rtt_ms=27.563
+2026-11-11T19:01:50 I (4511197) quic_demo_main: APP_RTT seq=899 app_rtt_ms=47.484
+2026-11-11T19:01:55 I (4516227) quic_demo_main: APP_RTT seq=900 app_rtt_ms=67.626
+2026-11-11T19:02:00 I (4521257) quic_demo_main: APP_RTT seq=901 app_rtt_ms=87.350
+2026-11-11T19:02:05 I (4526287) quic_demo_main: APP_RTT seq=902 app_rtt_ms=108.057
+2026-11-11T19:02:10 I (4531217) quic_demo_main: APP_RTT seq=903 app_rtt_ms=28.764
+2026-11-11T19:02:15 I (4536247) quic_demo_main: APP_RTT seq=904 app_rtt_ms=47.715
+2026-11-11T19:02:20 I (4541277) quic_demo_main: APP_RTT seq=905 app_rtt_ms=67.443
+2026-11-11T19:02:25 I (4546307) quic_demo_main: APP_RTT seq=906 app_rtt_ms=87.393
+2026-11-11T19:02:30 I (4551337) quic_demo_main: APP_RTT seq=907 app_rtt_ms=107.664
+2026-11-11T19:02:35 I (4556267) quic_demo_main: APP_RTT seq=908 app_rtt_ms=27.273
+2026-11-11T19:02:40 I (4561297) quic_demo_main: APP_RTT seq=909 app_rtt_ms=47.316
+2026-11-11T19:02:45 I (4566327) quic_demo_main: APP_RTT seq=910 app_rtt_ms=67.257
+2026-11-11T19:02:50 I (4571357) quic_demo_main: APP_RTT seq=911 app_rtt_ms=87.761
+2026-11-11T19:02:55 I (4576387) quic_demo_main: APP_RTT seq=912 app_rtt_ms=108.062
+2026-11-11T19:03:00 I (4581317) quic_demo_main: APP_RTT seq=913 app_rtt_ms=27.565
+2026-11-11T19:03:05 I (4586347) quic_demo_main: APP_RTT seq=914 app_rtt_ms=47.382
+2026-11-11T19:03:10 I (4591377) quic_demo_main: APP_RTT seq=915 app_rtt_ms=67.654
+2026-11-11T19:03:15 I (4596407) quic_demo_main: APP_RTT seq=916 app_rtt_ms=87.696
+2026-11-11T19:03:21 I (4601437) quic_demo_main: APP_RTT seq=917 app_rtt_ms=107.799
+2026-11-11T19:03:25 I (4606367) quic_demo_main: APP_RTT seq=918 app_rtt_ms=27.648
+2026-11-11T19:03:30 I (4611397) quic_demo_main: APP_RTT seq=919 app_rtt_ms=47.767
+2026-11-11T19:03:36 I (4616427) quic_demo_main: APP_RTT seq=920 app_rtt_ms=67.655
+2026-11-11T19:03:41 I (4621457) quic_demo_main: APP_RTT seq=921 app_rtt_ms=87.700
+2026-11-11T19:03:46 I (4626487) quic_demo_main: APP_RTT seq=922 app_rtt_ms=108.064
+2026-11-11T19:03:51 I (4631417) quic_demo_main: APP_RTT seq=923 app_rtt_ms=27.645
+2026-11-11T19:03:56 I (4636447) quic_demo_main: APP_RTT seq=924 app_rtt_ms=47.074
+2026-11-11T19:04:01 I (4641477) quic_demo_main: APP_RTT seq=925 app_rtt_ms=67.489
+2026-11-11T19:04:06 I (4646507) quic_demo_main: APP_RTT seq=926 app_rtt_ms=87.976
+2026-11-11T19:04:11 I (4651537) quic_demo_main: APP_RTT seq=927 app_rtt_ms=107.747
+2026-11-11T19:04:16 I (4656467) quic_demo_main: APP_RTT seq=928 app_rtt_ms=27.719
+2026-11-11T19:04:21 I (4661497) quic_demo_main: APP_RTT seq=929 app_rtt_ms=47.656
+2026-11-11T19:04:26 I (4666527) quic_demo_main: APP_RTT seq=930 app_rtt_ms=67.778
+2026-11-11T19:04:31 I (4671557) quic_demo_main: APP_RTT seq=931 app_rtt_ms=87.736
+2026-11-11T19:04:36 I (4676587) quic_demo_main: APP_RTT seq=932 app_rtt_ms=108.268
+2026-11-11T19:04:41 I (4681517) quic_demo_main: APP_RTT seq=933 app_rtt_ms=27.725
+2026-11-11T19:04:46 I (4686547) quic_demo_main: APP_RTT seq=934 app_rtt_ms=47.584
+2026-11-11T19:04:51 I (4691577) quic_demo_main: APP_RTT seq=935 app_rtt_ms=67.578
+2026-11-11T19:04:56 I (4696607) quic_demo_main: APP_RTT seq=936 app_rtt_ms=87.439
+2026-11-11T19:05:01 I (4701637) quic_demo_main: APP_RTT seq=937 app_rtt_ms=107.352
+2026-11-11T19:05:06 I (4706567) quic_demo_main: APP_RTT seq=938 app_rtt_ms=27.533
+2026-11-11T19:05:11 I (4711597) quic_demo_main: APP_RTT seq=939 app_rtt_ms=47.506
+2026-11-11T19:05:16 I (4716627) quic_demo_main: APP_RTT seq=940 app_rtt_ms=67.615
+2026-11-11T19:05:21 I (4721657) quic_demo_main: APP_RTT seq=941 app_rtt_ms=87.665
+2026-11-11T19:05:26 I (4726687) quic_demo_main: APP_RTT seq=942 app_rtt_ms=108.011
+2026-11-11T19:05:31 I (4731617) quic_demo_main: APP_RTT seq=943 app_rtt_ms=27.676
+2026-11-11T19:05:36 I (4736647) quic_demo_main: APP_RTT seq=944 app_rtt_ms=47.692
+2026-11-11T19:05:41 I (4741677) quic_demo_main: APP_RTT seq=945 app_rtt_ms=67.825
+2026-11-11T19:05:46 I (4746707) quic_demo_main: APP_RTT seq=946 app_rtt_ms=87.674
+2026-11-11T19:05:51 I (4751737) quic_demo_main: APP_RTT seq=947 app_rtt_ms=107.562
+2026-11-11T19:05:56 I (4756667) quic_demo_main: APP_RTT seq=948 app_rtt_ms=27.595
+2026-11-11T19:06:01 I (4761697) quic_demo_main: APP_RTT seq=949 app_rtt_ms=47.604
+2026-11-11T19:06:06 I (4766727) quic_demo_main: APP_RTT seq=950 app_rtt_ms=67.580
+2026-11-11T19:06:11 I (4771757) quic_demo_main: APP_RTT seq=951 app_rtt_ms=87.633
+2026-11-11T19:06:16 I (4776787) quic_demo_main: APP_RTT seq=952 app_rtt_ms=108.024
+2026-11-11T19:06:21 I (4781717) quic_demo_main: APP_RTT seq=953 app_rtt_ms=27.540
+2026-11-11T19:06:26 I (4786747) quic_demo_main: APP_RTT seq=954 app_rtt_ms=47.637
+2026-11-11T19:06:31 I (4791777) quic_demo_main: APP_RTT seq=955 app_rtt_ms=67.841
+2026-11-11T19:06:36 I (4796807) quic_demo_main: APP_RTT seq=956 app_rtt_ms=87.694
+2026-11-11T19:06:41 I (4801837) quic_demo_main: APP_RTT seq=957 app_rtt_ms=107.604
+2026-11-11T19:06:46 I (4806767) quic_demo_main: APP_RTT seq=958 app_rtt_ms=27.582
+2026-11-11T19:06:51 I (4811797) quic_demo_main: APP_RTT seq=959 app_rtt_ms=47.680
+2026-11-11T19:06:56 I (4816827) quic_demo_main: APP_RTT seq=960 app_rtt_ms=67.640
+2026-11-11T19:07:01 I (4821857) quic_demo_main: APP_RTT seq=961 app_rtt_ms=87.675
+2026-11-11T19:07:06 I (4826887) quic_demo_main: APP_RTT seq=962 app_rtt_ms=107.971
+2026-11-11T19:07:11 I (4831817) quic_demo_main: APP_RTT seq=963 app_rtt_ms=27.655
+2026-11-11T19:07:16 I (4836847) quic_demo_main: APP_RTT seq=964 app_rtt_ms=47.548
+2026-11-11T19:07:21 I (4841877) quic_demo_main: APP_RTT seq=965 app_rtt_ms=67.503
+2026-11-11T19:07:26 I (4846907) quic_demo_main: APP_RTT seq=966 app_rtt_ms=87.520
+2026-11-11T19:07:31 I (4851937) quic_demo_main: APP_RTT seq=967 app_rtt_ms=107.601
+2026-11-11T19:07:36 I (4856867) quic_demo_main: APP_RTT seq=968 app_rtt_ms=27.703
+2026-11-11T19:07:41 I (4861897) quic_demo_main: APP_RTT seq=969 app_rtt_ms=47.653
+2026-11-11T19:07:46 I (4866927) quic_demo_main: APP_RTT seq=970 app_rtt_ms=67.700
+2026-11-11T19:07:51 I (4871957) quic_demo_main: APP_RTT seq=971 app_rtt_ms=87.628
+2026-11-11T19:07:56 I (4876987) quic_demo_main: APP_RTT seq=972 app_rtt_ms=108.148
+2026-11-11T19:08:01 I (4881917) quic_demo_main: APP_RTT seq=973 app_rtt_ms=27.654
+2026-11-11T19:08:06 I (4886947) quic_demo_main: APP_RTT seq=974 app_rtt_ms=47.571
+2026-11-11T19:08:11 I (4891977) quic_demo_main: APP_RTT seq=975 app_rtt_ms=67.697
+2026-11-11T19:08:16 I (4897007) quic_demo_main: APP_RTT seq=976 app_rtt_ms=87.630
+2026-11-11T19:08:21 I (4902037) quic_demo_main: APP_RTT seq=977 app_rtt_ms=107.564
+2026-11-11T19:08:26 I (4906967) quic_demo_main: APP_RTT seq=978 app_rtt_ms=27.502
+2026-11-11T19:08:31 I (4912097) quic_demo_main: APP_RTT seq=979 app_rtt_ms=147.574
+2026-11-11T19:08:36 I (4917027) quic_demo_main: APP_RTT seq=980 app_rtt_ms=67.608
+2026-11-11T19:08:41 I (4922057) quic_demo_main: APP_RTT seq=981 app_rtt_ms=87.675
+2026-11-11T19:08:46 I (4927087) quic_demo_main: APP_RTT seq=982 app_rtt_ms=108.027
+2026-11-11T19:08:51 I (4932017) quic_demo_main: APP_RTT seq=983 app_rtt_ms=27.755
+2026-11-11T19:08:56 I (4937047) quic_demo_main: APP_RTT seq=984 app_rtt_ms=47.710
+2026-11-11T19:09:01 I (4942077) quic_demo_main: APP_RTT seq=985 app_rtt_ms=67.664
+2026-11-11T19:09:06 I (4947107) quic_demo_main: APP_RTT seq=986 app_rtt_ms=87.702
+2026-11-11T19:09:11 I (4952137) quic_demo_main: APP_RTT seq=987 app_rtt_ms=107.509
+2026-11-11T19:09:16 I (4957067) quic_demo_main: APP_RTT seq=988 app_rtt_ms=27.609
+2026-11-11T19:09:21 I (4962197) quic_demo_main: APP_RTT seq=989 app_rtt_ms=147.667
+2026-11-11T19:09:26 I (4967127) quic_demo_main: APP_RTT seq=990 app_rtt_ms=67.504
+2026-11-11T19:09:31 I (4972157) quic_demo_main: APP_RTT seq=991 app_rtt_ms=87.594
+2026-11-11T19:09:36 I (4977187) quic_demo_main: APP_RTT seq=992 app_rtt_ms=107.982
+2026-11-11T19:09:41 I (4982117) quic_demo_main: APP_RTT seq=993 app_rtt_ms=27.532
+2026-11-11T19:09:46 I (4987147) quic_demo_main: APP_RTT seq=994 app_rtt_ms=47.647
+2026-11-11T19:09:51 I (4992177) quic_demo_main: APP_RTT seq=995 app_rtt_ms=67.666
+2026-11-11T19:09:56 I (4997207) quic_demo_main: APP_RTT seq=996 app_rtt_ms=87.707
+2026-11-11T19:10:01 I (5002237) quic_demo_main: APP_RTT seq=997 app_rtt_ms=107.599
+2026-11-11T19:10:06 I (5007167) quic_demo_main: APP_RTT seq=998 app_rtt_ms=27.614
+2026-11-11T19:10:11 I (5012197) quic_demo_main: APP_RTT seq=999 app_rtt_ms=47.620
+2026-11-11T19:10:16 I (5017227) quic_demo_main: APP_RTT seq=1000 app_rtt_ms=67.700
+2026-11-11T19:10:21 I (5022257) quic_demo_main: APP_RTT seq=1001 app_rtt_ms=87.666
+2026-11-11T19:10:26 I (5027287) quic_demo_main: APP_RTT seq=1002 app_rtt_ms=108.073
+2026-11-11T19:10:31 I (5032217) quic_demo_main: APP_RTT seq=1003 app_rtt_ms=27.681
+2026-11-11T19:10:36 I (5037247) quic_demo_main: APP_RTT seq=1004 app_rtt_ms=47.523
+2026-11-11T19:10:41 I (5042277) quic_demo_main: APP_RTT seq=1005 app_rtt_ms=67.619
+2026-11-11T19:10:46 I (5047307) quic_demo_main: APP_RTT seq=1006 app_rtt_ms=87.506
+2026-11-11T19:10:51 I (5052337) quic_demo_main: APP_RTT seq=1007 app_rtt_ms=107.662
+2026-11-11T19:10:56 I (5057267) quic_demo_main: APP_RTT seq=1008 app_rtt_ms=27.678
+2026-11-11T19:11:01 I (5062297) quic_demo_main: APP_RTT seq=1009 app_rtt_ms=47.680
+2026-11-11T19:11:06 I (5067327) quic_demo_main: APP_RTT seq=1010 app_rtt_ms=67.705
+2026-11-11T19:11:11 I (5072357) quic_demo_main: APP_RTT seq=1011 app_rtt_ms=87.596
+2026-11-11T19:11:16 I (5077387) quic_demo_main: APP_RTT seq=1012 app_rtt_ms=108.104
+2026-11-11T19:11:21 I (5082317) quic_demo_main: APP_RTT seq=1013 app_rtt_ms=27.605
+2026-11-11T19:11:26 I (5087347) quic_demo_main: APP_RTT seq=1014 app_rtt_ms=47.601
+2026-11-11T19:11:31 I (5092377) quic_demo_main: APP_RTT seq=1015 app_rtt_ms=67.864
+2026-11-11T19:11:36 I (5097407) quic_demo_main: APP_RTT seq=1016 app_rtt_ms=87.673
+2026-11-11T19:11:42 I (5102437) quic_demo_main: APP_RTT seq=1017 app_rtt_ms=107.599
+2026-11-11T19:11:46 I (5107367) quic_demo_main: APP_RTT seq=1018 app_rtt_ms=27.478
+2026-11-11T19:11:51 I (5112397) quic_demo_main: APP_RTT seq=1019 app_rtt_ms=47.526
+2026-11-11T19:11:57 I (5117427) quic_demo_main: APP_RTT seq=1020 app_rtt_ms=67.475
+2026-11-11T19:12:02 I (5122457) quic_demo_main: APP_RTT seq=1021 app_rtt_ms=87.614
+2026-11-11T19:12:07 I (5127487) quic_demo_main: APP_RTT seq=1022 app_rtt_ms=108.253
+2026-11-11T19:12:11 I (5132417) quic_demo_main: APP_RTT seq=1023 app_rtt_ms=27.715
+2026-11-11T19:12:17 I (5137447) quic_demo_main: APP_RTT seq=1024 app_rtt_ms=47.426
+2026-11-11T19:12:22 I (5142477) quic_demo_main: APP_RTT seq=1025 app_rtt_ms=67.658
+2026-11-11T19:12:27 I (5147507) quic_demo_main: APP_RTT seq=1026 app_rtt_ms=87.860
+2026-11-11T19:12:32 I (5152537) quic_demo_main: APP_RTT seq=1027 app_rtt_ms=107.356
+2026-11-11T19:12:37 I (5157467) quic_demo_main: APP_RTT seq=1028 app_rtt_ms=27.359
+2026-11-11T19:12:42 I (5162497) quic_demo_main: APP_RTT seq=1029 app_rtt_ms=47.302
+2026-11-11T19:12:47 I (5167527) quic_demo_main: APP_RTT seq=1030 app_rtt_ms=67.432
+2026-11-11T19:12:52 I (5172557) quic_demo_main: APP_RTT seq=1031 app_rtt_ms=87.447
+2026-11-11T19:12:57 I (5177587) quic_demo_main: APP_RTT seq=1032 app_rtt_ms=107.920
+2026-11-11T19:13:02 I (5182517) quic_demo_main: APP_RTT seq=1033 app_rtt_ms=27.408
+2026-11-11T19:13:07 I (5187547) quic_demo_main: APP_RTT seq=1034 app_rtt_ms=47.305
+2026-11-11T19:13:12 I (5192577) quic_demo_main: APP_RTT seq=1035 app_rtt_ms=67.180
+2026-11-11T19:13:17 I (5197607) quic_demo_main: APP_RTT seq=1036 app_rtt_ms=87.210
+2026-11-11T19:13:22 I (5202637) quic_demo_main: APP_RTT seq=1037 app_rtt_ms=107.060
+2026-11-11T19:13:27 I (5207567) quic_demo_main: APP_RTT seq=1038 app_rtt_ms=27.316
+2026-11-11T19:13:32 I (5212597) quic_demo_main: APP_RTT seq=1039 app_rtt_ms=47.370
+2026-11-11T19:13:37 I (5217627) quic_demo_main: APP_RTT seq=1040 app_rtt_ms=67.398
+2026-11-11T19:13:42 I (5222657) quic_demo_main: APP_RTT seq=1041 app_rtt_ms=87.368
+2026-11-11T19:13:47 I (5227687) quic_demo_main: APP_RTT seq=1042 app_rtt_ms=108.012
+2026-11-11T19:13:52 I (5232617) quic_demo_main: APP_RTT seq=1043 app_rtt_ms=27.611
+2026-11-11T19:13:57 I (5237647) quic_demo_main: APP_RTT seq=1044 app_rtt_ms=47.454
+2026-11-11T19:14:02 I (5242677) quic_demo_main: APP_RTT seq=1045 app_rtt_ms=67.499
+2026-11-11T19:14:07 I (5247707) quic_demo_main: APP_RTT seq=1046 app_rtt_ms=87.481
+2026-11-11T19:14:12 I (5252737) quic_demo_main: APP_RTT seq=1047 app_rtt_ms=107.503
+2026-11-11T19:14:17 I (5257667) quic_demo_main: APP_RTT seq=1048 app_rtt_ms=27.350
+2026-11-11T19:14:22 I (5262697) quic_demo_main: APP_RTT seq=1049 app_rtt_ms=47.680
+2026-11-11T19:14:27 I (5267727) quic_demo_main: APP_RTT seq=1050 app_rtt_ms=67.667
+2026-11-11T19:14:32 I (5272757) quic_demo_main: APP_RTT seq=1051 app_rtt_ms=87.393
+2026-11-11T19:14:37 I (5277787) quic_demo_main: APP_RTT seq=1052 app_rtt_ms=107.790
+2026-11-11T19:14:42 I (5282717) quic_demo_main: APP_RTT seq=1053 app_rtt_ms=27.332
+2026-11-11T19:14:47 I (5287747) quic_demo_main: APP_RTT seq=1054 app_rtt_ms=47.316
+2026-11-11T19:14:52 I (5292777) quic_demo_main: APP_RTT seq=1055 app_rtt_ms=67.387
+2026-11-11T19:14:57 I (5297807) quic_demo_main: APP_RTT seq=1056 app_rtt_ms=87.413
+2026-11-11T19:15:02 I (5302837) quic_demo_main: APP_RTT seq=1057 app_rtt_ms=107.220
+2026-11-11T19:15:07 I (5307767) quic_demo_main: APP_RTT seq=1058 app_rtt_ms=27.257
+2026-11-11T19:15:12 I (5312797) quic_demo_main: APP_RTT seq=1059 app_rtt_ms=47.244
+2026-11-11T19:15:17 I (5317827) quic_demo_main: APP_RTT seq=1060 app_rtt_ms=67.215
+2026-11-11T19:15:22 I (5322857) quic_demo_main: APP_RTT seq=1061 app_rtt_ms=87.306
+2026-11-11T19:15:27 I (5327887) quic_demo_main: APP_RTT seq=1062 app_rtt_ms=107.759
+2026-11-11T19:15:32 I (5332817) quic_demo_main: APP_RTT seq=1063 app_rtt_ms=27.442
+2026-11-11T19:15:37 I (5337847) quic_demo_main: APP_RTT seq=1064 app_rtt_ms=47.559
+2026-11-11T19:15:42 I (5342877) quic_demo_main: APP_RTT seq=1065 app_rtt_ms=67.390
+2026-11-11T19:15:47 I (5347907) quic_demo_main: APP_RTT seq=1066 app_rtt_ms=87.380
+2026-11-11T19:15:52 I (5352937) quic_demo_main: APP_RTT seq=1067 app_rtt_ms=107.284
+2026-11-11T19:15:57 I (5357967) quic_demo_main: APP_RTT seq=1068 app_rtt_ms=127.336
+2026-11-11T19:16:02 I (5362897) quic_demo_main: APP_RTT seq=1069 app_rtt_ms=47.322
+2026-11-11T19:16:07 I (5367927) quic_demo_main: APP_RTT seq=1070 app_rtt_ms=67.235
+2026-11-11T19:16:12 I (5372957) quic_demo_main: APP_RTT seq=1071 app_rtt_ms=87.350
+2026-11-11T19:16:17 I (5377987) quic_demo_main: APP_RTT seq=1072 app_rtt_ms=107.735
+2026-11-11T19:16:22 I (5382917) quic_demo_main: APP_RTT seq=1073 app_rtt_ms=27.601
+2026-11-11T19:16:27 I (5387947) quic_demo_main: APP_RTT seq=1074 app_rtt_ms=47.299
+2026-11-11T19:16:32 I (5392977) quic_demo_main: APP_RTT seq=1075 app_rtt_ms=67.396
+2026-11-11T19:16:37 I (5398007) quic_demo_main: APP_RTT seq=1076 app_rtt_ms=87.360
+2026-11-11T19:16:42 I (5403037) quic_demo_main: APP_RTT seq=1077 app_rtt_ms=107.303
+2026-11-11T19:16:47 I (5407967) quic_demo_main: APP_RTT seq=1078 app_rtt_ms=27.341
+2026-11-11T19:16:52 I (5412997) quic_demo_main: APP_RTT seq=1079 app_rtt_ms=47.683
+2026-11-11T19:16:57 I (5418027) quic_demo_main: APP_RTT seq=1080 app_rtt_ms=67.763
+2026-11-11T19:17:02 I (5423057) quic_demo_main: APP_RTT seq=1081 app_rtt_ms=87.677
+2026-11-11T19:17:07 I (5428087) quic_demo_main: APP_RTT seq=1082 app_rtt_ms=108.144
+2026-11-11T19:17:12 I (5433017) quic_demo_main: APP_RTT seq=1083 app_rtt_ms=27.607
+2026-11-11T19:17:17 I (5438047) quic_demo_main: APP_RTT seq=1084 app_rtt_ms=47.561
+2026-11-11T19:17:22 I (5443077) quic_demo_main: APP_RTT seq=1085 app_rtt_ms=67.554
+2026-11-11T19:17:27 I (5448107) quic_demo_main: APP_RTT seq=1086 app_rtt_ms=87.501
+2026-11-11T19:17:32 I (5453137) quic_demo_main: APP_RTT seq=1087 app_rtt_ms=107.590
+2026-11-11T19:17:37 I (5458067) quic_demo_main: APP_RTT seq=1088 app_rtt_ms=27.597
+2026-11-11T19:17:42 I (5463097) quic_demo_main: APP_RTT seq=1089 app_rtt_ms=47.691
+2026-11-11T19:17:47 I (5468127) quic_demo_main: APP_RTT seq=1090 app_rtt_ms=67.653
+2026-11-11T19:17:52 I (5473157) quic_demo_main: APP_RTT seq=1091 app_rtt_ms=87.672
+2026-11-11T19:17:57 I (5478187) quic_demo_main: APP_RTT seq=1092 app_rtt_ms=108.100
+2026-11-11T19:18:02 I (5483117) quic_demo_main: APP_RTT seq=1093 app_rtt_ms=27.600
+2026-11-11T19:18:07 I (5488147) quic_demo_main: APP_RTT seq=1094 app_rtt_ms=47.502
+2026-11-11T19:18:12 I (5493177) quic_demo_main: APP_RTT seq=1095 app_rtt_ms=67.657
+2026-11-11T19:18:17 I (5498207) quic_demo_main: APP_RTT seq=1096 app_rtt_ms=87.724
+2026-11-11T19:18:22 I (5503237) quic_demo_main: APP_RTT seq=1097 app_rtt_ms=107.796
+2026-11-11T19:18:27 I (5508167) quic_demo_main: APP_RTT seq=1098 app_rtt_ms=27.517
+2026-11-11T19:18:32 I (5513197) quic_demo_main: APP_RTT seq=1099 app_rtt_ms=47.553
+2026-11-11T19:18:37 I (5518227) quic_demo_main: APP_RTT seq=1100 app_rtt_ms=67.552
+2026-11-11T19:18:42 I (5523257) quic_demo_main: APP_RTT seq=1101 app_rtt_ms=87.570
+2026-11-11T19:18:47 I (5528287) quic_demo_main: APP_RTT seq=1102 app_rtt_ms=108.050
+2026-11-11T19:18:52 I (5533217) quic_demo_main: APP_RTT seq=1103 app_rtt_ms=27.935
+2026-11-11T19:18:57 I (5538247) quic_demo_main: APP_RTT seq=1104 app_rtt_ms=47.717
+2026-11-11T19:19:02 I (5543277) quic_demo_main: APP_RTT seq=1105 app_rtt_ms=67.727
+2026-11-11T19:19:07 I (5548307) quic_demo_main: APP_RTT seq=1106 app_rtt_ms=87.680
+2026-11-11T19:19:12 I (5553337) quic_demo_main: APP_RTT seq=1107 app_rtt_ms=107.663
+2026-11-11T19:19:17 I (5558267) quic_demo_main: APP_RTT seq=1108 app_rtt_ms=27.559
+2026-11-11T19:19:22 I (5563297) quic_demo_main: APP_RTT seq=1109 app_rtt_ms=47.601
+2026-11-11T19:19:27 I (5568327) quic_demo_main: APP_RTT seq=1110 app_rtt_ms=67.598
+2026-11-11T19:19:32 I (5573357) quic_demo_main: APP_RTT seq=1111 app_rtt_ms=87.590
+2026-11-11T19:19:37 I (5578387) quic_demo_main: APP_RTT seq=1112 app_rtt_ms=108.079
+2026-11-11T19:19:42 I (5583317) quic_demo_main: APP_RTT seq=1113 app_rtt_ms=27.502
+2026-11-11T19:19:47 I (5588347) quic_demo_main: APP_RTT seq=1114 app_rtt_ms=47.575
+2026-11-11T19:19:52 I (5593377) quic_demo_main: APP_RTT seq=1115 app_rtt_ms=67.606
+2026-11-11T19:19:57 I (5598407) quic_demo_main: APP_RTT seq=1116 app_rtt_ms=87.687
+2026-11-11T19:20:03 I (5603437) quic_demo_main: APP_RTT seq=1117 app_rtt_ms=107.488
+2026-11-11T19:20:07 I (5608367) quic_demo_main: APP_RTT seq=1118 app_rtt_ms=27.594
+2026-11-11T19:20:12 I (5613397) quic_demo_main: APP_RTT seq=1119 app_rtt_ms=47.709
+2026-11-11T19:20:18 I (5618427) quic_demo_main: APP_RTT seq=1120 app_rtt_ms=67.650
+2026-11-11T19:20:23 I (5623457) quic_demo_main: APP_RTT seq=1121 app_rtt_ms=87.706
+2026-11-11T19:20:28 I (5628487) quic_demo_main: APP_RTT seq=1122 app_rtt_ms=107.944
+2026-11-11T19:20:32 I (5633417) quic_demo_main: APP_RTT seq=1123 app_rtt_ms=27.656
+2026-11-11T19:20:38 I (5638447) quic_demo_main: APP_RTT seq=1124 app_rtt_ms=47.558
+2026-11-11T19:20:43 I (5643477) quic_demo_main: APP_RTT seq=1125 app_rtt_ms=67.556
+2026-11-11T19:20:48 I (5648507) quic_demo_main: APP_RTT seq=1126 app_rtt_ms=87.948
+2026-11-11T19:20:53 I (5653537) quic_demo_main: APP_RTT seq=1127 app_rtt_ms=107.557
+2026-11-11T19:20:58 I (5658467) quic_demo_main: APP_RTT seq=1128 app_rtt_ms=27.645
+2026-11-11T19:21:03 I (5663497) quic_demo_main: APP_RTT seq=1129 app_rtt_ms=47.655
+2026-11-11T19:21:08 I (5668527) quic_demo_main: APP_RTT seq=1130 app_rtt_ms=67.778
+2026-11-11T19:21:13 I (5673557) quic_demo_main: APP_RTT seq=1131 app_rtt_ms=87.910
+2026-11-11T19:21:18 I (5678587) quic_demo_main: APP_RTT seq=1132 app_rtt_ms=108.423
+2026-11-11T19:21:23 I (5683617) quic_demo_main: APP_RTT seq=1133 app_rtt_ms=127.725
+2026-11-11T19:21:28 I (5688547) quic_demo_main: APP_RTT seq=1134 app_rtt_ms=47.639
+2026-11-11T19:21:33 I (5693577) quic_demo_main: APP_RTT seq=1135 app_rtt_ms=67.505
+2026-11-11T19:21:38 I (5698607) quic_demo_main: APP_RTT seq=1136 app_rtt_ms=87.452
+2026-11-11T19:21:43 I (5703637) quic_demo_main: APP_RTT seq=1137 app_rtt_ms=107.400
+2026-11-11T19:21:48 I (5708567) quic_demo_main: APP_RTT seq=1138 app_rtt_ms=27.494
+2026-11-11T19:21:53 I (5713597) quic_demo_main: APP_RTT seq=1139 app_rtt_ms=47.466
+2026-11-11T19:21:58 I (5718627) quic_demo_main: APP_RTT seq=1140 app_rtt_ms=67.523
+2026-11-11T19:22:03 I (5723657) quic_demo_main: APP_RTT seq=1141 app_rtt_ms=87.587
+2026-11-11T19:22:08 I (5728687) quic_demo_main: APP_RTT seq=1142 app_rtt_ms=108.057
+2026-11-11T19:22:13 I (5733617) quic_demo_main: APP_RTT seq=1143 app_rtt_ms=27.874
+2026-11-11T19:22:18 I (5738647) quic_demo_main: APP_RTT seq=1144 app_rtt_ms=47.668
+2026-11-11T19:22:23 I (5743677) quic_demo_main: APP_RTT seq=1145 app_rtt_ms=67.654
+2026-11-11T19:22:28 I (5748707) quic_demo_main: APP_RTT seq=1146 app_rtt_ms=87.629
+2026-11-11T19:22:33 I (5753737) quic_demo_main: APP_RTT seq=1147 app_rtt_ms=107.557
+2026-11-11T19:22:38 I (5758667) quic_demo_main: APP_RTT seq=1148 app_rtt_ms=27.552
+2026-11-11T19:22:43 I (5763697) quic_demo_main: APP_RTT seq=1149 app_rtt_ms=47.607
+2026-11-11T19:22:48 I (5768727) quic_demo_main: APP_RTT seq=1150 app_rtt_ms=67.558
+2026-11-11T19:22:53 I (5773757) quic_demo_main: APP_RTT seq=1151 app_rtt_ms=87.559
+2026-11-11T19:22:58 I (5778787) quic_demo_main: APP_RTT seq=1152 app_rtt_ms=108.008
+2026-11-11T19:23:03 I (5783717) quic_demo_main: APP_RTT seq=1153 app_rtt_ms=27.557
+2026-11-11T19:23:08 I (5788747) quic_demo_main: APP_RTT seq=1154 app_rtt_ms=47.552
+2026-11-11T19:23:13 I (5793777) quic_demo_main: APP_RTT seq=1155 app_rtt_ms=67.734
+2026-11-11T19:23:18 I (5798807) quic_demo_main: APP_RTT seq=1156 app_rtt_ms=87.650
+2026-11-11T19:23:23 I (5803837) quic_demo_main: APP_RTT seq=1157 app_rtt_ms=107.637
+2026-11-11T19:23:28 I (5808767) quic_demo_main: APP_RTT seq=1158 app_rtt_ms=27.554
+2026-11-11T19:23:33 I (5813797) quic_demo_main: APP_RTT seq=1159 app_rtt_ms=47.665
+2026-11-11T19:23:38 I (5818827) quic_demo_main: APP_RTT seq=1160 app_rtt_ms=67.635
+2026-11-11T19:23:43 I (5823857) quic_demo_main: APP_RTT seq=1161 app_rtt_ms=87.672
+2026-11-11T19:23:48 I (5828887) quic_demo_main: APP_RTT seq=1162 app_rtt_ms=108.494
+2026-11-11T19:23:53 I (5833917) quic_demo_main: APP_RTT seq=1163 app_rtt_ms=127.655
+2026-11-11T19:23:58 I (5838847) quic_demo_main: APP_RTT seq=1164 app_rtt_ms=47.604
+2026-11-11T19:24:03 I (5843877) quic_demo_main: APP_RTT seq=1165 app_rtt_ms=67.514
+2026-11-11T19:24:08 I (5848907) quic_demo_main: APP_RTT seq=1166 app_rtt_ms=87.522
+2026-11-11T19:24:13 I (5853937) quic_demo_main: APP_RTT seq=1167 app_rtt_ms=107.386
+2026-11-11T19:24:18 I (5858867) quic_demo_main: APP_RTT seq=1168 app_rtt_ms=27.603
+2026-11-11T19:24:23 I (5863897) quic_demo_main: APP_RTT seq=1169 app_rtt_ms=47.673
+2026-11-11T19:24:28 I (5868927) quic_demo_main: APP_RTT seq=1170 app_rtt_ms=67.640
+2026-11-11T19:24:33 I (5873957) quic_demo_main: APP_RTT seq=1171 app_rtt_ms=87.688
+2026-11-11T19:24:38 I (5878987) quic_demo_main: APP_RTT seq=1172 app_rtt_ms=108.058
+2026-11-11T19:24:43 I (5883917) quic_demo_main: APP_RTT seq=1173 app_rtt_ms=27.655
+2026-11-11T19:24:48 I (5888947) quic_demo_main: APP_RTT seq=1174 app_rtt_ms=47.524
+2026-11-11T19:24:53 I (5893977) quic_demo_main: APP_RTT seq=1175 app_rtt_ms=67.699
+2026-11-11T19:24:58 I (5899007) quic_demo_main: APP_RTT seq=1176 app_rtt_ms=87.843
+2026-11-11T19:25:03 I (5904037) quic_demo_main: APP_RTT seq=1177 app_rtt_ms=107.594
+2026-11-11T19:25:08 I (5908967) quic_demo_main: APP_RTT seq=1178 app_rtt_ms=27.584
+2026-11-11T19:25:13 I (5913997) quic_demo_main: APP_RTT seq=1179 app_rtt_ms=47.541
+2026-11-11T19:25:18 I (5919027) quic_demo_main: APP_RTT seq=1180 app_rtt_ms=67.575
+2026-11-11T19:25:23 I (5924057) quic_demo_main: APP_RTT seq=1181 app_rtt_ms=87.608
+2026-11-11T19:25:28 I (5929087) quic_demo_main: APP_RTT seq=1182 app_rtt_ms=108.055
+2026-11-11T19:25:33 I (5934017) quic_demo_main: APP_RTT seq=1183 app_rtt_ms=27.735
+2026-11-11T19:25:38 I (5939047) quic_demo_main: APP_RTT seq=1184 app_rtt_ms=47.668
+2026-11-11T19:25:43 I (5944077) quic_demo_main: APP_RTT seq=1185 app_rtt_ms=67.667
+2026-11-11T19:25:48 I (5949107) quic_demo_main: APP_RTT seq=1186 app_rtt_ms=87.682
+2026-11-11T19:25:53 I (5954137) quic_demo_main: APP_RTT seq=1187 app_rtt_ms=107.630
+2026-11-11T19:25:58 I (5959067) quic_demo_main: APP_RTT seq=1188 app_rtt_ms=27.587
+2026-11-11T19:26:03 I (5964097) quic_demo_main: APP_RTT seq=1189 app_rtt_ms=47.582
+2026-11-11T19:26:08 I (5969127) quic_demo_main: APP_RTT seq=1190 app_rtt_ms=67.542
+2026-11-11T19:26:13 I (5974157) quic_demo_main: APP_RTT seq=1191 app_rtt_ms=87.629
+2026-11-11T19:26:18 I (5979187) quic_demo_main: APP_RTT seq=1192 app_rtt_ms=108.210
+2026-11-11T19:26:23 I (5984217) quic_demo_main: APP_RTT seq=1193 app_rtt_ms=127.564
+2026-11-11T19:26:28 I (5989247) quic_demo_main: APP_RTT seq=1194 app_rtt_ms=147.575
+2026-11-11T19:26:33 I (5994177) quic_demo_main: APP_RTT seq=1195 app_rtt_ms=67.580
+2026-11-11T19:26:38 I (5999207) quic_demo_main: APP_RTT seq=1196 app_rtt_ms=87.684
+2026-11-11T19:26:43 I (6004237) quic_demo_main: APP_RTT seq=1197 app_rtt_ms=107.797
+2026-11-11T19:26:48 I (6009167) quic_demo_main: APP_RTT seq=1198 app_rtt_ms=27.635
+2026-11-11T19:26:53 I (6014197) quic_demo_main: APP_RTT seq=1199 app_rtt_ms=47.710
+2026-11-11T19:26:58 I (6019227) quic_demo_main: APP_RTT seq=1200 app_rtt_ms=67.669
+2026-11-11T19:27:03 I (6024257) quic_demo_main: APP_RTT seq=1201 app_rtt_ms=87.721
+2026-11-11T19:27:08 I (6029287) quic_demo_main: APP_RTT seq=1202 app_rtt_ms=108.034
+2026-11-11T19:27:13 I (6034217) quic_demo_main: APP_RTT seq=1203 app_rtt_ms=27.686
+2026-11-11T19:27:18 I (6039247) quic_demo_main: APP_RTT seq=1204 app_rtt_ms=47.649
+2026-11-11T19:27:23 I (6044277) quic_demo_main: APP_RTT seq=1205 app_rtt_ms=67.551
+2026-11-11T19:27:28 I (6049307) quic_demo_main: APP_RTT seq=1206 app_rtt_ms=87.516
+2026-11-11T19:27:33 I (6054337) quic_demo_main: APP_RTT seq=1207 app_rtt_ms=107.642
+2026-11-11T19:27:38 I (6059267) quic_demo_main: APP_RTT seq=1208 app_rtt_ms=27.606
+2026-11-11T19:27:43 I (6064297) quic_demo_main: APP_RTT seq=1209 app_rtt_ms=47.648
+2026-11-11T19:27:48 I (6069327) quic_demo_main: APP_RTT seq=1210 app_rtt_ms=67.642
+2026-11-11T19:27:53 I (6074357) quic_demo_main: APP_RTT seq=1211 app_rtt_ms=87.648
+2026-11-11T19:27:58 I (6079387) quic_demo_main: APP_RTT seq=1212 app_rtt_ms=108.129
+2026-11-11T19:28:03 I (6084317) quic_demo_main: APP_RTT seq=1213 app_rtt_ms=27.614
+2026-11-11T19:28:08 I (6089347) quic_demo_main: APP_RTT seq=1214 app_rtt_ms=47.592
+2026-11-11T19:28:13 I (6094377) quic_demo_main: APP_RTT seq=1215 app_rtt_ms=67.867
+2026-11-11T19:28:18 I (6099407) quic_demo_main: APP_RTT seq=1216 app_rtt_ms=87.684
+2026-11-11T19:28:24 I (6104437) quic_demo_main: APP_RTT seq=1217 app_rtt_ms=107.650
+2026-11-11T19:28:28 I (6109367) quic_demo_main: APP_RTT seq=1218 app_rtt_ms=27.508
+2026-11-11T19:28:33 I (6114397) quic_demo_main: APP_RTT seq=1219 app_rtt_ms=47.579
+2026-11-11T19:28:38 I (6119427) quic_demo_main: APP_RTT seq=1220 app_rtt_ms=67.498
+2026-11-11T19:28:44 I (6124457) quic_demo_main: APP_RTT seq=1221 app_rtt_ms=87.531
+2026-11-11T19:28:49 I (6129487) quic_demo_main: APP_RTT seq=1222 app_rtt_ms=107.882
+2026-11-11T19:28:53 I (6134417) quic_demo_main: APP_RTT seq=1223 app_rtt_ms=27.719
+2026-11-11T19:28:59 I (6139447) quic_demo_main: APP_RTT seq=1224 app_rtt_ms=47.673
+2026-11-11T19:29:04 I (6144477) quic_demo_main: APP_RTT seq=1225 app_rtt_ms=67.634
+2026-11-11T19:29:09 I (6149507) quic_demo_main: APP_RTT seq=1226 app_rtt_ms=88.090
+2026-11-11T19:29:14 I (6154537) quic_demo_main: APP_RTT seq=1227 app_rtt_ms=107.623
+2026-11-11T19:29:19 I (6159467) quic_demo_main: APP_RTT seq=1228 app_rtt_ms=27.638
+2026-11-11T19:29:24 I (6164497) quic_demo_main: APP_RTT seq=1229 app_rtt_ms=47.580
+2026-11-11T19:29:29 I (6169527) quic_demo_main: APP_RTT seq=1230 app_rtt_ms=67.705
+2026-11-11T19:29:34 I (6174557) quic_demo_main: APP_RTT seq=1231 app_rtt_ms=87.757
+2026-11-11T19:29:39 I (6179587) quic_demo_main: APP_RTT seq=1232 app_rtt_ms=107.982
+2026-11-11T19:29:44 I (6184517) quic_demo_main: APP_RTT seq=1233 app_rtt_ms=27.649
+2026-11-11T19:29:49 I (6189547) quic_demo_main: APP_RTT seq=1234 app_rtt_ms=47.086
+2026-11-11T19:29:54 I (6194577) quic_demo_main: APP_RTT seq=1235 app_rtt_ms=67.417
+2026-11-11T19:29:59 I (6199607) quic_demo_main: APP_RTT seq=1236 app_rtt_ms=87.455
+2026-11-11T19:30:04 I (6204637) quic_demo_main: APP_RTT seq=1237 app_rtt_ms=107.320
+2026-11-11T19:30:09 I (6209667) quic_demo_main: APP_RTT seq=1238 app_rtt_ms=127.576
+2026-11-11T19:30:14 I (6214597) quic_demo_main: APP_RTT seq=1239 app_rtt_ms=47.663
+2026-11-11T19:30:19 I (6219627) quic_demo_main: APP_RTT seq=1240 app_rtt_ms=67.749
+2026-11-11T19:30:24 I (6224657) quic_demo_main: APP_RTT seq=1241 app_rtt_ms=87.642
+2026-11-11T19:30:29 I (6229687) quic_demo_main: APP_RTT seq=1242 app_rtt_ms=108.067
+2026-11-11T19:30:34 I (6234617) quic_demo_main: APP_RTT seq=1243 app_rtt_ms=27.632
+2026-11-11T19:30:39 I (6239647) quic_demo_main: APP_RTT seq=1244 app_rtt_ms=47.549
+2026-11-11T19:30:44 I (6244677) quic_demo_main: APP_RTT seq=1245 app_rtt_ms=67.477
+2026-11-11T19:30:49 I (6249707) quic_demo_main: APP_RTT seq=1246 app_rtt_ms=87.491
+2026-11-11T19:30:54 I (6254737) quic_demo_main: APP_RTT seq=1247 app_rtt_ms=107.474
+2026-11-11T19:30:59 I (6259667) quic_demo_main: APP_RTT seq=1248 app_rtt_ms=27.589
+2026-11-11T19:31:04 I (6264697) quic_demo_main: APP_RTT seq=1249 app_rtt_ms=47.663
+2026-11-11T19:31:09 I (6269727) quic_demo_main: APP_RTT seq=1250 app_rtt_ms=67.822
+2026-11-11T19:31:14 I (6274757) quic_demo_main: APP_RTT seq=1251 app_rtt_ms=87.654
+2026-11-11T19:31:19 I (6279787) quic_demo_main: APP_RTT seq=1252 app_rtt_ms=108.055
+2026-11-11T19:31:24 I (6284717) quic_demo_main: APP_RTT seq=1253 app_rtt_ms=27.710
+2026-11-11T19:31:29 I (6289747) quic_demo_main: APP_RTT seq=1254 app_rtt_ms=47.783
+2026-11-11T19:31:34 I (6294777) quic_demo_main: APP_RTT seq=1255 app_rtt_ms=67.858
+2026-11-11T19:31:39 I (6299807) quic_demo_main: APP_RTT seq=1256 app_rtt_ms=87.701
+2026-11-11T19:31:44 I (6304837) quic_demo_main: APP_RTT seq=1257 app_rtt_ms=107.654
+2026-11-11T19:31:49 I (6309767) quic_demo_main: APP_RTT seq=1258 app_rtt_ms=27.560
+2026-11-11T19:31:54 I (6314797) quic_demo_main: APP_RTT seq=1259 app_rtt_ms=47.520
+2026-11-11T19:31:59 I (6319827) quic_demo_main: APP_RTT seq=1260 app_rtt_ms=67.445
+2026-11-11T19:32:04 I (6324857) quic_demo_main: APP_RTT seq=1261 app_rtt_ms=87.496
+2026-11-11T19:32:09 I (6329887) quic_demo_main: APP_RTT seq=1262 app_rtt_ms=107.956
+2026-11-11T19:32:14 I (6334817) quic_demo_main: APP_RTT seq=1263 app_rtt_ms=27.657
+2026-11-11T19:32:19 I (6339847) quic_demo_main: APP_RTT seq=1264 app_rtt_ms=47.696
+2026-11-11T19:32:24 I (6344877) quic_demo_main: APP_RTT seq=1265 app_rtt_ms=67.653
+2026-11-11T19:32:29 I (6349907) quic_demo_main: APP_RTT seq=1266 app_rtt_ms=87.690
+2026-11-11T19:32:34 I (6354937) quic_demo_main: APP_RTT seq=1267 app_rtt_ms=107.790
+2026-11-11T19:32:39 I (6359867) quic_demo_main: APP_RTT seq=1268 app_rtt_ms=27.604
+2026-11-11T19:32:44 I (6364897) quic_demo_main: APP_RTT seq=1269 app_rtt_ms=47.578
+2026-11-11T19:32:49 I (6369927) quic_demo_main: APP_RTT seq=1270 app_rtt_ms=67.829
+2026-11-11T19:32:54 I (6374957) quic_demo_main: APP_RTT seq=1271 app_rtt_ms=87.687
+2026-11-11T19:32:59 I (6379987) quic_demo_main: APP_RTT seq=1272 app_rtt_ms=107.862
+2026-11-11T19:33:04 I (6384917) quic_demo_main: APP_RTT seq=1273 app_rtt_ms=27.590
+2026-11-11T19:33:09 I (6389947) quic_demo_main: APP_RTT seq=1274 app_rtt_ms=47.091
+2026-11-11T19:33:14 I (6394977) quic_demo_main: APP_RTT seq=1275 app_rtt_ms=67.605
+2026-11-11T19:33:19 I (6400007) quic_demo_main: APP_RTT seq=1276 app_rtt_ms=87.750
+2026-11-11T19:33:24 I (6405037) quic_demo_main: APP_RTT seq=1277 app_rtt_ms=106.897
+2026-11-11T19:33:29 I (6409967) quic_demo_main: APP_RTT seq=1278 app_rtt_ms=27.805
+2026-11-11T19:33:34 I (6414997) quic_demo_main: APP_RTT seq=1279 app_rtt_ms=47.641
+2026-11-11T19:33:39 I (6420027) quic_demo_main: APP_RTT seq=1280 app_rtt_ms=67.737
+2026-11-11T19:33:44 I (6425057) quic_demo_main: APP_RTT seq=1281 app_rtt_ms=87.879
+2026-11-11T19:33:49 I (6430087) quic_demo_main: APP_RTT seq=1282 app_rtt_ms=108.100
+2026-11-11T19:33:54 I (6435017) quic_demo_main: APP_RTT seq=1283 app_rtt_ms=27.642
+2026-11-11T19:33:59 I (6440047) quic_demo_main: APP_RTT seq=1284 app_rtt_ms=47.596
+2026-11-11T19:34:04 I (6445077) quic_demo_main: APP_RTT seq=1285 app_rtt_ms=67.510
+2026-11-11T19:34:09 I (6450107) quic_demo_main: APP_RTT seq=1286 app_rtt_ms=87.756
+2026-11-11T19:34:14 I (6455137) quic_demo_main: APP_RTT seq=1287 app_rtt_ms=107.580
+2026-11-11T19:34:19 I (6460067) quic_demo_main: APP_RTT seq=1288 app_rtt_ms=27.564
+2026-11-11T19:34:24 I (6465097) quic_demo_main: APP_RTT seq=1289 app_rtt_ms=47.675
+2026-11-11T19:34:29 I (6470127) quic_demo_main: APP_RTT seq=1290 app_rtt_ms=67.705
+2026-11-11T19:34:34 I (6475157) quic_demo_main: APP_RTT seq=1291 app_rtt_ms=87.658
+2026-11-11T19:34:39 I (6480187) quic_demo_main: APP_RTT seq=1292 app_rtt_ms=108.176
+2026-11-11T19:34:44 I (6485117) quic_demo_main: APP_RTT seq=1293 app_rtt_ms=27.561
+2026-11-11T19:34:49 I (6490147) quic_demo_main: APP_RTT seq=1294 app_rtt_ms=47.779
+2026-11-11T19:34:54 I (6495177) quic_demo_main: APP_RTT seq=1295 app_rtt_ms=67.703
+2026-11-11T19:34:59 I (6500207) quic_demo_main: APP_RTT seq=1296 app_rtt_ms=87.703
+2026-11-11T19:35:04 I (6505237) quic_demo_main: APP_RTT seq=1297 app_rtt_ms=107.678
+2026-11-11T19:35:09 I (6510167) quic_demo_main: APP_RTT seq=1298 app_rtt_ms=27.568
+2026-11-11T19:35:14 I (6515197) quic_demo_main: APP_RTT seq=1299 app_rtt_ms=47.554
+2026-11-11T19:35:19 I (6520227) quic_demo_main: APP_RTT seq=1300 app_rtt_ms=67.105
+2026-11-11T19:35:24 I (6525257) quic_demo_main: APP_RTT seq=1301 app_rtt_ms=87.522
+2026-11-11T19:35:29 I (6530287) quic_demo_main: APP_RTT seq=1302 app_rtt_ms=108.220
+2026-11-11T19:35:34 I (6535217) quic_demo_main: APP_RTT seq=1303 app_rtt_ms=27.701
+2026-11-11T19:35:39 I (6540247) quic_demo_main: APP_RTT seq=1304 app_rtt_ms=47.720
+2026-11-11T19:35:44 I (6545277) quic_demo_main: APP_RTT seq=1305 app_rtt_ms=67.873
+2026-11-11T19:35:49 I (6550307) quic_demo_main: APP_RTT seq=1306 app_rtt_ms=87.669
+2026-11-11T19:35:54 I (6555337) quic_demo_main: APP_RTT seq=1307 app_rtt_ms=107.675
+2026-11-11T19:35:59 I (6560267) quic_demo_main: APP_RTT seq=1308 app_rtt_ms=27.580
+2026-11-11T19:36:04 I (6565297) quic_demo_main: APP_RTT seq=1309 app_rtt_ms=47.606
+2026-11-11T19:36:09 I (6570327) quic_demo_main: APP_RTT seq=1310 app_rtt_ms=67.739
+2026-11-11T19:36:14 I (6575357) quic_demo_main: APP_RTT seq=1311 app_rtt_ms=87.693
+2026-11-11T19:36:19 I (6580387) quic_demo_main: APP_RTT seq=1312 app_rtt_ms=107.767
+2026-11-11T19:36:24 I (6585317) quic_demo_main: APP_RTT seq=1313 app_rtt_ms=27.585
+2026-11-11T19:36:29 I (6590347) quic_demo_main: APP_RTT seq=1314 app_rtt_ms=47.567
+2026-11-11T19:36:34 I (6595377) quic_demo_main: APP_RTT seq=1315 app_rtt_ms=67.480
+2026-11-11T19:36:39 I (6600407) quic_demo_main: APP_RTT seq=1316 app_rtt_ms=87.591
+2026-11-11T19:36:45 I (6605437) quic_demo_main: APP_RTT seq=1317 app_rtt_ms=107.487
+2026-11-11T19:36:49 I (6610367) quic_demo_main: APP_RTT seq=1318 app_rtt_ms=27.577
+2026-11-11T19:36:54 I (6615397) quic_demo_main: APP_RTT seq=1319 app_rtt_ms=47.565
+2026-11-11T19:36:59 I (6620427) quic_demo_main: APP_RTT seq=1320 app_rtt_ms=67.591
+2026-11-11T19:37:05 I (6625457) quic_demo_main: APP_RTT seq=1321 app_rtt_ms=87.767
+2026-11-11T19:37:10 I (6630487) quic_demo_main: APP_RTT seq=1322 app_rtt_ms=107.998
+2026-11-11T19:37:14 I (6635417) quic_demo_main: APP_RTT seq=1323 app_rtt_ms=27.567
+2026-11-11T19:37:20 I (6640447) quic_demo_main: APP_RTT seq=1324 app_rtt_ms=47.497
+2026-11-11T19:37:25 I (6645477) quic_demo_main: APP_RTT seq=1325 app_rtt_ms=67.461
+2026-11-11T19:37:30 I (6650507) quic_demo_main: APP_RTT seq=1326 app_rtt_ms=88.001
+2026-11-11T19:37:35 I (6655537) quic_demo_main: APP_RTT seq=1327 app_rtt_ms=107.494
+2026-11-11T19:37:40 I (6660467) quic_demo_main: APP_RTT seq=1328 app_rtt_ms=27.006
+2026-11-11T19:37:45 I (6665497) quic_demo_main: APP_RTT seq=1329 app_rtt_ms=47.565
+2026-11-11T19:37:50 I (6670527) quic_demo_main: APP_RTT seq=1330 app_rtt_ms=67.657
+2026-11-11T19:37:55 I (6675557) quic_demo_main: APP_RTT seq=1331 app_rtt_ms=87.647
+2026-11-11T19:38:00 I (6680587) quic_demo_main: APP_RTT seq=1332 app_rtt_ms=108.137
+2026-11-11T19:38:05 I (6685517) quic_demo_main: APP_RTT seq=1333 app_rtt_ms=27.529
+2026-11-11T19:38:10 I (6690547) quic_demo_main: APP_RTT seq=1334 app_rtt_ms=47.565
+2026-11-11T19:38:15 I (6695577) quic_demo_main: APP_RTT seq=1335 app_rtt_ms=67.588
+2026-11-11T19:38:20 I (6700607) quic_demo_main: APP_RTT seq=1336 app_rtt_ms=87.332
+2026-11-11T19:38:25 I (6705637) quic_demo_main: APP_RTT seq=1337 app_rtt_ms=107.272
+2026-11-11T19:38:30 I (6710667) quic_demo_main: APP_RTT seq=1338 app_rtt_ms=127.452
+2026-11-11T19:38:35 I (6715597) quic_demo_main: APP_RTT seq=1339 app_rtt_ms=47.391
+2026-11-11T19:38:40 I (6720627) quic_demo_main: APP_RTT seq=1340 app_rtt_ms=67.325
+2026-11-11T19:38:45 I (6725657) quic_demo_main: APP_RTT seq=1341 app_rtt_ms=87.347
+2026-11-11T19:38:50 I (6730687) quic_demo_main: APP_RTT seq=1342 app_rtt_ms=108.119
+2026-11-11T19:38:55 I (6735617) quic_demo_main: APP_RTT seq=1343 app_rtt_ms=27.588
+2026-11-11T19:39:00 I (6740647) quic_demo_main: APP_RTT seq=1344 app_rtt_ms=47.524
+2026-11-11T19:39:05 I (6745677) quic_demo_main: APP_RTT seq=1345 app_rtt_ms=67.533
+2026-11-11T19:39:10 I (6750707) quic_demo_main: APP_RTT seq=1346 app_rtt_ms=87.523
+2026-11-11T19:39:15 I (6755737) quic_demo_main: APP_RTT seq=1347 app_rtt_ms=107.343
+2026-11-11T19:39:20 I (6760667) quic_demo_main: APP_RTT seq=1348 app_rtt_ms=27.444
+2026-11-11T19:39:25 I (6765797) quic_demo_main: APP_RTT seq=1349 app_rtt_ms=147.457
+2026-11-11T19:39:30 I (6770727) quic_demo_main: APP_RTT seq=1350 app_rtt_ms=67.548
+2026-11-11T19:39:35 I (6775757) quic_demo_main: APP_RTT seq=1351 app_rtt_ms=87.527
+2026-11-11T19:39:40 I (6780787) quic_demo_main: APP_RTT seq=1352 app_rtt_ms=107.723
+2026-11-11T19:39:45 I (6785717) quic_demo_main: APP_RTT seq=1353 app_rtt_ms=27.464
+2026-11-11T19:39:50 I (6790747) quic_demo_main: APP_RTT seq=1354 app_rtt_ms=46.879
+2026-11-11T19:39:55 I (6795777) quic_demo_main: APP_RTT seq=1355 app_rtt_ms=67.474
+2026-11-11T19:40:00 I (6800807) quic_demo_main: APP_RTT seq=1356 app_rtt_ms=87.534
+2026-11-11T19:40:05 I (6805837) quic_demo_main: APP_RTT seq=1357 app_rtt_ms=107.424
+2026-11-11T19:40:10 I (6810767) quic_demo_main: APP_RTT seq=1358 app_rtt_ms=27.522
+2026-11-11T19:40:15 I (6815797) quic_demo_main: APP_RTT seq=1359 app_rtt_ms=47.479
+2026-11-11T19:40:20 I (6820827) quic_demo_main: APP_RTT seq=1360 app_rtt_ms=67.526
+2026-11-11T19:40:25 I (6825857) quic_demo_main: APP_RTT seq=1361 app_rtt_ms=87.651
+2026-11-11T19:40:30 I (6830887) quic_demo_main: APP_RTT seq=1362 app_rtt_ms=107.958
+2026-11-11T19:40:35 I (6835817) quic_demo_main: APP_RTT seq=1363 app_rtt_ms=27.508
+2026-11-11T19:40:40 I (6840847) quic_demo_main: APP_RTT seq=1364 app_rtt_ms=47.489
+2026-11-11T19:40:45 I (6845877) quic_demo_main: APP_RTT seq=1365 app_rtt_ms=67.447
+2026-11-11T19:40:50 I (6850907) quic_demo_main: APP_RTT seq=1366 app_rtt_ms=87.387
+2026-11-11T19:40:55 I (6855937) quic_demo_main: APP_RTT seq=1367 app_rtt_ms=107.415
+2026-11-11T19:41:00 I (6860867) quic_demo_main: APP_RTT seq=1368 app_rtt_ms=26.982
+2026-11-11T19:41:05 I (6865897) quic_demo_main: APP_RTT seq=1369 app_rtt_ms=47.476
+2026-11-11T19:41:10 I (6870927) quic_demo_main: APP_RTT seq=1370 app_rtt_ms=67.530
+2026-11-11T19:41:15 I (6875957) quic_demo_main: APP_RTT seq=1371 app_rtt_ms=87.506
+2026-11-11T19:41:20 I (6880987) quic_demo_main: APP_RTT seq=1372 app_rtt_ms=107.956
+2026-11-11T19:41:25 I (6885917) quic_demo_main: APP_RTT seq=1373 app_rtt_ms=27.450
+2026-11-11T19:41:30 I (6890947) quic_demo_main: APP_RTT seq=1374 app_rtt_ms=47.578
+2026-11-11T19:41:35 I (6895977) quic_demo_main: APP_RTT seq=1375 app_rtt_ms=67.485
+2026-11-11T19:41:40 I (6901007) quic_demo_main: APP_RTT seq=1376 app_rtt_ms=87.522
+2026-11-11T19:41:45 I (6906037) quic_demo_main: APP_RTT seq=1377 app_rtt_ms=107.617
+2026-11-11T19:41:50 I (6910967) quic_demo_main: APP_RTT seq=1378 app_rtt_ms=27.482
+2026-11-11T19:41:55 I (6915997) quic_demo_main: APP_RTT seq=1379 app_rtt_ms=47.429
+2026-11-11T19:42:00 I (6921027) quic_demo_main: APP_RTT seq=1380 app_rtt_ms=67.356
+2026-11-11T19:42:05 I (6926057) quic_demo_main: APP_RTT seq=1381 app_rtt_ms=87.408
+2026-11-11T19:42:10 I (6931087) quic_demo_main: APP_RTT seq=1382 app_rtt_ms=107.986
+2026-11-11T19:42:15 I (6936017) quic_demo_main: APP_RTT seq=1383 app_rtt_ms=27.556
+2026-11-11T19:42:20 I (6941047) quic_demo_main: APP_RTT seq=1384 app_rtt_ms=47.551
+2026-11-11T19:42:25 I (6946077) quic_demo_main: APP_RTT seq=1385 app_rtt_ms=67.483
+2026-11-11T19:42:30 I (6951107) quic_demo_main: APP_RTT seq=1386 app_rtt_ms=87.537
+2026-11-11T19:42:35 I (6956137) quic_demo_main: APP_RTT seq=1387 app_rtt_ms=107.646
+2026-11-11T19:42:40 I (6961067) quic_demo_main: APP_RTT seq=1388 app_rtt_ms=27.454
+2026-11-11T19:42:45 I (6966097) quic_demo_main: APP_RTT seq=1389 app_rtt_ms=47.474
+2026-11-11T19:42:50 I (6971127) quic_demo_main: APP_RTT seq=1390 app_rtt_ms=67.520
+2026-11-11T19:42:55 I (6976157) quic_demo_main: APP_RTT seq=1391 app_rtt_ms=87.520
+2026-11-11T19:43:00 I (6981187) quic_demo_main: APP_RTT seq=1392 app_rtt_ms=107.453
+2026-11-11T19:43:05 I (6986117) quic_demo_main: APP_RTT seq=1393 app_rtt_ms=27.432
+2026-11-11T19:43:10 I (6991147) quic_demo_main: APP_RTT seq=1394 app_rtt_ms=47.398
+2026-11-11T19:43:15 I (6996177) quic_demo_main: APP_RTT seq=1395 app_rtt_ms=67.374
+2026-11-11T19:43:20 I (7001207) quic_demo_main: APP_RTT seq=1396 app_rtt_ms=87.518
+2026-11-11T19:43:25 I (7006237) quic_demo_main: APP_RTT seq=1397 app_rtt_ms=107.423
+2026-11-11T19:43:30 I (7011167) quic_demo_main: APP_RTT seq=1398 app_rtt_ms=27.549
+2026-11-11T19:43:35 I (7016197) quic_demo_main: APP_RTT seq=1399 app_rtt_ms=47.711
+2026-11-11T19:43:40 I (7021227) quic_demo_main: APP_RTT seq=1400 app_rtt_ms=67.518
+2026-11-11T19:43:45 I (7026257) quic_demo_main: APP_RTT seq=1401 app_rtt_ms=87.551
+2026-11-11T19:43:50 I (7031287) quic_demo_main: APP_RTT seq=1402 app_rtt_ms=107.854
+2026-11-11T19:43:55 I (7036217) quic_demo_main: APP_RTT seq=1403 app_rtt_ms=27.483
+2026-11-11T19:44:00 I (7041247) quic_demo_main: APP_RTT seq=1404 app_rtt_ms=47.545
+2026-11-11T19:44:05 I (7046277) quic_demo_main: APP_RTT seq=1405 app_rtt_ms=67.478
+2026-11-11T19:44:10 I (7051307) quic_demo_main: APP_RTT seq=1406 app_rtt_ms=87.474
+2026-11-11T19:44:15 I (7056337) quic_demo_main: APP_RTT seq=1407 app_rtt_ms=107.462
+2026-11-11T19:44:20 I (7061267) quic_demo_main: APP_RTT seq=1408 app_rtt_ms=27.350
+2026-11-11T19:44:25 I (7066297) quic_demo_main: APP_RTT seq=1409 app_rtt_ms=47.467
+2026-11-11T19:44:30 I (7071327) quic_demo_main: APP_RTT seq=1410 app_rtt_ms=67.488
+2026-11-11T19:44:35 I (7076357) quic_demo_main: APP_RTT seq=1411 app_rtt_ms=87.530
+2026-11-11T19:44:40 I (7081387) quic_demo_main: APP_RTT seq=1412 app_rtt_ms=107.896
+2026-11-11T19:44:45 I (7086317) quic_demo_main: APP_RTT seq=1413 app_rtt_ms=27.424
+2026-11-11T19:44:50 I (7091347) quic_demo_main: APP_RTT seq=1414 app_rtt_ms=47.550
+2026-11-11T19:44:55 I (7096377) quic_demo_main: APP_RTT seq=1415 app_rtt_ms=67.482
+2026-11-11T19:45:00 I (7101407) quic_demo_main: APP_RTT seq=1416 app_rtt_ms=87.552
+2026-11-11T19:45:06 I (7106437) quic_demo_main: APP_RTT seq=1417 app_rtt_ms=107.504
+2026-11-11T19:45:10 I (7111367) quic_demo_main: APP_RTT seq=1418 app_rtt_ms=27.419
+2026-11-11T19:45:15 I (7116397) quic_demo_main: APP_RTT seq=1419 app_rtt_ms=47.398
+2026-11-11T19:45:20 I (7121427) quic_demo_main: APP_RTT seq=1420 app_rtt_ms=67.325
+2026-11-11T19:45:26 I (7126457) quic_demo_main: APP_RTT seq=1421 app_rtt_ms=87.362
+2026-11-11T19:45:31 I (7131487) quic_demo_main: APP_RTT seq=1422 app_rtt_ms=107.908
+2026-11-11T19:45:35 I (7136417) quic_demo_main: APP_RTT seq=1423 app_rtt_ms=27.561
+2026-11-11T19:45:41 I (7141447) quic_demo_main: APP_RTT seq=1424 app_rtt_ms=47.551
+2026-11-11T19:45:46 I (7146477) quic_demo_main: APP_RTT seq=1425 app_rtt_ms=67.509
+2026-11-11T19:45:51 I (7151507) quic_demo_main: APP_RTT seq=1426 app_rtt_ms=87.921
+2026-11-11T19:45:56 I (7156537) quic_demo_main: APP_RTT seq=1427 app_rtt_ms=107.389
+2026-11-11T19:46:01 I (7161467) quic_demo_main: APP_RTT seq=1428 app_rtt_ms=27.505
+2026-11-11T19:46:06 I (7166497) quic_demo_main: APP_RTT seq=1429 app_rtt_ms=47.500
+2026-11-11T19:46:11 I (7171527) quic_demo_main: APP_RTT seq=1430 app_rtt_ms=67.581
+2026-11-11T19:46:16 I (7176557) quic_demo_main: APP_RTT seq=1431 app_rtt_ms=87.648
+2026-11-11T19:46:21 I (7181587) quic_demo_main: APP_RTT seq=1432 app_rtt_ms=108.144
+2026-11-11T19:46:26 I (7186617) quic_demo_main: APP_RTT seq=1433 app_rtt_ms=127.520
+2026-11-11T19:46:31 I (7191547) quic_demo_main: APP_RTT seq=1434 app_rtt_ms=46.947
+2026-11-11T19:46:36 I (7196577) quic_demo_main: APP_RTT seq=1435 app_rtt_ms=67.198
+2026-11-11T19:46:41 I (7201607) quic_demo_main: APP_RTT seq=1436 app_rtt_ms=87.332
+2026-11-11T19:46:46 I (7206637) quic_demo_main: APP_RTT seq=1437 app_rtt_ms=107.211
+2026-11-11T19:46:51 I (7211567) quic_demo_main: APP_RTT seq=1438 app_rtt_ms=27.545
+2026-11-11T19:46:56 I (7216597) quic_demo_main: APP_RTT seq=1439 app_rtt_ms=47.497
+2026-11-11T19:47:01 I (7221627) quic_demo_main: APP_RTT seq=1440 app_rtt_ms=67.533
+2026-11-11T19:47:06 I (7226657) quic_demo_main: APP_RTT seq=1441 app_rtt_ms=87.502
+2026-11-11T19:47:11 I (7231687) quic_demo_main: APP_RTT seq=1442 app_rtt_ms=107.930
+2026-11-11T19:47:16 I (7236617) quic_demo_main: APP_RTT seq=1443 app_rtt_ms=27.488
+2026-11-11T19:47:21 I (7241647) quic_demo_main: APP_RTT seq=1444 app_rtt_ms=47.402
+2026-11-11T19:47:26 I (7246677) quic_demo_main: APP_RTT seq=1445 app_rtt_ms=67.422
+2026-11-11T19:47:31 I (7251707) quic_demo_main: APP_RTT seq=1446 app_rtt_ms=87.394
+2026-11-11T19:47:36 I (7256737) quic_demo_main: APP_RTT seq=1447 app_rtt_ms=107.330
+2026-11-11T19:47:41 I (7261667) quic_demo_main: APP_RTT seq=1448 app_rtt_ms=26.848
+2026-11-11T19:47:46 I (7266697) quic_demo_main: APP_RTT seq=1449 app_rtt_ms=47.454
+2026-11-11T19:47:51 I (7271727) quic_demo_main: APP_RTT seq=1450 app_rtt_ms=67.486
+2026-11-11T19:47:56 I (7276757) quic_demo_main: APP_RTT seq=1451 app_rtt_ms=87.553
+2026-11-11T19:48:01 I (7281787) quic_demo_main: APP_RTT seq=1452 app_rtt_ms=107.830
+2026-11-11T19:48:06 I (7286717) quic_demo_main: APP_RTT seq=1453 app_rtt_ms=27.457
+2026-11-11T19:48:11 I (7291747) quic_demo_main: APP_RTT seq=1454 app_rtt_ms=47.553
+2026-11-11T19:48:16 I (7296777) quic_demo_main: APP_RTT seq=1455 app_rtt_ms=67.521
+2026-11-11T19:48:21 I (7301807) quic_demo_main: APP_RTT seq=1456 app_rtt_ms=87.573
+2026-11-11T19:48:26 I (7306837) quic_demo_main: APP_RTT seq=1457 app_rtt_ms=107.450
+2026-11-11T19:48:31 I (7311767) quic_demo_main: APP_RTT seq=1458 app_rtt_ms=27.501
+2026-11-11T19:48:36 I (7316797) quic_demo_main: APP_RTT seq=1459 app_rtt_ms=46.913
+2026-11-11T19:48:41 I (7321827) quic_demo_main: APP_RTT seq=1460 app_rtt_ms=67.385
+2026-11-11T19:48:46 I (7326857) quic_demo_main: APP_RTT seq=1461 app_rtt_ms=87.361
+2026-11-11T19:48:51 I (7331887) quic_demo_main: APP_RTT seq=1462 app_rtt_ms=107.845
+2026-11-11T19:48:56 I (7336817) quic_demo_main: APP_RTT seq=1463 app_rtt_ms=27.523
+2026-11-11T19:49:01 I (7341847) quic_demo_main: APP_RTT seq=1464 app_rtt_ms=47.500
+2026-11-11T19:49:06 I (7346877) quic_demo_main: APP_RTT seq=1465 app_rtt_ms=67.552
+2026-11-11T19:49:11 I (7351907) quic_demo_main: APP_RTT seq=1466 app_rtt_ms=87.710
+2026-11-11T19:49:16 I (7356937) quic_demo_main: APP_RTT seq=1467 app_rtt_ms=107.483
+2026-11-11T19:49:21 I (7361867) quic_demo_main: APP_RTT seq=1468 app_rtt_ms=27.458
+2026-11-11T19:49:26 I (7366897) quic_demo_main: APP_RTT seq=1469 app_rtt_ms=47.450
+2026-11-11T19:49:31 I (7371927) quic_demo_main: APP_RTT seq=1470 app_rtt_ms=67.545
+2026-11-11T19:49:36 I (7376957) quic_demo_main: APP_RTT seq=1471 app_rtt_ms=87.556
+2026-11-11T19:49:41 I (7381987) quic_demo_main: APP_RTT seq=1472 app_rtt_ms=107.905
+2026-11-11T19:49:46 I (7386917) quic_demo_main: APP_RTT seq=1473 app_rtt_ms=27.446
+2026-11-11T19:49:51 I (7391947) quic_demo_main: APP_RTT seq=1474 app_rtt_ms=46.895
+2026-11-11T19:49:56 I (7396977) quic_demo_main: APP_RTT seq=1475 app_rtt_ms=67.412
+2026-11-11T19:50:01 I (7402007) quic_demo_main: APP_RTT seq=1476 app_rtt_ms=87.510
+2026-11-11T19:50:06 I (7407037) quic_demo_main: APP_RTT seq=1477 app_rtt_ms=107.336
+2026-11-11T19:50:11 I (7411967) quic_demo_main: APP_RTT seq=1478 app_rtt_ms=27.570
+2026-11-11T19:50:16 I (7416997) quic_demo_main: APP_RTT seq=1479 app_rtt_ms=47.572
+2026-11-11T19:50:21 I (7422027) quic_demo_main: APP_RTT seq=1480 app_rtt_ms=67.569
+2026-11-11T19:50:26 I (7427057) quic_demo_main: APP_RTT seq=1481 app_rtt_ms=87.499
+2026-11-11T19:50:31 I (7432087) quic_demo_main: APP_RTT seq=1482 app_rtt_ms=107.901
+2026-11-11T19:50:36 I (7437017) quic_demo_main: APP_RTT seq=1483 app_rtt_ms=27.504
+2026-11-11T19:50:41 I (7442047) quic_demo_main: APP_RTT seq=1484 app_rtt_ms=47.464
+2026-11-11T19:50:46 I (7447077) quic_demo_main: APP_RTT seq=1485 app_rtt_ms=67.424
+2026-11-11T19:50:51 I (7452107) quic_demo_main: APP_RTT seq=1486 app_rtt_ms=87.485
+2026-11-11T19:50:56 I (7457137) quic_demo_main: APP_RTT seq=1487 app_rtt_ms=107.383
+2026-11-11T19:51:01 I (7462067) quic_demo_main: APP_RTT seq=1488 app_rtt_ms=27.411
+2026-11-11T19:51:06 I (7467097) quic_demo_main: APP_RTT seq=1489 app_rtt_ms=47.419
+2026-11-11T19:51:11 I (7472127) quic_demo_main: APP_RTT seq=1490 app_rtt_ms=67.527
+2026-11-11T19:51:16 I (7477157) quic_demo_main: APP_RTT seq=1491 app_rtt_ms=87.533
+2026-11-11T19:51:21 I (7482187) quic_demo_main: APP_RTT seq=1492 app_rtt_ms=107.864
+2026-11-11T19:51:26 I (7487117) quic_demo_main: APP_RTT seq=1493 app_rtt_ms=27.511
+2026-11-11T19:51:31 I (7492147) quic_demo_main: APP_RTT seq=1494 app_rtt_ms=47.524
+2026-11-11T19:51:36 I (7497177) quic_demo_main: APP_RTT seq=1495 app_rtt_ms=67.548
+2026-11-11T19:51:41 I (7502207) quic_demo_main: APP_RTT seq=1496 app_rtt_ms=87.504
+2026-11-11T19:51:46 I (7507237) quic_demo_main: APP_RTT seq=1497 app_rtt_ms=107.482
+2026-11-11T19:51:51 I (7512267) quic_demo_main: APP_RTT seq=1498 app_rtt_ms=127.666
+2026-11-11T19:51:56 I (7517197) quic_demo_main: APP_RTT seq=1499 app_rtt_ms=47.392
+2026-11-11T19:52:01 I (7522227) quic_demo_main: APP_RTT seq=1500 app_rtt_ms=67.403
+2026-11-11T19:52:06 I (7527257) quic_demo_main: APP_RTT seq=1501 app_rtt_ms=87.355
+2026-11-11T19:52:11 I (7532287) quic_demo_main: APP_RTT seq=1502 app_rtt_ms=107.839
+2026-11-11T19:52:16 I (7537217) quic_demo_main: APP_RTT seq=1503 app_rtt_ms=27.545
+2026-11-11T19:52:21 I (7542247) quic_demo_main: APP_RTT seq=1504 app_rtt_ms=47.563
+2026-11-11T19:52:26 I (7547277) quic_demo_main: APP_RTT seq=1505 app_rtt_ms=67.723
+2026-11-11T19:52:31 I (7552307) quic_demo_main: APP_RTT seq=1506 app_rtt_ms=87.550
+2026-11-11T19:52:36 I (7557337) quic_demo_main: APP_RTT seq=1507 app_rtt_ms=107.525
+2026-11-11T19:52:41 I (7562267) quic_demo_main: APP_RTT seq=1508 app_rtt_ms=27.427
+2026-11-11T19:52:46 I (7567297) quic_demo_main: APP_RTT seq=1509 app_rtt_ms=47.458
+2026-11-11T19:52:51 I (7572327) quic_demo_main: APP_RTT seq=1510 app_rtt_ms=67.530
+2026-11-11T19:52:56 I (7577357) quic_demo_main: APP_RTT seq=1511 app_rtt_ms=87.544
+2026-11-11T19:53:01 I (7582387) quic_demo_main: APP_RTT seq=1512 app_rtt_ms=107.948
+2026-11-11T19:53:06 I (7587317) quic_demo_main: APP_RTT seq=1513 app_rtt_ms=27.431
+2026-11-11T19:53:11 I (7592347) quic_demo_main: APP_RTT seq=1514 app_rtt_ms=47.406
+2026-11-11T19:53:16 I (7597377) quic_demo_main: APP_RTT seq=1515 app_rtt_ms=67.373
+2026-11-11T19:53:21 I (7602407) quic_demo_main: APP_RTT seq=1516 app_rtt_ms=87.474
+2026-11-11T19:53:26 I (7607437) quic_demo_main: APP_RTT seq=1517 app_rtt_ms=107.393
+2026-11-11T19:53:31 I (7612367) quic_demo_main: APP_RTT seq=1518 app_rtt_ms=27.562
+2026-11-11T19:53:36 I (7617397) quic_demo_main: APP_RTT seq=1519 app_rtt_ms=47.699
+2026-11-11T19:53:41 I (7622427) quic_demo_main: APP_RTT seq=1520 app_rtt_ms=67.516
+2026-11-11T19:53:47 I (7627457) quic_demo_main: APP_RTT seq=1521 app_rtt_ms=87.492
+2026-11-11T19:53:52 I (7632487) quic_demo_main: APP_RTT seq=1522 app_rtt_ms=107.787
+2026-11-11T19:53:56 I (7637417) quic_demo_main: APP_RTT seq=1523 app_rtt_ms=27.494
+2026-11-11T19:54:02 I (7642447) quic_demo_main: APP_RTT seq=1524 app_rtt_ms=47.463
+2026-11-11T19:54:07 I (7647477) quic_demo_main: APP_RTT seq=1525 app_rtt_ms=67.408
+2026-11-11T19:54:12 I (7652507) quic_demo_main: APP_RTT seq=1526 app_rtt_ms=87.877
+2026-11-11T19:54:17 I (7657537) quic_demo_main: APP_RTT seq=1527 app_rtt_ms=107.404
+2026-11-11T19:54:22 I (7662467) quic_demo_main: APP_RTT seq=1528 app_rtt_ms=27.431
+2026-11-11T19:54:27 I (7667497) quic_demo_main: APP_RTT seq=1529 app_rtt_ms=47.448
+2026-11-11T19:54:32 I (7672527) quic_demo_main: APP_RTT seq=1530 app_rtt_ms=67.608
+2026-11-11T19:54:37 I (7677557) quic_demo_main: APP_RTT seq=1531 app_rtt_ms=87.637
+2026-11-11T19:54:42 I (7682587) quic_demo_main: APP_RTT seq=1532 app_rtt_ms=107.956
+2026-11-11T19:54:47 I (7687517) quic_demo_main: APP_RTT seq=1533 app_rtt_ms=27.484
+2026-11-11T19:54:52 I (7692547) quic_demo_main: APP_RTT seq=1534 app_rtt_ms=47.634
+2026-11-11T19:54:57 I (7697577) quic_demo_main: APP_RTT seq=1535 app_rtt_ms=67.395
+2026-11-11T19:55:02 I (7702607) quic_demo_main: APP_RTT seq=1536 app_rtt_ms=87.440
+2026-11-11T19:55:07 I (7707637) quic_demo_main: APP_RTT seq=1537 app_rtt_ms=107.302
+2026-11-11T19:55:12 I (7712567) quic_demo_main: APP_RTT seq=1538 app_rtt_ms=27.458
+2026-11-11T19:55:17 I (7717597) quic_demo_main: APP_RTT seq=1539 app_rtt_ms=47.444
+2026-11-11T19:55:22 I (7722627) quic_demo_main: APP_RTT seq=1540 app_rtt_ms=67.451
+2026-11-11T19:55:27 I (7727657) quic_demo_main: APP_RTT seq=1541 app_rtt_ms=87.392
+2026-11-11T19:55:32 I (7732687) quic_demo_main: APP_RTT seq=1542 app_rtt_ms=107.857
+2026-11-11T19:55:37 I (7737617) quic_demo_main: APP_RTT seq=1543 app_rtt_ms=27.528
+2026-11-11T19:55:42 I (7742647) quic_demo_main: APP_RTT seq=1544 app_rtt_ms=47.573
+2026-11-11T19:55:47 I (7747677) quic_demo_main: APP_RTT seq=1545 app_rtt_ms=67.526
+2026-11-11T19:55:52 I (7752707) quic_demo_main: APP_RTT seq=1546 app_rtt_ms=87.566
+2026-11-11T19:55:57 I (7757737) quic_demo_main: APP_RTT seq=1547 app_rtt_ms=107.609
+2026-11-11T19:56:02 I (7762667) quic_demo_main: APP_RTT seq=1548 app_rtt_ms=27.479
+2026-11-11T19:56:07 I (7767697) quic_demo_main: APP_RTT seq=1549 app_rtt_ms=47.480
+2026-11-11T19:56:12 I (7772727) quic_demo_main: APP_RTT seq=1550 app_rtt_ms=67.564
+2026-11-11T19:56:17 I (7777757) quic_demo_main: APP_RTT seq=1551 app_rtt_ms=87.571
+2026-11-11T19:56:22 I (7782787) quic_demo_main: APP_RTT seq=1552 app_rtt_ms=107.958
+2026-11-11T19:56:27 I (7787717) quic_demo_main: APP_RTT seq=1553 app_rtt_ms=27.492
+2026-11-11T19:56:32 I (7792747) quic_demo_main: APP_RTT seq=1554 app_rtt_ms=47.012
+2026-11-11T19:56:37 I (7797777) quic_demo_main: APP_RTT seq=1555 app_rtt_ms=67.440
+2026-11-11T19:56:42 I (7802807) quic_demo_main: APP_RTT seq=1556 app_rtt_ms=87.520
+2026-11-11T19:56:47 I (7807837) quic_demo_main: APP_RTT seq=1557 app_rtt_ms=107.462
+2026-11-11T19:56:52 I (7812767) quic_demo_main: APP_RTT seq=1558 app_rtt_ms=27.555
+2026-11-11T19:56:57 I (7817797) quic_demo_main: APP_RTT seq=1559 app_rtt_ms=47.539
+2026-11-11T19:57:02 I (7822827) quic_demo_main: APP_RTT seq=1560 app_rtt_ms=67.570
+2026-11-11T19:57:07 I (7827857) quic_demo_main: APP_RTT seq=1561 app_rtt_ms=87.551
+2026-11-11T19:57:12 I (7832887) quic_demo_main: APP_RTT seq=1562 app_rtt_ms=108.001
+2026-11-11T19:57:17 I (7837817) quic_demo_main: APP_RTT seq=1563 app_rtt_ms=27.488
+2026-11-11T19:57:22 I (7842847) quic_demo_main: APP_RTT seq=1564 app_rtt_ms=47.465
+2026-11-11T19:57:27 I (7847877) quic_demo_main: APP_RTT seq=1565 app_rtt_ms=67.488
+2026-11-11T19:57:32 I (7852907) quic_demo_main: APP_RTT seq=1566 app_rtt_ms=87.520
+2026-11-11T19:57:37 I (7857937) quic_demo_main: APP_RTT seq=1567 app_rtt_ms=107.450
+2026-11-11T19:57:42 I (7862867) quic_demo_main: APP_RTT seq=1568 app_rtt_ms=26.961
+2026-11-11T19:57:47 I (7867897) quic_demo_main: APP_RTT seq=1569 app_rtt_ms=47.512
+2026-11-11T19:57:52 I (7872927) quic_demo_main: APP_RTT seq=1570 app_rtt_ms=67.555
+2026-11-11T19:57:57 I (7877957) quic_demo_main: APP_RTT seq=1571 app_rtt_ms=87.549
+2026-11-11T19:58:02 I (7882987) quic_demo_main: APP_RTT seq=1572 app_rtt_ms=107.965
+2026-11-11T19:58:07 I (7887917) quic_demo_main: APP_RTT seq=1573 app_rtt_ms=27.447
+2026-11-11T19:58:12 I (7892947) quic_demo_main: APP_RTT seq=1574 app_rtt_ms=47.603
+2026-11-11T19:58:17 I (7897977) quic_demo_main: APP_RTT seq=1575 app_rtt_ms=67.748
+2026-11-11T19:58:22 I (7903007) quic_demo_main: APP_RTT seq=1576 app_rtt_ms=87.562
+2026-11-11T19:58:27 I (7908037) quic_demo_main: APP_RTT seq=1577 app_rtt_ms=107.525
+2026-11-11T19:58:32 I (7913067) quic_demo_main: APP_RTT seq=1578 app_rtt_ms=127.507
+2026-11-11T19:58:37 I (7917997) quic_demo_main: APP_RTT seq=1579 app_rtt_ms=47.551
+2026-11-11T19:58:42 I (7923027) quic_demo_main: APP_RTT seq=1580 app_rtt_ms=66.991
+2026-11-11T19:58:47 I (7928057) quic_demo_main: APP_RTT seq=1581 app_rtt_ms=87.459
+2026-11-11T19:58:52 I (7933087) quic_demo_main: APP_RTT seq=1582 app_rtt_ms=108.218
+--- Command: 'exit'
+

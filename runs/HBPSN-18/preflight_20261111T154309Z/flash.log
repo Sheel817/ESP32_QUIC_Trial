@@ -1,0 +1,100 @@
+esptool --chip esp32c6 --port COM6 --baud 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 8MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 quic_demo.bin
+esptool v5.6.0
+Serial port COM6:
+Connecting....
+Connected to ESP32-C6 on COM6:
+Chip type:          ESP32-C6 (QFN40) (revision v0.0)
+Features:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash
+Crystal frequency:  40MHz
+MAC:                40:4c:ca:ff:fe:56:bb:b0
+BASE MAC:           40:4c:ca:56:bb:b0
+MAC_EXT:            ff:fe
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00000000...
+SHA digest in image updated.
+Flash will be erased from 0x00000000 to 0x00005fff...
+Compressed 22096 bytes to 13911...
+Writing at 0x00005650 ============================== 100.0% 13.58kB/13.58kB [0s] 
+Wrote 22096 bytes (13911 compressed) at 0x00000000 in 0.6 seconds (291.2 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 3072 bytes to 106...
+Writing at 0x00008c00 ============================== 100.0% 106B/106B [0s] 
+Wrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (1741.4 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'quic_demo.bin' at 0x00010000...
+Flash will be erased from 0x00010000 to 0x0017dfff...
+Compressed 1498864 bytes to 893158...
+Writing at 0x0001e523 >                                1.8% 16.00kB/872.22kB [0s] 
+Writing at 0x0002a74f =                                3.7% 32.00kB/872.22kB [0s] 
+Writing at 0x00032788 =>                               5.5% 48.00kB/872.22kB [1s] 
+Writing at 0x00037244 ==                               7.3% 64.00kB/872.22kB [1s] 
+Writing at 0x0003bf74 ==>                              9.2% 80.00kB/872.22kB [2s] 
+Writing at 0x000434d0 ===                             11.0% 96.00kB/872.22kB [2s] 
+Writing at 0x0004cac8 ===>                            12.8% 112.00kB/872.22kB [3s] 
+Writing at 0x0005332a ====                            14.7% 128.00kB/872.22kB [3s] 
+Writing at 0x0005ac37 ====>                           16.5% 144.00kB/872.22kB [3s] 
+Writing at 0x00061c04 =====>                          18.3% 160.00kB/872.22kB [4s] 
+Writing at 0x00068063 ======                          20.2% 176.00kB/872.22kB [4s] 
+Writing at 0x0006f025 ======>                         22.0% 192.00kB/872.22kB [5s] 
+Writing at 0x00075a4f =======                         23.8% 208.00kB/872.22kB [5s] 
+Writing at 0x0007c13a =======>                        25.7% 224.00kB/872.22kB [5s] 
+Writing at 0x00082779 ========                        27.5% 240.00kB/872.22kB [6s] 
+Writing at 0x00088cbd ========>                       29.4% 256.00kB/872.22kB [6s] 
+Writing at 0x00090756 =========                       31.2% 272.00kB/872.22kB [7s] 
+Writing at 0x00096de5 =========>                      33.0% 288.00kB/872.22kB [7s] 
+Writing at 0x0009d4fa ==========                      34.9% 304.00kB/872.22kB [7s] 
+Writing at 0x000a34b6 ===========                     36.7% 320.00kB/872.22kB [8s] 
+Writing at 0x000a9440 ===========>                    38.5% 336.00kB/872.22kB [8s] 
+Writing at 0x000af50a ============                    40.4% 352.00kB/872.22kB [9s] 
+Writing at 0x000b568c ============>                   42.2% 368.00kB/872.22kB [9s] 
+Writing at 0x000bbdd7 =============                   44.0% 384.00kB/872.22kB [9s] 
+Writing at 0x000c1e69 =============>                  45.9% 400.00kB/872.22kB [10s] 
+Writing at 0x000c8892 ==============                  47.7% 416.00kB/872.22kB [10s] 
+Writing at 0x000cfc77 ==============>                 49.5% 432.00kB/872.22kB [10s] 
+Writing at 0x000d699e ===============                 51.4% 448.00kB/872.22kB [11s] 
+Writing at 0x000dd962 ===============>                53.2% 464.00kB/872.22kB [11s] 
+Writing at 0x000e4819 ================>               55.0% 480.00kB/872.22kB [12s] 
+Writing at 0x000ebcde =================               56.9% 496.00kB/872.22kB [12s] 
+Writing at 0x000f23b7 =================>              58.7% 512.00kB/872.22kB [12s] 
+Writing at 0x000f817a ==================              60.5% 528.00kB/872.22kB [13s] 
+Writing at 0x000fdef3 ==================>             62.4% 544.00kB/872.22kB [13s] 
+Writing at 0x00103a4f ===================             64.2% 560.00kB/872.22kB [14s] 
+Writing at 0x001099dc ===================>            66.0% 576.00kB/872.22kB [14s] 
+Writing at 0x0010fa02 ====================            67.9% 592.00kB/872.22kB [14s] 
+Writing at 0x0011564e ====================>           69.7% 608.00kB/872.22kB [15s] 
+Writing at 0x0011b0ad =====================           71.5% 624.00kB/872.22kB [15s] 
+Writing at 0x0012180d ======================          73.4% 640.00kB/872.22kB [15s] 
+Writing at 0x00127e8b ======================>         75.2% 656.00kB/872.22kB [16s] 
+Writing at 0x0012ddcc =======================         77.0% 672.00kB/872.22kB [16s] 
+Writing at 0x00133f4a =======================>        78.9% 688.00kB/872.22kB [17s] 
+Writing at 0x00139f34 ========================        80.7% 704.00kB/872.22kB [17s] 
+Writing at 0x0013ff15 ========================>       82.5% 720.00kB/872.22kB [17s] 
+Writing at 0x001461c4 =========================       84.4% 736.00kB/872.22kB [18s] 
+Writing at 0x0014c685 =========================>      86.2% 752.00kB/872.22kB [18s] 
+Writing at 0x0015282d ==========================      88.1% 768.00kB/872.22kB [19s] 
+Writing at 0x00158f2f ==========================>     89.9% 784.00kB/872.22kB [19s] 
+Writing at 0x0015e9e5 ===========================>    91.7% 800.00kB/872.22kB [19s] 
+Writing at 0x00165b3c ============================    93.6% 816.00kB/872.22kB [20s] 
+Writing at 0x0016c6a5 ============================>   95.4% 832.00kB/872.22kB [20s] 
+Writing at 0x00171f88 =============================   97.2% 848.00kB/872.22kB [20s] 
+Writing at 0x00177ed6 =============================>  99.1% 864.00kB/872.22kB [21s] 
+Writing at 0x0017def0 ============================== 100.0% 872.22kB/872.22kB [21s] 
+Wrote 1498864 bytes (893158 compressed) at 0x00010000 in 21.7 seconds (552.9 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Hard resetting via RTS pin...

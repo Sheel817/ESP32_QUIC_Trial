@@ -1,0 +1,30 @@
+{
+  "run_id": "HBPSN-18",
+  "attempt_id": "attempt_20261111T154354Z",
+  "condition": "CONTROL",
+  "operator_confirmed": false,
+  "operator_statement": null,
+  "operator_statement_receipt_utc": null,
+  "operator_statement_clock_source": null,
+  "test_capture": null,
+  "basis": "Operator declaration of the Clumsy window, set by hand to the CONTROL layout recorded for HBPSN-09 (declared there to match HBPSN-04's actual pre-reset CONTROL screenshot): TCP 14568 filter, Started, all 8 functions unticked.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  }
+}

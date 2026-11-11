@@ -1,0 +1,37 @@
+{
+  "run_id": "HBPSN-18",
+  "attempt_id": "attempt_20261111T154354Z",
+  "condition": "CONTROL",
+  "operator_confirmed": true,
+  "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration for HBPSN-18 (TCP_TLS CONTROL: TCP 14568 filter, Started, all 8 functions unticked)?\"",
+  "operator_statement_receipt_utc": "2026-11-11T15:45:49.788774+00:00",
+  "operator_statement_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test/test_capture.png",
+    "sha256": "2e277b8e512bd19a500f9962880371d0e13620e50c6594aaa44b37f88bb59238",
+    "file_time_utc": "2026-11-11T15:44:27.749433+00:00",
+    "finding": "Reviewed visually (full image and a crop of the Clumsy window), not machine-read: Clumsy fully visible on the left display with the filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568), button Stop, status Started filtering, all 8 function checkboxes (Lag, Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes are left as found (Lag Delay 100 and Drop Chance 1 with their Inbound/Outbound boxes greyed, Throttle timeframe 30, Duplicate count 2, the others at their defaults); only the Lag delay is part of the declared settings, the other number boxes are not machine-recorded. The layout matches the actual HBPSN-04 pre-reset CONTROL screenshot. The browser behind Clumsy shows the Chrome Remote Desktop Remote Access page; no video or media player is visible.",
+    "earlier_captures": "None: this is the first and only test capture for this attempt."
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to the CONTROL layout recorded for HBPSN-09 (declared there to match HBPSN-04's actual pre-reset CONTROL screenshot): TCP 14568 filter, Started, all 8 functions unticked.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_statement_note": "The operator confirmed in the session dialog after the capture above was taken and reviewed. The words are the dialog question and answer, not text typed by the operator."
+}

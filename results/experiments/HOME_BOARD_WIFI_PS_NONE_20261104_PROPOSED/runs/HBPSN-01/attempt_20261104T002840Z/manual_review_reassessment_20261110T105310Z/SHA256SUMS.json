@@ -5,11 +5,6 @@
     "sha256": "e2ff0f7f6b113536f7dccc770c8f5b89c64db96c8700441f0950d705cdb658f4"
   },
   {
-    "path": "supervisor_confirmation.json",
-    "bytes": 1197,
-    "sha256": "2a461ea58d0258a46b8a34e8b073fb39f44dfb10ace86fb13142ed174ec7e86f"
-  },
-  {
     "path": "SHA256SUMS.json.bak_20261110T105440Z",
     "bytes": 164,
     "sha256": "43f0a70a48d9848bbfd621d5ad448239703c96befdff2712641c88a1091f605c"
@@ -33,5 +28,20 @@
     "path": "outputs/HOME_BOARD_WIFI_PS_NONE_20261104/run_register.xlsx.bak_20261110T105440Z",
     "bytes": 12102,
     "sha256": "406855adbf47c36df2ed1564835e83486779ba05b40fb0992e212bd494d46cb6"
+  },
+  {
+    "path": "supervisor_confirmation.WITHDRAWN.json",
+    "bytes": 2479,
+    "sha256": "f8cedd875b9ff480e67e425aaf6f150cd775c0cb0c8bc752ed0ecb0431e7eb9c"
+  },
+  {
+    "path": "supervisor_confirmation.json.bak_20261111T175847Z",
+    "bytes": 1197,
+    "sha256": "2a461ea58d0258a46b8a34e8b073fb39f44dfb10ace86fb13142ed174ec7e86f"
+  },
+  {
+    "path": "SHA256SUMS.json.bak_20261111T175847Z",
+    "bytes": 1325,
+    "sha256": "952df54bfbf12ec1f6054c1920c8778a9ee59f7d5b2d02569afa9c50990c0caa"
   }
 ]

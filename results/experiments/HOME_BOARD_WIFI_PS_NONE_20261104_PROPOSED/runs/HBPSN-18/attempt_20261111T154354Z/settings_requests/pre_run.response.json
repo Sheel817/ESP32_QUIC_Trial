@@ -1,0 +1,31 @@
+{
+  "nonce": "6365350149884b97918dfc94ad3d8e6b",
+  "screenshot": "clumsy_operator_pre_run.png",
+  "sha256": "570899ff265b10d8c2c71da31b85395f13a9e523c43f14d2c147747312f0d0e7",
+  "capture_started_utc": "2026-11-11T15:46:36.384259+00:00",
+  "capture_completed_utc": "2026-11-11T15:46:36.453079+00:00",
+  "capture_started_monotonic": 1166310.691138,
+  "capture_completed_monotonic": 1166310.7599719,
+  "clock_provenance": "capture_*_utc and capture_*_monotonic sampled directly in this helper around the screen copy, using datetime.now(UTC) and time.monotonic() under the same Python as the collector.",
+  "source_type": "operator_reported",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": false,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "label": "HBPSN-18 TCP_TLS CONTROL operator-run full-screen capture taken after the nonce request. Observed values come from the operator declaration confirmed before launch; they were not machine-read from this image."
+}

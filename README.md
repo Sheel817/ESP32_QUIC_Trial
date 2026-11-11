@@ -19,11 +19,11 @@ The rules are frozen in [EXPERIMENT_PLAN_PROPOSED_V1.md](results/experiments/HOM
 
 ## Progress
 
-As of 11 November 2026, 17 of the 18 runs have been attempted: 15 are valid, 2 failed during startup and 1 has not been run. The [run register](results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv) is the record of status and results.
+As of 11 November 2026, all 18 runs have been attempted: 15 are valid, 1 is FAILED_SETTINGS with a reassessment awaiting supervisor approval (HBPSN-01) and 2 failed during startup. The [run register](results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/run_register.csv) is the record of status and results.
 
 | Run | Transport | Condition | Status |
 |---|---|---|---|
-| HBPSN-01 | QUIC | CONTROL | COMPLETE with retained flags |
+| HBPSN-01 | QUIC | CONTROL | FAILED_SETTINGS (reassessment pending supervisor approval) |
 | HBPSN-02 | TCP_TLS | LAG100_OUT | COMPLETE |
 | HBPSN-03 | QUIC | DROP1_OUT | FAILED_STARTUP |
 | HBPSN-04 | TCP_TLS | CONTROL | COMPLETE |
@@ -40,7 +40,7 @@ As of 11 November 2026, 17 of the 18 runs have been attempted: 15 are valid, 2 f
 | HBPSN-15 | QUIC | CONTROL | COMPLETE with retained flags |
 | HBPSN-16 | TCP_TLS | LAG100_OUT | COMPLETE with retained flags |
 | HBPSN-17 | QUIC | DROP1_OUT | COMPLETE with retained flags |
-| HBPSN-18 | | | NOT_RUN |
+| HBPSN-18 | TCP_TLS | CONTROL | COMPLETE with retained flags |
 
 **Known issue:** HBPSN-03 and HBPSN-08 hit the same QUIC panic during startup, a load access fault in `tlsf_free`. The root cause has not been established.
 
