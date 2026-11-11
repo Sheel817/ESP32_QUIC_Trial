@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "run_id": "HBPSN-16",
+  "transport": "TCP_TLS",
+  "condition": "LAG100_OUT",
+  "checked_utc": "2026-11-11T12:59:37.014713+00:00",
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "freeze_manifest_sha256": "e37bf26c0701ab185ae2e03b1cd5e0c6e9f0f89a1abef5c50deafed6c385a60e",
+  "firmware_artifacts": [
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.bin",
+      "bytes": 1498864,
+      "sha256": "ff97eb5d20c9c47375539395f9cf23c1d0780381562cf511094d4b525ab17de8"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\quic_demo.elf",
+      "bytes": 16790856,
+      "sha256": "1f661a4f7214dd0bd499cdf03783ca40633542fb95a6d164e1233c0b6f6363e6"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\bootloader\\bootloader.bin",
+      "bytes": 22096,
+      "sha256": "726bb68a523511c6e08904ab50d6d19455cc940a16b58f989ac3446bd2c627e1"
+    },
+    {
+      "artifact_id": "TCP_TLS_PSN",
+      "transport": "TCP_TLS",
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\partition_table\\partition-table.bin",
+      "bytes": 3072,
+      "sha256": "8bc8d437a36b46e0880f7cbebe470527e27e4d454b536fff6633ac5f30539f16"
+    }
+  ],
+  "configuration": [
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\sdkconfig",
+      "sha256": "f330f54a7265b0e54089fa1199514f7ee223eb97000ed589af366b10ba803110"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\config\\sdkconfig.json",
+      "sha256": "d08d2c4857dc7a1aab213a8949b7fa8862c2576aeba99278497ca7d36c8272dd"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\CMakeCache.txt",
+      "sha256": "6ce65f1cae4ec8e9c33f13fa68f375a0f4a93f80cd1468ac19fd4eb84cf50ac6"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flash_args",
+      "sha256": "391bb7c5a21107d400c309f147e35cfbed5ba5988d3679234aa59168f6510ec0"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\tcp_tls_wifi_ps_none_20261104\\build\\flasher_args.json",
+      "sha256": "7519f9b5e2cf279a7521b4d90cb637cc857483c37a630da8685edd86fc723964"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\dependencies.lock",
+      "sha256": "e5001e76c6be36928f92474d235ddbbcaa941cee6811e1bd1379f3a1eadddd55"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\tcp_tls_server.py",
+      "sha256": "4476abf265dc8b8a077d4e9a44d431a5ef8464ca65a35a24803e4047706e0e9e"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\quic_server.py",
+      "sha256": "79e3d4dc81bbbbf19287bdb0849b37459b0bac51bae1d1c1e50c045e6d507f5f"
+    },
+    {
+      "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\server-cert.pem",
+      "sha256": "dad4aa42a253793e77b161ac0846e6a1b39447b4d207572739b24b41dbfce462"
+    }
+  ],
+  "server_log_sources": {
+    "stdout": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stdout.log",
+    "stderr": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\preflights\\HBPSN04_START_20261106T013540465Z\\tcp_tls_server.stderr.log",
+    "sensor_csv": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv"
+  },
+  "server_sensor_source": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\logs\\sensor_tcp_tls_20261106T013631_157099Z_mrgf6j6d.csv",
+  "expected_clumsy_settings": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "observer_policy": "Fresh actual pre-run image required by broker; end image/operator statement must be reviewed. Missing end image remains flagged, never a fabricated PASS.",
+  "validity_status": "NOT_APPROVED"
+}

@@ -1,0 +1,483 @@
+{
+  "run_id": "HBPSN-16",
+  "attempt_id": "attempt_20261111T125936Z",
+  "transport": "TCP_TLS",
+  "condition": "LAG100_OUT",
+  "boot_replicate": 3,
+  "reviewed_utc": "2026-11-11T13:55:14.305829+00:00",
+  "disposition": "COMPLETE with retained flags",
+  "validity_status": "APPROVED_UNDER_ORIGINAL_FROZEN_PLAN",
+  "qualifier": "COMPLETE with retained flags. Settings are operator-reported as allowed if labelled by plan line 30. No independent or continuous GUI observation is claimed. LAG100_OUT means capture running with Lag 100 ms on outbound packets only; the near-20 ms step pattern in the RTTs and the unexplained server stderr line are retained as flags and their effects are not established.",
+  "operator_statement": {
+    "exact_statement": "I did not change any Clumsy setting from when I confirmed the declaration until after the HBPSN-16 run ended.",
+    "relayed": false,
+    "receipt_utc": "2026-11-11T13:54:16.178712Z",
+    "receipt_helsinki": "2026-11-11T15:54:16.178712+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message with the statement wording, taken while preparing this draft; original send time unavailable",
+    "scope_as_worded": "From operator confirmation of the declaration (receipt 2026-11-11T13:07:18.599987+00:00) until after the run ended (fixed deadline 2026-11-11T13:48:33.592812+00:00).",
+    "not_backdated": true
+  },
+  "operator_streaming_statement": {
+    "exact_statement": "Nothing was streaming or downloading on the laptop during the run.",
+    "relayed": false,
+    "receipt_utc": "2026-11-11T13:54:16.178712Z",
+    "receipt_helsinki": "2026-11-11T15:54:16.178712+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message with the statement wording, taken while preparing this draft; original send time unavailable",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "image_evidence": {
+      "pre_run_image": "Browser on the Chrome Remote Desktop Remote Access page, VS Code open; no video or media player visible.",
+      "end_of_run_image": "Same view at the end; no video or media player visible.",
+      "inspection": "Visual review; not machine-read."
+    }
+  },
+  "operator_host_activity_statement": {
+    "exact_statement": "Chrome Remote Desktop and VS Code were open; I was not actively using them.",
+    "relayed": false,
+    "receipt_utc": "2026-11-11T13:54:16.178712Z",
+    "receipt_helsinki": "2026-11-11T15:54:16.178712+02:00",
+    "receipt_clock_source": "First local clock observation while processing the operator message with the statement wording, taken while preparing this draft; original send time unavailable",
+    "not_backdated": true,
+    "limit": "Operator-reported; host network use was not measured.",
+    "chrome_remote_desktop": "Running; the operator also answered \"Running\" in the session question dialog before launch."
+  },
+  "operator_disposition_approval": {
+    "exact_text": "yes",
+    "relayed": false,
+    "receipt_utc": "2026-11-11T13:55:14.017253Z",
+    "receipt_clock_source": "First local clock observation while processing the operator message; original send time unavailable"
+  },
+  "plan_sha256": "6f6ff7f695581c293f9113498f460d1d0a2edd5f9c0d2ae3fd551cacb40947be",
+  "plan_rules_applied": {
+    "line_30": "Save screenshots before reset and after recording, with UTC and hashes. If settings are only operator-reported, label them explicitly; do not claim independently verified per-packet impairment.",
+    "line_32": "Settings must be stable before the measured reset and throughout the 37 minutes."
+  },
+  "criteria": {
+    "fixed_window_2220_s": true,
+    "startup_all_gates_pass": true,
+    "first415_selection": true,
+    "one_initial_boot_no_reboot": true,
+    "sequence_gaps": 0,
+    "shortfall": 0,
+    "pre_run_image_shows_lag100_out_settings": true,
+    "end_of_run_image_shows_lag100_out_settings": true,
+    "end_of_run_capture_seconds_after_deadline": 0.023615,
+    "stability_operator_confirmed_as_worded": true
+  },
+  "recording": {
+    "reset_release_utc": "2026-11-11T13:11:33.592812+00:00",
+    "fixed_deadline_utc": "2026-11-11T13:48:33.592812+00:00",
+    "deadline_observed_lateness_ms": 4.6223001554608345,
+    "boot_session_id": "HBPSN-16/2026-11-11T13:11:33.592812+00:00",
+    "assigned_ip": "192.168.137.25"
+  },
+  "firmware_identity": {
+    "artifact_id": "TCP_TLS_PSN",
+    "printed_bootloader_compile_time": "Nov  4 2026 01:52:32; matches frozen TCP_TLS_PSN bootloader",
+    "printed_elf_prefix": "1f661a4f7; prefix comparison, not a full on-device digest",
+    "full_flash_record": "runs/HBPSN-16/preflight_20261111T125850Z/preflight_record.json",
+    "images_verified": 3,
+    "esptool_reported_base_mac": "40:4c:ca:56:bb:b0",
+    "flash_approval": "Session dialog answer \"Approve flash\"",
+    "tls_in_run": "TCP_TLS negotiated TLSv1.3, ALPN mqtt (serial log); server log shows 1 TCP+TLS CONNECTED line."
+  },
+  "counts": {
+    "raw_serial_lines": 580,
+    "raw_rtt": 441,
+    "warmup_excluded": 10,
+    "eligible": 431,
+    "selected": 415,
+    "eligible_extras": 16,
+    "shortfall": 0,
+    "first_selected_seq": 11,
+    "last_selected_seq": 425
+  },
+  "statistics": {
+    "n": 415,
+    "mean_ms": 188.30430361445784,
+    "mean_recomputed_ms": 188.3043036144578,
+    "mean_note": "mean_ms is the value stored in statistics.json (used in the register); the recomputed mean differs in the last digit only (about 4e-14, summation order).",
+    "sd_ms": 32.170274437377664,
+    "sd_definition": "Sample SD (n-1), computed from selected_first_415.csv at review; not stored in statistics.json",
+    "median_ms": 187.501,
+    "p95_ms": 248.052,
+    "p95_definition": "Nearest rank 395 of 415",
+    "minimum_ms": 126.956,
+    "maximum_ms": 267.55
+  },
+  "comparison_with_earlier_tcp_tls_lag100_out_runs": {
+    "runs": {
+      "HBPSN-02": {
+        "n": 415,
+        "mean_ms": 188.954,
+        "sd_ms": 47.467,
+        "median_ms": 187.392,
+        "p95_ms": 248.17,
+        "min_ms": 127.227,
+        "max_ms": 867.649,
+        "top_5_ms": [
+          267.607,
+          267.732,
+          267.799,
+          287.556,
+          867.649
+        ],
+        "concentration_R_20ms": 0.995
+      },
+      "HBPSN-11": {
+        "n": 415,
+        "mean_ms": 191.44,
+        "sd_ms": 39.69,
+        "median_ms": 187.516,
+        "p95_ms": 248.217,
+        "min_ms": 127.419,
+        "max_ms": 507.463,
+        "top_5_ms": [
+          267.747,
+          267.757,
+          287.638,
+          487.591,
+          507.463
+        ],
+        "concentration_R_20ms": 0.996
+      },
+      "HBPSN-16": {
+        "n": 415,
+        "mean_ms": 188.304,
+        "sd_ms": 32.17,
+        "median_ms": 187.501,
+        "p95_ms": 248.052,
+        "min_ms": 126.956,
+        "max_ms": 267.55,
+        "top_5_ms": [
+          248.248,
+          248.398,
+          249.474,
+          267.529,
+          267.55
+        ],
+        "concentration_R_20ms": 0.997
+      }
+    },
+    "text": "Descriptive comparison with the two earlier TCP_TLS LAG100_OUT runs (all with Lag 100 ms outbound, TCP 14568 filter, 415 selected values). HBPSN-02: mean 188.954, SD 47.467, median 187.392, P95 248.17, max 867.649; HBPSN-11: mean 191.44, SD 39.69, median 187.516, P95 248.217, max 507.463; HBPSN-16: mean 188.304, SD 32.17, median 187.501, P95 248.052, max 267.55. The three runs are single boot sessions on different days with different host conditions. This comparison does not show equivalence or a difference, and no effect size or significance is claimed.",
+    "caution": "Descriptive only. Single runs, different days, different host conditions. No claim of equivalence or difference."
+  },
+  "settings_evidence": {
+    "declaration": {
+      "file": "clumsy_declaration.json",
+      "sha256": "9b5e886ac9b76faff703d1e0c6214d066de4938c3d02dcd0f81b6cbb46a15409",
+      "operator_confirmed_receipt_utc": "2026-11-11T13:07:18.599987+00:00",
+      "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration for HBPSN-16 (TCP_TLS LAG100_OUT: TCP 14568 filter, Started, Lag ticked, Outbound only, Delay 100, all other functions off)?\"",
+      "test_capture": {
+        "path": "../helper_capture_test/test_capture.png",
+        "sha256": "bef5b8a8a796b8bfc689fe45321ed543fdb96fbf354897c4f05a0643aea69280",
+        "file_time_utc": "2026-11-11T13:03:30.915406+00:00",
+        "finding": "Reviewed visually (full image and a crop of the Clumsy window), not machine-read: Clumsy fully visible on the left display with the filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568), button Stop, status Started filtering, Lag ticked with Inbound unticked, Outbound ticked and Delay 100; the other 7 function checkboxes (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes other than the Lag delay (for example Drop Chance 1) are not part of the expected settings and are not machine-recorded. The browser behind Clumsy shows the Chrome Remote Desktop Remote Access page; no video or media player is visible.",
+        "earlier_captures": "None: this is the first and only test capture for this attempt."
+      }
+    },
+    "pre_run_image": {
+      "file": "clumsy_operator_pre_run.png",
+      "sha256": "c54975a0683b60664d4c19805d2e3043e27a7a74d2b07bb70c50789df802146f",
+      "capture_started_utc": "2026-11-11T13:11:30.404671+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "functions": "Lag ticked with Inbound unticked and Outbound ticked, Delay 100; the other 7 functions (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked",
+        "number_boxes_left_as_found": "Drop Chance 1 (greyed), Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST chance 0, Bandwidth limit 10, with their Inbound/Outbound boxes greyed. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "15.11 11/11/2026 on both displays",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read"
+    },
+    "end_of_run_image": {
+      "file": "clumsy_operator_end_of_run.png",
+      "sha256": "f969e0cb49dcb8a9afd75553753ec5b5db30e675c54f7f68c3d036183fdd7f2c",
+      "capture_started_utc": "2026-11-11T13:48:33.616427+00:00",
+      "shows_clumsy": true,
+      "clumsy_position": "left display, same place as pre-run",
+      "settings_seen": {
+        "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+        "capture_button": "Stop",
+        "status_line": "Started filtering. Enable functionalities to take effect.",
+        "functions": "Lag ticked with Inbound unticked and Outbound ticked, Delay 100; the other 7 functions (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked",
+        "number_boxes_left_as_found": "Drop Chance 1 (greyed), Throttle timeframe 30, Duplicate count 2, other chances 10, Set TCP RST chance 0, Bandwidth limit 10, with their Inbound/Outbound boxes greyed. Not part of the expected settings and not machine-recorded."
+      },
+      "windows_tray_clock_in_image": "15.48 11/11/2026 on both displays",
+      "clumsy_title_bar": "looks inactive (greyed)",
+      "inspection": "Visual review; not machine-read",
+      "limit": "The helper PASS for both phases came from the pre-launch declaration; the settings_seen values come from visual review of these images."
+    },
+    "no_image_between": "No Clumsy image exists between the pre-run and end-of-run captures. Stability between them rests on the operator statement.",
+    "pre_launch_test_captures": "One test capture (helper_capture_test, sha256 bef5b8a8...) was taken, showed Clumsy fully and was the only one for this attempt; the launch followed it."
+  },
+  "warnings": [
+    {
+      "line": 92,
+      "raw_line": "2026-11-11T15:11:34 W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2"
+    },
+    {
+      "line": 100,
+      "raw_line": "2026-11-11T15:11:36 W (3237) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14"
+    },
+    {
+      "line": 118,
+      "raw_line": "2026-11-11T15:11:37 W (3407) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005"
+    }
+  ],
+  "errors": [],
+  "server_stderr": "TCP+TLS ERROR: \n",
+  "resets": [
+    {
+      "line": 1,
+      "raw_line": "2026-11-11T15:11:33 ESP-ROM:esp32c6-20220919",
+      "host_receipt_utc": "2026-11-11T13:11:33.602005+00:00",
+      "initial_designated_boot": true
+    }
+  ],
+  "automatic_flags_preserved": {
+    "status": "PENDING_EVIDENCE_REVIEW",
+    "processing_status": "FINALIZED",
+    "validity_status": "NOT_APPROVED",
+    "evidence_review_status": "PENDING_MANUAL_REVIEW",
+    "completion_candidate": "COMPLETE",
+    "finished_utc": "2026-11-11T13:48:34.161702+00:00",
+    "deadline_utc": "2026-11-11T13:48:33.592812+00:00",
+    "selected_count": 415,
+    "shortfall": 0,
+    "summary": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-16\\attempt_20261111T125936Z\\SUMMARY.md"
+  },
+  "server_stderr_flag": {
+    "flag": "SERVER_STDERR_TCP_TLS_ERROR_UNEXPLAINED",
+    "line": "TCP+TLS ERROR: (empty message after the colon)",
+    "bytes": 17,
+    "receipt_utc": "2026-11-11T13:12:27.982767+00:00",
+    "seconds_after_reset_release": 54.4,
+    "server_log_context": "One TCP+TLS CONNECTED line in the window; 441 RECEIVED lines matching the 441 RTTs; no sequence gap; no ERROR text in server stdout; the serial log shows no error or reconnect at that time.",
+    "observation_across_runs": "Observation across runs: the same empty-message line \"TCP+TLS ERROR:\" is in the server stderr of every closed TCP_TLS run that has a statistics record (HBPSN-02, HBPSN-04, HBPSN-06, HBPSN-07, HBPSN-09, HBPSN-11, HBPSN-14, HBPSN-16; 8 runs), first at +54.4 s to +58.9 s after the reset release, and in no QUIC run with a stderr record (HBPSN-03, HBPSN-05, HBPSN-10, HBPSN-12, HBPSN-13, HBPSN-15 are empty; HBPSN-08 has no stderr value; HBPSN-01 was not checked because it has no statistics.json). No cause is asserted.",
+    "per_run_first_stderr_seconds_after_reset": {
+      "HBPSN-02": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 55.2
+      },
+      "HBPSN-03": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-04": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 58.9
+      },
+      "HBPSN-05": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-06": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 57.2
+      },
+      "HBPSN-07": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 55.7
+      },
+      "HBPSN-08": {
+        "transport": "QUIC",
+        "server_stderr": null,
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-09": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 57.4
+      },
+      "HBPSN-10": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-11": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 55.1
+      },
+      "HBPSN-12": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-13": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-14": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 56.7
+      },
+      "HBPSN-15": {
+        "transport": "QUIC",
+        "server_stderr": "",
+        "first_stderr_seconds_after_reset": null
+      },
+      "HBPSN-16": {
+        "transport": "TCP_TLS",
+        "server_stderr": "TCP+TLS ERROR: \n",
+        "first_stderr_seconds_after_reset": 54.4
+      }
+    },
+    "setup_probe_note": "The host-only TLS probe before the flash writes its own stderr lines (for example \"[WinError 64]\") before the measured reset, outside this window.",
+    "status": "Cause not established. No cause is asserted. Retained as a flag; the recurrence across TCP_TLS runs is recorded as an observation only."
+  },
+  "rtt_step_pattern": {
+    "observation": "RTTs in this LAG100_OUT run fall on levels about 20 ms apart: {'128 ms': 20, '148 ms': 62, '168 ms': 81, '188 ms': 83, '208 ms': 83, '228 ms': 63, '248 ms': 21, '268 ms': 2} (counts of the 415 selected values by nearest level). The P95 of 248.052 ms is on the 248 ms level. The same pattern is present in the 12 other runs with 415 selected values: concentration R 0.834 to 0.998, share within 3 ms of the ladder 0.870 to 1.000; this run has R 0.997 and share 1.000.",
+    "measure": "Circular concentration of RTT modulo 20 ms (R: 0 = even, 1 = all on one phase) and the share of values within 3 ms of the phase centre (a flat spread would give about 0.30).",
+    "per_run_closed_and_this_run": {
+      "HBPSN-02": {
+        "n": 415,
+        "phase_centre_ms": 7.51,
+        "concentration_R": 0.995,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-04": {
+        "n": 415,
+        "phase_centre_ms": 7.53,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-05": {
+        "n": 415,
+        "phase_centre_ms": 6.39,
+        "concentration_R": 0.865,
+        "share_within_3ms_of_ladder": 0.916
+      },
+      "HBPSN-06": {
+        "n": 415,
+        "phase_centre_ms": 7.39,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-07": {
+        "n": 415,
+        "phase_centre_ms": 7.42,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-09": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-10": {
+        "n": 415,
+        "phase_centre_ms": 6.03,
+        "concentration_R": 0.918,
+        "share_within_3ms_of_ladder": 0.959
+      },
+      "HBPSN-11": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.996,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-12": {
+        "n": 415,
+        "phase_centre_ms": 6.04,
+        "concentration_R": 0.916,
+        "share_within_3ms_of_ladder": 0.945
+      },
+      "HBPSN-13": {
+        "n": 415,
+        "phase_centre_ms": 6.33,
+        "concentration_R": 0.834,
+        "share_within_3ms_of_ladder": 0.87
+      },
+      "HBPSN-14": {
+        "n": 415,
+        "phase_centre_ms": 7.54,
+        "concentration_R": 0.998,
+        "share_within_3ms_of_ladder": 1.0
+      },
+      "HBPSN-15": {
+        "n": 415,
+        "phase_centre_ms": 5.9,
+        "concentration_R": 0.918,
+        "share_within_3ms_of_ladder": 0.952
+      },
+      "HBPSN-16": {
+        "n": 415,
+        "phase_centre_ms": 7.58,
+        "concentration_R": 0.997,
+        "share_within_3ms_of_ladder": 1.0
+      }
+    },
+    "status": "Observation only. The cause is not established; an earlier working suspicion is system timing granularity. It is kept as a flag so the thesis analysis does not read the steps as network effects."
+  },
+  "network_note": {
+    "board_ip_in_run": "192.168.137.25",
+    "gateway_in_run": "192.168.137.1 (serial.raw.log)",
+    "ip_history_from_register": {
+      "HBPSN-01": "192.168.137.212",
+      "HBPSN-02": "192.168.137.212",
+      "HBPSN-03": "192.168.137.112",
+      "HBPSN-04": "192.168.137.112",
+      "HBPSN-05": "192.168.137.112",
+      "HBPSN-06": "192.168.137.112",
+      "HBPSN-07": "192.168.137.112",
+      "HBPSN-08": "192.168.137.112",
+      "HBPSN-09": "192.168.137.112",
+      "HBPSN-10": "192.168.137.112",
+      "HBPSN-11": "192.168.137.25",
+      "HBPSN-12": "192.168.137.25",
+      "HBPSN-13": "192.168.137.25",
+      "HBPSN-14": "192.168.137.25",
+      "HBPSN-15": "192.168.137.25"
+    },
+    "hotspot": "Gateway 192.168.137.1 and board IP 192.168.137.25 appear in serial.raw.log during the run; the hotspot was on with 1 client at launch; no restart is recorded.",
+    "finding": "Same address as HBPSN-11 to HBPSN-15; the runs HBPSN-03 to 10 had .112. The collector records the actual assigned IP at startup and does not depend on a fixed address."
+  },
+  "setup_notes": {
+    "identification_log": "Derived from the setup flash output; no separate flash-id command was run.",
+    "helper": "operator_settings_helper.py copied from HBPSN-15 with the run ID check and labels changed to HBPSN-16 at the operator instruction. See DEVIATION_settings_evidence_source.json.",
+    "host_activity": "Per operator statements, nothing was streaming or downloading on the laptop, and Chrome Remote Desktop and VS Code were open and not actively used; a Claude Code session on the host ran the launch and startup checks and no commands during the recording window. Network use was not measured. The pre-run and end-of-run images show VS Code and the Chrome Remote Desktop Remote Access page in the browser, and no video or media player.",
+    "setup_boot": "The post-flash setup boot ran from 12:59:19Z flash end to the measured reset and is excluded by the log boundaries. It connected over TCP_TLS to the server; no startup crash occurred. A host-only TLS probe passed at 12:58:51Z before the flash.",
+    "register": "Row 16 stayed NOT_RUN during the run; register_running_request.json and register_final_request.json were not applied automatically and are applied by this review."
+  },
+  "post_finalization_state_at_draft": {
+    "still_running_pids": [
+      34524,
+      6332,
+      40376,
+      17892
+    ],
+    "monitor_logs": "monitor_stream.log and monitor_after_run.log were still open and growing, are not in SHA256SUMS.json and are not cited by this review."
+  },
+  "retained_flags": [
+    "SETTINGS_EVIDENCE_OPERATOR_REPORTED",
+    "END_OF_RUN_OBSERVED_VALUES_FROM_PRE_LAUNCH_DECLARATION",
+    "NO_CLUMSY_IMAGE_BETWEEN_PRE_RUN_AND_END_OF_RUN",
+    "HOST_REMOTE_DESKTOP_AND_VS_CODE_OPEN_DURING_RUN",
+    "SERVER_STDERR_TCP_TLS_ERROR_UNEXPLAINED",
+    "RTT_20_MS_STEP_PATTERN_PRESENT",
+    "IDENTIFICATION_LOG_DERIVED_NO_SEPARATE_FLASH_ID",
+    "REGISTER_NOT_SET_RUNNING_DURING_RUN"
+  ],
+  "register_patch_source": [
+    "register_running_request.json",
+    "register_final_request.json",
+    "this review"
+  ],
+  "only_hbpsn16_row_changes": true,
+  "unresolved_quic_crash_preserved": true,
+  "next_run_started": false
+}

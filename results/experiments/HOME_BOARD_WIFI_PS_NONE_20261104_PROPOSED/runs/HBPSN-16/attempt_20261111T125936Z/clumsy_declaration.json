@@ -1,0 +1,37 @@
+{
+  "run_id": "HBPSN-16",
+  "attempt_id": "attempt_20261111T125936Z",
+  "condition": "LAG100_OUT",
+  "operator_confirmed": true,
+  "operator_statement": "Session dialog answer \"Yes, confirm\" to: \"Did you check Clumsy yourself and do you confirm the declaration for HBPSN-16 (TCP_TLS LAG100_OUT: TCP 14568 filter, Started, Lag ticked, Outbound only, Delay 100, all other functions off)?\"",
+  "operator_statement_receipt_utc": "2026-11-11T13:07:18.599987+00:00",
+  "operator_statement_clock_source": "First local clock observation while processing the operator answer; original send time unavailable",
+  "test_capture": {
+    "path": "../helper_capture_test/test_capture.png",
+    "sha256": "bef5b8a8a796b8bfc689fe45321ed543fdb96fbf354897c4f05a0643aea69280",
+    "file_time_utc": "2026-11-11T13:03:30.915406+00:00",
+    "finding": "Reviewed visually (full image and a crop of the Clumsy window), not machine-read: Clumsy fully visible on the left display with the filter tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568), button Stop, status Started filtering, Lag ticked with Inbound unticked, Outbound ticked and Delay 100; the other 7 function checkboxes (Drop, Throttle, Duplicate, Out of order, Tamper, Set TCP RST, Bandwidth) unticked. Number boxes other than the Lag delay (for example Drop Chance 1) are not part of the expected settings and are not machine-recorded. The browser behind Clumsy shows the Chrome Remote Desktop Remote Access page; no video or media player is visible.",
+    "earlier_captures": "None: this is the first and only test capture for this attempt."
+  },
+  "basis": "Operator declaration of the Clumsy window, set by hand to the LAG100_OUT layout recorded for HBPSN-11: TCP 14568 filter, Started, Lag ticked, Outbound only, Delay 100, all other functions off.",
+  "observed": {
+    "filter": "tcp and (tcp.SrcPort == 14568 or tcp.DstPort == 14568)",
+    "capture": "RUNNING",
+    "Lag": {
+      "enabled": true,
+      "delay_ms": 100,
+      "inbound": false,
+      "outbound": true
+    },
+    "other_main_effects": {
+      "Drop": false,
+      "Throttle": false,
+      "Duplicate": false,
+      "Out of order": false,
+      "Tamper": false,
+      "Set TCP RST": false,
+      "Bandwidth": false
+    }
+  },
+  "operator_statement_note": "The operator confirmed in the session dialog after the capture above was taken and reviewed. The words are the dialog question and answer, not text typed by the operator."
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-11T12:59:37.017623+00:00",
+  "source_preflight_record": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-16\\preflight_20261111T125850Z\\preflight_record.json",
+  "source_preflight_record_sha256": "cf08d05821f2dfebe04f0ead9f31f97cbf0ee1159df6a3283a8bc6366a718d37",
+  "source_flash_log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\results\\experiments\\HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED\\runs\\HBPSN-16\\preflight_20261111T125850Z\\flash.log",
+  "source_flash_log_sha256": "204d1a78a045802946f1af45f6dec00770a337ab5015437d2625f5f3ef031b9f",
+  "flash_log": "UTF-16 re-encoding of the source flash log, preceded by the command line, because collector_v2.py reads flash.log as UTF-16.",
+  "flash_result": "Values copied from the flash section of the source preflight record.",
+  "identification_log": "Derived extract of the same esptool output, because collector_v2.py requires the board MAC in identification.log. No separate flash-id was run, as for HBPSN-09 to 15.",
+  "host_tls_probe": "host_tls_probe.json in the source preflight folder: one host-only TLS 1.3 connection to 127.0.0.1:14568 before the flash, no MQTT bytes, COM6 not touched.",
+  "automatic_post_flash_boot": "Setup only; excluded from the formal session by the measured-reset log boundaries."
+}
