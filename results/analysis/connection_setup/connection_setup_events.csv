@@ -1,0 +1,113 @@
+run_id,transport,condition,event,serial_raw_log_line_no,esp_uptime_ms_clock_A,host_receipt_utc,host_ms_from_reset_release_clock_B,raw_line
+HBPSN-01,QUIC,CONTROL,wifi_associated,104,3313,2026-11-04T00:38:29.660046+00:00,3333,"2026-11-04T02:38:29 I (3313) wifi:connected with <SSID>, aid = 14, channel 11, BW20, bssid = <BSSID>"
+HBPSN-01,QUIC,CONTROL,wifi_ip,119,4433,2026-11-04T00:38:30.778727+00:00,4452,"2026-11-04T02:38:30 I (4433) esp_netif_handlers: example_netif_sta ip: 192.168.137.212, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-01,QUIC,CONTROL,quic_handshake_completed,142,7243,2026-11-04T00:38:33.585250+00:00,7259,2026-11-04T02:38:33 I (7243) QUIC: QUIC handshake completed callback triggered!
+HBPSN-01,QUIC,CONTROL,quic_connection_established_app,145,7363,2026-11-04T00:38:33.706164+00:00,7380,2026-11-04T02:38:33 I (7363) quic_demo_main: QUIC connection established
+HBPSN-01,QUIC,CONTROL,mqtt_connected,148,8413,2026-11-04T00:38:34.756465+00:00,8430,2026-11-04T02:38:34 I (8413) quic_demo_main: MQTT connected over QUIC
+HBPSN-01,QUIC,CONTROL,subscription_acknowledged,150,8523,2026-11-04T00:38:34.863227+00:00,8537,2026-11-04T02:38:34 I (8523) quic_demo_main: Subscription acknowledged
+HBPSN-02,TCP_TLS,LAG100_OUT,wifi_associated,104,3287,2026-11-04T12:17:30.586917+00:00,3307,"2026-11-04T14:17:30 I (3287) wifi:connected with <SSID>, aid = 12, channel 11, BW20, bssid = <BSSID>"
+HBPSN-02,TCP_TLS,LAG100_OUT,wifi_ip,119,4417,2026-11-04T12:17:31.715638+00:00,4436,"2026-11-04T14:17:31 I (4417) esp_netif_handlers: example_netif_sta ip: 192.168.137.212, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-02,TCP_TLS,LAG100_OUT,tcp_tls_negotiated,133,6357,2026-11-04T12:17:33.668897+00:00,6389,2026-11-04T14:17:33 I (6357) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-02,TCP_TLS,LAG100_OUT,tcp_tls_connected,134,6367,2026-11-04T12:17:33.675516+00:00,6395,2026-11-04T14:17:33 I (6367) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-02,TCP_TLS,LAG100_OUT,tcp_tls_connection_established_app,135,6367,2026-11-04T12:17:33.679793+00:00,6400,2026-11-04T14:17:33 I (6367) quic_demo_main: TCP_TLS connection established
+HBPSN-02,TCP_TLS,LAG100_OUT,mqtt_connected,137,7507,2026-11-04T12:17:34.805208+00:00,7525,2026-11-04T14:17:34 I (7507) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-02,TCP_TLS,LAG100_OUT,subscription_acknowledged,139,7717,2026-11-04T12:17:35.012032+00:00,7732,2026-11-04T14:17:35 I (7717) quic_demo_main: Subscription acknowledged
+HBPSN-03,QUIC,DROP1_OUT,wifi_associated,105,3373,2026-11-05T20:24:57.811343+00:00,3398,"2026-11-05T22:24:57 I (3373) wifi:connected with <SSID>, aid = 5, channel 11, BW20, bssid = <BSSID>"
+HBPSN-03,QUIC,DROP1_OUT,wifi_ip,120,4513,2026-11-05T20:24:58.944919+00:00,4531,"2026-11-05T22:24:58 I (4513) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-03,QUIC,DROP1_OUT,quic_handshake_completed,143,7223,2026-11-05T20:25:01.670899+00:00,7257,2026-11-05T22:25:01 I (7223) QUIC: QUIC handshake completed callback triggered!
+HBPSN-03,QUIC,DROP1_OUT,quic_connection_established_app,146,7253,2026-11-05T20:25:01.681422+00:00,7268,2026-11-05T22:25:01 I (7253) quic_demo_main: QUIC connection established
+HBPSN-04,TCP_TLS,CONTROL,wifi_associated,105,3287,2026-11-06T02:01:41.993980+00:00,3312,"2026-11-06T04:01:41 I (3287) wifi:connected with <SSID>, aid = 9, channel 11, BW20, bssid = <BSSID>"
+HBPSN-04,TCP_TLS,CONTROL,wifi_ip,120,4417,2026-11-06T02:01:43.210663+00:00,4529,"2026-11-06T04:01:43 I (4417) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-04,TCP_TLS,CONTROL,tcp_tls_negotiated,134,6097,2026-11-06T02:01:44.809981+00:00,6128,2026-11-06T04:01:44 I (6097) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-04,TCP_TLS,CONTROL,tcp_tls_connected,135,6107,2026-11-06T02:01:44.815109+00:00,6133,2026-11-06T04:01:44 I (6107) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-04,TCP_TLS,CONTROL,tcp_tls_connection_established_app,136,6107,2026-11-06T02:01:44.819618+00:00,6138,2026-11-06T04:01:44 I (6107) quic_demo_main: TCP_TLS connection established
+HBPSN-04,TCP_TLS,CONTROL,mqtt_connected,138,7127,2026-11-06T02:01:45.830244+00:00,7148,2026-11-06T04:01:45 I (7127) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-04,TCP_TLS,CONTROL,subscription_acknowledged,140,7237,2026-11-06T02:01:45.935764+00:00,7254,2026-11-06T04:01:45 I (7237) quic_demo_main: Subscription acknowledged
+HBPSN-05,QUIC,LAG100_OUT,wifi_associated,104,3313,2026-11-06T13:13:23.489368+00:00,3333,"2026-11-06T15:13:23 I (3313) wifi:connected with <SSID>, aid = 7, channel 11, BW20, bssid = <BSSID>"
+HBPSN-05,QUIC,LAG100_OUT,wifi_ip,119,4443,2026-11-06T13:13:24.617144+00:00,4461,"2026-11-06T15:13:24 I (4443) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-05,QUIC,LAG100_OUT,quic_handshake_completed,142,7393,2026-11-06T13:13:27.577690+00:00,7421,2026-11-06T15:13:27 I (7393) QUIC: QUIC handshake completed callback triggered!
+HBPSN-05,QUIC,LAG100_OUT,quic_connection_established_app,145,7473,2026-11-06T13:13:27.642672+00:00,7486,2026-11-06T15:13:27 I (7473) quic_demo_main: QUIC connection established
+HBPSN-05,QUIC,LAG100_OUT,mqtt_connected,148,8633,2026-11-06T13:13:28.809429+00:00,8653,2026-11-06T15:13:28 I (8633) quic_demo_main: MQTT connected over QUIC
+HBPSN-05,QUIC,LAG100_OUT,subscription_acknowledged,150,8843,2026-11-06T13:13:29.013328+00:00,8857,2026-11-06T15:13:29 I (8843) quic_demo_main: Subscription acknowledged
+HBPSN-06,TCP_TLS,DROP1_OUT,wifi_associated,105,3297,2026-11-07T02:04:38.249760+00:00,3323,"2026-11-07T04:04:38 I (3297) wifi:connected with <SSID>, aid = 13, channel 11, BW20, bssid = <BSSID>"
+HBPSN-06,TCP_TLS,DROP1_OUT,wifi_ip,120,4457,2026-11-07T02:04:39.408611+00:00,4482,"2026-11-07T04:04:39 I (4457) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-06,TCP_TLS,DROP1_OUT,tcp_tls_negotiated,134,6087,2026-11-07T02:04:41.041191+00:00,6115,2026-11-07T04:04:41 I (6087) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-06,TCP_TLS,DROP1_OUT,tcp_tls_connected,135,6087,2026-11-07T02:04:41.046129+00:00,6120,2026-11-07T04:04:41 I (6087) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-06,TCP_TLS,DROP1_OUT,tcp_tls_connection_established_app,136,6097,2026-11-07T02:04:41.050773+00:00,6124,2026-11-07T04:04:41 I (6097) quic_demo_main: TCP_TLS connection established
+HBPSN-06,TCP_TLS,DROP1_OUT,mqtt_connected,138,7107,2026-11-07T02:04:42.057952+00:00,7131,2026-11-07T04:04:42 I (7107) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-06,TCP_TLS,DROP1_OUT,subscription_acknowledged,140,7227,2026-11-07T02:04:42.169552+00:00,7243,2026-11-07T04:04:42 I (7227) quic_demo_main: Subscription acknowledged
+HBPSN-07,TCP_TLS,DROP1_OUT,wifi_associated,106,3347,2026-11-07T03:09:22.525031+00:00,3365,"2026-11-07T05:09:22 I (3347) wifi:connected with <SSID>, aid = 14, channel 11, BW20, bssid = <BSSID>"
+HBPSN-07,TCP_TLS,DROP1_OUT,wifi_ip,121,4487,2026-11-07T03:09:23.665619+00:00,4506,"2026-11-07T05:09:23 I (4487) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-07,TCP_TLS,DROP1_OUT,tcp_tls_negotiated,135,6097,2026-11-07T03:09:25.283852+00:00,6124,2026-11-07T05:09:25 I (6097) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-07,TCP_TLS,DROP1_OUT,tcp_tls_connected,136,6097,2026-11-07T03:09:25.288938+00:00,6129,2026-11-07T05:09:25 I (6097) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-07,TCP_TLS,DROP1_OUT,tcp_tls_connection_established_app,137,6107,2026-11-07T03:09:25.292441+00:00,6132,2026-11-07T05:09:25 I (6107) quic_demo_main: TCP_TLS connection established
+HBPSN-07,TCP_TLS,DROP1_OUT,mqtt_connected,139,7117,2026-11-07T03:09:26.297623+00:00,7138,2026-11-07T05:09:26 I (7117) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-07,TCP_TLS,DROP1_OUT,subscription_acknowledged,141,7227,2026-11-07T03:09:26.401126+00:00,7241,2026-11-07T05:09:26 I (7227) quic_demo_main: Subscription acknowledged
+HBPSN-08,QUIC,LAG100_OUT,wifi_associated,104,3313,2026-11-09T01:34:18.621568+00:00,3350,"I (3313) wifi:connected with <SSID>, aid = 5, channel 11, BW20, bssid = <BSSID>"
+HBPSN-08,QUIC,LAG100_OUT,wifi_ip,119,4453,2026-11-09T01:34:19.799439+00:00,4528,"I (4453) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-08,QUIC,LAG100_OUT,quic_handshake_completed,142,7443,2026-11-09T01:34:22.776277+00:00,7505,I (7443) QUIC: QUIC handshake completed callback triggered!
+HBPSN-09,TCP_TLS,CONTROL,wifi_associated,104,3287,2026-11-09T18:58:09.573862+00:00,3305,"2026-11-09T20:58:09 I (3287) wifi:connected with <SSID>, aid = 4, channel 11, BW20, bssid = <BSSID>"
+HBPSN-09,TCP_TLS,CONTROL,wifi_ip,119,4407,2026-11-09T18:58:10.692817+00:00,4424,"2026-11-09T20:58:10 I (4407) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-09,TCP_TLS,CONTROL,tcp_tls_negotiated,133,6087,2026-11-09T18:58:12.382616+00:00,6114,2026-11-09T20:58:12 I (6087) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-09,TCP_TLS,CONTROL,tcp_tls_connected,134,6087,2026-11-09T18:58:12.388047+00:00,6119,2026-11-09T20:58:12 I (6087) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-09,TCP_TLS,CONTROL,tcp_tls_connection_established_app,135,6097,2026-11-09T18:58:12.392210+00:00,6124,2026-11-09T20:58:12 I (6097) quic_demo_main: TCP_TLS connection established
+HBPSN-09,TCP_TLS,CONTROL,mqtt_connected,137,7107,2026-11-09T18:58:13.395388+00:00,7127,2026-11-09T20:58:13 I (7107) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-09,TCP_TLS,CONTROL,subscription_acknowledged,139,7217,2026-11-09T18:58:13.499178+00:00,7230,2026-11-09T20:58:13 I (7217) quic_demo_main: Subscription acknowledged
+HBPSN-10,QUIC,DROP1_OUT,wifi_associated,105,3323,2026-11-10T00:32:12.278923+00:00,3346,"2026-11-10T02:32:12 I (3323) wifi:connected with <SSID>, aid = 7, channel 11, BW20, bssid = <BSSID>"
+HBPSN-10,QUIC,DROP1_OUT,wifi_ip,120,4443,2026-11-10T00:32:13.393646+00:00,4460,"2026-11-10T02:32:13 I (4443) esp_netif_handlers: example_netif_sta ip: 192.168.137.112, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-10,QUIC,DROP1_OUT,quic_handshake_completed,143,7233,2026-11-10T00:32:16.194800+00:00,7262,2026-11-10T02:32:16 I (7233) QUIC: QUIC handshake completed callback triggered!
+HBPSN-10,QUIC,DROP1_OUT,quic_connection_established_app,146,7353,2026-11-10T00:32:16.298553+00:00,7365,2026-11-10T02:32:16 I (7353) quic_demo_main: QUIC connection established
+HBPSN-10,QUIC,DROP1_OUT,mqtt_connected,149,8403,2026-11-10T00:32:17.352743+00:00,8420,2026-11-10T02:32:17 I (8403) quic_demo_main: MQTT connected over QUIC
+HBPSN-10,QUIC,DROP1_OUT,subscription_acknowledged,151,8513,2026-11-10T00:32:17.458700+00:00,8525,2026-11-10T02:32:17 I (8513) quic_demo_main: Subscription acknowledged
+HBPSN-11,TCP_TLS,LAG100_OUT,wifi_associated,104,3277,2026-11-10T15:02:41.708348+00:00,3302,"2026-11-10T17:02:41 I (3277) wifi:connected with <SSID>, aid = 3, channel 11, BW20, bssid = <BSSID>"
+HBPSN-11,TCP_TLS,LAG100_OUT,wifi_ip,119,4397,2026-11-10T15:02:42.820254+00:00,4414,"2026-11-10T17:02:42 I (4397) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-11,TCP_TLS,LAG100_OUT,tcp_tls_negotiated,133,6297,2026-11-10T15:02:44.732008+00:00,6326,2026-11-10T17:02:44 I (6297) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-11,TCP_TLS,LAG100_OUT,tcp_tls_connected,134,6307,2026-11-10T15:02:44.737691+00:00,6332,2026-11-10T17:02:44 I (6307) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-11,TCP_TLS,LAG100_OUT,tcp_tls_connection_established_app,135,6307,2026-11-10T15:02:44.742372+00:00,6336,2026-11-10T17:02:44 I (6307) quic_demo_main: TCP_TLS connection established
+HBPSN-11,TCP_TLS,LAG100_OUT,mqtt_connected,137,7447,2026-11-10T15:02:45.871323+00:00,7465,2026-11-10T17:02:45 I (7447) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-11,TCP_TLS,LAG100_OUT,subscription_acknowledged,139,7657,2026-11-10T15:02:46.076637+00:00,7671,2026-11-10T17:02:46 I (7657) quic_demo_main: Subscription acknowledged
+HBPSN-12,QUIC,CONTROL,wifi_associated,104,3323,2026-11-10T19:07:50.592260+00:00,3346,"2026-11-10T21:07:50 I (3323) wifi:connected with <SSID>, aid = 10, channel 11, BW20, bssid = <BSSID>"
+HBPSN-12,QUIC,CONTROL,wifi_ip,119,4453,2026-11-10T19:07:51.716903+00:00,4470,"2026-11-10T21:07:51 I (4453) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-12,QUIC,CONTROL,quic_handshake_completed,142,7203,2026-11-10T19:07:54.465638+00:00,7219,2026-11-10T21:07:54 I (7203) QUIC: QUIC handshake completed callback triggered!
+HBPSN-12,QUIC,CONTROL,quic_connection_established_app,145,7263,2026-11-10T19:07:54.527273+00:00,7281,2026-11-10T21:07:54 I (7263) quic_demo_main: QUIC connection established
+HBPSN-12,QUIC,CONTROL,mqtt_connected,148,8303,2026-11-10T19:07:55.566034+00:00,8319,2026-11-10T21:07:55 I (8303) quic_demo_main: MQTT connected over QUIC
+HBPSN-12,QUIC,CONTROL,subscription_acknowledged,150,8413,2026-11-10T19:07:55.672096+00:00,8426,2026-11-10T21:07:55 I (8413) quic_demo_main: Subscription acknowledged
+HBPSN-13,QUIC,LAG100_OUT,wifi_associated,104,3303,2026-11-10T20:06:26.163979+00:00,3325,"2026-11-10T22:06:26 I (3303) wifi:connected with <SSID>, aid = 8, channel 11, BW20, bssid = <BSSID>"
+HBPSN-13,QUIC,LAG100_OUT,wifi_ip,119,4423,2026-11-10T20:06:27.279548+00:00,4440,"2026-11-10T22:06:27 I (4423) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-13,QUIC,LAG100_OUT,quic_handshake_completed,142,7343,2026-11-10T20:06:30.210538+00:00,7371,2026-11-10T22:06:30 I (7343) QUIC: QUIC handshake completed callback triggered!
+HBPSN-13,QUIC,LAG100_OUT,quic_connection_established_app,145,7463,2026-11-10T20:06:30.324778+00:00,7485,2026-11-10T22:06:30 I (7463) quic_demo_main: QUIC connection established
+HBPSN-13,QUIC,LAG100_OUT,mqtt_connected,148,8693,2026-11-10T20:06:31.548856+00:00,8710,2026-11-10T22:06:31 I (8693) quic_demo_main: MQTT connected over QUIC
+HBPSN-13,QUIC,LAG100_OUT,subscription_acknowledged,150,8903,2026-11-10T20:06:31.754997+00:00,8916,2026-11-10T22:06:31 I (8903) quic_demo_main: Subscription acknowledged
+HBPSN-14,TCP_TLS,DROP1_OUT,wifi_associated,104,3277,2026-11-10T22:01:32.204145+00:00,3301,"2026-11-11T00:01:32 I (3277) wifi:connected with <SSID>, aid = 14, channel 11, BW20, bssid = <BSSID>"
+HBPSN-14,TCP_TLS,DROP1_OUT,wifi_ip,119,4397,2026-11-10T22:01:33.317635+00:00,4414,"2026-11-11T00:01:33 I (4397) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-14,TCP_TLS,DROP1_OUT,tcp_tls_negotiated,133,6087,2026-11-10T22:01:35.015588+00:00,6112,2026-11-11T00:01:35 I (6087) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-14,TCP_TLS,DROP1_OUT,tcp_tls_connected,134,6087,2026-11-10T22:01:35.021279+00:00,6118,2026-11-11T00:01:35 I (6087) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-14,TCP_TLS,DROP1_OUT,tcp_tls_connection_established_app,135,6097,2026-11-10T22:01:35.025560+00:00,6122,2026-11-11T00:01:35 I (6097) quic_demo_main: TCP_TLS connection established
+HBPSN-14,TCP_TLS,DROP1_OUT,mqtt_connected,137,7107,2026-11-10T22:01:36.030040+00:00,7127,2026-11-11T00:01:36 I (7107) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-14,TCP_TLS,DROP1_OUT,subscription_acknowledged,139,7217,2026-11-10T22:01:36.133947+00:00,7231,2026-11-11T00:01:36 I (7217) quic_demo_main: Subscription acknowledged
+HBPSN-15,QUIC,CONTROL,wifi_associated,104,3303,2026-11-11T11:24:09.672803+00:00,3325,"2026-11-11T13:24:09 I (3303) wifi:connected with <SSID>, aid = 6, channel 11, BW20, bssid = <BSSID>"
+HBPSN-15,QUIC,CONTROL,wifi_ip,122,4413,2026-11-11T11:24:10.777631+00:00,4430,"2026-11-11T13:24:10 I (4413) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-15,QUIC,CONTROL,quic_handshake_completed,149,7313,2026-11-11T11:24:13.675203+00:00,7328,2026-11-11T13:24:13 I (7313) QUIC: QUIC handshake completed callback triggered!
+HBPSN-15,QUIC,CONTROL,quic_connection_established_app,152,7373,2026-11-11T11:24:13.742337+00:00,7395,2026-11-11T13:24:13 I (7373) quic_demo_main: QUIC connection established
+HBPSN-15,QUIC,CONTROL,mqtt_connected,155,8433,2026-11-11T11:24:14.801418+00:00,8454,2026-11-11T13:24:14 I (8433) quic_demo_main: MQTT connected over QUIC
+HBPSN-15,QUIC,CONTROL,subscription_acknowledged,157,8543,2026-11-11T11:24:14.903269+00:00,8556,2026-11-11T13:24:14 I (8543) quic_demo_main: Subscription acknowledged
+HBPSN-16,TCP_TLS,LAG100_OUT,wifi_associated,104,3277,2026-11-11T13:11:36.894438+00:00,3302,"2026-11-11T15:11:36 I (3277) wifi:connected with <SSID>, aid = 9, channel 11, BW20, bssid = <BSSID>"
+HBPSN-16,TCP_TLS,LAG100_OUT,wifi_ip,119,4397,2026-11-11T13:11:38.007165+00:00,4414,"2026-11-11T15:11:38 I (4397) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-16,TCP_TLS,LAG100_OUT,tcp_tls_negotiated,133,6297,2026-11-11T13:11:39.914320+00:00,6322,2026-11-11T15:11:39 I (6297) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-16,TCP_TLS,LAG100_OUT,tcp_tls_connected,134,6297,2026-11-11T13:11:39.919747+00:00,6327,2026-11-11T15:11:39 I (6297) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-16,TCP_TLS,LAG100_OUT,tcp_tls_connection_established_app,135,6307,2026-11-11T13:11:39.924395+00:00,6332,2026-11-11T15:11:39 I (6307) quic_demo_main: TCP_TLS connection established
+HBPSN-16,TCP_TLS,LAG100_OUT,mqtt_connected,137,7447,2026-11-11T13:11:41.055199+00:00,7462,2026-11-11T15:11:41 I (7447) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-16,TCP_TLS,LAG100_OUT,subscription_acknowledged,139,7657,2026-11-11T13:11:41.263620+00:00,7671,2026-11-11T15:11:41 I (7657) quic_demo_main: Subscription acknowledged
+HBPSN-17,QUIC,DROP1_OUT,wifi_associated,104,3303,2026-11-11T14:05:08.563848+00:00,3325,"2026-11-11T16:05:08 I (3303) wifi:connected with <SSID>, aid = 8, channel 11, BW20, bssid = <BSSID>"
+HBPSN-17,QUIC,DROP1_OUT,wifi_ip,119,4433,2026-11-11T14:05:09.689571+00:00,4451,"2026-11-11T16:05:09 I (4433) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-17,QUIC,DROP1_OUT,quic_handshake_completed,142,7233,2026-11-11T14:05:12.505363+00:00,7267,2026-11-11T16:05:12 I (7233) QUIC: QUIC handshake completed callback triggered!
+HBPSN-17,QUIC,DROP1_OUT,quic_connection_established_app,145,7353,2026-11-11T14:05:12.610618+00:00,7372,2026-11-11T16:05:12 I (7353) quic_demo_main: QUIC connection established
+HBPSN-17,QUIC,DROP1_OUT,mqtt_connected,148,8393,2026-11-11T14:05:13.648249+00:00,8410,2026-11-11T16:05:13 I (8393) quic_demo_main: MQTT connected over QUIC
+HBPSN-17,QUIC,DROP1_OUT,subscription_acknowledged,150,8503,2026-11-11T14:05:13.754439+00:00,8516,2026-11-11T16:05:13 I (8503) quic_demo_main: Subscription acknowledged
+HBPSN-18,TCP_TLS,CONTROL,wifi_associated,105,3337,2026-11-11T15:46:42.970214+00:00,3362,"2026-11-11T17:46:42 I (3337) wifi:connected with <SSID>, aid = 14, channel 11, BW20, bssid = <BSSID>"
+HBPSN-18,TCP_TLS,CONTROL,wifi_ip,120,4467,2026-11-11T15:46:44.093104+00:00,4485,"2026-11-11T17:46:44 I (4467) esp_netif_handlers: example_netif_sta ip: 192.168.137.25, mask: 255.255.255.0, gw: 192.168.137.1"
+HBPSN-18,TCP_TLS,CONTROL,tcp_tls_negotiated,134,6087,2026-11-11T15:46:45.727832+00:00,6119,2026-11-11T17:46:45 I (6087) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+HBPSN-18,TCP_TLS,CONTROL,tcp_tls_connected,135,6097,2026-11-11T15:46:45.733111+00:00,6125,2026-11-11T17:46:45 I (6097) TCP_TLS: Connected to 192.168.137.1:14568
+HBPSN-18,TCP_TLS,CONTROL,tcp_tls_connection_established_app,136,6097,2026-11-11T15:46:45.737479+00:00,6129,2026-11-11T17:46:45 I (6097) quic_demo_main: TCP_TLS connection established
+HBPSN-18,TCP_TLS,CONTROL,mqtt_connected,138,7117,2026-11-11T15:46:46.745608+00:00,7137,2026-11-11T17:46:46 I (7117) quic_demo_main: MQTT connected over TCP_TLS
+HBPSN-18,TCP_TLS,CONTROL,subscription_acknowledged,140,7227,2026-11-11T15:46:46.850132+00:00,7242,2026-11-11T17:46:46 I (7227) quic_demo_main: Subscription acknowledged

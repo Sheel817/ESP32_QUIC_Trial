@@ -1,0 +1,27 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 6708,
+    "sha256": "5ea588cfe16c391a755086f850c140e8ab0c8054fde82dc8488563ed5f900c8c"
+  },
+  {
+    "path": "analyze_connection_setup.py",
+    "bytes": 8232,
+    "sha256": "463791134e3220b4111b3f907d3c18c872a340c2ae10821787c4a683ee17c307"
+  },
+  {
+    "path": "connection_setup_events.csv",
+    "bytes": 21226,
+    "sha256": "7480dacb3939d76c7f2262c2df90ea43e98a63c1e2581eaae265001db62f907f"
+  },
+  {
+    "path": "connection_setup_per_run.csv",
+    "bytes": 5123,
+    "sha256": "0ddd7c14c191a1b68cb21d78a43f53cdeffffd26e21f8b7647825820fd424e13"
+  },
+  {
+    "path": "connection_setup_summary.csv",
+    "bytes": 2387,
+    "sha256": "d568a073003d3a9f981c64e2eac92699b59a18dd6a28d4386f60023000840f76"
+  }
+]

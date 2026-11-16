@@ -1,0 +1,311 @@
+{
+  "flash_size_configured": {
+    "value": "8MB (8,388,608 B)",
+    "status": "measured (configuration)",
+    "source": "sdkconfig:1004",
+    "text": "CONFIG_ESPTOOLPY_FLASHSIZE=\"8MB\"",
+    "also_in": [
+      "profiles/wifi_ps_none_20261103/sdkconfig",
+      "profiles/tcp_tls_wifi_ps_none_20261104/sdkconfig"
+    ]
+  },
+  "partition_table": {
+    "source": [
+      "partitions.csv",
+      "sdkconfig:1031",
+      "profiles/wifi_ps_none_20261103/build/partition_table/partition-table.bin",
+      "profiles/tcp_tls_wifi_ps_none_20261104/build/partition_table/partition-table.bin"
+    ],
+    "status": "measured",
+    "csv": "# Name,   Type, SubType, Offset,  Size, Flags\n# Note: if you have increased the bootloader size, make sure to update the offsets to avoid overlap\nnvs,      data, nvs,     ,        0x6000,\nphy_init, data, phy,     ,        0x1000,\nfactory,  app,  factory, ,        1700K,\n",
+    "decoded_from_built_table": [
+      {
+        "name": "nvs",
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 24576
+      },
+      {
+        "name": "phy_init",
+        "type": 1,
+        "subtype": 1,
+        "offset": 61440,
+        "size": 4096
+      },
+      {
+        "name": "factory",
+        "type": 0,
+        "subtype": 0,
+        "offset": 65536,
+        "size": 1740800
+      }
+    ],
+    "identical_in_both_builds": true,
+    "app_partition": {
+      "name": "factory",
+      "offset": 65536,
+      "size_bytes": 1740800
+    },
+    "ota_partitions_present": false,
+    "otadata_present": false,
+    "end_of_last_partition": 1806336,
+    "unpartitioned_flash_bytes": 6582272
+  },
+  "image_sizes": {
+    "QUIC_PSN": {
+      "bin_bytes": 1637280,
+      "free_in_app_partition": 103520,
+      "free_percent": 5.9,
+      "source": "profiles/wifi_ps_none_20261103/build/quic_demo.bin"
+    },
+    "TCP_TLS_PSN": {
+      "bin_bytes": 1498864,
+      "free_in_app_partition": 241936,
+      "free_percent": 13.9,
+      "source": "profiles/tcp_tls_wifi_ps_none_20261104/build/quic_demo.bin"
+    },
+    "status": "measured"
+  },
+  "static_ram_and_flash_from_map": {
+    "status": "measured",
+    "tool": "python -m esp_idf_size --format json2 (IDF v6.1 python env)",
+    "QUIC_PSN": {
+      "source": "profiles/wifi_ps_none_20261103/build/quic_demo.map",
+      "total_image_size": 1636903,
+      "flash_code_used": 1521012,
+      "flash_parts": {
+        ".text": 1250408,
+        ".rodata": 270020,
+        ".init_array": 268,
+        ".appdesc": 256,
+        ".tbss": 36,
+        ".tdata": 24
+      },
+      "diram_used": 149011,
+      "diram_total": 452112,
+      "diram_free": 303101,
+      "diram_parts": {
+        ".text": 99720,
+        ".bss": 32816,
+        ".data": 16475
+      }
+    },
+    "TCP_TLS_PSN": {
+      "source": "profiles/tcp_tls_wifi_ps_none_20261104/build/quic_demo.map",
+      "total_image_size": 1498497,
+      "flash_code_used": 1380478,
+      "flash_parts": {
+        ".text": 1138446,
+        ".rodata": 241460,
+        ".init_array": 264,
+        ".appdesc": 256,
+        ".tbss": 36,
+        ".tdata": 16
+      },
+      "diram_used": 149375,
+      "diram_total": 452112,
+      "diram_free": 302737,
+      "diram_parts": {
+        ".text": 99796,
+        ".bss": 31056,
+        ".data": 18523
+      }
+    },
+    "note": "DIRAM = static IRAM+DRAM used by the image (.text in IRAM, .data, .bss). Heap comes from what remains."
+  },
+  "archive_sizes_bytes": {
+    "status": "measured",
+    "source": "esp_idf_size --archives on the two map files",
+    "QUIC_PSN": {
+      "ngtcp2": 171628,
+      "wolfssl__wolfssl": 412546,
+      "coreMQTT": 12386,
+      "main": 21199
+    },
+    "TCP_TLS_PSN": {
+      "ngtcp2": 82155,
+      "wolfssl__wolfssl": 393877,
+      "coreMQTT": 12386,
+      "main": 18996
+    }
+  },
+  "free_heap_in_run_logs": {
+    "status": "measured",
+    "source": "results/experiments/HOME_BOARD_WIFI_PS_NONE_20261104_PROPOSED/runs/HBPSN-*/attempt_*/serial.raw.log (raw_serial_path in run_register.csv)",
+    "event": "\"quic_demo_main: Free heap\" is logged after Wi-Fi is up and before the transport/MQTT connection is made (main/quic_demo_main.c:353), not at MQTT connect.",
+    "QUIC": {
+      "n": 9,
+      "min": 287744,
+      "max": 288140
+    },
+    "TCP_TLS": {
+      "n": 9,
+      "min": 287368,
+      "max": 287396
+    },
+    "per_run": {
+      "HBPSN-01": 287764,
+      "HBPSN-02": 287396,
+      "HBPSN-03": 287744,
+      "HBPSN-04": 287396,
+      "HBPSN-05": 287764,
+      "HBPSN-06": 287392,
+      "HBPSN-07": 287368,
+      "HBPSN-08": 287756,
+      "HBPSN-09": 287396,
+      "HBPSN-10": 287756,
+      "HBPSN-11": 287392,
+      "HBPSN-12": 287764,
+      "HBPSN-13": 287756,
+      "HBPSN-14": 287396,
+      "HBPSN-15": 288140,
+      "HBPSN-16": 287392,
+      "HBPSN-17": 287764,
+      "HBPSN-18": 287368
+    },
+    "not_logged": "Heap during a connection and the minimum free heap are not logged in any run."
+  },
+  "versions": {
+    "status": "measured (read from files)",
+    "ngtcp2": {
+      "version": "1.13.0",
+      "source": [
+        "components/ngtcp2/ngtcp2/CMakeLists.txt:31"
+      ],
+      "submodule_commit": "7dd482f949f145632c482d01af2184954b471795",
+      "submodule_tag": "v1.13.0",
+      "note": "The project also applies ngtcp2.patch inside the submodule (see README.md), so the built source is v1.13.0 plus that patch."
+    },
+    "wolfSSL": {
+      "version": "5.8.0",
+      "source": [
+        "managed_components/wolfssl__wolfssl/wolfssl/version.h:31",
+        "dependencies.lock:217",
+        "main/idf_component.yml:5 (requirement wolfssl/wolfssl: \"^5.8.0\")"
+      ]
+    },
+    "coreMQTT": {
+      "version": "v2.3.1+ (development version after v2.3.1)",
+      "source": [
+        "components/coreMQTT/coreMQTT/source/include/core_mqtt.h:51"
+      ],
+      "submodule_commit": "d7b04a13002496994d737eebaf56dbe1e56aaefb",
+      "note": "git describe reports v1.2.0-81-gd7b04a1 (nearest tag in the clone); the header string is the authoritative version."
+    }
+  },
+  "nghttp3_or_http3_library_present": {
+    "status": "measured",
+    "answer": "No library. nghttp3 source and binaries are not in the repository.",
+    "files_named_nghttp3": [
+      "components/ngtcp2/ngtcp2/ci/build_nghttp3.sh",
+      "components/ngtcp2/ngtcp2/cmake/FindLibnghttp3.cmake"
+    ],
+    "project_files_mentioning_nghttp3": [],
+    "map_file_mentions": {
+      "profiles/wifi_ps_none_20261103": 0,
+      "profiles/tcp_tls_wifi_ps_none_20261104": 0
+    },
+    "note": "Only ngtcp2 submodule build scripts and examples (ci/build_nghttp3.sh, cmake/FindLibnghttp3.cmake, examples/*) mention it; they are not built by this project. managed_components holds only dht, esp_idf_lib_helpers, cjson, ethernet_init, wolfssl.",
+    "managed_components": [
+      "esp-idf-lib__dht",
+      "esp-idf-lib__esp_idf_lib_helpers",
+      "espressif__cjson",
+      "espressif__ethernet_init",
+      "wolfssl__wolfssl"
+    ]
+  },
+  "estimates_http3": {
+    "status": "ESTIMATE, not measured",
+    "flash_bytes": {
+      "nghttp3_library": [
+        60000,
+        150000
+      ],
+      "server_side_quic_and_tls": [
+        20000,
+        50000
+      ],
+      "http3_app_code": [
+        5000,
+        15000
+      ]
+    },
+    "method": "nghttp3 source is not available locally, so nothing could be built or measured. The nghttp3 range is a judgement anchored on the measured ngtcp2 archive in the QUIC build (171,628 B): nghttp3 is assumed to be roughly a third to under the same size as ngtcp2, widened for compiler options and which QPACK/HTTP/3 features are linked. Server-side ngtcp2 paths (server connection creation, Retry/token, path validation, connection IDs), wolfSSL server handshake with ECDSA signing, and the application code are rough guesses from general experience. The honest bounds are what matter, not the central value.",
+    "flash_total_bytes": [
+      85000,
+      215000
+    ],
+    "fits_in_current_free_app_space": {
+      "free_bytes": 103520,
+      "answer": "Only the optimistic end of the range would fit, with almost no margin; plan as not fitting."
+    },
+    "partition_change": {
+      "proposal": "One larger factory app partition, for example 2048K (0x200000), which leaves about 0.2 to 0.4 MB headroom over the estimated image of about 1.72 to 1.86 MB. Flash is 8 MB and the partition table currently ends at 0x1B9000, so there is room.",
+      "tradeoffs": [
+        "The current table has no OTA slots and no otadata (single factory app), so enlarging factory loses no OTA that exists today.",
+        "If OTA is wanted later, two equal app slots are needed (for example ota_0 and ota_1 at 2048K each plus otadata, about 4.2 MB of 8 MB), which still fits but doubles the app space and adds rollback complexity.",
+        "A new partition table has to be flashed (not only the app), moves the app offset, and changes every image hash, so it can only be a separate exploratory profile, never the frozen QUIC_PSN or TCP_TLS_PSN artifacts.",
+        "Keeping 1700K and removing features instead (for example the TCP_TLS code or logging) would not be a like-for-like build of the experiment firmware."
+      ]
+    },
+    "ram_bytes": {
+      "status": "ESTIMATE, not measured",
+      "handshake_peak_transient": [
+        40000,
+        60000
+      ],
+      "steady_per_http3_connection": [
+        20000,
+        40000
+      ],
+      "extra_static": [
+        2000,
+        8000
+      ],
+      "basis": "Free heap before connecting is measured (about 287 to 288 KB), but heap used by the existing MQTT/QUIC connection is not logged. The extra figures are guesses for one concurrent HTTP/3 connection with the QPACK dynamic table set to 0 and are not derived from a build.",
+      "conclusion": "Probably fits in RAM for one concurrent HTTP/3 connection next to the MQTT client; it must be confirmed by logging the minimum free heap."
+    },
+    "work_days_minimal_http3_page": {
+      "total": [
+        8,
+        12
+      ],
+      "status": "ESTIMATE",
+      "breakdown": {
+        "add nghttp3 as an ESP-IDF component and build it with ngtcp2 and wolfSSL": [
+          1,
+          2
+        ],
+        "server-side ngtcp2 + wolfSSL (UDP listen socket, certificate and key on board, multiple-connection state; the client code uses one global client struct, main/ngtcp2_sample.c:81)": [
+          3,
+          4
+        ],
+        "HTTP/3 request handler and the sensor page": [
+          1,
+          1
+        ],
+        "new partition table, exploratory build profile, flash and verify": [
+          0.5,
+          1
+        ],
+        "HTTP/3 test client (curl built with HTTP/3 or an aioquic client script) and browser quirks (self-signed certificate, QUIC discovery)": [
+          1,
+          2
+        ],
+        "coexistence with the MQTT client, heap logging, stability runs (the QUIC tlsf_free panic from HBPSN-03/08 is unresolved)": [
+          2,
+          3
+        ]
+      }
+    }
+  },
+  "not_verified": [
+    "Whether an ESP-IDF component for nghttp3 exists (no registry access checked).",
+    "All HTTP/3 flash, RAM and day figures (estimates).",
+    "Heap during an MQTT connection and the minimum free heap (not logged).",
+    "Whether the linker would drop unused ngtcp2 server code (not built).",
+    "Browser behaviour with a self-signed HTTP/3 certificate (general knowledge, not tested here).",
+    "The ngtcp2.patch contents were not re-checked against the built objects."
+  ]
+}
