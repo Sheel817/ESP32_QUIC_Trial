@@ -23,3 +23,6 @@ sdkconfig.local
 backups/*.zip
 node_modules/
 /server-key.pem
+
+# Local, uncommitted backups (may contain unmasked Wi-Fi details)
+backups/local_uncommitted/
