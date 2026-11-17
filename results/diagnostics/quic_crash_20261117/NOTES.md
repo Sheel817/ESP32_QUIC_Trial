@@ -75,3 +75,38 @@ Phase 2 (Clumsy Lag 100 ms) was NOT needed: Phase 1 already reproduced the fault
 - Proposed fix (not applied to any frozen file): `PROPOSED_FIX_ngtcp2_conn_alignment.diff` (allocate `buflen + 0x7`). Alternative: make the allocator return 8-byte aligned memory for this call.
 - Board state: it is left running the diagnostic image rs2 (idle after DIAG COMPLETE), NOT a formal build. The QUIC server I started (python quic_server.py, wrapper PID 5128) is still running; logs: results/diagnostics/quic_crash_20261117/server_stdout.log and logs/sensor_20261117T174754_788763Z_*.csv. Serial capture processes were closed by their own exit (port released) after each run.
 - Nothing committed. Branch: crash-investigation.
+
+## 2026-11-18 follow-up (user instructions: commit, upstream check, fixed profile)
+
+### Step 1 - commit and push
+- Scanned all files to be committed for the Wi-Fi SSID and password (values read from root sdkconfig, never printed).
+  Hits were found in profile sdkconfig copies, build logs and the serial capture logs (SSID). They were masked
+  in place (SSID_MASKED / WIFI_PASSWORD_MASKED); unmasked originals saved in backups/local_uncommitted/crash_investigation_unmasked/ (git-ignored).
+- Re-scan of the staged files: 0 hits. Not committed: build_* directories (2.2 GB), copied source tree (only the 8 changed files + crash_diag component),
+  src/sdkconfig (real credentials), README backups, the server csv.
+- Commit df2052026 on branch crash-investigation, pushed to remote thesis only.
+
+### Step 2 - upstream ngtcp2
+- Newest upstream release found: v1.26.0 (2 Nov 2026). Upstream PR #2400 "Fix heap overruns when malloc is only 4-byte aligned (like on ESP32)"
+  (merged 1 Nov 2026 into main, milestone v1.26.0) adds `buflen += 0x7U` before the calloc in conn_new() (same fix as ours) and
+  makes ngtcp2_balloc_get() reserve 0xf instead of 0x8 bytes. Source: web summary of upstream main + PR page (not re-verified by building upstream).
+- Our vendored copy (older) has both bugs: conn_new without padding, and ngtcp2_balloc_get with 0x8u reserve but 0xfu alignment.
+  Both are fixed in profiles/fixed_20261118.
+
+### Step 3 - fixed profile profiles/fixed_20261118 (built, NOT committed, NOT used for measurements yet)
+- Source = frozen QUIC/TCP_TLS source set (1428 files hash-verified, 0 mismatches) + changes in 8 files (changed_source_files.json):
+  ngtcp2_conn.c +7 bytes in conn_new; ngtcp2_balloc.c reserve 0xf (same cause, fixed upstream too); ngtcp2_sample.c UDP socket closed in client_free()
+  and on the 3 client_init failure paths; build-system tweaks (component manager off, same approach as earlier profiles); test harness compiled only with FIXED_TEST_MODE=1|2.
+- TCP+TLS client: tcp_tls_client_cleanup() already closes the socket (close(client.fd)) - no change needed.
+- sdkconfig identical to frozen one: no heap poisoning, no stack check, 1,700K partition. QUIET_MEASUREMENT=1.
+- Images (exit 0): fq QUIC measurement 1,637,328 B sha256 d77192f6e48b...; ft TCP_TLS measurement 1,498,864 B b591e17c9c4d...;
+  tb QUIC + reboot test harness 1,608,832 B b78511a0fe2f...; ts QUIC + soft test harness 1,609,472 B 70515a73017c...
+- Note: ev_default_loop_init() is still re-run on every quic_client_init (leaks event loop task); the soft test harness calls it once. Not part of this fix; production never reconnects.
+
+### Step 4 - verification (Clumsy OFF, normal network)
+- tb, 30 reboot cycles: started 30, passed 30, failed 0, init_failed 0, crashed 0 (fixed_tb_reboot30.log).
+- ts, 30 soft reconnects: started 30, passed 30, failed 0, init_failed 0, crashed 0; socket fd 54 in all 30 cycles; free heap 226 KB (cycle 10) -> 225 KB (cycle 30) (fixed_ts_soft30.log).
+- Board now holds image ts (test harness, not a measurement image).
+
+### Step 5
+- QUIC server (PIDs 5128, 37500) stopped; UDP 14567 free. Serial ports closed by capture scripts. No timing measurements started.

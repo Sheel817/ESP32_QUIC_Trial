@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-11-17T22:40:27.454736+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "C:/esp/v6.1/esp-idf/tools/idf.py",
+    "-B",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\fixed_20261118\\build_ts",
+    "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\fixed_20261118\\sdkconfig_ts",
+    "-DDEMO_TRANSPORT=QUIC",
+    "-DDEMO_WIFI_PS_NONE=ON",
+    "-DCCACHE_ENABLE=False",
+    "-DFIXED_TEST_MODE=2",
+    "-DFIXED_TEST_RUN_ID=fs",
+    "-DFIXED_TEST_CYCLES=30",
+    "build"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\fixed_20261118\\src",
+  "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\fixed_20261118\\build_ts_20261117T224027Z.log",
+  "ended_utc": "2026-11-17T22:43:38.066203+00:00",
+  "exit_code": 0,
+  "bin": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\fixed_20261118\\build_ts\\quic_demo.bin",
+    "bytes": 1609472,
+    "sha256": "70515a73017c20734328a5c8ef0596e2b9db13d8c5be835f98e5fac6c2e24390"
+  }
+}

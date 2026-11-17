@@ -1,0 +1,645 @@
+2026-11-17T22:49:42.400704Z CAPTURE_OPEN reset=True
+2026-11-17T22:49:42.551494Z RESET_RELEASED_BY_HOST
+2026-11-17T22:49:42.606485Z ESP-ROM:esp32c6-20220919
+2026-11-17T22:49:42.606562Z Build:Sep 19 2022
+2026-11-17T22:49:42.606582Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-17T22:49:42.606597Z SPIWP:0xee
+2026-11-17T22:49:42.606611Z mode:DIO, clock div:2
+2026-11-17T22:49:42.606624Z load:0x40875730,len:0x1648
+2026-11-17T22:49:42.606637Z load:0x4086b910,len:0xdbc
+2026-11-17T22:49:42.606650Z load:0x4086e610,len:0x31f0
+2026-11-17T22:49:42.606663Z entry 0x4086b91a
+2026-11-17T22:49:42.606676Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-17T22:49:42.607531Z I (24) boot: compile time Nov 18 2026 00:43:14
+2026-11-17T22:49:42.607563Z I (24) boot: chip revision: v0.0
+2026-11-17T22:49:42.607575Z I (24) boot: efuse block revision: v0.2
+2026-11-17T22:49:42.607583Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-17T22:49:42.607592Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-17T22:49:42.651502Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-17T22:49:42.651574Z I (38) boot: Enabling RNG early entropy source...
+2026-11-17T22:49:42.651585Z I (43) boot: Partition Table:
+2026-11-17T22:49:42.651594Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-17T22:49:42.651603Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-17T22:49:42.651611Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-17T22:49:42.651618Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-17T22:49:42.651625Z I (71) boot: End of partition table
+2026-11-17T22:49:42.855268Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42130020 size=40d50h (265552) map
+2026-11-17T22:49:42.855366Z I (133) esp_image: segment 1: paddr=00050d78 vaddr=40800000 size=0f2a0h ( 62112) load
+2026-11-17T22:49:42.855379Z I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=12bb70h (1227632) map
+2026-11-17T22:49:42.997864Z I (381) esp_image: segment 3: paddr=0018bb98 vaddr=4080f2a0 size=092e8h ( 37608) load
+2026-11-17T22:49:42.997935Z I (390) esp_image: segment 4: paddr=00194e88 vaddr=40818590 size=0404ch ( 16460) load
+2026-11-17T22:49:42.997948Z I (400) boot: Loaded app from partition at offset 0x10000
+2026-11-17T22:49:42.997957Z I (401) boot: Disabling RNG early entropy source...
+2026-11-17T22:49:42.997965Z I (411) cpu_start: Unicore app
+2026-11-17T22:49:42.997973Z I (419) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-17T22:49:42.997981Z I (419) cpu_start: Pro cpu start user code
+2026-11-17T22:49:42.997988Z I (419) cpu_start: cpu freq: 160000000 Hz
+2026-11-17T22:49:43.042074Z I (421) app_init: Application information:
+2026-11-17T22:49:43.042146Z I (425) app_init: Project name:     quic_demo
+2026-11-17T22:49:43.042159Z I (429) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-17T22:49:43.042168Z I (435) app_init: Compile time:     Nov 18 2026 00:42:21
+2026-11-17T22:49:43.042176Z I (440) app_init: ELF file SHA256:  9228921e3...
+2026-11-17T22:49:43.042184Z I (444) app_init: ESP-IDF:          v6.1
+2026-11-17T22:49:43.042192Z I (448) efuse_init: Min chip rev:     v0.0
+2026-11-17T22:49:43.042200Z I (452) efuse_init: Max chip rev:     v0.99 
+2026-11-17T22:49:43.042207Z I (456) efuse_init: Chip rev:         v0.0
+2026-11-17T22:49:43.042216Z I (460) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-17T22:49:43.094068Z I (466) heap_init: At 40823C80 len 00058990 (354 KiB): RAM
+2026-11-17T22:49:43.094140Z I (471) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-17T22:49:43.094154Z I (476) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-17T22:49:43.094162Z I (482) spi_flash: detected chip: gd
+2026-11-17T22:49:43.094171Z I (485) spi_flash: flash io: dio
+2026-11-17T22:49:43.094179Z I (488) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-17T22:49:43.094187Z I (494) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-17T22:49:43.094195Z I (501) coexist: coex firmware version: a830d28
+2026-11-17T22:49:43.094255Z I (505) coexist: coexist rom version 5b8dcfa
+2026-11-17T22:49:43.094269Z I (509) main_task: Started on CPU0
+2026-11-17T22:49:43.138307Z I (529) main_task: Calling app_main()
+2026-11-17T22:49:43.138369Z I (529) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-17T22:49:43.138383Z I (529) quic_demo_main: ESP-IDF version: v6.1
+2026-11-17T22:49:43.138392Z I (539) example_connect: Start example_connect.
+2026-11-17T22:49:43.138401Z I (539) pp: pp rom version: 5b8dcfa
+2026-11-17T22:49:43.138409Z I (539) net80211: net80211 rom version: 5b8dcfa
+2026-11-17T22:49:43.138417Z I (549) wifi:wifi driver task: 40829ed8, prio:23, stack:6656, core=0
+2026-11-17T22:49:43.138425Z I (549) wifi:wifi firmware version: e12a754
+2026-11-17T22:49:43.138433Z I (549) wifi:wifi certification version: v7.0
+2026-11-17T22:49:43.138441Z I (549) wifi:config NVS flash: enabled
+2026-11-17T22:49:43.138449Z I (559) wifi:config nano formatting: disabled
+2026-11-17T22:49:43.182880Z I (559) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-17T22:49:43.182941Z I (569) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-17T22:49:43.182954Z I (569) wifi:Init static rx mgmt buffer num: 5
+2026-11-17T22:49:43.182962Z I (579) wifi:Init management short buffer num: 32
+2026-11-17T22:49:43.182970Z I (579) wifi:Init dynamic tx buffer num: 32
+2026-11-17T22:49:43.182977Z I (589) wifi:Init static tx FG buffer num: 2
+2026-11-17T22:49:43.182985Z I (589) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-17T22:49:43.182992Z I (599) wifi:Init static rx buffer num: 10
+2026-11-17T22:49:43.183000Z I (599) wifi:Init dynamic rx buffer num: 32
+2026-11-17T22:49:43.183007Z I (599) wifi_init: rx ba win: 6
+2026-11-17T22:49:43.267631Z I (609) wifi_init: accept mbox: 6
+2026-11-17T22:49:43.267693Z I (609) wifi_init: tcpip mbox: 32
+2026-11-17T22:49:43.267706Z I (609) wifi_init: udp mbox: 6
+2026-11-17T22:49:43.267716Z I (619) wifi_init: tcp mbox: 6
+2026-11-17T22:49:43.267724Z I (619) wifi_init: tcp tx win: 5760
+2026-11-17T22:49:43.267732Z I (619) wifi_init: tcp rx win: 5760
+2026-11-17T22:49:43.267740Z I (619) wifi_init: tcp mss: 1440
+2026-11-17T22:49:43.267748Z I (629) wifi_init: WiFi IRAM OP enabled
+2026-11-17T22:49:43.267756Z I (629) wifi_init: WiFi RX IRAM OP enabled
+2026-11-17T22:49:43.267764Z I (629) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-17T22:49:43.267772Z I (639) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-17T22:49:43.267780Z I (699) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-17T22:49:43.267788Z 
+2026-11-17T22:49:43.475483Z I (699) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-17T22:49:43.475561Z I (699) wifi:enable tsf
+2026-11-17T22:49:43.475575Z I (699) example_connect: Connecting to <SSID_MASKED>...
+2026-11-17T22:49:43.475586Z W (699) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-17T22:49:43.475595Z I (709) example_connect: Waiting for IP(s)
+2026-11-17T22:49:45.835408Z I (3229) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-17T22:49:45.835475Z I (3229) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-17T22:49:45.835487Z I (3229) wifi:state: init -> auth (0xb0)
+2026-11-17T22:49:45.835495Z I (3239) wifi:state: auth -> assoc (0x0)
+2026-11-17T22:49:45.835503Z I (3249) wifi:state: assoc -> run (0x10)
+2026-11-17T22:49:45.835511Z I (3249) wifi:(trc)phytype:CBW20-SGI, snr:71, maxRate:144, highestRateIdx:0
+2026-11-17T22:49:45.835518Z W (3249) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-17T22:49:45.880709Z I (3259) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:71, ampduState:wait operational
+2026-11-17T22:49:45.880780Z I (3269) wifi:ifidx:0, rssi:-25, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-17T22:49:45.880793Z I (3279) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-17T22:49:45.880851Z I (3299) wifi:connected with <SSID_MASKED>, aid = 13, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-17T22:49:45.880865Z I (3299) wifi:security: WPA2-PSK, phy: bgn, rssi: -25, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-17T22:49:45.924936Z I (3309) wifi:pm start, type: 1, twt_start:0
+2026-11-17T22:49:45.924997Z 
+2026-11-17T22:49:45.925010Z I (3309) wifi:pm start, type:1, aid:0xd, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-17T22:49:45.925019Z I (3319) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-17T22:49:45.925027Z I (3329) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-17T22:49:45.925035Z I (3339) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-17T22:49:45.969419Z I (3349) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-17T22:49:45.969493Z I (3359) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-17T22:49:45.969506Z I (3369) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-17T22:49:45.969514Z I (3379) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T22:49:45.969524Z I (3389) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T22:49:46.170472Z I (3389) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T22:49:46.170585Z W (3409) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-17T22:49:46.985535Z I (4409) esp_netif_handlers: example_netif_sta ip: 192.168.137.46, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-17T22:49:47.141406Z I (4409) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.46
+2026-11-17T22:49:47.141466Z I (4539) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-17T22:49:47.141478Z I (4539) example_common: Connected to example_netif_sta
+2026-11-17T22:49:47.141487Z I (4539) example_common: - IPv4 address: 192.168.137.46,
+2026-11-17T22:49:47.141494Z I (4549) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-17T22:49:47.141503Z I (4559) quic_demo_main: Wi-Fi connected
+2026-11-17T22:49:47.141510Z I (4559) wifi:Set ps type: 0, coexist: 0
+2026-11-17T22:49:47.141518Z 
+2026-11-17T22:49:47.226102Z I (4569) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-17T22:49:47.226170Z I (4619) main_task: Returned from app_main()
+2026-11-17T22:49:47.226182Z TEST RESUME run=fs mode=2 started=0 passed=0 failed=0 init_failed=0 crashed_so_far=0
+2026-11-17T22:49:47.226193Z TEST CYCLE 1 START mode=2 free_heap=293948
+2026-11-17T22:49:47.226202Z I (4629) QUIC: QUIC mutex created successfully
+2026-11-17T22:49:47.226210Z I (4629) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:49:47.226217Z I (4639) QUIC: init random number generator
+2026-11-17T22:49:47.226225Z I (4639) QUIC: init client ...
+2026-11-17T22:49:47.226234Z I (4649) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:49:47.433438Z I (4649) QUIC: In client_quic_init
+2026-11-17T22:49:47.433530Z I (4659) QUIC: ===>  INITIAL TS: 4178217000
+2026-11-17T22:49:47.433541Z I (4659) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:49:47.433550Z I (4659) QUIC: QUIC client initialization completed
+2026-11-17T22:49:50.071573Z I (7319) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:49:50.071660Z I (7319) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:49:50.071677Z I (7339) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:49:50.071689Z 
+2026-11-17T22:49:51.085497Z TEST CYCLE 1 PASS
+2026-11-17T22:49:51.085618Z I (8399) QUIC: Cleaning up QUIC client...
+2026-11-17T22:49:51.085637Z I (8399) QUIC: Freeing QUIC connection...
+2026-11-17T22:49:51.085645Z I (8399) QUIC: QUIC client cleanup completed. Free heap: 226520 bytes
+2026-11-17T22:49:53.109544Z TEST CYCLE 2 START mode=2 free_heap=226520
+2026-11-17T22:49:53.109635Z I (10409) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:49:53.109647Z I (10409) QUIC: init random number generator
+2026-11-17T22:49:53.109655Z I (10409) QUIC: init client ...
+2026-11-17T22:49:53.109663Z I (10419) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:49:53.109670Z I (10419) QUIC: In client_quic_init
+2026-11-17T22:49:53.109678Z I (10419) QUIC: ===>  INITIAL TS: 9941770000
+2026-11-17T22:49:53.109686Z I (10419) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:49:53.109694Z I (10429) QUIC: QUIC client initialization completed
+2026-11-17T22:49:55.758565Z I (13059) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:49:55.758685Z I (13059) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:49:55.758697Z I (13079) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:49:55.758705Z 
+2026-11-17T22:49:56.975873Z TEST CYCLE 2 PASS
+2026-11-17T22:49:56.976012Z I (14229) QUIC: Cleaning up QUIC client...
+2026-11-17T22:49:56.976032Z I (14229) QUIC: Freeing QUIC connection...
+2026-11-17T22:49:56.976047Z I (14229) QUIC: QUIC client cleanup completed. Free heap: 226484 bytes
+2026-11-17T22:49:58.807819Z TEST CYCLE 3 START mode=2 free_heap=226484
+2026-11-17T22:49:58.807909Z I (16239) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:49:59.011528Z I (16239) QUIC: init random number generator
+2026-11-17T22:49:59.011627Z I (16239) QUIC: init client ...
+2026-11-17T22:49:59.011647Z I (16249) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:49:59.011656Z I (16249) QUIC: In client_quic_init
+2026-11-17T22:49:59.011664Z I (16249) QUIC: ===>  INITIAL TS: 15771737000
+2026-11-17T22:49:59.011671Z I (16249) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:49:59.011679Z I (16259) QUIC: QUIC client initialization completed
+2026-11-17T22:50:01.452809Z I (18859) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:01.452921Z I (18879) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:01.452935Z I (18879) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:01.452943Z 
+2026-11-17T22:50:02.667329Z TEST CYCLE 3 PASS
+2026-11-17T22:50:02.667406Z I (20009) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:02.667418Z I (20009) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:02.667426Z I (20009) QUIC: QUIC client cleanup completed. Free heap: 226448 bytes
+2026-11-17T22:50:04.693428Z TEST CYCLE 4 START mode=2 free_heap=226448
+2026-11-17T22:50:04.693564Z I (22019) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:04.693583Z I (22019) QUIC: init random number generator
+2026-11-17T22:50:04.693593Z I (22019) QUIC: init client ...
+2026-11-17T22:50:04.693601Z I (22029) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:04.693608Z I (22029) QUIC: In client_quic_init
+2026-11-17T22:50:04.693617Z I (22029) QUIC: ===>  INITIAL TS: 21551774000
+2026-11-17T22:50:04.693625Z I (22029) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:04.693633Z I (22039) QUIC: QUIC client initialization completed
+2026-11-17T22:50:07.336143Z I (24679) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:07.336270Z I (24679) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:07.336417Z I (24699) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:07.336441Z 
+2026-11-17T22:50:08.548450Z TEST CYCLE 4 PASS
+2026-11-17T22:50:08.548568Z I (25819) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:08.548582Z I (25819) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:08.548591Z I (25819) QUIC: QUIC client cleanup completed. Free heap: 226408 bytes
+2026-11-17T22:50:10.569921Z TEST CYCLE 5 START mode=2 free_heap=226408
+2026-11-17T22:50:10.570021Z I (27829) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:10.570032Z I (27829) QUIC: init random number generator
+2026-11-17T22:50:10.570040Z I (27829) QUIC: init client ...
+2026-11-17T22:50:10.570048Z I (27839) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:10.570055Z I (27839) QUIC: In client_quic_init
+2026-11-17T22:50:10.570063Z I (27839) QUIC: ===>  INITIAL TS: 27361767000
+2026-11-17T22:50:10.570070Z I (27839) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:10.570079Z I (27849) QUIC: QUIC client initialization completed
+2026-11-17T22:50:13.203619Z I (30489) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:13.203738Z I (30509) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:13.203756Z I (30509) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:13.203768Z 
+2026-11-17T22:50:14.217306Z TEST CYCLE 5 PASS
+2026-11-17T22:50:14.217400Z I (31579) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:14.217411Z I (31579) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:14.217419Z I (31579) QUIC: QUIC client cleanup completed. Free heap: 226372 bytes
+2026-11-17T22:50:16.241306Z TEST CYCLE 6 START mode=2 free_heap=226372
+2026-11-17T22:50:16.241402Z I (33589) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:16.241413Z I (33589) QUIC: init random number generator
+2026-11-17T22:50:16.241423Z I (33589) QUIC: init client ...
+2026-11-17T22:50:16.241430Z I (33599) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:16.241439Z I (33599) QUIC: In client_quic_init
+2026-11-17T22:50:16.241446Z I (33599) QUIC: ===>  INITIAL TS: 33121765000
+2026-11-17T22:50:16.241453Z I (33599) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:16.241461Z I (33609) QUIC: QUIC client initialization completed
+2026-11-17T22:50:18.885800Z I (36249) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:18.885924Z I (36269) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:18.885942Z I (36269) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:18.885950Z 
+2026-11-17T22:50:20.099729Z TEST CYCLE 6 PASS
+2026-11-17T22:50:20.099864Z I (37379) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:20.099881Z I (37379) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:20.099890Z I (37379) QUIC: QUIC client cleanup completed. Free heap: 226328 bytes
+2026-11-17T22:50:22.118394Z TEST CYCLE 7 START mode=2 free_heap=226328
+2026-11-17T22:50:22.118505Z I (39389) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:22.118518Z I (39389) QUIC: init random number generator
+2026-11-17T22:50:22.118527Z I (39389) QUIC: init client ...
+2026-11-17T22:50:22.118535Z I (39399) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:22.118544Z I (39399) QUIC: In client_quic_init
+2026-11-17T22:50:22.118552Z I (39399) QUIC: ===>  INITIAL TS: 38921777000
+2026-11-17T22:50:22.118559Z I (39399) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:22.118567Z I (39409) QUIC: QUIC client initialization completed
+2026-11-17T22:50:24.745833Z I (42049) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:24.745981Z I (42049) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:24.746012Z I (42069) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:24.746033Z 
+2026-11-17T22:50:25.757781Z TEST CYCLE 7 PASS
+2026-11-17T22:50:25.757884Z I (43139) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:25.757898Z I (43139) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:25.757907Z I (43139) QUIC: QUIC client cleanup completed. Free heap: 226288 bytes
+2026-11-17T22:50:27.776441Z TEST CYCLE 8 START mode=2 free_heap=226288
+2026-11-17T22:50:27.776559Z I (45149) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:27.776571Z I (45149) QUIC: init random number generator
+2026-11-17T22:50:27.776580Z I (45149) QUIC: init client ...
+2026-11-17T22:50:27.776589Z I (45159) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:27.776597Z I (45159) QUIC: In client_quic_init
+2026-11-17T22:50:27.776605Z I (45159) QUIC: ===>  INITIAL TS: 44681768000
+2026-11-17T22:50:27.776614Z I (45159) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:27.776623Z I (45169) QUIC: QUIC client initialization completed
+2026-11-17T22:50:30.402096Z I (47799) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:30.402227Z I (47819) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:30.402240Z I (47819) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:30.402249Z 
+2026-11-17T22:50:31.618848Z TEST CYCLE 8 PASS
+2026-11-17T22:50:31.618970Z I (48949) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:31.618992Z I (48949) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:31.619006Z I (48949) QUIC: QUIC client cleanup completed. Free heap: 226252 bytes
+2026-11-17T22:50:33.649501Z TEST CYCLE 9 START mode=2 free_heap=226252
+2026-11-17T22:50:33.649601Z I (50959) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:33.649612Z I (50959) QUIC: init random number generator
+2026-11-17T22:50:33.649620Z I (50959) QUIC: init client ...
+2026-11-17T22:50:33.649628Z I (50969) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:33.649636Z I (50969) QUIC: In client_quic_init
+2026-11-17T22:50:33.649643Z I (50969) QUIC: ===>  INITIAL TS: 50491747000
+2026-11-17T22:50:33.649650Z I (50969) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:33.649658Z I (50979) QUIC: QUIC client initialization completed
+2026-11-17T22:50:36.291992Z I (53599) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:36.292086Z I (53599) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:36.292098Z I (53619) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:36.292106Z 
+2026-11-17T22:50:37.307311Z TEST CYCLE 9 PASS
+2026-11-17T22:50:37.307389Z I (54719) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:37.307399Z I (54719) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:37.307407Z I (54719) QUIC: QUIC client cleanup completed. Free heap: 226216 bytes
+2026-11-17T22:50:39.332020Z TEST CYCLE 10 START mode=2 free_heap=226216
+2026-11-17T22:50:39.332112Z I (56729) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:39.332124Z I (56729) QUIC: init random number generator
+2026-11-17T22:50:39.332133Z I (56729) QUIC: init client ...
+2026-11-17T22:50:39.332149Z I (56739) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:39.332156Z I (56739) QUIC: In client_quic_init
+2026-11-17T22:50:39.332164Z I (56739) QUIC: ===>  INITIAL TS: 56261826000
+2026-11-17T22:50:39.332172Z I (56739) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:39.332181Z I (56749) QUIC: QUIC client initialization completed
+2026-11-17T22:50:41.972598Z I (59349) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:41.972719Z I (59349) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:41.972744Z I (59369) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:41.972769Z 
+2026-11-17T22:50:43.188015Z TEST CYCLE 10 PASS
+2026-11-17T22:50:43.188134Z I (60489) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:43.188147Z I (60489) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:43.188157Z I (60489) QUIC: QUIC client cleanup completed. Free heap: 226176 bytes
+2026-11-17T22:50:45.220951Z TEST CYCLE 11 START mode=2 free_heap=226176
+2026-11-17T22:50:45.221115Z I (62499) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:45.221138Z I (62499) QUIC: init random number generator
+2026-11-17T22:50:45.221153Z I (62499) QUIC: init client ...
+2026-11-17T22:50:45.221164Z I (62509) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:45.221175Z I (62509) QUIC: In client_quic_init
+2026-11-17T22:50:45.221188Z I (62509) QUIC: ===>  INITIAL TS: 62031842000
+2026-11-17T22:50:45.221200Z I (62509) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:45.221210Z I (62519) QUIC: QUIC client initialization completed
+2026-11-17T22:50:47.849704Z I (65189) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:47.849795Z I (65189) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:47.849815Z I (65209) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:47.849827Z 
+2026-11-17T22:50:48.866698Z TEST CYCLE 11 PASS
+2026-11-17T22:50:48.866825Z I (66279) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:48.866838Z I (66279) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:48.866848Z I (66279) QUIC: QUIC client cleanup completed. Free heap: 226128 bytes
+2026-11-17T22:50:50.901111Z TEST CYCLE 12 START mode=2 free_heap=225984
+2026-11-17T22:50:50.901230Z I (68289) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:50.901244Z I (68289) QUIC: init random number generator
+2026-11-17T22:50:50.901254Z I (68289) QUIC: init client ...
+2026-11-17T22:50:50.901263Z I (68299) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:50.901271Z I (68299) QUIC: In client_quic_init
+2026-11-17T22:50:50.901279Z I (68299) QUIC: ===>  INITIAL TS: 67821820000
+2026-11-17T22:50:50.901287Z I (68299) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:50.901296Z I (68309) QUIC: QUIC client initialization completed
+2026-11-17T22:50:53.530748Z I (70929) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:53.530831Z I (70949) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:53.530843Z I (70949) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:53.530851Z 
+2026-11-17T22:50:54.757728Z TEST CYCLE 12 PASS
+2026-11-17T22:50:54.757860Z I (72089) QUIC: Cleaning up QUIC client...
+2026-11-17T22:50:54.757884Z I (72089) QUIC: Freeing QUIC connection...
+2026-11-17T22:50:54.757893Z I (72089) QUIC: QUIC client cleanup completed. Free heap: 225944 bytes
+2026-11-17T22:50:56.782908Z TEST CYCLE 13 START mode=2 free_heap=225944
+2026-11-17T22:50:56.782986Z I (74099) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:50:56.782999Z I (74099) QUIC: init random number generator
+2026-11-17T22:50:56.783009Z I (74099) QUIC: init client ...
+2026-11-17T22:50:56.783018Z I (74109) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:50:56.783027Z I (74109) QUIC: In client_quic_init
+2026-11-17T22:50:56.783035Z I (74109) QUIC: ===>  INITIAL TS: 73631826000
+2026-11-17T22:50:56.783044Z I (74109) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:50:56.783053Z I (74119) QUIC: QUIC client initialization completed
+2026-11-17T22:50:59.415430Z I (76729) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:50:59.415528Z I (76729) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:50:59.415545Z I (76749) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:50:59.415567Z 
+2026-11-17T22:51:00.426930Z TEST CYCLE 13 PASS
+2026-11-17T22:51:00.427036Z I (77849) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:00.427055Z I (77849) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:00.427063Z I (77849) QUIC: QUIC client cleanup completed. Free heap: 225908 bytes
+2026-11-17T22:51:02.446268Z TEST CYCLE 14 START mode=2 free_heap=225908
+2026-11-17T22:51:02.446382Z I (79859) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:02.446394Z I (79859) QUIC: init random number generator
+2026-11-17T22:51:02.446402Z I (79859) QUIC: init client ...
+2026-11-17T22:51:02.446410Z I (79869) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:02.446417Z I (79869) QUIC: In client_quic_init
+2026-11-17T22:51:02.650058Z I (79869) QUIC: ===>  INITIAL TS: 79391848000
+2026-11-17T22:51:02.650174Z I (79869) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:02.650195Z I (79879) QUIC: QUIC client initialization completed
+2026-11-17T22:51:05.290462Z I (82519) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:05.290533Z I (82539) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:05.290544Z I (82549) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:05.290553Z 
+2026-11-17T22:51:06.324380Z TEST CYCLE 14 PASS
+2026-11-17T22:51:06.324482Z I (83669) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:06.324505Z I (83669) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:06.324521Z I (83669) QUIC: QUIC client cleanup completed. Free heap: 225872 bytes
+2026-11-17T22:51:08.358672Z TEST CYCLE 15 START mode=2 free_heap=225872
+2026-11-17T22:51:08.358779Z I (85679) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:08.358793Z I (85679) QUIC: init random number generator
+2026-11-17T22:51:08.358802Z I (85679) QUIC: init client ...
+2026-11-17T22:51:08.358810Z I (85689) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:08.358818Z I (85689) QUIC: In client_quic_init
+2026-11-17T22:51:08.358826Z I (85689) QUIC: ===>  INITIAL TS: 85211849000
+2026-11-17T22:51:08.358835Z I (85689) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:08.358843Z I (85699) QUIC: QUIC client initialization completed
+2026-11-17T22:51:10.991740Z I (88289) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:10.991845Z I (88309) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:10.991857Z I (88309) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:10.991875Z 
+2026-11-17T22:51:12.221126Z TEST CYCLE 15 PASS
+2026-11-17T22:51:12.221228Z I (89489) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:12.221245Z I (89489) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:12.221255Z I (89489) QUIC: QUIC client cleanup completed. Free heap: 225836 bytes
+2026-11-17T22:51:14.260121Z TEST CYCLE 16 START mode=2 free_heap=225836
+2026-11-17T22:51:14.260238Z I (91499) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:14.260250Z I (91499) QUIC: init random number generator
+2026-11-17T22:51:14.260259Z I (91499) QUIC: init client ...
+2026-11-17T22:51:14.260269Z I (91509) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:14.260276Z I (91509) QUIC: In client_quic_init
+2026-11-17T22:51:14.260284Z I (91509) QUIC: ===>  INITIAL TS: 91031823000
+2026-11-17T22:51:14.260293Z I (91509) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:14.260301Z I (91519) QUIC: QUIC client initialization completed
+2026-11-17T22:51:16.905582Z I (94149) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:16.905697Z I (94149) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:16.905777Z I (94169) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:16.905797Z 
+2026-11-17T22:51:17.916701Z TEST CYCLE 16 PASS
+2026-11-17T22:51:17.916817Z I (95259) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:17.916831Z I (95259) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:17.916841Z I (95259) QUIC: QUIC client cleanup completed. Free heap: 225800 bytes
+2026-11-17T22:51:19.947953Z TEST CYCLE 17 START mode=2 free_heap=225800
+2026-11-17T22:51:19.948034Z I (97269) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:19.948046Z I (97269) QUIC: init random number generator
+2026-11-17T22:51:19.948057Z I (97269) QUIC: init client ...
+2026-11-17T22:51:19.948066Z I (97279) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:19.948074Z I (97279) QUIC: In client_quic_init
+2026-11-17T22:51:19.948082Z I (97279) QUIC: ===>  INITIAL TS: 96801856000
+2026-11-17T22:51:19.948091Z I (97279) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:19.948099Z I (97289) QUIC: QUIC client initialization completed
+2026-11-17T22:51:22.585709Z I (99919) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:22.585781Z I (99919) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:22.585792Z I (99939) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:22.585800Z 
+2026-11-17T22:51:23.797088Z TEST CYCLE 17 PASS
+2026-11-17T22:51:23.797178Z I (101079) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:23.797189Z I (101079) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:23.797197Z I (101079) QUIC: QUIC client cleanup completed. Free heap: 225752 bytes
+2026-11-17T22:51:25.829545Z TEST CYCLE 18 START mode=2 free_heap=225752
+2026-11-17T22:51:25.829676Z I (103089) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:25.829695Z I (103089) QUIC: init random number generator
+2026-11-17T22:51:25.829709Z I (103089) QUIC: init client ...
+2026-11-17T22:51:25.829720Z I (103099) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:25.829733Z I (103099) QUIC: In client_quic_init
+2026-11-17T22:51:25.829760Z I (103099) QUIC: ===>  INITIAL TS: 102622281000
+2026-11-17T22:51:25.829784Z I (103099) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:25.829797Z I (103109) QUIC: QUIC client initialization completed
+2026-11-17T22:51:28.461833Z I (105769) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:28.461929Z I (105769) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:28.461947Z I (105789) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:28.461960Z 
+2026-11-17T22:51:29.473666Z TEST CYCLE 18 PASS
+2026-11-17T22:51:29.473763Z I (106879) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:29.473774Z I (106879) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:29.473782Z I (106879) QUIC: QUIC client cleanup completed. Free heap: 225716 bytes
+2026-11-17T22:51:31.497775Z TEST CYCLE 19 START mode=2 free_heap=225716
+2026-11-17T22:51:31.497888Z I (108889) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:31.497902Z I (108889) QUIC: init random number generator
+2026-11-17T22:51:31.497912Z I (108889) QUIC: init client ...
+2026-11-17T22:51:31.497921Z I (108899) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:31.497930Z I (108899) QUIC: In client_quic_init
+2026-11-17T22:51:31.497938Z I (108899) QUIC: ===>  INITIAL TS: 108422262000
+2026-11-17T22:51:31.497956Z I (108899) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:31.497966Z I (108909) QUIC: QUIC client initialization completed
+2026-11-17T22:51:34.134554Z I (111529) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:34.134679Z I (111529) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:34.134696Z I (111539) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:34.134704Z 
+2026-11-17T22:51:35.348190Z TEST CYCLE 19 PASS
+2026-11-17T22:51:35.348276Z I (112639) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:35.348288Z I (112639) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:35.348297Z I (112639) QUIC: QUIC client cleanup completed. Free heap: 225680 bytes
+2026-11-17T22:51:37.365059Z TEST CYCLE 20 START mode=2 free_heap=225680
+2026-11-17T22:51:37.365146Z I (114649) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:37.365159Z I (114649) QUIC: init random number generator
+2026-11-17T22:51:37.365168Z I (114649) QUIC: init client ...
+2026-11-17T22:51:37.365177Z I (114659) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:37.365186Z I (114659) QUIC: In client_quic_init
+2026-11-17T22:51:37.365194Z I (114659) QUIC: ===>  INITIAL TS: 114182296000
+2026-11-17T22:51:37.365202Z I (114659) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:37.365210Z I (114669) QUIC: QUIC client initialization completed
+2026-11-17T22:51:40.009293Z I (117299) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:40.009383Z I (117299) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:40.009395Z I (117319) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:40.009404Z 
+2026-11-17T22:51:41.021244Z TEST CYCLE 20 PASS
+2026-11-17T22:51:41.021352Z I (118409) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:41.021367Z I (118409) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:41.021375Z I (118409) QUIC: QUIC client cleanup completed. Free heap: 225644 bytes
+2026-11-17T22:51:43.051691Z TEST CYCLE 21 START mode=2 free_heap=225644
+2026-11-17T22:51:43.051785Z I (120419) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:43.051797Z I (120419) QUIC: init random number generator
+2026-11-17T22:51:43.051807Z I (120419) QUIC: init client ...
+2026-11-17T22:51:43.051818Z I (120429) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:43.051830Z I (120429) QUIC: In client_quic_init
+2026-11-17T22:51:43.051841Z I (120429) QUIC: ===>  INITIAL TS: 119952287000
+2026-11-17T22:51:43.051853Z I (120429) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:43.051862Z I (120439) QUIC: QUIC client initialization completed
+2026-11-17T22:51:45.682024Z I (123079) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:45.682102Z I (123079) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:45.682113Z I (123099) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:45.682121Z 
+2026-11-17T22:51:46.911628Z TEST CYCLE 21 PASS
+2026-11-17T22:51:46.911706Z I (124219) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:46.911718Z I (124219) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:46.911726Z I (124219) QUIC: QUIC client cleanup completed. Free heap: 225628 bytes
+2026-11-17T22:51:48.948697Z TEST CYCLE 22 START mode=2 free_heap=225628
+2026-11-17T22:51:48.948809Z I (126229) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:48.948822Z I (126229) QUIC: init random number generator
+2026-11-17T22:51:48.948832Z I (126229) QUIC: init client ...
+2026-11-17T22:51:48.948841Z I (126239) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:48.948849Z I (126239) QUIC: In client_quic_init
+2026-11-17T22:51:48.948858Z I (126239) QUIC: ===>  INITIAL TS: 125762276000
+2026-11-17T22:51:48.948866Z I (126239) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:48.948874Z I (126249) QUIC: QUIC client initialization completed
+2026-11-17T22:51:51.581210Z I (128879) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:51.581316Z I (128879) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:51.581334Z I (128899) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:51.581344Z 
+2026-11-17T22:51:52.595140Z TEST CYCLE 22 PASS
+2026-11-17T22:51:52.797510Z I (130029) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:52.797608Z I (130029) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:52.797622Z I (130029) QUIC: QUIC client cleanup completed. Free heap: 225584 bytes
+2026-11-17T22:51:54.618566Z TEST CYCLE 23 START mode=2 free_heap=225584
+2026-11-17T22:51:54.618640Z I (132039) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:51:54.618650Z I (132039) QUIC: init random number generator
+2026-11-17T22:51:54.618658Z I (132039) QUIC: init client ...
+2026-11-17T22:51:54.618666Z I (132049) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:51:54.822632Z I (132049) QUIC: In client_quic_init
+2026-11-17T22:51:54.822717Z I (132049) QUIC: ===>  INITIAL TS: 131572285000
+2026-11-17T22:51:54.822728Z I (132049) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:51:54.822737Z I (132059) QUIC: QUIC client initialization completed
+2026-11-17T22:51:57.260569Z I (134659) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:51:57.260692Z I (134679) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:51:57.260703Z I (134679) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:51:57.260712Z 
+2026-11-17T22:51:58.472406Z TEST CYCLE 23 PASS
+2026-11-17T22:51:58.472498Z I (135819) QUIC: Cleaning up QUIC client...
+2026-11-17T22:51:58.472514Z I (135819) QUIC: Freeing QUIC connection...
+2026-11-17T22:51:58.472524Z I (135819) QUIC: QUIC client cleanup completed. Free heap: 225548 bytes
+2026-11-17T22:52:00.492624Z TEST CYCLE 24 START mode=2 free_heap=225548
+2026-11-17T22:52:00.492745Z I (137829) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:00.492758Z I (137829) QUIC: init random number generator
+2026-11-17T22:52:00.492767Z I (137829) QUIC: init client ...
+2026-11-17T22:52:00.492776Z I (137839) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:00.492792Z I (137839) QUIC: In client_quic_init
+2026-11-17T22:52:00.492802Z I (137839) QUIC: ===>  INITIAL TS: 137362285000
+2026-11-17T22:52:00.492829Z I (137839) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:00.492837Z I (137849) QUIC: QUIC client initialization completed
+2026-11-17T22:52:03.114408Z I (140489) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:03.114497Z I (140509) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:03.114512Z I (140509) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:03.114520Z 
+2026-11-17T22:52:04.341373Z TEST CYCLE 24 PASS
+2026-11-17T22:52:04.341491Z I (141609) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:04.341513Z I (141609) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:04.341530Z I (141609) QUIC: QUIC client cleanup completed. Free heap: 225500 bytes
+2026-11-17T22:52:06.374525Z TEST CYCLE 25 START mode=2 free_heap=225500
+2026-11-17T22:52:06.374606Z I (143619) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:06.374618Z I (143619) QUIC: init random number generator
+2026-11-17T22:52:06.374628Z I (143619) QUIC: init client ...
+2026-11-17T22:52:06.374637Z I (143629) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:06.374645Z I (143629) QUIC: In client_quic_init
+2026-11-17T22:52:06.374652Z I (143629) QUIC: ===>  INITIAL TS: 143152291000
+2026-11-17T22:52:06.374660Z I (143629) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:06.374668Z I (143639) QUIC: QUIC client initialization completed
+2026-11-17T22:52:09.016756Z I (146249) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:09.016887Z I (146249) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:09.016912Z I (146269) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:09.016923Z 
+2026-11-17T22:52:10.027507Z TEST CYCLE 25 PASS
+2026-11-17T22:52:10.027687Z I (147389) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:10.027749Z I (147389) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:10.027771Z I (147389) QUIC: QUIC client cleanup completed. Free heap: 225464 bytes
+2026-11-17T22:52:12.047536Z TEST CYCLE 26 START mode=2 free_heap=225464
+2026-11-17T22:52:12.047670Z I (149399) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:12.047686Z I (149399) QUIC: init random number generator
+2026-11-17T22:52:12.047695Z I (149399) QUIC: init client ...
+2026-11-17T22:52:12.047704Z I (149409) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:12.047712Z I (149409) QUIC: In client_quic_init
+2026-11-17T22:52:12.047720Z I (149409) QUIC: ===>  INITIAL TS: 148932262000
+2026-11-17T22:52:12.047729Z I (149409) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:12.047744Z I (149419) QUIC: QUIC client initialization completed
+2026-11-17T22:52:14.672281Z I (152039) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:14.672373Z I (152039) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:14.672386Z I (152059) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:14.672395Z 
+2026-11-17T22:52:15.886432Z TEST CYCLE 26 PASS
+2026-11-17T22:52:15.886541Z I (153189) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:15.886559Z I (153189) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:15.886571Z I (153189) QUIC: QUIC client cleanup completed. Free heap: 225296 bytes
+2026-11-17T22:52:17.907189Z TEST CYCLE 27 START mode=2 free_heap=225440
+2026-11-17T22:52:17.907314Z I (155199) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:17.907331Z I (155199) QUIC: init random number generator
+2026-11-17T22:52:17.907344Z I (155199) QUIC: init client ...
+2026-11-17T22:52:17.907356Z I (155209) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:17.907365Z I (155209) QUIC: In client_quic_init
+2026-11-17T22:52:17.907374Z I (155209) QUIC: ===>  INITIAL TS: 154732266000
+2026-11-17T22:52:17.907382Z I (155209) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:17.907391Z I (155219) QUIC: QUIC client initialization completed
+2026-11-17T22:52:20.537670Z I (157829) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:20.537834Z I (157839) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:20.537858Z I (157849) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:20.537874Z 
+2026-11-17T22:52:21.548181Z TEST CYCLE 27 PASS
+2026-11-17T22:52:21.548274Z I (158869) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:21.548286Z I (158869) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:21.548294Z I (158869) QUIC: QUIC client cleanup completed. Free heap: 225392 bytes
+2026-11-17T22:52:23.588459Z TEST CYCLE 28 START mode=2 free_heap=225392
+2026-11-17T22:52:23.588568Z I (160879) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:23.588583Z I (160879) QUIC: init random number generator
+2026-11-17T22:52:23.588591Z I (160879) QUIC: init client ...
+2026-11-17T22:52:23.588600Z I (160889) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:23.588607Z I (160889) QUIC: In client_quic_init
+2026-11-17T22:52:23.588615Z I (160889) QUIC: ===>  INITIAL TS: 160412284000
+2026-11-17T22:52:23.588622Z I (160889) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:23.588631Z I (160899) QUIC: QUIC client initialization completed
+2026-11-17T22:52:26.216307Z I (163509) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:26.216429Z I (163529) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:26.216450Z I (163529) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:26.216466Z 
+2026-11-17T22:52:27.241739Z TEST CYCLE 28 PASS
+2026-11-17T22:52:27.443967Z I (164679) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:27.444087Z I (164679) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:27.444121Z I (164679) QUIC: QUIC client cleanup completed. Free heap: 225336 bytes
+2026-11-17T22:52:29.277796Z TEST CYCLE 29 START mode=2 free_heap=225356
+2026-11-17T22:52:29.277936Z I (166689) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:29.277952Z I (166689) QUIC: init random number generator
+2026-11-17T22:52:29.277975Z I (166689) QUIC: init client ...
+2026-11-17T22:52:29.277988Z I (166699) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:29.278019Z I (166699) QUIC: In client_quic_init
+2026-11-17T22:52:29.480863Z I (166699) QUIC: ===>  INITIAL TS: 166222286000
+2026-11-17T22:52:29.480966Z I (166699) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:29.480979Z I (166709) QUIC: QUIC client initialization completed
+2026-11-17T22:52:31.902846Z I (169299) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:31.902966Z I (169309) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:31.902987Z I (169319) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:31.903002Z 
+2026-11-17T22:52:32.911619Z TEST CYCLE 29 PASS
+2026-11-17T22:52:32.911722Z I (170339) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:32.911736Z I (170339) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:33.114537Z I (170339) QUIC: QUIC client cleanup completed. Free heap: 225316 bytes
+2026-11-17T22:52:34.948515Z TEST CYCLE 30 START mode=2 free_heap=225316
+2026-11-17T22:52:34.948655Z I (172349) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T22:52:34.948677Z I (172349) QUIC: init random number generator
+2026-11-17T22:52:34.948693Z I (172349) QUIC: init client ...
+2026-11-17T22:52:34.948713Z I (172359) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T22:52:34.948747Z I (172359) QUIC: In client_quic_init
+2026-11-17T22:52:34.948760Z I (172359) QUIC: ===>  INITIAL TS: 171882276000
+2026-11-17T22:52:34.948772Z I (172359) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T22:52:34.948781Z I (172369) QUIC: QUIC client initialization completed
+2026-11-17T22:52:37.771264Z I (175009) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T22:52:37.771384Z I (175009) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T22:52:37.771405Z I (175029) QUIC: Extending max local streams bidi to 128
+2026-11-17T22:52:37.771419Z 
+2026-11-17T22:52:38.785364Z TEST CYCLE 30 PASS
+2026-11-17T22:52:38.785508Z I (176139) QUIC: Cleaning up QUIC client...
+2026-11-17T22:52:38.785521Z I (176139) QUIC: Freeing QUIC connection...
+2026-11-17T22:52:38.785531Z I (176139) QUIC: QUIC client cleanup completed. Free heap: 225272 bytes
+2026-11-17T22:52:40.807494Z TEST COMPLETE run=fs mode=2 cycles=30 started=30 passed=30 failed=0 init_failed=0 crashed=0 free_heap=225272
+2026-11-17T22:52:40.807600Z CAPTURE_CLOSE reason=test_complete

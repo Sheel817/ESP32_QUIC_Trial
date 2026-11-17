@@ -1,0 +1,15 @@
+{
+  "modified_vs_frozen": [
+    "main/CMakeLists.txt",
+    "main/ngtcp2_sample.c",
+    "main/quic_demo_main.c",
+    "components/ngtcp2/CMakeLists.txt",
+    "components/ngtcp2/ngtcp2/lib/ngtcp2_balloc.c",
+    "components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c",
+    "managed_components/esp-idf-lib__dht/CMakeLists.txt",
+    "CMakeLists.txt"
+  ],
+  "partition": "unchanged (factory 1700K)",
+  "sdkconfig": "identical to frozen sdkconfig (no heap poisoning, no stack check)",
+  "QUIET_MEASUREMENT": 1
+}
