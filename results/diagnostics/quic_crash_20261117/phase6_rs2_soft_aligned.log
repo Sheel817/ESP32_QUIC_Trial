@@ -1,0 +1,1162 @@
+2026-11-17T18:48:59.346766Z CAPTURE_OPEN reset=True
+2026-11-17T18:48:59.497550Z RESET_RELEASED_BY_HOST
+2026-11-17T18:48:59.552423Z ESP-ROM:esp32c6-20220919
+2026-11-17T18:48:59.552512Z Build:Sep 19 2022
+2026-11-17T18:48:59.552536Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-17T18:48:59.552552Z SPIWP:0xee
+2026-11-17T18:48:59.552566Z mode:DIO, clock div:2
+2026-11-17T18:48:59.552580Z load:0x40875730,len:0x1648
+2026-11-17T18:48:59.552593Z load:0x4086b910,len:0xdbc
+2026-11-17T18:48:59.552607Z load:0x4086e610,len:0x31f0
+2026-11-17T18:48:59.552622Z entry 0x4086b91a
+2026-11-17T18:48:59.552779Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-17T18:48:59.552813Z I (24) boot: compile time Nov 17 2026 20:48:04
+2026-11-17T18:48:59.552824Z I (24) boot: chip revision: v0.0
+2026-11-17T18:48:59.552833Z I (24) boot: efuse block revision: v0.2
+2026-11-17T18:48:59.552842Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-17T18:48:59.552850Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-17T18:48:59.597213Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-17T18:48:59.597300Z I (38) boot: Enabling RNG early entropy source...
+2026-11-17T18:48:59.597313Z I (43) boot: Partition Table:
+2026-11-17T18:48:59.597324Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-17T18:48:59.597334Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-17T18:48:59.597343Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-17T18:48:59.597351Z I (65) boot:  2 factory          factory app      00 00 00010000 00280000
+2026-11-17T18:48:59.597359Z I (71) boot: End of partition table
+2026-11-17T18:48:59.800040Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=88288h (557704) map
+2026-11-17T18:48:59.800170Z I (188) esp_image: segment 1: paddr=000982b0 vaddr=40800000 size=07d68h ( 32104) load
+2026-11-17T18:48:59.800191Z I (196) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=13676ch (1271660) map
+2026-11-17T18:49:00.004240Z I (439) esp_image: segment 3: paddr=001d6794 vaddr=40807d68 size=156c8h ( 87752) load
+2026-11-17T18:49:00.004346Z I (464) boot: Loaded app from partition at offset 0x10000
+2026-11-17T18:49:00.004360Z I (465) boot: Disabling RNG early entropy source...
+2026-11-17T18:49:00.004371Z I (475) cpu_start: Unicore app
+2026-11-17T18:49:00.004380Z I (483) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-17T18:49:00.004390Z I (483) cpu_start: Pro cpu start user code
+2026-11-17T18:49:00.004398Z I (484) cpu_start: cpu freq: 160000000 Hz
+2026-11-17T18:49:00.046549Z I (485) app_init: Application information:
+2026-11-17T18:49:00.046619Z I (489) app_init: Project name:     quic_demo
+2026-11-17T18:49:00.046630Z I (493) app_init: App version:      3c8c7a3-dirty-DIAGNOSTIC
+2026-11-17T18:49:00.046638Z I (499) app_init: Compile time:     Nov 17 2026 20:47:07
+2026-11-17T18:49:00.046646Z I (504) app_init: ELF file SHA256:  757f5f960...
+2026-11-17T18:49:00.046654Z I (508) app_init: ESP-IDF:          v6.1
+2026-11-17T18:49:00.046662Z I (512) efuse_init: Min chip rev:     v0.0
+2026-11-17T18:49:00.046670Z I (516) efuse_init: Max chip rev:     v0.99 
+2026-11-17T18:49:00.046677Z I (520) efuse_init: Chip rev:         v0.0
+2026-11-17T18:49:00.046686Z I (523) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-17T18:49:00.103789Z I (530) heap_init: At 40824C00 len 00057A10 (350 KiB): RAM
+2026-11-17T18:49:00.103871Z I (535) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-17T18:49:00.103883Z I (540) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-17T18:49:00.103891Z I (546) spi_flash: detected chip: gd
+2026-11-17T18:49:00.103900Z I (549) spi_flash: flash io: dio
+2026-11-17T18:49:00.103909Z I (552) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-17T18:49:00.103918Z I (558) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-17T18:49:00.103926Z I (565) coexist: coex firmware version: a830d28
+2026-11-17T18:49:00.103935Z I (569) coexist: coexist rom version 5b8dcfa
+2026-11-17T18:49:00.104013Z I (573) main_task: Started on CPU0
+2026-11-17T18:49:00.148009Z I (593) main_task: Calling app_main()
+2026-11-17T18:49:00.148128Z DIAG BANNER DIAGNOSTIC_NOT_FOR_MEASUREMENT mode=2 cycles=30 run=rs2 checkpoints=1
+2026-11-17T18:49:00.148144Z I (593) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-17T18:49:00.148153Z I (593) quic_demo_main: ESP-IDF version: v6.1
+2026-11-17T18:49:00.148163Z I (613) example_connect: Start example_connect.
+2026-11-17T18:49:00.148173Z I (613) pp: pp rom version: 5b8dcfa
+2026-11-17T18:49:00.148181Z I (613) net80211: net80211 rom version: 5b8dcfa
+2026-11-17T18:49:00.148189Z I (623) wifi:wifi driver task: 4087f328, prio:23, stack:6656, core=0
+2026-11-17T18:49:00.148198Z I (623) wifi:wifi firmware version: e12a754
+2026-11-17T18:49:00.148206Z I (623) wifi:wifi certification version: v7.0
+2026-11-17T18:49:00.192598Z I (623) wifi:config NVS flash: enabled
+2026-11-17T18:49:00.192679Z I (633) wifi:config nano formatting: disabled
+2026-11-17T18:49:00.192691Z I (633) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-17T18:49:00.192700Z I (643) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-17T18:49:00.192711Z I (643) wifi:Init static rx mgmt buffer num: 5
+2026-11-17T18:49:00.192720Z I (643) wifi:Init management short buffer num: 32
+2026-11-17T18:49:00.192728Z I (653) wifi:Init dynamic tx buffer num: 32
+2026-11-17T18:49:00.192737Z I (653) wifi:Init static tx FG buffer num: 2
+2026-11-17T18:49:00.192745Z I (663) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-17T18:49:00.192754Z I (663) wifi:Init static rx buffer num: 10
+2026-11-17T18:49:00.235255Z I (673) wifi:Init dynamic rx buffer num: 32
+2026-11-17T18:49:00.235380Z I (673) wifi_init: rx ba win: 6
+2026-11-17T18:49:00.235403Z I (673) wifi_init: accept mbox: 6
+2026-11-17T18:49:00.235419Z I (683) wifi_init: tcpip mbox: 32
+2026-11-17T18:49:00.235434Z I (683) wifi_init: udp mbox: 6
+2026-11-17T18:49:00.235449Z I (683) wifi_init: tcp mbox: 6
+2026-11-17T18:49:00.235462Z I (693) wifi_init: tcp tx win: 5760
+2026-11-17T18:49:00.235474Z I (693) wifi_init: tcp rx win: 5760
+2026-11-17T18:49:00.235487Z I (693) wifi_init: tcp mss: 1440
+2026-11-17T18:49:00.235498Z I (693) wifi_init: WiFi IRAM OP enabled
+2026-11-17T18:49:00.235509Z I (703) wifi_init: WiFi RX IRAM OP enabled
+2026-11-17T18:49:00.235520Z I (703) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-17T18:49:00.439050Z I (713) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-17T18:49:00.439173Z I (763) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-17T18:49:00.439187Z 
+2026-11-17T18:49:00.439198Z I (763) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-17T18:49:00.439207Z I (763) wifi:enable tsf
+2026-11-17T18:49:00.439216Z I (773) example_connect: Connecting to <SSID_MASKED>...
+2026-11-17T18:49:00.439224Z W (773) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-17T18:49:00.439232Z I (783) example_connect: Waiting for IP(s)
+2026-11-17T18:49:02.852131Z I (3303) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-17T18:49:02.852204Z I (3303) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-17T18:49:02.852216Z I (3303) wifi:state: init -> auth (0xb0)
+2026-11-17T18:49:02.852226Z I (3313) wifi:state: auth -> assoc (0x0)
+2026-11-17T18:49:02.852234Z I (3313) wifi:state: assoc -> run (0x10)
+2026-11-17T18:49:02.852242Z I (3313) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:144, highestRateIdx:0
+2026-11-17T18:49:02.852250Z W (3323) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-17T18:49:02.896630Z I (3333) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational
+2026-11-17T18:49:02.896700Z I (3343) wifi:ifidx:0, rssi:-31, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-17T18:49:02.896712Z I (3353) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-17T18:49:02.896774Z I (3373) wifi:connected with <SSID_MASKED>, aid = 5, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-17T18:49:02.896789Z I (3373) wifi:security: WPA2-PSK, phy: bgn, rssi: -31, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-17T18:49:02.940891Z I (3373) wifi:pm start, type: 1, twt_start:0
+2026-11-17T18:49:02.940957Z 
+2026-11-17T18:49:02.940968Z I (3383) wifi:pm start, type:1, aid:0x5, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-17T18:49:02.940977Z I (3393) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-17T18:49:02.940986Z I (3393) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-17T18:49:02.940994Z I (3403) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-17T18:49:02.985461Z I (3413) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-17T18:49:02.985581Z I (3423) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-17T18:49:02.985599Z I (3443) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T18:49:02.985614Z I (3443) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T18:49:02.985627Z I (3453) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-17T18:49:03.195049Z I (3473) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-17T18:49:03.195149Z W (3483) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-17T18:49:04.012540Z I (4483) esp_netif_handlers: example_netif_sta ip: 192.168.137.46, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-17T18:49:04.012665Z I (4483) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.46
+2026-11-17T18:49:04.151034Z I (4603) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-17T18:49:04.151118Z I (4603) example_common: Connected to example_netif_sta
+2026-11-17T18:49:04.151139Z I (4603) example_common: - IPv4 address: 192.168.137.46,
+2026-11-17T18:49:04.151148Z I (4613) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-17T18:49:04.151157Z I (4623) quic_demo_main: Wi-Fi connected
+2026-11-17T18:49:04.151165Z DIAG HEAP after_wifi_connected free=311692 min_free=308756 largest_block=294900
+2026-11-17T18:49:04.195554Z I (4633) wifi:Set ps type: 0, coexist: 0
+2026-11-17T18:49:04.195622Z 
+2026-11-17T18:49:04.195634Z I (4633) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-17T18:49:04.195644Z DIAG RESUME run=rs2 mode=2 started=0 passed=0 failed=0 crashed_so_far=0
+2026-11-17T18:49:04.195653Z DIAG CYCLE 1 START mode=2
+2026-11-17T18:49:04.195662Z DIAG HEAP cycle_start free=282776 min_free=282740 largest_block=262132
+2026-11-17T18:49:04.195670Z I (4663) QUIC: QUIC mutex created successfully
+2026-11-17T18:49:04.195678Z I (4663) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:04.195686Z I (4673) QUIC: init random number generator
+2026-11-17T18:49:04.311784Z I (4673) QUIC: init client ...
+2026-11-17T18:49:04.311849Z DIAG CP 1 client_init_start ok
+2026-11-17T18:49:04.311871Z DIAG CP 2 after_create_sock ok
+2026-11-17T18:49:04.311882Z DIAG CP 3 after_connect_sock ok
+2026-11-17T18:49:04.311890Z DIAG CP 4 after_SSL_CTX_new ok
+2026-11-17T18:49:04.311898Z DIAG CP 5 after_configure_client_context ok
+2026-11-17T18:49:04.311908Z DIAG CP 6 after_UseSNI_set_verify ok
+2026-11-17T18:49:04.311916Z DIAG CP 7 after_SSL_new ok
+2026-11-17T18:49:04.311924Z DIAG CP 8 after_set_connect_state ok
+2026-11-17T18:49:04.311932Z I (4773) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:04.311946Z DIAG CP 9 after_set_alpn ok
+2026-11-17T18:49:04.311957Z DIAG CP 10 after_client_ssl_init ok
+2026-11-17T18:49:04.311965Z I (4783) QUIC: In client_quic_init
+2026-11-17T18:49:04.311972Z I (4793) QUIC: ===>  INITIAL TS: 4248511000
+2026-11-17T18:49:04.524305Z DIAG CP 11 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:04.524410Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:04.524426Z DIAG CP 12 after_client_available_versions_init ok
+2026-11-17T18:49:04.524436Z DIAG CP 13 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:04.524445Z DIAG CP 14 after_client_quic_init ok
+2026-11-17T18:49:04.524453Z I (4823) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-17T18:49:04.524462Z I (4833) QUIC: QUIC client initialization completed
+2026-11-17T18:49:04.524470Z DIAG CP 15 after_client_read ok
+2026-11-17T18:49:04.524480Z DIAG CP 16 before_writev_stream ok
+2026-11-17T18:49:04.524493Z DIAG CP 17 before_quic_do_handshake ok
+2026-11-17T18:49:05.126535Z DIAG CP 18 after_quic_do_handshake ok
+2026-11-17T18:49:05.126672Z DIAG CP 19 after_writev_stream ok
+2026-11-17T18:49:05.330732Z DIAG CP 20 before_writev_stream ok
+2026-11-17T18:49:05.330823Z DIAG CP 21 after_handshake_pkt_built ok
+2026-11-17T18:49:05.330835Z DIAG CP 22 after_writev_stream ok
+2026-11-17T18:49:05.330843Z DIAG CP 23 before_provide_quic_data ok
+2026-11-17T18:49:05.330851Z DIAG CP 24 after_provide_quic_data ok
+2026-11-17T18:49:05.330861Z DIAG CP 25 before_quic_do_handshake ok
+2026-11-17T18:49:06.543282Z DIAG CP 26 after_quic_do_handshake ok
+2026-11-17T18:49:06.543394Z DIAG CP 27 before_provide_quic_data ok
+2026-11-17T18:49:06.543407Z DIAG CP 28 after_provide_quic_data ok
+2026-11-17T18:49:06.543416Z DIAG CP 29 before_quic_do_handshake ok
+2026-11-17T18:49:09.169236Z E (9593) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:09.169383Z E (9593) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:09.169404Z E (9593) task_wdt: Tasks currently running:
+2026-11-17T18:49:09.169422Z E (9593) task_wdt: CPU 0: esp_timer
+2026-11-17T18:49:09.169436Z E (9593) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:09.364244Z Backtrace: 0x4080219c:0x40826720 0x42010076:0x40826720 0x4209d828:0x40826740 0x4209d934:0x40826770 0x42133e32:0x40826780
+2026-11-17T18:49:09.364316Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:09.364327Z 
+2026-11-17T18:49:09.364336Z DIAG CP 30 after_quic_do_handshake ok
+2026-11-17T18:49:09.364344Z I (9833) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:09.364352Z I (9833) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:09.528837Z DIAG HEAP after_quic_handshake free=154288 min_free=133108 largest_block=131060
+2026-11-17T18:49:09.528907Z I (9853) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:09.528918Z 
+2026-11-17T18:49:09.528927Z DIAG CP 31 after_client_read ok
+2026-11-17T18:49:09.528936Z DIAG CP 32 before_writev_stream ok
+2026-11-17T18:49:09.528944Z DIAG CP 33 after_handshake_pkt_built ok
+2026-11-17T18:49:09.528952Z DIAG CP 34 discard_pktns_entry ok
+2026-11-17T18:49:09.528960Z DIAG CP 35 discard_before_pktns_del ok
+2026-11-17T18:49:09.528967Z DIAG CP 36 pktns_del_before_pktns_free ok
+2026-11-17T18:49:09.528975Z DIAG CP 37 pktns_del_before_final_free ok
+2026-11-17T18:49:09.528985Z DIAG CP 38 discard_after_pktns_del ok
+2026-11-17T18:49:09.528992Z DIAG CP 39 after_writev_stream ok
+2026-11-17T18:49:09.529000Z DIAG CP 40 before_writev_stream ok
+2026-11-17T18:49:09.529007Z DIAG CP 41 after_writev_stream ok
+2026-11-17T18:49:09.604079Z DIAG CP 42 before_writev_stream ok
+2026-11-17T18:49:09.604144Z DIAG CP 43 after_handshake_pkt_built ok
+2026-11-17T18:49:09.604156Z DIAG CP 44 after_writev_stream ok
+2026-11-17T18:49:09.604166Z DIAG HEAP cycle_after_handshake free=158528 min_free=133108 largest_block=131060
+2026-11-17T18:49:09.604175Z DIAG STACK cycle_after_handshake task=quic_dhtDIAG CP 45 discard_pktns_entry ok
+2026-11-17T18:49:09.604225Z 11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:09.604239Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31936
+2026-11-17T18:49:09.604248Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12940
+2026-11-17T18:49:09.604255Z DIAG STACK cyclDIAG CP 46 discard_before_pktns_del ok
+2026-11-17T18:49:09.819401Z e_after_handshake task=main high_water_mark_bytes_free=2520
+2026-11-17T18:49:09.819554Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:09.819574Z DIAG CP 47 pktns_del_before_pktns_free ok
+2026-11-17T18:49:09.819611Z DIAG CP 48 pktns_del_before_final_free ok
+2026-11-17T18:49:09.819622Z DIAG CP 49 discard_after_pktns_del ok
+2026-11-17T18:49:09.819631Z I (10123) main_task: Returned from app_main()
+2026-11-17T18:49:10.650465Z DIAG CYCLE 1 PASS
+2026-11-17T18:49:10.650753Z I (11093) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:10.650777Z I (11093) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:10.650788Z I (11093) QUIC: QUIC client cleanup completed. Free heap: 218972 bytes
+2026-11-17T18:49:12.690132Z DIAG CYCLE 2 START mode=2
+2026-11-17T18:49:12.690248Z DIAG HEAP cycle_start free=219164 min_free=133108 largest_block=151540
+2026-11-17T18:49:12.690267Z I (13103) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:12.690277Z I (13103) QUIC: init random number generator
+2026-11-17T18:49:12.690286Z I (13103) QUIC: init client ...
+2026-11-17T18:49:12.690295Z DIAG CP 50 client_init_start ok
+2026-11-17T18:49:12.690304Z DIAG CP 51 after_create_sock ok
+2026-11-17T18:49:12.690313Z DIAG CP 52 after_connect_sock ok
+2026-11-17T18:49:12.690321Z DIAG CP 53 after_SSL_CTX_new ok
+2026-11-17T18:49:12.690329Z DIAG CP 54 after_configure_client_context ok
+2026-11-17T18:49:12.690337Z DIAG CP 55 after_UseSNI_set_verify ok
+2026-11-17T18:49:12.690347Z DIAG CP 56 after_SSL_new ok
+2026-11-17T18:49:12.756836Z DIAG CP 57 after_set_connect_state ok
+2026-11-17T18:49:12.756987Z I (13183) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:12.757000Z DIAG CP 58 after_set_alpn ok
+2026-11-17T18:49:12.757011Z DIAG CP 59 after_client_ssl_init ok
+2026-11-17T18:49:12.757020Z I (13203) QUIC: In client_quic_init
+2026-11-17T18:49:12.757032Z I (13203) QUIC: ===>  INITIAL TS: 12664060000
+2026-11-17T18:49:12.757040Z DIAG CP 60 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:12.757049Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 0 7644 7640
+2026-11-17T18:49:12.757058Z DIAG CP 61 after_client_available_versions_init ok
+2026-11-17T18:49:12.757067Z DIAG CP 62 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:12.757074Z DIAG CP 63 after_client_quic_init ok
+2026-11-17T18:49:12.970284Z I (13243) ESP_EV_COMPAT: Starting IO watcher for fd 55
+2026-11-17T18:49:12.970384Z I (13243) QUIC: QUIC client initialization completed
+2026-11-17T18:49:12.970395Z DIAG CP 64 after_client_read ok
+2026-11-17T18:49:12.970410Z DIAG CP 65 before_writev_stream ok
+2026-11-17T18:49:12.970430Z DIAG CP 66 before_quic_do_handshake ok
+2026-11-17T18:49:13.591376Z DIAG CP 67 after_quic_do_handshake ok
+2026-11-17T18:49:13.591472Z DIAG CP 68 after_writev_stream ok
+2026-11-17T18:49:13.591489Z DIAG CP 69 before_writev_stream ok
+2026-11-17T18:49:13.591499Z DIAG CP 70 after_handshake_pkt_built ok
+2026-11-17T18:49:13.591507Z DIAG CP 71 after_writev_stream ok
+2026-11-17T18:49:13.807062Z DIAG CP 72 before_provide_quic_data ok
+2026-11-17T18:49:13.807156Z DIAG CP 73 after_provide_quic_data ok
+2026-11-17T18:49:13.807169Z DIAG CP 74 before_quic_do_handshake ok
+2026-11-17T18:49:15.045233Z DIAG CP 75 after_quic_do_handshake ok
+2026-11-17T18:49:15.045370Z DIAG CP 76 before_provide_quic_data ok
+2026-11-17T18:49:15.045382Z DIAG CP 77 after_provide_quic_data ok
+2026-11-17T18:49:15.045391Z DIAG CP 78 before_quic_do_handshake ok
+2026-11-17T18:49:17.672414Z E (18093) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:17.672555Z E (18093) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:17.672611Z E (18093) task_wdt: Tasks currently running:
+2026-11-17T18:49:17.672633Z E (18093) task_wdt: CPU 0: io_monitor
+2026-11-17T18:49:17.672649Z E (18093) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:17.672664Z Backtrace: 0x408020c6:0x408521f0 0x408021e2:0x40852210 0x42011558:0x40852220 0x42011a72:0x40852240 0x42014406:0x40852280 0x42133e32:0x408522c0
+2026-11-17T18:49:17.672688Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:17.672720Z 
+2026-11-17T18:49:17.789969Z DIAG CP 79 after_quic_do_handshake ok
+2026-11-17T18:49:17.790043Z I (18243) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:17.790055Z I (18243) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:17.790065Z DIAG HEAP after_quic_handshake free=158340 min_free=133108 largest_block=135156
+2026-11-17T18:49:17.790073Z I (18263) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:17.790081Z 
+2026-11-17T18:49:17.790089Z DIAG HEAP cycle_after_handshake free=159640 min_free=133108 largest_block=135156
+2026-11-17T18:49:17.999454Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:17.999591Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31936
+2026-11-17T18:49:17.999617Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:49:17.999631Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:19.020958Z DIAG CYCLE 2 PASS
+2026-11-17T18:49:19.021058Z I (19313) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:19.021071Z I (19313) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:19.021080Z DIAG CP 80 pktns_del_before_pktns_free ok
+2026-11-17T18:49:19.021088Z DIAG CP 81 pktns_del_before_final_free ok
+2026-11-17T18:49:19.021096Z DIAG CP 82 pktns_del_before_pktns_free ok
+2026-11-17T18:49:19.021104Z DIAG CP 83 pktns_del_before_final_free ok
+2026-11-17T18:49:19.021112Z I (19343) QUIC: QUIC client cleanup completed. Free heap: 216868 bytes
+2026-11-17T18:49:20.948202Z DIAG CYCLE 3 START mode=2
+2026-11-17T18:49:20.948334Z DIAG HEAP cycle_start free=216868 min_free=133108 largest_block=151540
+2026-11-17T18:49:20.948357Z I (21353) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:20.948378Z I (21353) QUIC: init random number generator
+2026-11-17T18:49:20.948387Z I (21353) QUIC: init client ...
+2026-11-17T18:49:20.948397Z DIAG CP 84 client_init_start ok
+2026-11-17T18:49:20.948405Z DIAG CP 85 after_create_sock ok
+2026-11-17T18:49:20.948413Z DIAG CP 86 after_connect_sock ok
+2026-11-17T18:49:20.948420Z DIAG CP 87 after_SSL_CTX_new ok
+2026-11-17T18:49:20.948430Z DIAG CP 88 after_configure_client_context ok
+2026-11-17T18:49:20.948437Z DIAG CP 89 after_UseSNI_set_verify ok
+2026-11-17T18:49:20.948446Z DIAG CP 90 after_SSL_new ok
+2026-11-17T18:49:21.005476Z DIAG CP 91 after_set_connect_state ok
+2026-11-17T18:49:21.005545Z I (21433) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:21.005556Z DIAG CP 92 after_set_alpn ok
+2026-11-17T18:49:21.005565Z DIAG CP 93 after_client_ssl_init ok
+2026-11-17T18:49:21.005574Z I (21453) QUIC: In client_quic_init
+2026-11-17T18:49:21.005582Z I (21453) QUIC: ===>  INITIAL TS: 20913096000
+2026-11-17T18:49:21.005590Z DIAG CP 94 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:21.005598Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:21.005607Z DIAG CP 95 after_client_available_versions_init ok
+2026-11-17T18:49:21.005615Z DIAG CP 96 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:21.005622Z DIAG CP 97 after_client_quic_init ok
+2026-11-17T18:49:21.214405Z I (21483) ESP_EV_COMPAT: Starting IO watcher for fd 56
+2026-11-17T18:49:21.214522Z I (21483) QUIC: QUIC client initialization completed
+2026-11-17T18:49:21.214535Z DIAG CP 98 after_client_read ok
+2026-11-17T18:49:21.214544Z DIAG CP 99 before_writev_stream ok
+2026-11-17T18:49:21.214560Z DIAG CP 100 before_quic_do_handshake ok
+2026-11-17T18:49:21.832629Z DIAG CP 101 after_quic_do_handshake ok
+2026-11-17T18:49:21.832746Z DIAG CP 102 after_writev_stream ok
+2026-11-17T18:49:21.832760Z DIAG CP 103 before_writev_stream ok
+2026-11-17T18:49:21.832769Z DIAG CP 104 after_handshake_pkt_built ok
+2026-11-17T18:49:21.832777Z DIAG CP 105 after_writev_stream ok
+2026-11-17T18:49:22.048102Z DIAG CP 106 before_provide_quic_data ok
+2026-11-17T18:49:22.048216Z DIAG CP 107 after_provide_quic_data ok
+2026-11-17T18:49:22.048237Z DIAG CP 108 before_quic_do_handshake ok
+2026-11-17T18:49:23.275303Z DIAG CP 109 after_quic_do_handshake ok
+2026-11-17T18:49:23.275460Z DIAG CP 110 before_provide_quic_data ok
+2026-11-17T18:49:23.275482Z DIAG CP 111 after_provide_quic_data ok
+2026-11-17T18:49:23.275516Z DIAG CP 112 before_quic_do_handshake ok
+2026-11-17T18:49:25.890218Z E (26343) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:25.890294Z E (26343) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:25.890306Z E (26343) task_wdt: Tasks currently running:
+2026-11-17T18:49:25.890315Z E (26343) task_wdt: CPU 0: ev_esp_loop
+2026-11-17T18:49:25.890324Z E (26343) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:25.998790Z Backtrace: 0x40800ed2:0x4083e910 0x42078912:0x4083e930 0x42078a1c:0x4083e950 0x42078ad6:0x4083e970 0x420417f8:0x4083e980 0x4204341c:0x4083e990 0x4203f038:0x4083e9a0 0x420396aa:0x4083e9d0 0x42038694:0x4083e9e0 0x4203886a:0x4083eb20 0x42038c5c:0x4083eb60 0x420398ea:0x4083ec90 0x4203ed0a:0x4083ecb0 0x42052d7c:0x4083ecd0 0x42056c90:0x4083ed00 0x42056eb2:0x4083ed30 0x42093b7a:0x4083ed60 0x42093dd2:0x4083ed90 0x42093de2:0x4083eda0 0x42057122:0x4083edb0 0x42044e30:0x4083edc0 0x42046fec:0x4083edd0 0x4203ea14:0x4083ede0 0x420399cc:0x4083edf0 0x420393a0:0x4083ee10 0x42015e52:0x4083ee20 0x42017c06:0x4083ee30 0x42025d14:0x4083ee60 0x4202608a:0x4083f170 0x420262ac:0x4083f1c0 0x4202684e:0x4083f200 0x42012f76:0x4083f240 0x42013080:0x408432c0 0x420140b8:0x408432d0 0x42130246:0x408432e0 0x42130b94:0x408432f0 0x42130c90:0x40843350 0x42133e32:0x40843360
+2026-11-17T18:49:25.998859Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:25.998885Z 
+2026-11-17T18:49:25.998896Z DIAG CP 113 after_quic_do_handshake ok
+2026-11-17T18:49:25.998905Z I (26463) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:25.998914Z I (26463) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:26.180633Z DIAG HEAP after_quic_handshake free=156044 min_free=133108 largest_block=135156
+2026-11-17T18:49:26.180698Z I (26483) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:26.180710Z 
+2026-11-17T18:49:26.180720Z DIAG CP 114 after_client_read ok
+2026-11-17T18:49:26.180729Z DIAG CP 115 before_writev_stream ok
+2026-11-17T18:49:26.180736Z DIAG CP 116 after_handshake_pkt_built ok
+2026-11-17T18:49:26.180745Z DIAG CP 117 discard_pktns_entry ok
+2026-11-17T18:49:26.180752Z DIAG CP 118 discard_before_pktns_del ok
+2026-11-17T18:49:26.180760Z DIAG CP 119 pktns_del_before_pktns_free ok
+2026-11-17T18:49:26.180768Z DIAG CP 120 pktns_del_before_final_free ok
+2026-11-17T18:49:26.180776Z DIAG CP 121 discard_after_pktns_del ok
+2026-11-17T18:49:26.180783Z DIAG CP 122 after_writev_stream ok
+2026-11-17T18:49:26.180791Z DIAG CP 123 before_writev_stream ok
+2026-11-17T18:49:26.180799Z DIAG CP 124 after_writev_stream ok
+2026-11-17T18:49:26.241452Z DIAG CP 125 before_writev_stream ok
+2026-11-17T18:49:26.241517Z DIAG CP 126 after_handshake_pkt_built ok
+2026-11-17T18:49:26.241528Z DIAG CP 127 after_writev_stream ok
+2026-11-17T18:49:26.241537Z DIAG HEAP cycle_after_handshake free=160388 min_free=133108 largest_block=135156
+2026-11-17T18:49:26.241545Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:26.241554Z DIAG STACK cycle_after_handshake task=io_moDIAG CP 128 discard_pktns_entry ok
+2026-11-17T18:49:26.241568Z nitor high_water_mark_bytes_free=31936
+2026-11-17T18:49:26.241579Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:49:26.446808Z DIAG STACK cycle_after_handshakDIAG CP 129 discard_before_pktns_del ok
+2026-11-17T18:49:26.446914Z e task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:26.446928Z DIAG CP 130 pktns_del_before_pktns_free ok
+2026-11-17T18:49:26.446938Z DIAG CP 131 pktns_del_before_final_free ok
+2026-11-17T18:49:26.446946Z DIAG CP 132 discard_after_pktns_del ok
+2026-11-17T18:49:27.258286Z DIAG CYCLE 3 PASS
+2026-11-17T18:49:27.258417Z I (27743) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:27.258442Z I (27743) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:27.458870Z I (27743) QUIC: QUIC client cleanup completed. Free heap: 216336 bytes
+2026-11-17T18:49:29.286175Z DIAG CYCLE 4 START mode=2
+2026-11-17T18:49:29.286273Z DIAG HEAP cycle_start free=216528 min_free=133108 largest_block=151540
+2026-11-17T18:49:29.286285Z I (29753) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:29.286293Z I (29753) QUIC: init random number generator
+2026-11-17T18:49:29.286300Z I (29753) QUIC: init client ...
+2026-11-17T18:49:29.286308Z DIAG CP 133 client_init_start ok
+2026-11-17T18:49:29.376131Z DIAG CP 134 after_create_sock ok
+2026-11-17T18:49:29.376201Z DIAG CP 135 after_connect_sock ok
+2026-11-17T18:49:29.376212Z DIAG CP 136 after_SSL_CTX_new ok
+2026-11-17T18:49:29.376220Z DIAG CP 137 after_configure_client_context ok
+2026-11-17T18:49:29.376229Z DIAG CP 138 after_UseSNI_set_verify ok
+2026-11-17T18:49:29.376237Z DIAG CP 139 after_SSL_new ok
+2026-11-17T18:49:29.376246Z DIAG CP 140 after_set_connect_state ok
+2026-11-17T18:49:29.376253Z I (29833) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:29.376260Z DIAG CP 141 after_set_alpn ok
+2026-11-17T18:49:29.376268Z DIAG CP 142 after_client_ssl_init ok
+2026-11-17T18:49:29.376275Z I (29853) QUIC: In client_quic_init
+2026-11-17T18:49:29.376283Z I (29853) QUIC: ===>  INITIAL TS: 29313136000
+2026-11-17T18:49:29.376290Z DIAG CP 143 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:29.582456Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:29.582605Z DIAG CP 144 after_client_available_versions_init ok
+2026-11-17T18:49:29.582630Z DIAG CP 145 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:29.582641Z DIAG CP 146 after_client_quic_init ok
+2026-11-17T18:49:29.582649Z I (29883) ESP_EV_COMPAT: Starting IO watcher for fd 57
+2026-11-17T18:49:29.582657Z I (29883) QUIC: QUIC client initialization completed
+2026-11-17T18:49:29.582665Z DIAG CP 147 after_client_read ok
+2026-11-17T18:49:29.582672Z DIAG CP 148 before_writev_stream ok
+2026-11-17T18:49:29.582680Z DIAG CP 149 before_quic_do_handshake ok
+2026-11-17T18:49:30.190684Z DIAG CP 150 after_quic_do_handshake ok
+2026-11-17T18:49:30.190767Z DIAG CP 151 after_writev_stream ok
+2026-11-17T18:49:30.190778Z DIAG CP 152 before_writev_stream ok
+2026-11-17T18:49:30.392262Z DIAG CP 153 after_handshake_pkt_built ok
+2026-11-17T18:49:30.392390Z DIAG CP 154 after_writev_stream ok
+2026-11-17T18:49:30.392409Z DIAG CP 155 before_provide_quic_data ok
+2026-11-17T18:49:30.392421Z DIAG CP 156 after_provide_quic_data ok
+2026-11-17T18:49:30.392433Z DIAG CP 157 before_quic_do_handshake ok
+2026-11-17T18:49:31.620373Z DIAG CP 158 after_quic_do_handshake ok
+2026-11-17T18:49:31.620495Z DIAG CP 159 before_provide_quic_data ok
+2026-11-17T18:49:31.620520Z DIAG CP 160 after_provide_quic_data ok
+2026-11-17T18:49:31.620529Z DIAG CP 161 before_quic_do_handshake ok
+2026-11-17T18:49:34.290106Z E (34743) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:34.290183Z E (34743) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:34.290196Z E (34743) task_wdt: Tasks currently running:
+2026-11-17T18:49:34.290204Z E (34743) task_wdt: CPU 0: io_monitor
+2026-11-17T18:49:34.290213Z E (34743) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:34.290221Z Backtrace: 0x408094f8:0x408521a0 0x40809586:0x408521a0 0x4213479a:0x408521b0 0x4080210c:0x408521f0 0x408021e2:0x40852210 0x42011558:0x40852220 0x42011a72:0x40852240 0x42014406:0x40852280 0x42133e32:0x408522c0
+2026-11-17T18:49:34.366134Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:34.366197Z 
+2026-11-17T18:49:34.366209Z DIAG CP 162 after_quic_do_handshake ok
+2026-11-17T18:49:34.366219Z I (34793) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:34.366228Z I (34803) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:34.366237Z DIAG HEAP after_quic_handshake free=155848 min_free=133108 largest_block=135156
+2026-11-17T18:49:34.366245Z I (34813) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:34.366253Z 
+2026-11-17T18:49:34.366260Z DIAG CP 163 after_client_read ok
+2026-11-17T18:49:34.516547Z DIAG CP 164 before_writev_stream ok
+2026-11-17T18:49:34.516616Z DIAG CP 165 after_handshake_pkt_built ok
+2026-11-17T18:49:34.516627Z DIAG CP 166 discard_pktns_entry ok
+2026-11-17T18:49:34.516637Z DIAG CP 167 discard_before_pktns_del ok
+2026-11-17T18:49:34.516645Z DIAG CP 168 pktns_del_before_pktns_free ok
+2026-11-17T18:49:34.516653Z DIAG CP 169 pktns_del_before_final_free ok
+2026-11-17T18:49:34.516660Z DIAG CP 170 discard_after_pktns_del ok
+2026-11-17T18:49:34.516668Z DIAG CP 171 after_writev_stream ok
+2026-11-17T18:49:34.516676Z DIAG CP 172 before_writev_stream ok
+2026-11-17T18:49:34.516684Z DIAG CP 173 after_writev_stream ok
+2026-11-17T18:49:34.516691Z DIAG CP 174 before_writev_stream ok
+2026-11-17T18:49:34.516699Z DIAG CP 175 after_handshake_pkt_built ok
+2026-11-17T18:49:34.516706Z DIAG CP 176 after_writev_stream ok
+2026-11-17T18:49:34.591131Z DIAG HEAP cycle_after_handshake free=162368 min_free=133108 largest_block=135156
+2026-11-17T18:49:34.591218Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:34.591231Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:49:34.591241Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:49:34.591249Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:34.591257Z DIAG CP 177 discard_pktns_entry ok
+2026-11-17T18:49:34.591264Z DIAG CP 178 discard_before_pktns_del ok
+2026-11-17T18:49:34.591272Z DIAG CP 179 pktns_del_before_pktns_free ok
+2026-11-17T18:49:34.804339Z DIAG CP 180 pktns_del_before_final_free ok
+2026-11-17T18:49:34.804467Z DIAG CP 181 discard_after_pktns_del ok
+2026-11-17T18:49:35.613180Z DIAG CYCLE 4 PASS
+2026-11-17T18:49:35.613275Z I (36053) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:35.613288Z I (36053) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:35.613297Z I (36053) QUIC: QUIC client cleanup completed. Free heap: 214036 bytes
+2026-11-17T18:49:37.656836Z DIAG CYCLE 5 START mode=2
+2026-11-17T18:49:37.656907Z DIAG HEAP cycle_start free=212260 min_free=133108 largest_block=147444
+2026-11-17T18:49:37.656919Z I (38063) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:37.656928Z I (38063) QUIC: init random number generator
+2026-11-17T18:49:37.656936Z I (38063) QUIC: init client ...
+2026-11-17T18:49:37.656944Z DIAG CP 182 client_init_start ok
+2026-11-17T18:49:37.656952Z DIAG CP 183 after_create_sock ok
+2026-11-17T18:49:37.656959Z DIAG CP 184 after_connect_sock ok
+2026-11-17T18:49:37.656966Z DIAG CP 185 after_SSL_CTX_new ok
+2026-11-17T18:49:37.656974Z DIAG CP 186 after_configure_client_context ok
+2026-11-17T18:49:37.656982Z DIAG CP 187 after_UseSNI_set_verify ok
+2026-11-17T18:49:37.656989Z DIAG CP 188 after_SSL_new ok
+2026-11-17T18:49:37.713558Z DIAG CP 189 after_set_connect_state ok
+2026-11-17T18:49:37.713658Z I (38143) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:37.713670Z DIAG CP 190 after_set_alpn ok
+2026-11-17T18:49:37.713689Z DIAG CP 191 after_client_ssl_init ok
+2026-11-17T18:49:37.713697Z I (38163) QUIC: In client_quic_init
+2026-11-17T18:49:37.713714Z I (38163) QUIC: ===>  INITIAL TS: 37621732000
+2026-11-17T18:49:37.713727Z DIAG CP 192 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:37.713755Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:37.713763Z DIAG CP 193 after_client_available_versions_init ok
+2026-11-17T18:49:37.713777Z DIAG CP 194 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:37.713785Z DIAG CP 195 after_client_quic_init ok
+2026-11-17T18:49:37.914909Z I (38193) ESP_EV_COMPAT: Starting IO watcher for fd 58
+2026-11-17T18:49:37.915035Z I (38193) QUIC: QUIC client initialization completed
+2026-11-17T18:49:37.915053Z DIAG CP 196 after_client_read ok
+2026-11-17T18:49:37.915068Z DIAG CP 197 before_writev_stream ok
+2026-11-17T18:49:37.915080Z DIAG CP 198 before_quic_do_handshake ok
+2026-11-17T18:49:38.518820Z DIAG CP 199 after_quic_do_handshake ok
+2026-11-17T18:49:38.518950Z DIAG CP 200 after_writev_stream ok
+2026-11-17T18:49:38.518964Z DIAG CP 201 before_writev_stream ok
+2026-11-17T18:49:38.518973Z DIAG CP 202 after_handshake_pkt_built ok
+2026-11-17T18:49:38.720414Z DIAG CP 203 after_writev_stream ok
+2026-11-17T18:49:38.720524Z DIAG CP 204 before_provide_quic_data ok
+2026-11-17T18:49:38.720536Z DIAG CP 205 after_provide_quic_data ok
+2026-11-17T18:49:38.720545Z DIAG CP 206 before_quic_do_handshake ok
+2026-11-17T18:49:39.946258Z DIAG CP 207 after_quic_do_handshake ok
+2026-11-17T18:49:39.946780Z DIAG CP 208 before_provide_quic_data ok
+2026-11-17T18:49:39.946817Z DIAG CP 209 after_provide_quic_data ok
+2026-11-17T18:49:39.946829Z DIAG CP 210 before_quic_do_handshake ok
+2026-11-17T18:49:42.582933Z E (43053) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:42.583072Z E (43053) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:42.583091Z E (43053) task_wdt: Tasks currently running:
+2026-11-17T18:49:42.583106Z E (43053) task_wdt: CPU 0: ev_esp_loop
+2026-11-17T18:49:42.622206Z E (43053) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:42.770351Z Backtrace: 0x420800ce:0x4083ea50 0x420801ae:0x4083ea70 0x42082950:0x4083ea80 0x420680b8:0x4083ea90 0x42068e22:0x4083eae0 0x4206917e:0x4083eb10 0x4206930a:0x4083eb70 0x4206956e:0x4083ebc0 0x4206a55e:0x4083ec00 0x4206a70e:0x4083ec70 0x42086908:0x4083eca0 0x42055fc0:0x4083ecb0 0x42056916:0x4083ed00 0x42056eb2:0x4083ed30 0x42093b7a:0x4083ed60 0x42093dd2:0x4083ed90 0x42093de2:0x4083eda0 0x42057122:0x4083edb0 0x42044e30:0x4083edc0 0x42046fec:0x4083edd0 0x4203ea14:0x4083ede0 0x420399cc:0x4083edf0 0x420393a0:0x4083ee10 0x42015e52:0x4083ee20 0x42017c06:0x4083ee30 0x42025d14:0x4083ee60 0x4202608a:0x4083f170 0x420262ac:0x4083f1c0 0x4202684e:0x4083f200 0x42012f76:0x4083f240 0x42013080:0x408432c0 0x420140b8:0x408432d0 0x42130246:0x408432e0 0x42130b94:0x408432f0 0x42130c90:0x40843350 0x42133e32:0x40843360
+2026-11-17T18:49:42.770425Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:42.770438Z 
+2026-11-17T18:49:42.770448Z DIAG CP 211 after_quic_do_handshake ok
+2026-11-17T18:49:42.881481Z I (43243) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:42.881562Z I (43263) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:42.881575Z DIAG HEAP after_quic_handshake free=151440 min_free=130256 largest_block=129012
+2026-11-17T18:49:42.881584Z I (43263) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:42.881592Z 
+2026-11-17T18:49:42.881601Z DIAG CP 212 after_client_read ok
+2026-11-17T18:49:42.881609Z DIAG CP 213 before_writev_stream ok
+2026-11-17T18:49:42.881617Z DIAG CP 214 after_handshake_pkt_built ok
+2026-11-17T18:49:42.881626Z DIAG CP 215 discard_pktns_entry ok
+2026-11-17T18:49:42.881633Z DIAG CP 216 discard_before_pktns_del ok
+2026-11-17T18:49:42.881641Z DIAG CP 217 pktns_del_before_pktns_free ok
+2026-11-17T18:49:43.024135Z DIAG CP 218 pktns_del_before_final_free ok
+2026-11-17T18:49:43.024221Z DIAG CP 219 discard_after_pktns_del ok
+2026-11-17T18:49:43.024240Z DIAG CP 220 after_writev_stream ok
+2026-11-17T18:49:43.024252Z DIAG CP 221 before_writev_stream ok
+2026-11-17T18:49:43.024261Z DIAG CP 222 after_writev_stream ok
+2026-11-17T18:49:43.024269Z DIAG CP 223 before_writev_stream ok
+2026-11-17T18:49:43.024278Z DIAG CP 224 after_handshake_pkt_built ok
+2026-11-17T18:49:43.024286Z DIAG CP 225 after_writev_stream ok
+2026-11-17T18:49:43.024295Z DIAG HEAP cycle_after_handshake free=155656 min_free=130256 largest_block=129012
+2026-11-17T18:49:43.024303Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:43.237953Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:49:43.238063Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:49:43.238075Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:43.238084Z DIAG CP 226 discard_pktns_entry ok
+2026-11-17T18:49:43.238094Z DIAG CP 227 discard_before_pktns_del ok
+2026-11-17T18:49:43.238102Z DIAG CP 228 pktns_del_before_pktns_free ok
+2026-11-17T18:49:43.238109Z DIAG CP 229 pktns_del_before_final_free ok
+2026-11-17T18:49:43.238119Z DIAG CP 230 discard_after_pktns_del ok
+2026-11-17T18:49:44.248221Z DIAG CYCLE 5 PASS
+2026-11-17T18:49:44.248388Z I (44543) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:44.248403Z I (44543) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:44.248413Z I (44543) QUIC: QUIC client cleanup completed. Free heap: 209756 bytes
+2026-11-17T18:49:46.084028Z DIAG CYCLE 6 START mode=2
+2026-11-17T18:49:46.084139Z DIAG HEAP cycle_start free=209956 min_free=130256 largest_block=135156
+2026-11-17T18:49:46.084151Z I (46553) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:46.084160Z I (46553) QUIC: init random number generator
+2026-11-17T18:49:46.084169Z I (46553) QUIC: init client ...
+2026-11-17T18:49:46.084182Z DIAG CP 231 client_init_start ok
+2026-11-17T18:49:46.174106Z DIAG CP 232 after_create_sock ok
+2026-11-17T18:49:46.174180Z DIAG CP 233 after_connect_sock ok
+2026-11-17T18:49:46.174191Z DIAG CP 234 after_SSL_CTX_new ok
+2026-11-17T18:49:46.174200Z DIAG CP 235 after_configure_client_context ok
+2026-11-17T18:49:46.174208Z DIAG CP 236 after_UseSNI_set_verify ok
+2026-11-17T18:49:46.174216Z DIAG CP 237 after_SSL_new ok
+2026-11-17T18:49:46.174226Z DIAG CP 238 after_set_connect_state ok
+2026-11-17T18:49:46.174233Z I (46633) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:46.174242Z DIAG CP 239 after_set_alpn ok
+2026-11-17T18:49:46.174250Z DIAG CP 240 after_client_ssl_init ok
+2026-11-17T18:49:46.174257Z I (46653) QUIC: In client_quic_init
+2026-11-17T18:49:46.174265Z I (46653) QUIC: ===>  INITIAL TS: 46111299000
+2026-11-17T18:49:46.174273Z DIAG CP 241 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:46.378039Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:46.378183Z DIAG CP 242 after_client_available_versions_init ok
+2026-11-17T18:49:46.378204Z DIAG CP 243 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:46.378226Z DIAG CP 244 after_client_quic_init ok
+2026-11-17T18:49:46.378239Z I (46683) ESP_EV_COMPAT: Starting IO watcher for fd 59
+2026-11-17T18:49:46.378252Z I (46683) QUIC: QUIC client initialization completed
+2026-11-17T18:49:46.378278Z DIAG CP 245 after_client_read ok
+2026-11-17T18:49:46.378288Z DIAG CP 246 before_writev_stream ok
+2026-11-17T18:49:46.378297Z DIAG CP 247 before_quic_do_handshake ok
+2026-11-17T18:49:46.984634Z DIAG CP 248 after_quic_do_handshake ok
+2026-11-17T18:49:46.984715Z DIAG CP 249 after_writev_stream ok
+2026-11-17T18:49:47.187259Z DIAG CP 250 before_writev_stream ok
+2026-11-17T18:49:47.187366Z DIAG CP 251 after_handshake_pkt_built ok
+2026-11-17T18:49:47.187386Z DIAG CP 252 after_writev_stream ok
+2026-11-17T18:49:47.187397Z DIAG CP 253 before_provide_quic_data ok
+2026-11-17T18:49:47.187406Z DIAG CP 254 after_provide_quic_data ok
+2026-11-17T18:49:47.187415Z DIAG CP 255 before_quic_do_handshake ok
+2026-11-17T18:49:48.402959Z DIAG CP 256 after_quic_do_handshake ok
+2026-11-17T18:49:48.403064Z DIAG CP 257 before_provide_quic_data ok
+2026-11-17T18:49:48.403080Z DIAG CP 258 after_provide_quic_data ok
+2026-11-17T18:49:48.403089Z DIAG CP 259 before_quic_do_handshake ok
+2026-11-17T18:49:51.120858Z E (51543) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:51.120933Z E (51543) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:51.120946Z E (51543) task_wdt: Tasks currently running:
+2026-11-17T18:49:51.120955Z E (51543) task_wdt: CPU 0: io_monitor
+2026-11-17T18:49:51.120963Z E (51543) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:51.120971Z Backtrace: 0x4200a52a:0x40852210 0x4200a656:0x40852210 0x420b4e98:0x40852220 0x420b5128:0x40852230 0x42011b96:0x40852240 0x42014406:0x40852280 0x42133e32:0x408522c0
+2026-11-17T18:49:51.120981Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:51.120989Z 
+2026-11-17T18:49:51.190148Z DIAG CP 260 after_quic_do_handshake ok
+2026-11-17T18:49:51.190224Z I (51613) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:51.190237Z I (51613) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:51.190246Z DIAG HEAP after_quic_handshake free=149252 min_free=127952 largest_block=126964
+2026-11-17T18:49:51.190254Z I (51633) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:51.190261Z 
+2026-11-17T18:49:51.190269Z DIAG CP 261 after_client_read ok
+2026-11-17T18:49:51.190277Z DIAG CP 262 before_writev_stream ok
+2026-11-17T18:49:51.346326Z DIAG CP 263 after_handshake_pkt_built ok
+2026-11-17T18:49:51.346421Z DIAG CP 264 discard_pktns_entry ok
+2026-11-17T18:49:51.346432Z DIAG CP 265 discard_before_pktns_del ok
+2026-11-17T18:49:51.346441Z DIAG CP 266 pktns_del_before_pktns_free ok
+2026-11-17T18:49:51.346449Z DIAG CP 267 pktns_del_before_final_free ok
+2026-11-17T18:49:51.346459Z DIAG CP 268 discard_after_pktns_del ok
+2026-11-17T18:49:51.346468Z DIAG CP 269 after_writev_stream ok
+2026-11-17T18:49:51.346489Z DIAG CP 270 before_writev_stream ok
+2026-11-17T18:49:51.346498Z DIAG CP 271 after_writev_stream ok
+2026-11-17T18:49:51.346519Z DIAG CP 272 before_writev_stream ok
+2026-11-17T18:49:51.346527Z DIAG CP 273 after_handshake_pkt_built ok
+2026-11-17T18:49:51.346535Z DIAG CP 274 after_writev_stream ok
+2026-11-17T18:49:51.417674Z DIAG HEAP cycle_after_handshake free=153508 min_free=127952 largest_block=126964
+2026-11-17T18:49:51.417728Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:49:51.417740Z DIAG STACK cycle_after_handshake task=io_moDIAG CP 275 discard_pktns_entry ok
+2026-11-17T18:49:51.417749Z nitor high_water_mark_bytes_free=31920
+2026-11-17T18:49:51.417759Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:49:51.417861Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:51.417879Z DIAG CP 276 discard_before_pktns_del ok
+2026-11-17T18:49:51.417891Z DIAG CP 277 pktns_del_before_pktns_free ok
+2026-11-17T18:49:51.417902Z DIAG CP 278 pktns_del_before_final_free ok
+2026-11-17T18:49:51.618995Z DIAG CP 279 discard_after_pktns_del ok
+2026-11-17T18:49:52.440982Z DIAG CYCLE 6 PASS
+2026-11-17T18:49:52.441126Z I (52873) QUIC: Cleaning up QUIC client...
+2026-11-17T18:49:52.441146Z I (52873) QUIC: Freeing QUIC connection...
+2026-11-17T18:49:52.441156Z I (52873) QUIC: QUIC client cleanup completed. Free heap: 209424 bytes
+2026-11-17T18:49:54.474721Z DIAG CYCLE 7 START mode=2
+2026-11-17T18:49:54.474792Z DIAG HEAP cycle_start free=205696 min_free=127952 largest_block=135156
+2026-11-17T18:49:54.474807Z I (54883) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:49:54.474844Z I (54883) QUIC: init random number generator
+2026-11-17T18:49:54.474853Z I (54883) QUIC: init client ...
+2026-11-17T18:49:54.474861Z DIAG CP 280 client_init_start ok
+2026-11-17T18:49:54.474868Z DIAG CP 281 after_create_sock ok
+2026-11-17T18:49:54.474882Z DIAG CP 282 after_connect_sock ok
+2026-11-17T18:49:54.474894Z DIAG CP 283 after_SSL_CTX_new ok
+2026-11-17T18:49:54.474902Z DIAG CP 284 after_configure_client_context ok
+2026-11-17T18:49:54.474909Z DIAG CP 285 after_UseSNI_set_verify ok
+2026-11-17T18:49:54.474917Z DIAG CP 286 after_SSL_new ok
+2026-11-17T18:49:54.530009Z DIAG CP 287 after_set_connect_state ok
+2026-11-17T18:49:54.530084Z I (54963) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:49:54.530096Z DIAG CP 288 after_set_alpn ok
+2026-11-17T18:49:54.530105Z DIAG CP 289 after_client_ssl_init ok
+2026-11-17T18:49:54.530113Z I (54983) QUIC: In client_quic_init
+2026-11-17T18:49:54.530121Z I (54983) QUIC: ===>  INITIAL TS: 54439494000
+2026-11-17T18:49:54.530130Z DIAG CP 290 before_ngtcp2_conn_client_new ok
+2026-11-17T18:49:54.530138Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:49:54.530146Z DIAG CP 291 after_client_available_versions_init ok
+2026-11-17T18:49:54.530154Z DIAG CP 292 after_ngtcp2_conn_client_new ok
+2026-11-17T18:49:54.530161Z DIAG CP 293 after_client_quic_init ok
+2026-11-17T18:49:54.736903Z I (55013) ESP_EV_COMPAT: Starting IO watcher for fd 60
+2026-11-17T18:49:54.737017Z I (55013) QUIC: QUIC client initialization completed
+2026-11-17T18:49:54.737027Z DIAG CP 294 after_client_read ok
+2026-11-17T18:49:54.737036Z DIAG CP 295 before_writev_stream ok
+2026-11-17T18:49:54.737050Z DIAG CP 296 before_quic_do_handshake ok
+2026-11-17T18:49:55.341241Z DIAG CP 297 after_quic_do_handshake ok
+2026-11-17T18:49:55.341332Z DIAG CP 298 after_writev_stream ok
+2026-11-17T18:49:55.341345Z DIAG CP 299 before_writev_stream ok
+2026-11-17T18:49:55.341353Z DIAG CP 300 after_handshake_pkt_built ok
+2026-11-17T18:49:55.341363Z DIAG CP 301 after_writev_stream ok
+2026-11-17T18:49:55.542909Z DIAG CP 302 before_provide_quic_data ok
+2026-11-17T18:49:55.543007Z DIAG CP 303 after_provide_quic_data ok
+2026-11-17T18:49:55.543020Z DIAG CP 304 before_quic_do_handshake ok
+2026-11-17T18:49:56.752150Z DIAG CP 305 after_quic_do_handshake ok
+2026-11-17T18:49:56.752239Z DIAG CP 306 before_provide_quic_data ok
+2026-11-17T18:49:56.752250Z DIAG CP 307 after_provide_quic_data ok
+2026-11-17T18:49:56.752258Z DIAG CP 308 before_quic_do_handshake ok
+2026-11-17T18:49:59.396598Z E (59873) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:49:59.471750Z E (59873) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:49:59.471818Z E (59873) task_wdt: Tasks currently running:
+2026-11-17T18:49:59.471828Z E (59873) task_wdt: CPU 0: io_monitor
+2026-11-17T18:49:59.471837Z E (59873) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:49:59.471845Z Backtrace: 0x421347b8:0x408521b0 0x4080210c:0x408521f0 0x408021e2:0x40852210 0x42011558:0x40852220 0x42011a72:0x40852240 0x42014406:0x40852280 0x42133e32:0x408522c0
+2026-11-17T18:49:59.471853Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:49:59.471861Z 
+2026-11-17T18:49:59.471868Z DIAG CP 309 after_quic_do_handshake ok
+2026-11-17T18:49:59.555974Z I (59953) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:49:59.556047Z I (59953) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:49:59.556059Z DIAG HEAP after_quic_handshake free=144884 min_free=123680 largest_block=122868
+2026-11-17T18:49:59.556069Z I (59973) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:49:59.556077Z 
+2026-11-17T18:49:59.556085Z DIAG CP 310 after_client_read ok
+2026-11-17T18:49:59.556093Z DIAG CP 311 before_writev_stream ok
+2026-11-17T18:49:59.556101Z DIAG CP 312 after_handshake_pkt_built ok
+2026-11-17T18:49:59.556109Z DIAG CP 313 discard_pktns_entry ok
+2026-11-17T18:49:59.556117Z DIAG CP 314 discard_before_pktns_del ok
+2026-11-17T18:49:59.556125Z DIAG CP 315 pktns_del_before_pktns_free ok
+2026-11-17T18:49:59.706255Z DIAG CP 316 pktns_del_before_final_free ok
+2026-11-17T18:49:59.706335Z DIAG CP 317 discard_after_pktns_del ok
+2026-11-17T18:49:59.706373Z DIAG CP 318 after_writev_stream ok
+2026-11-17T18:49:59.706385Z DIAG CP 319 before_writev_stream ok
+2026-11-17T18:49:59.706393Z DIAG CP 320 after_writev_stream ok
+2026-11-17T18:49:59.706403Z DIAG CP 321 before_writev_stream ok
+2026-11-17T18:49:59.706411Z DIAG CP 322 after_handshake_pkt_built ok
+2026-11-17T18:49:59.706419Z DIAG CP 323 after_writev_stream ok
+2026-11-17T18:49:59.706437Z DIAG HEAP cycle_after_handshake free=149108 min_free=123680 largest_block=122868
+2026-11-17T18:49:59.706445Z DIAG STACK cycle_after_handshake task=quic_dht11 DIAG CP 324 discard_pktns_entry ok
+2026-11-17T18:49:59.706453Z high_water_mark_bytes_free=11624
+2026-11-17T18:49:59.907188Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:49:59.907295Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12DIAG CP 325 discard_before_pktns_del ok
+2026-11-17T18:49:59.907310Z 832
+2026-11-17T18:49:59.907321Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:49:59.907329Z DIAG CP 326 pktns_del_before_pktns_free ok
+2026-11-17T18:49:59.907339Z DIAG CP 327 pktns_del_before_final_free ok
+2026-11-17T18:49:59.907347Z DIAG CP 328 discard_after_pktns_del ok
+2026-11-17T18:50:00.930237Z DIAG CYCLE 7 PASS
+2026-11-17T18:50:00.930343Z I (61223) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:00.930358Z I (61223) QUIC: Freeing QUIC connection...
+2026-11-17T18:50:00.930367Z I (61223) QUIC: QUIC client cleanup completed. Free heap: 203188 bytes
+2026-11-17T18:50:02.751505Z DIAG CYCLE 8 START mode=2
+2026-11-17T18:50:02.751596Z DIAG HEAP cycle_start free=201432 min_free=123680 largest_block=131060
+2026-11-17T18:50:02.840351Z I (63233) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:02.840422Z I (63233) QUIC: init random number generator
+2026-11-17T18:50:02.840433Z I (63233) QUIC: init client ...
+2026-11-17T18:50:02.840441Z DIAG CP 329 client_init_start ok
+2026-11-17T18:50:02.840449Z DIAG CP 330 after_create_sock ok
+2026-11-17T18:50:02.840457Z DIAG CP 331 after_connect_sock ok
+2026-11-17T18:50:02.840466Z DIAG CP 332 after_SSL_CTX_new ok
+2026-11-17T18:50:02.840473Z DIAG CP 333 after_configure_client_context ok
+2026-11-17T18:50:02.840481Z DIAG CP 334 after_UseSNI_set_verify ok
+2026-11-17T18:50:02.840488Z DIAG CP 335 after_SSL_new ok
+2026-11-17T18:50:02.840496Z DIAG CP 336 after_set_connect_state ok
+2026-11-17T18:50:02.840503Z I (63313) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:50:02.840511Z DIAG CP 337 after_set_alpn ok
+2026-11-17T18:50:02.889025Z DIAG CP 338 after_client_ssl_init ok
+2026-11-17T18:50:02.889099Z I (63323) QUIC: In client_quic_init
+2026-11-17T18:50:02.889110Z I (63333) QUIC: ===>  INITIAL TS: 62788595000
+2026-11-17T18:50:02.889118Z DIAG CP 339 before_ngtcp2_conn_client_new ok
+2026-11-17T18:50:02.889126Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:50:02.889135Z DIAG CP 340 after_client_available_versions_init ok
+2026-11-17T18:50:02.889144Z DIAG CP 341 after_ngtcp2_conn_client_new ok
+2026-11-17T18:50:02.889152Z DIAG CP 342 after_client_quic_init ok
+2026-11-17T18:50:02.889159Z I (63363) ESP_EV_COMPAT: Starting IO watcher for fd 61
+2026-11-17T18:50:02.889167Z I (63363) QUIC: QUIC client initialization completed
+2026-11-17T18:50:02.889175Z DIAG CP 343 after_client_read ok
+2026-11-17T18:50:03.092413Z DIAG CP 344 before_writev_stream ok
+2026-11-17T18:50:03.092501Z DIAG CP 345 before_quic_do_handshake ok
+2026-11-17T18:50:03.710324Z DIAG CP 346 after_quic_do_handshake ok
+2026-11-17T18:50:03.710454Z DIAG CP 347 after_writev_stream ok
+2026-11-17T18:50:03.710466Z DIAG CP 348 before_writev_stream ok
+2026-11-17T18:50:03.710474Z DIAG CP 349 after_handshake_pkt_built ok
+2026-11-17T18:50:03.710484Z DIAG CP 350 after_writev_stream ok
+2026-11-17T18:50:03.912891Z DIAG CP 351 before_provide_quic_data ok
+2026-11-17T18:50:03.913008Z DIAG CP 352 after_provide_quic_data ok
+2026-11-17T18:50:03.913023Z DIAG CP 353 before_quic_do_handshake ok
+2026-11-17T18:50:05.134419Z DIAG CP 354 after_quic_do_handshake ok
+2026-11-17T18:50:05.134524Z DIAG CP 355 before_provide_quic_data ok
+2026-11-17T18:50:05.134540Z DIAG CP 356 after_provide_quic_data ok
+2026-11-17T18:50:05.134560Z DIAG CP 357 before_quic_do_handshake ok
+2026-11-17T18:50:07.769886Z E (68223) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:50:07.769962Z E (68223) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:50:07.769975Z E (68223) task_wdt: Tasks currently running:
+2026-11-17T18:50:07.769983Z E (68223) task_wdt: CPU 0: ev_esp_loop
+2026-11-17T18:50:07.769991Z E (68223) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:50:07.917350Z Backtrace: 0x4207c3e6:0x4083e740 0x4207c604:0x4083e780 0x4207c702:0x4083e790 0x42078362:0x4083e7a0 0x420784a0:0x4083e850 0x4207871e:0x4083e8f0 0x420788b0:0x4083e920 0x420789a0:0x4083e950 0x42078ad6:0x4083e970 0x420417f8:0x4083e980 0x4204341c:0x4083e990 0x4203f038:0x4083e9a0 0x420396aa:0x4083e9d0 0x42038694:0x4083e9e0 0x4203886a:0x4083eb20 0x42038a38:0x4083eb60 0x420398d2:0x4083ec90 0x4203ed0a:0x4083ecb0 0x42052d7c:0x4083ecd0 0x42056c90:0x4083ed00 0x42056eb2:0x4083ed30 0x42093b7a:0x4083ed60 0x42093dd2:0x4083ed90 0x42093de2:0x4083eda0 0x42057122:0x4083edb0 0x42044e30:0x4083edc0 0x42046fec:0x4083edd0 0x4203ea14:0x4083ede0 0x420399cc:0x4083edf0 0x420393a0:0x4083ee10 0x42015e52:0x4083ee20 0x42017c06:0x4083ee30 0x42025d14:0x4083ee60 0x4202608a:0x4083f170 0x420262ac:0x4083f1c0 0x4202684e:0x4083f200 0x42012f76:0x4083f240 0x42013080:0x408432c0 0x420140b8:0x408432d0 0x42130246:0x408432e0 0x42130b94:0x408432f0 0x42130c90:0x40843350 0x42133e32:0x40843360
+2026-11-17T18:50:07.917416Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:50:07.917427Z 
+2026-11-17T18:50:07.917435Z DIAG CP 358 after_quic_do_handshake ok
+2026-11-17T18:50:07.917443Z I (68393) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:50:08.119569Z I (68393) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:50:08.119694Z DIAG HEAP after_quic_handshake free=140632 min_free=119436 largest_block=118772
+2026-11-17T18:50:08.119718Z I (68413) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:50:08.119733Z 
+2026-11-17T18:50:08.119745Z DIAG CP 359 after_client_read ok
+2026-11-17T18:50:08.119760Z DIAG CP 360 before_writev_stream ok
+2026-11-17T18:50:08.119775Z DIAG CP 361 after_handshake_pkt_built ok
+2026-11-17T18:50:08.119788Z DIAG CP 362 discard_pktns_entry ok
+2026-11-17T18:50:08.119802Z DIAG CP 363 discard_before_pktns_del ok
+2026-11-17T18:50:08.119816Z DIAG CP 364 pktns_del_before_pktns_free ok
+2026-11-17T18:50:08.119830Z DIAG CP 365 pktns_del_before_final_free ok
+2026-11-17T18:50:08.119843Z DIAG CP 366 discard_after_pktns_del ok
+2026-11-17T18:50:08.221621Z DIAG CP 367 after_writev_stream ok
+2026-11-17T18:50:08.221729Z DIAG CP 368 before_writev_stream ok
+2026-11-17T18:50:08.221742Z DIAG CP 369 after_writev_stream ok
+2026-11-17T18:50:08.221751Z DIAG CP 370 before_writev_stream ok
+2026-11-17T18:50:08.221759Z DIAG CP 371 after_handshake_pkt_built ok
+2026-11-17T18:50:08.221767Z DIAG CP 372 after_writev_stream ok
+2026-11-17T18:50:08.221776Z DIAG HEAP cycle_after_handshake free=144856 min_free=119436 largest_block=118772
+2026-11-17T18:50:08.221784Z DIAG STACK cycle_after_handshake task=quic_dht11 hiDIAG CP 373 discard_pktns_entry ok
+2026-11-17T18:50:08.221793Z gh_water_mark_bytes_free=11624
+2026-11-17T18:50:08.221801Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:50:08.430430Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:50:08.430525Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:50:08.430538Z DIAG CP 374 discard_before_pktns_del ok
+2026-11-17T18:50:08.430547Z DIAG CP 375 pktns_del_before_pktns_free ok
+2026-11-17T18:50:08.430556Z DIAG CP 376 pktns_del_before_final_free ok
+2026-11-17T18:50:08.430564Z DIAG CP 377 discard_after_pktns_del ok
+2026-11-17T18:50:09.240004Z DIAG CYCLE 8 PASS
+2026-11-17T18:50:09.240147Z I (69723) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:09.240165Z I (69723) QUIC: Freeing QUIC connection...
+2026-11-17T18:50:09.440289Z I (69723) QUIC: QUIC client cleanup completed. Free heap: 198928 bytes
+2026-11-17T18:50:11.264406Z DIAG CYCLE 9 START mode=2
+2026-11-17T18:50:11.264531Z DIAG HEAP cycle_start free=199124 min_free=119436 largest_block=131060
+2026-11-17T18:50:11.264549Z I (71733) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:11.264561Z I (71733) QUIC: init random number generator
+2026-11-17T18:50:11.264569Z I (71733) QUIC: init client ...
+2026-11-17T18:50:11.264599Z DIAG CP 378 client_init_start ok
+2026-11-17T18:50:11.349766Z DIAG CP 379 after_create_sock ok
+2026-11-17T18:50:11.349883Z DIAG CP 380 after_connect_sock ok
+2026-11-17T18:50:11.349894Z DIAG CP 381 after_SSL_CTX_new ok
+2026-11-17T18:50:11.349903Z DIAG CP 382 after_configure_client_context ok
+2026-11-17T18:50:11.349912Z DIAG CP 383 after_UseSNI_set_verify ok
+2026-11-17T18:50:11.349920Z DIAG CP 384 after_SSL_new ok
+2026-11-17T18:50:11.349929Z DIAG CP 385 after_set_connect_state ok
+2026-11-17T18:50:11.349952Z I (71813) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:50:11.349961Z DIAG CP 386 after_set_alpn ok
+2026-11-17T18:50:11.349974Z DIAG CP 387 after_client_ssl_init ok
+2026-11-17T18:50:11.349985Z I (71823) QUIC: In client_quic_init
+2026-11-17T18:50:11.349995Z I (71823) QUIC: ===>  INITIAL TS: 71287058000
+2026-11-17T18:50:11.350007Z DIAG CP 388 before_ngtcp2_conn_client_new ok
+2026-11-17T18:50:11.560179Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:50:11.560269Z DIAG CP 389 after_client_available_versions_init ok
+2026-11-17T18:50:11.560280Z DIAG CP 390 after_ngtcp2_conn_client_new ok
+2026-11-17T18:50:11.560289Z DIAG CP 391 after_client_quic_init ok
+2026-11-17T18:50:11.560298Z I (71863) ESP_EV_COMPAT: Starting IO watcher for fd 62
+2026-11-17T18:50:11.560305Z I (71863) QUIC: QUIC client initialization completed
+2026-11-17T18:50:11.560313Z DIAG CP 392 after_client_read ok
+2026-11-17T18:50:11.560321Z DIAG CP 393 before_writev_stream ok
+2026-11-17T18:50:11.560329Z DIAG CP 394 before_quic_do_handshake ok
+2026-11-17T18:50:12.177197Z DIAG CP 395 after_quic_do_handshake ok
+2026-11-17T18:50:12.177312Z DIAG CP 396 after_writev_stream ok
+2026-11-17T18:50:12.177360Z DIAG CP 397 before_writev_stream ok
+2026-11-17T18:50:12.177369Z DIAG CP 398 after_handshake_pkt_built ok
+2026-11-17T18:50:12.380232Z DIAG CP 399 after_writev_stream ok
+2026-11-17T18:50:12.380350Z DIAG CP 400 before_provide_quic_data ok
+2026-11-17T18:50:12.380363Z DIAG CP 401 after_provide_quic_data ok
+2026-11-17T18:50:12.380371Z DIAG CP 402 before_quic_do_handshake ok
+2026-11-17T18:50:13.591101Z DIAG CP 403 after_quic_do_handshake ok
+2026-11-17T18:50:13.591211Z DIAG CP 404 before_provide_quic_data ok
+2026-11-17T18:50:13.591222Z DIAG CP 405 after_provide_quic_data ok
+2026-11-17T18:50:13.591230Z DIAG CP 406 before_quic_do_handshake ok
+2026-11-17T18:50:16.243922Z E (76723) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:50:16.244026Z E (76723) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:50:16.327357Z E (76723) task_wdt: Tasks currently running:
+2026-11-17T18:50:16.327452Z E (76723) task_wdt: CPU 0: ev_esp_loop
+2026-11-17T18:50:16.327464Z E (76723) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:50:16.327474Z Backtrace: 0x408094f8:0x4083e7b0 0x40809586:0x4083e7b0 0x4080ad7c:0x4083e7c0 0x40022496:0x4083e7d0
+2026-11-17T18:50:16.327482Z Backtrace ended abruptly: cannot find DWARF information for instruction at address 0x40022496
+2026-11-17T18:50:16.327491Z 
+2026-11-17T18:50:16.327499Z DIAG CP 407 after_quic_do_handshake ok
+2026-11-17T18:50:16.409488Z I (76803) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:50:16.409555Z I (76803) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:50:16.409616Z DIAG HEAP after_quic_handshake free=134328 min_free=115100 largest_block=98292
+2026-11-17T18:50:16.409631Z I (76823) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:50:16.409639Z 
+2026-11-17T18:50:16.409647Z DIAG CP 408 after_client_read ok
+2026-11-17T18:50:16.409655Z DIAG CP 409 before_writev_stream ok
+2026-11-17T18:50:16.409662Z DIAG CP 410 after_handshake_pkt_built ok
+2026-11-17T18:50:16.409670Z DIAG CP 411 discard_pktns_entry ok
+2026-11-17T18:50:16.409677Z DIAG CP 412 discard_before_pktns_del ok
+2026-11-17T18:50:16.409684Z DIAG CP 413 pktns_del_before_pktns_free ok
+2026-11-17T18:50:16.409691Z DIAG CP 414 pktns_del_before_final_free ok
+2026-11-17T18:50:16.550848Z DIAG CP 415 discard_after_pktns_del ok
+2026-11-17T18:50:16.550921Z DIAG CP 416 after_writev_stream ok
+2026-11-17T18:50:16.550952Z DIAG CP 417 before_writev_stream ok
+2026-11-17T18:50:16.550962Z DIAG CP 418 after_writev_stream ok
+2026-11-17T18:50:16.550970Z DIAG CP 419 before_writev_stream ok
+2026-11-17T18:50:16.550978Z DIAG CP 420 after_handshake_pkt_built ok
+2026-11-17T18:50:16.550987Z DIAG CP 421 after_writev_stream ok
+2026-11-17T18:50:16.550995Z DIAG HEAP cycle_after_handshake free=138724 min_free=115100 largest_block=98292
+2026-11-17T18:50:16.551004Z DIAG STACK cycle_after_handshake task=quic_dht11 high_watDIAG CP 422 discard_pktns_entry ok
+2026-11-17T18:50:16.551012Z er_mark_bytes_free=11624
+2026-11-17T18:50:16.753971Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:50:16.754625Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:50:16.754675Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:50:16.754685Z DIAG CP 423 discard_before_pktns_del ok
+2026-11-17T18:50:16.754695Z DIAG CP 424 pktns_del_before_pktns_free ok
+2026-11-17T18:50:16.754703Z DIAG CP 425 pktns_del_before_final_free ok
+2026-11-17T18:50:16.754710Z DIAG CP 426 discard_after_pktns_del ok
+2026-11-17T18:50:17.575240Z DIAG CYCLE 9 PASS
+2026-11-17T18:50:17.575368Z I (78053) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:17.575387Z I (78053) QUIC: Freeing QUIC connection...
+2026-11-17T18:50:17.575400Z I (78053) QUIC: QUIC client cleanup completed. Free heap: 194676 bytes
+2026-11-17T18:50:19.604451Z DIAG CYCLE 10 START mode=2
+2026-11-17T18:50:19.604589Z DIAG HEAP cycle_start free=190944 min_free=115100 largest_block=98292
+2026-11-17T18:50:19.604607Z I (80063) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:19.604626Z I (80063) QUIC: init random number generator
+2026-11-17T18:50:19.604639Z I (80063) QUIC: init client ...
+2026-11-17T18:50:19.604650Z DIAG CP 427 client_init_start ok
+2026-11-17T18:50:19.604658Z DIAG CP 428 after_create_sock ok
+2026-11-17T18:50:19.682436Z DIAG CP 429 after_connect_sock ok
+2026-11-17T18:50:19.682521Z DIAG CP 430 after_SSL_CTX_new ok
+2026-11-17T18:50:19.682533Z DIAG CP 431 after_configure_client_context ok
+2026-11-17T18:50:19.682543Z DIAG CP 432 after_UseSNI_set_verify ok
+2026-11-17T18:50:19.682552Z DIAG CP 433 after_SSL_new ok
+2026-11-17T18:50:19.682561Z DIAG CP 434 after_set_connect_state ok
+2026-11-17T18:50:19.682569Z I (80143) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-17T18:50:19.682577Z DIAG CP 435 after_set_alpn ok
+2026-11-17T18:50:19.682586Z DIAG CP 436 after_client_ssl_init ok
+2026-11-17T18:50:19.682594Z I (80153) QUIC: In client_quic_init
+2026-11-17T18:50:19.682602Z I (80153) QUIC: ===>  INITIAL TS: 79614066000
+2026-11-17T18:50:19.682610Z DIAG CP 437 before_ngtcp2_conn_client_new ok
+2026-11-17T18:50:19.884035Z DIAG NOTE conn_alloc addr_mod8 buflen sizeof_conn 4 7644 7640
+2026-11-17T18:50:19.884168Z DIAG CP 438 after_client_available_versions_init ok
+2026-11-17T18:50:19.884191Z DIAG CP 439 after_ngtcp2_conn_client_new ok
+2026-11-17T18:50:19.884204Z DIAG CP 440 after_client_quic_init ok
+2026-11-17T18:50:19.884218Z I (80183) ESP_EV_COMPAT: Starting IO watcher for fd 63
+2026-11-17T18:50:19.884228Z I (80183) QUIC: QUIC client initialization completed
+2026-11-17T18:50:19.884338Z DIAG CP 441 after_client_read ok
+2026-11-17T18:50:19.884354Z DIAG CP 442 before_writev_stream ok
+2026-11-17T18:50:19.884364Z DIAG CP 443 before_quic_do_handshake ok
+2026-11-17T18:50:20.491069Z DIAG CP 444 after_quic_do_handshake ok
+2026-11-17T18:50:20.491184Z DIAG CP 445 after_writev_stream ok
+2026-11-17T18:50:20.491199Z DIAG CP 446 before_writev_stream ok
+2026-11-17T18:50:20.491208Z DIAG CP 447 after_handshake_pkt_built ok
+2026-11-17T18:50:20.693122Z DIAG CP 448 after_writev_stream ok
+2026-11-17T18:50:20.693229Z DIAG CP 449 before_provide_quic_data ok
+2026-11-17T18:50:20.693243Z DIAG CP 450 after_provide_quic_data ok
+2026-11-17T18:50:20.693252Z DIAG CP 451 before_quic_do_handshake ok
+2026-11-17T18:50:21.910083Z DIAG CP 452 after_quic_do_handshake ok
+2026-11-17T18:50:21.910211Z DIAG CP 453 before_provide_quic_data ok
+2026-11-17T18:50:21.910229Z DIAG CP 454 after_provide_quic_data ok
+2026-11-17T18:50:21.910253Z DIAG CP 455 before_quic_do_handshake ok
+2026-11-17T18:50:24.599814Z E (85053) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+2026-11-17T18:50:24.599886Z E (85053) task_wdt:  - IDLE (CPU 0)
+2026-11-17T18:50:24.599898Z E (85053) task_wdt: Tasks currently running:
+2026-11-17T18:50:24.599906Z E (85053) task_wdt: CPU 0: ev_esp_loop
+2026-11-17T18:50:24.599914Z E (85053) task_wdt: Print CPU 0 (current core) backtrace
+2026-11-17T18:50:24.747545Z Backtrace: 0x4207c27e:0x4083e7b0 0x4207c604:0x4083e7f0 0x4207c702:0x4083e800 0x42078098:0x4083e810 0x42078270:0x4083e8d0 0x42078704:0x4083e8f0 0x420788b0:0x4083e920 0x420789a0:0x4083e950 0x42078ad6:0x4083e970 0x420417f8:0x4083e980 0x4204341c:0x4083e990 0x4203f038:0x4083e9a0 0x420396aa:0x4083e9d0 0x42038694:0x4083e9e0 0x4203886a:0x4083eb20 0x42038a38:0x4083eb60 0x420398d2:0x4083ec90 0x4203ed0a:0x4083ecb0 0x42052d7c:0x4083ecd0 0x42056c90:0x4083ed00 0x42056eb2:0x4083ed30 0x42093b7a:0x4083ed60 0x42093dd2:0x4083ed90 0x42093de2:0x4083eda0 0x42057122:0x4083edb0 0x42044e30:0x4083edc0 0x42046fec:0x4083edd0 0x4203ea14:0x4083ede0 0x420399cc:0x4083edf0 0x420393a0:0x4083ee10 0x42015e52:0x4083ee20 0x42017c06:0x4083ee30 0x42025d14:0x4083ee60 0x4202608a:0x4083f170 0x420262ac:0x4083f1c0 0x4202684e:0x4083f200 0x42012f76:0x4083f240 0x42013080:0x408432c0 0x420140b8:0x408432d0 0x42130246:0x408432e0 0x42130b94:0x408432f0 0x42130c90:0x40843350 0x42133e32:0x40843360
+2026-11-17T18:50:24.747667Z Unsupported DWARF opcode 0: 0x00000007
+2026-11-17T18:50:24.747683Z 
+2026-11-17T18:50:24.747692Z DIAG CP 456 after_quic_do_handshake ok
+2026-11-17T18:50:24.747706Z I (85223) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-17T18:50:24.950997Z I (85223) QUIC: QUIC handshake completed callback triggered!
+2026-11-17T18:50:24.951047Z DIAG HEAP after_quic_handshake free=130128 min_free=108920 largest_block=98292
+2026-11-17T18:50:24.951057Z I (85243) QUIC: Extending max local streams bidi to 128
+2026-11-17T18:50:24.951065Z 
+2026-11-17T18:50:24.951073Z DIAG CP 457 after_client_read ok
+2026-11-17T18:50:24.951082Z DIAG CP 458 before_writev_stream ok
+2026-11-17T18:50:24.951089Z DIAG CP 459 after_handshake_pkt_built ok
+2026-11-17T18:50:24.951097Z DIAG CP 460 discard_pktns_entry ok
+2026-11-17T18:50:24.951104Z DIAG CP 461 discard_before_pktns_del ok
+2026-11-17T18:50:24.951112Z DIAG CP 462 pktns_del_before_pktns_free ok
+2026-11-17T18:50:24.951119Z DIAG CP 463 pktns_del_before_final_free ok
+2026-11-17T18:50:24.951130Z DIAG CP 464 discard_after_pktns_del ok
+2026-11-17T18:50:25.043980Z DIAG CP 465 after_writev_stream ok
+2026-11-17T18:50:25.044047Z DIAG CP 466 before_writev_stream ok
+2026-11-17T18:50:25.044057Z DIAG CP 467 after_writev_stream ok
+2026-11-17T18:50:25.044066Z DIAG CP 468 before_writev_stream ok
+2026-11-17T18:50:25.044075Z DIAG CP 469 after_handshake_pkt_built ok
+2026-11-17T18:50:25.044083Z DIAG CP 470 after_writev_stream ok
+2026-11-17T18:50:25.044092Z DIAG HEAP cycle_after_handshake free=132304 min_free=108920 largest_block=98292
+2026-11-17T18:50:25.044175Z DIAG STACK cycle_after_handshake task=quic_dht11 high_water_mark_bytes_free=11624
+2026-11-17T18:50:25.044189Z DIAG STACK cycle_after_handshake task=io_monitor high_water_mark_bytes_free=31920
+2026-11-17T18:50:25.257227Z DIAG STACK cycle_after_handshake task=ev_esp_loop high_water_mark_bytes_free=12832
+2026-11-17T18:50:25.257346Z DIAG STACK cycle_after_handshake task=sys_evt high_water_mark_bytes_free=1948
+2026-11-17T18:50:25.257363Z DIAG CP 471 discard_pktns_entry ok
+2026-11-17T18:50:25.257375Z DIAG CP 472 discard_before_pktns_del ok
+2026-11-17T18:50:25.257386Z DIAG CP 473 pktns_del_before_pktns_free ok
+2026-11-17T18:50:25.257397Z DIAG CP 474 pktns_del_before_final_free ok
+2026-11-17T18:50:25.257409Z DIAG CP 475 discard_after_pktns_del ok
+2026-11-17T18:50:26.065896Z DIAG CYCLE 10 PASS
+2026-11-17T18:50:26.065966Z I (86543) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:26.065978Z I (86543) QUIC: Freeing QUIC connection...
+2026-11-17T18:50:26.065988Z I (86543) QUIC: QUIC client cleanup completed. Free heap: 188440 bytes
+2026-11-17T18:50:28.084570Z DIAG CYCLE 11 START mode=2
+2026-11-17T18:50:28.084681Z DIAG HEAP cycle_start free=186684 min_free=108920 largest_block=98292
+2026-11-17T18:50:28.084695Z I (88553) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:28.084704Z I (88553) QUIC: init random number generator
+2026-11-17T18:50:28.084712Z I (88553) QUIC: init client ...
+2026-11-17T18:50:28.084721Z DIAG CP 476 client_init_start ok
+2026-11-17T18:50:28.285390Z DIAG CP 477 after_create_sock ok
+2026-11-17T18:50:28.285472Z E (88573) QUIC: client_init failed
+2026-11-17T18:50:28.285482Z DIAG CYCLE 11 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:28.285490Z I (88573) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:28.285500Z I (88573) QUIC: QUIC client cleanup completed. Free heap: 186684 bytes
+2026-11-17T18:50:30.317036Z DIAG CYCLE 12 START mode=2
+2026-11-17T18:50:30.317160Z DIAG HEAP cycle_start free=186684 min_free=108920 largest_block=98292
+2026-11-17T18:50:30.317176Z I (90593) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:30.317186Z I (90593) QUIC: init random number generator
+2026-11-17T18:50:30.317194Z I (90593) QUIC: init client ...
+2026-11-17T18:50:30.317202Z DIAG CP 478 client_init_start ok
+2026-11-17T18:50:30.317211Z DIAG CP 479 after_create_sock ok
+2026-11-17T18:50:30.317219Z E (90613) QUIC: client_init failed
+2026-11-17T18:50:30.317228Z DIAG CYCLE 12 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:30.317236Z I (90623) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:30.317244Z I (90623) QUIC: QUIC client cleanup completed. Free heap: 186684 bytes
+2026-11-17T18:50:32.152013Z DIAG CYCLE 13 START mode=2
+2026-11-17T18:50:32.152112Z DIAG HEAP cycle_start free=184580 min_free=108920 largest_block=98292
+2026-11-17T18:50:32.353362Z I (92633) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:32.353460Z I (92633) QUIC: init random number generator
+2026-11-17T18:50:32.353472Z I (92633) QUIC: init client ...
+2026-11-17T18:50:32.353481Z DIAG CP 480 client_init_start ok
+2026-11-17T18:50:32.353489Z DIAG CP 481 after_create_sock ok
+2026-11-17T18:50:32.353497Z E (92653) QUIC: client_init failed
+2026-11-17T18:50:32.353505Z DIAG CYCLE 13 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:32.353513Z I (92663) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:32.353521Z I (92663) QUIC: QUIC client cleanup completed. Free heap: 184580 bytes
+2026-11-17T18:50:34.186921Z DIAG CYCLE 14 START mode=2
+2026-11-17T18:50:34.187040Z DIAG HEAP cycle_start free=184580 min_free=108920 largest_block=98292
+2026-11-17T18:50:34.389325Z I (94673) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:34.389416Z I (94673) QUIC: init random number generator
+2026-11-17T18:50:34.389427Z I (94673) QUIC: init client ...
+2026-11-17T18:50:34.389435Z DIAG CP 482 client_init_start ok
+2026-11-17T18:50:34.389444Z DIAG CP 483 after_create_sock ok
+2026-11-17T18:50:34.389458Z E (94693) QUIC: client_init failed
+2026-11-17T18:50:34.389475Z DIAG CYCLE 14 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:34.389507Z I (94703) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:34.389515Z I (94703) QUIC: QUIC client cleanup completed. Free heap: 184580 bytes
+2026-11-17T18:50:36.225512Z DIAG CYCLE 15 START mode=2
+2026-11-17T18:50:36.427124Z DIAG HEAP cycle_start free=182620 min_free=108920 largest_block=98292
+2026-11-17T18:50:36.427227Z I (96713) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:36.427239Z I (96713) QUIC: init random number generator
+2026-11-17T18:50:36.427250Z I (96713) QUIC: init client ...
+2026-11-17T18:50:36.427258Z DIAG CP 484 client_init_start ok
+2026-11-17T18:50:36.427266Z DIAG CP 485 after_create_sock ok
+2026-11-17T18:50:36.427274Z E (96733) QUIC: client_init failed
+2026-11-17T18:50:36.427281Z DIAG CYCLE 15 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:36.427290Z I (96743) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:36.427298Z I (96743) QUIC: QUIC client cleanup completed. Free heap: 182620 bytes
+2026-11-17T18:50:38.281472Z DIAG CYCLE 16 START mode=2
+2026-11-17T18:50:38.281569Z DIAG HEAP cycle_start free=180660 min_free=108920 largest_block=98292
+2026-11-17T18:50:38.281580Z I (98753) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:38.281589Z I (98753) QUIC: init random number generator
+2026-11-17T18:50:38.281597Z I (98753) QUIC: init client ...
+2026-11-17T18:50:38.482078Z DIAG CP 486 client_init_start ok
+2026-11-17T18:50:38.482225Z DIAG CP 487 after_create_sock ok
+2026-11-17T18:50:38.482253Z E (98773) QUIC: client_init failed
+2026-11-17T18:50:38.482266Z DIAG CYCLE 16 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:38.482279Z I (98783) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:38.482292Z I (98783) QUIC: QUIC client cleanup completed. Free heap: 180660 bytes
+2026-11-17T18:50:40.309018Z DIAG CYCLE 17 START mode=2
+2026-11-17T18:50:40.309118Z DIAG HEAP cycle_start free=178700 min_free=108920 largest_block=98292
+2026-11-17T18:50:40.520277Z I (100793) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:40.520448Z I (100793) QUIC: init random number generator
+2026-11-17T18:50:40.520471Z I (100793) QUIC: init client ...
+2026-11-17T18:50:40.520484Z DIAG CP 488 client_init_start ok
+2026-11-17T18:50:40.520497Z DIAG CP 489 after_create_sock ok
+2026-11-17T18:50:40.520510Z E (100813) QUIC: client_init failed
+2026-11-17T18:50:40.520528Z DIAG CYCLE 17 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:40.520540Z I (100823) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:40.520552Z I (100823) QUIC: QUIC client cleanup completed. Free heap: 178700 bytes
+2026-11-17T18:50:42.363163Z DIAG CYCLE 18 START mode=2
+2026-11-17T18:50:42.363257Z DIAG HEAP cycle_start free=178700 min_free=108920 largest_block=98292
+2026-11-17T18:50:42.363290Z I (102833) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:42.363299Z I (102833) QUIC: init random number generator
+2026-11-17T18:50:42.363308Z I (102833) QUIC: init client ...
+2026-11-17T18:50:42.578120Z DIAG CP 490 client_init_start ok
+2026-11-17T18:50:42.578223Z DIAG CP 491 after_create_sock ok
+2026-11-17T18:50:42.578246Z E (102853) QUIC: client_init failed
+2026-11-17T18:50:42.578257Z DIAG CYCLE 18 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:42.578273Z I (102863) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:42.578281Z I (102863) QUIC: QUIC client cleanup completed. Free heap: 178700 bytes
+2026-11-17T18:50:44.419252Z DIAG CYCLE 19 START mode=2
+2026-11-17T18:50:44.419389Z DIAG HEAP cycle_start free=176740 min_free=108920 largest_block=98292
+2026-11-17T18:50:44.419405Z I (104873) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:44.419415Z I (104873) QUIC: init random number generator
+2026-11-17T18:50:44.419424Z I (104873) QUIC: init client ...
+2026-11-17T18:50:44.419433Z DIAG CP 492 client_init_start ok
+2026-11-17T18:50:44.419441Z DIAG CP 493 after_create_sock ok
+2026-11-17T18:50:44.419454Z E (104893) QUIC: client_init failed
+2026-11-17T18:50:44.419462Z DIAG CYCLE 19 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:44.419480Z I (104903) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:44.619711Z I (104903) QUIC: QUIC client cleanup completed. Free heap: 176740 bytes
+2026-11-17T18:50:46.437206Z DIAG CYCLE 20 START mode=2
+2026-11-17T18:50:46.437322Z DIAG HEAP cycle_start free=176740 min_free=108920 largest_block=98292
+2026-11-17T18:50:46.437337Z I (106913) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:46.640499Z I (106913) QUIC: init random number generator
+2026-11-17T18:50:46.640587Z I (106913) QUIC: init client ...
+2026-11-17T18:50:46.640600Z DIAG CP 494 client_init_start ok
+2026-11-17T18:50:46.640609Z DIAG CP 495 after_create_sock ok
+2026-11-17T18:50:46.640617Z E (106933) QUIC: client_init failed
+2026-11-17T18:50:46.640624Z DIAG CYCLE 20 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:46.640632Z I (106943) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:46.640640Z I (106943) QUIC: QUIC client cleanup completed. Free heap: 176740 bytes
+2026-11-17T18:50:48.474434Z DIAG CYCLE 21 START mode=2
+2026-11-17T18:50:48.474568Z DIAG HEAP cycle_start free=176740 min_free=108920 largest_block=98292
+2026-11-17T18:50:48.474595Z I (108953) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:48.674588Z I (108953) QUIC: init random number generator
+2026-11-17T18:50:48.674693Z I (108953) QUIC: init client ...
+2026-11-17T18:50:48.674706Z DIAG CP 496 client_init_start ok
+2026-11-17T18:50:48.674715Z DIAG CP 497 after_create_sock ok
+2026-11-17T18:50:48.674722Z E (108973) QUIC: client_init failed
+2026-11-17T18:50:48.674730Z DIAG CYCLE 21 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:48.674737Z I (108983) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:48.674745Z I (108983) QUIC: QUIC client cleanup completed. Free heap: 176740 bytes
+2026-11-17T18:50:50.540583Z DIAG CYCLE 22 START mode=2
+2026-11-17T18:50:50.540650Z DIAG HEAP cycle_start free=174780 min_free=108920 largest_block=98292
+2026-11-17T18:50:50.540661Z I (110993) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:50.540670Z I (110993) QUIC: init random number generator
+2026-11-17T18:50:50.540679Z I (110993) QUIC: init client ...
+2026-11-17T18:50:50.540687Z DIAG CP 498 client_init_start ok
+2026-11-17T18:50:50.540695Z DIAG CP 499 after_create_sock ok
+2026-11-17T18:50:50.540702Z E (111013) QUIC: client_init failed
+2026-11-17T18:50:50.540710Z DIAG CYCLE 22 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:50.540718Z I (111023) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:50.540726Z I (111023) QUIC: QUIC client cleanup completed. Free heap: 174780 bytes
+2026-11-17T18:50:52.558118Z DIAG CYCLE 23 START mode=2
+2026-11-17T18:50:52.558218Z DIAG HEAP cycle_start free=174780 min_free=108920 largest_block=98292
+2026-11-17T18:50:52.558230Z I (113033) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:52.558239Z I (113033) QUIC: init random number generator
+2026-11-17T18:50:52.558252Z I (113033) QUIC: init client ...
+2026-11-17T18:50:52.759506Z DIAG CP 500 client_init_start ok
+2026-11-17T18:50:52.759602Z DIAG CP 501 after_create_sock ok
+2026-11-17T18:50:52.759612Z E (113053) QUIC: client_init failed
+2026-11-17T18:50:52.759621Z DIAG CYCLE 23 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:52.759628Z I (113063) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:52.759636Z I (113063) QUIC: QUIC client cleanup completed. Free heap: 174780 bytes
+2026-11-17T18:50:54.599013Z DIAG CYCLE 24 START mode=2
+2026-11-17T18:50:54.599143Z DIAG HEAP cycle_start free=172820 min_free=108920 largest_block=98292
+2026-11-17T18:50:54.599168Z I (115073) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:54.599178Z I (115073) QUIC: init random number generator
+2026-11-17T18:50:54.599186Z I (115073) QUIC: init client ...
+2026-11-17T18:50:54.801070Z DIAG CP 502 client_init_start ok
+2026-11-17T18:50:54.801207Z DIAG CP 503 after_create_sock ok
+2026-11-17T18:50:54.801223Z E (115093) QUIC: client_init failed
+2026-11-17T18:50:54.801236Z DIAG CYCLE 24 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:54.801248Z I (115103) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:54.801271Z I (115103) QUIC: QUIC client cleanup completed. Free heap: 172820 bytes
+2026-11-17T18:50:56.622125Z DIAG CYCLE 25 START mode=2
+2026-11-17T18:50:56.825586Z DIAG HEAP cycle_start free=170860 min_free=108920 largest_block=98292
+2026-11-17T18:50:56.825708Z I (117113) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:56.825723Z I (117113) QUIC: init random number generator
+2026-11-17T18:50:56.825759Z I (117113) QUIC: init client ...
+2026-11-17T18:50:56.825773Z DIAG CP 504 client_init_start ok
+2026-11-17T18:50:56.825786Z DIAG CP 505 after_create_sock ok
+2026-11-17T18:50:56.825809Z E (117133) QUIC: client_init failed
+2026-11-17T18:50:56.825823Z DIAG CYCLE 25 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:56.825835Z I (117143) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:56.825847Z I (117143) QUIC: QUIC client cleanup completed. Free heap: 170860 bytes
+2026-11-17T18:50:58.700239Z DIAG CYCLE 26 START mode=2
+2026-11-17T18:50:58.700308Z DIAG HEAP cycle_start free=170860 min_free=108920 largest_block=98292
+2026-11-17T18:50:58.700320Z I (119153) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:50:58.700329Z I (119153) QUIC: init random number generator
+2026-11-17T18:50:58.700338Z I (119153) QUIC: init client ...
+2026-11-17T18:50:58.700346Z DIAG CP 506 client_init_start ok
+2026-11-17T18:50:58.700353Z DIAG CP 507 after_create_sock ok
+2026-11-17T18:50:58.700361Z E (119173) QUIC: client_init failed
+2026-11-17T18:50:58.700369Z DIAG CYCLE 26 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:50:58.700376Z I (119183) QUIC: Cleaning up QUIC client...
+2026-11-17T18:50:58.700384Z I (119183) QUIC: QUIC client cleanup completed. Free heap: 170860 bytes
+2026-11-17T18:51:00.727293Z DIAG CYCLE 27 START mode=2
+2026-11-17T18:51:00.727418Z DIAG HEAP cycle_start free=170860 min_free=108920 largest_block=98292
+2026-11-17T18:51:00.727458Z I (121193) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:51:00.727470Z I (121193) QUIC: init random number generator
+2026-11-17T18:51:00.727479Z I (121193) QUIC: init client ...
+2026-11-17T18:51:00.727487Z DIAG CP 508 client_init_start ok
+2026-11-17T18:51:00.929229Z DIAG CP 509 after_create_sock ok
+2026-11-17T18:51:00.929355Z E (121213) QUIC: client_init failed
+2026-11-17T18:51:00.929367Z DIAG CYCLE 27 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:51:00.929375Z I (121223) QUIC: Cleaning up QUIC client...
+2026-11-17T18:51:00.929384Z I (121223) QUIC: QUIC client cleanup completed. Free heap: 170716 bytes
+2026-11-17T18:51:02.758072Z DIAG CYCLE 28 START mode=2
+2026-11-17T18:51:02.758221Z DIAG HEAP cycle_start free=170860 min_free=108920 largest_block=98292
+2026-11-17T18:51:02.758236Z I (123233) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:51:02.758245Z I (123233) QUIC: init random number generator
+2026-11-17T18:51:02.758253Z I (123233) QUIC: init client ...
+2026-11-17T18:51:02.973338Z DIAG CP 510 client_init_start ok
+2026-11-17T18:51:02.973447Z DIAG CP 511 after_create_sock ok
+2026-11-17T18:51:02.973459Z E (123253) QUIC: client_init failed
+2026-11-17T18:51:02.973469Z DIAG CYCLE 28 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:51:02.973476Z I (123263) QUIC: Cleaning up QUIC client...
+2026-11-17T18:51:02.973484Z I (123263) QUIC: QUIC client cleanup completed. Free heap: 170860 bytes
+2026-11-17T18:51:04.798390Z DIAG CYCLE 29 START mode=2
+2026-11-17T18:51:04.798487Z DIAG HEAP cycle_start free=168940 min_free=108920 largest_block=98292
+2026-11-17T18:51:04.798517Z I (125273) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:51:04.798527Z I (125273) QUIC: init random number generator
+2026-11-17T18:51:04.798535Z I (125273) QUIC: init client ...
+2026-11-17T18:51:05.000445Z DIAG CP 512 client_init_start ok
+2026-11-17T18:51:05.000583Z DIAG CP 513 after_create_sock ok
+2026-11-17T18:51:05.000596Z E (125293) QUIC: client_init failed
+2026-11-17T18:51:05.000604Z DIAG CYCLE 29 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:51:05.000612Z I (125303) QUIC: Cleaning up QUIC client...
+2026-11-17T18:51:05.000631Z I (125303) QUIC: QUIC client cleanup completed. Free heap: 168940 bytes
+2026-11-17T18:51:06.845950Z DIAG CYCLE 30 START mode=2
+2026-11-17T18:51:06.846052Z DIAG HEAP cycle_start free=168940 min_free=108920 largest_block=98292
+2026-11-17T18:51:06.846065Z I (127313) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-17T18:51:06.846093Z I (127313) QUIC: init random number generator
+2026-11-17T18:51:06.846101Z I (127313) QUIC: init client ...
+2026-11-17T18:51:06.846110Z DIAG CP 514 client_init_start ok
+2026-11-17T18:51:07.048289Z DIAG CP 515 after_create_sock ok
+2026-11-17T18:51:07.048399Z E (127333) QUIC: client_init failed
+2026-11-17T18:51:07.048412Z DIAG CYCLE 30 FAIL_TIMEOUT_OR_INIT
+2026-11-17T18:51:07.048420Z I (127343) QUIC: Cleaning up QUIC client...
+2026-11-17T18:51:07.048429Z I (127343) QUIC: QUIC client cleanup completed. Free heap: 168940 bytes
+2026-11-17T18:51:08.865250Z DIAG COMPLETE run=rs2 mode=2 cycles=30 started=30 passed=10 failed_timeout=20 crashed=0
+2026-11-17T18:51:08.865352Z CAPTURE_CLOSE reason=diag_complete

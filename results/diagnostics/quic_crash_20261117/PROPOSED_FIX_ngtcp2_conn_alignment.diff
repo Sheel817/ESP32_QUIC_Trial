@@ -1,0 +1,9 @@
+--- a/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c   (frozen source, NOT modified; proposal only)
++++ b/components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c
+@@ conn_new(): buffer allocation
+-  buf = ngtcp2_mem_calloc(mem, 1, buflen);
++  /* buflen_align() rounds offsets as if the base were 8-byte aligned, but buf_align()
++     rounds the absolute address; ESP-IDF malloc only guarantees 4-byte alignment, so up
++     to 7 bytes of slack are needed or the client available_versions write (4 bytes)
++     runs past the end of the allocation. */
++  buf = ngtcp2_mem_calloc(mem, 1, buflen + 0x7);

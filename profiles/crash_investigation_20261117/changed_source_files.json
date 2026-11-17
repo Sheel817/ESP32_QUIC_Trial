@@ -1,0 +1,25 @@
+{
+  "modified_vs_frozen": [
+    "main/CMakeLists.txt",
+    "main/ngtcp2_sample.c",
+    "main/quic_demo_main.c",
+    "components/ngtcp2/CMakeLists.txt",
+    "components/ngtcp2/ngtcp2/crypto/wolfssl/wolfssl.c",
+    "components/ngtcp2/ngtcp2/lib/ngtcp2_conn.c",
+    "CMakeLists.txt",
+    "partitions.csv"
+  ],
+  "added": [
+    "components/crash_diag/CMakeLists.txt",
+    "components/crash_diag/crash_diag.c",
+    "components/crash_diag/include/crash_diag.h"
+  ],
+  "sdkconfig_changes": {
+    "CONFIG_HEAP_POISONING_DISABLED": null,
+    "CONFIG_HEAP_POISONING_COMPREHENSIVE": "y",
+    "CONFIG_COMPILER_STACK_CHECK_MODE_NONE": null,
+    "CONFIG_COMPILER_STACK_CHECK_MODE_STRONG": "y",
+    "CONFIG_ESP_SYSTEM_USE_EH_FRAME": "y"
+  },
+  "partition_change": "factory 1700K -> 2560K"
+}

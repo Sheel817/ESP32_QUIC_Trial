@@ -1,0 +1,7 @@
+0x40809082: panic_abort at C:/esp/v6.1/esp-idf/components/esp_system/panic.c:509
+0x4080903e: esp_system_abort at C:/esp/v6.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+0x42097576: crash_diag_checkpoint at components/crash_diag/crash_diag.c:28
+0x4201383e: client_init at main/ngtcp2_sample.c:753
+0x42013b88: quic_client_init_with_config at main/ngtcp2_sample.c:943
+0x42012454: diag_cycle_task at main/quic_demo_main.c:594
+0x42133b6e: vPortTaskWrapper at C:/esp/v6.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:261

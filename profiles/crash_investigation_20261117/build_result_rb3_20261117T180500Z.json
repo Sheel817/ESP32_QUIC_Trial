@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-11-17T18:05:00.708071+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "C:/esp/v6.1/esp-idf/tools/idf.py",
+    "-B",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\crash_investigation_20261117\\build_rb3",
+    "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\crash_investigation_20261117\\sdkconfig_rb3",
+    "-DDEMO_TRANSPORT=QUIC",
+    "-DDEMO_WIFI_PS_NONE=ON",
+    "-DCCACHE_ENABLE=False",
+    "-DDIAG_MODE=1",
+    "-DDIAG_RUN_ID=rb3",
+    "-DDIAG_CHECKPOINTS=1",
+    "-DDIAG_CYCLES=30",
+    "build"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\crash_investigation_20261117\\src",
+  "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\crash_investigation_20261117\\build_rb3_20261117T180500Z.log",
+  "ended_utc": "2026-11-17T18:05:55.581580+00:00",
+  "exit_code": 0,
+  "bin": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\crash_investigation_20261117\\build_rb3\\quic_demo.bin",
+    "bytes": 1948528,
+    "sha256": "38d6ffbb825a3e521c68e5e257ae494cd4999ba909375daa126e236236e2c190"
+  }
+}

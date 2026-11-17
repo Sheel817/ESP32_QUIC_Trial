@@ -1,0 +1,4 @@
+# DIAGNOSTIC profile: larger factory partition (frozen builds keep 1700K)
+nvs,      data, nvs,     ,        0x6000,
+phy_init, data, phy,     ,        0x1000,
+factory,  app,  factory, ,        2560K,
