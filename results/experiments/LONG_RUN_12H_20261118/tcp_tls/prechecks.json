@@ -1,0 +1,17 @@
+﻿{
+    "checked_utc":  "2026-11-18T00:16:28.7402299Z",
+    "hotspot_state":  "On",
+    "hotspot_band":  "TwoPointFourGigahertz",
+    "hotspot_ip_192_168_137_1":  true,
+    "clumsy_or_windivert_processes":  0,
+    "tcp_server_listening_14568":  true,
+    "com6_present":  true,
+    "com6_serial_monitor_processes":  0,
+    "laptop_on_ac":  true,
+    "battery_percent":  100,
+    "power_scheme":  "Power Scheme GUID: 6fecc5ae-f350-48a5-b669-b472cb895ccf  (Turbo)",
+    "sleep_after_ac":  "Current AC Power Setting Index: 0x00000000",
+    "hibernate_after_ac":  "Current AC Power Setting Index: 0x00000000",
+    "power_settings_changed":  "none (sleep/hibernate were already never); nothing to restore",
+    "disk_free_gb":  645
+}

@@ -14,10 +14,19 @@ env.update(PYTHONUTF8='1', PYTHONDONTWRITEBYTECODE='1', ESP_IDF_VERSION='6.1.0',
 env['PATH'] = ';'.join([str(python.parent), 'C:/Espressif/tools/cmake/4.0.3/bin', 'C:/Espressif/tools/ninja/1.12.1',
                         'C:/Espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin', env['PATH']])
 cfg = p / f'sdkconfig_{tag}'
-shutil.copy2(p / 'sdkconfig', cfg)
+# The committed profile sdkconfig has the Wi-Fi SSID/password masked; take the real values from the root sdkconfig at build time.
+import re
+_root = (p.parents[1] / 'sdkconfig').read_text(encoding='utf-8', errors='replace')
+_txt = (p / 'sdkconfig').read_text(encoding='utf-8')
+for _k in ('CONFIG_EXAMPLE_WIFI_SSID', 'CONFIG_EXAMPLE_WIFI_PASSWORD'):
+    _line = re.search(r'^' + _k + r'=.*$', _root, re.M).group(0)
+    _txt, _n = re.subn(r'^' + _k + r'=.*$', lambda m: _line, _txt, flags=re.M)
+    assert _n == 1, _k
+cfg.write_text(_txt, encoding='utf-8')
 command = [str(python), 'C:/esp/v6.1/esp-idf/tools/idf.py', '-B', str(p / f'build_{tag}'), '-DSDKCONFIG=' + str(cfg),
            f'-DDEMO_TRANSPORT={transport}', '-DDEMO_WIFI_PS_NONE=ON', '-DCCACHE_ENABLE=False', f'-DFIXED_TEST_MODE={mode}',
-           f'-DFIXED_TEST_RUN_ID={run_id}', f'-DFIXED_TEST_CYCLES={cycles}', 'build']
+           f'-DFIXED_TEST_RUN_ID={run_id}', f'-DFIXED_TEST_CYCLES={cycles}',
+           f"-DFIXED_CT_MODE={os.environ.get('CT','0')}", f"-DFIXED_HEAPLOG={os.environ.get('HEAPLOG','0')}", 'build']
 stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ'); log = p / f'build_{tag}_{stamp}.log'
 rec = dict(started_utc=dt.datetime.now(dt.timezone.utc).isoformat(), command=command, cwd=str(src), log=str(log))
 with log.open('wb') as f:

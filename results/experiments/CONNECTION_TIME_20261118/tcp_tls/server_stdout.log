@@ -1,0 +1,152 @@
+CSV log: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\logs\sensor_tcp_tls_20261117T234400_572962Z_m5uthacx.csv
+READY | TCP+TLS port 14568 | ALPN=mqtt
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect
+TCP+TLS CONNECTED | TLS=TLSv1.3 | cipher=('TLS_AES_128_GCM_SHA256', 'TLSv1.3', 128) | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+TCP+TLS CLOSED | MQTT disconnect

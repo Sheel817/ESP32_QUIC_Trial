@@ -1,0 +1,416 @@
+2026-11-17T23:58:11.057123Z CAPTURE_OPEN reset=True
+2026-11-17T23:58:11.208283Z RESET_RELEASED_BY_HOST
+2026-11-17T23:58:11.308274Z ESP-ROM:esp32c6-20220919
+2026-11-17T23:58:11.308400Z Build:Sep 19 2022
+2026-11-17T23:58:11.308431Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-17T23:58:11.308480Z SPIWP:0xee
+2026-11-17T23:58:11.308498Z mode:DIO, clock div:2
+2026-11-17T23:58:11.308516Z load:0x40875730,len:0x1648
+2026-11-17T23:58:11.308534Z load:0x4086b910,len:0xdbc
+2026-11-17T23:58:11.308551Z load:0x4086e610,len:0x31f0
+2026-11-17T23:58:11.308567Z entry 0x4086b91a
+2026-11-17T23:58:11.308584Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-17T23:58:11.309178Z I (24) boot: compile time Nov 18 2026 01:45:36
+2026-11-17T23:58:11.309197Z I (24) boot: chip revision: v0.0
+2026-11-17T23:58:11.309212Z I (24) boot: efuse block revision: v0.2
+2026-11-17T23:58:11.309227Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-17T23:58:11.309241Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-17T23:58:11.309256Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-17T23:58:11.309270Z I (38) boot: Enabling RNG early entropy source...
+2026-11-17T23:58:11.309284Z I (43) boot: Partition Table:
+2026-11-17T23:58:11.309297Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-17T23:58:11.309313Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-17T23:58:11.309329Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-17T23:58:11.309343Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-17T23:58:11.309359Z I (71) boot: End of partition table
+2026-11-17T23:58:11.511341Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3ab9ch (240540) map
+2026-11-17T23:58:11.511466Z I (128) esp_image: segment 1: paddr=0004abc4 vaddr=40800000 size=05454h ( 21588) load
+2026-11-17T23:58:11.511488Z I (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=114188h (1130888) map
+2026-11-17T23:58:11.676197Z I (349) esp_image: segment 3: paddr=001641b0 vaddr=40805454 size=13180h ( 78208) load
+2026-11-17T23:58:11.676339Z I (367) esp_image: segment 4: paddr=00177338 vaddr=408185e0 size=0485ch ( 18524) load
+2026-11-17T23:58:11.676361Z I (378) boot: Loaded app from partition at offset 0x10000
+2026-11-17T23:58:11.676377Z I (378) boot: Disabling RNG early entropy source...
+2026-11-17T23:58:11.676392Z I (388) cpu_start: Unicore app
+2026-11-17T23:58:11.676406Z I (396) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-17T23:58:11.676422Z I (397) cpu_start: Pro cpu start user code
+2026-11-17T23:58:11.676436Z I (397) cpu_start: cpu freq: 160000000 Hz
+2026-11-17T23:58:11.676449Z I (399) app_init: Application information:
+2026-11-17T23:58:11.676462Z I (402) app_init: Project name:     quic_demo
+2026-11-17T23:58:11.676475Z I (407) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-17T23:58:11.676490Z I (412) app_init: Compile time:     Nov 18 2026 01:44:32
+2026-11-17T23:58:11.676504Z I (417) app_init: ELF file SHA256:  83abebeec...
+2026-11-17T23:58:11.676517Z I (422) app_init: ESP-IDF:          v6.1
+2026-11-17T23:58:11.676531Z I (425) efuse_init: Min chip rev:     v0.0
+2026-11-17T23:58:11.676543Z I (429) efuse_init: Max chip rev:     v0.99 
+2026-11-17T23:58:11.676556Z I (433) efuse_init: Chip rev:         v0.0
+2026-11-17T23:58:11.676568Z I (437) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-17T23:58:11.772567Z I (443) heap_init: At 408247B0 len 00057E60 (351 KiB): RAM
+2026-11-17T23:58:11.772665Z I (448) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-17T23:58:11.772684Z I (454) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-17T23:58:11.772700Z I (460) spi_flash: detected chip: gd
+2026-11-17T23:58:11.772713Z I (462) spi_flash: flash io: dio
+2026-11-17T23:58:11.772727Z I (466) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-17T23:58:11.772743Z I (472) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-17T23:58:11.772761Z I (478) coexist: coex firmware version: a830d28
+2026-11-17T23:58:11.772823Z I (482) coexist: coexist rom version 5b8dcfa
+2026-11-17T23:58:11.772843Z I (487) main_task: Started on CPU0
+2026-11-17T23:58:11.772858Z I (507) main_task: Calling app_main()
+2026-11-17T23:58:11.772872Z I (507) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-17T23:58:11.772913Z I (507) quic_demo_main: ESP-IDF version: v6.1
+2026-11-17T23:58:11.772929Z I (517) example_connect: Start example_connect.
+2026-11-17T23:58:11.772945Z I (517) pp: pp rom version: 5b8dcfa
+2026-11-17T23:58:11.772959Z I (517) net80211: net80211 rom version: 5b8dcfa
+2026-11-17T23:58:11.772972Z I (527) wifi:wifi driver task: 4082aa20, prio:23, stack:6656, core=0
+2026-11-17T23:58:11.772989Z I (527) wifi:wifi firmware version: e12a754
+2026-11-17T23:58:11.773002Z I (527) wifi:wifi certification version: v7.0
+2026-11-17T23:58:11.773015Z I (527) wifi:config NVS flash: enabled
+2026-11-17T23:58:11.901669Z I (537) wifi:config nano formatting: disabled
+2026-11-17T23:58:11.901765Z I (537) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-17T23:58:11.901788Z I (547) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-17T23:58:11.901803Z I (547) wifi:Init static rx mgmt buffer num: 5
+2026-11-17T23:58:11.901817Z I (557) wifi:Init management short buffer num: 32
+2026-11-17T23:58:11.901830Z I (557) wifi:Init dynamic tx buffer num: 32
+2026-11-17T23:58:11.901844Z I (567) wifi:Init static tx FG buffer num: 2
+2026-11-17T23:58:11.901857Z I (567) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-17T23:58:11.901873Z I (577) wifi:Init static rx buffer num: 10
+2026-11-17T23:58:11.901886Z I (577) wifi:Init dynamic rx buffer num: 32
+2026-11-17T23:58:11.901901Z I (577) wifi_init: rx ba win: 6
+2026-11-17T23:58:11.901914Z I (587) wifi_init: accept mbox: 6
+2026-11-17T23:58:11.901925Z I (587) wifi_init: tcpip mbox: 32
+2026-11-17T23:58:11.901937Z I (587) wifi_init: udp mbox: 6
+2026-11-17T23:58:11.901948Z I (597) wifi_init: tcp mbox: 6
+2026-11-17T23:58:11.901959Z I (597) wifi_init: tcp tx win: 5760
+2026-11-17T23:58:11.901971Z I (597) wifi_init: tcp rx win: 5760
+2026-11-17T23:58:11.901982Z I (597) wifi_init: tcp mss: 1440
+2026-11-17T23:58:11.901994Z I (607) wifi_init: WiFi IRAM OP enabled
+2026-11-17T23:58:11.902006Z I (607) wifi_init: WiFi RX IRAM OP enabled
+2026-11-17T23:58:11.902018Z I (617) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-17T23:58:11.902030Z I (617) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-17T23:58:11.902044Z I (677) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-17T23:58:12.101373Z 
+2026-11-17T23:58:12.101459Z I (677) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-17T23:58:12.101478Z I (677) wifi:enable tsf
+2026-11-17T23:58:12.101491Z I (677) example_connect: Connecting to <SSID_MASKED>...
+2026-11-17T23:58:12.101525Z W (677) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-17T23:58:12.101546Z I (687) example_connect: Waiting for IP(s)
+2026-11-17T23:58:14.357723Z I (3097) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:16.789636Z I (5507) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:19.205147Z I (7907) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:21.635231Z I (10317) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:24.051483Z I (12727) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:26.481809Z I (15137) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:28.892239Z I (17547) example_connect: WiFi Connect failed 7 times, stop reconnect.
+2026-11-17T23:58:28.892339Z ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x42010fa4
+2026-11-17T23:58:28.892359Z file: "./main/quic_demo_main.c" line 753
+2026-11-17T23:58:28.892372Z func: app_main
+2026-11-17T23:58:28.892383Z expression: example_connect()
+2026-11-17T23:58:28.892396Z 
+2026-11-17T23:58:28.892406Z abort() was called at PC 0x40808dbd on core 0
+2026-11-17T23:58:28.892489Z Core  0 register dump:
+2026-11-17T23:58:28.892505Z MEPC    : 0x40808e08  RA      : 0x40808dc6  SP      : 0x40827a30  GP      : 0x40818de4  
+2026-11-17T23:58:28.892522Z TP      : 0x40827b30  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+2026-11-17T23:58:28.892538Z S0/FP   : 0x00000004  S1      : 0x40827a94  A0      : 0x40827a5c  A1      : 0x40827a92  
+2026-11-17T23:58:28.892554Z A2      : 0x00000000  A3      : 0x40827a89  A4      : 0x00000001  A5      : 0x40824000  
+2026-11-17T23:58:28.892569Z A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+2026-11-17T23:58:28.892585Z S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+2026-11-17T23:58:28.892600Z S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+2026-11-17T23:58:28.980648Z T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+2026-11-17T23:58:28.980807Z MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+2026-11-17T23:58:28.980849Z MHARTID : 0x00000000  
+2026-11-17T23:58:28.980869Z 
+2026-11-17T23:58:28.980885Z Stack memory:
+2026-11-17T23:58:28.980904Z 40827a30: 0x42123f1c 0x42010fa8 0x40827a90 0x40808346 0x00000000 0x00000000 0x00000001 0x4081c4e4
+2026-11-17T23:58:28.980934Z 40827a50: 0x40827a94 0x4081c500 0x40827a90 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+2026-11-17T23:58:28.980972Z 40827a70: 0x43502074 0x34783020 0x38303830 0x20646264 0x63206e6f 0x2065726f 0x00000030 0x00000000
+2026-11-17T23:58:28.980992Z 40827a90: 0x00000030 0x30383034 0x64626438 0x00000000 0x00000000 0x000001fb 0x42124000 0x40808dc0
+2026-11-17T23:58:28.981013Z 40827ab0: 0x42123d24 0x000001fb 0x42124000 0x42010fa8 0x00000000 0x4087ccf0 0x40827ae4 0x000001fb
+2026-11-17T23:58:28.981032Z 40827ad0: 0x42122168 0x00000000 0x42122000 0x42008330 0x00000000 0x00001388 0x00000001 0x00000000
+2026-11-17T23:58:28.981050Z 40827af0: 0x00000000 0x00000000 0x00000000 0x42111bd4 0x00000000 0x00000000 0x00000000 0x00000000
+2026-11-17T23:58:28.981066Z 40827b10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:28.981082Z 40827b30: 0x00000005 0x408189c4 0x40818974 0x40818924 0x00000000 0x00000000 0x00000000 0x00000000
+2026-11-17T23:58:29.069400Z 40827b50: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069528Z 40827b70: 0xa5a5a5a5 0xa5a5a5a5 0x00000060 0x40827840 0x00000004 0x4081d068 0x4081d068 0x40827b7c
+2026-11-17T23:58:29.069552Z 40827b90: 0x4081d060 0x00000018 0x40831f6c 0x40831f6c 0x40827b7c 0x00000000 0x00000001 0x40826b78
+2026-11-17T23:58:29.069571Z 40827bb0: 0x6e69616d 0x00000000 0x00000000 0x00000000 0x40827b70 0x00000001 0x00000000 0x40828ff0
+2026-11-17T23:58:29.069588Z 40827bd0: 0x42009280 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069605Z 40827bf0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069622Z 40827c10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069639Z 40827c30: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069656Z 40827c50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.069672Z 40827c70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158718Z 40827c90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158811Z 40827cb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158832Z 40827cd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158850Z 40827cf0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158874Z 40827d10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158895Z 40827d30: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158912Z 40827d50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158928Z 40827d70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158944Z 40827d90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.158960Z 40827db0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.250841Z 40827dd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.250915Z 40827df0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.250937Z 40827e10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:29.250956Z 
+2026-11-17T23:58:29.250966Z 
+2026-11-17T23:58:29.250975Z 
+2026-11-17T23:58:29.250985Z ELF file SHA256: 83abebeec
+2026-11-17T23:58:29.250998Z 
+2026-11-17T23:58:29.251007Z Rebooting...
+2026-11-17T23:58:29.251018Z ESP-ROM:esp32c6-20220919
+2026-11-17T23:58:29.251033Z Build:Sep 19 2022
+2026-11-17T23:58:29.251045Z rst:0xc (SW_CPU),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-17T23:58:29.251076Z Saved PC:0x4001975a
+2026-11-17T23:58:29.251088Z SPIWP:0xee
+2026-11-17T23:58:29.251099Z mode:DIO, clock div:2
+2026-11-17T23:58:29.251111Z load:0x40875730,len:0x1648
+2026-11-17T23:58:29.251123Z load:0x4086b910,len:0xdbc
+2026-11-17T23:58:29.251135Z load:0x4086e610,len:0x31f0
+2026-11-17T23:58:29.251148Z entry 0x4086b91a
+2026-11-17T23:58:29.251159Z I (27) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-17T23:58:29.251181Z I (27) boot: compile time Nov 18 2026 01:45:36
+2026-11-17T23:58:29.251195Z I (28) boot: chip revision: v0.0
+2026-11-17T23:58:29.251207Z I (29) boot: efuse block revision: v0.2
+2026-11-17T23:58:29.251220Z I (30) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-17T23:58:29.251234Z I (34) boot.esp32c6: SPI Mode       : DIO
+2026-11-17T23:58:29.251247Z I (38) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-17T23:58:29.251260Z I (42) boot: Enabling RNG early entropy source...
+2026-11-17T23:58:29.251274Z I (46) boot: Partition Table:
+2026-11-17T23:58:29.251286Z I (49) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-17T23:58:29.453415Z I (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-17T23:58:29.453545Z I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-17T23:58:29.453563Z I (68) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-17T23:58:29.453579Z I (75) boot: End of partition table
+2026-11-17T23:58:29.453591Z I (78) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3ab9ch (240540) map
+2026-11-17T23:58:29.453607Z I (176) esp_image: segment 1: paddr=0004abc4 vaddr=40800000 size=05454h ( 21588) load
+2026-11-17T23:58:29.453623Z I (186) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=114188h (1130888) map
+2026-11-17T23:58:29.856167Z I (612) esp_image: segment 3: paddr=001641b0 vaddr=40805454 size=13180h ( 78208) load
+2026-11-17T23:58:29.856322Z I (647) esp_image: segment 4: paddr=00177338 vaddr=408185e0 size=0485ch ( 18524) load
+2026-11-17T23:58:29.856347Z I (668) boot: Loaded app from partition at offset 0x10000
+2026-11-17T23:58:29.950711Z I (669) boot: Disabling RNG early entropy source...
+2026-11-17T23:58:29.950804Z I (679) cpu_start: Unicore app
+2026-11-17T23:58:29.950820Z I (688) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-17T23:58:29.950836Z I (688) cpu_start: Pro cpu start user code
+2026-11-17T23:58:29.950850Z I (688) cpu_start: cpu freq: 160000000 Hz
+2026-11-17T23:58:29.950863Z I (690) app_init: Application information:
+2026-11-17T23:58:29.950929Z I (694) app_init: Project name:     quic_demo
+2026-11-17T23:58:29.950947Z I (698) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-17T23:58:29.950963Z I (704) app_init: Compile time:     Nov 18 2026 01:44:32
+2026-11-17T23:58:29.950977Z I (709) app_init: ELF file SHA256:  83abebeec...
+2026-11-17T23:58:29.950990Z I (713) app_init: ESP-IDF:          v6.1
+2026-11-17T23:58:29.951003Z I (717) efuse_init: Min chip rev:     v0.0
+2026-11-17T23:58:29.951015Z I (720) efuse_init: Max chip rev:     v0.99 
+2026-11-17T23:58:29.951028Z I (724) efuse_init: Chip rev:         v0.0
+2026-11-17T23:58:29.951040Z I (728) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-17T23:58:29.951055Z I (735) heap_init: At 408247B0 len 00057E60 (351 KiB): RAM
+2026-11-17T23:58:29.951069Z I (740) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-17T23:58:29.951082Z I (745) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-17T23:58:29.951097Z I (751) spi_flash: detected chip: gd
+2026-11-17T23:58:29.951109Z I (754) spi_flash: flash io: dio
+2026-11-17T23:58:30.046921Z I (757) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-17T23:58:30.047014Z I (763) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-17T23:58:30.047034Z I (769) coexist: coex firmware version: a830d28
+2026-11-17T23:58:30.047049Z I (774) coexist: coexist rom version 5b8dcfa
+2026-11-17T23:58:30.047062Z I (778) main_task: Started on CPU0
+2026-11-17T23:58:30.047074Z I (798) main_task: Calling app_main()
+2026-11-17T23:58:30.047087Z I (798) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-17T23:58:30.047118Z I (798) quic_demo_main: ESP-IDF version: v6.1
+2026-11-17T23:58:30.047132Z I (808) example_connect: Start example_connect.
+2026-11-17T23:58:30.047145Z I (808) pp: pp rom version: 5b8dcfa
+2026-11-17T23:58:30.047157Z I (808) net80211: net80211 rom version: 5b8dcfa
+2026-11-17T23:58:30.047170Z I (818) wifi:wifi driver task: 4082aa20, prio:23, stack:6656, core=0
+2026-11-17T23:58:30.047185Z I (818) wifi:wifi firmware version: e12a754
+2026-11-17T23:58:30.047197Z I (818) wifi:wifi certification version: v7.0
+2026-11-17T23:58:30.047209Z I (818) wifi:config NVS flash: enabled
+2026-11-17T23:58:30.047221Z I (828) wifi:config nano formatting: disabled
+2026-11-17T23:58:30.047234Z I (828) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-17T23:58:30.047248Z I (838) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-17T23:58:30.047262Z I (838) wifi:Init static rx mgmt buffer num: 5
+2026-11-17T23:58:30.047274Z I (848) wifi:Init management short buffer num: 32
+2026-11-17T23:58:30.175584Z I (848) wifi:Init dynamic tx buffer num: 32
+2026-11-17T23:58:30.175705Z I (858) wifi:Init static tx FG buffer num: 2
+2026-11-17T23:58:30.175734Z I (858) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-17T23:58:30.175753Z I (868) wifi:Init static rx buffer num: 10
+2026-11-17T23:58:30.175768Z I (868) wifi:Init dynamic rx buffer num: 32
+2026-11-17T23:58:30.175781Z I (868) wifi_init: rx ba win: 6
+2026-11-17T23:58:30.175793Z I (878) wifi_init: accept mbox: 6
+2026-11-17T23:58:30.175805Z I (878) wifi_init: tcpip mbox: 32
+2026-11-17T23:58:30.175816Z I (878) wifi_init: udp mbox: 6
+2026-11-17T23:58:30.175828Z I (888) wifi_init: tcp mbox: 6
+2026-11-17T23:58:30.175840Z I (888) wifi_init: tcp tx win: 5760
+2026-11-17T23:58:30.175851Z I (888) wifi_init: tcp rx win: 5760
+2026-11-17T23:58:30.175863Z I (888) wifi_init: tcp mss: 1440
+2026-11-17T23:58:30.175875Z I (898) wifi_init: WiFi IRAM OP enabled
+2026-11-17T23:58:30.175887Z I (898) wifi_init: WiFi RX IRAM OP enabled
+2026-11-17T23:58:30.175899Z I (908) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-17T23:58:30.175911Z I (908) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-17T23:58:30.175925Z I (958) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-17T23:58:30.175940Z 
+2026-11-17T23:58:30.175950Z I (968) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-17T23:58:30.175968Z I (968) wifi:enable tsf
+2026-11-17T23:58:30.175983Z I (968) example_connect: Connecting to <SSID_MASKED>...
+2026-11-17T23:58:30.175997Z W (968) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-17T23:58:30.376980Z I (978) example_connect: Waiting for IP(s)
+2026-11-17T23:58:32.605855Z I (3388) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:35.036023Z I (5798) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:37.459339Z I (8198) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:39.882559Z I (10608) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:42.312780Z I (13018) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:44.729063Z I (15428) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:47.149156Z I (17828) example_connect: WiFi Connect failed 7 times, stop reconnect.
+2026-11-17T23:58:47.149252Z ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x42010fa4
+2026-11-17T23:58:47.149272Z file: "./main/quic_demo_main.c" line 753
+2026-11-17T23:58:47.149285Z func: app_main
+2026-11-17T23:58:47.149296Z expression: example_connect()
+2026-11-17T23:58:47.149309Z 
+2026-11-17T23:58:47.149319Z abort() was called at PC 0x40808dbd on core 0
+2026-11-17T23:58:47.149347Z Core  0 register dump:
+2026-11-17T23:58:47.149359Z MEPC    : 0x40808e08  RA      : 0x40808dc6  SP      : 0x40827a30  GP      : 0x40818de4  
+2026-11-17T23:58:47.149377Z TP      : 0x40827b30  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+2026-11-17T23:58:47.149393Z S0/FP   : 0x00000004  S1      : 0x40827a94  A0      : 0x40827a5c  A1      : 0x40827a92  
+2026-11-17T23:58:47.149409Z A2      : 0x00000000  A3      : 0x40827a89  A4      : 0x00000001  A5      : 0x40824000  
+2026-11-17T23:58:47.149425Z A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+2026-11-17T23:58:47.149441Z S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+2026-11-17T23:58:47.149456Z S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+2026-11-17T23:58:47.237955Z T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+2026-11-17T23:58:47.238047Z MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+2026-11-17T23:58:47.238068Z MHARTID : 0x00000000  
+2026-11-17T23:58:47.238080Z 
+2026-11-17T23:58:47.238091Z Stack memory:
+2026-11-17T23:58:47.238102Z 40827a30: 0x42123f1c 0x42010fa8 0x40827a90 0x40808346 0x00000000 0x00000000 0x00000001 0x4081c4e4
+2026-11-17T23:58:47.238119Z 40827a50: 0x40827a94 0x4081c500 0x40827a90 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+2026-11-17T23:58:47.238136Z 40827a70: 0x43502074 0x34783020 0x38303830 0x20646264 0x63206e6f 0x2065726f 0x00000030 0x00000000
+2026-11-17T23:58:47.238155Z 40827a90: 0x00000030 0x30383034 0x64626438 0x00000000 0x00000000 0x0000031e 0x42124000 0x40808dc0
+2026-11-17T23:58:47.238172Z 40827ab0: 0x42123d24 0x0000031e 0x42124000 0x42010fa8 0x00000000 0x4087ccf0 0x40827ae4 0x0000031e
+2026-11-17T23:58:47.238189Z 40827ad0: 0x42122168 0x00000000 0x42122000 0x42008330 0x00000000 0x00001388 0x00000001 0x00000000
+2026-11-17T23:58:47.238206Z 40827af0: 0x00000000 0x00000000 0x00000000 0x42111bd4 0x00000000 0x00000000 0x00000000 0x00000000
+2026-11-17T23:58:47.238222Z 40827b10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.238238Z 40827b30: 0x00000005 0x408189c4 0x40818974 0x40818924 0x00000000 0x00000000 0x00000000 0x00000000
+2026-11-17T23:58:47.326439Z 40827b50: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326527Z 40827b70: 0xa5a5a5a5 0xa5a5a5a5 0x00000060 0x40827840 0x00000004 0x4081d068 0x4081d068 0x40827b7c
+2026-11-17T23:58:47.326549Z 40827b90: 0x4081d060 0x00000018 0x40831f6c 0x40831f6c 0x40827b7c 0x00000000 0x00000001 0x40826b78
+2026-11-17T23:58:47.326575Z 40827bb0: 0x6e69616d 0x00000000 0x00000000 0x00000000 0x40827b70 0x00000001 0x00000000 0x40828ff0
+2026-11-17T23:58:47.326595Z 40827bd0: 0x42009280 0x00000000 0x00000000 0x00000600 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326612Z 40827bf0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326629Z 40827c10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326646Z 40827c30: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326662Z 40827c50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.326678Z 40827c70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415450Z 40827c90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415541Z 40827cb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415564Z 40827cd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415581Z 40827cf0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415599Z 40827d10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415616Z 40827d30: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415632Z 40827d50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415649Z 40827d70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415665Z 40827d90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.415682Z 40827db0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.507891Z 40827dd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.507989Z 40827df0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.508013Z 40827e10: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+2026-11-17T23:58:47.508030Z 
+2026-11-17T23:58:47.508040Z 
+2026-11-17T23:58:47.508048Z 
+2026-11-17T23:58:47.508057Z ELF file SHA256: 83abebeec
+2026-11-17T23:58:47.508069Z 
+2026-11-17T23:58:47.508077Z Rebooting...
+2026-11-17T23:58:47.508087Z ESP-ROM:esp32c6-20220919
+2026-11-17T23:58:47.508100Z Build:Sep 19 2022
+2026-11-17T23:58:47.508111Z rst:0xc (SW_CPU),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-17T23:58:47.508171Z Saved PC:0x4001975a
+2026-11-17T23:58:47.508183Z SPIWP:0xee
+2026-11-17T23:58:47.508193Z mode:DIO, clock div:2
+2026-11-17T23:58:47.508204Z load:0x40875730,len:0x1648
+2026-11-17T23:58:47.508217Z load:0x4086b910,len:0xdbc
+2026-11-17T23:58:47.508228Z load:0x4086e610,len:0x31f0
+2026-11-17T23:58:47.508239Z entry 0x4086b91a
+2026-11-17T23:58:47.508250Z I (27) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-17T23:58:47.508271Z I (27) boot: compile time Nov 18 2026 01:45:36
+2026-11-17T23:58:47.508284Z I (28) boot: chip revision: v0.0
+2026-11-17T23:58:47.508296Z I (29) boot: efuse block revision: v0.2
+2026-11-17T23:58:47.508308Z I (30) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-17T23:58:47.508320Z I (34) boot.esp32c6: SPI Mode       : DIO
+2026-11-17T23:58:47.508332Z I (38) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-17T23:58:47.508345Z I (42) boot: Enabling RNG early entropy source...
+2026-11-17T23:58:47.508357Z I (46) boot: Partition Table:
+2026-11-17T23:58:47.508369Z I (49) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-17T23:58:47.714634Z I (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-17T23:58:47.714733Z I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-17T23:58:47.714755Z I (68) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-17T23:58:47.714772Z I (75) boot: End of partition table
+2026-11-17T23:58:47.714784Z I (78) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3ab9ch (240540) map
+2026-11-17T23:58:47.714800Z I (176) esp_image: segment 1: paddr=0004abc4 vaddr=40800000 size=05454h ( 21588) load
+2026-11-17T23:58:47.714816Z I (186) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=114188h (1130888) map
+2026-11-17T23:58:48.117580Z I (612) esp_image: segment 3: paddr=001641b0 vaddr=40805454 size=13180h ( 78208) load
+2026-11-17T23:58:48.117693Z I (647) esp_image: segment 4: paddr=00177338 vaddr=408185e0 size=0485ch ( 18524) load
+2026-11-17T23:58:48.117716Z I (668) boot: Loaded app from partition at offset 0x10000
+2026-11-17T23:58:48.117737Z I (669) boot: Disabling RNG early entropy source...
+2026-11-17T23:58:48.213177Z I (679) cpu_start: Unicore app
+2026-11-17T23:58:48.213265Z I (688) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-17T23:58:48.213285Z I (688) cpu_start: Pro cpu start user code
+2026-11-17T23:58:48.213299Z I (688) cpu_start: cpu freq: 160000000 Hz
+2026-11-17T23:58:48.213312Z I (690) app_init: Application information:
+2026-11-17T23:58:48.213325Z I (694) app_init: Project name:     quic_demo
+2026-11-17T23:58:48.213338Z I (698) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-17T23:58:48.213353Z I (704) app_init: Compile time:     Nov 18 2026 01:44:32
+2026-11-17T23:58:48.213367Z I (709) app_init: ELF file SHA256:  83abebeec...
+2026-11-17T23:58:48.213382Z I (713) app_init: ESP-IDF:          v6.1
+2026-11-17T23:58:48.213396Z I (717) efuse_init: Min chip rev:     v0.0
+2026-11-17T23:58:48.213409Z I (721) efuse_init: Max chip rev:     v0.99 
+2026-11-17T23:58:48.213422Z I (725) efuse_init: Chip rev:         v0.0
+2026-11-17T23:58:48.213435Z I (728) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-17T23:58:48.213450Z I (735) heap_init: At 408247B0 len 00057E60 (351 KiB): RAM
+2026-11-17T23:58:48.213465Z I (740) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-17T23:58:48.213478Z I (745) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-17T23:58:48.213492Z I (751) spi_flash: detected chip: gd
+2026-11-17T23:58:48.213504Z I (754) spi_flash: flash io: dio
+2026-11-17T23:58:48.213515Z I (757) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-17T23:58:48.309448Z I (763) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-17T23:58:48.309561Z I (770) coexist: coex firmware version: a830d28
+2026-11-17T23:58:48.309580Z I (774) coexist: coexist rom version 5b8dcfa
+2026-11-17T23:58:48.309595Z I (778) main_task: Started on CPU0
+2026-11-17T23:58:48.309608Z I (798) main_task: Calling app_main()
+2026-11-17T23:58:48.309624Z I (798) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-17T23:58:48.309657Z I (798) quic_demo_main: ESP-IDF version: v6.1
+2026-11-17T23:58:48.309671Z I (808) example_connect: Start example_connect.
+2026-11-17T23:58:48.309687Z I (808) pp: pp rom version: 5b8dcfa
+2026-11-17T23:58:48.309699Z I (808) net80211: net80211 rom version: 5b8dcfa
+2026-11-17T23:58:48.309713Z I (818) wifi:wifi driver task: 4082aa20, prio:23, stack:6656, core=0
+2026-11-17T23:58:48.309730Z I (818) wifi:wifi firmware version: e12a754
+2026-11-17T23:58:48.309742Z I (818) wifi:wifi certification version: v7.0
+2026-11-17T23:58:48.309755Z I (818) wifi:config NVS flash: enabled
+2026-11-17T23:58:48.309767Z I (828) wifi:config nano formatting: disabled
+2026-11-17T23:58:48.309780Z I (828) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-17T23:58:48.309795Z I (838) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-17T23:58:48.309809Z I (838) wifi:Init static rx mgmt buffer num: 5
+2026-11-17T23:58:48.309822Z I (848) wifi:Init management short buffer num: 32
+2026-11-17T23:58:48.309883Z I (848) wifi:Init dynamic tx buffer num: 32
+2026-11-17T23:58:48.513223Z I (858) wifi:Init static tx FG buffer num: 2
+2026-11-17T23:58:48.513368Z I (858) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-17T23:58:48.513403Z I (868) wifi:Init static rx buffer num: 10
+2026-11-17T23:58:48.513422Z I (868) wifi:Init dynamic rx buffer num: 32
+2026-11-17T23:58:48.513438Z I (868) wifi_init: rx ba win: 6
+2026-11-17T23:58:48.513453Z I (878) wifi_init: accept mbox: 6
+2026-11-17T23:58:48.513466Z I (878) wifi_init: tcpip mbox: 32
+2026-11-17T23:58:48.513480Z I (878) wifi_init: udp mbox: 6
+2026-11-17T23:58:48.513493Z I (888) wifi_init: tcp mbox: 6
+2026-11-17T23:58:48.513510Z I (888) wifi_init: tcp tx win: 5760
+2026-11-17T23:58:48.513522Z I (888) wifi_init: tcp rx win: 5760
+2026-11-17T23:58:48.513536Z I (888) wifi_init: tcp mss: 1440
+2026-11-17T23:58:48.513548Z I (898) wifi_init: WiFi IRAM OP enabled
+2026-11-17T23:58:48.513560Z I (898) wifi_init: WiFi RX IRAM OP enabled
+2026-11-17T23:58:48.513572Z I (908) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-17T23:58:48.513586Z I (908) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-17T23:58:48.513602Z I (968) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-17T23:58:48.513617Z 
+2026-11-17T23:58:48.513627Z I (968) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-17T23:58:48.513639Z I (968) wifi:enable tsf
+2026-11-17T23:58:48.513650Z I (968) example_connect: Connecting to <SSID_MASKED>...
+2026-11-17T23:58:48.513664Z W (968) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-17T23:58:48.513681Z I (978) example_connect: Waiting for IP(s)
+2026-11-17T23:58:50.950494Z I (3388) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:53.382850Z I (5798) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:55.660499Z I (8198) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:58.087870Z I (10608) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-17T23:58:59.928583Z CAPTURE_CLOSE reason=stop_file counts={"lines": 413, "boots": 9, "panics": 2, "disconnect_markers": 16, "rtt_lines": 0, "serial_errors": 0}

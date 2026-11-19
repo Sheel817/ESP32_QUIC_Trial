@@ -36,7 +36,9 @@ message(STATUS "Measurement transport: ${DEMO_TRANSPORT}")
 set(FIXED_TEST_MODE "0" CACHE STRING "TEST ONLY: 0=measurement image (default), 1=reboot cycles, 2=soft reconnect cycles")
 set(FIXED_TEST_CYCLES "30" CACHE STRING "TEST ONLY: cycles")
 set(FIXED_TEST_RUN_ID "f0" CACHE STRING "TEST ONLY: NVS namespace suffix")
+set(FIXED_CT_MODE "0" CACHE STRING "1=connection-time test image (50 attempts)")
+set(FIXED_HEAPLOG "0" CACHE STRING "1=log free/min free heap every 60 s in the normal sensor loop")
 target_compile_definitions(${COMPONENT_LIB} PRIVATE
     DEMO_WIFI_PS_NONE=$<BOOL:${DEMO_WIFI_PS_NONE}>
-    FIXED_TEST_MODE=${FIXED_TEST_MODE} FIXED_TEST_CYCLES=${FIXED_TEST_CYCLES} "FIXED_TEST_RUN_ID=\"${FIXED_TEST_RUN_ID}\"")
+    FIXED_CT_MODE=${FIXED_CT_MODE} FIXED_HEAPLOG=${FIXED_HEAPLOG} FIXED_TEST_MODE=${FIXED_TEST_MODE} FIXED_TEST_CYCLES=${FIXED_TEST_CYCLES} "FIXED_TEST_RUN_ID=\"${FIXED_TEST_RUN_ID}\"")
 message(STATUS "Experimental Wi-Fi power-saving-off profile: ${DEMO_WIFI_PS_NONE}")

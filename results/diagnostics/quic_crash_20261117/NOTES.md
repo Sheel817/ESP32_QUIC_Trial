@@ -110,3 +110,8 @@ Phase 2 (Clumsy Lag 100 ms) was NOT needed: Phase 1 already reproduced the fault
 
 ### Step 5
 - QUIC server (PIDs 5128, 37500) stopped; UDP 14567 free. Serial ports closed by capture scripts. No timing measurements started.
+
+## 2026-11-18/19 follow-up: connection-time test and 12 h runs (fixed profile)
+- Connection-time test (50 attempts each, 0 failures): `results/experiments/CONNECTION_TIME_20261118/`. QUIC event-loop re-init leak fixed (init once) in the fixed profile (`patch_ct.py`).
+- 12 h runs: `results/experiments/LONG_RUN_12H_20261118/` (`COMPARISON.md`, `tcp_tls/`, `quic/`). Neither run stayed healthy for 12 h: TCP+TLS stalled at 10.0 h (board-to-server direction stopped; board did not crash), QUIC at 11.53 h (server-to-board direction stopped: partial MQTT packet, then keepalive timeout; board kept publishing). 0 crashes/reboots in both. Causes not determined; see the STALL_ANALYSIS.md files.
+- Source in the repo for the fixed profile: only the changed files and scripts are committed; the rest of `src/` is a verbatim copy of the frozen profile and is reproduced by `make_profile.py` plus `patch_ct.py`.

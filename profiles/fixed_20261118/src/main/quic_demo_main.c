@@ -472,6 +472,9 @@ static void quic_sensor_task(void *argument)
     uint32_t sequence = 1;
     uint32_t loop_count = 0;
     int64_t last_publish_us = esp_timer_get_time();
+#if FIXED_HEAPLOG
+    int64_t last_heaplog_us = last_publish_us;
+#endif
     char payload[256];
 
     while (demo_client_is_connected()) {
@@ -503,6 +506,13 @@ static void quic_sensor_task(void *argument)
         }
 
         int64_t now_us = esp_timer_get_time();
+#if FIXED_HEAPLOG
+        if (now_us - last_heaplog_us >= 60000000LL) {
+            last_heaplog_us = now_us;
+            printf("HEAPLOG uptime_s=%lld free=%u min_free=%u\n", (long long)(now_us / 1000000LL),
+                           (unsigned)esp_get_free_heap_size(), (unsigned)esp_get_minimum_free_heap_size());
+        }
+#endif
 
         if (now_us - last_publish_us >= PUBLISH_INTERVAL_US) {
             last_publish_us = now_us;
@@ -561,6 +571,110 @@ cleanup:
     vTaskDelete(NULL);
 }
 
+
+#if FIXED_CT_MODE
+#define CT_ATTEMPTS 50
+#if DEMO_TRANSPORT_TCP_TLS
+extern volatile int64_t g_ct_tcp_t0_us, g_ct_tcp_connect_done_us, g_ct_tls_done_us;
+#else
+extern volatile int64_t g_ct_quic_t0_us, g_ct_quic_init_done_us, g_ct_quic_hs_us;
+#endif
+
+/* Connection-time test task: replaces the sensor task. One CSV-like line per attempt, all times in microseconds
+ * from esp_timer_get_time(); -1 = not applicable / not reached. */
+static void ct_task(void *argument)
+{
+    (void)argument;
+    unsigned ok_count = 0, fail_count = 0;
+    printf("CT HEADER attempt,proto,status,tcp_connect_us,tls_handshake_us,tcp_tls_total_us,quic_init_us,quic_handshake_cb_us,quic_ready_seen_us,mqtt_connect_to_connack_us,connack_from_start_us,reason\n");
+    for (int attempt = 1; attempt <= CT_ATTEMPTS; attempt++) {
+        int64_t t0 = esp_timer_get_time();
+        int64_t tcp_connect = -1, tls = -1, tcp_total = -1, qinit = -1, qhs = -1, qready = -1, mq = -1, connack = -1;
+        const char *reason = "ok";
+        bool ok = false;
+        bool transport_up = false;
+#if DEMO_TRANSPORT_TCP_TLS
+        transport_up = tcp_tls_client_connect(&server_info, 5000) == 0;
+        if (transport_up) {
+            tcp_connect = g_ct_tcp_connect_done_us - g_ct_tcp_t0_us;
+            tls = g_ct_tls_done_us - g_ct_tcp_connect_done_us;
+            tcp_total = g_ct_tls_done_us - g_ct_tcp_t0_us;
+        } else {
+            reason = "tcp_tls_connect_failed";
+        }
+#else
+        char port_text[16];
+        snprintf(port_text, sizeof(port_text), "%u", (unsigned)server_info.port);
+        quic_client_config_t quic_config = {.hostname = server_info.pHostName, .port = port_text, .alpn = server_info.pAlpn};
+        if (quic_client_init_with_config(&quic_config) != 0) {
+            reason = "quic_init_failed";
+        } else {
+            qinit = g_ct_quic_init_done_us - g_ct_quic_t0_us;
+            for (int i = 0; i < 200; i++) {   /* same polling loop as wait_for_quic_ready(): 100 ms steps, 20 s limit */
+                if (quic_client_process() != 0) { reason = "quic_process_failed"; break; }
+                if (quic_client_is_connected() && quic_client_local_stream_avail()) {
+                    qready = esp_timer_get_time() - t0;
+                    transport_up = true;
+                    break;
+                }
+                vTaskDelay(pdMS_TO_TICKS(100));
+            }
+            if (transport_up) {
+                qhs = g_ct_quic_hs_us - g_ct_quic_t0_us;
+            } else if (strcmp(reason, "ok") == 0) {
+                reason = "quic_handshake_timeout";
+            }
+        }
+#endif
+        if (transport_up) {
+            NetworkContext_t network_context = {0};
+            MQTTQUICConfig_t transport_config = {.timeoutMs = 5000, .nonBlocking = false};
+            MQTTContext_t mqtt_context;
+            MQTTFixedBuffer_t network_buffer = {.pBuffer = mqtt_buffer, .size = sizeof(mqtt_buffer)};
+            if (demo_transport_init(&network_context, &server_info, &transport_config) != pdPASS) {
+                reason = "transport_init_failed";
+            } else {
+                xTransportInterface.pNetworkContext = &network_context;
+                xTransportInterface.recv = mqtt_quic_transport_recv;
+                xTransportInterface.send = mqtt_quic_transport_send;
+                if (MQTT_Init(&mqtt_context, &xTransportInterface, mqtt_get_time_ms, mqtt_event_callback, &network_buffer) != MQTTSuccess) {
+                    reason = "mqtt_init_failed";
+                } else {
+                    MQTTConnectInfo_t connect_info = {0};
+                    connect_info.cleanSession = true;
+                    connect_info.pClientIdentifier = MQTT_CLIENT_ID;
+                    connect_info.clientIdentifierLength = (uint16_t)strlen(MQTT_CLIENT_ID);
+                    bool session_present = false;
+                    int64_t tm0 = esp_timer_get_time();
+                    MQTTStatus_t st = MQTT_Connect(&mqtt_context, &connect_info, NULL, 5000, &session_present);
+                    int64_t tm1 = esp_timer_get_time();
+                    if (st == MQTTSuccess) {
+                        mq = tm1 - tm0;
+                        connack = tm1 - t0;
+                        ok = true;
+                        (void)MQTT_Disconnect(&mqtt_context);
+                    } else {
+                        reason = "mqtt_connack_failed";
+                    }
+                }
+            }
+        }
+        demo_client_cleanup();
+        if (ok) ok_count++; else fail_count++;
+        printf("CT %d,%s,%s,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%s\n", attempt, DEMO_TRANSPORT_NAME, ok ? "OK" : "FAIL",
+                       (long long)tcp_connect, (long long)tls, (long long)tcp_total, (long long)qinit, (long long)qhs,
+                       (long long)qready, (long long)mq, (long long)connack, reason);
+        if (attempt % 10 == 0) {
+            printf("CT HEAP attempt=%d free=%u min_free=%u\n", attempt, (unsigned)esp_get_free_heap_size(),
+                           (unsigned)esp_get_minimum_free_heap_size());
+        }
+        vTaskDelay(pdMS_TO_TICKS(3000));
+    }
+    printf("CT COMPLETE proto=%s attempts=%d ok=%u failed=%u free=%u min_free=%u\n", DEMO_TRANSPORT_NAME, CT_ATTEMPTS,
+                   ok_count, fail_count, (unsigned)esp_get_free_heap_size(), (unsigned)esp_get_minimum_free_heap_size());
+    vTaskDelete(NULL);
+}
+#endif
 
 #if FIXED_TEST_MODE
 /* TEST ONLY cycle task (not present in measurement images): QUIC connect, wait for handshake, then reboot (mode 1)
@@ -655,7 +769,9 @@ void app_main(void)
 #endif
 
     BaseType_t task_status = xTaskCreate(
-#if FIXED_TEST_MODE
+#if FIXED_CT_MODE
+        ct_task,
+#elif FIXED_TEST_MODE
         test_cycle_task,
 #else
         quic_sensor_task,

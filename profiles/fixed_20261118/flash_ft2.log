@@ -1,0 +1,99 @@
+﻿esptool v5.6.0
+Serial port COM6:
+Connecting....
+Connected to ESP32-C6 on COM6:
+Chip type:          ESP32-C6 (QFN40) (revision v0.0)
+Features:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash
+Crystal frequency:  40MHz
+MAC:                40:4c:ca:ff:fe:56:bb:b0
+BASE MAC:           40:4c:ca:56:bb:b0
+MAC_EXT:            ff:fe
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00000000...
+SHA digest in image updated.
+Flash will be erased from 0x00000000 to 0x00005fff...
+Compressed 22096 bytes to 13911...
+Writing at 0x00005650 ============================== 100.0% 13.58kB/13.58kB [0s] 
+Wrote 22096 bytes (13911 compressed) at 0x00000000 in 0.6 seconds (291.9 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 3072 bytes to 106...
+Writing at 0x00008c00 ============================== 100.0% 106B/106B [0s] 
+Wrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (1955.3 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'quic_demo.bin' at 0x00010000...
+Flash will be erased from 0x00010000 to 0x0017dfff...
+Compressed 1499136 bytes to 893297...
+Writing at 0x0001e523 >                                1.8% 16.00kB/872.36kB [0s] 
+Writing at 0x0002a71b =                                3.7% 32.00kB/872.36kB [0s] 
+Writing at 0x0003274f =>                               5.5% 48.00kB/872.36kB [1s] 
+Writing at 0x0003725c ==                               7.3% 64.00kB/872.36kB [1s] 
+Writing at 0x0003bf89 ==>                              9.2% 80.00kB/872.36kB [2s] 
+Writing at 0x000434b1 ===                             11.0% 96.00kB/872.36kB [2s] 
+Writing at 0x0004cae0 ===>                            12.8% 112.00kB/872.36kB [3s] 
+Writing at 0x0005336a ====                            14.7% 128.00kB/872.36kB [3s] 
+Writing at 0x0005ac78 ====>                           16.5% 144.00kB/872.36kB [4s] 
+Writing at 0x00061c35 =====>                          18.3% 160.00kB/872.36kB [4s] 
+Writing at 0x000680b9 ======                          20.2% 176.00kB/872.36kB [4s] 
+Writing at 0x0006f07a ======>                         22.0% 192.00kB/872.36kB [5s] 
+Writing at 0x00075ac4 =======                         23.8% 208.00kB/872.36kB [5s] 
+Writing at 0x0007c17b =======>                        25.7% 224.00kB/872.36kB [6s] 
+Writing at 0x000827ac ========                        27.5% 240.00kB/872.36kB [6s] 
+Writing at 0x00088d0e ========>                       29.3% 256.00kB/872.36kB [6s] 
+Writing at 0x00090795 =========                       31.2% 272.00kB/872.36kB [7s] 
+Writing at 0x00096e4d =========>                      33.0% 288.00kB/872.36kB [7s] 
+Writing at 0x0009d504 ==========                      34.8% 304.00kB/872.36kB [7s] 
+Writing at 0x000a34d8 ===========                     36.7% 320.00kB/872.36kB [8s] 
+Writing at 0x000a9490 ===========>                    38.5% 336.00kB/872.36kB [8s] 
+Writing at 0x000af544 ============                    40.4% 352.00kB/872.36kB [9s] 
+Writing at 0x000b56a8 ============>                   42.2% 368.00kB/872.36kB [9s] 
+Writing at 0x000bbde5 =============                   44.0% 384.00kB/872.36kB [9s] 
+Writing at 0x000c1e7d =============>                  45.9% 400.00kB/872.36kB [10s] 
+Writing at 0x000c8892 ==============                  47.7% 416.00kB/872.36kB [10s] 
+Writing at 0x000cfc24 ==============>                 49.5% 432.00kB/872.36kB [11s] 
+Writing at 0x000d69a9 ===============                 51.4% 448.00kB/872.36kB [11s] 
+Writing at 0x000dd94b ===============>                53.2% 464.00kB/872.36kB [11s] 
+Writing at 0x000e4840 ================>               55.0% 480.00kB/872.36kB [12s] 
+Writing at 0x000ebd02 =================               56.9% 496.00kB/872.36kB [12s] 
+Writing at 0x000f23da =================>              58.7% 512.00kB/872.36kB [12s] 
+Writing at 0x000f81c2 ==================              60.5% 528.00kB/872.36kB [13s] 
+Writing at 0x000fdf30 ==================>             62.4% 544.00kB/872.36kB [13s] 
+Writing at 0x00103a94 ===================             64.2% 560.00kB/872.36kB [14s] 
+Writing at 0x00109a24 ===================>            66.0% 576.00kB/872.36kB [14s] 
+Writing at 0x0010fa40 ====================            67.9% 592.00kB/872.36kB [14s] 
+Writing at 0x00115695 ====================>           69.7% 608.00kB/872.36kB [15s] 
+Writing at 0x0011b0c9 =====================           71.5% 624.00kB/872.36kB [15s] 
+Writing at 0x0012183c ======================          73.4% 640.00kB/872.36kB [15s] 
+Writing at 0x00127eb4 ======================>         75.2% 656.00kB/872.36kB [16s] 
+Writing at 0x0012ddce =======================         77.0% 672.00kB/872.36kB [16s] 
+Writing at 0x00133f5c =======================>        78.9% 688.00kB/872.36kB [17s] 
+Writing at 0x00139f7b ========================        80.7% 704.00kB/872.36kB [17s] 
+Writing at 0x0013ff24 ========================>       82.5% 720.00kB/872.36kB [17s] 
+Writing at 0x001461d3 =========================       84.4% 736.00kB/872.36kB [18s] 
+Writing at 0x0014c6ce =========================>      86.2% 752.00kB/872.36kB [18s] 
+Writing at 0x0015283b ==========================      88.0% 768.00kB/872.36kB [19s] 
+Writing at 0x00158f4d ==========================>     89.9% 784.00kB/872.36kB [19s] 
+Writing at 0x0015ea33 ===========================>    91.7% 800.00kB/872.36kB [19s] 
+Writing at 0x00165b46 ============================    93.5% 816.00kB/872.36kB [20s] 
+Writing at 0x0016c6f6 ============================>   95.4% 832.00kB/872.36kB [20s] 
+Writing at 0x00171fda =============================   97.2% 848.00kB/872.36kB [20s] 
+Writing at 0x00177ed9 =============================>  99.0% 864.00kB/872.36kB [21s] 
+Writing at 0x0017e000 ============================== 100.0% 872.36kB/872.36kB [21s] 
+Wrote 1499136 bytes (893297 compressed) at 0x00010000 in 21.7 seconds (552.7 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Staying in bootloader.

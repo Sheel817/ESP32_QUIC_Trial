@@ -1,0 +1,152 @@
+CSV log: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\logs\sensor_20261118T001014_077326Z_qzg5gj2q.csv
+READY | QUIC UDP port 14567 | ALPN=mqtt
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+QUIC CLOSED | code=0 | MQTT disconnect
+QUIC CLOSED | code=0 | MQTT disconnect

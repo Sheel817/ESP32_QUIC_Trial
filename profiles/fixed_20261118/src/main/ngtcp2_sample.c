@@ -306,7 +306,13 @@ static int get_new_connection_id_cb(ngtcp2_conn *conn, ngtcp2_cid *cid,
   return 0;
 }
 
+#if FIXED_CT_MODE
+volatile int64_t g_ct_quic_t0_us, g_ct_quic_init_done_us, g_ct_quic_hs_us;
+#endif
 static int handshake_completed_cb(ngtcp2_conn *conn, void *user_data) {
+#if FIXED_CT_MODE
+    g_ct_quic_hs_us = esp_timer_get_time();
+#endif
     (void)conn;
     struct client *c = user_data;
     tls_report_negotiation("QUIC", c->ssl);
@@ -935,6 +941,9 @@ int quic_client_init_with_config(const quic_client_config_t *config) {
                g_config.hostname, g_config.port, g_config.alpn);
     }
 
+#if FIXED_CT_MODE
+    g_ct_quic_t0_us = esp_timer_get_time(); g_ct_quic_init_done_us = 0; g_ct_quic_hs_us = 0;
+#endif
     ESP_LOGI(TAG, "init random number generator");
     srandom((unsigned int)timestamp());
 
@@ -955,6 +964,9 @@ int quic_client_init_with_config(const quic_client_config_t *config) {
 
     g_quic_connected = false;
     g_quic_handshake_completed = false;
+#if FIXED_CT_MODE
+    g_ct_quic_init_done_us = esp_timer_get_time();
+#endif
     
     xSemaphoreGive(quic_mutex);
     ESP_LOGI(TAG, "QUIC client initialization completed");
