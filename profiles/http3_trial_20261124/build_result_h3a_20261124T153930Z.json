@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-11-24T15:39:30.331733+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "C:/esp/v6.1/esp-idf/tools/idf.py",
+    "-B",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\http3_trial_20261124\\build_h3a",
+    "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\http3_trial_20261124\\sdkconfig_h3a",
+    "-DDEMO_TRANSPORT=H3",
+    "-DDEMO_WIFI_PS_NONE=ON",
+    "-DCCACHE_ENABLE=False",
+    "-DFIXED_TEST_MODE=0",
+    "-DFIXED_TEST_RUN_ID=f0",
+    "-DFIXED_TEST_CYCLES=30",
+    "-DFIXED_CT_MODE=0",
+    "-DFIXED_HEAPLOG=0",
+    "build"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\http3_trial_20261124\\src",
+  "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\http3_trial_20261124\\build_h3a_20261124T153930Z.log",
+  "ended_utc": "2026-11-24T15:43:36.355206+00:00",
+  "exit_code": 2
+}

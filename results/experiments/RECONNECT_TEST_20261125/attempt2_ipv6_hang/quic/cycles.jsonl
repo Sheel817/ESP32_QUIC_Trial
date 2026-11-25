@@ -1,0 +1,5 @@
+﻿{"event":"PRECHECK_OK","utc":"2026-11-24T23:49:42.6630036Z"}
+{"event":"SERVER_READY","start_utc":"2026-11-24T23:49:42.6725249Z","ready_utc":"2026-11-24T23:49:43.4632714Z","pid":29876,"n":0,"utc":"2026-11-24T23:49:43.4662689Z"}
+{"seconds":4700,"utc":"2026-11-24T23:49:43.5348196Z","event":"WATCHDOG_STARTED","pid":11468}
+{"utc":"2026-11-24T23:49:43.5534363Z","event":"CAPTURE_START","pid":27928}
+{"utc":"2026-11-24T23:52:13.7582866Z","reason":"first connection (CONNECT session=0) not seen within 150 s","event":"ABORT"}

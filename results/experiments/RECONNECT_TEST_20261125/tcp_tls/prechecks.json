@@ -1,0 +1,21 @@
+﻿{
+    "checked_utc":  "2026-11-25T02:00:04.2915964Z",
+    "proto":  "tcp_tls",
+    "cycles":  20,
+    "run_s":  60,
+    "down_s":  10,
+    "reconnect_timeout_s":  180,
+    "hotspot_state":  "On",
+    "hotspot_band":  "TwoPointFourGigahertz",
+    "hotspot_ip_192_168_137_1":  true,
+    "clumsy_or_windivert_processes":  0,
+    "serial_port":  "COM6",
+    "com_present":  true,
+    "com_serial_monitor_processes":  0,
+    "server_port_busy_before":  false,
+    "laptop_on_ac":  true,
+    "battery_percent":  100,
+    "sleep_after_ac":  "Current AC Power Setting Index: 0x00000000",
+    "disk_free_gb":  636,
+    "pktmon":  false
+}

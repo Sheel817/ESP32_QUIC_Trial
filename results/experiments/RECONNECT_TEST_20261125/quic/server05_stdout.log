@@ -1,0 +1,29 @@
+CSV log: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\logs\sensor_20261125T013739_718101Z_b6o0un8g.csv
+READY | QUIC UDP port 14567 | ALPN=mqtt
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+SUBSCRIBED: esp32/quic/test
+RECEIVED [esp32/quic/test]: {"seq":75,"sensor":"DHT11","uptime_ms":430902,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":76,"sensor":"DHT11","uptime_ms":435912,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":77,"sensor":"DHT11","uptime_ms":440922,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":78,"sensor":"DHT11","uptime_ms":445931,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":79,"sensor":"DHT11","uptime_ms":450941,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":80,"sensor":"DHT11","uptime_ms":455951,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":81,"sensor":"DHT11","uptime_ms":460961,"temperature_c":48.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":82,"sensor":"DHT11","uptime_ms":465972,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":83,"sensor":"DHT11","uptime_ms":470982,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":84,"sensor":"DHT11","uptime_ms":475992,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":85,"sensor":"DHT11","uptime_ms":481002,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":86,"sensor":"DHT11","uptime_ms":486012,"temperature_c":48.0,"humidity_pct":22.0,"sensor_error":0}
+Demo publication returned to ESP32

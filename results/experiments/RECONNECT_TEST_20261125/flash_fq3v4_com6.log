@@ -1,0 +1,105 @@
+﻿esptool --chip esp32c6 -p COM6 -b 460800 --before default-reset --after no-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 8MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 quic_demo.bin
+esptool v5.6.0
+Serial port COM6:
+Connecting....
+Connected to ESP32-C6 on COM6:
+Chip type:          ESP32-C6 (QFN40) (revision v0.0)
+Features:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash
+Crystal frequency:  40MHz
+MAC:                40:4c:ca:ff:fe:56:bb:b0
+BASE MAC:           40:4c:ca:56:bb:b0
+MAC_EXT:            ff:fe
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00000000...
+SHA digest in image updated.
+Flash will be erased from 0x00000000 to 0x00005fff...
+Compressed 22096 bytes to 13908...
+Writing at 0x00005650 ============================== 100.0% 13.58kB/13.58kB [0s] 
+Wrote 22096 bytes (13908 compressed) at 0x00000000 in 0.6 seconds (292.1 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 3072 bytes to 106...
+Writing at 0x00008c00 ============================== 100.0% 106B/106B [0s] 
+Wrote 3072 bytes (106 compressed) at 0x00008000 in 0.0 seconds (1891.9 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Writing 'quic_demo.bin' at 0x00010000...
+Flash will be erased from 0x00010000 to 0x001a1fff...
+Compressed 1643168 bytes to 971566...
+Writing at 0x0001e511 >                                1.7% 16.00kB/948.79kB [0s] 
+Writing at 0x0002b789 =                                3.4% 32.00kB/948.79kB [0s] 
+Writing at 0x000366e5 =>                               5.1% 48.00kB/948.79kB [1s] 
+Writing at 0x0003c1cc ==                               6.7% 64.00kB/948.79kB [1s] 
+Writing at 0x00040778 ==>                              8.4% 80.00kB/948.79kB [2s] 
+Writing at 0x00047084 ===                             10.1% 96.00kB/948.79kB [2s] 
+Writing at 0x0004f3b4 ===>                            11.8% 112.00kB/948.79kB [3s] 
+Writing at 0x00056ee7 ====                            13.5% 128.00kB/948.79kB [3s] 
+Writing at 0x0005d902 ====>                           15.2% 144.00kB/948.79kB [4s] 
+Writing at 0x00063b5d =====                           16.9% 160.00kB/948.79kB [4s] 
+Writing at 0x0006b363 =====>                          18.5% 176.00kB/948.79kB [4s] 
+Writing at 0x00072316 ======                          20.2% 192.00kB/948.79kB [5s] 
+Writing at 0x00078e31 ======>                         21.9% 208.00kB/948.79kB [5s] 
+Writing at 0x0007f720 =======                         23.6% 224.00kB/948.79kB [6s] 
+Writing at 0x00085e94 =======>                        25.3% 240.00kB/948.79kB [6s] 
+Writing at 0x0008d50e ========                        27.0% 256.00kB/948.79kB [6s] 
+Writing at 0x00093e03 ========>                       28.7% 272.00kB/948.79kB [7s] 
+Writing at 0x0009a32f =========                       30.4% 288.00kB/948.79kB [7s] 
+Writing at 0x000a0921 =========>                      32.0% 304.00kB/948.79kB [8s] 
+Writing at 0x000a713e ==========                      33.7% 320.00kB/948.79kB [8s] 
+Writing at 0x000ad88e ==========>                     35.4% 336.00kB/948.79kB [8s] 
+Writing at 0x000b3ca5 ===========                     37.1% 352.00kB/948.79kB [9s] 
+Writing at 0x000bb775 ===========>                    38.8% 368.00kB/948.79kB [9s] 
+Writing at 0x000c1dff ============                    40.5% 384.00kB/948.79kB [9s] 
+Writing at 0x000c8776 ============>                   42.2% 400.00kB/948.79kB [10s] 
+Writing at 0x000ce25a =============                   43.8% 416.00kB/948.79kB [10s] 
+Writing at 0x000d44df =============>                  45.5% 432.00kB/948.79kB [11s] 
+Writing at 0x000da4df ==============                  47.2% 448.00kB/948.79kB [11s] 
+Writing at 0x000e0878 ==============>                 48.9% 464.00kB/948.79kB [11s] 
+Writing at 0x000e6f1c ===============                 50.6% 480.00kB/948.79kB [12s] 
+Writing at 0x000ed1db ===============>                52.3% 496.00kB/948.79kB [12s] 
+Writing at 0x000f40d5 ================                54.0% 512.00kB/948.79kB [13s] 
+Writing at 0x000fb603 ================>               55.6% 528.00kB/948.79kB [13s] 
+Writing at 0x00102179 =================               57.3% 544.00kB/948.79kB [13s] 
+Writing at 0x001092ef =================>              59.0% 560.00kB/948.79kB [14s] 
+Writing at 0x0010ff76 ==================              60.7% 576.00kB/948.79kB [14s] 
+Writing at 0x001177bc ==================>             62.4% 592.00kB/948.79kB [14s] 
+Writing at 0x0011e0c3 ===================             64.1% 608.00kB/948.79kB [15s] 
+Writing at 0x00123dde ===================>            65.8% 624.00kB/948.79kB [15s] 
+Writing at 0x00129b3d ====================            67.5% 640.00kB/948.79kB [16s] 
+Writing at 0x0012f6e0 ====================>           69.1% 656.00kB/948.79kB [16s] 
+Writing at 0x00135650 =====================           70.8% 672.00kB/948.79kB [16s] 
+Writing at 0x0013b690 =====================>          72.5% 688.00kB/948.79kB [17s] 
+Writing at 0x00141210 ======================          74.2% 704.00kB/948.79kB [17s] 
+Writing at 0x00146ce4 ======================>         75.9% 720.00kB/948.79kB [18s] 
+Writing at 0x0014d398 =======================         77.6% 736.00kB/948.79kB [18s] 
+Writing at 0x00153a78 =======================>        79.3% 752.00kB/948.79kB [18s] 
+Writing at 0x00159867 ========================        80.9% 768.00kB/948.79kB [19s] 
+Writing at 0x0015fa5d ========================>       82.6% 784.00kB/948.79kB [19s] 
+Writing at 0x00165bb7 =========================       84.3% 800.00kB/948.79kB [19s] 
+Writing at 0x0016b998 =========================>      86.0% 816.00kB/948.79kB [20s] 
+Writing at 0x00171c87 ==========================      87.7% 832.00kB/948.79kB [20s] 
+Writing at 0x00178207 ==========================>     89.4% 848.00kB/948.79kB [21s] 
+Writing at 0x0017e360 ===========================     91.1% 864.00kB/948.79kB [21s] 
+Writing at 0x00184a19 ===========================>    92.7% 880.00kB/948.79kB [21s] 
+Writing at 0x0018a53f ============================    94.4% 896.00kB/948.79kB [22s] 
+Writing at 0x0019120a ============================>   96.1% 912.00kB/948.79kB [22s] 
+Writing at 0x001970a2 =============================   97.8% 928.00kB/948.79kB [23s] 
+Writing at 0x0019d8b5 =============================>  99.5% 944.00kB/948.79kB [23s] 
+Writing at 0x001a12a0 ============================== 100.0% 948.79kB/948.79kB [23s] 
+Wrote 1643168 bytes (971566 compressed) at 0x00010000 in 23.7 seconds (555.2 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Staying in bootloader.

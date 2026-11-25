@@ -1,0 +1,136 @@
+2026-11-24T16:19:26.179064Z CAPTURE_OPEN reset=True
+2026-11-24T16:19:26.330103Z RESET_RELEASED_BY_HOST
+2026-11-24T16:19:26.429723Z ESP-ROM:esp32c6-20220919
+2026-11-24T16:19:26.429825Z Build:Sep 19 2022
+2026-11-24T16:19:26.429854Z rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+2026-11-24T16:19:26.429906Z SPIWP:0xee
+2026-11-24T16:19:26.429923Z mode:DIO, clock div:2
+2026-11-24T16:19:26.429940Z load:0x40875730,len:0x1648
+2026-11-24T16:19:26.429958Z load:0x4086b910,len:0xdbc
+2026-11-24T16:19:26.429975Z load:0x4086e610,len:0x31f0
+2026-11-24T16:19:26.429992Z entry 0x4086b91a
+2026-11-24T16:19:26.430018Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-24T16:19:26.430935Z I (24) boot: compile time Nov 24 2026 17:07:22
+2026-11-24T16:19:26.430953Z I (24) boot: chip revision: v0.0
+2026-11-24T16:19:26.430967Z I (24) boot: efuse block revision: v0.2
+2026-11-24T16:19:26.430980Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-24T16:19:26.430994Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-24T16:19:26.431007Z I (34) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-24T16:19:26.431020Z I (38) boot: Enabling RNG early entropy source...
+2026-11-24T16:19:26.431034Z I (43) boot: Partition Table:
+2026-11-24T16:19:26.431046Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-24T16:19:26.431062Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-24T16:19:26.431078Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-24T16:19:26.431092Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-24T16:19:26.431107Z I (71) boot: End of partition table
+2026-11-24T16:19:26.636890Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3bba0h (244640) map
+2026-11-24T16:19:26.637012Z I (129) esp_image: segment 1: paddr=0004bbc8 vaddr=40800000 size=04450h ( 17488) load
+2026-11-24T16:19:26.637043Z I (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=1175e4h (1144292) map
+2026-11-24T16:19:26.801040Z I (352) esp_image: segment 3: paddr=0016760c vaddr=40804450 size=14184h ( 82308) load
+2026-11-24T16:19:26.801133Z I (370) esp_image: segment 4: paddr=0017b798 vaddr=408185e0 size=04864h ( 18532) load
+2026-11-24T16:19:26.801154Z I (381) boot: Loaded app from partition at offset 0x10000
+2026-11-24T16:19:26.801170Z I (381) boot: Disabling RNG early entropy source...
+2026-11-24T16:19:26.801184Z I (391) cpu_start: Unicore app
+2026-11-24T16:19:26.801197Z I (400) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-24T16:19:26.801213Z I (400) cpu_start: Pro cpu start user code
+2026-11-24T16:19:26.801226Z I (400) cpu_start: cpu freq: 160000000 Hz
+2026-11-24T16:19:26.801239Z I (402) app_init: Application information:
+2026-11-24T16:19:26.801252Z I (406) app_init: Project name:     quic_demo
+2026-11-24T16:19:26.801264Z I (410) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-24T16:19:26.801279Z I (415) app_init: Compile time:     Nov 24 2026 17:06:15
+2026-11-24T16:19:26.801293Z I (421) app_init: ELF file SHA256:  d11cff1be...
+2026-11-24T16:19:26.801306Z I (425) app_init: ESP-IDF:          v6.1
+2026-11-24T16:19:26.801318Z I (428) efuse_init: Min chip rev:     v0.0
+2026-11-24T16:19:26.801330Z I (432) efuse_init: Max chip rev:     v0.99 
+2026-11-24T16:19:26.801342Z I (436) efuse_init: Chip rev:         v0.0
+2026-11-24T16:19:26.801354Z I (440) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-24T16:19:26.898679Z I (446) heap_init: At 40824C90 len 00057980 (350 KiB): RAM
+2026-11-24T16:19:26.898763Z I (452) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-24T16:19:26.898782Z I (457) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-24T16:19:26.898798Z I (463) spi_flash: detected chip: gd
+2026-11-24T16:19:26.898812Z I (465) spi_flash: flash io: dio
+2026-11-24T16:19:26.898824Z I (469) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-24T16:19:26.898841Z I (475) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-24T16:19:26.898859Z I (481) coexist: coex firmware version: a830d28
+2026-11-24T16:19:26.898923Z I (486) coexist: coexist rom version 5b8dcfa
+2026-11-24T16:19:26.898943Z I (490) main_task: Started on CPU0
+2026-11-24T16:19:26.898957Z I (510) main_task: Calling app_main()
+2026-11-24T16:19:26.898971Z I (510) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-24T16:19:26.899010Z I (510) quic_demo_main: ESP-IDF version: v6.1
+2026-11-24T16:19:26.899025Z I (520) example_connect: Start example_connect.
+2026-11-24T16:19:26.899039Z I (520) pp: pp rom version: 5b8dcfa
+2026-11-24T16:19:26.899051Z I (520) net80211: net80211 rom version: 5b8dcfa
+2026-11-24T16:19:26.899065Z I (530) wifi:wifi driver task: 4082ae78, prio:23, stack:6656, core=0
+2026-11-24T16:19:26.899081Z I (540) wifi:wifi firmware version: e12a754
+2026-11-24T16:19:26.899094Z I (540) wifi:wifi certification version: v7.0
+2026-11-24T16:19:26.899106Z I (540) wifi:config NVS flash: enabled
+2026-11-24T16:19:26.987574Z I (540) wifi:config nano formatting: disabled
+2026-11-24T16:19:26.987660Z I (540) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-24T16:19:26.987682Z I (550) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-24T16:19:26.987700Z I (560) wifi:Init static rx mgmt buffer num: 5
+2026-11-24T16:19:26.987714Z I (560) wifi:Init management short buffer num: 32
+2026-11-24T16:19:26.987728Z I (560) wifi:Init dynamic tx buffer num: 32
+2026-11-24T16:19:26.987742Z I (570) wifi:Init static tx FG buffer num: 2
+2026-11-24T16:19:26.987755Z I (570) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-24T16:19:26.987771Z I (580) wifi:Init static rx buffer num: 10
+2026-11-24T16:19:26.987783Z I (580) wifi:Init dynamic rx buffer num: 32
+2026-11-24T16:19:26.987796Z I (590) wifi_init: rx ba win: 6
+2026-11-24T16:19:26.987814Z I (590) wifi_init: accept mbox: 6
+2026-11-24T16:19:26.987827Z I (590) wifi_init: tcpip mbox: 32
+2026-11-24T16:19:26.987838Z I (590) wifi_init: udp mbox: 6
+2026-11-24T16:19:26.987849Z I (600) wifi_init: tcp mbox: 6
+2026-11-24T16:19:26.987861Z I (600) wifi_init: tcp tx win: 5760
+2026-11-24T16:19:26.987872Z I (600) wifi_init: tcp rx win: 5760
+2026-11-24T16:19:26.987884Z I (610) wifi_init: tcp mss: 1440
+2026-11-24T16:19:26.987896Z I (610) wifi_init: WiFi IRAM OP enabled
+2026-11-24T16:19:26.987908Z I (610) wifi_init: WiFi RX IRAM OP enabled
+2026-11-24T16:19:26.987920Z I (620) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-24T16:19:26.987932Z I (620) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-24T16:19:27.186493Z W (630) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration
+2026-11-24T16:19:27.186601Z I (670) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+2026-11-24T16:19:27.186625Z I (740) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-24T16:19:27.186644Z 
+2026-11-24T16:19:27.186654Z I (740) wifi:mode : sta (40:4c:ca:57:89:c0)
+2026-11-24T16:19:27.186669Z I (740) wifi:enable tsf
+2026-11-24T16:19:27.186681Z I (750) example_connect: Connecting to <SSID_MASKED>...
+2026-11-24T16:19:27.186695Z W (750) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-24T16:19:27.186714Z I (760) example_connect: Waiting for IP(s)
+2026-11-24T16:19:29.822937Z I (3280) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-24T16:19:29.823060Z I (3280) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-24T16:19:29.823081Z I (3280) wifi:state: init -> auth (0xb0)
+2026-11-24T16:19:29.823096Z I (3290) wifi:state: auth -> assoc (0x0)
+2026-11-24T16:19:30.660098Z I (4290) wifi:state: assoc -> init (0x400)
+2026-11-24T16:19:30.660253Z I (4290) example_connect: Wi-Fi disconnected 4, trying to reconnect...
+2026-11-24T16:19:33.104150Z I (6700) example_connect: Wi-Fi disconnected 201, trying to reconnect...
+2026-11-24T16:19:35.544498Z I (9110) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-24T16:19:35.544661Z I (9110) wifi:state: init -> auth (0xb0)
+2026-11-24T16:19:35.544740Z I (9120) wifi:state: auth -> assoc (0x0)
+2026-11-24T16:19:35.544763Z I (9130) wifi:state: assoc -> run (0x10)
+2026-11-24T16:19:35.544778Z I (9130) wifi:(trc)phytype:CBW20-SGI, snr:57, maxRate:144, highestRateIdx:0
+2026-11-24T16:19:35.544794Z W (9130) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-24T16:19:35.544814Z I (9140) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:57, ampduState:wait operational
+2026-11-24T16:19:35.544834Z I (9150) wifi:ifidx:0, rssi:-39, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-24T16:19:35.544853Z I (9160) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-24T16:19:35.544869Z I (9180) wifi:connected with <SSID_MASKED>, aid = 14, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-24T16:19:35.544885Z I (9180) wifi:security: WPA2-PSK, phy: bgn, rssi: -39, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-24T16:19:35.544902Z I (9180) wifi:pm start, type: 1, twt_start:0
+2026-11-24T16:19:35.544915Z 
+2026-11-24T16:19:35.646123Z I (9190) wifi:pm start, type:1, aid:0xe, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-24T16:19:35.646252Z I (9200) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-24T16:19:35.646277Z I (9210) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-24T16:19:35.646301Z I (9220) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-24T16:19:35.646325Z I (9230) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-24T16:19:35.646350Z I (9240) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-24T16:19:35.646375Z I (9270) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-24T16:19:35.646394Z I (9270) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:8, batimeout:0, txa_wnd:8
+2026-11-24T16:19:35.646414Z I (9280) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:8, batimeout:0, txa_wnd:8
+2026-11-24T16:19:35.848506Z I (9290) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:8, batimeout:0, txa_wnd:8
+2026-11-24T16:19:35.848610Z W (9300) wifi:reject multicast/broadcast fragment
+2026-11-24T16:19:35.848630Z 
+2026-11-24T16:19:35.848640Z W (9310) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-24T16:19:36.675253Z I (10310) esp_netif_handlers: example_netif_sta ip: 192.168.137.45, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-24T16:19:36.675420Z I (10310) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.45
+2026-11-24T16:23:11.377897Z I (224920) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)
+2026-11-24T16:23:11.378036Z I (224930) wifi:[ADDBA]RX DELBA, reason:1, delete tid:7, initiator:0(recipient)
+2026-11-24T16:23:11.378092Z I (224930) wifi:[ADDBA]RX DELBA, reason:1, delete tid:5, initiator:0(recipient)
+2026-11-24T16:24:26.493934Z CAPTURE_CLOSE reason=duration_reached counts={"lines": 133, "boots": 3, "panics": 0, "disconnect_markers": 2, "rtt_lines": 0, "serial_errors": 0}

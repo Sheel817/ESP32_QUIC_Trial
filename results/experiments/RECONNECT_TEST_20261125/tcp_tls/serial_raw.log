@@ -1,0 +1,910 @@
+2026-11-25T02:00:07.209694Z CAPTURE_OPEN reset=True
+2026-11-25T02:00:07.360536Z RESET_RELEASED_BY_HOST
+2026-11-25T02:00:07.460366Z ESP-ROM:esp32c6-20220919
+2026-11-25T02:00:07.460477Z Build:Sep 19 2022
+2026-11-25T02:00:07.460514Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-25T02:00:07.460577Z SPIWP:0xee
+2026-11-25T02:00:07.460595Z mode:DIO, clock div:2
+2026-11-25T02:00:07.460623Z load:0x40875730,len:0x1648
+2026-11-25T02:00:07.460642Z load:0x4086b910,len:0xdbc
+2026-11-25T02:00:07.460660Z load:0x4086e610,len:0x31f0
+2026-11-25T02:00:07.460678Z entry 0x4086b91a
+2026-11-25T02:00:07.460695Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-25T02:00:07.460979Z I (24) boot: compile time Nov 25 2026 03:25:38
+2026-11-25T02:00:07.461018Z I (24) boot: chip revision: v0.0
+2026-11-25T02:00:07.461033Z I (24) boot: efuse block revision: v0.2
+2026-11-25T02:00:07.461049Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-25T02:00:07.461064Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-25T02:00:07.461099Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-25T02:00:07.461115Z I (38) boot: Enabling RNG early entropy source...
+2026-11-25T02:00:07.461129Z I (43) boot: Partition Table:
+2026-11-25T02:00:07.461143Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-25T02:00:07.461160Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-25T02:00:07.461176Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-25T02:00:07.461198Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-25T02:00:07.461214Z I (71) boot: End of partition table
+2026-11-25T02:00:07.667976Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42120020 size=3b930h (244016) map
+2026-11-25T02:00:07.668098Z I (129) esp_image: segment 1: paddr=0004b958 vaddr=40800000 size=046c0h ( 18112) load
+2026-11-25T02:00:07.668119Z I (133) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=116ec0h (1142464) map
+2026-11-25T02:00:07.831193Z I (352) esp_image: segment 3: paddr=00166ee8 vaddr=408046c0 size=13f14h ( 81684) load
+2026-11-25T02:00:07.831282Z I (370) esp_image: segment 4: paddr=0017ae04 vaddr=408185e0 size=0484ch ( 18508) load
+2026-11-25T02:00:07.831304Z I (380) boot: Loaded app from partition at offset 0x10000
+2026-11-25T02:00:07.831321Z I (381) boot: Disabling RNG early entropy source...
+2026-11-25T02:00:07.831336Z I (391) cpu_start: Unicore app
+2026-11-25T02:00:07.831348Z I (399) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-25T02:00:07.831364Z I (400) cpu_start: Pro cpu start user code
+2026-11-25T02:00:07.831378Z I (400) cpu_start: cpu freq: 160000000 Hz
+2026-11-25T02:00:07.831391Z I (402) app_init: Application information:
+2026-11-25T02:00:07.831404Z I (405) app_init: Project name:     quic_demo
+2026-11-25T02:00:07.831417Z I (409) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-25T02:00:07.831432Z I (415) app_init: Compile time:     Nov 25 2026 03:24:29
+2026-11-25T02:00:07.831445Z I (420) app_init: ELF file SHA256:  ecfbd0273...
+2026-11-25T02:00:07.831459Z I (425) app_init: ESP-IDF:          v6.1
+2026-11-25T02:00:07.831472Z I (428) efuse_init: Min chip rev:     v0.0
+2026-11-25T02:00:07.831484Z I (432) efuse_init: Max chip rev:     v0.99 
+2026-11-25T02:00:07.831496Z I (436) efuse_init: Chip rev:         v0.0
+2026-11-25T02:00:07.831509Z I (440) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-25T02:00:07.927437Z I (446) heap_init: At 40824C70 len 000579A0 (350 KiB): RAM
+2026-11-25T02:00:07.927514Z I (451) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-25T02:00:07.927534Z I (456) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-25T02:00:07.927550Z I (463) spi_flash: detected chip: gd
+2026-11-25T02:00:07.927563Z I (465) spi_flash: flash io: dio
+2026-11-25T02:00:07.927576Z I (469) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-25T02:00:07.927592Z I (474) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-25T02:00:07.927610Z I (481) coexist: coex firmware version: a830d28
+2026-11-25T02:00:07.927671Z I (485) coexist: coexist rom version 5b8dcfa
+2026-11-25T02:00:07.927689Z I (490) main_task: Started on CPU0
+2026-11-25T02:00:07.927704Z I (510) main_task: Calling app_main()
+2026-11-25T02:00:07.927718Z I (510) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-25T02:00:07.927758Z I (510) quic_demo_main: ESP-IDF version: v6.1
+2026-11-25T02:00:07.927773Z I (520) example_connect: Start example_connect.
+2026-11-25T02:00:07.927788Z I (520) pp: pp rom version: 5b8dcfa
+2026-11-25T02:00:07.927801Z I (520) net80211: net80211 rom version: 5b8dcfa
+2026-11-25T02:00:07.927814Z I (530) wifi:wifi driver task: 4082aee0, prio:23, stack:6656, core=0
+2026-11-25T02:00:07.927829Z I (530) wifi:wifi firmware version: e12a754
+2026-11-25T02:00:07.927842Z I (530) wifi:wifi certification version: v7.0
+2026-11-25T02:00:07.927854Z I (540) wifi:config NVS flash: enabled
+2026-11-25T02:00:08.053718Z I (540) wifi:config nano formatting: disabled
+2026-11-25T02:00:08.053804Z I (540) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-25T02:00:08.053825Z I (550) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-25T02:00:08.053842Z I (550) wifi:Init static rx mgmt buffer num: 5
+2026-11-25T02:00:08.053855Z I (560) wifi:Init management short buffer num: 32
+2026-11-25T02:00:08.053869Z I (560) wifi:Init dynamic tx buffer num: 32
+2026-11-25T02:00:08.053882Z I (570) wifi:Init static tx FG buffer num: 2
+2026-11-25T02:00:08.053895Z I (570) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-25T02:00:08.053910Z I (580) wifi:Init static rx buffer num: 10
+2026-11-25T02:00:08.053924Z I (580) wifi:Init dynamic rx buffer num: 32
+2026-11-25T02:00:08.053937Z I (580) wifi_init: rx ba win: 6
+2026-11-25T02:00:08.053950Z I (590) wifi_init: accept mbox: 6
+2026-11-25T02:00:08.053962Z I (590) wifi_init: tcpip mbox: 32
+2026-11-25T02:00:08.053973Z I (590) wifi_init: udp mbox: 6
+2026-11-25T02:00:08.053985Z I (600) wifi_init: tcp mbox: 6
+2026-11-25T02:00:08.053997Z I (600) wifi_init: tcp tx win: 5760
+2026-11-25T02:00:08.054008Z I (600) wifi_init: tcp rx win: 5760
+2026-11-25T02:00:08.054020Z I (600) wifi_init: tcp mss: 1440
+2026-11-25T02:00:08.054032Z I (610) wifi_init: WiFi IRAM OP enabled
+2026-11-25T02:00:08.054044Z I (610) wifi_init: WiFi RX IRAM OP enabled
+2026-11-25T02:00:08.054056Z I (620) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-25T02:00:08.054068Z I (620) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-25T02:00:08.054082Z I (670) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-25T02:00:08.272404Z 
+2026-11-25T02:00:08.272860Z I (670) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-25T02:00:08.272895Z I (670) wifi:enable tsf
+2026-11-25T02:00:08.272916Z I (680) example_connect: Connecting to <SSID_MASKED>...
+2026-11-25T02:00:08.272946Z W (680) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-25T02:00:08.272977Z I (690) example_connect: Waiting for IP(s)
+2026-11-25T02:00:10.665887Z I (3210) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-25T02:00:10.665988Z I (3210) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-25T02:00:10.666008Z I (3210) wifi:state: init -> auth (0xb0)
+2026-11-25T02:00:10.666022Z I (3220) wifi:state: auth -> assoc (0x0)
+2026-11-25T02:00:10.666037Z I (3230) wifi:state: assoc -> run (0x10)
+2026-11-25T02:00:10.666049Z I (3230) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:144, highestRateIdx:0
+2026-11-25T02:00:10.666065Z W (3230) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-25T02:00:10.666085Z I (3240) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational
+2026-11-25T02:00:10.666107Z I (3250) wifi:ifidx:0, rssi:-31, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-25T02:00:10.666127Z I (3260) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-25T02:00:10.666202Z I (3270) wifi:connected with <SSID_MASKED>, aid = 6, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-25T02:00:10.666224Z I (3270) wifi:security: WPA2-PSK, phy: bgn, rssi: -31, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-25T02:00:10.754586Z I (3280) wifi:pm start, type: 1, twt_start:0
+2026-11-25T02:00:10.754667Z 
+2026-11-25T02:00:10.754680Z I (3290) wifi:pm start, type:1, aid:0x6, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-25T02:00:10.754702Z I (3300) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-25T02:00:10.754720Z I (3300) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-25T02:00:10.754738Z I (3310) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-25T02:00:10.754757Z I (3320) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-25T02:00:10.754777Z I (3330) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-25T02:00:10.754818Z I (3350) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-25T02:00:10.754835Z I (3350) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T02:00:10.754852Z I (3360) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T02:00:10.957742Z I (3370) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T02:00:10.957855Z W (3390) wifi:reject multicast/broadcast fragment
+2026-11-25T02:00:10.957872Z 
+2026-11-25T02:00:10.957882Z W (3400) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-25T02:00:11.973288Z I (4400) esp_netif_handlers: example_netif_sta ip: 192.168.137.217, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-25T02:00:11.973428Z I (4400) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.217
+2026-11-25T02:00:11.973460Z I (4400) example_common: Connected to example_netif_sta
+2026-11-25T02:00:11.973475Z I (4410) example_common: - IPv4 address: 192.168.137.217,
+2026-11-25T02:00:11.973489Z I (4410) quic_demo_main: Wi-Fi connected
+2026-11-25T02:00:11.973501Z I (4420) wifi:Set ps type: 0, coexist: 0
+2026-11-25T02:00:11.973513Z 
+2026-11-25T02:00:11.973522Z I (4420) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-25T02:00:11.973540Z WIFI_EVENT start uptime_ms=3972 rssi=-31
+2026-11-25T02:00:11.973552Z I (4430) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:00:11.973566Z I (4440) quic_demo_main: Free heap: 285544 bytes
+2026-11-25T02:00:11.973578Z I (4440) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:00:11.973592Z I (4450) main_task: Returned from app_main()
+2026-11-25T02:00:13.394845Z I (5970) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:00:13.394963Z I (5980) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:00:13.394981Z I (5980) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:00:14.401436Z I (6990) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:00:14.401531Z I (7000) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:00:14.401571Z CONNECT session=0 initial=1 transport_ms=1549.9 connack_ms=18.7
+2026-11-25T02:00:14.401596Z I (7010) quic_demo_main: Starting DHT11 readings every five seconds
+2026-11-25T02:00:14.602802Z I (7110) quic_demo_main: Subscription acknowledged
+2026-11-25T02:00:19.552814Z I (12140) quic_demo_main: APP_RTT seq=1 app_rtt_ms=88.224
+2026-11-25T02:00:24.546589Z I (17170) quic_demo_main: APP_RTT seq=2 app_rtt_ms=107.710
+2026-11-25T02:00:29.533738Z I (22100) quic_demo_main: APP_RTT seq=3 app_rtt_ms=27.758
+2026-11-25T02:00:34.534031Z I (27130) quic_demo_main: APP_RTT seq=4 app_rtt_ms=47.649
+2026-11-25T02:00:39.736182Z I (32160) quic_demo_main: APP_RTT seq=5 app_rtt_ms=67.585
+2026-11-25T02:00:44.736471Z I (37190) quic_demo_main: APP_RTT seq=6 app_rtt_ms=87.946
+2026-11-25T02:00:49.715923Z I (42220) quic_demo_main: APP_RTT seq=7 app_rtt_ms=107.754
+2026-11-25T02:00:54.718262Z I (47150) quic_demo_main: APP_RTT seq=8 app_rtt_ms=27.702
+2026-11-25T02:00:59.717853Z I (52180) quic_demo_main: APP_RTT seq=9 app_rtt_ms=47.762
+2026-11-25T02:01:04.712535Z I (57210) quic_demo_main: APP_RTT seq=10 app_rtt_ms=67.743
+2026-11-25T02:01:09.703138Z I (62240) quic_demo_main: APP_RTT seq=11 app_rtt_ms=87.750
+2026-11-25T02:01:14.490706Z HEAPLOG uptime_s=66 free=268684 min_free=239728
+2026-11-25T02:01:14.490825Z DIAG uptime_ms=66557 session=0 rssi=-31 wifi_ip=1 wifi_disc=0 free=268492 min_free=239728 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4778 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4778 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65104 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:01:14.698691Z I (67190) quic_demo_main: APP_RTT seq=12 app_rtt_ms=28.160
+2026-11-25T02:01:14.698837Z E (67290) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:01:14.698913Z E (67290) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:01:14.698932Z W (67290) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:01:14.901813Z FAIL_DIAG uptime_ms=66834 session=0 rssi=-31 wifi_ip=1 wifi_disc=0 free=267680 min_free=239728 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:01:14.901966Z CONNECTION_FAILED uptime_ms=66858 session=0 reason=mqtt_process_error next_seq=13
+2026-11-25T02:01:14.901989Z I (67320) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:01:14.902046Z RECONNECT_START n=1 reason=mqtt_process_error fail_uptime_ms=66858
+2026-11-25T02:01:15.715336Z I (68330) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:01:15.715487Z I (68330) quic_demo_main: Free heap: 289388 bytes
+2026-11-25T02:01:15.715535Z I (68330) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:01:20.788097Z E (73340) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:01:20.788240Z RECONNECT_ATTEMPT n=1 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=67867 elapsed_ms=5011.0
+2026-11-25T02:01:20.788267Z I (73340) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:01:22.825878Z I (75340) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:01:22.826012Z I (75340) quic_demo_main: Free heap: 289388 bytes
+2026-11-25T02:01:22.826033Z I (75340) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:01:27.341185Z I (79860) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:01:27.341299Z I (79860) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:01:27.341317Z I (79870) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:01:27.341333Z I (79870) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:01:27.341348Z I (79890) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:01:27.341362Z RECONNECT n=1 session=1 attempts=2 reason=mqtt_process_error fail_uptime_ms=66858 start_uptime_ms=67867 last_start_uptime_ms=74877 connected_uptime_ms=79439 handshake_ms=4531.7 connack_ms=16.1 attempt_total_ms=4561.7 downtime_ms=12581.0 free=267080 next_seq=13
+2026-11-25T02:01:27.542415Z I (80010) quic_demo_main: Subscription acknowledged
+2026-11-25T02:01:32.415516Z I (85040) quic_demo_main: APP_RTT seq=13 app_rtt_ms=87.673
+2026-11-25T02:01:37.613266Z I (90070) quic_demo_main: APP_RTT seq=14 app_rtt_ms=108.066
+2026-11-25T02:01:42.398338Z I (95000) quic_demo_main: APP_RTT seq=15 app_rtt_ms=27.689
+2026-11-25T02:01:47.599397Z I (100030) quic_demo_main: APP_RTT seq=16 app_rtt_ms=47.559
+2026-11-25T02:01:52.594820Z I (105060) quic_demo_main: APP_RTT seq=17 app_rtt_ms=67.602
+2026-11-25T02:01:57.601953Z I (110090) quic_demo_main: APP_RTT seq=18 app_rtt_ms=88.039
+2026-11-25T02:02:02.603602Z I (115120) quic_demo_main: APP_RTT seq=19 app_rtt_ms=107.483
+2026-11-25T02:02:07.599183Z I (120050) quic_demo_main: APP_RTT seq=20 app_rtt_ms=27.686
+2026-11-25T02:02:12.602347Z I (125080) quic_demo_main: APP_RTT seq=21 app_rtt_ms=47.843
+2026-11-25T02:02:14.482588Z HEAPLOG uptime_s=126 free=268956 min_free=239564
+2026-11-25T02:02:14.482741Z DIAG uptime_ms=126557 session=1 rssi=-31 wifi_ip=1 wifi_disc=0 free=268956 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1938 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=1938 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65390 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:02:17.606093Z I (130130) quic_demo_main: APP_RTT seq=22 app_rtt_ms=87.744
+2026-11-25T02:02:22.592364Z I (135160) quic_demo_main: APP_RTT seq=23 app_rtt_ms=107.722
+2026-11-25T02:02:27.590364Z I (140090) quic_demo_main: APP_RTT seq=24 app_rtt_ms=28.394
+2026-11-25T02:02:27.590514Z E (140190) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:02:27.590549Z E (140190) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:02:27.590565Z W (140190) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:02:27.796812Z FAIL_DIAG uptime_ms=139734 session=1 rssi=-29 wifi_ip=1 wifi_disc=0 free=268144 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:02:27.796952Z CONNECTION_FAILED uptime_ms=139758 session=1 reason=mqtt_process_error next_seq=25
+2026-11-25T02:02:27.796974Z I (140220) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:02:27.797005Z RECONNECT_START n=2 reason=mqtt_process_error fail_uptime_ms=139758
+2026-11-25T02:02:28.806022Z I (141230) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:02:28.806112Z I (141230) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:02:28.806129Z I (141230) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:02:33.682660Z E (146240) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:02:33.682798Z RECONNECT_ATTEMPT n=2 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=140767 elapsed_ms=5011.1
+2026-11-25T02:02:33.682842Z I (146240) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:02:35.725249Z I (148240) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:02:35.725388Z I (148240) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:02:35.725405Z I (148240) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:02:40.035897Z I (152500) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:02:40.036012Z I (152510) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:02:40.036034Z I (152510) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:02:40.036060Z I (152520) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:02:40.036090Z I (152540) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:02:40.036108Z RECONNECT n=2 session=2 attempts=2 reason=mqtt_process_error fail_uptime_ms=139758 start_uptime_ms=140767 last_start_uptime_ms=147777 connected_uptime_ms=152089 handshake_ms=4278.9 connack_ms=19.0 attempt_total_ms=4311.8 downtime_ms=12330.8 free=266968 next_seq=25
+2026-11-25T02:02:40.036146Z I (152660) quic_demo_main: Subscription acknowledged
+2026-11-25T02:02:45.132946Z I (157690) quic_demo_main: APP_RTT seq=25 app_rtt_ms=88.045
+2026-11-25T02:02:50.282162Z I (162720) quic_demo_main: APP_RTT seq=26 app_rtt_ms=107.642
+2026-11-25T02:02:55.073765Z I (167650) quic_demo_main: APP_RTT seq=27 app_rtt_ms=27.662
+2026-11-25T02:03:00.078118Z I (172680) quic_demo_main: APP_RTT seq=28 app_rtt_ms=47.824
+2026-11-25T02:03:05.094406Z I (177710) quic_demo_main: APP_RTT seq=29 app_rtt_ms=67.742
+2026-11-25T02:03:10.292286Z I (182740) quic_demo_main: APP_RTT seq=30 app_rtt_ms=88.205
+2026-11-25T02:03:14.452010Z HEAPLOG uptime_s=186 free=268524 min_free=239564
+2026-11-25T02:03:14.452149Z DIAG uptime_ms=186557 session=2 rssi=-30 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4277 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4278 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64308 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:03:15.077408Z I (187690) quic_demo_main: APP_RTT seq=31 app_rtt_ms=27.679
+2026-11-25T02:03:20.280929Z I (192720) quic_demo_main: APP_RTT seq=32 app_rtt_ms=47.635
+2026-11-25T02:03:25.274348Z I (197750) quic_demo_main: APP_RTT seq=33 app_rtt_ms=67.727
+2026-11-25T02:03:30.273696Z I (202780) quic_demo_main: APP_RTT seq=34 app_rtt_ms=87.745
+2026-11-25T02:03:35.277835Z I (207810) quic_demo_main: APP_RTT seq=35 app_rtt_ms=107.855
+2026-11-25T02:03:40.277342Z E (212720) TCP_TLS: TLS write failed: error=5 errno=104
+2026-11-25T02:03:40.277463Z E (212720) MQTT_QUIC: Failed to send complete MQTT packet over transport, error -1
+2026-11-25T02:03:40.277488Z E (212720) MQTT_QUIC: Failed to send complete MQTT packet
+2026-11-25T02:03:40.277505Z W (212720) quic_demo_main: Sensor publish failed: 3
+2026-11-25T02:03:40.277520Z APP_RTT_LOST seq=36 reason=publish_failed
+2026-11-25T02:03:40.277533Z FAIL_DIAG uptime_ms=212274 session=2 rssi=-30 wifi_ip=1 wifi_disc=0 free=266516 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4924 last_mqtt_status=0 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:03:40.277566Z CONNECTION_FAILED uptime_ms=212298 session=2 reason=publish_failed next_seq=37
+2026-11-25T02:03:40.277582Z I (212760) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:03:40.277611Z RECONNECT_START n=3 reason=publish_failed fail_uptime_ms=212298
+2026-11-25T02:03:41.292484Z I (213770) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:03:41.292616Z I (213770) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:03:41.292639Z I (213770) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:03:46.156362Z E (218780) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:03:46.357797Z RECONNECT_ATTEMPT n=3 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=213307 elapsed_ms=5011.0
+2026-11-25T02:03:46.357900Z I (218780) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:03:48.206757Z I (220780) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:03:48.206896Z I (220780) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:03:48.206923Z I (220780) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:03:52.717771Z I (225290) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:03:52.717888Z I (225300) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:03:52.717909Z I (225300) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:03:52.717935Z I (225310) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:03:52.717951Z I (225320) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:03:52.923118Z RECONNECT n=3 session=3 attempts=2 reason=publish_failed fail_uptime_ms=212298 start_uptime_ms=213307 last_start_uptime_ms=220317 connected_uptime_ms=224879 handshake_ms=4527.3 connack_ms=11.3 attempt_total_ms=4561.7 downtime_ms=12580.6 free=266376 next_seq=37
+2026-11-25T02:03:52.923302Z I (225450) quic_demo_main: Subscription acknowledged
+2026-11-25T02:03:58.000820Z I (230480) quic_demo_main: APP_RTT seq=37 app_rtt_ms=88.228
+2026-11-25T02:04:02.979132Z I (235510) quic_demo_main: APP_RTT seq=38 app_rtt_ms=107.724
+2026-11-25T02:04:07.986778Z I (240440) quic_demo_main: APP_RTT seq=39 app_rtt_ms=27.693
+2026-11-25T02:04:12.980420Z I (245470) quic_demo_main: APP_RTT seq=40 app_rtt_ms=47.540
+2026-11-25T02:04:14.439659Z HEAPLOG uptime_s=246 free=268524 min_free=239564
+2026-11-25T02:04:14.439752Z DIAG uptime_ms=246567 session=3 rssi=-30 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1558 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=1558 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64598 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:04:17.974897Z I (250520) quic_demo_main: APP_RTT seq=41 app_rtt_ms=87.794
+2026-11-25T02:04:22.967435Z I (255550) quic_demo_main: APP_RTT seq=42 app_rtt_ms=107.642
+2026-11-25T02:04:27.959389Z I (260480) quic_demo_main: APP_RTT seq=43 app_rtt_ms=27.662
+2026-11-25T02:04:32.952930Z I (265510) quic_demo_main: APP_RTT seq=44 app_rtt_ms=47.677
+2026-11-25T02:04:37.942097Z I (270540) quic_demo_main: APP_RTT seq=45 app_rtt_ms=67.193
+2026-11-25T02:04:43.147570Z I (275570) quic_demo_main: APP_RTT seq=46 app_rtt_ms=87.702
+2026-11-25T02:04:48.154606Z I (280600) quic_demo_main: APP_RTT seq=47 app_rtt_ms=108.125
+2026-11-25T02:04:53.144075Z I (285630) quic_demo_main: APP_RTT seq=48 app_rtt_ms=127.741
+2026-11-25T02:04:53.349908Z E (285830) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:04:53.350082Z E (285830) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:04:53.350102Z W (285830) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:04:53.350118Z FAIL_DIAG uptime_ms=285374 session=3 rssi=-30 wifi_ip=1 wifi_disc=0 free=267732 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=204 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:04:53.350153Z CONNECTION_FAILED uptime_ms=285398 session=3 reason=mqtt_process_error next_seq=49
+2026-11-25T02:04:53.350171Z I (285860) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:04:53.350195Z RECONNECT_START n=4 reason=mqtt_process_error fail_uptime_ms=285398
+2026-11-25T02:04:54.380798Z I (286870) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:04:54.380942Z I (286870) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:04:54.380972Z I (286870) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:04:59.446505Z E (291880) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:04:59.446618Z RECONNECT_ATTEMPT n=4 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=286407 elapsed_ms=5011.0
+2026-11-25T02:04:59.446641Z I (291880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:05:01.296569Z I (293880) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:05:01.296691Z I (293880) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:05:01.296710Z I (293880) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:05:05.598865Z I (298150) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:05:05.598985Z I (298150) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:05:05.599013Z I (298160) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:05:05.599032Z I (298160) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:05:05.599054Z I (298180) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:05:05.599078Z RECONNECT n=4 session=4 attempts=2 reason=mqtt_process_error fail_uptime_ms=285398 start_uptime_ms=286407 last_start_uptime_ms=293417 connected_uptime_ms=297729 handshake_ms=4280.0 connack_ms=17.7 attempt_total_ms=4311.8 downtime_ms=12330.9 free=266968 next_seq=49
+2026-11-25T02:05:05.800338Z I (298300) quic_demo_main: Subscription acknowledged
+2026-11-25T02:05:10.886614Z I (303330) quic_demo_main: APP_RTT seq=49 app_rtt_ms=87.513
+2026-11-25T02:05:14.607048Z HEAPLOG uptime_s=306 free=268524 min_free=239564
+2026-11-25T02:05:14.607195Z DIAG uptime_ms=306587 session=4 rssi=-31 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=3717 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=3718 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65033 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:05:15.856931Z I (308280) quic_demo_main: APP_RTT seq=50 app_rtt_ms=27.612
+2026-11-25T02:05:20.856874Z I (313310) quic_demo_main: APP_RTT seq=51 app_rtt_ms=47.656
+2026-11-25T02:05:25.850341Z I (318340) quic_demo_main: APP_RTT seq=52 app_rtt_ms=67.741
+2026-11-25T02:05:30.836564Z I (323370) quic_demo_main: APP_RTT seq=53 app_rtt_ms=87.746
+2026-11-25T02:05:35.842349Z I (328400) quic_demo_main: APP_RTT seq=54 app_rtt_ms=107.718
+2026-11-25T02:05:40.837282Z I (333330) quic_demo_main: APP_RTT seq=55 app_rtt_ms=27.702
+2026-11-25T02:05:45.843029Z I (338360) quic_demo_main: APP_RTT seq=56 app_rtt_ms=47.691
+2026-11-25T02:05:50.835967Z I (343390) quic_demo_main: APP_RTT seq=57 app_rtt_ms=67.716
+2026-11-25T02:05:55.834763Z I (348420) quic_demo_main: APP_RTT seq=58 app_rtt_ms=88.021
+2026-11-25T02:06:00.829886Z I (353450) quic_demo_main: APP_RTT seq=59 app_rtt_ms=108.308
+2026-11-25T02:06:05.827183Z E (358360) TCP_TLS: TLS write failed: error=5 errno=104
+2026-11-25T02:06:05.827306Z E (358360) MQTT_QUIC: Failed to send complete MQTT packet over transport, error -1
+2026-11-25T02:06:05.827336Z E (358360) MQTT_QUIC: Failed to send complete MQTT packet
+2026-11-25T02:06:05.827354Z W (358360) quic_demo_main: Sensor publish failed: 3
+2026-11-25T02:06:05.827389Z APP_RTT_LOST seq=60 reason=publish_failed
+2026-11-25T02:06:05.827405Z FAIL_DIAG uptime_ms=357914 session=4 rssi=-32 wifi_ip=1 wifi_disc=0 free=266516 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4924 last_mqtt_status=0 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:06:05.827446Z CONNECTION_FAILED uptime_ms=357938 session=4 reason=publish_failed next_seq=61
+2026-11-25T02:06:05.827507Z I (358400) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:06:05.827541Z RECONNECT_START n=5 reason=publish_failed fail_uptime_ms=357938
+2026-11-25T02:06:06.833985Z I (359410) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:06:06.834107Z I (359410) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:06:06.834134Z I (359410) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:06:11.904297Z E (364420) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:06:11.904425Z RECONNECT_ATTEMPT n=5 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=358947 elapsed_ms=5011.0
+2026-11-25T02:06:11.904453Z I (364420) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:06:13.948211Z I (366420) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:06:13.948338Z I (366420) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:06:13.948359Z I (366420) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:06:18.405171Z I (370940) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:06:18.405258Z I (370950) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:06:18.405280Z I (370950) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:06:18.405346Z I (370960) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:06:18.405368Z I (370970) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:06:18.405384Z RECONNECT n=5 session=5 attempts=2 reason=publish_failed fail_uptime_ms=357938 start_uptime_ms=358947 last_start_uptime_ms=365957 connected_uptime_ms=370519 handshake_ms=4535.7 connack_ms=12.0 attempt_total_ms=4561.9 downtime_ms=12580.8 free=267392 next_seq=61
+2026-11-25T02:06:18.405417Z HEAPLOG uptime_s=370 free=267052 min_free=239564
+2026-11-25T02:06:18.601355Z DIAG uptime_ms=370547 session=5 rssi=-32 wifi_ip=1 wifi_disc=0 free=267052 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=17557 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=28 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65178 rcv_wnd=5733 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:06:18.601509Z I (371110) quic_demo_main: Subscription acknowledged
+2026-11-25T02:06:23.681077Z I (376140) quic_demo_main: APP_RTT seq=61 app_rtt_ms=107.335
+2026-11-25T02:06:28.640923Z I (381070) quic_demo_main: APP_RTT seq=62 app_rtt_ms=28.071
+2026-11-25T02:06:33.637106Z I (386100) quic_demo_main: APP_RTT seq=63 app_rtt_ms=47.827
+2026-11-25T02:06:38.636245Z I (391130) quic_demo_main: APP_RTT seq=64 app_rtt_ms=67.637
+2026-11-25T02:06:43.642208Z I (396160) quic_demo_main: APP_RTT seq=65 app_rtt_ms=87.738
+2026-11-25T02:06:48.634571Z I (401190) quic_demo_main: APP_RTT seq=66 app_rtt_ms=107.734
+2026-11-25T02:06:53.633655Z I (406220) quic_demo_main: APP_RTT seq=67 app_rtt_ms=127.772
+2026-11-25T02:06:58.623523Z I (411150) quic_demo_main: APP_RTT seq=68 app_rtt_ms=47.701
+2026-11-25T02:07:03.624610Z I (416180) quic_demo_main: APP_RTT seq=69 app_rtt_ms=67.789
+2026-11-25T02:07:08.634154Z I (421210) quic_demo_main: APP_RTT seq=70 app_rtt_ms=87.712
+2026-11-25T02:07:13.637444Z I (426240) quic_demo_main: APP_RTT seq=71 app_rtt_ms=107.703
+2026-11-25T02:07:18.427111Z HEAPLOG uptime_s=430 free=268948 min_free=239564
+2026-11-25T02:07:18.427225Z DIAG uptime_ms=430557 session=5 rssi=-30 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4778 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4778 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65100 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:07:18.633914Z I (431190) quic_demo_main: APP_RTT seq=72 app_rtt_ms=47.321
+2026-11-25T02:07:18.837938Z E (431290) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:07:18.838063Z E (431290) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:07:18.838094Z W (431290) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:07:18.838113Z FAIL_DIAG uptime_ms=430834 session=5 rssi=-30 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:07:18.838149Z CONNECTION_FAILED uptime_ms=430858 session=5 reason=mqtt_process_error next_seq=73
+2026-11-25T02:07:18.838168Z I (431320) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:07:18.838193Z RECONNECT_START n=6 reason=mqtt_process_error fail_uptime_ms=430858
+2026-11-25T02:07:19.869270Z I (432330) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:07:19.869416Z I (432330) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:07:19.869463Z I (432330) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:07:24.732718Z E (437340) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:07:24.732862Z RECONNECT_ATTEMPT n=6 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=431867 elapsed_ms=5011.0
+2026-11-25T02:07:24.732897Z I (437340) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:07:26.753502Z I (439340) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:07:26.753626Z I (439340) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:07:26.753652Z I (439340) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:07:31.068276Z I (443610) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:07:31.068409Z I (443610) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:07:31.068430Z I (443620) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:07:31.068446Z I (443620) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:07:31.068469Z I (443640) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:07:31.068483Z RECONNECT n=6 session=6 attempts=2 reason=mqtt_process_error fail_uptime_ms=430858 start_uptime_ms=431867 last_start_uptime_ms=438877 connected_uptime_ms=443189 handshake_ms=4282.3 connack_ms=15.5 attempt_total_ms=4311.8 downtime_ms=12330.8 free=266968 next_seq=73
+2026-11-25T02:07:31.269254Z I (443760) quic_demo_main: Subscription acknowledged
+2026-11-25T02:07:36.350778Z I (448790) quic_demo_main: APP_RTT seq=73 app_rtt_ms=88.090
+2026-11-25T02:07:41.320343Z I (453820) quic_demo_main: APP_RTT seq=74 app_rtt_ms=107.526
+2026-11-25T02:07:46.322627Z I (458750) quic_demo_main: APP_RTT seq=75 app_rtt_ms=27.649
+2026-11-25T02:07:51.318550Z I (463780) quic_demo_main: APP_RTT seq=76 app_rtt_ms=47.790
+2026-11-25T02:07:56.322866Z I (468810) quic_demo_main: APP_RTT seq=77 app_rtt_ms=67.706
+2026-11-25T02:08:01.322620Z I (473840) quic_demo_main: APP_RTT seq=78 app_rtt_ms=88.262
+2026-11-25T02:08:06.317367Z I (478870) quic_demo_main: APP_RTT seq=79 app_rtt_ms=107.721
+2026-11-25T02:08:11.309424Z I (483800) quic_demo_main: APP_RTT seq=80 app_rtt_ms=27.569
+2026-11-25T02:08:16.312057Z I (488830) quic_demo_main: APP_RTT seq=81 app_rtt_ms=47.605
+2026-11-25T02:08:18.599781Z HEAPLOG uptime_s=490 free=268524 min_free=239564
+2026-11-25T02:08:18.599933Z DIAG uptime_ms=490567 session=6 rssi=-31 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2198 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=2198 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65390 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:08:21.304868Z I (493880) quic_demo_main: APP_RTT seq=82 app_rtt_ms=87.616
+2026-11-25T02:08:26.303478Z I (498910) quic_demo_main: APP_RTT seq=83 app_rtt_ms=107.949
+2026-11-25T02:08:31.297379Z E (503820) TCP_TLS: TLS write failed: error=5 errno=104
+2026-11-25T02:08:31.297519Z E (503820) MQTT_QUIC: Failed to send complete MQTT packet over transport, error -1
+2026-11-25T02:08:31.297544Z E (503820) MQTT_QUIC: Failed to send complete MQTT packet
+2026-11-25T02:08:31.297559Z W (503820) quic_demo_main: Sensor publish failed: 3
+2026-11-25T02:08:31.297574Z APP_RTT_LOST seq=84 reason=publish_failed
+2026-11-25T02:08:31.297588Z FAIL_DIAG uptime_ms=503374 session=6 rssi=-30 wifi_ip=1 wifi_disc=0 free=266516 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4924 last_mqtt_status=0 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:08:31.297621Z CONNECTION_FAILED uptime_ms=503398 session=6 reason=publish_failed next_seq=85
+2026-11-25T02:08:31.297638Z I (503860) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:08:31.297666Z RECONNECT_START n=7 reason=publish_failed fail_uptime_ms=503398
+2026-11-25T02:08:32.312761Z I (504870) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:08:32.312907Z I (504870) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:08:32.312938Z I (504870) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:08:37.378284Z E (509880) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:08:37.378399Z RECONNECT_ATTEMPT n=7 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=504407 elapsed_ms=5011.0
+2026-11-25T02:08:37.378433Z I (509880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:08:39.419687Z I (511880) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:08:39.419805Z I (511880) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:08:39.419823Z I (511880) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:08:43.898217Z I (516390) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:08:43.898333Z I (516400) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:08:43.898358Z I (516400) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:08:43.898376Z I (516410) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:08:43.898393Z I (516420) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:08:43.898408Z RECONNECT n=7 session=7 attempts=2 reason=publish_failed fail_uptime_ms=503398 start_uptime_ms=504407 last_start_uptime_ms=511417 connected_uptime_ms=515969 handshake_ms=4528.1 connack_ms=10.0 attempt_total_ms=4551.7 downtime_ms=12570.7 free=267100 next_seq=85
+2026-11-25T02:08:44.115820Z I (516540) quic_demo_main: Subscription acknowledged
+2026-11-25T02:08:48.988084Z I (521570) quic_demo_main: APP_RTT seq=85 app_rtt_ms=87.762
+2026-11-25T02:08:54.166313Z I (526600) quic_demo_main: APP_RTT seq=86 app_rtt_ms=108.086
+2026-11-25T02:08:58.957917Z I (531530) quic_demo_main: APP_RTT seq=87 app_rtt_ms=27.736
+2026-11-25T02:09:03.952212Z I (536560) quic_demo_main: APP_RTT seq=88 app_rtt_ms=47.588
+2026-11-25T02:09:09.164712Z I (541590) quic_demo_main: APP_RTT seq=89 app_rtt_ms=66.826
+2026-11-25T02:09:14.166239Z I (546620) quic_demo_main: APP_RTT seq=90 app_rtt_ms=87.516
+2026-11-25T02:09:18.534793Z HEAPLOG uptime_s=550 free=268948 min_free=239564
+2026-11-25T02:09:18.534934Z DIAG uptime_ms=550577 session=7 rssi=-31 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4418 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4418 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64308 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:09:18.950821Z I (551570) quic_demo_main: APP_RTT seq=91 app_rtt_ms=27.457
+2026-11-25T02:09:24.159015Z I (556600) quic_demo_main: APP_RTT seq=92 app_rtt_ms=47.690
+2026-11-25T02:09:29.146864Z I (561630) quic_demo_main: APP_RTT seq=93 app_rtt_ms=68.172
+2026-11-25T02:09:34.146070Z I (566660) quic_demo_main: APP_RTT seq=94 app_rtt_ms=87.755
+2026-11-25T02:09:39.136204Z I (571690) quic_demo_main: APP_RTT seq=95 app_rtt_ms=107.675
+2026-11-25T02:09:44.132323Z I (576620) quic_demo_main: APP_RTT seq=96 app_rtt_ms=28.010
+2026-11-25T02:09:44.337038Z E (576820) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:09:44.337231Z E (576820) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:09:44.337263Z W (576820) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:09:44.337291Z FAIL_DIAG uptime_ms=576364 session=7 rssi=-32 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=204 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:09:44.337370Z CONNECTION_FAILED uptime_ms=576388 session=7 reason=mqtt_process_error next_seq=97
+2026-11-25T02:09:44.337400Z I (576850) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:09:44.337439Z RECONNECT_START n=8 reason=mqtt_process_error fail_uptime_ms=576388
+2026-11-25T02:09:45.353768Z I (577860) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:09:45.353882Z I (577860) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:09:45.353903Z I (577860) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:09:50.242415Z E (582870) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:09:50.450614Z RECONNECT_ATTEMPT n=8 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=577397 elapsed_ms=5011.0
+2026-11-25T02:09:50.450778Z I (582870) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:09:52.288300Z I (584870) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:09:52.288452Z I (584870) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:09:52.288471Z I (584870) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:09:56.618757Z I (589140) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:09:56.618899Z I (589140) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:09:56.618919Z I (589150) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:09:56.618936Z I (589150) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:09:56.618967Z I (589170) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:09:56.618982Z RECONNECT n=8 session=8 attempts=2 reason=mqtt_process_error fail_uptime_ms=576388 start_uptime_ms=577397 last_start_uptime_ms=584407 connected_uptime_ms=588719 handshake_ms=4282.9 connack_ms=14.6 attempt_total_ms=4311.8 downtime_ms=12330.9 free=267392 next_seq=97
+2026-11-25T02:09:56.820082Z I (589290) quic_demo_main: Subscription acknowledged
+2026-11-25T02:10:01.696293Z I (594320) quic_demo_main: APP_RTT seq=97 app_rtt_ms=87.740
+2026-11-25T02:10:06.902664Z I (599350) quic_demo_main: APP_RTT seq=98 app_rtt_ms=107.935
+2026-11-25T02:10:11.683654Z I (604280) quic_demo_main: APP_RTT seq=99 app_rtt_ms=27.916
+2026-11-25T02:10:16.680146Z I (609310) quic_demo_main: APP_RTT seq=100 app_rtt_ms=47.804
+2026-11-25T02:10:18.555107Z HEAPLOG uptime_s=610 free=268948 min_free=239564
+2026-11-25T02:10:18.555251Z DIAG uptime_ms=610587 session=8 rssi=-32 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1738 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=1738 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64597 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:10:21.886193Z I (614360) quic_demo_main: APP_RTT seq=101 app_rtt_ms=87.712
+2026-11-25T02:10:26.889637Z I (619390) quic_demo_main: APP_RTT seq=102 app_rtt_ms=107.546
+2026-11-25T02:10:31.886903Z I (624320) quic_demo_main: APP_RTT seq=103 app_rtt_ms=27.675
+2026-11-25T02:10:36.891283Z I (629350) quic_demo_main: APP_RTT seq=104 app_rtt_ms=47.657
+2026-11-25T02:10:41.884264Z I (634380) quic_demo_main: APP_RTT seq=105 app_rtt_ms=67.701
+2026-11-25T02:10:46.886615Z I (639410) quic_demo_main: APP_RTT seq=106 app_rtt_ms=87.682
+2026-11-25T02:10:51.886284Z I (644440) quic_demo_main: APP_RTT seq=107 app_rtt_ms=107.689
+2026-11-25T02:10:56.879340Z I (649370) quic_demo_main: APP_RTT seq=108 app_rtt_ms=28.344
+2026-11-25T02:10:56.879507Z E (649470) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:10:56.879611Z E (649470) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:10:56.879630Z W (649470) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:10:56.879645Z FAIL_DIAG uptime_ms=649014 session=8 rssi=-31 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:10:57.089399Z CONNECTION_FAILED uptime_ms=649038 session=8 reason=mqtt_process_error next_seq=109
+2026-11-25T02:10:57.089523Z I (649500) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:10:57.089571Z RECONNECT_START n=9 reason=mqtt_process_error fail_uptime_ms=649038
+2026-11-25T02:10:57.894497Z I (650510) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:10:57.894585Z I (650510) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:10:57.894608Z I (650510) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:11:02.959963Z E (655520) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:11:02.960087Z RECONNECT_ATTEMPT n=9 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=650047 elapsed_ms=5011.1
+2026-11-25T02:11:02.960110Z I (655520) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:11:05.012299Z I (657520) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:11:05.012454Z I (657520) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:11:05.012490Z I (657520) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:11:09.314243Z I (661780) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:11:09.314433Z I (661790) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:11:09.314455Z I (661790) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:11:09.314472Z I (661800) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:11:09.314490Z I (661820) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:11:09.314518Z RECONNECT n=9 session=9 attempts=2 reason=mqtt_process_error fail_uptime_ms=649038 start_uptime_ms=650047 last_start_uptime_ms=657057 connected_uptime_ms=661369 handshake_ms=4279.1 connack_ms=18.8 attempt_total_ms=4311.9 downtime_ms=12331.0 free=266968 next_seq=109
+2026-11-25T02:11:09.314554Z I (661940) quic_demo_main: Subscription acknowledged
+2026-11-25T02:11:14.376002Z I (666970) quic_demo_main: APP_RTT seq=109 app_rtt_ms=88.305
+2026-11-25T02:11:18.508818Z HEAPLOG uptime_s=670 free=268524 min_free=239564
+2026-11-25T02:11:18.508961Z DIAG uptime_ms=670587 session=9 rssi=-32 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4077 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4077 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65032 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:11:19.548200Z I (672020) quic_demo_main: APP_RTT seq=110 app_rtt_ms=128.217
+2026-11-25T02:11:24.344051Z I (676950) quic_demo_main: APP_RTT seq=111 app_rtt_ms=47.615
+2026-11-25T02:11:29.549971Z I (681980) quic_demo_main: APP_RTT seq=112 app_rtt_ms=67.594
+2026-11-25T02:11:34.543085Z I (687010) quic_demo_main: APP_RTT seq=113 app_rtt_ms=87.571
+2026-11-25T02:11:39.530851Z I (692040) quic_demo_main: APP_RTT seq=114 app_rtt_ms=107.714
+2026-11-25T02:11:44.530730Z I (696970) quic_demo_main: APP_RTT seq=115 app_rtt_ms=27.867
+2026-11-25T02:11:49.525264Z I (702000) quic_demo_main: APP_RTT seq=116 app_rtt_ms=47.694
+2026-11-25T02:11:54.527377Z I (707030) quic_demo_main: APP_RTT seq=117 app_rtt_ms=67.767
+2026-11-25T02:11:59.531107Z I (712060) quic_demo_main: APP_RTT seq=118 app_rtt_ms=87.787
+2026-11-25T02:12:04.530233Z I (717090) quic_demo_main: APP_RTT seq=119 app_rtt_ms=108.122
+2026-11-25T02:12:09.529790Z I (722020) quic_demo_main: APP_RTT seq=120 app_rtt_ms=27.736
+2026-11-25T02:12:09.529968Z E (722120) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:12:09.530011Z E (722120) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:12:09.530030Z W (722120) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:12:09.530046Z FAIL_DIAG uptime_ms=721664 session=9 rssi=-31 wifi_ip=1 wifi_disc=0 free=267732 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:12:09.530082Z CONNECTION_FAILED uptime_ms=721688 session=9 reason=mqtt_process_error next_seq=121
+2026-11-25T02:12:09.730865Z I (722150) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:12:09.731032Z RECONNECT_START n=10 reason=mqtt_process_error fail_uptime_ms=721688
+2026-11-25T02:12:10.542968Z I (723160) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:12:10.543125Z I (723160) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:12:10.543145Z I (723160) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:12:15.622490Z E (728170) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:12:15.622628Z RECONNECT_ATTEMPT n=10 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=722697 elapsed_ms=5011.0
+2026-11-25T02:12:15.622654Z I (728170) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:12:17.660239Z I (730170) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:12:17.660349Z I (730170) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:12:17.660366Z I (730170) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:12:22.163707Z I (734680) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:12:22.163886Z I (734690) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:12:22.163922Z I (734690) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:12:22.163948Z I (734700) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:12:22.365507Z I (734920) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:12:22.365625Z RECONNECT n=10 session=10 attempts=2 reason=mqtt_process_error fail_uptime_ms=721688 start_uptime_ms=722697 last_start_uptime_ms=729707 connected_uptime_ms=734469 handshake_ms=4527.9 connack_ms=215.4 attempt_total_ms=4761.6 downtime_ms=12780.7 free=267100 next_seq=121
+2026-11-25T02:12:22.365668Z HEAPLOG uptime_s=734 free=267052 min_free=239564
+2026-11-25T02:12:22.365683Z DIAG uptime_ms=734497 session=10 rssi=-32 wifi_ip=1 wifi_disc=0 free=267052 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=12938 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=28 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65178 rcv_wnd=5733 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:12:22.567035Z I (735060) quic_demo_main: Subscription acknowledged
+2026-11-25T02:12:27.640618Z I (740090) quic_demo_main: APP_RTT seq=121 app_rtt_ms=107.524
+2026-11-25T02:12:32.631772Z I (745120) quic_demo_main: APP_RTT seq=122 app_rtt_ms=127.961
+2026-11-25T02:12:37.428010Z I (750050) quic_demo_main: APP_RTT seq=123 app_rtt_ms=47.617
+2026-11-25T02:12:42.636460Z I (755180) quic_demo_main: APP_RTT seq=124 app_rtt_ms=167.707
+2026-11-25T02:12:47.637125Z I (760110) quic_demo_main: APP_RTT seq=125 app_rtt_ms=87.886
+2026-11-25T02:12:52.632196Z I (765140) quic_demo_main: APP_RTT seq=126 app_rtt_ms=107.664
+2026-11-25T02:12:57.631893Z I (770070) quic_demo_main: APP_RTT seq=127 app_rtt_ms=27.746
+2026-11-25T02:13:02.626200Z I (775100) quic_demo_main: APP_RTT seq=128 app_rtt_ms=47.678
+2026-11-25T02:13:07.620182Z I (780130) quic_demo_main: APP_RTT seq=129 app_rtt_ms=67.705
+2026-11-25T02:13:12.613463Z I (785160) quic_demo_main: APP_RTT seq=130 app_rtt_ms=87.706
+2026-11-25T02:13:17.609987Z I (790190) quic_demo_main: APP_RTT seq=131 app_rtt_ms=107.656
+2026-11-25T02:13:22.396193Z HEAPLOG uptime_s=794 free=268948 min_free=239564
+2026-11-25T02:13:22.396349Z DIAG uptime_ms=794507 session=10 rssi=-30 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4778 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4778 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65097 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:13:22.599049Z E (795100) TCP_TLS: TLS write failed: error=5 errno=104
+2026-11-25T02:13:22.599153Z E (795100) MQTT_QUIC: Failed to send complete MQTT packet over transport, error -1
+2026-11-25T02:13:22.599175Z E (795100) MQTT_QUIC: Failed to send complete MQTT packet
+2026-11-25T02:13:22.599205Z W (795100) quic_demo_main: Sensor publish failed: 3
+2026-11-25T02:13:22.599248Z APP_RTT_LOST seq=132 reason=publish_failed
+2026-11-25T02:13:22.599265Z FAIL_DIAG uptime_ms=794654 session=10 rssi=-30 wifi_ip=1 wifi_disc=0 free=266936 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4924 last_mqtt_status=0 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:13:22.599304Z CONNECTION_FAILED uptime_ms=794679 session=10 reason=publish_failed next_seq=133
+2026-11-25T02:13:22.599322Z I (795140) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:13:22.599351Z RECONNECT_START n=11 reason=publish_failed fail_uptime_ms=794679
+2026-11-25T02:13:23.613010Z I (796150) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:13:23.613148Z I (796150) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:13:23.613184Z I (796150) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:13:28.710849Z E (801160) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:13:28.710983Z RECONNECT_ATTEMPT n=11 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=795687 elapsed_ms=5011.0
+2026-11-25T02:13:28.711008Z I (801160) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:13:30.542314Z I (803160) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:13:30.542473Z I (803160) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:13:30.542502Z I (803160) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:13:34.855422Z I (807420) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:13:34.855551Z I (807430) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:13:34.855574Z I (807430) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:13:34.855592Z I (807440) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:13:34.855616Z I (807450) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:13:34.855643Z RECONNECT n=11 session=11 attempts=2 reason=publish_failed fail_uptime_ms=794679 start_uptime_ms=795687 last_start_uptime_ms=802697 connected_uptime_ms=806999 handshake_ms=4278.4 connack_ms=9.2 attempt_total_ms=4301.8 downtime_ms=12320.6 free=267392 next_seq=133
+2026-11-25T02:13:35.056766Z I (807570) quic_demo_main: Subscription acknowledged
+2026-11-25T02:13:40.111812Z I (812600) quic_demo_main: APP_RTT seq=133 app_rtt_ms=87.701
+2026-11-25T02:13:45.077285Z I (817630) quic_demo_main: APP_RTT seq=134 app_rtt_ms=107.811
+2026-11-25T02:13:50.069411Z I (822560) quic_demo_main: APP_RTT seq=135 app_rtt_ms=27.556
+2026-11-25T02:13:55.070210Z I (827590) quic_demo_main: APP_RTT seq=136 app_rtt_ms=47.558
+2026-11-25T02:14:00.068701Z I (832620) quic_demo_main: APP_RTT seq=137 app_rtt_ms=67.667
+2026-11-25T02:14:05.062563Z I (837650) quic_demo_main: APP_RTT seq=138 app_rtt_ms=87.606
+2026-11-25T02:14:10.057935Z I (842680) quic_demo_main: APP_RTT seq=139 app_rtt_ms=107.577
+2026-11-25T02:14:15.060793Z I (847610) quic_demo_main: APP_RTT seq=140 app_rtt_ms=27.677
+2026-11-25T02:14:20.263532Z I (852740) quic_demo_main: APP_RTT seq=141 app_rtt_ms=147.694
+2026-11-25T02:14:22.550207Z HEAPLOG uptime_s=854 free=268948 min_free=239564
+2026-11-25T02:14:22.550363Z DIAG uptime_ms=854517 session=11 rssi=-34 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2238 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=2238 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65389 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:14:25.262713Z I (857690) quic_demo_main: APP_RTT seq=142 app_rtt_ms=87.676
+2026-11-25T02:14:30.249451Z I (862720) quic_demo_main: APP_RTT seq=143 app_rtt_ms=107.694
+2026-11-25T02:14:35.038733Z I (867650) quic_demo_main: APP_RTT seq=144 app_rtt_ms=28.091
+2026-11-25T02:14:35.244393Z E (867750) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:14:35.244564Z E (867750) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:14:35.244582Z W (867750) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:14:35.244597Z FAIL_DIAG uptime_ms=867294 session=11 rssi=-31 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:14:35.244633Z CONNECTION_FAILED uptime_ms=867319 session=11 reason=mqtt_process_error next_seq=145
+2026-11-25T02:14:35.244650Z I (867780) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:14:35.244673Z RECONNECT_START n=12 reason=mqtt_process_error fail_uptime_ms=867319
+2026-11-25T02:14:36.250507Z I (868790) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:14:36.250647Z I (868790) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:14:36.250684Z I (868790) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:14:41.321088Z E (873800) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:14:41.321245Z RECONNECT_ATTEMPT n=12 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=868327 elapsed_ms=5011.0
+2026-11-25T02:14:41.321275Z I (873800) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:14:43.360716Z I (875800) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:14:43.360816Z I (875800) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:14:43.360834Z I (875800) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:14:47.451481Z I (880060) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:14:47.451587Z I (880070) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:14:47.652977Z I (880070) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:14:47.653097Z I (880080) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:14:47.653133Z I (880090) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:14:47.653163Z RECONNECT n=12 session=12 attempts=2 reason=mqtt_process_error fail_uptime_ms=867319 start_uptime_ms=868327 last_start_uptime_ms=875337 connected_uptime_ms=879639 handshake_ms=4278.0 connack_ms=9.7 attempt_total_ms=4301.8 downtime_ms=12320.6 free=266968 next_seq=145
+2026-11-25T02:14:47.653224Z I (880210) quic_demo_main: Subscription acknowledged
+2026-11-25T02:14:52.749798Z I (885240) quic_demo_main: APP_RTT seq=145 app_rtt_ms=87.707
+2026-11-25T02:14:57.724328Z I (890270) quic_demo_main: APP_RTT seq=146 app_rtt_ms=108.236
+2026-11-25T02:15:02.683456Z I (895200) quic_demo_main: APP_RTT seq=147 app_rtt_ms=27.921
+2026-11-25T02:15:07.674762Z I (900230) quic_demo_main: APP_RTT seq=148 app_rtt_ms=47.728
+2026-11-25T02:15:12.668234Z I (905260) quic_demo_main: APP_RTT seq=149 app_rtt_ms=67.710
+2026-11-25T02:15:17.670081Z I (910290) quic_demo_main: APP_RTT seq=150 app_rtt_ms=87.724
+2026-11-25T02:15:22.455753Z HEAPLOG uptime_s=914 free=268524 min_free=239564
+2026-11-25T02:15:22.455892Z DIAG uptime_ms=914527 session=12 rssi=-32 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4698 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4698 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64302 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:15:22.663796Z I (915240) quic_demo_main: APP_RTT seq=151 app_rtt_ms=27.640
+2026-11-25T02:15:27.667578Z I (920270) quic_demo_main: APP_RTT seq=152 app_rtt_ms=47.658
+2026-11-25T02:15:32.871023Z I (925300) quic_demo_main: APP_RTT seq=153 app_rtt_ms=68.039
+2026-11-25T02:15:37.876219Z I (930330) quic_demo_main: APP_RTT seq=154 app_rtt_ms=87.775
+2026-11-25T02:15:42.871577Z I (935360) quic_demo_main: APP_RTT seq=155 app_rtt_ms=107.919
+2026-11-25T02:15:47.663909Z I (940290) quic_demo_main: APP_RTT seq=156 app_rtt_ms=28.019
+2026-11-25T02:15:48.076088Z E (940590) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:15:48.076225Z E (940590) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:15:48.076255Z W (940590) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:15:48.076271Z FAIL_DIAG uptime_ms=940134 session=12 rssi=-32 wifi_ip=1 wifi_disc=0 free=267732 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=304 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:15:48.076307Z CONNECTION_FAILED uptime_ms=940158 session=12 reason=mqtt_process_error next_seq=157
+2026-11-25T02:15:48.076323Z I (940620) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:15:48.076345Z RECONNECT_START n=13 reason=mqtt_process_error fail_uptime_ms=940158
+2026-11-25T02:15:49.086037Z I (941630) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:15:49.086148Z I (941630) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:15:49.086177Z I (941630) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:15:54.156286Z E (946640) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:15:54.156433Z RECONNECT_ATTEMPT n=13 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=941167 elapsed_ms=5011.0
+2026-11-25T02:15:54.156473Z I (946640) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:15:56.203245Z I (948640) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:15:56.203367Z I (948640) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:15:56.203385Z I (948640) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:16:00.293687Z I (952900) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:16:00.293842Z I (952910) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:16:00.293875Z I (952910) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:16:00.495115Z I (952920) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:16:00.495219Z I (952930) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:16:00.495253Z RECONNECT n=13 session=13 attempts=2 reason=mqtt_process_error fail_uptime_ms=940158 start_uptime_ms=941167 last_start_uptime_ms=948177 connected_uptime_ms=952479 handshake_ms=4278.1 connack_ms=9.6 attempt_total_ms=4301.8 downtime_ms=12320.8 free=266968 next_seq=157
+2026-11-25T02:16:00.495316Z I (953050) quic_demo_main: Subscription acknowledged
+2026-11-25T02:16:05.581598Z I (958080) quic_demo_main: APP_RTT seq=157 app_rtt_ms=87.950
+2026-11-25T02:16:10.555996Z I (963110) quic_demo_main: APP_RTT seq=158 app_rtt_ms=107.545
+2026-11-25T02:16:15.555928Z I (968040) quic_demo_main: APP_RTT seq=159 app_rtt_ms=27.085
+2026-11-25T02:16:20.552303Z I (973070) quic_demo_main: APP_RTT seq=160 app_rtt_ms=47.690
+2026-11-25T02:16:22.425674Z HEAPLOG uptime_s=974 free=268524 min_free=239564
+2026-11-25T02:16:22.425818Z DIAG uptime_ms=974547 session=13 rssi=-32 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1938 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=1938 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64594 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:16:25.549968Z I (978120) quic_demo_main: APP_RTT seq=161 app_rtt_ms=87.771
+2026-11-25T02:16:30.546131Z I (983150) quic_demo_main: APP_RTT seq=162 app_rtt_ms=107.702
+2026-11-25T02:16:35.547092Z I (988080) quic_demo_main: APP_RTT seq=163 app_rtt_ms=27.778
+2026-11-25T02:16:40.541636Z I (993110) quic_demo_main: APP_RTT seq=164 app_rtt_ms=47.696
+2026-11-25T02:16:45.540299Z I (998140) quic_demo_main: APP_RTT seq=165 app_rtt_ms=68.207
+2026-11-25T02:16:50.539562Z I (1003170) quic_demo_main: APP_RTT seq=166 app_rtt_ms=87.766
+2026-11-25T02:16:55.749199Z I (1008200) quic_demo_main: APP_RTT seq=167 app_rtt_ms=108.010
+2026-11-25T02:17:00.544978Z I (1013130) quic_demo_main: APP_RTT seq=168 app_rtt_ms=27.629
+2026-11-25T02:17:00.750376Z E (1013230) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:17:00.750554Z E (1013230) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:17:00.750584Z W (1013230) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:17:00.750599Z FAIL_DIAG uptime_ms=1012774 session=13 rssi=-32 wifi_ip=1 wifi_disc=0 free=267712 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=105 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:17:00.750635Z CONNECTION_FAILED uptime_ms=1012799 session=13 reason=mqtt_process_error next_seq=169
+2026-11-25T02:17:00.750654Z I (1013260) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:17:00.750676Z RECONNECT_START n=14 reason=mqtt_process_error fail_uptime_ms=1012799
+2026-11-25T02:17:01.765814Z I (1014280) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:17:01.765954Z I (1014280) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:17:01.765981Z I (1014280) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:17:06.830866Z E (1019290) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:17:06.830992Z RECONNECT_ATTEMPT n=14 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1013817 elapsed_ms=5011.0
+2026-11-25T02:17:06.831018Z I (1019290) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:17:08.859603Z I (1021300) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:17:08.859709Z I (1021300) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:17:08.859728Z I (1021300) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:17:13.152789Z I (1025600) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:17:13.152976Z I (1025610) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:17:13.153019Z I (1025610) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:17:13.153038Z I (1025620) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:17:13.153056Z I (1025630) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:17:13.153071Z RECONNECT n=14 session=14 attempts=2 reason=mqtt_process_error fail_uptime_ms=1012799 start_uptime_ms=1013817 last_start_uptime_ms=1020837 connected_uptime_ms=1025179 handshake_ms=4318.0 connack_ms=9.6 attempt_total_ms=4341.8 downtime_ms=12380.3 free=266968 next_seq=169
+2026-11-25T02:17:13.153105Z I (1025750) quic_demo_main: Subscription acknowledged
+2026-11-25T02:17:18.207663Z I (1030780) quic_demo_main: APP_RTT seq=169 app_rtt_ms=87.847
+2026-11-25T02:17:22.534596Z HEAPLOG uptime_s=1034 free=268524 min_free=239564
+2026-11-25T02:17:22.534747Z DIAG uptime_ms=1034557 session=14 rssi=-32 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4237 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4238 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65031 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:17:23.158967Z I (1035730) quic_demo_main: APP_RTT seq=170 app_rtt_ms=27.976
+2026-11-25T02:17:28.157866Z I (1040760) quic_demo_main: APP_RTT seq=171 app_rtt_ms=47.625
+2026-11-25T02:17:33.362988Z I (1045790) quic_demo_main: APP_RTT seq=172 app_rtt_ms=67.814
+2026-11-25T02:17:38.357343Z I (1050820) quic_demo_main: APP_RTT seq=173 app_rtt_ms=87.777
+2026-11-25T02:17:43.360599Z I (1055850) quic_demo_main: APP_RTT seq=174 app_rtt_ms=107.743
+2026-11-25T02:17:48.352548Z I (1060780) quic_demo_main: APP_RTT seq=175 app_rtt_ms=27.664
+2026-11-25T02:17:53.349127Z I (1065810) quic_demo_main: APP_RTT seq=176 app_rtt_ms=47.768
+2026-11-25T02:17:58.345866Z I (1070840) quic_demo_main: APP_RTT seq=177 app_rtt_ms=67.750
+2026-11-25T02:18:03.341892Z I (1075870) quic_demo_main: APP_RTT seq=178 app_rtt_ms=87.768
+2026-11-25T02:18:08.331982Z I (1080900) quic_demo_main: APP_RTT seq=179 app_rtt_ms=108.006
+2026-11-25T02:18:13.331323Z E (1085830) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:18:13.331518Z E (1085830) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:18:13.331537Z W (1085830) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:18:13.331553Z FAIL_DIAG uptime_ms=1085374 session=14 rssi=-32 wifi_ip=1 wifi_disc=0 free=267712 min_free=239564 pending=1 oldest_seq=180 oldest_age_ms=32 last_echo_age_ms=4934 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:18:13.331599Z CONNECTION_FAILED uptime_ms=1085399 session=14 reason=mqtt_process_error next_seq=181
+2026-11-25T02:18:13.331617Z APP_RTT_LOST seq=180 reason=mqtt_process_error
+2026-11-25T02:18:13.331631Z I (1085870) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:18:13.331655Z RECONNECT_START n=15 reason=mqtt_process_error fail_uptime_ms=1085399
+2026-11-25T02:18:14.349673Z I (1086880) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:18:14.349811Z I (1086880) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:18:14.349847Z I (1086880) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:18:19.404685Z E (1091890) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:18:19.404841Z RECONNECT_ATTEMPT n=15 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1086417 elapsed_ms=5011.0
+2026-11-25T02:18:19.404879Z I (1091890) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:18:21.442573Z I (1093900) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:18:21.442763Z I (1093900) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:18:21.442790Z I (1093900) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:18:25.552939Z I (1098160) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:18:25.553063Z I (1098170) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:18:25.553083Z I (1098170) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:18:25.754874Z I (1098180) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:18:25.754959Z I (1098200) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:18:25.754979Z RECONNECT n=15 session=15 attempts=2 reason=mqtt_process_error fail_uptime_ms=1085399 start_uptime_ms=1086417 last_start_uptime_ms=1093437 connected_uptime_ms=1097749 handshake_ms=4279.1 connack_ms=18.3 attempt_total_ms=4311.8 downtime_ms=12350.0 free=267392 next_seq=181
+2026-11-25T02:18:25.755018Z HEAPLOG uptime_s=1097 free=267052 min_free=239564
+2026-11-25T02:18:25.755034Z DIAG uptime_ms=1097777 session=15 rssi=-32 wifi_ip=1 wifi_disc=0 free=267052 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=17337 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=28 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65178 rcv_wnd=5733 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:18:25.755080Z I (1098340) quic_demo_main: Subscription acknowledged
+2026-11-25T02:18:30.825411Z I (1103370) quic_demo_main: APP_RTT seq=181 app_rtt_ms=107.443
+2026-11-25T02:18:35.838699Z I (1108300) quic_demo_main: APP_RTT seq=182 app_rtt_ms=28.174
+2026-11-25T02:18:40.832091Z I (1113330) quic_demo_main: APP_RTT seq=183 app_rtt_ms=47.957
+2026-11-25T02:18:45.834469Z I (1118360) quic_demo_main: APP_RTT seq=184 app_rtt_ms=67.760
+2026-11-25T02:18:50.823042Z I (1123390) quic_demo_main: APP_RTT seq=185 app_rtt_ms=87.772
+2026-11-25T02:18:55.828492Z I (1128420) quic_demo_main: APP_RTT seq=186 app_rtt_ms=108.058
+2026-11-25T02:19:00.824951Z I (1133350) quic_demo_main: APP_RTT seq=187 app_rtt_ms=27.767
+2026-11-25T02:19:05.813982Z I (1138380) quic_demo_main: APP_RTT seq=188 app_rtt_ms=47.741
+2026-11-25T02:19:10.801290Z I (1143410) quic_demo_main: APP_RTT seq=189 app_rtt_ms=67.863
+2026-11-25T02:19:16.009509Z I (1148440) quic_demo_main: APP_RTT seq=190 app_rtt_ms=87.904
+2026-11-25T02:19:21.008556Z I (1153470) quic_demo_main: APP_RTT seq=191 app_rtt_ms=107.786
+2026-11-25T02:19:25.803228Z HEAPLOG uptime_s=1157 free=268948 min_free=239564
+2026-11-25T02:19:25.803354Z DIAG uptime_ms=1157787 session=15 rssi=-32 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4778 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4778 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65094 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:19:25.803409Z I (1158420) quic_demo_main: APP_RTT seq=192 app_rtt_ms=47.635
+2026-11-25T02:19:26.005463Z E (1158520) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:19:26.005660Z E (1158520) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:19:26.005692Z W (1158520) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:19:26.005717Z FAIL_DIAG uptime_ms=1158064 session=15 rssi=-31 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:19:26.005760Z CONNECTION_FAILED uptime_ms=1158089 session=15 reason=mqtt_process_error next_seq=193
+2026-11-25T02:19:26.005780Z I (1158550) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:19:26.005804Z RECONNECT_START n=16 reason=mqtt_process_error fail_uptime_ms=1158089
+2026-11-25T02:19:27.020753Z I (1159570) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:19:27.020858Z I (1159570) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:19:27.020886Z I (1159570) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:19:32.101887Z E (1164580) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:19:32.102000Z RECONNECT_ATTEMPT n=16 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1159107 elapsed_ms=5011.0
+2026-11-25T02:19:32.102025Z I (1164580) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:19:33.956852Z I (1166590) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:19:34.158892Z I (1166590) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:19:34.159102Z I (1166590) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:19:38.269474Z I (1170860) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:19:38.269629Z I (1170860) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:19:38.269661Z I (1170870) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:19:38.269683Z I (1170870) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:19:38.269706Z I (1170890) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:19:38.470701Z RECONNECT n=16 session=16 attempts=2 reason=mqtt_process_error fail_uptime_ms=1158089 start_uptime_ms=1159107 last_start_uptime_ms=1166127 connected_uptime_ms=1170439 handshake_ms=4281.1 connack_ms=16.5 attempt_total_ms=4311.7 downtime_ms=12350.1 free=266968 next_seq=193
+2026-11-25T02:19:38.470859Z I (1171010) quic_demo_main: Subscription acknowledged
+2026-11-25T02:19:43.552304Z I (1176040) quic_demo_main: APP_RTT seq=193 app_rtt_ms=88.293
+2026-11-25T02:19:48.521277Z I (1181070) quic_demo_main: APP_RTT seq=194 app_rtt_ms=107.683
+2026-11-25T02:19:53.519740Z I (1186000) quic_demo_main: APP_RTT seq=195 app_rtt_ms=27.613
+2026-11-25T02:19:58.520178Z I (1191030) quic_demo_main: APP_RTT seq=196 app_rtt_ms=47.841
+2026-11-25T02:20:03.523551Z I (1196060) quic_demo_main: APP_RTT seq=197 app_rtt_ms=67.854
+2026-11-25T02:20:08.530962Z I (1201090) quic_demo_main: APP_RTT seq=198 app_rtt_ms=88.425
+2026-11-25T02:20:13.527108Z I (1206120) quic_demo_main: APP_RTT seq=199 app_rtt_ms=107.877
+2026-11-25T02:20:18.522081Z I (1211050) quic_demo_main: APP_RTT seq=200 app_rtt_ms=27.741
+2026-11-25T02:20:23.515912Z I (1216080) quic_demo_main: APP_RTT seq=201 app_rtt_ms=47.735
+2026-11-25T02:20:25.807834Z HEAPLOG uptime_s=1217 free=268524 min_free=239564
+2026-11-25T02:20:25.807998Z DIAG uptime_ms=1217797 session=16 rssi=-30 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2178 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=2178 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65388 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:20:28.514525Z I (1221130) quic_demo_main: APP_RTT seq=202 app_rtt_ms=87.761
+2026-11-25T02:20:33.712184Z I (1226160) quic_demo_main: APP_RTT seq=203 app_rtt_ms=108.083
+2026-11-25T02:20:38.505076Z I (1231090) quic_demo_main: APP_RTT seq=204 app_rtt_ms=28.327
+2026-11-25T02:20:38.710128Z E (1231190) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:20:38.710256Z E (1231190) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:20:38.710274Z W (1231190) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:20:38.710289Z FAIL_DIAG uptime_ms=1230734 session=16 rssi=-30 wifi_ip=1 wifi_disc=0 free=267712 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:20:38.710323Z CONNECTION_FAILED uptime_ms=1230759 session=16 reason=mqtt_process_error next_seq=205
+2026-11-25T02:20:38.710341Z I (1231220) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:20:38.710363Z RECONNECT_START n=17 reason=mqtt_process_error fail_uptime_ms=1230759
+2026-11-25T02:20:39.728522Z I (1232240) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:20:39.728649Z I (1232240) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:20:39.728680Z I (1232240) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:20:44.783641Z E (1237250) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:20:44.783757Z RECONNECT_ATTEMPT n=17 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1231777 elapsed_ms=5011.0
+2026-11-25T02:20:44.783783Z I (1237250) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:20:46.811052Z I (1239260) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:20:46.811178Z I (1239260) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:20:46.811206Z I (1239260) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:20:51.100895Z I (1243520) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:20:51.100986Z I (1243530) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:20:51.101007Z I (1243530) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:20:51.101022Z I (1243540) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:20:51.101038Z I (1243550) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:20:51.101052Z RECONNECT n=17 session=17 attempts=2 reason=mqtt_process_error fail_uptime_ms=1230759 start_uptime_ms=1231777 last_start_uptime_ms=1238797 connected_uptime_ms=1243099 handshake_ms=4278.5 connack_ms=9.0 attempt_total_ms=4301.8 downtime_ms=12340.4 free=266968 next_seq=205
+2026-11-25T02:20:51.101085Z I (1243670) quic_demo_main: Subscription acknowledged
+2026-11-25T02:20:56.156364Z I (1248700) quic_demo_main: APP_RTT seq=205 app_rtt_ms=88.206
+2026-11-25T02:21:01.124607Z I (1253730) quic_demo_main: APP_RTT seq=206 app_rtt_ms=107.684
+2026-11-25T02:21:06.133672Z I (1258660) quic_demo_main: APP_RTT seq=207 app_rtt_ms=27.177
+2026-11-25T02:21:11.222589Z I (1263690) quic_demo_main: APP_RTT seq=208 app_rtt_ms=47.550
+2026-11-25T02:21:16.203062Z I (1268720) quic_demo_main: APP_RTT seq=209 app_rtt_ms=67.871
+2026-11-25T02:21:21.271689Z I (1273750) quic_demo_main: APP_RTT seq=210 app_rtt_ms=87.902
+2026-11-25T02:21:25.735575Z HEAPLOG uptime_s=1277 free=268524 min_free=239564
+2026-11-25T02:21:25.735734Z DIAG uptime_ms=1277807 session=17 rssi=-30 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4518 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4518 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64296 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:21:26.151835Z I (1278700) quic_demo_main: APP_RTT seq=211 app_rtt_ms=27.781
+2026-11-25T02:21:31.149839Z I (1283730) quic_demo_main: APP_RTT seq=212 app_rtt_ms=47.827
+2026-11-25T02:21:36.149045Z I (1288760) quic_demo_main: APP_RTT seq=213 app_rtt_ms=68.253
+2026-11-25T02:21:41.344237Z I (1293790) quic_demo_main: APP_RTT seq=214 app_rtt_ms=87.904
+2026-11-25T02:21:46.339711Z I (1298820) quic_demo_main: APP_RTT seq=215 app_rtt_ms=108.162
+2026-11-25T02:21:51.122286Z I (1303750) quic_demo_main: APP_RTT seq=216 app_rtt_ms=27.785
+2026-11-25T02:21:51.324397Z E (1303850) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:21:51.324561Z E (1303850) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:21:51.324600Z W (1303850) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:21:51.324614Z FAIL_DIAG uptime_ms=1303394 session=17 rssi=-31 wifi_ip=1 wifi_disc=0 free=267712 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=105 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:21:51.324648Z CONNECTION_FAILED uptime_ms=1303419 session=17 reason=mqtt_process_error next_seq=217
+2026-11-25T02:21:51.324665Z I (1303880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:21:51.324686Z RECONNECT_START n=18 reason=mqtt_process_error fail_uptime_ms=1303419
+2026-11-25T02:21:52.339975Z I (1304900) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:21:52.340118Z I (1304900) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:21:52.340136Z I (1304900) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:21:57.405089Z E (1309910) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:21:57.405260Z RECONNECT_ATTEMPT n=18 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1304437 elapsed_ms=5011.0
+2026-11-25T02:21:57.405289Z I (1309910) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:21:59.425913Z I (1311920) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:21:59.426041Z I (1311920) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:21:59.426058Z I (1311920) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:22:03.732311Z I (1316180) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:22:03.732423Z I (1316190) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:22:03.732441Z I (1316190) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:22:03.732456Z I (1316200) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:22:03.732472Z I (1316210) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:22:03.732485Z RECONNECT n=18 session=18 attempts=2 reason=mqtt_process_error fail_uptime_ms=1303419 start_uptime_ms=1304437 last_start_uptime_ms=1311457 connected_uptime_ms=1315759 handshake_ms=4278.6 connack_ms=9.0 attempt_total_ms=4301.8 downtime_ms=12340.3 free=266968 next_seq=217
+2026-11-25T02:22:03.732523Z I (1316330) quic_demo_main: Subscription acknowledged
+2026-11-25T02:22:08.806761Z I (1321360) quic_demo_main: APP_RTT seq=217 app_rtt_ms=88.444
+2026-11-25T02:22:13.774250Z I (1326390) quic_demo_main: APP_RTT seq=218 app_rtt_ms=107.915
+2026-11-25T02:22:18.774046Z I (1331320) quic_demo_main: APP_RTT seq=219 app_rtt_ms=27.719
+2026-11-25T02:22:23.770611Z I (1336350) quic_demo_main: APP_RTT seq=220 app_rtt_ms=47.699
+2026-11-25T02:22:25.640398Z HEAPLOG uptime_s=1337 free=268524 min_free=239564
+2026-11-25T02:22:25.848915Z DIAG uptime_ms=1337807 session=18 rssi=-33 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1918 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=1918 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=64590 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:22:28.965642Z I (1341400) quic_demo_main: APP_RTT seq=221 app_rtt_ms=87.850
+2026-11-25T02:22:33.966855Z I (1346430) quic_demo_main: APP_RTT seq=222 app_rtt_ms=107.645
+2026-11-25T02:22:38.746641Z I (1351360) quic_demo_main: APP_RTT seq=223 app_rtt_ms=27.817
+2026-11-25T02:22:43.946573Z I (1356390) quic_demo_main: APP_RTT seq=224 app_rtt_ms=47.528
+2026-11-25T02:22:48.936950Z I (1361420) quic_demo_main: APP_RTT seq=225 app_rtt_ms=68.417
+2026-11-25T02:22:53.940451Z I (1366450) quic_demo_main: APP_RTT seq=226 app_rtt_ms=87.828
+2026-11-25T02:22:58.941595Z I (1371480) quic_demo_main: APP_RTT seq=227 app_rtt_ms=107.482
+2026-11-25T02:23:03.943494Z I (1376410) quic_demo_main: APP_RTT seq=228 app_rtt_ms=27.492
+2026-11-25T02:23:04.149733Z E (1376610) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:23:04.150626Z E (1376610) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:23:04.150648Z W (1376610) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:23:04.150665Z FAIL_DIAG uptime_ms=1376154 session=18 rssi=-31 wifi_ip=1 wifi_disc=0 free=267712 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=205 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:23:04.150699Z CONNECTION_FAILED uptime_ms=1376179 session=18 reason=mqtt_process_error next_seq=229
+2026-11-25T02:23:04.150716Z I (1376640) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:23:04.150737Z RECONNECT_START n=19 reason=mqtt_process_error fail_uptime_ms=1376179
+2026-11-25T02:23:05.164847Z I (1377660) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:23:05.164928Z I (1377660) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:23:05.164944Z I (1377660) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:23:10.239468Z E (1382670) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:23:10.239563Z RECONNECT_ATTEMPT n=19 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1377197 elapsed_ms=5011.0
+2026-11-25T02:23:10.239586Z I (1382670) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:23:12.058265Z I (1384680) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:23:12.058429Z I (1384680) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:23:12.058451Z I (1384680) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:23:16.382349Z I (1388950) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:23:16.382483Z I (1388950) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:23:16.382523Z I (1388960) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:23:16.382553Z I (1388960) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:23:16.382580Z I (1388980) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:23:16.382610Z RECONNECT n=19 session=19 attempts=2 reason=mqtt_process_error fail_uptime_ms=1376179 start_uptime_ms=1377197 last_start_uptime_ms=1384217 connected_uptime_ms=1388529 handshake_ms=4280.2 connack_ms=17.5 attempt_total_ms=4311.8 downtime_ms=12350.4 free=267100 next_seq=229
+2026-11-25T02:23:16.584005Z I (1389100) quic_demo_main: Subscription acknowledged
+2026-11-25T02:23:21.649547Z I (1394130) quic_demo_main: APP_RTT seq=229 app_rtt_ms=87.550
+2026-11-25T02:23:25.788252Z HEAPLOG uptime_s=1397 free=268948 min_free=239564
+2026-11-25T02:23:25.788364Z DIAG uptime_ms=1397807 session=19 rssi=-32 wifi_ip=1 wifi_disc=0 free=268948 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4138 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4138 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65031 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:23:26.609815Z I (1399080) quic_demo_main: APP_RTT seq=230 app_rtt_ms=27.979
+2026-11-25T02:23:31.563664Z I (1404110) quic_demo_main: APP_RTT seq=231 app_rtt_ms=47.512
+2026-11-25T02:23:36.581176Z I (1409140) quic_demo_main: APP_RTT seq=232 app_rtt_ms=67.503
+2026-11-25T02:23:41.557358Z I (1414170) quic_demo_main: APP_RTT seq=233 app_rtt_ms=88.489
+2026-11-25T02:23:46.759006Z I (1419200) quic_demo_main: APP_RTT seq=234 app_rtt_ms=107.532
+2026-11-25T02:23:51.544445Z I (1424130) quic_demo_main: APP_RTT seq=235 app_rtt_ms=27.733
+2026-11-25T02:23:56.547680Z I (1429160) quic_demo_main: APP_RTT seq=236 app_rtt_ms=47.857
+2026-11-25T02:24:01.758854Z I (1434190) quic_demo_main: APP_RTT seq=237 app_rtt_ms=67.894
+2026-11-25T02:24:06.761076Z I (1439220) quic_demo_main: APP_RTT seq=238 app_rtt_ms=87.922
+2026-11-25T02:24:11.757632Z I (1444250) quic_demo_main: APP_RTT seq=239 app_rtt_ms=107.847
+2026-11-25T02:24:16.551577Z I (1449180) quic_demo_main: APP_RTT seq=240 app_rtt_ms=28.522
+2026-11-25T02:24:16.756845Z E (1449280) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:24:16.756998Z E (1449280) MQTT_QUIC: Failed to receive data over transport, error -1
+2026-11-25T02:24:16.757018Z W (1449280) quic_demo_main: MQTT process returned: 4
+2026-11-25T02:24:16.757034Z FAIL_DIAG uptime_ms=1448824 session=19 rssi=-33 wifi_ip=1 wifi_disc=0 free=268136 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=104 last_mqtt_status=4 need_more_run=0 tcp_connected=0 last_io_age_ms=-1 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_pcb=none
+2026-11-25T02:24:16.757073Z CONNECTION_FAILED uptime_ms=1448849 session=19 reason=mqtt_process_error next_seq=241
+2026-11-25T02:24:16.757091Z I (1449310) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:24:16.757113Z RECONNECT_START n=20 reason=mqtt_process_error fail_uptime_ms=1448849
+2026-11-25T02:24:17.763077Z I (1450330) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:24:17.763543Z I (1450330) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:24:17.763600Z I (1450330) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:24:22.850578Z E (1455340) TCP_TLS: Connection setup failed or timed out (errno=119)
+2026-11-25T02:24:22.850742Z RECONNECT_ATTEMPT n=20 attempt=1 result=FAIL stage=tcp_tls_connect start_uptime_ms=1449867 elapsed_ms=5011.0
+2026-11-25T02:24:22.850786Z I (1455340) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:24:24.908046Z I (1457350) quic_demo_main: Connecting to TCP_TLS server 192.168.137.1:14568
+2026-11-25T02:24:24.908195Z I (1457350) quic_demo_main: Free heap: 289408 bytes
+2026-11-25T02:24:24.908223Z I (1457350) TCP_TLS: TCP_NODELAY=1; connect/I/O timeout=5000 ms
+2026-11-25T02:24:29.105156Z I (1461650) TLS: TCP_TLS negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T02:24:29.105242Z I (1461650) TCP_TLS: Connected to 192.168.137.1:14568
+2026-11-25T02:24:29.105262Z I (1461660) quic_demo_main: TCP_TLS connection established
+2026-11-25T02:24:29.105285Z I (1461660) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T02:24:29.105305Z I (1461680) quic_demo_main: MQTT connected over TCP_TLS
+2026-11-25T02:24:29.105320Z RECONNECT n=20 session=20 attempts=2 reason=mqtt_process_error fail_uptime_ms=1448849 start_uptime_ms=1449867 last_start_uptime_ms=1456887 connected_uptime_ms=1461229 handshake_ms=4312.9 connack_ms=14.9 attempt_total_ms=4341.7 downtime_ms=12380.3 free=266676 next_seq=241
+2026-11-25T02:24:29.105356Z HEAPLOG uptime_s=1461 free=266628 min_free=239564
+2026-11-25T02:24:29.298968Z DIAG uptime_ms=1461257 session=20 rssi=-33 wifi_ip=1 wifi_disc=0 free=266628 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=12537 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=28 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65178 rcv_wnd=5733 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:24:29.299092Z I (1461820) quic_demo_main: Subscription acknowledged
+2026-11-25T02:24:34.378898Z I (1466850) quic_demo_main: APP_RTT seq=241 app_rtt_ms=108.656
+2026-11-25T02:24:39.349188Z I (1471880) quic_demo_main: APP_RTT seq=242 app_rtt_ms=127.876
+2026-11-25T02:24:44.347125Z I (1476810) quic_demo_main: APP_RTT seq=243 app_rtt_ms=47.831
+2026-11-25T02:24:49.336994Z I (1481840) quic_demo_main: APP_RTT seq=244 app_rtt_ms=67.170
+2026-11-25T02:24:54.338523Z I (1486870) quic_demo_main: APP_RTT seq=245 app_rtt_ms=87.689
+2026-11-25T02:24:59.352706Z I (1491900) quic_demo_main: APP_RTT seq=246 app_rtt_ms=107.920
+2026-11-25T02:25:04.351098Z I (1496830) quic_demo_main: APP_RTT seq=247 app_rtt_ms=27.775
+2026-11-25T02:25:09.352220Z I (1501860) quic_demo_main: APP_RTT seq=248 app_rtt_ms=47.737
+2026-11-25T02:25:14.349716Z I (1506890) quic_demo_main: APP_RTT seq=249 app_rtt_ms=67.772
+2026-11-25T02:25:19.354366Z I (1511920) quic_demo_main: APP_RTT seq=250 app_rtt_ms=87.774
+2026-11-25T02:25:24.349501Z I (1516950) quic_demo_main: APP_RTT seq=251 app_rtt_ms=108.078
+2026-11-25T02:25:29.138205Z HEAPLOG uptime_s=1521 free=268524 min_free=239564
+2026-11-25T02:25:29.138348Z DIAG uptime_ms=1521267 session=20 rssi=-34 wifi_ip=1 wifi_disc=0 free=268524 min_free=239564 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4777 last_mqtt_status=0 need_more_run=0 tcp_connected=1 last_io_age_ms=4778 rx_avail=-1 tls_pending=0 app_rx_left=0 tcp_state=4 unacked=0 unsent=0 queuelen=0 snd_buf=5760 snd_wnd=65094 rcv_wnd=5760 nrtx=0 rto_ticks=3 persist=0 unacked_q=0 unsent_q=0
+2026-11-25T02:25:29.346152Z I (1521900) quic_demo_main: APP_RTT seq=252 app_rtt_ms=47.613
+2026-11-25T02:25:29.548658Z CAPTURE_CLOSE reason=stop_file counts={"lines": 907, "boots": 3, "panics": 0, "disconnect_markers": 56, "rtt_lines": 247, "serial_errors": 0}

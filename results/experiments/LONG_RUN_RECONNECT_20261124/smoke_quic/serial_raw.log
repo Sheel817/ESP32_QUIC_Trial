@@ -1,0 +1,259 @@
+2026-11-24T15:40:36.180776Z CAPTURE_OPEN reset=True
+2026-11-24T15:40:36.332253Z RESET_RELEASED_BY_HOST
+2026-11-24T15:40:36.432132Z ESP-ROM:esp32c6-20220919
+2026-11-24T15:40:36.432547Z Build:Sep 19 2022
+2026-11-24T15:40:36.432653Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-24T15:40:36.432806Z SPIWP:0xee
+2026-11-24T15:40:36.432861Z mode:DIO, clock div:2
+2026-11-24T15:40:36.432900Z load:0x40875730,len:0x1648
+2026-11-24T15:40:36.432933Z load:0x4086b910,len:0xdbc
+2026-11-24T15:40:36.432966Z load:0x4086e610,len:0x31f0
+2026-11-24T15:40:36.433000Z entry 0x4086b91a
+2026-11-24T15:40:36.433032Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-24T15:40:36.433340Z I (24) boot: compile time Nov 24 2026 17:13:23
+2026-11-24T15:40:36.433384Z I (24) boot: chip revision: v0.0
+2026-11-24T15:40:36.433416Z I (24) boot: efuse block revision: v0.2
+2026-11-24T15:40:36.433456Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-24T15:40:36.433489Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-24T15:40:36.433520Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-24T15:40:36.433549Z I (38) boot: Enabling RNG early entropy source...
+2026-11-24T15:40:36.433578Z I (43) boot: Partition Table:
+2026-11-24T15:40:36.433606Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-24T15:40:36.433637Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-24T15:40:36.433669Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-24T15:40:36.433701Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-24T15:40:36.433766Z I (71) boot: End of partition table
+2026-11-24T15:40:36.641257Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=42ae0h (273120) map
+2026-11-24T15:40:36.641391Z I (134) esp_image: segment 1: paddr=00052b08 vaddr=40800000 size=0d510h ( 54544) load
+2026-11-24T15:40:36.641438Z I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=132b14h (1256212) map
+2026-11-24T15:40:36.829619Z I (386) esp_image: segment 3: paddr=00192b3c vaddr=4080d510 size=0b078h ( 45176) load
+2026-11-24T15:40:36.829802Z I (397) esp_image: segment 4: paddr=0019dbbc vaddr=40818590 size=0405ch ( 16476) load
+2026-11-24T15:40:36.829856Z I (407) boot: Loaded app from partition at offset 0x10000
+2026-11-24T15:40:36.829897Z I (407) boot: Disabling RNG early entropy source...
+2026-11-24T15:40:36.829933Z I (417) cpu_start: Unicore app
+2026-11-24T15:40:36.829964Z I (426) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-24T15:40:36.830003Z I (426) cpu_start: Pro cpu start user code
+2026-11-24T15:40:36.830034Z I (426) cpu_start: cpu freq: 160000000 Hz
+2026-11-24T15:40:36.830061Z I (428) app_init: Application information:
+2026-11-24T15:40:36.830093Z I (432) app_init: Project name:     quic_demo
+2026-11-24T15:40:36.830124Z I (436) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-24T15:40:36.830157Z I (442) app_init: Compile time:     Nov 24 2026 17:10:09
+2026-11-24T15:40:36.830193Z I (447) app_init: ELF file SHA256:  6f9c3d0e4...
+2026-11-24T15:40:36.830223Z I (451) app_init: ESP-IDF:          v6.1
+2026-11-24T15:40:36.830252Z I (455) efuse_init: Min chip rev:     v0.0
+2026-11-24T15:40:36.830280Z I (459) efuse_init: Max chip rev:     v0.99 
+2026-11-24T15:40:36.830310Z I (463) efuse_init: Chip rev:         v0.0
+2026-11-24T15:40:36.830341Z I (467) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-24T15:40:36.925830Z I (473) heap_init: At 40824AF0 len 00057B20 (350 KiB): RAM
+2026-11-24T15:40:36.925972Z I (478) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-24T15:40:36.926006Z I (483) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-24T15:40:36.926036Z I (489) spi_flash: detected chip: gd
+2026-11-24T15:40:36.926064Z I (492) spi_flash: flash io: dio
+2026-11-24T15:40:36.926089Z I (495) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-24T15:40:36.926120Z I (501) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-24T15:40:36.926155Z I (508) coexist: coex firmware version: a830d28
+2026-11-24T15:40:36.926294Z I (512) coexist: coexist rom version 5b8dcfa
+2026-11-24T15:40:36.926339Z I (516) main_task: Started on CPU0
+2026-11-24T15:40:36.926368Z I (536) main_task: Calling app_main()
+2026-11-24T15:40:36.926395Z I (536) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-24T15:40:36.926480Z I (536) quic_demo_main: ESP-IDF version: v6.1
+2026-11-24T15:40:36.926513Z I (546) example_connect: Start example_connect.
+2026-11-24T15:40:36.926543Z I (546) pp: pp rom version: 5b8dcfa
+2026-11-24T15:40:36.926569Z I (546) net80211: net80211 rom version: 5b8dcfa
+2026-11-24T15:40:36.926615Z I (556) wifi:wifi driver task: 4082ad60, prio:23, stack:6656, core=0
+2026-11-24T15:40:36.926648Z I (556) wifi:wifi firmware version: e12a754
+2026-11-24T15:40:36.926675Z I (556) wifi:wifi certification version: v7.0
+2026-11-24T15:40:36.926703Z I (556) wifi:config NVS flash: enabled
+2026-11-24T15:40:36.926827Z I (566) wifi:config nano formatting: disabled
+2026-11-24T15:40:37.052227Z I (566) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-24T15:40:37.052365Z I (576) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-24T15:40:37.052403Z I (576) wifi:Init static rx mgmt buffer num: 5
+2026-11-24T15:40:37.052431Z I (586) wifi:Init management short buffer num: 32
+2026-11-24T15:40:37.052467Z I (586) wifi:Init dynamic tx buffer num: 32
+2026-11-24T15:40:37.052494Z I (596) wifi:Init static tx FG buffer num: 2
+2026-11-24T15:40:37.052521Z I (596) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-24T15:40:37.052556Z I (606) wifi:Init static rx buffer num: 10
+2026-11-24T15:40:37.052848Z I (606) wifi:Init dynamic rx buffer num: 32
+2026-11-24T15:40:37.052913Z I (606) wifi_init: rx ba win: 6
+2026-11-24T15:40:37.052957Z I (616) wifi_init: accept mbox: 6
+2026-11-24T15:40:37.053034Z I (616) wifi_init: tcpip mbox: 32
+2026-11-24T15:40:37.053102Z I (616) wifi_init: udp mbox: 6
+2026-11-24T15:40:37.053236Z I (626) wifi_init: tcp mbox: 6
+2026-11-24T15:40:37.053280Z I (626) wifi_init: tcp tx win: 5760
+2026-11-24T15:40:37.053352Z I (626) wifi_init: tcp rx win: 5760
+2026-11-24T15:40:37.053383Z I (626) wifi_init: tcp mss: 1440
+2026-11-24T15:40:37.053407Z I (636) wifi_init: WiFi IRAM OP enabled
+2026-11-24T15:40:37.053431Z I (636) wifi_init: WiFi RX IRAM OP enabled
+2026-11-24T15:40:37.053458Z I (636) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-24T15:40:37.053484Z I (646) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-24T15:40:37.053515Z I (696) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-24T15:40:37.053572Z 
+2026-11-24T15:40:37.262634Z I (696) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-24T15:40:37.262855Z I (696) wifi:enable tsf
+2026-11-24T15:40:37.262890Z I (706) example_connect: Connecting to <SSID_MASKED>...
+2026-11-24T15:40:37.262926Z W (706) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-24T15:40:37.262966Z I (716) example_connect: Waiting for IP(s)
+2026-11-24T15:40:39.688639Z I (3236) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-24T15:40:39.688919Z I (3236) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-24T15:40:39.688965Z I (3236) wifi:state: init -> auth (0xb0)
+2026-11-24T15:40:39.688994Z I (3246) wifi:state: auth -> assoc (0x0)
+2026-11-24T15:40:39.689022Z I (3256) wifi:state: assoc -> run (0x10)
+2026-11-24T15:40:39.689049Z I (3256) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:144, highestRateIdx:0
+2026-11-24T15:40:39.689083Z W (3256) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-24T15:40:39.689117Z I (3266) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational
+2026-11-24T15:40:39.689157Z I (3276) wifi:ifidx:0, rssi:-34, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-24T15:40:39.689196Z I (3286) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-24T15:40:39.689423Z I (3326) wifi:connected with <SSID_MASKED>, aid = 12, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-24T15:40:39.689511Z I (3326) wifi:security: WPA2-PSK, phy: bgn, rssi: -34, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-24T15:40:39.777488Z I (3326) wifi:pm start, type: 1, twt_start:0
+2026-11-24T15:40:39.777609Z 
+2026-11-24T15:40:39.777644Z I (3336) wifi:pm start, type:1, aid:0xc, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-24T15:40:39.777690Z I (3346) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-24T15:40:39.777729Z I (3356) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-24T15:40:39.777769Z I (3366) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-24T15:40:39.777811Z I (3376) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-24T15:40:39.777851Z I (3386) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-24T15:40:39.777893Z I (3396) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-24T15:40:39.777936Z I (3406) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-24T15:40:39.777975Z I (3416) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-24T15:40:39.981162Z I (3426) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-24T15:40:40.586969Z W (4136) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-24T15:40:40.987911Z I (4546) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-24T15:40:41.562807Z I (5136) esp_netif_handlers: example_netif_sta ip: 192.168.137.226, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-24T15:40:41.562951Z I (5136) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.226
+2026-11-24T15:40:41.563000Z I (5136) example_common: Connected to example_netif_sta
+2026-11-24T15:40:41.563032Z I (5146) example_common: - IPv4 address: 192.168.137.226,
+2026-11-24T15:40:41.563063Z I (5146) example_common: - IPv6 address: fe80:0000:0000:0000:424c:caff:fe56:bbb0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+2026-11-24T15:40:41.563106Z I (5156) quic_demo_main: Wi-Fi connected
+2026-11-24T15:40:41.563134Z I (5166) wifi:Set ps type: 0, coexist: 0
+2026-11-24T15:40:41.563162Z 
+2026-11-24T15:40:41.563181Z I (5166) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-24T15:40:41.563221Z WIFI_EVENT start uptime_ms=4692 rssi=-34
+2026-11-24T15:40:41.563249Z I (5176) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-24T15:40:41.563281Z I (5186) quic_demo_main: Free heap: 285836 bytes
+2026-11-24T15:40:41.563312Z I (5186) QUIC: QUIC mutex created successfully
+2026-11-24T15:40:41.563339Z I (5196) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-24T15:40:41.563372Z I (5196) QUIC: init random number generator
+2026-11-24T15:40:41.563398Z I (5206) QUIC: init client ...
+2026-11-24T15:40:41.774205Z I (5216) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-24T15:40:41.774326Z I (5216) QUIC: In client_quic_init
+2026-11-24T15:40:41.774360Z I (5216) QUIC: ===>  INITIAL TS: 4734656000
+2026-11-24T15:40:41.774390Z I (5216) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-24T15:40:41.774431Z I (5226) QUIC: QUIC client initialization completed
+2026-11-24T15:40:42.175160Z I (5656) main_task: Returned from app_main()
+2026-11-24T15:40:44.439623Z I (7896) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-24T15:40:44.439803Z I (7916) QUIC: QUIC handshake completed callback triggered!
+2026-11-24T15:40:44.439849Z I (7916) QUIC: Extending max local streams bidi to 128
+2026-11-24T15:40:44.439882Z 
+2026-11-24T15:40:44.439902Z I (7976) quic_demo_main: QUIC connection established
+2026-11-24T15:40:45.459337Z I (8976) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-24T15:40:45.459487Z I (8986) QUIC: Opened new QUIC stream with ID: 0
+2026-11-24T15:40:45.460963Z I (9026) quic_demo_main: MQTT connected over QUIC
+2026-11-24T15:40:45.461012Z CONNECT session=0 initial=1 transport_ms=2792.9 connack_ms=54.3
+2026-11-24T15:40:45.461049Z I (9036) quic_demo_main: Starting DHT11 readings every five seconds
+2026-11-24T15:40:45.667559Z I (9136) quic_demo_main: Subscription acknowledged
+2026-11-24T15:40:50.527745Z I (14166) quic_demo_main: APP_RTT seq=1 app_rtt_ms=86.262
+2026-11-24T15:40:55.624211Z I (19196) quic_demo_main: APP_RTT seq=2 app_rtt_ms=104.551
+2026-11-24T15:41:00.709897Z I (24226) quic_demo_main: APP_RTT seq=3 app_rtt_ms=125.363
+2026-11-24T15:41:05.572700Z I (29156) quic_demo_main: APP_RTT seq=4 app_rtt_ms=46.575
+2026-11-24T15:41:10.671111Z I (34186) quic_demo_main: APP_RTT seq=5 app_rtt_ms=68.716
+2026-11-24T15:41:15.623661Z I (39216) quic_demo_main: APP_RTT seq=6 app_rtt_ms=89.369
+2026-11-24T15:41:20.725134Z I (44246) quic_demo_main: APP_RTT seq=7 app_rtt_ms=108.854
+2026-11-24T15:41:25.604376Z I (49176) quic_demo_main: APP_RTT seq=8 app_rtt_ms=29.749
+2026-11-24T15:41:30.676983Z I (54206) quic_demo_main: APP_RTT seq=9 app_rtt_ms=45.370
+2026-11-24T15:41:35.773410Z I (59236) quic_demo_main: APP_RTT seq=10 app_rtt_ms=65.326
+2026-11-24T15:41:40.670126Z I (64266) quic_demo_main: APP_RTT seq=11 app_rtt_ms=85.218
+2026-11-24T15:41:45.577674Z HEAPLOG uptime_s=68 free=174352 min_free=142632
+2026-11-24T15:41:45.577809Z DIAG uptime_ms=68557 session=0 rssi=-37 wifi_ip=1 wifi_disc=0 free=174248 min_free=142632 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4779 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=1342 app_rx_offset=1342 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=81.7 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=125.1 pto_ms=607.3 expiry_in_ms=55149 max_data_left=14998 tx_buffered=0 stream_data_left=6806 pto_count=0 lost_pending=0 stream=0 tx_offset=1386 tx_cont_acked=1386 tx_loss_count=0 rx_last_offset=1342 rx_max_offset=131072
+2026-11-24T15:41:45.778970Z I (69236) quic_demo_main: APP_RTT seq=12 app_rtt_ms=45.549
+2026-11-24T15:41:50.667113Z I (74266) quic_demo_main: APP_RTT seq=13 app_rtt_ms=65.363
+2026-11-24T15:41:55.743984Z I (79296) quic_demo_main: APP_RTT seq=14 app_rtt_ms=85.740
+2026-11-24T15:42:00.818485Z I (84326) quic_demo_main: APP_RTT seq=15 app_rtt_ms=105.350
+2026-11-24T15:42:20.809134Z STALL uptime_ms=103747 session=0 rssi=-39 wifi_ip=1 wifi_disc=0 free=173160 min_free=142632 pending=3 oldest_seq=16 oldest_age_ms=15005 last_echo_age_ms=19909 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=1830 app_rx_offset=1830 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1694 cwnd=15660 srtt_ms=54.1 min_rtt_ms=10.2 latest_rtt_ms=20.2 rttvar_ms=74.7 pto_ms=378.1 expiry_in_ms=1069 max_data_left=14144 tx_buffered=366 stream_data_left=5952 pto_count=4 lost_pending=0 stream=0 tx_offset=2240 tx_cont_acked=1874 tx_loss_count=0 rx_last_offset=1830 rx_max_offset=131072
+2026-11-24T15:42:20.809390Z CONNECTION_FAILED uptime_ms=103791 session=0 reason=stall next_seq=19
+2026-11-24T15:42:20.809439Z APP_RTT_LOST seq=17 reason=stall
+2026-11-24T15:42:20.809468Z APP_RTT_LOST seq=18 reason=stall
+2026-11-24T15:42:20.809495Z APP_RTT_LOST seq=16 reason=stall
+2026-11-24T15:42:20.809570Z I (104286) quic_demo_main: Cleaning up QUIC connection
+2026-11-24T15:42:20.809695Z MQTT_DISCONNECT_SENT status=0
+2026-11-24T15:42:20.809725Z QUIC_CLOSE_SENT bytes=30
+2026-11-24T15:42:20.809746Z I (104306) QUIC: Cleaning up QUIC client...
+2026-11-24T15:42:20.809771Z I (104306) QUIC: Freeing QUIC connection...
+2026-11-24T15:42:20.809796Z I (104306) QUIC: QUIC client cleanup completed. Free heap: 222272 bytes
+2026-11-24T15:42:20.809889Z RECONNECT_START n=1 reason=stall fail_uptime_ms=103791
+2026-11-24T15:42:21.836513Z I (105316) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-24T15:42:21.836764Z I (105316) quic_demo_main: Free heap: 222572 bytes
+2026-11-24T15:42:21.836810Z I (105316) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-24T15:42:21.836847Z I (105316) QUIC: init random number generator
+2026-11-24T15:42:21.836876Z I (105326) QUIC: init client ...
+2026-11-24T15:42:21.836898Z I (105326) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-24T15:42:21.836924Z I (105326) QUIC: In client_quic_init
+2026-11-24T15:42:21.836949Z I (105336) QUIC: ===>  INITIAL TS: 104848919000
+2026-11-24T15:42:21.836973Z I (105336) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-24T15:42:21.837001Z I (105336) QUIC: QUIC client initialization completed
+2026-11-24T15:42:42.224944Z E (125776) quic_demo_main: QUIC connection setup timed out
+2026-11-24T15:42:42.225121Z RECONNECT_ATTEMPT n=1 attempt=1 result=FAIL stage=quic_handshake start_uptime_ms=104827 elapsed_ms=20460.3
+2026-11-24T15:42:42.225170Z I (125776) quic_demo_main: Cleaning up QUIC connection
+2026-11-24T15:42:42.225739Z QUIC_CLOSE_SENT bytes=1200
+2026-11-24T15:42:42.225837Z I (125786) QUIC: Cleaning up QUIC client...
+2026-11-24T15:42:42.225868Z I (125786) QUIC: Freeing QUIC connection...
+2026-11-24T15:42:42.225898Z I (125796) QUIC: QUIC client cleanup completed. Free heap: 222556 bytes
+2026-11-24T15:42:44.309892Z I (127796) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-24T15:42:44.310079Z I (127796) quic_demo_main: Free heap: 222592 bytes
+2026-11-24T15:42:44.310122Z I (127796) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-24T15:42:44.310157Z I (127796) QUIC: init random number generator
+2026-11-24T15:42:44.310186Z I (127806) QUIC: init client ...
+2026-11-24T15:42:44.310210Z I (127806) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-24T15:42:44.310240Z I (127806) QUIC: In client_quic_init
+2026-11-24T15:42:44.310266Z I (127816) QUIC: ===>  INITIAL TS: 127328933000
+2026-11-24T15:42:44.310292Z I (127816) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-24T15:42:44.310321Z I (127816) QUIC: QUIC client initialization completed
+2026-11-24T15:42:54.130137Z I (137596) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-24T15:42:54.130361Z I (137616) QUIC: QUIC handshake completed callback triggered!
+2026-11-24T15:42:54.130406Z I (137616) QUIC: Extending max local streams bidi to 128
+2026-11-24T15:42:54.130439Z 
+2026-11-24T15:42:54.130460Z I (137676) quic_demo_main: QUIC connection established
+2026-11-24T15:42:54.130490Z I (137676) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-24T15:42:54.130521Z I (137686) QUIC: Opened new QUIC stream with ID: 0
+2026-11-24T15:42:54.130551Z I (137706) quic_demo_main: MQTT connected over QUIC
+2026-11-24T15:42:54.130583Z RECONNECT n=1 session=1 attempts=2 reason=stall fail_uptime_ms=103791 start_uptime_ms=104827 last_start_uptime_ms=127307 connected_uptime_ms=137238 handshake_ms=9882.6 connack_ms=33.3 attempt_total_ms=9930.9 downtime_ms=33446.8 free=173880 next_seq=19
+2026-11-24T15:42:54.130653Z HEAPLOG uptime_s=137 free=174284 min_free=142412
+2026-11-24T15:42:54.338555Z DIAG uptime_ms=137277 session=1 rssi=-39 wifi_ip=1 wifi_disc=0 free=174284 min_free=142412 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=53439 last_mqtt_status=0 need_more_run=0 app_buf_len=5 app_buf_pos=0 app_rx_bytes=1839 app_rx_offset=9 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=4200 srtt_ms=422.9 min_rtt_ms=22.5 latest_rtt_ms=30.3 rttvar_ms=415.0 pto_ms=2108.0 expiry_in_ms=4 max_data_left=16331 tx_buffered=0 stream_data_left=8139 pto_count=0 lost_pending=0 stream=0 tx_offset=53 tx_cont_acked=53 tx_loss_count=0 rx_last_offset=9 rx_max_offset=131072
+2026-11-24T15:42:54.338804Z I (137886) quic_demo_main: Subscription acknowledged
+2026-11-24T15:42:59.254546Z I (142816) quic_demo_main: APP_RTT seq=19 app_rtt_ms=30.353
+2026-11-24T15:43:04.329570Z I (147846) quic_demo_main: APP_RTT seq=20 app_rtt_ms=46.201
+2026-11-24T15:43:09.419120Z I (152886) quic_demo_main: APP_RTT seq=21 app_rtt_ms=79.082
+2026-11-24T15:43:14.279541Z I (157916) quic_demo_main: APP_RTT seq=22 app_rtt_ms=109.157
+2026-11-24T15:43:19.368343Z I (162846) quic_demo_main: APP_RTT seq=23 app_rtt_ms=25.565
+2026-11-24T15:43:24.230651Z I (167876) quic_demo_main: APP_RTT seq=24 app_rtt_ms=45.421
+2026-11-24T15:43:29.313514Z I (172906) quic_demo_main: APP_RTT seq=25 app_rtt_ms=65.325
+2026-11-24T15:43:34.421722Z I (177936) quic_demo_main: APP_RTT seq=26 app_rtt_ms=85.446
+2026-11-24T15:43:39.491780Z I (182966) quic_demo_main: APP_RTT seq=27 app_rtt_ms=105.433
+2026-11-24T15:43:44.345687Z I (187896) quic_demo_main: APP_RTT seq=28 app_rtt_ms=25.452
+2026-11-24T15:43:49.409253Z I (192926) quic_demo_main: APP_RTT seq=29 app_rtt_ms=45.388
+2026-11-24T15:43:54.272899Z HEAPLOG uptime_s=197 free=174284 min_free=142412
+2026-11-24T15:43:54.273038Z DIAG uptime_ms=197278 session=1 rssi=-35 wifi_ip=1 wifi_disc=0 free=174284 min_free=142412 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4840 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=3192 app_rx_offset=1362 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=4200 srtt_ms=109.1 min_rtt_ms=10.2 latest_rtt_ms=20.2 rttvar_ms=172.4 pto_ms=823.7 expiry_in_ms=55139 max_data_left=14978 tx_buffered=0 stream_data_left=6786 pto_count=0 lost_pending=0 stream=0 tx_offset=1406 tx_cont_acked=1406 tx_loss_count=0 rx_last_offset=1362 rx_max_offset=131072
+2026-11-24T15:43:54.474283Z I (197996) quic_demo_main: APP_RTT seq=30 app_rtt_ms=105.559
+2026-11-24T15:43:59.327789Z I (202926) quic_demo_main: APP_RTT seq=31 app_rtt_ms=25.397
+2026-11-24T15:44:04.390998Z I (207956) quic_demo_main: APP_RTT seq=32 app_rtt_ms=45.453
+2026-11-24T15:44:09.472039Z I (212986) quic_demo_main: APP_RTT seq=33 app_rtt_ms=65.456
+2026-11-24T15:44:14.367867Z I (218016) quic_demo_main: APP_RTT seq=34 app_rtt_ms=85.450
+2026-11-24T15:44:19.460475Z I (223046) quic_demo_main: APP_RTT seq=35 app_rtt_ms=105.857
+2026-11-24T15:44:24.341577Z I (227976) quic_demo_main: APP_RTT seq=36 app_rtt_ms=25.842
+2026-11-24T15:44:29.410301Z I (233006) quic_demo_main: APP_RTT seq=37 app_rtt_ms=45.452
+2026-11-24T15:44:34.475465Z I (238036) quic_demo_main: APP_RTT seq=38 app_rtt_ms=65.376
+2026-11-24T15:44:39.582372Z I (243066) quic_demo_main: APP_RTT seq=39 app_rtt_ms=85.408
+2026-11-24T15:44:44.585178Z I (248096) quic_demo_main: APP_RTT seq=40 app_rtt_ms=104.698
+2026-11-24T15:44:49.577656Z I (253026) quic_demo_main: APP_RTT seq=41 app_rtt_ms=28.657
+2026-11-24T15:44:54.140199Z HEAPLOG uptime_s=257 free=174284 min_free=142412
+2026-11-24T15:44:54.345287Z DIAG uptime_ms=257297 session=1 rssi=-38 wifi_ip=1 wifi_disc=0 free=174284 min_free=142412 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4756 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=4668 app_rx_offset=2838 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=4200 srtt_ms=32.4 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=39.9 pto_ms=216.9 expiry_in_ms=55229 max_data_left=13502 tx_buffered=0 stream_data_left=5310 pto_count=0 lost_pending=0 stream=0 tx_offset=2882 tx_cont_acked=2882 tx_loss_count=0 rx_last_offset=2838 rx_max_offset=131072
+2026-11-24T15:44:54.554638Z I (258096) quic_demo_main: APP_RTT seq=42 app_rtt_ms=87.979
+2026-11-24T15:44:59.543664Z I (263126) quic_demo_main: APP_RTT seq=43 app_rtt_ms=108.553
+2026-11-24T15:45:04.540564Z I (268066) quic_demo_main: APP_RTT seq=44 app_rtt_ms=40.029
+2026-11-24T15:45:09.488666Z I (273096) quic_demo_main: APP_RTT seq=45 app_rtt_ms=65.836
+2026-11-24T15:45:14.675256Z I (278126) quic_demo_main: APP_RTT seq=46 app_rtt_ms=85.453
+2026-11-24T15:45:19.660654Z I (283156) quic_demo_main: APP_RTT seq=47 app_rtt_ms=105.462
+2026-11-24T15:45:24.445701Z I (288086) quic_demo_main: APP_RTT seq=48 app_rtt_ms=25.414
+2026-11-24T15:45:29.643205Z I (293116) quic_demo_main: APP_RTT seq=49 app_rtt_ms=45.355
+2026-11-24T15:45:34.613647Z I (298146) quic_demo_main: APP_RTT seq=50 app_rtt_ms=65.311
+2026-11-24T15:45:36.489425Z CAPTURE_CLOSE reason=duration_reached counts={"lines": 256, "boots": 3, "panics": 0, "disconnect_markers": 2, "rtt_lines": 47, "serial_errors": 0}

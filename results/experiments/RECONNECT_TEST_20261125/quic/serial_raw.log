@@ -1,0 +1,1097 @@
+2026-11-25T01:30:44.139050Z CAPTURE_OPEN reset=True
+2026-11-25T01:30:44.290136Z RESET_RELEASED_BY_HOST
+2026-11-25T01:30:44.390072Z ESP-ROM:esp32c6-20220919
+2026-11-25T01:30:44.390195Z Build:Sep 19 2022
+2026-11-25T01:30:44.390232Z rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-25T01:30:44.390294Z SPIWP:0xee
+2026-11-25T01:30:44.390322Z mode:DIO, clock div:2
+2026-11-25T01:30:44.390349Z load:0x40875730,len:0x1648
+2026-11-25T01:30:44.390372Z load:0x4086b910,len:0xdbc
+2026-11-25T01:30:44.390395Z load:0x4086e610,len:0x31f0
+2026-11-25T01:30:44.390417Z entry 0x4086b91a
+2026-11-25T01:30:44.390438Z I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-25T01:30:44.391030Z I (24) boot: compile time Nov 25 2026 03:21:21
+2026-11-25T01:30:44.391051Z I (24) boot: chip revision: v0.0
+2026-11-25T01:30:44.391068Z I (24) boot: efuse block revision: v0.2
+2026-11-25T01:30:44.391086Z I (27) boot.esp32c6: SPI Speed      : 80MHz
+2026-11-25T01:30:44.391103Z I (31) boot.esp32c6: SPI Mode       : DIO
+2026-11-25T01:30:44.391122Z I (35) boot.esp32c6: SPI Flash Size : 8MB
+2026-11-25T01:30:44.391139Z I (38) boot: Enabling RNG early entropy source...
+2026-11-25T01:30:44.391158Z I (43) boot: Partition Table:
+2026-11-25T01:30:44.391173Z I (45) boot: ## Label            Usage          Type ST Offset   Length
+2026-11-25T01:30:44.391193Z I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+2026-11-25T01:30:44.391214Z I (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+2026-11-25T01:30:44.391233Z I (65) boot:  2 factory          factory app      00 00 00010000 001a9000
+2026-11-25T01:30:44.391253Z I (71) boot: End of partition table
+2026-11-25T01:30:44.606645Z I (75) esp_image: segment 0: paddr=00010020 vaddr=42140020 size=42870h (272496) map
+2026-11-25T01:30:44.606767Z I (134) esp_image: segment 1: paddr=00052898 vaddr=40800000 size=0d780h ( 55168) load
+2026-11-25T01:30:44.606798Z I (147) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=132400h (1254400) map
+2026-11-25T01:30:44.787149Z I (386) esp_image: segment 3: paddr=00192428 vaddr=4080d780 size=0ae08h ( 44552) load
+2026-11-25T01:30:44.787250Z I (396) esp_image: segment 4: paddr=0019d238 vaddr=40818590 size=04044h ( 16452) load
+2026-11-25T01:30:44.787279Z I (407) boot: Loaded app from partition at offset 0x10000
+2026-11-25T01:30:44.787300Z I (407) boot: Disabling RNG early entropy source...
+2026-11-25T01:30:44.787320Z I (417) cpu_start: Unicore app
+2026-11-25T01:30:44.787340Z I (425) cpu_start: GPIO 17 and 16 are used as console UART I/O pins
+2026-11-25T01:30:44.787361Z I (426) cpu_start: Pro cpu start user code
+2026-11-25T01:30:44.787379Z I (426) cpu_start: cpu freq: 160000000 Hz
+2026-11-25T01:30:44.787395Z I (428) app_init: Application information:
+2026-11-25T01:30:44.787411Z I (431) app_init: Project name:     quic_demo
+2026-11-25T01:30:44.787429Z I (436) app_init: App version:      3c8c7a3-dirty-FIXED_20261118
+2026-11-25T01:30:44.787448Z I (441) app_init: Compile time:     Nov 25 2026 03:20:06
+2026-11-25T01:30:44.787466Z I (446) app_init: ELF file SHA256:  bd57edfc0...
+2026-11-25T01:30:44.787484Z I (451) app_init: ESP-IDF:          v6.1
+2026-11-25T01:30:44.787500Z I (454) efuse_init: Min chip rev:     v0.0
+2026-11-25T01:30:44.787516Z I (458) efuse_init: Max chip rev:     v0.99 
+2026-11-25T01:30:44.787532Z I (462) efuse_init: Chip rev:         v0.0
+2026-11-25T01:30:44.787549Z I (466) heap_init: Initializing. RAM available for dynamic allocation:
+2026-11-25T01:30:44.883429Z I (472) heap_init: At 40824AE0 len 00057B30 (350 KiB): RAM
+2026-11-25T01:30:44.883537Z I (477) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
+2026-11-25T01:30:44.883564Z I (483) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM
+2026-11-25T01:30:44.883595Z I (489) spi_flash: detected chip: gd
+2026-11-25T01:30:44.883613Z I (491) spi_flash: flash io: dio
+2026-11-25T01:30:44.883631Z I (495) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+2026-11-25T01:30:44.883660Z I (501) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+2026-11-25T01:30:44.883689Z I (507) coexist: coex firmware version: a830d28
+2026-11-25T01:30:44.883767Z I (511) coexist: coexist rom version 5b8dcfa
+2026-11-25T01:30:44.883793Z I (516) main_task: Started on CPU0
+2026-11-25T01:30:44.883813Z I (536) main_task: Calling app_main()
+2026-11-25T01:30:44.883831Z I (536) quic_demo_main: Starting ESP32-C6 DHT11 over QUIC
+2026-11-25T01:30:44.883883Z I (536) quic_demo_main: ESP-IDF version: v6.1
+2026-11-25T01:30:44.883903Z I (546) example_connect: Start example_connect.
+2026-11-25T01:30:44.883923Z I (546) pp: pp rom version: 5b8dcfa
+2026-11-25T01:30:44.883940Z I (546) net80211: net80211 rom version: 5b8dcfa
+2026-11-25T01:30:44.883958Z I (556) wifi:wifi driver task: 4082ad50, prio:23, stack:6656, core=0
+2026-11-25T01:30:44.883979Z I (556) wifi:wifi firmware version: e12a754
+2026-11-25T01:30:44.883996Z I (556) wifi:wifi certification version: v7.0
+2026-11-25T01:30:44.884013Z I (556) wifi:config NVS flash: enabled
+2026-11-25T01:30:44.884031Z I (566) wifi:config nano formatting: disabled
+2026-11-25T01:30:45.012675Z I (566) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+2026-11-25T01:30:45.012769Z I (576) wifi:Init data frame dynamic rx buffer num: 32
+2026-11-25T01:30:45.012794Z I (576) wifi:Init static rx mgmt buffer num: 5
+2026-11-25T01:30:45.012814Z I (586) wifi:Init management short buffer num: 32
+2026-11-25T01:30:45.012833Z I (586) wifi:Init dynamic tx buffer num: 32
+2026-11-25T01:30:45.012851Z I (596) wifi:Init static tx FG buffer num: 2
+2026-11-25T01:30:45.012869Z I (596) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+2026-11-25T01:30:45.012890Z I (606) wifi:Init static rx buffer num: 10
+2026-11-25T01:30:45.012907Z I (606) wifi:Init dynamic rx buffer num: 32
+2026-11-25T01:30:45.012928Z I (606) wifi_init: rx ba win: 6
+2026-11-25T01:30:45.012957Z I (616) wifi_init: accept mbox: 6
+2026-11-25T01:30:45.012982Z I (616) wifi_init: tcpip mbox: 32
+2026-11-25T01:30:45.013006Z I (616) wifi_init: udp mbox: 6
+2026-11-25T01:30:45.013029Z I (626) wifi_init: tcp mbox: 6
+2026-11-25T01:30:45.013052Z I (626) wifi_init: tcp tx win: 5760
+2026-11-25T01:30:45.013075Z I (626) wifi_init: tcp rx win: 5760
+2026-11-25T01:30:45.013099Z I (626) wifi_init: tcp mss: 1440
+2026-11-25T01:30:45.013122Z I (636) wifi_init: WiFi IRAM OP enabled
+2026-11-25T01:30:45.013148Z I (636) wifi_init: WiFi RX IRAM OP enabled
+2026-11-25T01:30:45.013172Z I (636) wifi_init: WiFi SLP IRAM OP enabled
+2026-11-25T01:30:45.013197Z I (646) phy_init: phy_version 345,552b044,Jul 14 2026,10:37:00
+2026-11-25T01:30:45.013225Z I (706) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+2026-11-25T01:30:45.013258Z 
+2026-11-25T01:30:45.216910Z I (706) wifi:mode : sta (40:4c:ca:56:bb:b0)
+2026-11-25T01:30:45.217068Z I (706) wifi:enable tsf
+2026-11-25T01:30:45.217103Z I (706) example_connect: Connecting to <SSID_MASKED>...
+2026-11-25T01:30:45.217134Z W (706) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+2026-11-25T01:30:45.217171Z I (716) example_connect: Waiting for IP(s)
+2026-11-25T01:30:47.627697Z I (3236) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+2026-11-25T01:30:47.627792Z I (3236) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3
+2026-11-25T01:30:47.627821Z I (3246) wifi:state: init -> auth (0xb0)
+2026-11-25T01:30:47.627840Z I (3246) wifi:state: auth -> assoc (0x0)
+2026-11-25T01:30:47.627857Z I (3256) wifi:state: assoc -> run (0x10)
+2026-11-25T01:30:47.627876Z I (3256) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:144, highestRateIdx:0
+2026-11-25T01:30:47.627898Z W (3256) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+2026-11-25T01:30:47.627922Z I (3266) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational
+2026-11-25T01:30:47.627951Z I (3276) wifi:ifidx:0, rssi:-34, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+2026-11-25T01:30:47.627977Z I (3286) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)
+2026-11-25T01:30:47.628050Z I (3306) wifi:connected with <SSID_MASKED>, aid = 5, channel 11, BW20, bssid = b6:8c:9d:8c:8a:bb
+2026-11-25T01:30:47.628079Z I (3306) wifi:security: WPA2-PSK, phy: bgn, rssi: -34, cipher(pairwise:0x3, group:0x3), pmf:0
+2026-11-25T01:30:47.716564Z I (3316) wifi:pm start, type: 1, twt_start:0
+2026-11-25T01:30:47.716695Z 
+2026-11-25T01:30:47.716722Z I (3316) wifi:pm start, type:1, aid:0x5, trans-BSSID:b6:8c:9d:8c:8a:bb, BSSID[5]:0xbb, mbssid(max-indicator:0, index:0), he:0
+2026-11-25T01:30:47.716771Z I (3326) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+2026-11-25T01:30:47.716815Z I (3336) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+2026-11-25T01:30:47.716848Z I (3346) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-25T01:30:47.716880Z I (3356) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+2026-11-25T01:30:47.716910Z I (3366) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+2026-11-25T01:30:47.716942Z I (3376) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+2026-11-25T01:30:47.716965Z I (3386) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T01:30:47.716992Z I (3396) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T01:30:47.926749Z I (3406) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+2026-11-25T01:30:47.927169Z W (3436) wifi:reject multicast/broadcast fragment
+2026-11-25T01:30:47.927266Z 
+2026-11-25T01:30:47.927354Z W (3446) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100bb8a, TALO:0x8c9d8cb6, (ssn:4, win:64, cur_ssn:4), CONF:0xc0000005
+2026-11-25T01:30:48.825954Z I (4436) esp_netif_handlers: example_netif_sta ip: 192.168.137.217, mask: 255.255.255.0, gw: 192.168.137.1
+2026-11-25T01:30:48.826047Z I (4436) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.137.217
+2026-11-25T01:30:48.826074Z I (4436) example_common: Connected to example_netif_sta
+2026-11-25T01:30:48.826092Z I (4446) example_common: - IPv4 address: 192.168.137.217,
+2026-11-25T01:30:48.826110Z I (4446) quic_demo_main: Wi-Fi connected
+2026-11-25T01:30:48.826127Z I (4456) wifi:Set ps type: 0, coexist: 0
+2026-11-25T01:30:48.826143Z 
+2026-11-25T01:30:48.826154Z I (4456) quic_demo_main: EXPERIMENTAL Wi-Fi profile: requested=WIFI_PS_NONE(0), returned=WIFI_PS_NONE(0)
+2026-11-25T01:30:48.826176Z WIFI_EVENT start uptime_ms=3982 rssi=-32
+2026-11-25T01:30:48.826191Z I (4466) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:30:48.826209Z I (4476) quic_demo_main: Free heap: 285936 bytes
+2026-11-25T01:30:48.826224Z I (4476) QUIC: QUIC mutex created successfully
+2026-11-25T01:30:48.826239Z I (4486) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:30:48.826256Z I (4486) QUIC: init random number generator
+2026-11-25T01:30:48.826270Z I (4496) QUIC: init client ...
+2026-11-25T01:30:48.826283Z I (4506) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:30:48.826297Z I (4506) QUIC: In client_quic_init
+2026-11-25T01:30:48.826311Z I (4506) QUIC: ===>  INITIAL TS: 4024671000
+2026-11-25T01:30:48.826325Z I (4506) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:30:49.033119Z I (4516) QUIC: QUIC client initialization completed
+2026-11-25T01:30:49.440010Z I (4946) main_task: Returned from app_main()
+2026-11-25T01:30:51.473057Z I (7106) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:30:51.473192Z I (7116) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:30:51.473214Z I (7126) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:30:51.473231Z 
+2026-11-25T01:30:51.677051Z I (7196) quic_demo_main: QUIC connection established
+2026-11-25T01:30:52.688479Z I (8196) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:30:52.688614Z I (8206) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:30:52.688650Z I (8276) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:30:52.688681Z CONNECT session=0 initial=1 transport_ms=2725.1 connack_ms=84.0
+2026-11-25T01:30:52.688715Z I (8286) quic_demo_main: Starting DHT11 readings every five seconds
+2026-11-25T01:30:52.688748Z I (8386) quic_demo_main: Subscription acknowledged
+2026-11-25T01:30:57.759033Z I (13416) quic_demo_main: APP_RTT seq=1 app_rtt_ms=86.169
+2026-11-25T01:31:02.827908Z I (18446) quic_demo_main: APP_RTT seq=2 app_rtt_ms=104.687
+2026-11-25T01:31:07.716566Z I (23376) quic_demo_main: APP_RTT seq=3 app_rtt_ms=26.221
+2026-11-25T01:31:12.789818Z I (28406) quic_demo_main: APP_RTT seq=4 app_rtt_ms=46.132
+2026-11-25T01:31:17.863765Z I (33436) quic_demo_main: APP_RTT seq=5 app_rtt_ms=68.960
+2026-11-25T01:31:22.957783Z I (38466) quic_demo_main: APP_RTT seq=6 app_rtt_ms=88.951
+2026-11-25T01:31:27.828703Z I (43496) quic_demo_main: APP_RTT seq=7 app_rtt_ms=109.295
+2026-11-25T01:31:32.895713Z I (48426) quic_demo_main: APP_RTT seq=8 app_rtt_ms=25.481
+2026-11-25T01:31:37.961392Z I (53456) quic_demo_main: APP_RTT seq=9 app_rtt_ms=45.447
+2026-11-25T01:31:42.838507Z I (58486) quic_demo_main: APP_RTT seq=10 app_rtt_ms=65.493
+2026-11-25T01:31:47.905948Z I (63516) quic_demo_main: APP_RTT seq=11 app_rtt_ms=85.493
+2026-11-25T01:31:52.772569Z HEAPLOG uptime_s=67 free=174436 min_free=142744
+2026-11-25T01:31:52.772698Z DIAG uptime_ms=67807 session=0 rssi=-33 wifi_ip=1 wifi_disc=0 free=174332 min_free=142744 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4779 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=1342 app_rx_offset=1342 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=79.0 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=118.7 pto_ms=578.9 expiry_in_ms=55149 max_data_left=14998 tx_buffered=0 stream_data_left=6806 pto_count=0 lost_pending=0 stream=0 tx_offset=1386 tx_cont_acked=1386 tx_loss_count=0 rx_last_offset=1342 rx_max_offset=131072
+2026-11-25T01:31:52.975524Z I (68486) quic_demo_main: APP_RTT seq=12 app_rtt_ms=45.731
+2026-11-25T01:32:12.840558Z STALL uptime_ms=87967 session=0 rssi=-33 wifi_ip=1 wifi_disc=0 free=173244 min_free=142744 pending=3 oldest_seq=13 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=1464 app_rx_offset=1464 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1694 cwnd=15660 srtt_ms=70.4 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=106.3 pto_ms=520.4 expiry_in_ms=3346 max_data_left=14510 tx_buffered=366 stream_data_left=6318 pto_count=4 lost_pending=0 stream=0 tx_offset=1874 tx_cont_acked=1508 tx_loss_count=0 rx_last_offset=1464 rx_max_offset=131072
+2026-11-25T01:32:12.840787Z CONNECTION_FAILED uptime_ms=88011 session=0 reason=stall next_seq=16
+2026-11-25T01:32:12.840833Z APP_RTT_LOST seq=13 reason=stall
+2026-11-25T01:32:12.840862Z APP_RTT_LOST seq=14 reason=stall
+2026-11-25T01:32:12.840888Z APP_RTT_LOST seq=15 reason=stall
+2026-11-25T01:32:12.840912Z I (88506) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:32:12.841032Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:32:12.841060Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:32:12.841089Z I (88526) QUIC: Cleaning up QUIC client...
+2026-11-25T01:32:12.841132Z I (88526) QUIC: Freeing QUIC connection...
+2026-11-25T01:32:13.044976Z I (88526) QUIC: QUIC client cleanup completed. Free heap: 222620 bytes
+2026-11-25T01:32:13.045115Z RECONNECT_START n=1 reason=stall fail_uptime_ms=88011
+2026-11-25T01:32:13.861517Z I (89536) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:32:13.861665Z I (89536) quic_demo_main: Free heap: 222656 bytes
+2026-11-25T01:32:13.861694Z I (89536) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:32:13.861715Z I (89536) QUIC: init random number generator
+2026-11-25T01:32:13.861794Z I (89546) QUIC: init client ...
+2026-11-25T01:32:13.861816Z I (89546) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:32:14.063590Z I (89546) QUIC: In client_quic_init
+2026-11-25T01:32:14.063733Z I (89556) QUIC: ===>  INITIAL TS: 89068399000
+2026-11-25T01:32:14.063755Z I (89556) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:32:14.063774Z I (89556) QUIC: QUIC client initialization completed
+2026-11-25T01:32:16.499738Z I (92156) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:32:16.499850Z I (92176) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:32:16.499875Z I (92176) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:32:16.499894Z 
+2026-11-25T01:32:16.700895Z I (92316) quic_demo_main: QUIC connection established
+2026-11-25T01:32:16.701055Z I (92316) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:32:16.701080Z I (92326) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:32:16.701097Z I (92356) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:32:16.701113Z RECONNECT n=1 session=1 attempts=1 reason=stall fail_uptime_ms=88011 start_uptime_ms=89047 last_start_uptime_ms=89047 connected_uptime_ms=91881 handshake_ms=2783.1 connack_ms=39.5 attempt_total_ms=2833.6 downtime_ms=3869.5 free=174268 next_seq=16
+2026-11-25T01:32:16.901383Z I (92476) quic_demo_main: Subscription acknowledged
+2026-11-25T01:32:21.976858Z I (97506) quic_demo_main: APP_RTT seq=16 app_rtt_ms=85.401
+2026-11-25T01:32:26.854642Z I (102536) quic_demo_main: APP_RTT seq=17 app_rtt_ms=105.051
+2026-11-25T01:32:31.931293Z I (107466) quic_demo_main: APP_RTT seq=18 app_rtt_ms=26.309
+2026-11-25T01:32:36.802970Z I (112496) quic_demo_main: APP_RTT seq=19 app_rtt_ms=46.270
+2026-11-25T01:32:41.876969Z I (117526) quic_demo_main: APP_RTT seq=20 app_rtt_ms=68.623
+2026-11-25T01:32:46.951614Z I (122556) quic_demo_main: APP_RTT seq=21 app_rtt_ms=88.696
+2026-11-25T01:32:52.016229Z I (127586) quic_demo_main: APP_RTT seq=22 app_rtt_ms=108.997
+2026-11-25T01:32:52.625137Z HEAPLOG uptime_s=127 free=174400 min_free=142492
+2026-11-25T01:32:52.827972Z DIAG uptime_ms=127818 session=1 rssi=-30 wifi_ip=1 wifi_disc=0 free=174400 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=716 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=2333 app_rx_offset=869 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=14254 srtt_ms=134.7 min_rtt_ms=10.2 latest_rtt_ms=42.7 rttvar_ms=191.4 pto_ms=925.3 expiry_in_ms=59222 max_data_left=15471 tx_buffered=0 stream_data_left=7279 pto_count=0 lost_pending=0 stream=0 tx_offset=913 tx_cont_acked=913 tx_loss_count=0 rx_last_offset=869 rx_max_offset=131072
+2026-11-25T01:32:56.890764Z I (132556) quic_demo_main: APP_RTT seq=23 app_rtt_ms=65.798
+2026-11-25T01:33:01.972406Z I (137586) quic_demo_main: APP_RTT seq=24 app_rtt_ms=85.809
+2026-11-25T01:33:07.044169Z I (142616) quic_demo_main: APP_RTT seq=25 app_rtt_ms=105.287
+2026-11-25T01:33:11.919705Z I (147546) quic_demo_main: APP_RTT seq=26 app_rtt_ms=25.512
+2026-11-25T01:33:16.982475Z I (152576) quic_demo_main: APP_RTT seq=27 app_rtt_ms=45.383
+2026-11-25T01:33:36.913009Z STALL uptime_ms=172057 session=1 rssi=-35 wifi_ip=1 wifi_disc=0 free=173308 min_free=142492 pending=3 oldest_seq=28 oldest_age_ms=15005 last_echo_age_ms=19970 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=2948 app_rx_offset=1484 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1705 cwnd=14254 srtt_ms=75.0 min_rtt_ms=10.2 latest_rtt_ms=10.4 rttvar_ms=113.4 pto_ms=553.5 expiry_in_ms=3875 max_data_left=14487 tx_buffered=369 stream_data_left=6295 pto_count=4 lost_pending=0 stream=0 tx_offset=1897 tx_cont_acked=1528 tx_loss_count=0 rx_last_offset=1484 rx_max_offset=131072
+2026-11-25T01:33:36.913227Z CONNECTION_FAILED uptime_ms=172102 session=1 reason=stall next_seq=31
+2026-11-25T01:33:36.913260Z APP_RTT_LOST seq=28 reason=stall
+2026-11-25T01:33:36.913307Z APP_RTT_LOST seq=29 reason=stall
+2026-11-25T01:33:37.115797Z APP_RTT_LOST seq=30 reason=stall
+2026-11-25T01:33:37.115933Z I (172596) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:33:37.116038Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:33:37.116058Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:33:37.116073Z I (172616) QUIC: Cleaning up QUIC client...
+2026-11-25T01:33:37.116089Z I (172616) QUIC: Freeing QUIC connection...
+2026-11-25T01:33:37.116105Z I (172616) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:33:37.116124Z RECONNECT_START n=2 reason=stall fail_uptime_ms=172102
+2026-11-25T01:33:38.127200Z I (173626) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:33:38.127324Z I (173626) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:33:38.127348Z I (173626) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:33:38.127367Z I (173626) QUIC: init random number generator
+2026-11-25T01:33:38.127384Z I (173636) QUIC: init client ...
+2026-11-25T01:33:38.127398Z I (173636) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:33:38.127414Z I (173636) QUIC: In client_quic_init
+2026-11-25T01:33:38.127428Z I (173646) QUIC: ===>  INITIAL TS: 173158915000
+2026-11-25T01:33:38.127444Z I (173646) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:33:38.127464Z I (173646) QUIC: QUIC client initialization completed
+2026-11-25T01:33:40.559607Z I (176216) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:33:40.559777Z I (176236) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:33:40.559810Z I (176236) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:33:40.559838Z 
+2026-11-25T01:33:40.559855Z I (176246) quic_demo_main: QUIC connection established
+2026-11-25T01:33:40.559883Z I (176246) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:33:40.762308Z I (176256) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:33:40.762420Z I (176326) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:33:40.762440Z RECONNECT n=2 session=2 attempts=1 reason=stall fail_uptime_ms=172102 start_uptime_ms=173137 last_start_uptime_ms=173137 connected_uptime_ms=175858 handshake_ms=2620.1 connack_ms=83.4 attempt_total_ms=2720.9 downtime_ms=3756.4 free=174268 next_seq=31
+2026-11-25T01:33:40.762478Z I (176456) quic_demo_main: Subscription acknowledged
+2026-11-25T01:33:45.842725Z I (181486) quic_demo_main: APP_RTT seq=31 app_rtt_ms=85.902
+2026-11-25T01:33:50.908628Z I (186516) quic_demo_main: APP_RTT seq=32 app_rtt_ms=104.694
+2026-11-25T01:33:52.730444Z HEAPLOG uptime_s=187 free=174392 min_free=142492
+2026-11-25T01:33:52.730573Z DIAG uptime_ms=187827 session=2 rssi=-35 wifi_ip=1 wifi_disc=0 free=174392 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1799 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=3203 app_rx_offset=255 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=246.9 min_rtt_ms=20.2 latest_rtt_ms=20.2 rttvar_ms=284.0 pto_ms=1407.9 expiry_in_ms=58119 max_data_left=16085 tx_buffered=0 stream_data_left=7893 pto_count=0 lost_pending=0 stream=0 tx_offset=299 tx_cont_acked=299 tx_loss_count=0 rx_last_offset=255 rx_max_offset=131072
+2026-11-25T01:33:55.791962Z I (191486) quic_demo_main: APP_RTT seq=33 app_rtt_ms=68.827
+2026-11-25T01:34:00.870126Z I (196516) quic_demo_main: APP_RTT seq=34 app_rtt_ms=89.477
+2026-11-25T01:34:05.947497Z I (201546) quic_demo_main: APP_RTT seq=35 app_rtt_ms=109.145
+2026-11-25T01:34:10.809612Z I (206476) quic_demo_main: APP_RTT seq=36 app_rtt_ms=30.415
+2026-11-25T01:34:15.892202Z I (211506) quic_demo_main: APP_RTT seq=37 app_rtt_ms=45.346
+2026-11-25T01:34:20.969393Z I (216536) quic_demo_main: APP_RTT seq=38 app_rtt_ms=65.338
+2026-11-25T01:34:26.038653Z I (221566) quic_demo_main: APP_RTT seq=39 app_rtt_ms=85.289
+2026-11-25T01:34:30.911640Z I (226596) quic_demo_main: APP_RTT seq=40 app_rtt_ms=105.397
+2026-11-25T01:34:35.984692Z I (231526) quic_demo_main: APP_RTT seq=41 app_rtt_ms=30.379
+2026-11-25T01:34:41.057053Z I (236656) quic_demo_main: APP_RTT seq=42 app_rtt_ms=145.379
+2026-11-25T01:34:52.621300Z HEAPLOG uptime_s=247 free=173460 min_free=142492
+2026-11-25T01:34:52.822194Z DIAG uptime_ms=247828 session=2 rssi=-33 wifi_ip=1 wifi_disc=0 free=173460 min_free=142492 pending=2 oldest_seq=43 oldest_age_ms=6795 last_echo_age_ms=11660 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=4433 app_rx_offset=1485 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1240 cwnd=15660 srtt_ms=81.8 min_rtt_ms=9.9 latest_rtt_ms=60.2 rttvar_ms=100.3 pto_ms=508.1 expiry_in_ms=2284 max_data_left=14609 tx_buffered=246 stream_data_left=6417 pto_count=3 lost_pending=0 stream=0 tx_offset=1775 tx_cont_acked=1529 tx_loss_count=0 rx_last_offset=1485 rx_max_offset=131072
+2026-11-25T01:35:00.909161Z STALL uptime_ms=256037 session=2 rssi=-34 wifi_ip=1 wifi_disc=0 free=173308 min_free=142492 pending=3 oldest_seq=43 oldest_age_ms=15005 last_echo_age_ms=19869 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=4433 app_rx_offset=1485 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1705 cwnd=15660 srtt_ms=81.8 min_rtt_ms=9.9 latest_rtt_ms=60.2 rttvar_ms=100.3 pto_ms=508.1 expiry_in_ms=3149 max_data_left=14486 tx_buffered=369 stream_data_left=6294 pto_count=4 lost_pending=0 stream=0 tx_offset=1898 tx_cont_acked=1529 tx_loss_count=0 rx_last_offset=1485 rx_max_offset=131072
+2026-11-25T01:35:00.909337Z CONNECTION_FAILED uptime_ms=256081 session=2 reason=stall next_seq=46
+2026-11-25T01:35:00.909370Z APP_RTT_LOST seq=43 reason=stall
+2026-11-25T01:35:00.909387Z APP_RTT_LOST seq=44 reason=stall
+2026-11-25T01:35:00.909403Z APP_RTT_LOST seq=45 reason=stall
+2026-11-25T01:35:00.909418Z I (256576) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:35:00.910035Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:35:00.910081Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:35:00.910099Z I (256596) QUIC: Cleaning up QUIC client...
+2026-11-25T01:35:00.910117Z I (256596) QUIC: Freeing QUIC connection...
+2026-11-25T01:35:01.124005Z I (256596) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:35:01.124164Z RECONNECT_START n=3 reason=stall fail_uptime_ms=256081
+2026-11-25T01:35:01.937782Z I (257606) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:35:01.937910Z I (257606) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:35:01.937931Z I (257606) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:35:01.937950Z I (257606) QUIC: init random number generator
+2026-11-25T01:35:01.937965Z I (257616) QUIC: init client ...
+2026-11-25T01:35:01.937978Z I (257616) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:35:01.937993Z I (257626) QUIC: In client_quic_init
+2026-11-25T01:35:02.139702Z I (257626) QUIC: ===>  INITIAL TS: 257138974000
+2026-11-25T01:35:02.139874Z I (257626) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:35:02.139915Z I (257626) QUIC: QUIC client initialization completed
+2026-11-25T01:35:04.579356Z I (260236) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:35:04.579502Z I (260256) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:35:04.579524Z I (260256) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:35:04.579540Z 
+2026-11-25T01:35:04.779730Z I (260366) quic_demo_main: QUIC connection established
+2026-11-25T01:35:04.779875Z I (260366) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:35:04.779908Z I (260376) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:35:04.779924Z I (260436) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:35:04.779939Z RECONNECT n=3 session=3 attempts=1 reason=stall fail_uptime_ms=256081 start_uptime_ms=257117 last_start_uptime_ms=257117 connected_uptime_ms=259961 handshake_ms=2763.6 connack_ms=66.1 attempt_total_ms=2843.7 downtime_ms=3879.6 free=174316 next_seq=46
+2026-11-25T01:35:04.983114Z I (260556) quic_demo_main: Subscription acknowledged
+2026-11-25T01:35:10.062119Z I (265586) quic_demo_main: APP_RTT seq=46 app_rtt_ms=85.637
+2026-11-25T01:35:14.933782Z I (270616) quic_demo_main: APP_RTT seq=47 app_rtt_ms=104.875
+2026-11-25T01:35:20.021383Z I (275546) quic_demo_main: APP_RTT seq=48 app_rtt_ms=26.416
+2026-11-25T01:35:24.896867Z I (280576) quic_demo_main: APP_RTT seq=49 app_rtt_ms=48.612
+2026-11-25T01:35:29.974643Z I (285606) quic_demo_main: APP_RTT seq=50 app_rtt_ms=68.920
+2026-11-25T01:35:35.064793Z I (290636) quic_demo_main: APP_RTT seq=51 app_rtt_ms=88.782
+2026-11-25T01:35:40.140790Z I (295666) quic_demo_main: APP_RTT seq=52 app_rtt_ms=108.809
+2026-11-25T01:35:45.013050Z I (300696) quic_demo_main: APP_RTT seq=53 app_rtt_ms=128.517
+2026-11-25T01:35:50.103079Z I (305626) quic_demo_main: APP_RTT seq=54 app_rtt_ms=45.806
+2026-11-25T01:35:52.743920Z HEAPLOG uptime_s=307 free=174368 min_free=142492
+2026-11-25T01:35:52.744092Z DIAG uptime_ms=307837 session=3 rssi=-38 wifi_ip=1 wifi_disc=0 free=174368 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2699 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=5549 app_rx_offset=1116 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=96.2 min_rtt_ms=10.0 latest_rtt_ms=10.2 rttvar_ms=138.0 pto_ms=673.2 expiry_in_ms=57269 max_data_left=15224 tx_buffered=0 stream_data_left=7032 pto_count=0 lost_pending=0 stream=0 tx_offset=1160 tx_cont_acked=1160 tx_loss_count=0 rx_last_offset=1116 rx_max_offset=131072
+2026-11-25T01:35:55.189404Z I (310696) quic_demo_main: APP_RTT seq=55 app_rtt_ms=105.422
+2026-11-25T01:36:00.093026Z I (315626) quic_demo_main: APP_RTT seq=56 app_rtt_ms=25.454
+2026-11-25T01:36:04.965251Z I (320656) quic_demo_main: APP_RTT seq=57 app_rtt_ms=45.533
+2026-11-25T01:36:25.008513Z STALL uptime_ms=340137 session=3 rssi=-37 wifi_ip=1 wifi_disc=0 free=173276 min_free=142492 pending=3 oldest_seq=58 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=5918 app_rx_offset=1485 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1705 cwnd=15660 srtt_ms=67.9 min_rtt_ms=9.9 latest_rtt_ms=12.7 rttvar_ms=100.6 pto_ms=495.4 expiry_in_ms=2946 max_data_left=14486 tx_buffered=369 stream_data_left=6294 pto_count=4 lost_pending=0 stream=0 tx_offset=1898 tx_cont_acked=1529 tx_loss_count=0 rx_last_offset=1485 rx_max_offset=131072
+2026-11-25T01:36:25.008684Z CONNECTION_FAILED uptime_ms=340181 session=3 reason=stall next_seq=61
+2026-11-25T01:36:25.008708Z APP_RTT_LOST seq=58 reason=stall
+2026-11-25T01:36:25.008724Z APP_RTT_LOST seq=59 reason=stall
+2026-11-25T01:36:25.008738Z APP_RTT_LOST seq=60 reason=stall
+2026-11-25T01:36:25.008761Z I (340676) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:36:25.008797Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:36:25.008812Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:36:25.008826Z I (340696) QUIC: Cleaning up QUIC client...
+2026-11-25T01:36:25.008840Z I (340696) QUIC: Freeing QUIC connection...
+2026-11-25T01:36:25.221716Z I (340696) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:36:25.221850Z RECONNECT_START n=4 reason=stall fail_uptime_ms=340181
+2026-11-25T01:36:26.032527Z I (341706) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:36:26.032646Z I (341706) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:36:26.032668Z I (341706) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:36:26.032686Z I (341706) QUIC: init random number generator
+2026-11-25T01:36:26.032701Z I (341716) QUIC: init client ...
+2026-11-25T01:36:26.032715Z I (341716) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:36:26.032729Z I (341726) QUIC: In client_quic_init
+2026-11-25T01:36:26.234373Z I (341726) QUIC: ===>  INITIAL TS: 341238978000
+2026-11-25T01:36:26.234535Z I (341726) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:36:26.234635Z I (341726) QUIC: QUIC client initialization completed
+2026-11-25T01:36:28.889851Z I (344366) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:36:28.890000Z I (344386) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:36:28.890039Z I (344386) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:36:28.890067Z 
+2026-11-25T01:36:28.890083Z I (344516) quic_demo_main: QUIC connection established
+2026-11-25T01:36:28.890107Z I (344516) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:36:28.890133Z I (344526) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:36:28.890158Z I (344546) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:36:28.890183Z RECONNECT n=4 session=4 attempts=1 reason=stall fail_uptime_ms=340181 start_uptime_ms=341217 last_start_uptime_ms=341217 connected_uptime_ms=344081 handshake_ms=2812.5 connack_ms=32.6 attempt_total_ms=2863.2 downtime_ms=3899.1 free=170300 next_seq=61
+2026-11-25T01:36:29.093065Z I (344676) quic_demo_main: Subscription acknowledged
+2026-11-25T01:36:34.173453Z I (349706) quic_demo_main: APP_RTT seq=61 app_rtt_ms=85.444
+2026-11-25T01:36:39.060420Z I (354736) quic_demo_main: APP_RTT seq=62 app_rtt_ms=104.564
+2026-11-25T01:36:44.139522Z I (359666) quic_demo_main: APP_RTT seq=63 app_rtt_ms=26.294
+2026-11-25T01:36:49.011375Z I (364696) quic_demo_main: APP_RTT seq=64 app_rtt_ms=48.861
+2026-11-25T01:36:52.674615Z HEAPLOG uptime_s=367 free=174416 min_free=142492
+2026-11-25T01:36:52.881437Z DIAG uptime_ms=367847 session=4 rssi=-34 wifi_ip=1 wifi_disc=0 free=174416 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=3636 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=6419 app_rx_offset=501 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=169.6 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=242.5 pto_ms=1164.6 expiry_in_ms=56329 max_data_left=15839 tx_buffered=0 stream_data_left=7647 pto_count=0 lost_pending=0 stream=0 tx_offset=545 tx_cont_acked=545 tx_loss_count=0 rx_last_offset=501 rx_max_offset=131072
+2026-11-25T01:36:54.100086Z I (369766) quic_demo_main: APP_RTT seq=65 app_rtt_ms=108.986
+2026-11-25T01:36:59.191197Z I (374696) quic_demo_main: APP_RTT seq=66 app_rtt_ms=25.606
+2026-11-25T01:37:04.080314Z I (379726) quic_demo_main: APP_RTT seq=67 app_rtt_ms=45.479
+2026-11-25T01:37:09.155632Z I (384756) quic_demo_main: APP_RTT seq=68 app_rtt_ms=65.498
+2026-11-25T01:37:14.266822Z I (389786) quic_demo_main: APP_RTT seq=69 app_rtt_ms=85.746
+2026-11-25T01:37:19.128905Z I (394816) quic_demo_main: APP_RTT seq=70 app_rtt_ms=105.438
+2026-11-25T01:37:24.211649Z I (399746) quic_demo_main: APP_RTT seq=71 app_rtt_ms=30.018
+2026-11-25T01:37:44.088547Z STALL uptime_ms=419247 session=4 rssi=-32 wifi_ip=1 wifi_disc=0 free=173332 min_free=142492 pending=3 oldest_seq=72 oldest_age_ms=15005 last_echo_age_ms=19985 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=7280 app_rx_offset=1362 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1705 cwnd=15660 srtt_ms=77.7 min_rtt_ms=10.2 latest_rtt_ms=20.1 rttvar_ms=111.2 pto_ms=547.7 expiry_in_ms=3783 max_data_left=14609 tx_buffered=369 stream_data_left=6417 pto_count=4 lost_pending=0 stream=0 tx_offset=1775 tx_cont_acked=1406 tx_loss_count=0 rx_last_offset=1362 rx_max_offset=131072
+2026-11-25T01:37:44.291048Z CONNECTION_FAILED uptime_ms=419292 session=4 reason=stall next_seq=75
+2026-11-25T01:37:44.291193Z APP_RTT_LOST seq=72 reason=stall
+2026-11-25T01:37:44.291217Z APP_RTT_LOST seq=73 reason=stall
+2026-11-25T01:37:44.291232Z APP_RTT_LOST seq=74 reason=stall
+2026-11-25T01:37:44.291245Z I (419786) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:37:44.291282Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:37:44.291296Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:37:44.291309Z I (419806) QUIC: Cleaning up QUIC client...
+2026-11-25T01:37:44.291331Z I (419806) QUIC: Freeing QUIC connection...
+2026-11-25T01:37:44.291348Z I (419806) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:37:44.291366Z RECONNECT_START n=5 reason=stall fail_uptime_ms=419292
+2026-11-25T01:37:45.311786Z I (420816) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:37:45.311950Z I (420816) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:37:45.311983Z I (420816) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:37:45.312012Z I (420816) QUIC: init random number generator
+2026-11-25T01:37:45.312035Z I (420826) QUIC: init client ...
+2026-11-25T01:37:45.312055Z I (420826) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:37:45.312078Z I (420836) QUIC: In client_quic_init
+2026-11-25T01:37:45.312098Z I (420836) QUIC: ===>  INITIAL TS: 420348985000
+2026-11-25T01:37:45.312131Z I (420836) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:37:45.312158Z I (420836) QUIC: QUIC client initialization completed
+2026-11-25T01:37:47.958293Z I (423446) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:37:47.958437Z I (423456) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:37:47.958462Z I (423456) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:37:47.958481Z 
+2026-11-25T01:37:47.958494Z I (423576) quic_demo_main: QUIC connection established
+2026-11-25T01:37:47.958511Z I (423576) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:37:47.958530Z I (423586) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:37:50.801613Z I (426326) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:37:50.801759Z RECONNECT n=5 session=5 attempts=1 reason=stall fail_uptime_ms=419292 start_uptime_ms=420327 last_start_uptime_ms=420327 connected_uptime_ms=425851 handshake_ms=2769.1 connack_ms=2744.5 attempt_total_ms=5523.8 downtime_ms=6559.6 free=173556 next_seq=75
+2026-11-25T01:37:50.801819Z I (426446) quic_demo_main: Subscription acknowledged
+2026-11-25T01:37:52.834593Z HEAPLOG uptime_s=427 free=173612 min_free=142492
+2026-11-25T01:37:52.834758Z DIAG uptime_ms=427858 session=5 rssi=-34 wifi_ip=1 wifi_disc=0 free=173612 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=28596 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=7289 app_rx_offset=9 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=2812 srtt_ms=348.9 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=294.4 pto_ms=1551.3 expiry_in_ms=1282 max_data_left=16331 tx_buffered=0 stream_data_left=8139 pto_count=0 lost_pending=3 stream=0 tx_offset=53 tx_cont_acked=53 tx_loss_count=1 rx_last_offset=9 rx_max_offset=131072
+2026-11-25T01:37:55.875268Z I (431416) quic_demo_main: APP_RTT seq=75 app_rtt_ms=30.784
+2026-11-25T01:38:00.942979Z I (436446) quic_demo_main: APP_RTT seq=76 app_rtt_ms=48.802
+2026-11-25T01:38:05.818465Z I (441476) quic_demo_main: APP_RTT seq=77 app_rtt_ms=68.158
+2026-11-25T01:38:10.884795Z I (446506) quic_demo_main: APP_RTT seq=78 app_rtt_ms=88.968
+2026-11-25T01:38:15.953812Z I (451536) quic_demo_main: APP_RTT seq=79 app_rtt_ms=108.962
+2026-11-25T01:38:20.828459Z I (456466) quic_demo_main: APP_RTT seq=80 app_rtt_ms=25.640
+2026-11-25T01:38:25.905124Z I (461496) quic_demo_main: APP_RTT seq=81 app_rtt_ms=45.553
+2026-11-25T01:38:30.968439Z I (466526) quic_demo_main: APP_RTT seq=82 app_rtt_ms=65.360
+2026-11-25T01:38:36.042627Z I (471556) quic_demo_main: APP_RTT seq=83 app_rtt_ms=85.346
+2026-11-25T01:38:40.916803Z I (476586) quic_demo_main: APP_RTT seq=84 app_rtt_ms=105.359
+2026-11-25T01:38:45.991736Z I (481516) quic_demo_main: APP_RTT seq=85 app_rtt_ms=25.501
+2026-11-25T01:38:50.858691Z I (486546) quic_demo_main: APP_RTT seq=86 app_rtt_ms=45.664
+2026-11-25T01:38:52.683816Z HEAPLOG uptime_s=487 free=173748 min_free=142492
+2026-11-25T01:38:52.885560Z DIAG uptime_ms=487877 session=5 rssi=-35 wifi_ip=1 wifi_disc=0 free=173748 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1819 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=8765 app_rx_offset=1485 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=2812 srtt_ms=79.9 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=124.2 pto_ms=601.6 expiry_in_ms=58149 max_data_left=14855 tx_buffered=0 stream_data_left=6663 pto_count=0 lost_pending=0 stream=0 tx_offset=1529 tx_cont_acked=1529 tx_loss_count=1 rx_last_offset=1485 rx_max_offset=131072
+2026-11-25T01:39:10.897184Z STALL uptime_ms=506027 session=5 rssi=-32 wifi_ip=1 wifi_disc=0 free=173292 min_free=142492 pending=3 oldest_seq=87 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=8765 app_rx_offset=1485 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1705 cwnd=2812 srtt_ms=79.9 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=124.2 pto_ms=601.6 expiry_in_ms=4644 max_data_left=14486 tx_buffered=369 stream_data_left=6294 pto_count=4 lost_pending=0 stream=0 tx_offset=1898 tx_cont_acked=1529 tx_loss_count=1 rx_last_offset=1485 rx_max_offset=131072
+2026-11-25T01:39:10.897346Z CONNECTION_FAILED uptime_ms=506071 session=5 reason=stall next_seq=90
+2026-11-25T01:39:10.897371Z APP_RTT_LOST seq=87 reason=stall
+2026-11-25T01:39:10.897388Z APP_RTT_LOST seq=88 reason=stall
+2026-11-25T01:39:10.897404Z APP_RTT_LOST seq=89 reason=stall
+2026-11-25T01:39:10.897418Z I (506566) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:39:10.897455Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:39:10.897470Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:39:10.897484Z I (506586) QUIC: Cleaning up QUIC client...
+2026-11-25T01:39:10.897499Z I (506586) QUIC: Freeing QUIC connection...
+2026-11-25T01:39:11.102059Z I (506586) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:39:11.102167Z RECONNECT_START n=6 reason=stall fail_uptime_ms=506071
+2026-11-25T01:39:11.912818Z I (507596) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:39:11.912961Z I (507596) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:39:11.912986Z I (507596) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:39:11.913008Z I (507596) QUIC: init random number generator
+2026-11-25T01:39:12.113749Z I (507606) QUIC: init client ...
+2026-11-25T01:39:12.113870Z I (507606) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:39:12.113892Z I (507616) QUIC: In client_quic_init
+2026-11-25T01:39:12.113907Z I (507616) QUIC: ===>  INITIAL TS: 507128984000
+2026-11-25T01:39:12.113924Z I (507616) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:39:12.113943Z I (507616) QUIC: QUIC client initialization completed
+2026-11-25T01:39:14.545945Z I (510226) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:39:14.750008Z I (510246) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:39:14.750202Z I (510246) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:39:14.750240Z 
+2026-11-25T01:39:14.750260Z I (510256) quic_demo_main: QUIC connection established
+2026-11-25T01:39:14.750289Z I (510256) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:39:14.750318Z I (510266) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:39:14.750346Z I (510326) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:39:14.750371Z RECONNECT n=6 session=6 attempts=1 reason=stall fail_uptime_ms=506071 start_uptime_ms=507107 last_start_uptime_ms=507107 connected_uptime_ms=509861 handshake_ms=2660.1 connack_ms=70.3 attempt_total_ms=2753.9 downtime_ms=3789.8 free=173960 next_seq=90
+2026-11-25T01:39:14.952541Z I (510466) quic_demo_main: Subscription acknowledged
+2026-11-25T01:39:19.815725Z I (515496) quic_demo_main: APP_RTT seq=90 app_rtt_ms=85.490
+2026-11-25T01:39:24.895353Z I (520526) quic_demo_main: APP_RTT seq=91 app_rtt_ms=104.594
+2026-11-25T01:39:29.777167Z I (525456) quic_demo_main: APP_RTT seq=92 app_rtt_ms=26.129
+2026-11-25T01:39:34.849504Z I (530486) quic_demo_main: APP_RTT seq=93 app_rtt_ms=48.630
+2026-11-25T01:39:39.923396Z I (535516) quic_demo_main: APP_RTT seq=94 app_rtt_ms=68.815
+2026-11-25T01:39:45.003543Z I (540546) quic_demo_main: APP_RTT seq=95 app_rtt_ms=88.928
+2026-11-25T01:39:49.880128Z I (545576) quic_demo_main: APP_RTT seq=96 app_rtt_ms=108.666
+2026-11-25T01:39:52.713477Z HEAPLOG uptime_s=547 free=174372 min_free=142492
+2026-11-25T01:39:52.915716Z DIAG uptime_ms=547887 session=6 rssi=-30 wifi_ip=1 wifi_disc=0 free=174372 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2796 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=9635 app_rx_offset=870 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=115.8 min_rtt_ms=10.1 latest_rtt_ms=10.1 rttvar_ms=177.8 pto_ms=852.0 expiry_in_ms=57109 max_data_left=15470 tx_buffered=0 stream_data_left=7278 pto_count=0 lost_pending=0 stream=0 tx_offset=914 tx_cont_acked=914 tx_loss_count=0 rx_last_offset=870 rx_max_offset=131072
+2026-11-25T01:39:54.941197Z I (550546) quic_demo_main: APP_RTT seq=97 app_rtt_ms=65.388
+2026-11-25T01:40:00.014896Z I (555576) quic_demo_main: APP_RTT seq=98 app_rtt_ms=85.724
+2026-11-25T01:40:05.118610Z I (560606) quic_demo_main: APP_RTT seq=99 app_rtt_ms=105.275
+2026-11-25T01:40:09.969001Z I (565536) quic_demo_main: APP_RTT seq=100 app_rtt_ms=25.380
+2026-11-25T01:40:29.906555Z STALL uptime_ms=585037 session=6 rssi=-35 wifi_ip=1 wifi_disc=0 free=173280 min_free=142492 pending=3 oldest_seq=101 oldest_age_ms=15005 last_echo_age_ms=19989 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=10128 app_rx_offset=1363 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1716 cwnd=15660 srtt_ms=74.2 min_rtt_ms=10.1 latest_rtt_ms=12.7 rttvar_ms=111.4 pto_ms=544.9 expiry_in_ms=3738 max_data_left=14605 tx_buffered=372 stream_data_left=6413 pto_count=4 lost_pending=0 stream=0 tx_offset=1779 tx_cont_acked=1407 tx_loss_count=0 rx_last_offset=1363 rx_max_offset=131072
+2026-11-25T01:40:29.906735Z CONNECTION_FAILED uptime_ms=585082 session=6 reason=stall next_seq=104
+2026-11-25T01:40:29.906763Z APP_RTT_LOST seq=101 reason=stall
+2026-11-25T01:40:29.906777Z APP_RTT_LOST seq=102 reason=stall
+2026-11-25T01:40:29.906790Z APP_RTT_LOST seq=103 reason=stall
+2026-11-25T01:40:29.906802Z I (585576) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:40:29.906840Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:40:29.906852Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:40:29.906862Z I (585596) QUIC: Cleaning up QUIC client...
+2026-11-25T01:40:29.906875Z I (585596) QUIC: Freeing QUIC connection...
+2026-11-25T01:40:30.113015Z I (585596) QUIC: QUIC client cleanup completed. Free heap: 222376 bytes
+2026-11-25T01:40:30.113185Z RECONNECT_START n=7 reason=stall fail_uptime_ms=585082
+2026-11-25T01:40:30.918482Z I (586606) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:40:30.918616Z I (586606) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:40:31.126938Z I (586606) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:40:31.127052Z I (586606) QUIC: init random number generator
+2026-11-25T01:40:31.127070Z I (586616) QUIC: init client ...
+2026-11-25T01:40:31.127082Z I (586616) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:40:31.127095Z I (586616) QUIC: In client_quic_init
+2026-11-25T01:40:31.127107Z I (586626) QUIC: ===>  INITIAL TS: 586138914000
+2026-11-25T01:40:31.127120Z I (586626) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:40:31.127135Z I (586626) QUIC: QUIC client initialization completed
+2026-11-25T01:40:33.786222Z I (589276) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:40:33.786361Z I (589276) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:40:33.786381Z I (589296) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:40:33.786408Z 
+2026-11-25T01:40:33.786443Z I (589386) quic_demo_main: QUIC connection established
+2026-11-25T01:40:33.786460Z I (589386) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:40:33.786480Z I (589406) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:40:33.786507Z I (589426) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:40:33.786523Z RECONNECT n=7 session=7 attempts=1 reason=stall fail_uptime_ms=585082 start_uptime_ms=586117 last_start_uptime_ms=586117 connected_uptime_ms=588951 handshake_ms=2784.6 connack_ms=44.3 attempt_total_ms=2833.7 downtime_ms=3869.3 free=174340 next_seq=104
+2026-11-25T01:40:33.987882Z I (589546) quic_demo_main: Subscription acknowledged
+2026-11-25T01:40:38.931169Z I (594576) quic_demo_main: APP_RTT seq=104 app_rtt_ms=85.917
+2026-11-25T01:40:44.108696Z I (599606) quic_demo_main: APP_RTT seq=105 app_rtt_ms=104.581
+2026-11-25T01:40:48.864766Z I (604536) quic_demo_main: APP_RTT seq=106 app_rtt_ms=26.116
+2026-11-25T01:40:52.828666Z HEAPLOG uptime_s=607 free=174392 min_free=142492
+2026-11-25T01:40:52.828799Z DIAG uptime_ms=607907 session=7 rssi=-32 wifi_ip=1 wifi_disc=0 free=174392 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=3859 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=10509 app_rx_offset=381 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=189.2 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=256.2 pto_ms=1239.0 expiry_in_ms=56129 max_data_left=15959 tx_buffered=0 stream_data_left=7767 pto_count=0 lost_pending=0 stream=0 tx_offset=425 tx_cont_acked=425 tx_loss_count=0 rx_last_offset=381 rx_max_offset=131072
+2026-11-25T01:40:54.075363Z I (609606) quic_demo_main: APP_RTT seq=107 app_rtt_ms=88.890
+2026-11-25T01:40:59.047490Z I (614636) quic_demo_main: APP_RTT seq=108 app_rtt_ms=108.702
+2026-11-25T01:41:04.015116Z I (619566) quic_demo_main: APP_RTT seq=109 app_rtt_ms=25.328
+2026-11-25T01:41:09.015505Z I (624596) quic_demo_main: APP_RTT seq=110 app_rtt_ms=45.268
+2026-11-25T01:41:14.112913Z I (629626) quic_demo_main: APP_RTT seq=111 app_rtt_ms=65.206
+2026-11-25T01:41:19.003598Z I (634656) quic_demo_main: APP_RTT seq=112 app_rtt_ms=85.244
+2026-11-25T01:41:24.184588Z I (639686) quic_demo_main: APP_RTT seq=113 app_rtt_ms=105.376
+2026-11-25T01:41:28.981431Z I (644616) quic_demo_main: APP_RTT seq=114 app_rtt_ms=25.337
+2026-11-25T01:41:34.132830Z I (649646) quic_demo_main: APP_RTT seq=115 app_rtt_ms=45.332
+2026-11-25T01:41:52.844174Z HEAPLOG uptime_s=667 free=173292 min_free=142492
+2026-11-25T01:41:52.844274Z DIAG uptime_ms=667907 session=7 rssi=-30 wifi_ip=1 wifi_disc=0 free=173292 min_free=142492 pending=3 oldest_seq=116 oldest_age_ms=13785 last_echo_age_ms=18749 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=11625 app_rx_offset=1497 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1716 cwnd=15660 srtt_ms=65.5 min_rtt_ms=10.0 latest_rtt_ms=10.2 rttvar_ms=99.3 pto_ms=487.6 expiry_in_ms=4040 max_data_left=14471 tx_buffered=372 stream_data_left=6279 pto_count=4 lost_pending=0 stream=0 tx_offset=1913 tx_cont_acked=1541 tx_loss_count=0 rx_last_offset=1497 rx_max_offset=131072
+2026-11-25T01:41:53.995800Z STALL uptime_ms=669127 session=7 rssi=-31 wifi_ip=1 wifi_disc=0 free=173292 min_free=142492 pending=3 oldest_seq=116 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=11625 app_rx_offset=1497 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1716 cwnd=15660 srtt_ms=65.5 min_rtt_ms=10.0 latest_rtt_ms=10.2 rttvar_ms=99.3 pto_ms=487.6 expiry_in_ms=2820 max_data_left=14471 tx_buffered=372 stream_data_left=6279 pto_count=4 lost_pending=0 stream=0 tx_offset=1913 tx_cont_acked=1541 tx_loss_count=0 rx_last_offset=1497 rx_max_offset=131072
+2026-11-25T01:41:53.995939Z CONNECTION_FAILED uptime_ms=669172 session=7 reason=stall next_seq=119
+2026-11-25T01:41:53.995960Z APP_RTT_LOST seq=116 reason=stall
+2026-11-25T01:41:53.995983Z APP_RTT_LOST seq=117 reason=stall
+2026-11-25T01:41:53.996001Z APP_RTT_LOST seq=118 reason=stall
+2026-11-25T01:41:53.996014Z I (669666) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:41:53.996050Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:41:53.996063Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:41:53.996075Z I (669686) QUIC: Cleaning up QUIC client...
+2026-11-25T01:41:53.996089Z I (669686) QUIC: Freeing QUIC connection...
+2026-11-25T01:41:54.211358Z I (669686) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:41:54.211836Z RECONNECT_START n=8 reason=stall fail_uptime_ms=669172
+2026-11-25T01:41:55.039197Z I (670696) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:41:55.039317Z I (670696) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:41:55.039335Z I (670696) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:41:55.039351Z I (670696) QUIC: init random number generator
+2026-11-25T01:41:55.039364Z I (670706) QUIC: init client ...
+2026-11-25T01:41:55.039376Z I (670706) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:41:55.039389Z I (670706) QUIC: In client_quic_init
+2026-11-25T01:41:55.039401Z I (670716) QUIC: ===>  INITIAL TS: 670228974000
+2026-11-25T01:41:55.039422Z I (670716) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:41:55.039437Z I (670716) QUIC: QUIC client initialization completed
+2026-11-25T01:41:57.748785Z I (673336) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:41:57.748908Z I (673336) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:41:57.748927Z I (673356) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:41:57.748942Z 
+2026-11-25T01:41:57.957601Z I (673446) quic_demo_main: QUIC connection established
+2026-11-25T01:41:57.957736Z I (673446) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:41:57.957756Z I (673466) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:41:57.957771Z I (673476) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:41:57.957784Z RECONNECT n=8 session=8 attempts=1 reason=stall fail_uptime_ms=669172 start_uptime_ms=670207 last_start_uptime_ms=670207 connected_uptime_ms=673009 handshake_ms=2759.5 connack_ms=26.3 attempt_total_ms=2801.3 downtime_ms=3837.1 free=174264 next_seq=119
+2026-11-25T01:41:57.957815Z I (673606) quic_demo_main: Subscription acknowledged
+2026-11-25T01:42:03.137879Z I (678636) quic_demo_main: APP_RTT seq=119 app_rtt_ms=85.130
+2026-11-25T01:42:08.128539Z I (683666) quic_demo_main: APP_RTT seq=120 app_rtt_ms=104.700
+2026-11-25T01:42:12.911327Z I (688596) quic_demo_main: APP_RTT seq=121 app_rtt_ms=30.865
+2026-11-25T01:42:18.110581Z I (693626) quic_demo_main: APP_RTT seq=122 app_rtt_ms=46.179
+2026-11-25T01:42:23.106670Z I (698656) quic_demo_main: APP_RTT seq=123 app_rtt_ms=68.856
+2026-11-25T01:42:28.104741Z I (703686) quic_demo_main: APP_RTT seq=124 app_rtt_ms=88.884
+2026-11-25T01:42:33.089815Z I (708716) quic_demo_main: APP_RTT seq=125 app_rtt_ms=108.779
+2026-11-25T01:42:38.089418Z I (713646) quic_demo_main: APP_RTT seq=126 app_rtt_ms=25.507
+2026-11-25T01:42:43.082749Z I (718676) quic_demo_main: APP_RTT seq=127 app_rtt_ms=45.409
+2026-11-25T01:42:48.068195Z I (723706) quic_demo_main: APP_RTT seq=128 app_rtt_ms=65.514
+2026-11-25T01:42:52.856822Z HEAPLOG uptime_s=727 free=174388 min_free=142492
+2026-11-25T01:42:52.856963Z DIAG uptime_ms=727917 session=8 rssi=-29 wifi_ip=1 wifi_disc=0 free=174388 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4699 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=12874 app_rx_offset=1249 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=14254 srtt_ms=90.7 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=139.8 pto_ms=674.8 expiry_in_ms=55249 max_data_left=15091 tx_buffered=0 stream_data_left=6899 pto_count=0 lost_pending=0 stream=0 tx_offset=1293 tx_cont_acked=1293 tx_loss_count=0 rx_last_offset=1249 rx_max_offset=131072
+2026-11-25T01:42:53.065169Z I (728676) quic_demo_main: APP_RTT seq=129 app_rtt_ms=29.449
+2026-11-25T01:42:58.065560Z I (733706) quic_demo_main: APP_RTT seq=130 app_rtt_ms=45.440
+2026-11-25T01:43:18.216611Z STALL uptime_ms=753187 session=8 rssi=-29 wifi_ip=1 wifi_disc=0 free=173300 min_free=142492 pending=3 oldest_seq=131 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=13122 app_rx_offset=1497 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1716 cwnd=14254 srtt_ms=73.8 min_rtt_ms=10.2 latest_rtt_ms=20.1 rttvar_ms=107.8 pto_ms=530.1 expiry_in_ms=3502 max_data_left=14471 tx_buffered=372 stream_data_left=6279 pto_count=4 lost_pending=0 stream=0 tx_offset=1913 tx_cont_acked=1541 tx_loss_count=0 rx_last_offset=1497 rx_max_offset=131072
+2026-11-25T01:43:18.216766Z CONNECTION_FAILED uptime_ms=753232 session=8 reason=stall next_seq=134
+2026-11-25T01:43:18.216786Z APP_RTT_LOST seq=131 reason=stall
+2026-11-25T01:43:18.216800Z APP_RTT_LOST seq=132 reason=stall
+2026-11-25T01:43:18.216812Z APP_RTT_LOST seq=133 reason=stall
+2026-11-25T01:43:18.216824Z I (753726) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:43:18.216855Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:43:18.216867Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:43:18.216877Z I (753746) QUIC: Cleaning up QUIC client...
+2026-11-25T01:43:18.216890Z I (753746) QUIC: Freeing QUIC connection...
+2026-11-25T01:43:18.216902Z I (753746) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:43:18.216917Z RECONNECT_START n=9 reason=stall fail_uptime_ms=753232
+2026-11-25T01:43:19.256696Z I (754756) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:43:19.256819Z I (754756) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:43:19.256850Z I (754756) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:43:19.256874Z I (754756) QUIC: init random number generator
+2026-11-25T01:43:19.256889Z I (754766) QUIC: init client ...
+2026-11-25T01:43:19.256902Z I (754766) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:43:19.256916Z I (754776) QUIC: In client_quic_init
+2026-11-25T01:43:19.256928Z I (754776) QUIC: ===>  INITIAL TS: 754288974000
+2026-11-25T01:43:19.256941Z I (754776) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:43:19.256956Z I (754776) QUIC: QUIC client initialization completed
+2026-11-25T01:43:21.755021Z I (757416) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:43:21.755183Z I (757416) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:43:21.755203Z I (757436) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:43:21.755219Z 
+2026-11-25T01:43:21.963284Z I (757526) quic_demo_main: QUIC connection established
+2026-11-25T01:43:21.963408Z I (757526) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:43:21.963434Z I (757536) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:43:21.963449Z I (757556) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:43:21.963464Z RECONNECT n=9 session=9 attempts=1 reason=stall fail_uptime_ms=753232 start_uptime_ms=754267 last_start_uptime_ms=754267 connected_uptime_ms=757081 handshake_ms=2770.3 connack_ms=38.1 attempt_total_ms=2813.5 downtime_ms=3849.1 free=174344 next_seq=134
+2026-11-25T01:43:22.170945Z I (757676) quic_demo_main: Subscription acknowledged
+2026-11-25T01:43:27.161974Z I (762706) quic_demo_main: APP_RTT seq=134 app_rtt_ms=85.862
+2026-11-25T01:43:32.126610Z I (767736) quic_demo_main: APP_RTT seq=135 app_rtt_ms=104.633
+2026-11-25T01:43:37.102824Z I (772666) quic_demo_main: APP_RTT seq=136 app_rtt_ms=26.210
+2026-11-25T01:43:42.047818Z I (777696) quic_demo_main: APP_RTT seq=137 app_rtt_ms=46.258
+2026-11-25T01:43:47.220917Z I (782726) quic_demo_main: APP_RTT seq=138 app_rtt_ms=69.375
+2026-11-25T01:43:52.185800Z I (787756) quic_demo_main: APP_RTT seq=139 app_rtt_ms=88.961
+2026-11-25T01:43:52.798505Z HEAPLOG uptime_s=787 free=174396 min_free=142492
+2026-11-25T01:43:52.799266Z DIAG uptime_ms=787927 session=9 rssi=-30 wifi_ip=1 wifi_disc=0 free=174396 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=656 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=13875 app_rx_offset=753 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=132.7 min_rtt_ms=9.7 latest_rtt_ms=10.2 rttvar_ms=195.3 pto_ms=939.1 expiry_in_ms=59269 max_data_left=15587 tx_buffered=0 stream_data_left=7395 pto_count=0 lost_pending=0 stream=0 tx_offset=797 tx_cont_acked=797 tx_loss_count=0 rx_last_offset=753 rx_max_offset=131072
+2026-11-25T01:43:57.138552Z I (792726) quic_demo_main: APP_RTT seq=140 app_rtt_ms=45.531
+2026-11-25T01:44:02.091917Z I (797756) quic_demo_main: APP_RTT seq=141 app_rtt_ms=65.507
+2026-11-25T01:44:07.246714Z I (802786) quic_demo_main: APP_RTT seq=142 app_rtt_ms=85.436
+2026-11-25T01:44:12.203205Z I (807816) quic_demo_main: APP_RTT seq=143 app_rtt_ms=105.439
+2026-11-25T01:44:17.378028Z I (813046) quic_demo_main: APP_RTT seq=144 app_rtt_ms=325.419
+2026-11-25T01:44:37.114502Z STALL uptime_ms=832247 session=9 rssi=-29 wifi_ip=1 wifi_disc=0 free=173300 min_free=142492 pending=3 oldest_seq=145 oldest_age_ms=15005 last_echo_age_ms=19689 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=14495 app_rx_offset=1373 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1404 cwnd=15660 srtt_ms=109.4 min_rtt_ms=9.7 latest_rtt_ms=302.7 rttvar_ms=150.8 pto_ms=737.8 expiry_in_ms=921 max_data_left=14595 tx_buffered=372 stream_data_left=6403 pto_count=3 lost_pending=0 stream=0 tx_offset=1789 tx_cont_acked=1417 tx_loss_count=0 rx_last_offset=1373 rx_max_offset=131072
+2026-11-25T01:44:37.114637Z CONNECTION_FAILED uptime_ms=832292 session=9 reason=stall next_seq=148
+2026-11-25T01:44:37.114659Z APP_RTT_LOST seq=145 reason=stall
+2026-11-25T01:44:37.114673Z APP_RTT_LOST seq=146 reason=stall
+2026-11-25T01:44:37.114686Z APP_RTT_LOST seq=147 reason=stall
+2026-11-25T01:44:37.114698Z I (832786) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:44:37.114728Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:44:37.114741Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:44:37.114753Z I (832806) QUIC: Cleaning up QUIC client...
+2026-11-25T01:44:37.114767Z I (832806) QUIC: Freeing QUIC connection...
+2026-11-25T01:44:37.327486Z I (832806) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:44:37.327614Z RECONNECT_START n=10 reason=stall fail_uptime_ms=832292
+2026-11-25T01:44:38.136287Z I (833816) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:44:38.136389Z I (833816) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:44:38.136406Z I (833816) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:44:38.136423Z I (833816) QUIC: init random number generator
+2026-11-25T01:44:38.136436Z I (833826) QUIC: init client ...
+2026-11-25T01:44:38.337235Z I (833826) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:44:38.337353Z I (833836) QUIC: In client_quic_init
+2026-11-25T01:44:38.337369Z I (833836) QUIC: ===>  INITIAL TS: 833348972000
+2026-11-25T01:44:38.337384Z I (833836) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:44:38.337402Z I (833836) QUIC: QUIC client initialization completed
+2026-11-25T01:44:40.976388Z I (836506) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:44:40.976581Z I (836506) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:44:40.976612Z I (836526) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:44:40.976628Z 
+2026-11-25T01:44:40.976670Z I (836576) quic_demo_main: QUIC connection established
+2026-11-25T01:44:40.976699Z I (836586) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:44:40.976718Z I (836596) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:44:40.976806Z I (836646) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:44:41.177118Z RECONNECT n=10 session=10 attempts=1 reason=stall fail_uptime_ms=832292 start_uptime_ms=833327 last_start_uptime_ms=833327 connected_uptime_ms=836178 handshake_ms=2769.7 connack_ms=66.2 attempt_total_ms=2851.1 downtime_ms=3886.7 free=174272 next_seq=148
+2026-11-25T01:44:41.177222Z I (836776) quic_demo_main: Subscription acknowledged
+2026-11-25T01:44:46.169693Z I (841806) quic_demo_main: APP_RTT seq=148 app_rtt_ms=85.368
+2026-11-25T01:44:51.145666Z I (846836) quic_demo_main: APP_RTT seq=149 app_rtt_ms=104.731
+2026-11-25T01:44:52.806319Z HEAPLOG uptime_s=847 free=174392 min_free=142492
+2026-11-25T01:44:52.806456Z DIAG uptime_ms=847927 session=10 rssi=-29 wifi_ip=1 wifi_disc=0 free=174392 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1579 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=14752 app_rx_offset=257 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=14254 srtt_ms=245.1 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=289.0 pto_ms=1426.2 expiry_in_ms=58329 max_data_left=16083 tx_buffered=0 stream_data_left=7891 pto_count=0 lost_pending=0 stream=0 tx_offset=301 tx_cont_acked=301 tx_loss_count=0 rx_last_offset=257 rx_max_offset=131072
+2026-11-25T01:44:56.133460Z I (851806) quic_demo_main: APP_RTT seq=150 app_rtt_ms=68.791
+2026-11-25T01:45:01.528477Z I (857136) quic_demo_main: APP_RTT seq=151 app_rtt_ms=389.666
+2026-11-25T01:45:06.299941Z I (861866) quic_demo_main: APP_RTT seq=152 app_rtt_ms=108.914
+2026-11-25T01:45:11.261858Z I (866796) quic_demo_main: APP_RTT seq=153 app_rtt_ms=25.554
+2026-11-25T01:45:16.207471Z I (871826) quic_demo_main: APP_RTT seq=154 app_rtt_ms=45.476
+2026-11-25T01:45:21.329391Z I (876856) quic_demo_main: APP_RTT seq=155 app_rtt_ms=65.493
+2026-11-25T01:45:26.296057Z I (881886) quic_demo_main: APP_RTT seq=156 app_rtt_ms=85.511
+2026-11-25T01:45:31.289299Z I (886916) quic_demo_main: APP_RTT seq=157 app_rtt_ms=105.497
+2026-11-25T01:45:36.285960Z I (891846) quic_demo_main: APP_RTT seq=158 app_rtt_ms=25.498
+2026-11-25T01:45:41.278830Z I (896876) quic_demo_main: APP_RTT seq=159 app_rtt_ms=45.509
+2026-11-25T01:45:52.916123Z HEAPLOG uptime_s=907 free=173448 min_free=142492
+2026-11-25T01:45:52.916280Z DIAG uptime_ms=907927 session=10 rssi=-29 wifi_ip=1 wifi_disc=0 free=173448 min_free=142492 pending=2 oldest_seq=160 oldest_age_ms=6575 last_echo_age_ms=11539 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=15992 app_rx_offset=1497 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1248 cwnd=14254 srtt_ms=88.9 min_rtt_ms=9.7 latest_rtt_ms=20.2 rttvar_ms=129.8 pto_ms=633.3 expiry_in_ms=3505 max_data_left=14595 tx_buffered=248 stream_data_left=6403 pto_count=3 lost_pending=0 stream=0 tx_offset=1789 tx_cont_acked=1541 tx_loss_count=0 rx_last_offset=1497 rx_max_offset=131072
+2026-11-25T01:46:01.224042Z STALL uptime_ms=916357 session=10 rssi=-29 wifi_ip=1 wifi_disc=0 free=173296 min_free=142492 pending=3 oldest_seq=160 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=15992 app_rx_offset=1497 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1404 cwnd=14254 srtt_ms=88.9 min_rtt_ms=9.7 latest_rtt_ms=20.2 rttvar_ms=129.8 pto_ms=633.3 expiry_in_ms=86 max_data_left=14471 tx_buffered=372 stream_data_left=6279 pto_count=3 lost_pending=0 stream=0 tx_offset=1913 tx_cont_acked=1541 tx_loss_count=0 rx_last_offset=1497 rx_max_offset=131072
+2026-11-25T01:46:01.224190Z CONNECTION_FAILED uptime_ms=916402 session=10 reason=stall next_seq=163
+2026-11-25T01:46:01.224211Z APP_RTT_LOST seq=161 reason=stall
+2026-11-25T01:46:01.224224Z APP_RTT_LOST seq=162 reason=stall
+2026-11-25T01:46:01.224237Z APP_RTT_LOST seq=160 reason=stall
+2026-11-25T01:46:01.224249Z I (916896) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:46:01.224280Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:46:01.224292Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:46:01.224312Z I (916916) QUIC: Cleaning up QUIC client...
+2026-11-25T01:46:01.224329Z I (916916) QUIC: Freeing QUIC connection...
+2026-11-25T01:46:01.435155Z I (916916) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:46:01.435330Z RECONNECT_START n=11 reason=stall fail_uptime_ms=916402
+2026-11-25T01:46:02.269706Z I (917926) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:46:02.269855Z I (917926) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:46:02.269902Z I (917926) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:46:02.269931Z I (917926) QUIC: init random number generator
+2026-11-25T01:46:02.269975Z I (917936) QUIC: init client ...
+2026-11-25T01:46:02.269994Z I (917936) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:46:02.270012Z I (917946) QUIC: In client_quic_init
+2026-11-25T01:46:02.270037Z I (917946) QUIC: ===>  INITIAL TS: 917458972000
+2026-11-25T01:46:02.270052Z I (917946) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:46:02.270073Z I (917946) QUIC: QUIC client initialization completed
+2026-11-25T01:46:04.963026Z I (920576) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:46:04.963160Z I (920596) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:46:04.963188Z I (920596) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:46:04.963233Z 
+2026-11-25T01:46:05.168946Z I (920726) quic_demo_main: QUIC connection established
+2026-11-25T01:46:05.169061Z I (920726) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:46:05.169098Z I (920746) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:46:05.169127Z I (920816) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:46:05.169154Z RECONNECT n=11 session=11 attempts=1 reason=stall fail_uptime_ms=916402 start_uptime_ms=917437 last_start_uptime_ms=917437 connected_uptime_ms=920341 handshake_ms=2803.4 connack_ms=90.2 attempt_total_ms=2903.9 downtime_ms=3939.6 free=174336 next_seq=163
+2026-11-25T01:46:05.376219Z I (920936) quic_demo_main: Subscription acknowledged
+2026-11-25T01:46:10.307816Z I (925966) quic_demo_main: APP_RTT seq=163 app_rtt_ms=86.083
+2026-11-25T01:46:16.953595Z I (932596) quic_demo_main: APP_RTT seq=164 app_rtt_ms=1704.716
+2026-11-25T01:46:20.454795Z I (936026) quic_demo_main: APP_RTT seq=165 app_rtt_ms=125.823
+2026-11-25T01:46:25.404074Z I (940956) quic_demo_main: APP_RTT seq=166 app_rtt_ms=48.839
+2026-11-25T01:46:30.342600Z I (945986) quic_demo_main: APP_RTT seq=167 app_rtt_ms=68.700
+2026-11-25T01:46:35.487672Z I (951016) quic_demo_main: APP_RTT seq=168 app_rtt_ms=88.924
+2026-11-25T01:46:40.422330Z I (956046) quic_demo_main: APP_RTT seq=169 app_rtt_ms=108.832
+2026-11-25T01:46:45.365831Z I (960976) quic_demo_main: APP_RTT seq=170 app_rtt_ms=25.536
+2026-11-25T01:46:50.309350Z I (966006) quic_demo_main: APP_RTT seq=171 app_rtt_ms=45.507
+2026-11-25T01:46:52.784309Z HEAPLOG uptime_s=967 free=172896 min_free=142492
+2026-11-25T01:46:52.784408Z DIAG uptime_ms=967937 session=11 rssi=-29 wifi_ip=1 wifi_disc=0 free=172896 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2419 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=17117 app_rx_offset=1125 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=160.1 min_rtt_ms=9.8 latest_rtt_ms=12.7 rttvar_ms=254.3 pto_ms=1202.4 expiry_in_ms=57552 max_data_left=15215 tx_buffered=0 stream_data_left=7023 pto_count=0 lost_pending=0 stream=0 tx_offset=1169 tx_cont_acked=301 tx_loss_count=0 rx_last_offset=1125 rx_max_offset=131072
+2026-11-25T01:46:55.459744Z I (971076) quic_demo_main: APP_RTT seq=172 app_rtt_ms=105.538
+2026-11-25T01:47:02.076724Z I (977706) quic_demo_main: APP_RTT seq=173 app_rtt_ms=1728.884
+2026-11-25T01:47:20.373188Z STALL uptime_ms=995507 session=11 rssi=-29 wifi_ip=1 wifi_disc=0 free=172440 min_free=142492 pending=3 oldest_seq=174 oldest_age_ms=15005 last_echo_age_ms=18286 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=17365 app_rx_offset=1373 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1092 cwnd=15660 srtt_ms=354.4 min_rtt_ms=9.8 latest_rtt_ms=564.9 rttvar_ms=461.9 pto_ms=2226.9 expiry_in_ms=3927 max_data_left=14595 tx_buffered=372 stream_data_left=6403 pto_count=2 lost_pending=0 stream=0 tx_offset=1789 tx_cont_acked=301 tx_loss_count=0 rx_last_offset=1373 rx_max_offset=131072
+2026-11-25T01:47:20.373348Z CONNECTION_FAILED uptime_ms=995552 session=11 reason=stall next_seq=177
+2026-11-25T01:47:20.373377Z APP_RTT_LOST seq=174 reason=stall
+2026-11-25T01:47:20.373391Z APP_RTT_LOST seq=175 reason=stall
+2026-11-25T01:47:20.373404Z APP_RTT_LOST seq=176 reason=stall
+2026-11-25T01:47:20.373416Z I (996056) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:47:20.373448Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:47:20.373460Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:47:20.373472Z I (996066) QUIC: Cleaning up QUIC client...
+2026-11-25T01:47:20.373485Z I (996066) QUIC: Freeing QUIC connection...
+2026-11-25T01:47:20.574753Z I (996066) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:47:20.574936Z RECONNECT_START n=12 reason=stall fail_uptime_ms=995552
+2026-11-25T01:47:21.383510Z I (997076) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:47:21.383614Z I (997076) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:47:21.584859Z I (997076) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:47:21.584961Z I (997076) QUIC: init random number generator
+2026-11-25T01:47:21.584979Z I (997086) QUIC: init client ...
+2026-11-25T01:47:21.584994Z I (997086) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:47:21.585008Z I (997096) QUIC: In client_quic_init
+2026-11-25T01:47:21.585020Z I (997096) QUIC: ===>  INITIAL TS: 996608978000
+2026-11-25T01:47:21.585035Z I (997096) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:47:21.585053Z I (997096) QUIC: QUIC client initialization completed
+2026-11-25T01:47:24.053048Z I (999746) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:47:24.260675Z I (999746) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:47:24.260763Z I (999766) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:47:24.260784Z 
+2026-11-25T01:47:24.260794Z I (999846) quic_demo_main: QUIC connection established
+2026-11-25T01:47:24.260809Z I (999846) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:47:24.260824Z I (999856) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:47:24.260838Z I (999916) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:47:24.260851Z RECONNECT n=12 session=12 attempts=1 reason=stall fail_uptime_ms=995552 start_uptime_ms=996587 last_start_uptime_ms=996587 connected_uptime_ms=999441 handshake_ms=2774.4 connack_ms=66.6 attempt_total_ms=2853.7 downtime_ms=3889.1 free=173988 next_seq=177
+2026-11-25T01:47:24.467656Z I (1000036) quic_demo_main: Subscription acknowledged
+2026-11-25T01:47:29.425348Z I (1005066) quic_demo_main: APP_RTT seq=177 app_rtt_ms=86.244
+2026-11-25T01:47:34.390981Z I (1010096) quic_demo_main: APP_RTT seq=178 app_rtt_ms=104.917
+2026-11-25T01:47:39.570276Z I (1015126) quic_demo_main: APP_RTT seq=179 app_rtt_ms=125.505
+2026-11-25T01:47:44.538609Z I (1020056) quic_demo_main: APP_RTT seq=180 app_rtt_ms=49.074
+2026-11-25T01:47:49.510480Z I (1025086) quic_demo_main: APP_RTT seq=181 app_rtt_ms=68.877
+2026-11-25T01:47:52.821597Z HEAPLOG uptime_s=1027 free=174316 min_free=142492
+2026-11-25T01:47:52.821726Z DIAG uptime_ms=1027937 session=12 rssi=-29 wifi_ip=1 wifi_disc=0 free=174316 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=3336 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=17999 app_rx_offset=634 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=151.8 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=215.0 pto_ms=1036.8 expiry_in_ms=56609 max_data_left=15706 tx_buffered=0 stream_data_left=7514 pto_count=0 lost_pending=0 stream=0 tx_offset=678 tx_cont_acked=678 tx_loss_count=0 rx_last_offset=634 rx_max_offset=131072
+2026-11-25T01:47:54.475387Z I (1030056) quic_demo_main: APP_RTT seq=182 app_rtt_ms=25.491
+2026-11-25T01:47:59.443188Z I (1035086) quic_demo_main: APP_RTT seq=183 app_rtt_ms=45.441
+2026-11-25T01:48:04.607870Z I (1040116) quic_demo_main: APP_RTT seq=184 app_rtt_ms=65.442
+2026-11-25T01:48:09.572845Z I (1045146) quic_demo_main: APP_RTT seq=185 app_rtt_ms=85.452
+2026-11-25T01:48:14.545359Z I (1050176) quic_demo_main: APP_RTT seq=186 app_rtt_ms=105.508
+2026-11-25T01:48:19.510098Z I (1055106) quic_demo_main: APP_RTT seq=187 app_rtt_ms=25.509
+2026-11-25T01:48:24.445444Z I (1060136) quic_demo_main: APP_RTT seq=188 app_rtt_ms=45.489
+2026-11-25T01:48:44.465926Z STALL uptime_ms=1079617 session=12 rssi=-30 wifi_ip=1 wifi_disc=0 free=173216 min_free=142492 pending=3 oldest_seq=189 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=18874 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=67.2 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=101.8 pto_ms=499.5 expiry_in_ms=3011 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:48:44.466089Z CONNECTION_FAILED uptime_ms=1079662 session=12 reason=stall next_seq=192
+2026-11-25T01:48:44.466112Z APP_RTT_LOST seq=189 reason=stall
+2026-11-25T01:48:44.466130Z APP_RTT_LOST seq=190 reason=stall
+2026-11-25T01:48:44.466145Z APP_RTT_LOST seq=191 reason=stall
+2026-11-25T01:48:44.671817Z I (1080166) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:48:44.671992Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:48:44.672012Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:48:44.672029Z I (1080176) QUIC: Cleaning up QUIC client...
+2026-11-25T01:48:44.672049Z I (1080176) QUIC: Freeing QUIC connection...
+2026-11-25T01:48:44.672067Z I (1080176) QUIC: QUIC client cleanup completed. Free heap: 222620 bytes
+2026-11-25T01:48:44.672090Z RECONNECT_START n=13 reason=stall fail_uptime_ms=1079662
+2026-11-25T01:48:45.498942Z I (1081186) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:48:45.499148Z I (1081186) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:48:45.499181Z I (1081186) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:48:45.499210Z I (1081186) QUIC: init random number generator
+2026-11-25T01:48:45.704998Z I (1081196) QUIC: init client ...
+2026-11-25T01:48:45.705111Z I (1081206) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:48:45.705129Z I (1081206) QUIC: In client_quic_init
+2026-11-25T01:48:45.705142Z I (1081206) QUIC: ===>  INITIAL TS: 1080719592000
+2026-11-25T01:48:45.705155Z I (1081206) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:48:45.705170Z I (1081216) QUIC: QUIC client initialization completed
+2026-11-25T01:48:48.178383Z I (1083846) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:48:48.178498Z I (1083846) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:48:48.178517Z I (1083866) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:48:48.178531Z 
+2026-11-25T01:48:48.384069Z I (1083966) quic_demo_main: QUIC connection established
+2026-11-25T01:48:48.384196Z I (1083966) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:48:48.384226Z I (1083976) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:48:48.384251Z I (1084006) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:48:48.384272Z RECONNECT n=13 session=13 attempts=1 reason=stall fail_uptime_ms=1079662 start_uptime_ms=1080697 last_start_uptime_ms=1080697 connected_uptime_ms=1083531 handshake_ms=2784.1 connack_ms=40.2 attempt_total_ms=2833.5 downtime_ms=3868.9 free=174324 next_seq=192
+2026-11-25T01:48:48.591190Z I (1084126) quic_demo_main: Subscription acknowledged
+2026-11-25T01:48:52.721341Z HEAPLOG uptime_s=1087 free=174380 min_free=142492
+2026-11-25T01:48:52.927007Z DIAG uptime_ms=1087937 session=13 rssi=-31 wifi_ip=1 wifi_disc=0 free=174380 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=28289 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=18883 app_rx_offset=9 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=275.4 min_rtt_ms=15.4 latest_rtt_ms=15.4 rttvar_ms=295.1 pto_ms=1480.8 expiry_in_ms=55605 max_data_left=16331 tx_buffered=0 stream_data_left=8139 pto_count=0 lost_pending=0 stream=0 tx_offset=53 tx_cont_acked=53 tx_loss_count=0 rx_last_offset=9 rx_max_offset=131072
+2026-11-25T01:48:53.544956Z I (1089096) quic_demo_main: APP_RTT seq=192 app_rtt_ms=27.514
+2026-11-25T01:48:58.506209Z I (1094126) quic_demo_main: APP_RTT seq=193 app_rtt_ms=48.924
+2026-11-25T01:49:03.457473Z I (1099156) quic_demo_main: APP_RTT seq=194 app_rtt_ms=68.974
+2026-11-25T01:49:08.614077Z I (1104186) quic_demo_main: APP_RTT seq=195 app_rtt_ms=89.105
+2026-11-25T01:49:13.560475Z I (1109216) quic_demo_main: APP_RTT seq=196 app_rtt_ms=108.787
+2026-11-25T01:49:18.484031Z I (1114146) quic_demo_main: APP_RTT seq=197 app_rtt_ms=25.666
+2026-11-25T01:49:23.588535Z I (1119176) quic_demo_main: APP_RTT seq=198 app_rtt_ms=45.508
+2026-11-25T01:49:28.512961Z I (1124206) quic_demo_main: APP_RTT seq=199 app_rtt_ms=65.549
+2026-11-25T01:49:33.689095Z I (1129236) quic_demo_main: APP_RTT seq=200 app_rtt_ms=84.735
+2026-11-25T01:49:38.592271Z I (1134266) quic_demo_main: APP_RTT seq=201 app_rtt_ms=105.466
+2026-11-25T01:49:43.554031Z I (1139196) quic_demo_main: APP_RTT seq=202 app_rtt_ms=25.488
+2026-11-25T01:49:48.707356Z I (1144226) quic_demo_main: APP_RTT seq=203 app_rtt_ms=45.529
+2026-11-25T01:49:52.777359Z HEAPLOG uptime_s=1147 free=174380 min_free=142492
+2026-11-25T01:49:52.777452Z DIAG uptime_ms=1147938 session=13 rssi=-32 wifi_ip=1 wifi_disc=0 free=174380 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4200 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=20383 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=66.2 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=101.2 pto_ms=496.1 expiry_in_ms=55769 max_data_left=14831 tx_buffered=0 stream_data_left=6639 pto_count=0 lost_pending=0 stream=0 tx_offset=1553 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:50:08.737271Z STALL uptime_ms=1163707 session=13 rssi=-31 wifi_ip=1 wifi_disc=0 free=173260 min_free=142492 pending=3 oldest_seq=204 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=20383 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=66.2 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=101.2 pto_ms=496.1 expiry_in_ms=2957 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:50:08.737421Z CONNECTION_FAILED uptime_ms=1163752 session=13 reason=stall next_seq=207
+2026-11-25T01:50:08.737456Z APP_RTT_LOST seq=204 reason=stall
+2026-11-25T01:50:08.737472Z APP_RTT_LOST seq=205 reason=stall
+2026-11-25T01:50:08.737486Z APP_RTT_LOST seq=206 reason=stall
+2026-11-25T01:50:08.737500Z I (1164256) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:50:08.737535Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:50:08.737549Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:50:08.737562Z I (1164266) QUIC: Cleaning up QUIC client...
+2026-11-25T01:50:08.737577Z I (1164266) QUIC: Freeing QUIC connection...
+2026-11-25T01:50:08.737591Z I (1164276) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:50:08.737613Z RECONNECT_START n=14 reason=stall fail_uptime_ms=1163752
+2026-11-25T01:50:09.785836Z I (1165276) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:50:09.785959Z I (1165276) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:50:09.785988Z I (1165276) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:50:09.786021Z I (1165276) QUIC: init random number generator
+2026-11-25T01:50:09.786043Z I (1165286) QUIC: init client ...
+2026-11-25T01:50:09.786061Z I (1165296) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:50:09.786081Z I (1165296) QUIC: In client_quic_init
+2026-11-25T01:50:09.786100Z I (1165296) QUIC: ===>  INITIAL TS: 1164809579000
+2026-11-25T01:50:09.786139Z I (1165296) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:50:09.786160Z I (1165306) QUIC: QUIC client initialization completed
+2026-11-25T01:50:12.268242Z I (1167916) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:50:12.268378Z I (1167916) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:50:12.268400Z I (1167936) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:50:12.268417Z 
+2026-11-25T01:50:12.470980Z I (1168036) quic_demo_main: QUIC connection established
+2026-11-25T01:50:12.471127Z I (1168036) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:50:12.471163Z I (1168056) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:50:12.471181Z I (1168076) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:50:12.471212Z RECONNECT n=14 session=14 attempts=1 reason=stall fail_uptime_ms=1163752 start_uptime_ms=1164787 last_start_uptime_ms=1164787 connected_uptime_ms=1167601 handshake_ms=2764.0 connack_ms=42.6 attempt_total_ms=2813.7 downtime_ms=3849.1 free=174316 next_seq=207
+2026-11-25T01:50:12.678327Z I (1168196) quic_demo_main: Subscription acknowledged
+2026-11-25T01:50:17.586414Z I (1173226) quic_demo_main: APP_RTT seq=207 app_rtt_ms=85.900
+2026-11-25T01:50:22.732543Z I (1178256) quic_demo_main: APP_RTT seq=208 app_rtt_ms=105.080
+2026-11-25T01:50:27.510033Z I (1183186) quic_demo_main: APP_RTT seq=209 app_rtt_ms=31.024
+2026-11-25T01:50:32.666882Z I (1188216) quic_demo_main: APP_RTT seq=210 app_rtt_ms=49.098
+2026-11-25T01:50:37.618582Z I (1193246) quic_demo_main: APP_RTT seq=211 app_rtt_ms=68.911
+2026-11-25T01:50:42.579823Z I (1198276) quic_demo_main: APP_RTT seq=212 app_rtt_ms=88.971
+2026-11-25T01:50:47.742848Z I (1203306) quic_demo_main: APP_RTT seq=213 app_rtt_ms=108.936
+2026-11-25T01:50:52.642561Z I (1208236) quic_demo_main: APP_RTT seq=214 app_rtt_ms=27.902
+2026-11-25T01:50:52.844033Z HEAPLOG uptime_s=1207 free=174380 min_free=142492
+2026-11-25T01:50:52.844151Z DIAG uptime_ms=1207947 session=14 rssi=-31 wifi_ip=1 wifi_disc=0 free=174380 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=197 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=21392 app_rx_offset=1009 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=103.2 min_rtt_ms=10.2 latest_rtt_ms=17.9 rttvar_ms=157.3 pto_ms=757.6 expiry_in_ms=59797 max_data_left=15331 tx_buffered=0 stream_data_left=7139 pto_count=0 lost_pending=0 stream=0 tx_offset=1053 tx_cont_acked=1053 tx_loss_count=0 rx_last_offset=1009 rx_max_offset=131072
+2026-11-25T01:50:57.754253Z I (1213306) quic_demo_main: APP_RTT seq=215 app_rtt_ms=85.515
+2026-11-25T01:51:02.669499Z I (1218336) quic_demo_main: APP_RTT seq=216 app_rtt_ms=105.375
+2026-11-25T01:51:07.663630Z I (1223266) quic_demo_main: APP_RTT seq=217 app_rtt_ms=25.450
+2026-11-25T01:51:12.616894Z I (1228296) quic_demo_main: APP_RTT seq=218 app_rtt_ms=45.515
+2026-11-25T01:51:32.802003Z STALL uptime_ms=1247777 session=14 rssi=-35 wifi_ip=1 wifi_disc=0 free=173272 min_free=142492 pending=3 oldest_seq=219 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=21892 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=64.7 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=100.0 pto_ms=489.6 expiry_in_ms=2853 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:51:32.802228Z CONNECTION_FAILED uptime_ms=1247822 session=14 reason=stall next_seq=222
+2026-11-25T01:51:32.802284Z APP_RTT_LOST seq=219 reason=stall
+2026-11-25T01:51:32.802304Z APP_RTT_LOST seq=220 reason=stall
+2026-11-25T01:51:32.802347Z APP_RTT_LOST seq=221 reason=stall
+2026-11-25T01:51:32.802362Z I (1248326) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:51:32.802394Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:51:32.802406Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:51:32.802417Z I (1248336) QUIC: Cleaning up QUIC client...
+2026-11-25T01:51:32.802429Z I (1248336) QUIC: Freeing QUIC connection...
+2026-11-25T01:51:32.802441Z I (1248336) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:51:32.802457Z RECONNECT_START n=15 reason=stall fail_uptime_ms=1247822
+2026-11-25T01:51:33.834128Z I (1249346) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:51:33.834234Z I (1249346) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:51:33.834252Z I (1249346) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:51:33.834269Z I (1249346) QUIC: init random number generator
+2026-11-25T01:51:33.834283Z I (1249356) QUIC: init client ...
+2026-11-25T01:51:33.834295Z I (1249366) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:51:33.834308Z I (1249366) QUIC: In client_quic_init
+2026-11-25T01:51:33.834319Z I (1249366) QUIC: ===>  INITIAL TS: 1248879585000
+2026-11-25T01:51:33.834332Z I (1249366) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:51:33.834346Z I (1249376) QUIC: QUIC client initialization completed
+2026-11-25T01:51:36.348522Z I (1251996) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:51:36.348678Z I (1251996) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:51:36.348722Z I (1252006) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:51:36.348739Z 
+2026-11-25T01:51:36.563079Z I (1252136) quic_demo_main: QUIC connection established
+2026-11-25T01:51:36.563307Z I (1252136) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:51:36.563345Z I (1252146) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:51:36.563378Z I (1252216) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:51:36.563413Z RECONNECT n=15 session=15 attempts=1 reason=stall fail_uptime_ms=1247822 start_uptime_ms=1248857 last_start_uptime_ms=1248857 connected_uptime_ms=1251748 handshake_ms=2798.0 connack_ms=78.3 attempt_total_ms=2890.7 downtime_ms=3926.2 free=172316 next_seq=222
+2026-11-25T01:51:36.774626Z I (1252346) quic_demo_main: Subscription acknowledged
+2026-11-25T01:51:41.730656Z I (1257376) quic_demo_main: APP_RTT seq=222 app_rtt_ms=85.490
+2026-11-25T01:51:46.891129Z I (1262406) quic_demo_main: APP_RTT seq=223 app_rtt_ms=104.719
+2026-11-25T01:51:51.786986Z I (1267336) quic_demo_main: APP_RTT seq=224 app_rtt_ms=26.233
+2026-11-25T01:51:52.793210Z HEAPLOG uptime_s=1267 free=174404 min_free=142492
+2026-11-25T01:51:52.793344Z DIAG uptime_ms=1267947 session=15 rssi=-30 wifi_ip=1 wifi_disc=0 free=174404 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1099 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=22276 app_rx_offset=384 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=14254 srtt_ms=193.6 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=254.7 pto_ms=1237.2 expiry_in_ms=58889 max_data_left=15956 tx_buffered=0 stream_data_left=7764 pto_count=0 lost_pending=0 stream=0 tx_offset=428 tx_cont_acked=428 tx_loss_count=0 rx_last_offset=384 rx_max_offset=131072
+2026-11-25T01:51:56.887056Z I (1272406) quic_demo_main: APP_RTT seq=225 app_rtt_ms=88.828
+2026-11-25T01:52:01.839894Z I (1277436) quic_demo_main: APP_RTT seq=226 app_rtt_ms=108.887
+2026-11-25T01:52:06.776677Z I (1282366) quic_demo_main: APP_RTT seq=227 app_rtt_ms=25.464
+2026-11-25T01:52:11.713773Z I (1287396) quic_demo_main: APP_RTT seq=228 app_rtt_ms=45.461
+2026-11-25T01:52:16.863312Z I (1292426) quic_demo_main: APP_RTT seq=229 app_rtt_ms=65.444
+2026-11-25T01:52:21.826135Z I (1297456) quic_demo_main: APP_RTT seq=230 app_rtt_ms=85.506
+2026-11-25T01:52:26.791378Z I (1302486) quic_demo_main: APP_RTT seq=231 app_rtt_ms=105.482
+2026-11-25T01:52:31.756027Z I (1307416) quic_demo_main: APP_RTT seq=232 app_rtt_ms=25.553
+2026-11-25T01:52:36.930663Z I (1312446) quic_demo_main: APP_RTT seq=233 app_rtt_ms=45.501
+2026-11-25T01:52:52.789825Z HEAPLOG uptime_s=1327 free=173304 min_free=142492
+2026-11-25T01:52:52.991213Z DIAG uptime_ms=1327967 session=15 rssi=-30 wifi_ip=1 wifi_disc=0 free=173304 min_free=142492 pending=3 oldest_seq=234 oldest_age_ms=11045 last_echo_age_ms=16009 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=23401 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=14254 srtt_ms=66.4 min_rtt_ms=8.7 latest_rtt_ms=20.2 rttvar_ms=99.6 pto_ms=489.9 expiry_in_ms=6817 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:52:56.790085Z STALL uptime_ms=1331927 session=15 rssi=-31 wifi_ip=1 wifi_disc=0 free=173304 min_free=142492 pending=3 oldest_seq=234 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=23401 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=14254 srtt_ms=66.4 min_rtt_ms=8.7 latest_rtt_ms=20.2 rttvar_ms=99.6 pto_ms=489.9 expiry_in_ms=2857 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:52:56.790214Z CONNECTION_FAILED uptime_ms=1331972 session=15 reason=stall next_seq=237
+2026-11-25T01:52:56.790233Z APP_RTT_LOST seq=234 reason=stall
+2026-11-25T01:52:56.790247Z APP_RTT_LOST seq=235 reason=stall
+2026-11-25T01:52:56.790259Z APP_RTT_LOST seq=236 reason=stall
+2026-11-25T01:52:56.790271Z I (1332466) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:52:56.790301Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:52:56.790313Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:52:56.790323Z I (1332486) QUIC: Cleaning up QUIC client...
+2026-11-25T01:52:56.790335Z I (1332486) QUIC: Freeing QUIC connection...
+2026-11-25T01:52:56.996325Z I (1332486) QUIC: QUIC client cleanup completed. Free heap: 222640 bytes
+2026-11-25T01:52:56.996425Z RECONNECT_START n=16 reason=stall fail_uptime_ms=1331972
+2026-11-25T01:52:57.829508Z I (1333496) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:52:57.829648Z I (1333496) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:52:57.829666Z I (1333496) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:52:57.829682Z I (1333496) QUIC: init random number generator
+2026-11-25T01:52:57.829695Z I (1333506) QUIC: init client ...
+2026-11-25T01:52:57.829709Z I (1333516) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:52:57.829722Z I (1333516) QUIC: In client_quic_init
+2026-11-25T01:52:57.829733Z I (1333516) QUIC: ===>  INITIAL TS: 1333029581000
+2026-11-25T01:52:57.829746Z I (1333516) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:52:57.829760Z I (1333526) QUIC: QUIC client initialization completed
+2026-11-25T01:53:00.514063Z I (1336116) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:53:00.514187Z I (1336136) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:53:00.514213Z I (1336136) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:53:00.514232Z 
+2026-11-25T01:53:00.719314Z I (1336286) quic_demo_main: QUIC connection established
+2026-11-25T01:53:00.719474Z I (1336286) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:53:00.719512Z I (1336296) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:53:00.719529Z I (1336326) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:53:00.719551Z RECONNECT n=16 session=16 attempts=1 reason=stall fail_uptime_ms=1331972 start_uptime_ms=1333007 last_start_uptime_ms=1333007 connected_uptime_ms=1335851 handshake_ms=2799.3 connack_ms=37.9 attempt_total_ms=2843.5 downtime_ms=3879.2 free=174316 next_seq=237
+2026-11-25T01:53:00.926130Z I (1336446) quic_demo_main: Subscription acknowledged
+2026-11-25T01:53:05.896892Z I (1341476) quic_demo_main: APP_RTT seq=237 app_rtt_ms=85.438
+2026-11-25T01:53:10.857464Z I (1346506) quic_demo_main: APP_RTT seq=238 app_rtt_ms=105.084
+2026-11-25T01:53:15.829253Z I (1351436) quic_demo_main: APP_RTT seq=239 app_rtt_ms=26.308
+2026-11-25T01:53:20.802033Z I (1356466) quic_demo_main: APP_RTT seq=240 app_rtt_ms=48.951
+2026-11-25T01:53:25.977145Z I (1361496) quic_demo_main: APP_RTT seq=241 app_rtt_ms=69.001
+2026-11-25T01:53:30.956768Z I (1366526) quic_demo_main: APP_RTT seq=242 app_rtt_ms=88.915
+2026-11-25T01:53:35.928445Z I (1371556) quic_demo_main: APP_RTT seq=243 app_rtt_ms=108.888
+2026-11-25T01:53:40.887392Z I (1376486) quic_demo_main: APP_RTT seq=244 app_rtt_ms=29.062
+2026-11-25T01:53:45.860656Z I (1381516) quic_demo_main: APP_RTT seq=245 app_rtt_ms=45.249
+2026-11-25T01:53:51.030006Z I (1386546) quic_demo_main: APP_RTT seq=246 app_rtt_ms=65.517
+2026-11-25T01:53:52.891358Z HEAPLOG uptime_s=1387 free=174368 min_free=142492
+2026-11-25T01:53:52.891492Z DIAG uptime_ms=1387977 session=16 rssi=-31 wifi_ip=1 wifi_disc=0 free=174368 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=1919 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=24660 app_rx_offset=1259 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=82.5 min_rtt_ms=8.9 latest_rtt_ms=30.2 rttvar_ms=122.2 pto_ms=596.2 expiry_in_ms=58049 max_data_left=15081 tx_buffered=0 stream_data_left=6889 pto_count=0 lost_pending=0 stream=0 tx_offset=1303 tx_cont_acked=1303 tx_loss_count=0 rx_last_offset=1259 rx_max_offset=131072
+2026-11-25T01:53:55.999796Z I (1391516) quic_demo_main: APP_RTT seq=247 app_rtt_ms=29.711
+2026-11-25T01:54:00.969189Z I (1396546) quic_demo_main: APP_RTT seq=248 app_rtt_ms=45.736
+2026-11-25T01:54:20.890395Z STALL uptime_ms=1416028 session=16 rssi=-31 wifi_ip=1 wifi_disc=0 free=173264 min_free=142492 pending=3 oldest_seq=249 oldest_age_ms=15006 last_echo_age_ms=19970 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=24910 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=68.8 min_rtt_ms=8.9 latest_rtt_ms=30.2 rttvar_ms=92.2 pto_ms=462.4 expiry_in_ms=2418 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:54:20.890559Z CONNECTION_FAILED uptime_ms=1416072 session=16 reason=stall next_seq=252
+2026-11-25T01:54:20.890583Z APP_RTT_LOST seq=249 reason=stall
+2026-11-25T01:54:20.890596Z APP_RTT_LOST seq=250 reason=stall
+2026-11-25T01:54:20.890610Z APP_RTT_LOST seq=251 reason=stall
+2026-11-25T01:54:20.890622Z I (1416576) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:54:20.890655Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:54:20.890666Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:54:20.890677Z I (1416586) QUIC: Cleaning up QUIC client...
+2026-11-25T01:54:20.890689Z I (1416586) QUIC: Freeing QUIC connection...
+2026-11-25T01:54:21.090024Z I (1416596) QUIC: QUIC client cleanup completed. Free heap: 222296 bytes
+2026-11-25T01:54:21.090176Z RECONNECT_START n=17 reason=stall fail_uptime_ms=1416072
+2026-11-25T01:54:21.918898Z I (1417596) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:54:21.919009Z I (1417596) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:54:21.919026Z I (1417596) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:54:21.919042Z I (1417596) QUIC: init random number generator
+2026-11-25T01:54:21.919056Z I (1417606) QUIC: init client ...
+2026-11-25T01:54:21.919067Z I (1417616) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:54:21.919080Z I (1417616) QUIC: In client_quic_init
+2026-11-25T01:54:21.919092Z I (1417616) QUIC: ===>  INITIAL TS: 1417129532000
+2026-11-25T01:54:22.126613Z I (1417616) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:54:22.126721Z I (1417626) QUIC: QUIC client initialization completed
+2026-11-25T01:54:24.606514Z I (1420236) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:54:24.606635Z I (1420256) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:54:24.606660Z I (1420256) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:54:24.606675Z 
+2026-11-25T01:54:24.813496Z I (1420366) quic_demo_main: QUIC connection established
+2026-11-25T01:54:24.813641Z I (1420366) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:54:24.813662Z I (1420376) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:54:24.813677Z I (1420446) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:54:24.813692Z RECONNECT n=17 session=17 attempts=1 reason=stall fail_uptime_ms=1416072 start_uptime_ms=1417107 last_start_uptime_ms=1417107 connected_uptime_ms=1419971 handshake_ms=2773.5 connack_ms=80.2 attempt_total_ms=2864.0 downtime_ms=3899.1 free=174308 next_seq=252
+2026-11-25T01:54:25.021235Z I (1420576) quic_demo_main: Subscription acknowledged
+2026-11-25T01:54:29.983842Z I (1425606) quic_demo_main: APP_RTT seq=252 app_rtt_ms=85.433
+2026-11-25T01:54:34.942362Z I (1430636) quic_demo_main: APP_RTT seq=253 app_rtt_ms=104.961
+2026-11-25T01:54:39.914499Z I (1435566) quic_demo_main: APP_RTT seq=254 app_rtt_ms=26.265
+2026-11-25T01:54:45.091228Z I (1440596) quic_demo_main: APP_RTT seq=255 app_rtt_ms=48.645
+2026-11-25T01:54:50.052524Z I (1445626) quic_demo_main: APP_RTT seq=256 app_rtt_ms=68.629
+2026-11-25T01:54:52.947983Z HEAPLOG uptime_s=1447 free=174364 min_free=142492
+2026-11-25T01:54:52.948070Z DIAG uptime_ms=1447977 session=17 rssi=-31 wifi_ip=1 wifi_disc=0 free=174364 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=2836 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=25544 app_rx_offset=634 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=148.5 min_rtt_ms=10.0 latest_rtt_ms=10.2 rttvar_ms=217.2 pto_ms=1042.2 expiry_in_ms=57109 max_data_left=15706 tx_buffered=0 stream_data_left=7514 pto_count=0 lost_pending=0 stream=0 tx_offset=678 tx_cont_acked=678 tx_loss_count=0 rx_last_offset=634 rx_max_offset=131072
+2026-11-25T01:54:55.017908Z I (1450596) quic_demo_main: APP_RTT seq=257 app_rtt_ms=25.365
+2026-11-25T01:55:00.184311Z I (1455726) quic_demo_main: APP_RTT seq=258 app_rtt_ms=148.905
+2026-11-25T01:55:05.133399Z I (1460656) quic_demo_main: APP_RTT seq=259 app_rtt_ms=66.192
+2026-11-25T01:55:10.007104Z I (1465686) quic_demo_main: APP_RTT seq=260 app_rtt_ms=85.976
+2026-11-25T01:55:15.059980Z I (1470716) quic_demo_main: APP_RTT seq=261 app_rtt_ms=105.541
+2026-11-25T01:55:19.948147Z I (1475646) quic_demo_main: APP_RTT seq=262 app_rtt_ms=29.720
+2026-11-25T01:55:40.008885Z STALL uptime_ms=1495147 session=17 rssi=-31 wifi_ip=1 wifi_disc=0 free=173260 min_free=142492 pending=3 oldest_seq=263 oldest_age_ms=15005 last_echo_age_ms=19985 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=26294 app_rx_offset=1384 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=77.5 min_rtt_ms=8.5 latest_rtt_ms=20.2 rttvar_ms=110.3 pto_ms=543.8 expiry_in_ms=3721 max_data_left=14581 tx_buffered=375 stream_data_left=6389 pto_count=4 lost_pending=0 stream=0 tx_offset=1803 tx_cont_acked=1428 tx_loss_count=0 rx_last_offset=1384 rx_max_offset=131072
+2026-11-25T01:55:40.009033Z CONNECTION_FAILED uptime_ms=1495192 session=17 reason=stall next_seq=266
+2026-11-25T01:55:40.009061Z APP_RTT_LOST seq=263 reason=stall
+2026-11-25T01:55:40.009074Z APP_RTT_LOST seq=264 reason=stall
+2026-11-25T01:55:40.009087Z APP_RTT_LOST seq=265 reason=stall
+2026-11-25T01:55:40.009098Z I (1495696) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:55:40.009128Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:55:40.009139Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:55:40.009149Z I (1495706) QUIC: Cleaning up QUIC client...
+2026-11-25T01:55:40.009161Z I (1495706) QUIC: Freeing QUIC connection...
+2026-11-25T01:55:40.209050Z I (1495706) QUIC: QUIC client cleanup completed. Free heap: 222376 bytes
+2026-11-25T01:55:40.209185Z RECONNECT_START n=18 reason=stall fail_uptime_ms=1495192
+2026-11-25T01:55:41.014447Z I (1496716) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:55:41.014576Z I (1496716) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:55:41.215884Z I (1496716) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:55:41.216016Z I (1496716) QUIC: init random number generator
+2026-11-25T01:55:41.216036Z I (1496726) QUIC: init client ...
+2026-11-25T01:55:41.216048Z I (1496736) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:55:41.216062Z I (1496736) QUIC: In client_quic_init
+2026-11-25T01:55:41.216075Z I (1496736) QUIC: ===>  INITIAL TS: 1496249584000
+2026-11-25T01:55:41.216088Z I (1496736) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:55:41.216103Z I (1496746) QUIC: QUIC client initialization completed
+2026-11-25T01:55:43.854364Z I (1499376) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:55:43.854496Z I (1499376) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:55:43.854534Z I (1499396) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:55:43.854562Z 
+2026-11-25T01:55:43.854579Z I (1499496) quic_demo_main: QUIC connection established
+2026-11-25T01:55:43.854602Z I (1499496) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:55:43.854627Z I (1499526) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:55:43.854650Z I (1499556) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:55:44.056272Z RECONNECT n=18 session=18 attempts=1 reason=stall fail_uptime_ms=1495192 start_uptime_ms=1496227 last_start_uptime_ms=1496227 connected_uptime_ms=1499081 handshake_ms=2789.4 connack_ms=57.8 attempt_total_ms=2853.7 downtime_ms=3889.1 free=174324 next_seq=266
+2026-11-25T01:55:44.056397Z I (1499676) quic_demo_main: Subscription acknowledged
+2026-11-25T01:55:49.152618Z I (1504706) quic_demo_main: APP_RTT seq=266 app_rtt_ms=85.432
+2026-11-25T01:55:52.790834Z HEAPLOG uptime_s=1507 free=174376 min_free=142492
+2026-11-25T01:55:52.992230Z DIAG uptime_ms=1507977 session=18 rssi=-31 wifi_ip=1 wifi_disc=0 free=174376 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=3759 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=26428 app_rx_offset=134 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=230.5 min_rtt_ms=10.9 latest_rtt_ms=10.9 rttvar_ms=289.7 pto_ms=1414.5 expiry_in_ms=56170 max_data_left=16206 tx_buffered=0 stream_data_left=8014 pto_count=0 lost_pending=0 stream=0 tx_offset=178 tx_cont_acked=178 tx_loss_count=0 rx_last_offset=134 rx_max_offset=131072
+2026-11-25T01:55:54.007664Z I (1509676) quic_demo_main: APP_RTT seq=267 app_rtt_ms=48.960
+2026-11-25T01:55:59.047105Z I (1514706) quic_demo_main: APP_RTT seq=268 app_rtt_ms=68.883
+2026-11-25T01:56:04.094772Z I (1519736) quic_demo_main: APP_RTT seq=269 app_rtt_ms=89.003
+2026-11-25T01:56:09.191364Z I (1524766) quic_demo_main: APP_RTT seq=270 app_rtt_ms=108.867
+2026-11-25T01:56:14.058898Z I (1529696) quic_demo_main: APP_RTT seq=271 app_rtt_ms=29.737
+2026-11-25T01:56:19.148240Z I (1534726) quic_demo_main: APP_RTT seq=272 app_rtt_ms=45.507
+2026-11-25T01:56:24.216669Z I (1539756) quic_demo_main: APP_RTT seq=273 app_rtt_ms=65.544
+2026-11-25T01:56:29.077098Z I (1544786) quic_demo_main: APP_RTT seq=274 app_rtt_ms=85.512
+2026-11-25T01:56:34.146188Z I (1549816) quic_demo_main: APP_RTT seq=275 app_rtt_ms=105.479
+2026-11-25T01:56:39.193804Z I (1554746) quic_demo_main: APP_RTT seq=276 app_rtt_ms=29.481
+2026-11-25T01:56:44.071799Z I (1559776) quic_demo_main: APP_RTT seq=277 app_rtt_ms=45.487
+2026-11-25T01:56:52.830420Z HEAPLOG uptime_s=1567 free=173592 min_free=142492
+2026-11-25T01:56:52.830502Z DIAG uptime_ms=1567977 session=18 rssi=-32 wifi_ip=1 wifi_disc=0 free=173592 min_free=142492 pending=1 oldest_seq=278 oldest_age_ms=3725 last_echo_age_ms=8689 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=27803 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1099 cwnd=15660 srtt_ms=63.3 min_rtt_ms=10.2 latest_rtt_ms=20.2 rttvar_ms=91.8 pto_ms=455.7 expiry_in_ms=3116 max_data_left=14706 tx_buffered=125 stream_data_left=6514 pto_count=3 lost_pending=0 stream=0 tx_offset=1678 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:57:04.280688Z STALL uptime_ms=1579257 session=18 rssi=-32 wifi_ip=1 wifi_disc=0 free=173280 min_free=142492 pending=3 oldest_seq=278 oldest_age_ms=15005 last_echo_age_ms=19969 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=27803 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=63.3 min_rtt_ms=10.2 latest_rtt_ms=20.2 rttvar_ms=91.8 pto_ms=455.7 expiry_in_ms=2311 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:57:04.280831Z CONNECTION_FAILED uptime_ms=1579302 session=18 reason=stall next_seq=281
+2026-11-25T01:57:04.280850Z APP_RTT_LOST seq=278 reason=stall
+2026-11-25T01:57:04.280863Z APP_RTT_LOST seq=279 reason=stall
+2026-11-25T01:57:04.280875Z APP_RTT_LOST seq=280 reason=stall
+2026-11-25T01:57:04.280886Z I (1579806) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:57:04.280915Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:57:04.280927Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:57:04.280937Z I (1579816) QUIC: Cleaning up QUIC client...
+2026-11-25T01:57:04.280950Z I (1579816) QUIC: Freeing QUIC connection...
+2026-11-25T01:57:04.280962Z I (1579816) QUIC: QUIC client cleanup completed. Free heap: 222628 bytes
+2026-11-25T01:57:04.280980Z RECONNECT_START n=19 reason=stall fail_uptime_ms=1579302
+2026-11-25T01:57:05.294341Z I (1580826) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:57:05.294471Z I (1580826) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:57:05.294504Z I (1580826) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:57:05.294528Z I (1580826) QUIC: init random number generator
+2026-11-25T01:57:05.294542Z I (1580836) QUIC: init client ...
+2026-11-25T01:57:05.294556Z I (1580836) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:57:05.294568Z I (1580846) QUIC: In client_quic_init
+2026-11-25T01:57:05.294580Z I (1580846) QUIC: ===>  INITIAL TS: 1580359543000
+2026-11-25T01:57:05.294593Z I (1580846) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:57:05.294609Z I (1580856) QUIC: QUIC client initialization completed
+2026-11-25T01:57:07.946496Z I (1583486) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:57:07.946648Z I (1583506) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:57:07.946670Z I (1583506) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:57:07.946685Z 
+2026-11-25T01:57:07.946695Z I (1583596) quic_demo_main: QUIC connection established
+2026-11-25T01:57:07.946715Z I (1583596) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:57:07.946734Z I (1583606) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:57:07.946748Z I (1583636) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:57:08.148085Z RECONNECT n=19 session=19 attempts=1 reason=stall fail_uptime_ms=1579302 start_uptime_ms=1580337 last_start_uptime_ms=1580337 connected_uptime_ms=1583164 handshake_ms=2778.2 connack_ms=37.8 attempt_total_ms=2826.7 downtime_ms=3862.2 free=174352 next_seq=281
+2026-11-25T01:57:08.148271Z I (1583756) quic_demo_main: Subscription acknowledged
+2026-11-25T01:57:13.216686Z I (1588786) quic_demo_main: APP_RTT seq=281 app_rtt_ms=86.306
+2026-11-25T01:57:18.285175Z I (1593816) quic_demo_main: APP_RTT seq=282 app_rtt_ms=104.678
+2026-11-25T01:57:23.159746Z I (1598746) quic_demo_main: APP_RTT seq=283 app_rtt_ms=27.599
+2026-11-25T01:57:28.236319Z I (1603786) quic_demo_main: APP_RTT seq=284 app_rtt_ms=61.068
+2026-11-25T01:57:33.116284Z I (1608816) quic_demo_main: APP_RTT seq=285 app_rtt_ms=89.008
+2026-11-25T01:57:38.212959Z I (1613846) quic_demo_main: APP_RTT seq=286 app_rtt_ms=108.992
+2026-11-25T01:57:43.073939Z I (1618776) quic_demo_main: APP_RTT seq=287 app_rtt_ms=25.616
+2026-11-25T01:57:48.137358Z I (1623806) quic_demo_main: APP_RTT seq=288 app_rtt_ms=45.384
+2026-11-25T01:57:52.809202Z HEAPLOG uptime_s=1627 free=174380 min_free=142492
+2026-11-25T01:57:52.809295Z DIAG uptime_ms=1627977 session=19 rssi=-32 wifi_ip=1 wifi_disc=0 free=174380 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=4659 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=28812 app_rx_offset=1009 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=105.4 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=159.1 pto_ms=766.8 expiry_in_ms=55309 max_data_left=15331 tx_buffered=0 stream_data_left=7139 pto_count=0 lost_pending=0 stream=0 tx_offset=1053 tx_cont_acked=1053 tx_loss_count=0 rx_last_offset=1009 rx_max_offset=131072
+2026-11-25T01:57:53.214554Z I (1628876) quic_demo_main: APP_RTT seq=289 app_rtt_ms=105.705
+2026-11-25T01:57:58.293537Z I (1633806) quic_demo_main: APP_RTT seq=290 app_rtt_ms=25.495
+2026-11-25T01:58:03.160863Z I (1638836) quic_demo_main: APP_RTT seq=291 app_rtt_ms=45.494
+2026-11-25T01:58:08.222475Z I (1643866) quic_demo_main: APP_RTT seq=292 app_rtt_ms=65.467
+2026-11-25T01:58:28.187380Z STALL uptime_ms=1663327 session=19 rssi=-32 wifi_ip=1 wifi_disc=0 free=173284 min_free=142492 pending=3 oldest_seq=293 oldest_age_ms=15005 last_echo_age_ms=19949 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=29312 app_rx_offset=1509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=1727 cwnd=15660 srtt_ms=71.7 min_rtt_ms=10.2 latest_rtt_ms=50.2 rttvar_ms=90.7 pto_ms=459.7 expiry_in_ms=2375 max_data_left=14456 tx_buffered=375 stream_data_left=6264 pto_count=4 lost_pending=0 stream=0 tx_offset=1928 tx_cont_acked=1553 tx_loss_count=0 rx_last_offset=1509 rx_max_offset=131072
+2026-11-25T01:58:28.187520Z CONNECTION_FAILED uptime_ms=1663372 session=19 reason=stall next_seq=296
+2026-11-25T01:58:28.187543Z APP_RTT_LOST seq=293 reason=stall
+2026-11-25T01:58:28.187556Z APP_RTT_LOST seq=294 reason=stall
+2026-11-25T01:58:28.187568Z APP_RTT_LOST seq=295 reason=stall
+2026-11-25T01:58:28.187579Z I (1663876) quic_demo_main: Cleaning up QUIC connection
+2026-11-25T01:58:28.187608Z MQTT_DISCONNECT_SENT status=0
+2026-11-25T01:58:28.187620Z QUIC_CLOSE_SENT bytes=30
+2026-11-25T01:58:28.187631Z I (1663886) QUIC: Cleaning up QUIC client...
+2026-11-25T01:58:28.187643Z I (1663886) QUIC: Freeing QUIC connection...
+2026-11-25T01:58:28.393241Z I (1663886) QUIC: QUIC client cleanup completed. Free heap: 222628 bytes
+2026-11-25T01:58:28.393409Z RECONNECT_START n=20 reason=stall fail_uptime_ms=1663372
+2026-11-25T01:58:29.207512Z I (1664896) quic_demo_main: Connecting to QUIC server 192.168.137.1:14567
+2026-11-25T01:58:29.207613Z I (1664896) quic_demo_main: Free heap: 222676 bytes
+2026-11-25T01:58:29.207638Z I (1664896) QUIC: QUIC client config: 192.168.137.1:14567 with ALPN mqtt
+2026-11-25T01:58:29.207658Z I (1664896) QUIC: init random number generator
+2026-11-25T01:58:29.207670Z I (1664906) QUIC: init client ...
+2026-11-25T01:58:29.408759Z I (1664916) QUIC: Set ALPN: mqtt (length: 4)
+2026-11-25T01:58:29.408887Z I (1664916) QUIC: In client_quic_init
+2026-11-25T01:58:29.408908Z I (1664916) QUIC: ===>  INITIAL TS: 1664429592000
+2026-11-25T01:58:29.408926Z I (1664916) ESP_EV_COMPAT: Starting IO watcher for fd 54
+2026-11-25T01:58:29.408946Z I (1664926) QUIC: QUIC client initialization completed
+2026-11-25T01:58:32.040349Z I (1667536) TLS: QUIC negotiated TLS=TLSv1.3 cipher=TLS_AES_128_GCM_SHA256 wolfSSL_cipher=TLS13-AES128-GCM-SHA256 suite=0x1301 ALPN=mqtt certificate_verification=NONE (mode=0)
+2026-11-25T01:58:32.040500Z I (1667536) QUIC: QUIC handshake completed callback triggered!
+2026-11-25T01:58:32.040524Z I (1667556) QUIC: Extending max local streams bidi to 128
+2026-11-25T01:58:32.040540Z 
+2026-11-25T01:58:32.040552Z I (1667656) quic_demo_main: QUIC connection established
+2026-11-25T01:58:32.040567Z I (1667656) MQTT_QUIC: Initializing complete-MQTT-packet transport
+2026-11-25T01:58:32.040583Z I (1667676) QUIC: Opened new QUIC stream with ID: 0
+2026-11-25T01:58:32.040596Z I (1667696) quic_demo_main: MQTT connected over QUIC
+2026-11-25T01:58:32.040610Z RECONNECT n=20 session=20 attempts=1 reason=stall fail_uptime_ms=1663372 start_uptime_ms=1664407 last_start_uptime_ms=1664407 connected_uptime_ms=1667221 handshake_ms=2765.8 connack_ms=42.8 attempt_total_ms=2813.6 downtime_ms=3849.2 free=174316 next_seq=296
+2026-11-25T01:58:32.241443Z I (1667816) quic_demo_main: Subscription acknowledged
+2026-11-25T01:58:37.336175Z I (1672846) quic_demo_main: APP_RTT seq=296 app_rtt_ms=85.493
+2026-11-25T01:58:42.240548Z I (1677876) quic_demo_main: APP_RTT seq=297 app_rtt_ms=104.882
+2026-11-25T01:58:47.126738Z I (1682806) quic_demo_main: APP_RTT seq=298 app_rtt_ms=26.284
+2026-11-25T01:58:52.188302Z I (1687836) quic_demo_main: APP_RTT seq=299 app_rtt_ms=48.846
+2026-11-25T01:58:52.792542Z HEAPLOG uptime_s=1687 free=174368 min_free=142492
+2026-11-25T01:58:52.994001Z DIAG uptime_ms=1687987 session=20 rssi=-32 wifi_ip=1 wifi_disc=0 free=174368 min_free=142492 pending=0 oldest_seq=0 oldest_age_ms=-1 last_echo_age_ms=636 last_mqtt_status=0 need_more_run=0 app_buf_len=0 app_buf_pos=0 app_rx_bytes=29821 app_rx_offset=509 app_rx_drops=0 app_rx_drop_bytes=0 closing=0 draining=0 in_flight=0 cwnd=15660 srtt_ms=166.5 min_rtt_ms=10.2 latest_rtt_ms=10.2 rttvar_ms=236.1 pto_ms=1135.9 expiry_in_ms=59329 max_data_left=15831 tx_buffered=0 stream_data_left=7639 pto_count=0 lost_pending=0 stream=0 tx_offset=553 tx_cont_acked=553 tx_loss_count=0 rx_last_offset=509 rx_max_offset=131072
+2026-11-25T01:58:57.257184Z I (1692906) quic_demo_main: APP_RTT seq=300 app_rtt_ms=108.992
+2026-11-25T01:59:02.159268Z I (1697836) quic_demo_main: APP_RTT seq=301 app_rtt_ms=25.611
+2026-11-25T01:59:07.213990Z I (1702866) quic_demo_main: APP_RTT seq=302 app_rtt_ms=45.507
+2026-11-25T01:59:12.289785Z I (1707896) quic_demo_main: APP_RTT seq=303 app_rtt_ms=65.540
+2026-11-25T01:59:17.374018Z I (1712926) quic_demo_main: APP_RTT seq=304 app_rtt_ms=85.414
+2026-11-25T01:59:22.448435Z I (1717956) quic_demo_main: APP_RTT seq=305 app_rtt_ms=105.476
+2026-11-25T01:59:27.322179Z I (1722986) quic_demo_main: APP_RTT seq=306 app_rtt_ms=125.486
+2026-11-25T01:59:32.205413Z CAPTURE_CLOSE reason=stop_file counts={"lines": 1094, "boots": 3, "panics": 0, "disconnect_markers": 20, "rtt_lines": 246, "serial_errors": 0}

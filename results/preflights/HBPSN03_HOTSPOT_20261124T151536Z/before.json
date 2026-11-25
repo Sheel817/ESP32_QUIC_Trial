@@ -1,0 +1,10 @@
+﻿{
+    "sharing_profile":  "Ethernet",
+    "method":  "Existing saved AP configuration; StartTetheringAsync only, no ConfigureAccessPointAsync or setters",
+    "state":  "Off",
+    "utc":  "2026-11-24T15:15:36.3936225Z",
+    "ssid":  "<SSID_MASKED>",
+    "password_sha256":  "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "client_count":  0,
+    "band":  "TwoPointFourGigahertz"
+}

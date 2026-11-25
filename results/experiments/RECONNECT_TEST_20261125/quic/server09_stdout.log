@@ -1,0 +1,27 @@
+CSV log: C:\Users\newsh\Desktop\ESP32_QUIC_Trial\logs\sensor_20261125T014308_639524Z_qsddm8mg.csv
+READY | QUIC UDP port 14567 | ALPN=mqtt
+QUIC CONNECTED | ALPN=mqtt
+MQTT CONNECT accepted: esp32_quic_client
+SUBSCRIBED: esp32/quic/test
+RECEIVED [esp32/quic/test]: {"seq":134,"sensor":"DHT11","uptime_ms":762131,"temperature_c":43.0,"humidity_pct":24.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":135,"sensor":"DHT11","uptime_ms":767142,"temperature_c":43.0,"humidity_pct":24.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":136,"sensor":"DHT11","uptime_ms":772152,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":137,"sensor":"DHT11","uptime_ms":777162,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":138,"sensor":"DHT11","uptime_ms":782171,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":139,"sensor":"DHT11","uptime_ms":787182,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":140,"sensor":"DHT11","uptime_ms":792192,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":141,"sensor":"DHT11","uptime_ms":797202,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":142,"sensor":"DHT11","uptime_ms":802212,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":143,"sensor":"DHT11","uptime_ms":807222,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32
+RECEIVED [esp32/quic/test]: {"seq":144,"sensor":"DHT11","uptime_ms":812232,"temperature_c":42.0,"humidity_pct":25.0,"sensor_error":0}
+Demo publication returned to ESP32

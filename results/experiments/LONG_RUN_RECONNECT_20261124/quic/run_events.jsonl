@@ -1,0 +1,6 @@
+﻿{"utc":"2026-11-24T15:46:02.0990764Z","server":"quic_server.py","event":"SERVER_READY","pid":36396}
+{"utc":"2026-11-24T15:46:02.1694396Z","event":"WATCHDOG_STARTED","pid":33456}
+{"event":"CAPTURE_START","utc":"2026-11-24T15:46:02.1732288Z"}
+{"utc":"2026-11-24T23:46:02.7034674Z","event":"CAPTURE_END","exit_code":0}
+{"event":"SERVER_STOPPED","utc":"2026-11-24T23:46:02.7300247Z"}
+{"utc":"2026-11-24T23:46:02.7662264Z","event":"RUN_END","server_csv":true}

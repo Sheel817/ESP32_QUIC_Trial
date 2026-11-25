@@ -1,0 +1,60 @@
+2026-11-25T02:00:07.360657Z RESET_RELEASED_BY_HOST 
+2026-11-25T02:00:07.460545Z BOOT_MARKER rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+2026-11-25T02:00:07.460914Z BOOT_MARKER I (23) boot: ESP-IDF v6.1 2nd stage bootloader
+2026-11-25T02:00:07.927729Z BOOT_MARKER I (510) quic_demo_main: Starting ESP32-C6 DHT11 over TCP_TLS
+2026-11-25T02:01:14.698859Z DISCONNECT_MARKER E (67290) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:01:14.902005Z DISCONNECT_MARKER I (67320) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:01:20.788284Z DISCONNECT_MARKER I (73340) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:02:27.590535Z DISCONNECT_MARKER E (140190) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:02:27.796991Z DISCONNECT_MARKER I (140220) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:02:33.682860Z DISCONNECT_MARKER I (146240) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:03:40.277598Z DISCONNECT_MARKER I (212760) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:03:46.357921Z DISCONNECT_MARKER I (218780) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:04:53.350057Z DISCONNECT_MARKER E (285830) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:04:53.350185Z DISCONNECT_MARKER I (285860) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:04:59.446661Z DISCONNECT_MARKER I (291880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:06:05.827527Z DISCONNECT_MARKER I (358400) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:06:11.904470Z DISCONNECT_MARKER I (364420) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:07:18.838041Z DISCONNECT_MARKER E (431290) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:07:18.838183Z DISCONNECT_MARKER I (431320) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:07:24.732923Z DISCONNECT_MARKER I (437340) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:08:31.297652Z DISCONNECT_MARKER I (503860) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:08:37.378454Z DISCONNECT_MARKER I (509880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:09:44.337172Z DISCONNECT_MARKER E (576820) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:09:44.337425Z DISCONNECT_MARKER I (576850) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:09:50.450810Z DISCONNECT_MARKER I (582870) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:10:56.879591Z DISCONNECT_MARKER E (649470) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:10:57.089552Z DISCONNECT_MARKER I (649500) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:11:02.960127Z DISCONNECT_MARKER I (655520) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:12:09.529994Z DISCONNECT_MARKER E (722120) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:12:09.731008Z DISCONNECT_MARKER I (722150) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:12:15.622672Z DISCONNECT_MARKER I (728170) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:13:22.599337Z DISCONNECT_MARKER I (795140) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:13:28.711025Z DISCONNECT_MARKER I (801160) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:14:35.244545Z DISCONNECT_MARKER E (867750) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:14:35.244665Z DISCONNECT_MARKER I (867780) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:14:41.321292Z DISCONNECT_MARKER I (873800) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:15:48.076204Z DISCONNECT_MARKER E (940590) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:15:48.076337Z DISCONNECT_MARKER I (940620) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:15:54.156493Z DISCONNECT_MARKER I (946640) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:17:00.750526Z DISCONNECT_MARKER E (1013230) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:17:00.750667Z DISCONNECT_MARKER I (1013260) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:17:06.831035Z DISCONNECT_MARKER I (1019290) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:18:13.331478Z DISCONNECT_MARKER E (1085830) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:18:13.331647Z DISCONNECT_MARKER I (1085870) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:18:19.404908Z DISCONNECT_MARKER I (1091890) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:19:26.005621Z DISCONNECT_MARKER E (1158520) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:19:26.005794Z DISCONNECT_MARKER I (1158550) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:19:32.102042Z DISCONNECT_MARKER I (1164580) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:20:38.710235Z DISCONNECT_MARKER E (1231190) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:20:38.710354Z DISCONNECT_MARKER I (1231220) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:20:44.783801Z DISCONNECT_MARKER I (1237250) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:21:51.324540Z DISCONNECT_MARKER E (1303850) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:21:51.324678Z DISCONNECT_MARKER I (1303880) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:21:57.405324Z DISCONNECT_MARKER I (1309910) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:23:04.150563Z DISCONNECT_MARKER E (1376610) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:23:04.150728Z DISCONNECT_MARKER I (1376640) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:23:10.239604Z DISCONNECT_MARKER I (1382670) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:24:16.756975Z DISCONNECT_MARKER E (1449280) TCP_TLS: TLS read / peer disconnected failed: error=5 errno=104
+2026-11-25T02:24:16.757104Z DISCONNECT_MARKER I (1449310) quic_demo_main: Cleaning up TCP_TLS connection
+2026-11-25T02:24:22.850816Z DISCONNECT_MARKER I (1455340) quic_demo_main: Cleaning up TCP_TLS connection

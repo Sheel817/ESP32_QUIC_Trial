@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-11-24T15:13:45.243289+00:00",
+  "command": [
+    "C:\\Users\\newsh\\.espressif\\python_env\\idf6.1_py3.14_env\\Scripts\\python.exe",
+    "C:/esp/v6.1/esp-idf/tools/idf.py",
+    "-B",
+    "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\reconnect_20261124\\build_ft3",
+    "-DSDKCONFIG=C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\reconnect_20261124\\sdkconfig_ft3",
+    "-DDEMO_TRANSPORT=TCP_TLS",
+    "-DDEMO_WIFI_PS_NONE=ON",
+    "-DCCACHE_ENABLE=False",
+    "-DFIXED_TEST_MODE=0",
+    "-DFIXED_TEST_RUN_ID=f0",
+    "-DFIXED_TEST_CYCLES=30",
+    "-DFIXED_CT_MODE=0",
+    "-DFIXED_HEAPLOG=1",
+    "build"
+  ],
+  "cwd": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\reconnect_20261124\\src",
+  "log": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\reconnect_20261124\\build_ft3_20261124T151345Z.log",
+  "ended_utc": "2026-11-24T15:15:21.001916+00:00",
+  "exit_code": 0,
+  "bin": {
+    "path": "C:\\Users\\newsh\\Desktop\\ESP32_QUIC_Trial\\profiles\\reconnect_20261124\\build_ft3\\quic_demo.bin",
+    "bytes": 1507360,
+    "sha256": "b7f7ba4d71c9957e03097a6adf725dbbefcf34eb14b4c0b4c4360d53e901cfcc"
+  }
+}
