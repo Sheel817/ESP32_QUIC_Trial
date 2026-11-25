@@ -6,6 +6,8 @@ Base: copy of `profiles/fixed_20261118` (ngtcp2 v1.13.0 + wolfSSL, fixed alignme
 - `src/components/nghttp3/nghttp3`: nghttp3 **v1.10.1** (git tag, commit df0d504b, 27 May 2025, with `lib/sfparse`).
   Chosen because it was released together with ngtcp2 v1.13.0 (26 May 2025); ngtcp2 itself only requires nghttp3 ≥ 1.0.0.
   nghttp3 does not link against ngtcp2; the two meet in the application glue.
+  The library source is not committed. To rebuild, run
+  `git clone --recurse-submodules --branch v1.10.1 https://github.com/ngtcp2/nghttp3 src/components/nghttp3/nghttp3` in this profile.
 - `src/components/nghttp3/CMakeLists.txt`: ESP-IDF wrapper (same pattern as the ngtcp2 wrapper: generated `config.h`
   with `HAVE_DECL_BE64TOH`, generated `version.h`, static library). Library source is unmodified; `-Wno-error=format`
   because two debug prints use `%u` for `uint32_t` (which is `long` on RISC-V).
