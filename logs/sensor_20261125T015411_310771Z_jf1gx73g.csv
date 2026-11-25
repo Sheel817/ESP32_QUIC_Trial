@@ -1,0 +1,12 @@
+server_receive_utc,client_id,topic,seq,sensor,uptime_ms,temperature_c,humidity_pct,sensor_error
+2026-11-25T01:54:29.813143Z,esp32_quic_client,esp32/quic/test,252,DHT11,1425032,41.0,25.0,0
+2026-11-25T01:54:34.823210Z,esp32_quic_client,esp32/quic/test,253,DHT11,1430042,41.0,25.0,0
+2026-11-25T01:54:39.833041Z,esp32_quic_client,esp32/quic/test,254,DHT11,1435051,41.0,25.0,0
+2026-11-25T01:54:44.843520Z,esp32_quic_client,esp32/quic/test,255,DHT11,1440062,41.0,25.0,0
+2026-11-25T01:54:49.853317Z,esp32_quic_client,esp32/quic/test,256,DHT11,1445072,43.0,24.0,0
+2026-11-25T01:54:54.862809Z,esp32_quic_client,esp32/quic/test,257,DHT11,1450082,41.0,25.0,0
+2026-11-25T01:54:59.918842Z,esp32_quic_client,esp32/quic/test,258,DHT11,1455092,41.0,27.0,0
+2026-11-25T01:55:04.882913Z,esp32_quic_client,esp32/quic/test,259,DHT11,1460101,41.0,25.0,0
+2026-11-25T01:55:09.902420Z,esp32_quic_client,esp32/quic/test,260,DHT11,1465111,41.0,25.0,0
+2026-11-25T01:55:14.902536Z,esp32_quic_client,esp32/quic/test,261,DHT11,1470121,41.0,25.0,0
+2026-11-25T01:55:19.918634Z,esp32_quic_client,esp32/quic/test,262,DHT11,1475131,41.0,25.0,0

@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    version: ">=5.0.0"
+
+  wolfssl/wolfssl: "^5.8.0"
+
+  esp-idf-lib/dht: "1.2.0"
+
+  espressif/cjson: "1.7.19~2"
+
+  protocol_examples_common:
+    path: ${IDF_PATH}/examples/common_components/protocol_examples_common
+
+  esp_timer:
+    path: ${IDF_PATH}/components/esp_timer
